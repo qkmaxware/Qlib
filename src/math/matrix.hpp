@@ -19,7 +19,7 @@ namespace math {
 class matrix : xobject {
 
     private:
-        complex* values;
+        complex values[];
         uint rows;
         uint columns;
         uint length;
@@ -32,7 +32,7 @@ class matrix : xobject {
             this->rows = rows > 0 ? rows : 1;
             this->columns = columns > 0 ? columns : 1;
             this->length = (this->rows) * (this->columns);
-            this->values = new complex[this->length];
+            this->values = complex[this->length];
         }
 
         /// </Summary>
@@ -49,7 +49,7 @@ class matrix : xobject {
         /// Matrix destructor
         /// </Summary>
         ~matrix(){
-            delete this->values;
+            
         }
 
         /// </Summary>
@@ -225,6 +225,31 @@ matrix operator * (matrix a, matrix b){
 
     return m;
 }
+
+//Tensor product
+matrix operator << (matrix a, matrix b){
+	//Compute width
+	uint nw = a.countColumns() * b.countColumns();
+	uint nh = a.countRows() * b.countRows();
+		
+	//Create matrix;
+	matrix m(nh, nw);
+	
+	//Loop over all elements setting as necessary
+	for(uint ac = 0; ac < a.countColumns(); ac++){
+		for(uint ar = 0; ar < a.countRows(); ar++){
+			for(uint bc = 0; bc < b.countColumns(); bc++){
+				for(uint br = 0; br < b.countRows(); br++){
+					complex v = a(ar, ac) * b (br, bc);
+					m(ar * b.countRows() + br,ac * b.countColumns() + bc) = v;
+				}
+			}
+		}
+	}
+	
+	return m;
+}
+
 
 }
 }
