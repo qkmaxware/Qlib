@@ -1,6 +1,7 @@
 #include "./../types.h"
 #include "./../general/object.hpp"
 #include <math.h> 
+#include <stdlib.h>
 #include <sstream>
 
 #ifndef _QLIB_MATH_COMPLEX_H

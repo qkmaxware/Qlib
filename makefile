@@ -2,7 +2,7 @@
 #Compiler settings
 #-------------------
 GCC	= g++
-COMPILE_FLAGS = -g
+COMPILE_FLAGS = -g -std=c++11
 
 #-------------------
 #File/Folder settings

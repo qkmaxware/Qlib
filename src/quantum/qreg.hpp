@@ -4,7 +4,18 @@
 namespace qlib {
 namespace quantum {
 	
+class qreg {
 
+    private:
+        uint qubits;
+
+    public:
+        qreg(uint qubits){
+            if(qubits < 1)
+                qubits = 1;
+            this->qubits = qubits;
+        }
+};
 	
 }
 }

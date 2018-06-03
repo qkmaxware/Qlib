@@ -19,7 +19,7 @@ namespace math {
 class matrix : xobject {
 
     private:
-        complex values[];
+        std::vector<complex> values;
         uint rows;
         uint columns;
         uint length;
@@ -32,7 +32,9 @@ class matrix : xobject {
             this->rows = rows > 0 ? rows : 1;
             this->columns = columns > 0 ? columns : 1;
             this->length = (this->rows) * (this->columns);
-            this->values = complex[this->length];
+            this->values = std::vector<complex>(this->length);
+            for(uint i = 0; i < this->length; i++)
+                this->values[i] = complex();
         }
 
         /// </Summary>
@@ -49,7 +51,7 @@ class matrix : xobject {
         /// Matrix destructor
         /// </Summary>
         ~matrix(){
-            
+            //delete this->values;
         }
 
         /// </Summary>
@@ -141,17 +143,19 @@ class matrix : xobject {
         /// </Summary>
         std::string toString(){
             std::stringstream sb;
-            sb << "[";
+            sb << "{";
             for(uint r = 0; r < this->rows; r++){
                 if(r != 0)
                     sb << ";";
+                sb << "{";
                 for(uint c = 0; c < this->columns; c++){
                     if(c != 0)
                         sb << ",";
                     sb << get(r, c).toString();
                 }
+                sb << "}";
             }
-            sb << "]";
+            sb << "}";
             return sb.str();
         };
 
@@ -236,16 +240,17 @@ matrix operator << (matrix a, matrix b){
 	matrix m(nh, nw);
 	
 	//Loop over all elements setting as necessary
-	for(uint ac = 0; ac < a.countColumns(); ac++){
-		for(uint ar = 0; ar < a.countRows(); ar++){
-			for(uint bc = 0; bc < b.countColumns(); bc++){
-				for(uint br = 0; br < b.countRows(); br++){
-					complex v = a(ar, ac) * b (br, bc);
-					m(ar * b.countRows() + br,ac * b.countColumns() + bc) = v;
-				}
-			}
-		}
-	}
+	uint r = 0;
+    uint c = 0;
+    for(uint ar = 0; ar < a.countRows(); ar++){
+        for(uint ac = 0; ac < a.countColumns(); ac++){
+            for(uint br = 0; br < b.countRows(); br++){
+                for(uint bc = 0; bc < b.countColumns(); bc++){
+                    m(br + ar * b.countRows(), bc + ac * b.countColumns()) = a(ar, ac) * b(br, bc); 
+                }
+            }
+        }
+    }
 	
 	return m;
 }
