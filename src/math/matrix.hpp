@@ -1,3 +1,6 @@
+#ifndef _QLIB_MATH_MATRIX_H
+#define _QLIB_MATH_MATRIX_H
+
 #include "complex.hpp"
 #include "./../general/object.hpp"
 
@@ -6,8 +9,6 @@
 #include <math.h> 
 #include <sstream>
 
-#ifndef _QLIB_MATH_MATRIX_H
-#define _QLIB_MATH_MATRIX_H
 
 namespace qlib {
 namespace math {
@@ -16,7 +17,7 @@ namespace math {
 // Class definition
 //----------------------------------------------------------
 
-class matrix : xobject {
+class matrix : public xobject {
 
     private:
         std::vector<complex> values;
@@ -40,7 +41,7 @@ class matrix : xobject {
         /// </Summary>
         /// Create a matrix of this size with the given values in compressed row->column form 
         /// </Summary>
-        matrix(int rows, int colums, std::vector<complex> values) : matrix(rows, columns){
+        matrix(int rows, int columns, std::vector<complex> values) : matrix(rows, columns){
             size_t smallest = this->length < values.size() ? this->length : values.size();
             for(size_t i = 0; i < smallest; i++){
                 this->values[i] = values[i];

@@ -1,11 +1,11 @@
-#include "./../types.h"
+#ifndef _QLIB_MATH_COMPLEX_H
+#define _QLIB_MATH_COMPLEX_H
+
 #include "./../general/object.hpp"
+
 #include <math.h> 
 #include <stdlib.h>
 #include <sstream>
-
-#ifndef _QLIB_MATH_COMPLEX_H
-#define _QLIB_MATH_COMPLEX_H
 
 namespace qlib {
 namespace math {
@@ -14,7 +14,7 @@ namespace math {
 // Class definition
 //----------------------------------------------------------
 
-class complex : xobject {
+class complex : public xobject {
 
     private:
 

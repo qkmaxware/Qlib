@@ -1,4 +1,7 @@
+#include "./types.h"
+
 #include <sstream>
+#include <exception>
 
 #ifndef _QLIB_GEN_OBJECT_H
 #define _QLIB_GEN_OBJECT_H
