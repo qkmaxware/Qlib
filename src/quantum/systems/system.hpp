@@ -1,0 +1,29 @@
+#ifndef _QLIB_QUANTUM_SYSTEM_H
+#define _QLIB_QUANTUM_SYSTEM_H
+
+#include "./../../general/object.hpp"
+#include "./../../math/complex.hpp" 
+#include "./../../math/matrix.hpp" 
+#include "./../gates/igate.hpp"
+
+namespace qlib {
+namespace quantum {
+
+//----------------------------------------------------------
+// Interface definition
+//----------------------------------------------------------
+class qsystem: public xobject {
+    private:
+    public:
+        virtual matrix& state() = 0;
+        virtual void apply(qlib::quantum::gates::igate& gate, args<ulong> inputBits) = 0;
+        virtual i32 measure(i32 qubit) = 0;
+        virtual std::string toString(){
+            return xobject::toString();
+        };
+};
+
+}
+}
+
+#endif

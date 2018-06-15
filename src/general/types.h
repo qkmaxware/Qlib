@@ -29,6 +29,7 @@
     #define SUPPORTS_FLOAT32 0
 
     typedef int isize;  //System native sized integer
+    typedef long int ilong;
 
     //Signed integers
     #ifdef INT8_MAX
@@ -53,6 +54,7 @@
     #endif
 
     typedef unsigned int usize; //System native sized unsigned integer
+    typedef long unsigned int ulong;
 
     //Unsigned integers
     #ifdef UINT8_MAX
