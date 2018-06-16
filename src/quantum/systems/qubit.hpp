@@ -48,9 +48,9 @@ class qubit : public qsystem {
         /// <Summary>
         /// Apply a quantum gate to this qubit
         /// </Summary>
-        void apply(qlib::quantum::gates::igate& gate, args<ulong> inputBits){
+        void apply(qlib::quantum::gates::igate& gate, std::vector<ulong> inputBits){
             if(gate.inputs() != 1){
-                throw length_error("Only one qubit operators can be applied to single qubit systems"); 
+                throw std::length_error("Only one qubit operators can be applied to single qubit systems"); 
             }
             this->vec = gate.operate(state(), inputBits);
         }

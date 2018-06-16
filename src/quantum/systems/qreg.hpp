@@ -27,16 +27,17 @@ class qreg : public qsystem {
     public:
         qreg(u32 qubits) : amplitudes(1 << qubits,1){
             this->qubits = qubits;
-
             this->states = 1 << qubits;
+            //initalize to state 0
+            amplitudes(0,0) = complex(1);
         }
 
         matrix& state(){
             return this->amplitudes;
         }
 
-        void apply(qlib::quantum::gates::igate& gate, args<ulong> inputBits){
-
+        void apply(qlib::quantum::gates::igate& gate, std::vector<ulong> inputBits){
+            this->amplitudes = gate.operate(state(), inputBits);
         }
 
         i32 measure(i32 qubit){
@@ -49,7 +50,7 @@ class qreg : public qsystem {
             for(uint i = 0; i < states; i++){
                 if(i != 0)
                     sb << " + ";
-                sb << "(" << (this->amplitudes(i,1)).toString() << ")|" << i << ">";
+                sb << "(" << (this->amplitudes(i,0)).toString() << ")|" << i << ">";
             }
 
             return sb.str();

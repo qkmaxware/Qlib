@@ -32,7 +32,7 @@ class ensemble {
         /// <Summary>
         /// Apply operator to all systems in the ensemble
         /// </Summary>
-        void apply(qlib::quantum::gates::igate& op, args<ulong> inputBits){
+        void apply(qlib::quantum::gates::igate& op,std::vector<ulong> inputBits){
             for(std::vector<qsystem*>::iterator it = set.begin(); it != set.end(); it++) {
                 (*it)->apply(op, inputBits);
             }

@@ -17,8 +17,16 @@ using namespace std;
 int main(){
     qubit q;
     cout << q.toString() << endl;
-    q.apply(gates::H, args<ulong>({0}));
+    q.apply(gates::H, {0});
     cout << q.toString() << endl;
+
+    qreg r(2);
+    qreg r2(2);
+    cout << r.toString() << endl;
+    r.apply(gates::H, {0});
+    cout << r.toString() << endl;
+    r2.apply(gates::H, {1});
+    cout << r2.toString() << endl;
     /*
     std::cout << "Gates" << std::endl;
     std::cout << H.toString() << std::endl;

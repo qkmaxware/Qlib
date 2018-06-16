@@ -16,7 +16,7 @@ class qsystem: public xobject {
     private:
     public:
         virtual matrix& state() = 0;
-        virtual void apply(qlib::quantum::gates::igate& gate, args<ulong> inputBits) = 0;
+        virtual void apply(qlib::quantum::gates::igate& gate,std::vector<ulong> inputBits) = 0;
         virtual i32 measure(i32 qubit) = 0;
         virtual std::string toString(){
             return xobject::toString();
