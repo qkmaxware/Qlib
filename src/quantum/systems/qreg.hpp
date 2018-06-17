@@ -37,7 +37,8 @@ class qreg : public qsystem {
         }
 
         void apply(qlib::quantum::gates::igate& gate, std::vector<ulong> inputBits){
-            this->amplitudes = gate.operate(state(), inputBits);
+            matrix ref = this->amplitudes;
+            gate.operate(ref, state(), inputBits);
         }
 
         i32 measure(i32 qubit){

@@ -19,7 +19,7 @@ class igate : public xobject {
     public:
         virtual std::string name() = 0;
         virtual size_t inputs() = 0;
-        virtual matrix operate(matrix& state_vector, std::vector<ulong> inputQubits) = 0;
+        virtual void operate(matrix& in, matrix& out, std::vector<ulong> inputQubits) = 0;
 };
 
 }

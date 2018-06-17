@@ -52,7 +52,8 @@ class qubit : public qsystem {
             if(gate.inputs() != 1){
                 throw std::length_error("Only one qubit operators can be applied to single qubit systems"); 
             }
-            this->vec = gate.operate(state(), inputBits);
+            matrix ref = this->vec;
+            gate.operate(vec, state(), inputBits);
         }
 
         /// <Summary>

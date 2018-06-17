@@ -5,7 +5,7 @@
 #include "./gates/pauliX.hpp"
 #include "./gates/pauliY.hpp"
 #include "./gates/pauliZ.hpp"
-
+#include "./gates/cnot.hpp"
 
 //TODO phase shift gate
 /*

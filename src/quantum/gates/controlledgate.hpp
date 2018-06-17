@@ -1,8 +1,8 @@
-#ifndef _QLIB_QUANTUM_ONEQUBITGATE_H
-#define _QLIB_QUANTUM_ONEQUBITGATE_H
+#ifndef _QLIB_QUANTUM_CONTROLLEDGATE_H
+#define _QLIB_QUANTUM_CONTROLLEDGATE_H
 
 #include "./igate.hpp"
-
+#include "onequbitgate.hpp"
 
 namespace qlib {
 namespace quantum {
@@ -12,25 +12,23 @@ namespace gates {
 // Class definition
 //----------------------------------------------------------
 
-class onequbitgate : public igate {
+class controlledgate : public igate {
 
     private:
         std::string sname;
-        matrix m;
+        onequbitgate& refgate;
 
     public:
         /// <Summary>
         /// Create a new quanutm operator for the given number of states
         /// </Summary>
-        onequbitgate(std::string name, std::vector<complex> values) : m(2, 2, values){
-            this->sname = name;
-        }
+        controlledgate(std::string name, onequbitgate& gate) : sname(name), refgate(gate){}
 
         /// <Summary>
         /// Number of input qubits this operator can be applied to
         /// </Summary>
         size_t inputs(){
-            return 1;
+            return 2;
         } 
 
         /// <Summary>
@@ -44,17 +42,20 @@ class onequbitgate : public igate {
         /// Operate on a given column vector state superposition
         /// </Summary>
         void operate(matrix& in, matrix& out, std::vector<ulong> inputQubits){
-            //Simple implementation for single qubit
-            //return (this->m) * state_vector;
+            matrix& m = refgate.getMatrix();
 
             //Init loop
-            ulong k = inputQubits[0];
+            ulong k = inputQubits[1];
+            ulong c = 1 << inputQubits[0];
             ulong stride = 1 << k;
             ulong stride_gap = stride << 1;
+            
             //Iterate over consecutive groups of amplitudes
             for(ulong g = 0; g < in.countRows(); g += stride_gap){
-                //Apply Q to every pair of amplitudes
+                //Apply Q to every pair of amplitudes where the control bit is set
                 for(ulong i = g; i < g + stride; i++){
+                    if(i & c == 0)
+                        continue;
                     complex ai      = m(0,0) * in(i,0) + m(0,1) * in(i + stride,0);
                     complex ai_2k   = m(1,0) * in(i,0) + m(1,1) * in(i + stride,0);
 
@@ -68,7 +69,7 @@ class onequbitgate : public igate {
         /// Returns the matrix representation of this operator
         /// </Summary>
         qlib::math::matrix& getMatrix(){
-            return this->m;
+            return this->refgate.getMatrix();
         }
 
         /// <Summary>
@@ -77,7 +78,7 @@ class onequbitgate : public igate {
         std::string toString(){
             std::stringstream sb;
 
-            sb << (this->sname) << "(" << (1) << ") -" << (this->m.toString());
+            sb << (this->sname) << "(" << (2) << ") -" << (this->refgate.toString());
 
             return sb.str();
         }

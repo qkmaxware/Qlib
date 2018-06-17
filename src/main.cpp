@@ -1,32 +1,25 @@
 #include <iostream>
 #include <vector>
 
-#include "./general/object.hpp"
-#include "./math/complex.hpp"
-#include "./math/matrix.hpp"
-#include "./quantum/systems/qubit.hpp"
-#include "./quantum/systems/qreg.hpp"
-#include "./quantum/standard_gates.hpp"
-#include "./quantum/systems/system.hpp"
-#include "./quantum/systems/ensemble.hpp"
+#include "qlib.h"
 
 using namespace qlib::quantum;
 using namespace qlib::math;
 using namespace std;
 
 int main(){
+    /*
     qubit q;
     cout << q.toString() << endl;
     q.apply(gates::H, {0});
     cout << q.toString() << endl;
-
+    */
     qreg r(2);
-    qreg r2(2);
     cout << r.toString() << endl;
     r.apply(gates::H, {0});
     cout << r.toString() << endl;
-    r2.apply(gates::H, {1});
-    cout << r2.toString() << endl;
+    r.apply(gates::CNOT, {0, 1});
+    cout << r.toString() << endl;
     /*
     std::cout << "Gates" << std::endl;
     std::cout << H.toString() << std::endl;
