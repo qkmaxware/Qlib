@@ -9,7 +9,7 @@
 namespace qlib {
 namespace quantum {
 
-class ensemble {
+class ensemble : public qsystem{
     private:
         std::vector<qsystem*> set;
 

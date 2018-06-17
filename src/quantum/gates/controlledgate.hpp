@@ -3,6 +3,7 @@
 
 #include "./igate.hpp"
 #include "onequbitgate.hpp"
+#include <sstream>
 
 namespace qlib {
 namespace quantum {
@@ -42,26 +43,32 @@ class controlledgate : public igate {
         /// Operate on a given column vector state superposition
         /// </Summary>
         void operate(matrix& in, matrix& out, std::vector<ulong> inputQubits){
+            if(inputQubits.size() != 2){
+                std::stringstream sb;
+                sb << "Two qubit gates operate on only two qubits, ";
+                sb << inputQubits.size();
+                sb << " provided";
+                throw std::length_error(sb.str()); 
+            }
+
             matrix& m = refgate.getMatrix();
 
             //Init loop
             ulong k = inputQubits[1];
             ulong c = 1 << inputQubits[0];
             ulong stride = 1 << k;
-            ulong stride_gap = stride << 1;
-            
-            //Iterate over consecutive groups of amplitudes
-            for(ulong g = 0; g < in.countRows(); g += stride_gap){
-                //Apply Q to every pair of amplitudes where the control bit is set
-                for(ulong i = g; i < g + stride; i++){
-                    if(i & c == 0)
-                        continue;
-                    complex ai      = m(0,0) * in(i,0) + m(0,1) * in(i + stride,0);
-                    complex ai_2k   = m(1,0) * in(i,0) + m(1,1) * in(i + stride,0);
 
-                    out(i,0) = ai;
-                    out(i + stride, 0) = ai_2k;
+            for(ulong i = 0; i < in.countRows(); i++){
+                ulong mask = i & c;
+                ulong smask = i & stride; 
+                if(!mask){
+                    continue;
                 }
+                ulong c1_t0 = i & ~smask; //a(*1c*0t*...)
+                ulong c1_t1 = i | smask;  //a(*1c*1t*...)
+
+                out(c1_t0, 0) = m(0,0) * in(c1_t0,0) + m(0,1) * in(c1_t1,0);
+                out(c1_t1, 0) = m(1,0) * in(c1_t0,0) + m(1,1) * in(c1_t1,0);
             }
         }
 
