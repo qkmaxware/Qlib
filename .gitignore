@@ -1,9 +1,10 @@
-./obj
+obj
 
-./bin
+bin
 
 *.zip
 
-./src/ide/build
-./src/ide/dist
-./src/ide/config.ini
+src/ide/build
+src/ide/dist
+src/ide/config.ini
+config.ini

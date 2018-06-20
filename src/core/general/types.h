@@ -54,6 +54,7 @@
     #endif
 
     typedef unsigned int usize; //System native sized unsigned integer
+    typedef unsigned int uint;  //System native sized unsigned integer
     typedef long unsigned int ulong;
 
     //Unsigned integers

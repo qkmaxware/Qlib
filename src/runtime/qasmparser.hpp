@@ -260,6 +260,27 @@ namespace rules {
 }
 }
 
+class parseexception : public std::exception {
+    private:
+        std::string what_message;
+
+    public:
+        ulong r;
+        ulong c;
+        std::string file;
+        std::string msg;
+
+        parseexception(ulong row, ulong column, std::string file, std::string message) : r(row), c(column), file(file), msg(message){
+            std::stringstream sb; 
+            sb << msg << " in " << file << " at [" << r << ", " << c << "]";
+            what_message = sb.str();
+        }
+
+        const char* what() const throw() {
+            return what_message.c_str();
+        }
+};
+
 bool try_parse_qasm(program& prog, std::string file_name, lexical::lexer& tokenizer){
     std::ifstream file(file_name);
 	std::string line;
@@ -272,11 +293,11 @@ bool try_parse_qasm(program& prog, std::string file_name, lexical::lexer& tokeni
                 file_line++;
                 continue;
             }
-
+            cout << "line " << file_line << endl;
             if(qasm::rules::try_parse_rule(prog, tokenizer, tokens)){
 
             }else{
-                break;
+                throw parseexception(file_line, 0, file_name, "Line doesn't match any valid statement types");
             }
             file_line++;
         }catch(lexical::lexicalexception& ex){

@@ -125,6 +125,10 @@ public class IniIO {
         return -1;
     }
     
+    public void set(String prop, Object value){
+        this.options.put(prop, String.valueOf(value));
+    }
+    
     public boolean exists(String prop){
         prop = prop.toLowerCase();
         if(this.options.containsKey(prop)){

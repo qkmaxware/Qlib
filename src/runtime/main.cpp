@@ -13,11 +13,11 @@
 #include <iostream>
 #include <fstream>
 
+#include "./../core/qlib.h"
+
 #include "./lexer.hpp"
 #include "./parser.hpp"
 #include "./qasmparser.hpp"
-
-#include "./../core/qlib.h"
 
 using namespace std;
 using namespace lexical;
@@ -81,11 +81,12 @@ int main(int arg_count, char* arg_values[]){
 	if(try_parse_qasm(prog, arg_values[1], tokenizer)){
 		//qasmenv env;
 		//prog.run(env);
-		//for(std::vector<qasm::exec::executable*>::iterator it = lines.begin(); it != lines.end(); it++){
+		for(std::vector<qasm::exec::executable*>::iterator it = prog.lines.begin(); it != prog.lines.end(); it++){
 			//(*it)->invoke_rootprogram(prog, env);
-		//}
+			
+		}
 	}
-	
+
 	//Program and executable lines are cleaned up by program destructor
 	return 0;
 }

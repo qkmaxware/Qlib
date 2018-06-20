@@ -71,7 +71,7 @@ public class FileManager {
             editor.setBackground(new Color(253, 247, 225));
             editor.addStyle("(?:^|\\n)\\s*.*?(?=(?:$|\\s))", new Color(99,125,160));
             editor.addStyle("\\/\\/.*?(?=(?:\\n|$))", new Color(111, 159, 147));
-            editor.addStyle("\\/\\*(?:.|\\n)+?\\*\\/", new Color(111, 159, 147));
+            
             
             JScrollPane editor_scroll = new JScrollPane(editor);
             editor_scroll.getVerticalScrollBar().setUnitIncrement(16);
@@ -114,14 +114,14 @@ public class FileManager {
                     }
                     openTab.name = file.getName();
                     openTab.filepath = file.getAbsolutePath();
-                    JOptionPane.showMessageDialog(null, "File: " + openTab.name, "Saved", JOptionPane.INFORMATION_MESSAGE);
+                    //JOptionPane.showMessageDialog(null, "File: " + openTab.name, "Saved", JOptionPane.INFORMATION_MESSAGE);
                     openTab.setChanged(false, tabs);
                 }
             }else{
                 try(PrintWriter pw = new PrintWriter(openTab.filepath)){
                     pw.print(openTab.editor.getText());
                 }
-                JOptionPane.showMessageDialog(null, "File: " + openTab.name, "Saved", JOptionPane.INFORMATION_MESSAGE);
+                //JOptionPane.showMessageDialog(null, "File: " + openTab.name, "Saved", JOptionPane.INFORMATION_MESSAGE);
                 openTab.setChanged(false, tabs);
             }
         }catch(Exception e){

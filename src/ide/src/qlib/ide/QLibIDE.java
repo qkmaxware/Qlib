@@ -37,6 +37,8 @@ import resources.Loader;
  */
 public class QLibIDE {
 
+    public static final String configLocation = "config.ini";
+    
     /**
      * @param args the command line arguments
      */
@@ -48,7 +50,7 @@ public class QLibIDE {
                     "Binary Path: ./qlib",
                     ""
                 });
-                IniIO userConfig = IniIO.readAndUpdate("config.ini", IniIO.DEFAULT);
+                IniIO userConfig = IniIO.readAndUpdate(configLocation, IniIO.DEFAULT);
 
                 QLibIDE ide = new QLibIDE(userConfig);
                 ide.show();
@@ -90,8 +92,9 @@ public class QLibIDE {
         pane.add(manager.getPanel(), BorderLayout.CENTER);
         
         log = new JTextArea();
+        log.setLineWrap(true);
         log_scroll = new JScrollPane(log);
-        log.setPreferredSize(new Dimension(120, 150));
+        log_scroll.setPreferredSize(new Dimension(120, 150));
         log_scroll.getVerticalScrollBar().setUnitIncrement(16);
         log.setEditable(false);
         pane.add(log_scroll, BorderLayout.SOUTH);
@@ -119,11 +122,17 @@ public class QLibIDE {
             public void mouseClicked(MouseEvent e) {
                 //Create a file chooser
                 final JFileChooser fc = new JFileChooser();
+                if(config.getString("last lile") != null){
+                    fc.setCurrentDirectory(new File(config.getString("last file")).getParentFile());
+                }
                 //In response to a button click:
                 int returnVal = fc.showOpenDialog(null);
                 if (returnVal == JFileChooser.APPROVE_OPTION) {
                     File file = fc.getSelectedFile();
                     manager.open(file.getAbsolutePath());
+                    
+                    config.set("last file", file.getAbsolutePath());
+                    IniIO.write(config, configLocation);
                 }
             }
         });
@@ -173,10 +182,7 @@ public class QLibIDE {
                 
                 try{
                     RuntimeReport rpt = runtime.dispatch(f);
-                    log(rpt.output);
-                    if(!rpt.errors.trim().equals("")){
-                        logSevere(rpt.errors);
-                    }
+                    log(rpt.toString());
                 }catch(Exception ex){
                     log(ex);
                 }
@@ -208,20 +214,6 @@ public class QLibIDE {
         
         frame.pack();
         frame.setSize(640, 480);
-    }
-    
-    public void logSevere(Object message){
-        if(message == null)
-            return;
-        
-        Date date = new Date();
-        log.append("SEVERE: [");
-        log.append(dateFormat.format(date));
-        log.append("] - ");
-        log.append(message.toString());
-        log.append("\n");
-        
-        log_scroll.getVerticalScrollBar().setValue(log_scroll.getVerticalScrollBar().getMaximum());
     }
     
     public void log(Object message){

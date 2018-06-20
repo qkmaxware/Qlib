@@ -25,16 +25,18 @@ public class QLibRuntime {
     
     public RuntimeReport dispatch(File f) throws IOException{
         //Build process
-        ProcessBuilder pb = new ProcessBuilder(QlibPath.getName());
+        //ProcessBuilder pb = new ProcessBuilder(QlibPath.getName());
         
         //Set env variables
-        Map<String, String> env = pb.environment();
+        //Map<String, String> env = pb.environment();
         
         //Set working directory
-        File workingFolder = new File(QlibPath.getParent());
-        pb.directory(workingFolder);
+        //File workingFolder = new File(QlibPath.getParent());
+        //pb.directory(workingFolder);
         
-        Process proc = pb.start();
+        //Process proc = pb.start();
+        
+        Process proc = Runtime.getRuntime().exec(new String[]{QlibPath.getAbsolutePath(), f.getAbsolutePath()});
         
         BufferedReader stdInput = new BufferedReader(new 
         InputStreamReader(proc.getInputStream()));
@@ -49,6 +51,7 @@ public class QLibRuntime {
         while ((s = stdInput.readLine()) != null)
         {
             sb.append(s);
+            sb.append(System.lineSeparator());
         }
         rpt.output = sb.toString();
         sb = new StringBuilder();
@@ -57,6 +60,7 @@ public class QLibRuntime {
         while ((s = stdError.readLine()) != null)
         {
             sb.append(s);
+            sb.append(System.lineSeparator());
         }
         rpt.errors = sb.toString();
         
