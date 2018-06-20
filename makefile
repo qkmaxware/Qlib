@@ -20,8 +20,9 @@ PATH_SEPARATOR = /
 #Source files
 #-------------------
 SRC_SRC = $(wildcard $(SRC_DIR)$(PATH_SEPARATOR)*.cpp)
+RUNTIME_SRC = $(wildcard $(SRC_DIR)$(PATH_SEPARATOR)runtime$(PATH_SEPARATOR)*.cpp)
 
-SOURCES = $(SRC_SRC)
+SOURCES = $(SRC_SRC) $(RUNTIME_SRC)
 
 #-------------------
 #Rules
@@ -36,32 +37,34 @@ LINKLIST = $(patsubst %.cpp, $(OBJ_DIR)$(PATH_SEPARATOR)%.o, $(BASENAMES))
 #-------------------
 #Targets
 #-------------------
-compress:
-	zip -r compressed.zip .
 
 build: compile $(BIN_DIR)
+
+build-win:
+	make build GCC=i686-w64-mingw32-g++ EXE_NAME=$(EXE_NAME).w32.exe
+	make build GCC=x86_64-w64-mingw32-g++ EXE_NAME=$(EXE_NAME).w64.exe
 
 run: 
 	.$(PATH_SEPARATOR)$(BIN_DIR)$(PATH_SEPARATOR)$(EXE_NAME)
 
-compile: mkdir $(TOCOMPILE)
+compile: init $(TOCOMPILE)
 
 clean:
 	rm -f $(LINKLIST) || true
 	rm -rf $(BIN_DIR)$(PATH_SEPARATOR)$(EXE_NAME) ||true
 
-mkdir: 
+init: 
 	mkdir bin -p
 	mkdir lib -p
 	mkdir obj -p
 	mkdir src -p
 
-get: clean mkdir
+get: clean init
 	rm -r $(LIB_DIR) || true
 	mkdir lib
 
-$(BIN_DIR): mkdir $(TOCOMPILE)
-	$(GCC) $(LINKLIST) -o $(BIN_DIR)/$(EXE_NAME) -std=c++0x
+$(BIN_DIR): init $(TOCOMPILE)
+	$(GCC) $(LINKLIST) -o $(BIN_DIR)/$(EXE_NAME) $(COMPILE_FLAGS)
 
 #-------------------
 #Compound Targets
@@ -72,4 +75,18 @@ clean-build: clean build
 
 all: clean build run
 
-install-run: mkdir get all
+install-run: init get all
+
+#--------------------
+#Utilities
+#--------------------
+install-win-tools:
+	sudo apt-get remove mingw-w64
+	sudo apt-get autoremove
+	sudo apt-get update
+	sudo apt-cache search mingw | grep "Win32"
+	sudo apt-cache search mingw | grep "Win64"
+	sudo apt-get install mingw-w64 binutils-mingw-w64
+
+compress:
+	zip -r compressed.zip .

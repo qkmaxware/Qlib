@@ -1,0 +1,1 @@
+java -jar src/ide/dist/QLib_IDE.jar

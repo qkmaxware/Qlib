@@ -1,7 +1,7 @@
 #Qlib: 
 ##Quantum Computer Simulator
 
-Qlib is a standalone C++ library, with no external dependancies, that simulates a "perfect" Quantum Computer. 
+Qlib is a standalone C++ library, with no external dependancies, that simulates a "ideal" Quantum Computer.
 
 A quantum computer is a computer where instead of operating on bits, it opertates on quantum bits 'qubits'. What is special about quantum bits is that they do not have a specific value. Instead they have some probability to be in any number of states. Classically, a bit can either be 0 or 1 whereas a qubit can be in some superposition of 0 and 1
 ```
@@ -75,3 +75,6 @@ class igate : public xobject {
         virtual void operate(matrix& in, matrix& out, std::vector<ulong> inputQubits) = 0;
 };
 ```
+
+##References
+[qHiPSTER](https://arxiv.org/abs/1601.07195)  - Mikhail Smelyanskiy, Nicolas P.D Sawaya, Alan Aspuru-Guzik - Jan 2016 
