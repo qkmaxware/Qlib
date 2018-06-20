@@ -5,8 +5,10 @@
 #include <fstream>
 #include <vector>
 #include <map>
+#include <string>
 
 #include "./lexer.hpp"
+#include "./runtime.hpp"
 
 using namespace std;
 
@@ -21,8 +23,8 @@ namespace exec {
     class executable {
         private:
         public: 
-            virtual void invoke_rootprogram() {};
-            virtual void invoke_subprogram() {};
+            virtual void invoke_rootprogram(runtime::environment& env) {};
+            virtual void invoke_subprogram(runtime::environment& env) {};
     };
 
     class apply_subcircuit : public executable {
@@ -37,7 +39,7 @@ namespace exec {
         public:
             std::string name;
             std::vector<std::string> param_names;
-            std::vector<std::string> param_indecies;
+            std::vector<long> param_indecies;
 
             apply_gate(string name): name(name){}
     };
@@ -52,20 +54,20 @@ namespace exec {
     class measurement : public executable {
         public: 
             std::string qreg;
-            std::string qindex;
+            long qindex;
             std::string creg;
-            std::string cindex;
+            long cindex;
 
-            measurement(string qr, string qi, string cr, string ci) : qreg(qr), qindex(qi), creg(cr), cindex(ci) {}
+            measurement(string qr, long qi, string cr, long ci) : qreg(qr), qindex(qi), creg(cr), cindex(ci) {}
     };
 
     class declaration : public executable{
         public: 
             std::string type;
             std::string name;
-            std::string size;
+            long size;
         
-            declaration(string t, string n, string s) : type(t), name(n), size(s) {}
+            declaration(string t, string n, long s) : type(t), name(n), size(s) {}
     };
 
 }
@@ -132,7 +134,7 @@ namespace rules {
                     return false;
                 }
                 apply.param_names.push_back(tokens[i].content[1]);
-                apply.param_indecies.push_back(tokens[i].content[2]);
+                apply.param_indecies.push_back(std::stol(tokens[i].content[2]));
             }
             prog.push(new qasm::exec::apply_gate(apply));
             return true;
@@ -169,7 +171,10 @@ namespace rules {
             (tokens[3].lexemeptr)->name == "Indexor"
         ){
             prog.push(new qasm::exec::measurement(
-                tokens[1].content[1], tokens[1].content[2], tokens[3].content[1], tokens[3].content[2]
+                tokens[1].content[1], 
+                std::stol(tokens[1].content[2]), 
+                tokens[3].content[1], 
+                std::stol(tokens[3].content[2])
             ));
             return true;
         }else{
@@ -189,7 +194,11 @@ namespace rules {
             (tokens[3].lexemeptr)->name == "Integer" &&
             (tokens[4].lexemeptr)->name == "Right ]" 
         ){
-            prog.push(new qasm::exec::declaration(tokens[0].content[0], tokens[1].content[0], tokens[3].content[0]));
+            prog.push(new qasm::exec::declaration(
+                tokens[0].content[0], 
+                tokens[1].content[0], 
+                std::stol(tokens[3].content[0])
+            ));
             return true;
         }else{
             return false;

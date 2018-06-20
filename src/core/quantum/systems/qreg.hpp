@@ -25,6 +25,7 @@ class qreg : public qsystem {
         matrix amplitudes;
 
     public:
+        qreg() : qreg(1) {}
         qreg(u32 qubits) : amplitudes(1 << qubits,1){
             this->qubits = qubits;
             this->states = 1 << qubits;
