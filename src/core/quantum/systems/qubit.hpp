@@ -14,10 +14,19 @@
 namespace qlib {
 namespace quantum {
 
+/// <Summary>
+/// Representation of a single qubit 
+/// </Summary>
 class qubit : public qsystem {
 
     private:
+        /// <Summary>
+        /// State vector amplitudes
+        /// </Summary>
         qlib::math::matrix vec;
+        /// <Summary>
+        /// Random distribution used during measurement
+        /// </Summary>
         std::uniform_real_distribution<f32> distribution;
 
     public:
@@ -48,7 +57,7 @@ class qubit : public qsystem {
         /// <Summary>
         /// Apply a quantum gate to this qubit
         /// </Summary>
-        void apply(qlib::quantum::gates::igate& gate, std::vector<ulong> inputBits){
+        void apply(qlib::quantum::gates::igate& gate, std::vector<u64> inputBits){
             if(gate.inputs() != 1){
                 throw std::length_error("Only one qubit operators can be applied to single qubit systems"); 
             }
@@ -59,7 +68,7 @@ class qubit : public qsystem {
         /// <Summary>
         /// Apply a quantum measurement to this qubit
         /// </Summary>
-        i32 measure(i32 qubit = 0){ 
+        i8 measure(i64 qubit = 0){ 
             //Prob of |0> is vec(0,0).sqrMagnitude();
             f32 p0 = vec(0,0).sqrMagnitude();
             //Prob of |1> is vec(1,0).sqrMagnitude() or 1-p0 due to normalization

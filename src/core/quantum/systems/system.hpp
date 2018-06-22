@@ -12,14 +12,23 @@ namespace quantum {
 //----------------------------------------------------------
 // Interface definition
 //----------------------------------------------------------
+/// </Summary>
+/// Base class for all quantum systems
+/// </Summary>
 class qsystem: public xobject {
     private:
     public:
-        //Apply a quantum gate to this system
-        virtual void apply(qlib::quantum::gates::igate& gate,std::vector<ulong> inputBits) = 0;
-        //Collapse the state and return the value of the measured qubit
-        virtual i32 measure(i32 qubit) = 0;
-        //Human readable output
+        /// </Summary>
+        /// Apply a quantum gate to this system
+        /// </Summary>
+        virtual void apply(qlib::quantum::gates::igate& gate,std::vector<u64> inputBits) = 0;
+        /// <Summary>
+        /// Collapse the state and return the value of the measured qubit
+        /// </Summary>
+        virtual i8 measure(i64 qubit) = 0;
+        /// <Summary>
+        /// Human readable output
+        /// </Summary>
         virtual std::string toString(){
             return xobject::toString();
         };

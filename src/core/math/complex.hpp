@@ -14,14 +14,21 @@ namespace math {
 // Class definition
 //----------------------------------------------------------
 
+/// <Summary>
+/// Object representation of a complex number in the form a + ib;
+/// </Summary>
 class complex : public xobject {
 
     private:
 
     public:
-        ///Real component
+        /// </Summary>
+        /// Real component
+        /// </Summary>
         f32 r;
-        ///Imaginary component
+        /// </Summary>
+        /// Imaginary component
+        /// </Summary>
         f32 i;
 
         /// </Summary>
@@ -128,30 +135,51 @@ class complex : public xobject {
 // Operators
 //----------------------------------------------------------
 
+/// </Summary>
+/// Add two complex numbers
+/// </Summary>
 complex operator + (complex a, complex b){
     return complex(a.r + b.r, a.i + b.i);
 };
 
+/// </Summary>
+/// Subtract two complext numbers
+/// </Summary>
 complex operator - (complex a, complex b){
     return complex(a.r - b.r, a.i - b.i);
 };
 
+/// </Summary>
+/// Multiply two complex numbers
+/// </Summary>
 complex operator * (f32 s, complex a){
     return complex(s * a.r, s * a.i);
 };
 
+/// </Summary>
+/// Scale up a complex vector by a scalar quantity
+/// </Summary>
 complex operator * (complex a, f32 s){
     return complex(s * a.r, s * a.i);
 };
 
+/// </Summary>
+/// Scale down a complex vector by a scalar quantity
+/// </Summary>
 complex operator / (complex a, f32 s){
     return complex(a.r / s, a.i / s);
 };
 
+/// </Summary>
+/// Multiply two complex vectors
+/// </Summary>
 complex operator * (complex a, complex b){
     return complex(a.r * b.r - a.i * b.i, a.r * b.i + a.i * b.r);
 };
 
+/// </Summary>
+/// Divide two complex vectors
+/// </Summary>
 complex operator / (complex a, complex b){
     f32 d = b.r * b.r + b.i * b.i;
     f32 r = (a.r * b.r + a.i * b.i) / d;

@@ -50,6 +50,7 @@ public class FileManager {
     
     public FileManager(){
         tabs = new JTabbedPane();
+        tabs.setAutoscrolls(false);
     }
     
     public void empty(){
@@ -69,12 +70,20 @@ public class FileManager {
             
             CodeEditor editor = new CodeEditor();
             editor.setBackground(new Color(253, 247, 225));
+            //First word of line colour
             editor.addStyle("(?:^|\\n)\\s*.*?(?=(?:$|\\s))", new Color(99,125,160));
+            //Keyword colour
+            editor.addStyle("\\b(?:begin|end|measure)\\b", new Color(88, 108, 167));
+            //Label colour
+            editor.addStyle("\\..+", new Color(236, 173, 135));
+            //String colour
+            editor.addStyle("\\\"[^\\r\\n]*?\\\"", new Color(236, 173, 135));
+            //Comment colour
             editor.addStyle("\\/\\/.*?(?=(?:\\n|$))", new Color(111, 159, 147));
-            
             
             JScrollPane editor_scroll = new JScrollPane(editor);
             editor_scroll.getVerticalScrollBar().setUnitIncrement(16);
+            editor_scroll.setAutoscrolls(false);
             
             t.editor = editor;
             t.panel = editor_scroll;

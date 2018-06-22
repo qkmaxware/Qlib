@@ -17,12 +17,27 @@ namespace math {
 // Class definition
 //----------------------------------------------------------
 
+/// </Summary>
+/// Complex matrix class
+/// </Summary>
 class matrix : public xobject {
 
     private:
+        /// </Summary>
+        /// Flattened 1d array of matrix values
+        /// </Summary>
         std::vector<complex> values;
+        /// </Summary>
+        /// Number of rows
+        /// </Summary>
         size_t rows;
+        /// </Summary>
+        /// Number of columns
+        /// </Summary>
         size_t columns;
+        /// </Summary>
+        /// Number of elements
+        /// </Summary>
         size_t length;
 
     public:
@@ -160,12 +175,28 @@ class matrix : public xobject {
             return sb.str();
         };
 
+        /// <Summary>
+        /// Iterator starting at element 0,0
+        /// </Summary>
+        std::vector<complex>::iterator begin(){
+            return (this->values).begin();
+        }
+        
+        /// <Summary>
+        /// Iterator starting after element rows-1,columns-1
+        /// </Summary>
+        std::vector<complex>::iterator end(){
+            return (this->values).end();
+        }
 };
 
 //----------------------------------------------------------
 // Operators
 //----------------------------------------------------------
 
+/// </Summary>
+/// Add two matrices
+/// </Summary>
 matrix operator + (matrix a, matrix b){
     if(a.countRows() != b.countRows() || a.countColumns() != b.countColumns()){
         throw std::length_error("Matrix dims do not match");
@@ -177,6 +208,9 @@ matrix operator + (matrix a, matrix b){
     return m;
 }
 
+/// </Summary>
+/// Subtract two matrices
+/// </Summary>
 matrix operator - (matrix a, matrix b){
     if(a.countRows() != b.countRows() || a.countColumns() != b.countColumns()){
         throw std::length_error("Matrix dims do not match");
@@ -188,6 +222,9 @@ matrix operator - (matrix a, matrix b){
     return m;
 }
 
+/// </Summary>
+/// Scale up a matrix by a scalar quantity
+/// </Summary>
 matrix operator * (complex s, matrix a){
     matrix m(a.countRows(), a.countColumns());
     for(size_t i = 0; i < a.size(); i++){
@@ -196,6 +233,9 @@ matrix operator * (complex s, matrix a){
     return m;
 }
 
+/// </Summary>
+/// Scale up a matrix by a scalar quantity
+/// </Summary>
 matrix operator * (matrix a, complex s){
     matrix m(a.countRows(), a.countColumns());
     for(size_t i = 0; i < a.size(); i++){
@@ -204,6 +244,9 @@ matrix operator * (matrix a, complex s){
     return m;
 }
 
+/// </Summary>
+/// Scale down a matrix by a scalar quantity
+/// </Summary>
 matrix operator / (matrix a, complex s){
     matrix m(a.countRows(), a.countColumns());
     for(size_t i = 0; i < a.size(); i++){
@@ -212,6 +255,9 @@ matrix operator / (matrix a, complex s){
     return m;
 }
 
+/// </Summary>
+/// Multiply two matrices
+/// </Summary>
 matrix operator * (matrix a, matrix b){
     if(a.countColumns() != b.countRows()){
         throw std::length_error("Matrix dims do not match");
@@ -231,7 +277,9 @@ matrix operator * (matrix a, matrix b){
     return m;
 }
 
-//Tensor product
+/// </Summary>
+/// Compute the Kronicker tensor product of two matrices
+/// </Summary>
 matrix operator << (matrix a, matrix b){
 	//Compute width
 	size_t nw = a.countColumns() * b.countColumns();

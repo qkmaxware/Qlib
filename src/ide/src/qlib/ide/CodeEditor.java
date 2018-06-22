@@ -19,6 +19,7 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.text.AttributeSet;
 import javax.swing.text.BadLocationException;
+import javax.swing.text.DefaultCaret;
 import javax.swing.text.DefaultStyledDocument;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyleContext;
@@ -55,6 +56,10 @@ public class CodeEditor extends JPanel {
         editor = new JTextPane();
         editor.setOpaque(false);
         numbers = new JTextPane();
+        
+        editor.setAutoscrolls(false);
+        numbers.setAutoscrolls(false);
+        this.setAutoscrolls(false);
         
         this.add(editor, BorderLayout.CENTER);
         this.add(numbers, BorderLayout.WEST);

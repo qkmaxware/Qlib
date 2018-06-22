@@ -17,62 +17,6 @@ class program;
 bool try_parse_qasm(program& prog, std::string file_name, lexical::lexer& tokenizer);
 //----------------------
 
-namespace qasm {
-namespace exec {
-
-    class executable {
-        private:
-        public: 
-            virtual void invoke_rootprogram(runtime::environment& env) {};
-            virtual void invoke_subprogram(runtime::environment& env) {};
-    };
-
-    class apply_subcircuit : public executable {
-        public: 
-            std::string name;
-            std::vector<std::string> params;
-
-            apply_subcircuit(string name) : name(name) {}
-    };
-
-    class apply_gate : public executable {
-        public:
-            std::string name;
-            std::vector<std::string> param_names;
-            std::vector<long> param_indecies;
-
-            apply_gate(string name): name(name){}
-    };
-
-    class print : public executable{
-        public:
-            std::string reference;
-
-            print(string ref): reference(ref){}
-    };
-
-    class measurement : public executable {
-        public: 
-            std::string qreg;
-            long qindex;
-            std::string creg;
-            long cindex;
-
-            measurement(string qr, long qi, string cr, long ci) : qreg(qr), qindex(qi), creg(cr), cindex(ci) {}
-    };
-
-    class declaration : public executable{
-        public: 
-            std::string type;
-            std::string name;
-            long size;
-        
-            declaration(string t, string n, long s) : type(t), name(n), size(s) {}
-    };
-
-}
-}
-
 class program {    
     public:
         std::vector<qasm::exec::executable*> lines;
@@ -177,7 +121,20 @@ namespace rules {
                 std::stol(tokens[3].content[2])
             ));
             return true;
-        }else{
+        }
+        else if(
+            (tokens[0].lexemeptr)->name == "Measure" && 
+            (tokens[1].lexemeptr)->name == "Reference" &&
+            (tokens[2].lexemeptr)->name == "Map" &&
+            (tokens[3].lexemeptr)->name == "Reference"
+        ){
+            prog.push(new qasm::exec::measurement(
+                tokens[1].content[1], 
+                tokens[3].content[1]
+            ));
+            return true;
+        }
+        else{
             return false;
         }
     }

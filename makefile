@@ -58,10 +58,14 @@ init:
 	mkdir lib -p
 	mkdir obj -p
 	mkdir src -p
+	mkdir doc -p
 
 get: clean init
 	rm -r $(LIB_DIR) || true
 	mkdir lib
+
+docs: 
+	doxygen doxyfile
 
 $(BIN_DIR): init $(TOCOMPILE)
 	$(GCC) $(LINKLIST) -o $(BIN_DIR)/$(EXE_NAME) $(COMPILE_FLAGS)

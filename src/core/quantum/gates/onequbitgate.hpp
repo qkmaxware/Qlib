@@ -43,7 +43,7 @@ class onequbitgate : public igate {
         /// <Summary>
         /// Operate on a given column vector state superposition
         /// </Summary>
-        void operate(matrix& in, matrix& out, std::vector<ulong> inputQubits){
+        void operate(matrix& in, matrix& out, std::vector<u64> inputQubits){
             if(inputQubits.size() != 1){
                 std::stringstream sb;
                 sb << "One qubit gates operate on only one qubit, ";
@@ -53,13 +53,13 @@ class onequbitgate : public igate {
             }
 
             //Init loop
-            ulong k = inputQubits[0];
-            ulong stride = 1 << k;
-            ulong stride_gap = stride << 1;
+            u64 k = inputQubits[0];
+            u64 stride = 1 << k;
+            u64 stride_gap = stride << 1;
             //Iterate over consecutive groups of amplitudes
-            for(ulong g = 0; g < in.countRows(); g += stride_gap){
+            for(u64 g = 0; g < in.countRows(); g += stride_gap){
                 //Apply Q to every pair of amplitudes
-                for(ulong i = g; i < g + stride; i++){
+                for(u64 i = g; i < g + stride; i++){
                     complex ai      = m(0,0) * in(i,0) + m(0,1) * in(i + stride,0);
                     complex ai_2k   = m(1,0) * in(i,0) + m(1,1) * in(i + stride,0);
 

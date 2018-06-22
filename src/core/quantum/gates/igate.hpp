@@ -22,7 +22,7 @@ class igate : public xobject {
         //Number of qubits it operates on
         virtual size_t inputs() = 0;
         //Using the initial state vector 'in' update the state vector 'out' using the qubit numbers provided in 'inputQubits' list
-        virtual void operate(matrix& in, matrix& out, std::vector<ulong> inputQubits) = 0;
+        virtual void operate(matrix& in, matrix& out, std::vector<u64> inputQubits) = 0;
 };
 
 }

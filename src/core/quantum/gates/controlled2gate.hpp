@@ -42,7 +42,7 @@ class controlled2gate : public igate {
         /// <Summary>
         /// Operate on a given column vector state superposition
         /// </Summary>
-        void operate(matrix& in, matrix& out, std::vector<ulong> inputQubits){
+        void operate(matrix& in, matrix& out, std::vector<u64> inputQubits){
             if(inputQubits.size() != 3){
                 std::stringstream sb;
                 sb << "Three qubit gates operate on only three qubits, ";
@@ -54,20 +54,20 @@ class controlled2gate : public igate {
             matrix& m = refgate.getMatrix();
 
             //Init loop --first 2 inputs are control
-            ulong k = inputQubits[2];
-            ulong c1 = inputQubits[0];
-            ulong c2 = 1 << inputQubits[1];
-            ulong stride = 1 << k;
+            u64 k = inputQubits[2];
+            u64 c1 = inputQubits[0];
+            u64 c2 = 1 << inputQubits[1];
+            u64 stride = 1 << k;
 
-            for(ulong i = 0; i < in.countRows(); i++){
-                ulong mask = i & c1;
-                ulong mask2 = i & c2;
-                ulong smask = i & stride; 
+            for(u64 i = 0; i < in.countRows(); i++){
+                u64 mask = i & c1;
+                u64 mask2 = i & c2;
+                u64 smask = i & stride; 
                 if(!mask || !mask2){
                     continue;
                 }
-                ulong c1_t0 = i & ~smask; //a(*1c*0t*...)
-                ulong c1_t1 = i | smask;  //a(*1c*1t*...)
+                u64 c1_t0 = i & ~smask; //a(*1c*0t*...)
+                u64 c1_t1 = i | smask;  //a(*1c*1t*...)
 
                 out(c1_t0, 0) = m(0,0) * in(c1_t0,0) + m(0,1) * in(c1_t1,0);
                 out(c1_t1, 0) = m(1,0) * in(c1_t0,0) + m(1,1) * in(c1_t1,0);

@@ -48,7 +48,6 @@ public class QLibIDE {
                 //Load ini file from working directory
                 IniIO.DEFAULT = IniIO.template(new String[]{
                     "Binary Path: ./qlib",
-                    ""
                 });
                 IniIO userConfig = IniIO.readAndUpdate(configLocation, IniIO.DEFAULT);
 
@@ -121,9 +120,13 @@ public class QLibIDE {
             @Override
             public void mouseClicked(MouseEvent e) {
                 //Create a file chooser
-                final JFileChooser fc = new JFileChooser();
-                if(config.getString("last lile") != null){
-                    fc.setCurrentDirectory(new File(config.getString("last file")).getParentFile());
+                final JFileChooser fc;
+                if(config.getString("last file") != null){
+                    File file = new File(config.getString("last file"));
+                    File parent = file.getParentFile();
+                    fc = new JFileChooser(parent != null ? parent.getAbsolutePath() : "");
+                }else{
+                    fc = new JFileChooser();
                 }
                 //In response to a button click:
                 int returnVal = fc.showOpenDialog(null);

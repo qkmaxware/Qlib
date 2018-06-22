@@ -47,7 +47,7 @@ public class IniIO {
                 if(line.startsWith("#") || !line.matches(".+:.+")){ 
                     continue;
                 }
-                String[] opts = line.split(":");
+                String[] opts = line.split(":", 2);
                 if(opts.length >= 2)
                     ini.options.put(opts[0].trim().toLowerCase(), opts[1].trim().toLowerCase());
             }

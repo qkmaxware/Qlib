@@ -1,4 +1,4 @@
-/// </Summary>
+/// <Summary>
 /// This file contains shotcut names for fixed sized numeric types
 /// Functionally it is similar to stdint.h but also contains fixed sized floating point number defintions
 /// </Summary>

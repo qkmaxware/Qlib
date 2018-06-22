@@ -1,3 +1,7 @@
+/// </Summary>
+/// Standard included gates
+/// </Summary>
+
 #ifndef _QLIB_QUANTUM_STANDARD_GATES_H
 #define _QLIB_QUANTUM_STANDARD_GATES_H
 
