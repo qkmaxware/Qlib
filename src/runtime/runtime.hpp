@@ -40,7 +40,33 @@ class environment {
 
     public:
         void getGate(string name, igate* gateptr){
-            //*gateptr = ...;
+            if(name == "h"){
+                *gateptr = qlib::quantum::gates::H;
+            }
+            else if(name == "cnot" || name == "cx"){
+                *gateptr = qlib::quantum::gates::CNOT;
+            }
+            else if(name == "cy"){
+                *gateptr = qlib::quantum::gates::CY;
+            }
+            else if(name == "cz"){
+                *gateptr = qlib::quantum::gates::CZ;
+            }
+            else if(name == "i"){
+                *gateptr = qlib::quantum::gates::I;
+            }
+            else if(name == "x"){
+                *gateptr = qlib::quantum::gates::X;
+            }
+            else if(name == "y"){
+                *gateptr = qlib::quantum::gates::Y;
+            }
+            else if(name == "z"){
+                *gateptr = qlib::quantum::gates::Z;
+            }
+            else if(name == "ccnot" || name == "toffoli"){
+                *gateptr = qlib::quantum::gates::CCNOT;
+            }
         }
 
         creg& getCreg(string name){
