@@ -1,0 +1,179 @@
+\hypertarget{classqlib_1_1math_1_1complex}{}\section{qlib\+:\+:math\+:\+:complex Class Reference}
+\label{classqlib_1_1math_1_1complex}\index{qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+
+
+{\ttfamily \#include $<$complex.\+hpp$>$}
+
+
+
+Inheritance diagram for qlib\+:\+:math\+:\+:complex\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classqlib_1_1math_1_1complex__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for qlib\+:\+:math\+:\+:complex\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classqlib_1_1math_1_1complex__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqlib_1_1math_1_1complex_ab644fd7573e2bdbbfc02cf95b3fcdf62}{complex} ()
+\item 
+\hyperlink{classqlib_1_1math_1_1complex_a0eeea99f7c7d4a8e072f6c4836379ed0}{complex} (f32 real)
+\item 
+\hyperlink{classqlib_1_1math_1_1complex_a0dd3216eb1b24c906b394e67c59adda1}{complex} (f32 real, f32 img)
+\item 
+\hyperlink{classqlib_1_1math_1_1complex_ab1471e90345a25e6d112216f1a634290}{complex} (const \hyperlink{classqlib_1_1math_1_1complex}{complex} \&other)
+\item 
+f32 \hyperlink{classqlib_1_1math_1_1complex_ad1a8ab1ad95a47206e72d3a0d7be9511}{sqr\+Magnitude} ()
+\item 
+f32 \hyperlink{classqlib_1_1math_1_1complex_a8b365d2760802f1318e02c78c8938d2f}{magnitude} ()
+\item 
+\hyperlink{classqlib_1_1math_1_1complex}{complex} \hyperlink{classqlib_1_1math_1_1complex_a2cfd8546410a48d0568996e40beb85ce}{conjugate} ()
+\item 
+\hyperlink{classqlib_1_1math_1_1complex}{complex} \hyperlink{classqlib_1_1math_1_1complex_a088dcd1f0349632d0930177e95aa4729}{normal} ()
+\item 
+bool \hyperlink{classqlib_1_1math_1_1complex_a7a670edef0db4264e211e68aea71f0ec}{is\+Pure\+Real} ()
+\item 
+bool \hyperlink{classqlib_1_1math_1_1complex_a4465bc164fe2b490c917fc9321530ebb}{is\+Pure\+Imaginary} ()
+\item 
+bool \hyperlink{classqlib_1_1math_1_1complex_ae8f4008d499a05bbebecd48e0bf504d7}{is\+Zero} ()
+\item 
+f32 \hyperlink{classqlib_1_1math_1_1complex_a760122d26f377b008e129ff92b134a43}{arg} ()
+\item 
+std\+::string \hyperlink{classqlib_1_1math_1_1complex_afd24fadb21a07815675481b131398cff}{to\+String} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+f32 \hyperlink{classqlib_1_1math_1_1complex_aceb455ba091019bbd625fdaf529a0107}{r}
+\item 
+f32 \hyperlink{classqlib_1_1math_1_1complex_a4d599b5885fd37c300cdb79433356bb5}{i}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Object representation of a complex number in the form a + ib; 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!complex@{complex}}
+\index{complex@{complex}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{complex()}{complex()}}]{\setlength{\rightskip}{0pt plus 5cm}qlib\+::math\+::complex\+::complex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_ab644fd7573e2bdbbfc02cf95b3fcdf62}{}\label{classqlib_1_1math_1_1complex_ab644fd7573e2bdbbfc02cf95b3fcdf62}
+Create a complex number representing 0 + 0i \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!complex@{complex}}
+\index{complex@{complex}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{complex(f32 real)}{complex(f32 real)}}]{\setlength{\rightskip}{0pt plus 5cm}qlib\+::math\+::complex\+::complex (
+\begin{DoxyParamCaption}
+\item[{f32}]{real}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_a0eeea99f7c7d4a8e072f6c4836379ed0}{}\label{classqlib_1_1math_1_1complex_a0eeea99f7c7d4a8e072f6c4836379ed0}
+Create a complex number representing real + 0i \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!complex@{complex}}
+\index{complex@{complex}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{complex(f32 real, f32 img)}{complex(f32 real, f32 img)}}]{\setlength{\rightskip}{0pt plus 5cm}qlib\+::math\+::complex\+::complex (
+\begin{DoxyParamCaption}
+\item[{f32}]{real, }
+\item[{f32}]{img}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_a0dd3216eb1b24c906b394e67c59adda1}{}\label{classqlib_1_1math_1_1complex_a0dd3216eb1b24c906b394e67c59adda1}
+Create a complex number representing real + img i \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!complex@{complex}}
+\index{complex@{complex}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{complex(const complex \&other)}{complex(const complex &other)}}]{\setlength{\rightskip}{0pt plus 5cm}qlib\+::math\+::complex\+::complex (
+\begin{DoxyParamCaption}
+\item[{const {\bf complex} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_ab1471e90345a25e6d112216f1a634290}{}\label{classqlib_1_1math_1_1complex_ab1471e90345a25e6d112216f1a634290}
+Create a complex number from another 
+
+\subsection{Member Function Documentation}
+\index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!arg@{arg}}
+\index{arg@{arg}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{arg()}{arg()}}]{\setlength{\rightskip}{0pt plus 5cm}f32 qlib\+::math\+::complex\+::arg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_a760122d26f377b008e129ff92b134a43}{}\label{classqlib_1_1math_1_1complex_a760122d26f377b008e129ff92b134a43}
+Complex argument \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!conjugate@{conjugate}}
+\index{conjugate@{conjugate}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{conjugate()}{conjugate()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf complex} qlib\+::math\+::complex\+::conjugate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_a2cfd8546410a48d0568996e40beb85ce}{}\label{classqlib_1_1math_1_1complex_a2cfd8546410a48d0568996e40beb85ce}
+Returns the complex conjugate of this number \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!is\+Pure\+Imaginary@{is\+Pure\+Imaginary}}
+\index{is\+Pure\+Imaginary@{is\+Pure\+Imaginary}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{is\+Pure\+Imaginary()}{isPureImaginary()}}]{\setlength{\rightskip}{0pt plus 5cm}bool qlib\+::math\+::complex\+::is\+Pure\+Imaginary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_a4465bc164fe2b490c917fc9321530ebb}{}\label{classqlib_1_1math_1_1complex_a4465bc164fe2b490c917fc9321530ebb}
+Checks if this complex number can be represented as a purely imaginary number \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!is\+Pure\+Real@{is\+Pure\+Real}}
+\index{is\+Pure\+Real@{is\+Pure\+Real}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{is\+Pure\+Real()}{isPureReal()}}]{\setlength{\rightskip}{0pt plus 5cm}bool qlib\+::math\+::complex\+::is\+Pure\+Real (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_a7a670edef0db4264e211e68aea71f0ec}{}\label{classqlib_1_1math_1_1complex_a7a670edef0db4264e211e68aea71f0ec}
+Checks if this complex number can be represented as a purely real number \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!is\+Zero@{is\+Zero}}
+\index{is\+Zero@{is\+Zero}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{is\+Zero()}{isZero()}}]{\setlength{\rightskip}{0pt plus 5cm}bool qlib\+::math\+::complex\+::is\+Zero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_ae8f4008d499a05bbebecd48e0bf504d7}{}\label{classqlib_1_1math_1_1complex_ae8f4008d499a05bbebecd48e0bf504d7}
+Checks if this complex number is zero \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{magnitude()}{magnitude()}}]{\setlength{\rightskip}{0pt plus 5cm}f32 qlib\+::math\+::complex\+::magnitude (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_a8b365d2760802f1318e02c78c8938d2f}{}\label{classqlib_1_1math_1_1complex_a8b365d2760802f1318e02c78c8938d2f}
+Magnitude of this complex number equals sqrt(abs(square magnitude)) \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!normal@{normal}}
+\index{normal@{normal}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{normal()}{normal()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf complex} qlib\+::math\+::complex\+::normal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_a088dcd1f0349632d0930177e95aa4729}{}\label{classqlib_1_1math_1_1complex_a088dcd1f0349632d0930177e95aa4729}
+Returns a complex number of unit length but the same direction in the complex plane \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!sqr\+Magnitude@{sqr\+Magnitude}}
+\index{sqr\+Magnitude@{sqr\+Magnitude}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{sqr\+Magnitude()}{sqrMagnitude()}}]{\setlength{\rightskip}{0pt plus 5cm}f32 qlib\+::math\+::complex\+::sqr\+Magnitude (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_ad1a8ab1ad95a47206e72d3a0d7be9511}{}\label{classqlib_1_1math_1_1complex_ad1a8ab1ad95a47206e72d3a0d7be9511}
+Squared magnitude of this complex number equals this $\ast$ this-\/$>$\hyperlink{classqlib_1_1math_1_1complex_a2cfd8546410a48d0568996e40beb85ce}{conjugate()}. This is purely a real number. \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{to\+String()}{toString()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string qlib\+::math\+::complex\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1math_1_1complex_afd24fadb21a07815675481b131398cff}{}\label{classqlib_1_1math_1_1complex_afd24fadb21a07815675481b131398cff}
+String representation 
+
+Reimplemented from \hyperlink{classxobject_ad76243a44c4e4959d3b16bb57d82600d}{xobject}.
+
+
+
+\subsection{Member Data Documentation}
+\index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!i@{i}}
+\index{i@{i}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{i}{i}}]{\setlength{\rightskip}{0pt plus 5cm}f32 qlib\+::math\+::complex\+::i}\hypertarget{classqlib_1_1math_1_1complex_a4d599b5885fd37c300cdb79433356bb5}{}\label{classqlib_1_1math_1_1complex_a4d599b5885fd37c300cdb79433356bb5}
+Imaginary component \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!r@{r}}
+\index{r@{r}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{r}{r}}]{\setlength{\rightskip}{0pt plus 5cm}f32 qlib\+::math\+::complex\+::r}\hypertarget{classqlib_1_1math_1_1complex_aceb455ba091019bbd625fdaf529a0107}{}\label{classqlib_1_1math_1_1complex_aceb455ba091019bbd625fdaf529a0107}
+Real component 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/math/\hyperlink{complex_8hpp}{complex.\+hpp}\end{DoxyCompactItemize}

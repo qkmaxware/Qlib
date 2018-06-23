@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqasm_1_1runtime_1_1runtimeexception" kind="class" language="C++" prot="public">
+    <compoundname>qasm::runtime::runtimeexception</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">exception</basecompoundref>
+    <includes refid="runtime_8hpp" local="no">runtime.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classqasm_1_1runtime_1_1runtimeexception_1a4dbe6aefd35b6c30b9ccf89a7ccaacf9" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string qasm::runtime::runtimeexception::what_message</definition>
+        <argsstring></argsstring>
+        <name>what_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Exception message </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="29" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqasm_1_1runtime_1_1runtimeexception_1a441e42301526a93e37ceb3f6eb0cc988" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qasm::runtime::runtimeexception::runtimeexception</definition>
+        <argsstring>(std::string message)</argsstring>
+        <name>runtimeexception</name>
+        <param>
+          <type>std::string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create exception </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="36" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="36" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1runtime_1_1runtimeexception_1a574525d5f4cac73500dd11215bbb14a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* qasm::runtime::runtimeexception::what</definition>
+        <argsstring>() const </argsstring>
+        <name>what</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get cause message </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="42" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class for exceptions thrown when executing instructions </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="342">
+        <label>exception</label>
+      </node>
+      <node id="341">
+        <label>qasm::runtime::runtimeexception</label>
+        <link refid="classqasm_1_1runtime_1_1runtimeexception"/>
+        <childnode refid="342" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="344">
+        <label>exception</label>
+      </node>
+      <node id="343">
+        <label>qasm::runtime::runtimeexception</label>
+        <link refid="classqasm_1_1runtime_1_1runtimeexception"/>
+        <childnode refid="344" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/runtime.hpp" line="24" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="24" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classqasm_1_1runtime_1_1runtimeexception_1a441e42301526a93e37ceb3f6eb0cc988" prot="public" virt="non-virtual"><scope>qasm::runtime::runtimeexception</scope><name>runtimeexception</name></member>
+      <member refid="classqasm_1_1runtime_1_1runtimeexception_1a574525d5f4cac73500dd11215bbb14a3" prot="public" virt="non-virtual"><scope>qasm::runtime::runtimeexception</scope><name>what</name></member>
+      <member refid="classqasm_1_1runtime_1_1runtimeexception_1a4dbe6aefd35b6c30b9ccf89a7ccaacf9" prot="private" virt="non-virtual"><scope>qasm::runtime::runtimeexception</scope><name>what_message</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

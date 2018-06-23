@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqasm_1_1exec_1_1measurement" kind="class" language="C++" prot="public">
+    <compoundname>qasm::exec::measurement</compoundname>
+    <basecompoundref refid="classqasm_1_1exec_1_1executable" prot="public" virt="non-virtual">qasm::exec::executable</basecompoundref>
+    <includes refid="runtime_8hpp" local="no">runtime.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1measurement_1acd8ed10227ce8755b6449959c508e023" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string qasm::exec::measurement::qreg</definition>
+        <argsstring></argsstring>
+        <name>qreg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Quantum register name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="300" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1measurement_1a083137ce86d7f8b1f92a34a2db604063" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long qasm::exec::measurement::qindex</definition>
+        <argsstring></argsstring>
+        <name>qindex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Quantum register index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="304" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1measurement_1a419118b0574b066fdff6c7f00213dec3" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string qasm::exec::measurement::creg</definition>
+        <argsstring></argsstring>
+        <name>creg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Classic register name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="308" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1measurement_1ab1ba29db121a9c17be8aacbd1f24ff7b" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long qasm::exec::measurement::cindex</definition>
+        <argsstring></argsstring>
+        <name>cindex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Classic register index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="312" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1measurement_1a1b67bc7f310bcba5a42989229268517d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool qasm::exec::measurement::measureWhole</definition>
+        <argsstring></argsstring>
+        <name>measureWhole</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag if whole register is to be measured or just the given indexes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="316" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqasm_1_1exec_1_1measurement_1aea704a014c6ae33420021ec54ab6447b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qasm::exec::measurement::measurement</definition>
+        <argsstring>(string qr, long qi, string cr, long ci)</argsstring>
+        <name>measurement</name>
+        <param>
+          <type>string</type>
+          <declname>qr</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>qi</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cr</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>ci</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="318" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="318" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1exec_1_1measurement_1a82af9b0d6dea17bd770e8c6e6b5d2fb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qasm::exec::measurement::measurement</definition>
+        <argsstring>(string qr, string cr)</argsstring>
+        <name>measurement</name>
+        <param>
+          <type>string</type>
+          <declname>qr</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="319" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="319" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1exec_1_1measurement_1aefa96cf86f31c40a75fbc46924c94bb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void qasm::exec::measurement::invoke_rootprogram</definition>
+        <argsstring>(runtime::environment &amp;env)</argsstring>
+        <name>invoke_rootprogram</name>
+        <reimplements refid="classqasm_1_1exec_1_1executable_1ad07f864a889edb0777ebbb1bc1628121">invoke_rootprogram</reimplements>
+        <param>
+          <type><ref refid="classqasm_1_1runtime_1_1environment" kindref="compound">runtime::environment</ref> &amp;</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run instruction&apos;s primary operation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="321" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="321" bodyend="358"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Instruction to measure a quantum variable into a classical one </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="284">
+        <label>qasm::exec::measurement</label>
+        <link refid="classqasm_1_1exec_1_1measurement"/>
+        <childnode refid="285" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>qasm::exec::executable</label>
+        <link refid="classqasm_1_1exec_1_1executable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="286">
+        <label>qasm::exec::measurement</label>
+        <link refid="classqasm_1_1exec_1_1measurement"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="287">
+        <label>qasm::exec::executable</label>
+        <link refid="classqasm_1_1exec_1_1executable"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/runtime.hpp" line="295" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="295" bodyend="359"/>
+    <listofallmembers>
+      <member refid="classqasm_1_1exec_1_1measurement_1ab1ba29db121a9c17be8aacbd1f24ff7b" prot="public" virt="non-virtual"><scope>qasm::exec::measurement</scope><name>cindex</name></member>
+      <member refid="classqasm_1_1exec_1_1measurement_1a419118b0574b066fdff6c7f00213dec3" prot="public" virt="non-virtual"><scope>qasm::exec::measurement</scope><name>creg</name></member>
+      <member refid="classqasm_1_1exec_1_1measurement_1aefa96cf86f31c40a75fbc46924c94bb8" prot="public" virt="virtual"><scope>qasm::exec::measurement</scope><name>invoke_rootprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" prot="public" virt="virtual"><scope>qasm::exec::measurement</scope><name>invoke_subprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1measurement_1aea704a014c6ae33420021ec54ab6447b" prot="public" virt="non-virtual"><scope>qasm::exec::measurement</scope><name>measurement</name></member>
+      <member refid="classqasm_1_1exec_1_1measurement_1a82af9b0d6dea17bd770e8c6e6b5d2fb8" prot="public" virt="non-virtual"><scope>qasm::exec::measurement</scope><name>measurement</name></member>
+      <member refid="classqasm_1_1exec_1_1measurement_1a1b67bc7f310bcba5a42989229268517d" prot="public" virt="non-virtual"><scope>qasm::exec::measurement</scope><name>measureWhole</name></member>
+      <member refid="classqasm_1_1exec_1_1measurement_1a083137ce86d7f8b1f92a34a2db604063" prot="public" virt="non-virtual"><scope>qasm::exec::measurement</scope><name>qindex</name></member>
+      <member refid="classqasm_1_1exec_1_1measurement_1acd8ed10227ce8755b6449959c508e023" prot="public" virt="non-virtual"><scope>qasm::exec::measurement</scope><name>qreg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

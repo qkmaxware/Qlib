@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classptr" kind="class" language="C++" prot="public">
+    <compoundname>ptr</compoundname>
+    <includes refid="smartptr_8hpp" local="no">smartptr.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class t</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classptr_1ad7ba383d91da4c7a3a8efea91034f12e" prot="private" static="no" mutable="no">
+        <type>t *</type>
+        <definition>t* ptr&lt; t &gt;::ref</definition>
+        <argsstring></argsstring>
+        <name>ref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/smartptr.hpp" line="10" column="1" bodyfile="src/runtime/smartptr.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classptr_1aaecf093f45d1937856112a59f4b2d011" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ptr&lt; t &gt;::ptr</definition>
+        <argsstring>(t *value)</argsstring>
+        <name>ptr</name>
+        <param>
+          <type>t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/smartptr.hpp" line="13" column="1" bodyfile="src/runtime/smartptr.hpp" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classptr_1a6ef013cd782a43c7f619a7a3a6ae1467" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ptr&lt; t &gt;::~ptr</definition>
+        <argsstring>()</argsstring>
+        <name>~ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/smartptr.hpp" line="14" column="1" bodyfile="src/runtime/smartptr.hpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classptr_1aff3f6e83f352b352a2ed342c3a72c08a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>t &amp;</type>
+        <definition>t&amp; ptr&lt; t &gt;::operator*</definition>
+        <argsstring>()</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/smartptr.hpp" line="18" column="1" bodyfile="src/runtime/smartptr.hpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classptr_1a0e368240adbbc89663b7b8ac79e9913e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>t *</type>
+        <definition>t* ptr&lt; t &gt;::operator-&gt;</definition>
+        <argsstring>()</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/smartptr.hpp" line="22" column="1" bodyfile="src/runtime/smartptr.hpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Simple smart pointer class </para>    </detaileddescription>
+    <location file="src/runtime/smartptr.hpp" line="8" column="1" bodyfile="src/runtime/smartptr.hpp" bodystart="8" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classptr_1aff3f6e83f352b352a2ed342c3a72c08a" prot="public" virt="non-virtual"><scope>ptr</scope><name>operator*</name></member>
+      <member refid="classptr_1a0e368240adbbc89663b7b8ac79e9913e" prot="public" virt="non-virtual"><scope>ptr</scope><name>operator-&gt;</name></member>
+      <member refid="classptr_1aaecf093f45d1937856112a59f4b2d011" prot="public" virt="non-virtual"><scope>ptr</scope><name>ptr</name></member>
+      <member refid="classptr_1ad7ba383d91da4c7a3a8efea91034f12e" prot="private" virt="non-virtual"><scope>ptr</scope><name>ref</name></member>
+      <member refid="classptr_1a6ef013cd782a43c7f619a7a3a6ae1467" prot="public" virt="non-virtual"><scope>ptr</scope><name>~ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

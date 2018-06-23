@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_727b8377c3d34501cb09cbc2fa0ab4c8" kind="dir">
+    <compoundname>src/core/quantum/gates</compoundname>
+    <innerfile refid="cnot_8hpp">cnot.hpp</innerfile>
+    <innerfile refid="controlled2gate_8hpp">controlled2gate.hpp</innerfile>
+    <innerfile refid="controlledgate_8hpp">controlledgate.hpp</innerfile>
+    <innerfile refid="cy_8hpp">cy.hpp</innerfile>
+    <innerfile refid="cz_8hpp">cz.hpp</innerfile>
+    <innerfile refid="hadamard_8hpp">hadamard.hpp</innerfile>
+    <innerfile refid="ident_8hpp">ident.hpp</innerfile>
+    <innerfile refid="igate_8hpp">igate.hpp</innerfile>
+    <innerfile refid="onequbitgate_8hpp">onequbitgate.hpp</innerfile>
+    <innerfile refid="pauliX_8hpp">pauliX.hpp</innerfile>
+    <innerfile refid="pauliY_8hpp">pauliY.hpp</innerfile>
+    <innerfile refid="pauliZ_8hpp">pauliZ.hpp</innerfile>
+    <innerfile refid="phase_8hpp">phase.hpp</innerfile>
+    <innerfile refid="toffoli_8hpp">toffoli.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/quantum/gates/"/>
+  </compounddef>
+</doxygen>

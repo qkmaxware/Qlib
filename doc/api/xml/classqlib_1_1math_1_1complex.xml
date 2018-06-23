@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1math_1_1complex" kind="class" language="C++" prot="public">
+    <compoundname>qlib::math::complex</compoundname>
+    <basecompoundref refid="classxobject" prot="public" virt="non-virtual">xobject</basecompoundref>
+    <includes refid="complex_8hpp" local="no">complex.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" prot="public" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 qlib::math::complex::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Real component </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/complex.hpp" line="33" column="1" bodyfile="src/core/math/complex.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" prot="public" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 qlib::math::complex::i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Imaginary component </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/complex.hpp" line="37" column="1" bodyfile="src/core/math/complex.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib::math::complex::complex</definition>
+        <argsstring>()</argsstring>
+        <name>complex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a complex number representing 0 + 0i </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/complex.hpp" line="42" column="1" bodyfile="src/core/math/complex.hpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1complex_1a0eeea99f7c7d4a8e072f6c4836379ed0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib::math::complex::complex</definition>
+        <argsstring>(f32 real)</argsstring>
+        <name>complex</name>
+        <param>
+          <type>f32</type>
+          <declname>real</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a complex number representing real + 0i </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/complex.hpp" line="50" column="1" bodyfile="src/core/math/complex.hpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1complex_1a0dd3216eb1b24c906b394e67c59adda1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib::math::complex::complex</definition>
+        <argsstring>(f32 real, f32 img)</argsstring>
+        <name>complex</name>
+        <param>
+          <type>f32</type>
+          <declname>real</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>img</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a complex number representing real + img i </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/complex.hpp" line="58" column="1" bodyfile="src/core/math/complex.hpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1complex_1ab1471e90345a25e6d112216f1a634290" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib::math::complex::complex</definition>
+        <argsstring>(const complex &amp;other)</argsstring>
+        <name>complex</name>
+        <param>
+          <type>const <ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a complex number from another </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/complex.hpp" line="66" column="1" bodyfile="src/core/math/complex.hpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1complex_1ad1a8ab1ad95a47206e72d3a0d7be9511" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 qlib::math::complex::sqrMagnitude</definition>
+        <argsstring>()</argsstring>
+        <name>sqrMagnitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Squared magnitude of this complex number equals this * this-&gt;<ref refid="classqlib_1_1math_1_1complex_1a2cfd8546410a48d0568996e40beb85ce" kindref="member">conjugate()</ref>. This is purely a real number. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/complex.hpp" line="74" column="1" bodyfile="src/core/math/complex.hpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1complex_1a8b365d2760802f1318e02c78c8938d2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 qlib::math::complex::magnitude</definition>
+        <argsstring>()</argsstring>
+        <name>magnitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Magnitude of this complex number equals sqrt(abs(square magnitude)) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/complex.hpp" line="82" column="1" bodyfile="src/core/math/complex.hpp" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1complex_1a2cfd8546410a48d0568996e40beb85ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
+        <definition>complex qlib::math::complex::conjugate</definition>
+        <argsstring>()</argsstring>
+        <name>conjugate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the complex conjugate of this number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/complex.hpp" line="89" column="1" bodyfile="src/core/math/complex.hpp" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1complex_1a088dcd1f0349632d0930177e95aa4729" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
+        <definition>complex qlib::math::complex::normal</definition>
+        <argsstring>()</argsstring>
+        <name>normal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a complex number of unit length but the same direction in the complex plane </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/complex.hpp" line="96" column="1" bodyfile="src/core/math/complex.hpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1complex_1a7a670edef0db4264e211e68aea71f0ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qlib::math::complex::isPureReal</definition>
+        <argsstring>()</argsstring>
+        <name>isPureReal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if this complex number can be represented as a purely real number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/complex.hpp" line="104" column="1" bodyfile="src/core/math/complex.hpp" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1complex_1a4465bc164fe2b490c917fc9321530ebb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qlib::math::complex::isPureImaginary</definition>
+        <argsstring>()</argsstring>
+        <name>isPureImaginary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if this complex number can be represented as a purely imaginary number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/complex.hpp" line="111" column="1" bodyfile="src/core/math/complex.hpp" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1complex_1ae8f4008d499a05bbebecd48e0bf504d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qlib::math::complex::isZero</definition>
+        <argsstring>()</argsstring>
+        <name>isZero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if this complex number is zero </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/complex.hpp" line="118" column="1" bodyfile="src/core/math/complex.hpp" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1complex_1a760122d26f377b008e129ff92b134a43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 qlib::math::complex::arg</definition>
+        <argsstring>()</argsstring>
+        <name>arg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Complex argument </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/complex.hpp" line="125" column="1" bodyfile="src/core/math/complex.hpp" bodystart="125" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1complex_1afd24fadb21a07815675481b131398cff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string qlib::math::complex::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="classxobject_1ad76243a44c4e4959d3b16bb57d82600d">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String representation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/complex.hpp" line="132" column="1" bodyfile="src/core/math/complex.hpp" bodystart="132" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Object representation of a complex number in the form a + ib; </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="215">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="214">
+        <label>qlib::math::complex</label>
+        <link refid="classqlib_1_1math_1_1complex"/>
+        <childnode refid="215" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="217">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="216">
+        <label>qlib::math::complex</label>
+        <link refid="classqlib_1_1math_1_1complex"/>
+        <childnode refid="217" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/core/math/complex.hpp" line="25" column="1" bodyfile="src/core/math/complex.hpp" bodystart="25" bodyend="137"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1math_1_1complex_1a760122d26f377b008e129ff92b134a43" prot="public" virt="non-virtual"><scope>qlib::math::complex</scope><name>arg</name></member>
+      <member refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" prot="public" virt="non-virtual"><scope>qlib::math::complex</scope><name>complex</name></member>
+      <member refid="classqlib_1_1math_1_1complex_1a0eeea99f7c7d4a8e072f6c4836379ed0" prot="public" virt="non-virtual"><scope>qlib::math::complex</scope><name>complex</name></member>
+      <member refid="classqlib_1_1math_1_1complex_1a0dd3216eb1b24c906b394e67c59adda1" prot="public" virt="non-virtual"><scope>qlib::math::complex</scope><name>complex</name></member>
+      <member refid="classqlib_1_1math_1_1complex_1ab1471e90345a25e6d112216f1a634290" prot="public" virt="non-virtual"><scope>qlib::math::complex</scope><name>complex</name></member>
+      <member refid="classqlib_1_1math_1_1complex_1a2cfd8546410a48d0568996e40beb85ce" prot="public" virt="non-virtual"><scope>qlib::math::complex</scope><name>conjugate</name></member>
+      <member refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" prot="public" virt="non-virtual"><scope>qlib::math::complex</scope><name>i</name></member>
+      <member refid="classqlib_1_1math_1_1complex_1a4465bc164fe2b490c917fc9321530ebb" prot="public" virt="non-virtual"><scope>qlib::math::complex</scope><name>isPureImaginary</name></member>
+      <member refid="classqlib_1_1math_1_1complex_1a7a670edef0db4264e211e68aea71f0ec" prot="public" virt="non-virtual"><scope>qlib::math::complex</scope><name>isPureReal</name></member>
+      <member refid="classqlib_1_1math_1_1complex_1ae8f4008d499a05bbebecd48e0bf504d7" prot="public" virt="non-virtual"><scope>qlib::math::complex</scope><name>isZero</name></member>
+      <member refid="classqlib_1_1math_1_1complex_1a8b365d2760802f1318e02c78c8938d2f" prot="public" virt="non-virtual"><scope>qlib::math::complex</scope><name>magnitude</name></member>
+      <member refid="classqlib_1_1math_1_1complex_1a088dcd1f0349632d0930177e95aa4729" prot="public" virt="non-virtual"><scope>qlib::math::complex</scope><name>normal</name></member>
+      <member refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" prot="public" virt="non-virtual"><scope>qlib::math::complex</scope><name>r</name></member>
+      <member refid="classqlib_1_1math_1_1complex_1ad1a8ab1ad95a47206e72d3a0d7be9511" prot="public" virt="non-virtual"><scope>qlib::math::complex</scope><name>sqrMagnitude</name></member>
+      <member refid="classqlib_1_1math_1_1complex_1afd24fadb21a07815675481b131398cff" prot="public" virt="virtual"><scope>qlib::math::complex</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

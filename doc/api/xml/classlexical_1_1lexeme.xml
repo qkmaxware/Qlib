@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classlexical_1_1lexeme" kind="class" language="C++" prot="public">
+    <compoundname>lexical::lexeme</compoundname>
+    <includes refid="lexer_8hpp" local="no">lexer.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlexical_1_1lexeme_1a43f46025bbc59bdaff06d4e4efc979c1" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string lexical::lexeme::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Lexeme name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="66" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlexical_1_1lexeme_1a8265b6f1e87790a3ca3fcd82b5543726" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string lexical::lexeme::pattern</definition>
+        <argsstring></argsstring>
+        <name>pattern</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Lexeme regular expression pattern </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="70" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlexical_1_1lexeme_1a2185fc486b1c6c75a57a3e30155eed15" prot="public" static="no" mutable="no">
+        <type>std::regex</type>
+        <definition>std::regex lexical::lexeme::rx</definition>
+        <argsstring></argsstring>
+        <name>rx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compiled regex lexeme </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="74" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlexical_1_1lexeme_1accc3564ad951f163e3cf4dd8f93ede15" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lexical::lexeme::skippable</definition>
+        <argsstring></argsstring>
+        <name>skippable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag to test if this lexeme can be skipped in results </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="78" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlexical_1_1lexeme_1a2a69e7860946ccb70ab8f8ca0970ca42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lexical::lexeme::lexeme</definition>
+        <argsstring>(std::string name, std::string pattern)</argsstring>
+        <name>lexeme</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>pattern</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a lexeme from a name and regex pattern </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="83" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classlexical_1_1lexeme_1a26fd45099f7e056db7f39cd9f222cf97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lexical::lexeme::matches</definition>
+        <argsstring>(std::string::iterator begin, std::string::iterator end)</argsstring>
+        <name>matches</name>
+        <param>
+          <type>std::string::iterator</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>std::string::iterator</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if this lexeme can be extracted from a string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="88" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classlexical_1_1lexeme_1ade092b47d889c338daa38902409747ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structlexical_1_1match" kindref="compound">match</ref></type>
+        <definition>match lexical::lexeme::extract</definition>
+        <argsstring>(ulong row, ulong column, std::string::iterator begin, std::string::iterator end)</argsstring>
+        <name>extract</name>
+        <param>
+          <type><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref></type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref></type>
+          <declname>column</declname>
+        </param>
+        <param>
+          <type>std::string::iterator</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>std::string::iterator</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extract a match from a string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="95" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="95" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class representing a lexical literal using regular expressions </para>    </detaileddescription>
+    <location file="src/runtime/lexer.hpp" line="61" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="61" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classlexical_1_1lexeme_1ade092b47d889c338daa38902409747ab" prot="public" virt="non-virtual"><scope>lexical::lexeme</scope><name>extract</name></member>
+      <member refid="classlexical_1_1lexeme_1a2a69e7860946ccb70ab8f8ca0970ca42" prot="public" virt="non-virtual"><scope>lexical::lexeme</scope><name>lexeme</name></member>
+      <member refid="classlexical_1_1lexeme_1a26fd45099f7e056db7f39cd9f222cf97" prot="public" virt="non-virtual"><scope>lexical::lexeme</scope><name>matches</name></member>
+      <member refid="classlexical_1_1lexeme_1a43f46025bbc59bdaff06d4e4efc979c1" prot="public" virt="non-virtual"><scope>lexical::lexeme</scope><name>name</name></member>
+      <member refid="classlexical_1_1lexeme_1a8265b6f1e87790a3ca3fcd82b5543726" prot="public" virt="non-virtual"><scope>lexical::lexeme</scope><name>pattern</name></member>
+      <member refid="classlexical_1_1lexeme_1a2185fc486b1c6c75a57a3e30155eed15" prot="public" virt="non-virtual"><scope>lexical::lexeme</scope><name>rx</name></member>
+      <member refid="classlexical_1_1lexeme_1accc3564ad951f163e3cf4dd8f93ede15" prot="public" virt="non-virtual"><scope>lexical::lexeme</scope><name>skippable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

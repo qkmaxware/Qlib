@@ -1,0 +1,107 @@
+\hypertarget{classqasm_1_1exec_1_1measurement}{}\section{qasm\+:\+:exec\+:\+:measurement Class Reference}
+\label{classqasm_1_1exec_1_1measurement}\index{qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}}
+
+
+{\ttfamily \#include $<$runtime.\+hpp$>$}
+
+
+
+Inheritance diagram for qasm\+:\+:exec\+:\+:measurement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classqasm_1_1exec_1_1measurement__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for qasm\+:\+:exec\+:\+:measurement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classqasm_1_1exec_1_1measurement__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqasm_1_1exec_1_1measurement_aea704a014c6ae33420021ec54ab6447b}{measurement} (string qr, long qi, string cr, long ci)
+\item 
+\hyperlink{classqasm_1_1exec_1_1measurement_a82af9b0d6dea17bd770e8c6e6b5d2fb8}{measurement} (string qr, string cr)
+\item 
+virtual void \hyperlink{classqasm_1_1exec_1_1measurement_aefa96cf86f31c40a75fbc46924c94bb8}{invoke\+\_\+rootprogram} (\hyperlink{classqasm_1_1runtime_1_1environment}{runtime\+::environment} \&env)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classqasm_1_1exec_1_1measurement_acd8ed10227ce8755b6449959c508e023}{qreg}
+\item 
+long \hyperlink{classqasm_1_1exec_1_1measurement_a083137ce86d7f8b1f92a34a2db604063}{qindex}
+\item 
+std\+::string \hyperlink{classqasm_1_1exec_1_1measurement_a419118b0574b066fdff6c7f00213dec3}{creg}
+\item 
+long \hyperlink{classqasm_1_1exec_1_1measurement_ab1ba29db121a9c17be8aacbd1f24ff7b}{cindex}
+\item 
+bool \hyperlink{classqasm_1_1exec_1_1measurement_a1b67bc7f310bcba5a42989229268517d}{measure\+Whole}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Instruction to measure a quantum variable into a classical one 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}!measurement@{measurement}}
+\index{measurement@{measurement}!qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}}
+\subsubsection[{\texorpdfstring{measurement(string qr, long qi, string cr, long ci)}{measurement(string qr, long qi, string cr, long ci)}}]{\setlength{\rightskip}{0pt plus 5cm}qasm\+::exec\+::measurement\+::measurement (
+\begin{DoxyParamCaption}
+\item[{string}]{qr, }
+\item[{long}]{qi, }
+\item[{string}]{cr, }
+\item[{long}]{ci}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqasm_1_1exec_1_1measurement_aea704a014c6ae33420021ec54ab6447b}{}\label{classqasm_1_1exec_1_1measurement_aea704a014c6ae33420021ec54ab6447b}
+\index{qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}!measurement@{measurement}}
+\index{measurement@{measurement}!qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}}
+\subsubsection[{\texorpdfstring{measurement(string qr, string cr)}{measurement(string qr, string cr)}}]{\setlength{\rightskip}{0pt plus 5cm}qasm\+::exec\+::measurement\+::measurement (
+\begin{DoxyParamCaption}
+\item[{string}]{qr, }
+\item[{string}]{cr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqasm_1_1exec_1_1measurement_a82af9b0d6dea17bd770e8c6e6b5d2fb8}{}\label{classqasm_1_1exec_1_1measurement_a82af9b0d6dea17bd770e8c6e6b5d2fb8}
+
+
+\subsection{Member Function Documentation}
+\index{qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}!invoke\+\_\+rootprogram@{invoke\+\_\+rootprogram}}
+\index{invoke\+\_\+rootprogram@{invoke\+\_\+rootprogram}!qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}}
+\subsubsection[{\texorpdfstring{invoke\+\_\+rootprogram(runtime\+::environment \&env)}{invoke_rootprogram(runtime::environment &env)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void qasm\+::exec\+::measurement\+::invoke\+\_\+rootprogram (
+\begin{DoxyParamCaption}
+\item[{{\bf runtime\+::environment} \&}]{env}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqasm_1_1exec_1_1measurement_aefa96cf86f31c40a75fbc46924c94bb8}{}\label{classqasm_1_1exec_1_1measurement_aefa96cf86f31c40a75fbc46924c94bb8}
+Run instruction\textquotesingle{}s primary operation 
+
+Reimplemented from \hyperlink{classqasm_1_1exec_1_1executable_ad07f864a889edb0777ebbb1bc1628121}{qasm\+::exec\+::executable}.
+
+
+
+\subsection{Member Data Documentation}
+\index{qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}!cindex@{cindex}}
+\index{cindex@{cindex}!qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}}
+\subsubsection[{\texorpdfstring{cindex}{cindex}}]{\setlength{\rightskip}{0pt plus 5cm}long qasm\+::exec\+::measurement\+::cindex}\hypertarget{classqasm_1_1exec_1_1measurement_ab1ba29db121a9c17be8aacbd1f24ff7b}{}\label{classqasm_1_1exec_1_1measurement_ab1ba29db121a9c17be8aacbd1f24ff7b}
+Classic register index \index{qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}!creg@{creg}}
+\index{creg@{creg}!qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}}
+\subsubsection[{\texorpdfstring{creg}{creg}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string qasm\+::exec\+::measurement\+::creg}\hypertarget{classqasm_1_1exec_1_1measurement_a419118b0574b066fdff6c7f00213dec3}{}\label{classqasm_1_1exec_1_1measurement_a419118b0574b066fdff6c7f00213dec3}
+Classic register name \index{qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}!measure\+Whole@{measure\+Whole}}
+\index{measure\+Whole@{measure\+Whole}!qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}}
+\subsubsection[{\texorpdfstring{measure\+Whole}{measureWhole}}]{\setlength{\rightskip}{0pt plus 5cm}bool qasm\+::exec\+::measurement\+::measure\+Whole}\hypertarget{classqasm_1_1exec_1_1measurement_a1b67bc7f310bcba5a42989229268517d}{}\label{classqasm_1_1exec_1_1measurement_a1b67bc7f310bcba5a42989229268517d}
+Flag if whole register is to be measured or just the given indexes \index{qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}!qindex@{qindex}}
+\index{qindex@{qindex}!qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}}
+\subsubsection[{\texorpdfstring{qindex}{qindex}}]{\setlength{\rightskip}{0pt plus 5cm}long qasm\+::exec\+::measurement\+::qindex}\hypertarget{classqasm_1_1exec_1_1measurement_a083137ce86d7f8b1f92a34a2db604063}{}\label{classqasm_1_1exec_1_1measurement_a083137ce86d7f8b1f92a34a2db604063}
+Quantum register index \index{qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}!qreg@{qreg}}
+\index{qreg@{qreg}!qasm\+::exec\+::measurement@{qasm\+::exec\+::measurement}}
+\subsubsection[{\texorpdfstring{qreg}{qreg}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string qasm\+::exec\+::measurement\+::qreg}\hypertarget{classqasm_1_1exec_1_1measurement_acd8ed10227ce8755b6449959c508e023}{}\label{classqasm_1_1exec_1_1measurement_acd8ed10227ce8755b6449959c508e023}
+Quantum register name 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{runtime_8hpp}{runtime.\+hpp}\end{DoxyCompactItemize}

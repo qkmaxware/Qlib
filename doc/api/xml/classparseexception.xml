@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classparseexception" kind="class" language="C++" prot="public">
+    <compoundname>parseexception</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">exception</basecompoundref>
+    <includes refid="qasmparser_8hpp" local="no">qasmparser.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classparseexception_1a4807889c64609ea29a275c9f66c15e61" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string parseexception::what_message</definition>
+        <argsstring></argsstring>
+        <name>what_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Combined message </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="266" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classparseexception_1a0e50402f7511e71332099355061b26ca" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref></type>
+        <definition>ulong parseexception::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Row of cause </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="272" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparseexception_1a671840c0e1441210c84084e235fa55c8" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref></type>
+        <definition>ulong parseexception::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Column of cause </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="276" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparseexception_1a99a096bfed3e48cd365cdae1952bc017" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string parseexception::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Filename cause occurred in </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="280" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparseexception_1a5f02ff7145f65ba4e9b5be994bfc0edb" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string parseexception::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cause of exception </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="284" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparseexception_1a16accd5bc62f4465b611b38db6751e0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>parseexception::parseexception</definition>
+        <argsstring>(ulong row, ulong column, std::string file, std::string message)</argsstring>
+        <name>parseexception</name>
+        <param>
+          <type><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref></type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref></type>
+          <declname>column</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="286" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="286" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classparseexception_1a006c6421028f780b91eb4a473265dce7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* parseexception::what</definition>
+        <argsstring>() const </argsstring>
+        <name>what</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="292" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="292" bodyend="294"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class for exceptions occuring during parsing of lexical tokens </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="296">
+        <label>exception</label>
+      </node>
+      <node id="295">
+        <label>parseexception</label>
+        <link refid="classparseexception"/>
+        <childnode refid="296" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="298">
+        <label>exception</label>
+      </node>
+      <node id="297">
+        <label>parseexception</label>
+        <link refid="classparseexception"/>
+        <childnode refid="298" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/qasmparser.hpp" line="261" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="261" bodyend="295"/>
+    <listofallmembers>
+      <member refid="classparseexception_1a671840c0e1441210c84084e235fa55c8" prot="public" virt="non-virtual"><scope>parseexception</scope><name>c</name></member>
+      <member refid="classparseexception_1a99a096bfed3e48cd365cdae1952bc017" prot="public" virt="non-virtual"><scope>parseexception</scope><name>file</name></member>
+      <member refid="classparseexception_1a5f02ff7145f65ba4e9b5be994bfc0edb" prot="public" virt="non-virtual"><scope>parseexception</scope><name>msg</name></member>
+      <member refid="classparseexception_1a16accd5bc62f4465b611b38db6751e0e" prot="public" virt="non-virtual"><scope>parseexception</scope><name>parseexception</name></member>
+      <member refid="classparseexception_1a0e50402f7511e71332099355061b26ca" prot="public" virt="non-virtual"><scope>parseexception</scope><name>r</name></member>
+      <member refid="classparseexception_1a006c6421028f780b91eb4a473265dce7" prot="public" virt="non-virtual"><scope>parseexception</scope><name>what</name></member>
+      <member refid="classparseexception_1a4807889c64609ea29a275c9f66c15e61" prot="private" virt="non-virtual"><scope>parseexception</scope><name>what_message</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

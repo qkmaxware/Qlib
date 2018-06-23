@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1ide_1_1FileManager_1_1Tab" kind="class" language="Java" prot="private">
+    <compoundname>qlib::ide::FileManager::Tab</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1FileManager_1_1Tab_1ad12255d140c8ad871496cfa64157c987" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String qlib.ide.FileManager.Tab.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/FileManager.java" line="34" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1FileManager_1_1Tab_1a0765cadcc1dc2dcecdc902bb72c0f573" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String qlib.ide.FileManager.Tab.filepath</definition>
+        <argsstring></argsstring>
+        <name>filepath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/FileManager.java" line="35" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1FileManager_1_1Tab_1ad8b41415e7daa1153c2f0a16278362a4" prot="package" static="no" mutable="no">
+        <type>JScrollPane</type>
+        <definition>JScrollPane qlib.ide.FileManager.Tab.panel</definition>
+        <argsstring></argsstring>
+        <name>panel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/FileManager.java" line="36" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1FileManager_1_1Tab_1a31feec1d770cf8dad4b3544539664da9" prot="package" static="no" mutable="no">
+        <type><ref refid="classqlib_1_1ide_1_1CodeEditor" kindref="compound">CodeEditor</ref></type>
+        <definition>CodeEditor qlib.ide.FileManager.Tab.editor</definition>
+        <argsstring></argsstring>
+        <name>editor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/FileManager.java" line="37" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1FileManager_1_1Tab_1a7d3928b4e9fbc952f9b0ff263bfa48fe" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean qlib.ide.FileManager.Tab.edited</definition>
+        <argsstring></argsstring>
+        <name>edited</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/FileManager.java" line="38" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1ide_1_1FileManager_1_1Tab_1a88f607b1e5cf352c82788451188e8bc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.FileManager.Tab.setChanged</definition>
+        <argsstring>(boolean changed, JTabbedPane parent)</argsstring>
+        <name>setChanged</name>
+        <param>
+          <type>boolean</type>
+          <declname>changed</declname>
+        </param>
+        <param>
+          <type>JTabbedPane</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/FileManager.java" line="40" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="40" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Internal class to represent tab data </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="355">
+        <label>JPanel</label>
+      </node>
+      <node id="353">
+        <label>qlib.ide.FileManager.Tab</label>
+        <link refid="classqlib_1_1ide_1_1FileManager_1_1Tab"/>
+        <childnode refid="354" relation="usage">
+          <edgelabel>editor</edgelabel>
+        </childnode>
+        <childnode refid="361" relation="usage">
+          <edgelabel>panel</edgelabel>
+        </childnode>
+      </node>
+      <node id="358">
+        <label>JTextPane</label>
+      </node>
+      <node id="360">
+        <label>LinkedList&lt; qlib.ide.CodeEditor.ChangeListener &gt;</label>
+      </node>
+      <node id="357">
+        <label>DefaultStyledDocument</label>
+      </node>
+      <node id="356">
+        <label>AttributeSet</label>
+      </node>
+      <node id="359">
+        <label>LinkedList&lt; qlib.ide.CodeEditor.Style &gt;</label>
+      </node>
+      <node id="354">
+        <label>qlib.ide.CodeEditor</label>
+        <link refid="classqlib_1_1ide_1_1CodeEditor"/>
+        <childnode refid="355" relation="public-inheritance">
+        </childnode>
+        <childnode refid="356" relation="usage">
+          <edgelabel>none</edgelabel>
+        </childnode>
+        <childnode refid="357" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="358" relation="usage">
+          <edgelabel>numbers</edgelabel>
+          <edgelabel>editor</edgelabel>
+        </childnode>
+        <childnode refid="359" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+        <childnode refid="360" relation="usage">
+          <edgelabel>onChangeListeners</edgelabel>
+        </childnode>
+      </node>
+      <node id="361">
+        <label>JScrollPane</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/ide/src/qlib/ide/FileManager.java" line="33" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="33" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1ide_1_1FileManager_1_1Tab_1a7d3928b4e9fbc952f9b0ff263bfa48fe" prot="package" virt="non-virtual"><scope>qlib::ide::FileManager::Tab</scope><name>edited</name></member>
+      <member refid="classqlib_1_1ide_1_1FileManager_1_1Tab_1a31feec1d770cf8dad4b3544539664da9" prot="package" virt="non-virtual"><scope>qlib::ide::FileManager::Tab</scope><name>editor</name></member>
+      <member refid="classqlib_1_1ide_1_1FileManager_1_1Tab_1a0765cadcc1dc2dcecdc902bb72c0f573" prot="package" virt="non-virtual"><scope>qlib::ide::FileManager::Tab</scope><name>filepath</name></member>
+      <member refid="classqlib_1_1ide_1_1FileManager_1_1Tab_1ad12255d140c8ad871496cfa64157c987" prot="package" virt="non-virtual"><scope>qlib::ide::FileManager::Tab</scope><name>name</name></member>
+      <member refid="classqlib_1_1ide_1_1FileManager_1_1Tab_1ad8b41415e7daa1153c2f0a16278362a4" prot="package" virt="non-virtual"><scope>qlib::ide::FileManager::Tab</scope><name>panel</name></member>
+      <member refid="classqlib_1_1ide_1_1FileManager_1_1Tab_1a88f607b1e5cf352c82788451188e8bc8" prot="public" virt="non-virtual"><scope>qlib::ide::FileManager::Tab</scope><name>setChanged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

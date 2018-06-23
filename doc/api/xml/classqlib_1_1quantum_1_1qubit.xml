@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1quantum_1_1qubit" kind="class" language="C++" prot="public">
+    <compoundname>qlib::quantum::qubit</compoundname>
+    <basecompoundref refid="classqlib_1_1quantum_1_1qsystem" prot="public" virt="non-virtual">qlib::quantum::qsystem</basecompoundref>
+    <includes refid="qubit_8hpp" local="no">qubit.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" prot="private" static="no" mutable="no">
+        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">qlib::math::matrix</ref></type>
+        <definition>qlib::math::matrix qlib::quantum::qubit::vec</definition>
+        <argsstring></argsstring>
+        <name>vec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>State vector amplitudes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qubit.hpp" line="26" column="1" bodyfile="src/core/quantum/systems/qubit.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1quantum_1_1qubit_1abb97216eead736ab87e8756b9b4c2ce9" prot="private" static="no" mutable="no">
+        <type>std::uniform_real_distribution&lt; f32 &gt;</type>
+        <definition>std::uniform_real_distribution&lt;f32&gt; qlib::quantum::qubit::distribution</definition>
+        <argsstring></argsstring>
+        <name>distribution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Random distribution used during measurement </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qubit.hpp" line="30" column="1" bodyfile="src/core/quantum/systems/qubit.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qubit_1a32ca47a6fca663c267ddbbac49b12986" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib::quantum::qubit::qubit</definition>
+        <argsstring>()</argsstring>
+        <name>qubit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a qubit in the |0&gt; state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qubit.hpp" line="36" column="1" bodyfile="src/core/quantum/systems/qubit.hpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qubit_1a9c84248c8855841087687baa8b0a08c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib::quantum::qubit::qubit</definition>
+        <argsstring>(qlib::math::complex zero, qlib::math::complex one)</argsstring>
+        <name>qubit</name>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">qlib::math::complex</ref></type>
+          <declname>zero</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">qlib::math::complex</ref></type>
+          <declname>one</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a qubit in desired superposition </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qubit.hpp" line="43" column="1" bodyfile="src/core/quantum/systems/qubit.hpp" bodystart="43" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qubit_1af8eaf337ffcb95c2445ddf35189335e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref> &amp;</type>
+        <definition>matrix&amp; qlib::quantum::qubit::state</definition>
+        <argsstring>()</argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current state column vector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qubit.hpp" line="53" column="1" bodyfile="src/core/quantum/systems/qubit.hpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qubit_1ab3b0b76d5c6f0e627a742fcafbc768ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void qlib::quantum::qubit::apply</definition>
+        <argsstring>(qlib::quantum::gates::igate &amp;gate, std::vector&lt; u64 &gt; inputBits)</argsstring>
+        <name>apply</name>
+        <reimplements refid="classqlib_1_1quantum_1_1qsystem_1adbb748feb351aac69ca4a0bf6c92d77c">apply</reimplements>
+        <param>
+          <type><ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">qlib::quantum::gates::igate</ref> &amp;</type>
+          <declname>gate</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; u64 &gt;</type>
+          <declname>inputBits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply a quantum gate to this qubit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qubit.hpp" line="60" column="1" bodyfile="src/core/quantum/systems/qubit.hpp" bodystart="60" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qubit_1aaf001eff84ccb4b7a6992e42bc2143cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>i8</type>
+        <definition>i8 qlib::quantum::qubit::measure</definition>
+        <argsstring>(i64 qubit=0)</argsstring>
+        <name>measure</name>
+        <reimplements refid="classqlib_1_1quantum_1_1qsystem_1a33d9954c6ca01cb400d940ff05614364">measure</reimplements>
+        <param>
+          <type>i64</type>
+          <declname>qubit</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply a quantum measurement to this qubit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qubit.hpp" line="71" column="1" bodyfile="src/core/quantum/systems/qubit.hpp" bodystart="71" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qubit_1a8bf29d1f66508e4878ea861c5d8e44ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string qlib::quantum::qubit::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="classqlib_1_1quantum_1_1qsystem_1a9d95030955e2fdb26bc9152c32310e7e">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pretty print </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qubit.hpp" line="95" column="1" bodyfile="src/core/quantum/systems/qubit.hpp" bodystart="95" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Representation of a single qubit </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="336">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="334">
+        <label>qlib::quantum::qubit</label>
+        <link refid="classqlib_1_1quantum_1_1qubit"/>
+        <childnode refid="335" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="335">
+        <label>qlib::quantum::qsystem</label>
+        <link refid="classqlib_1_1quantum_1_1qsystem"/>
+        <childnode refid="336" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="339">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="340">
+        <label>qlib::math::matrix</label>
+        <link refid="classqlib_1_1math_1_1matrix"/>
+        <childnode refid="339" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="337">
+        <label>qlib::quantum::qubit</label>
+        <link refid="classqlib_1_1quantum_1_1qubit"/>
+        <childnode refid="338" relation="public-inheritance">
+        </childnode>
+        <childnode refid="340" relation="usage">
+          <edgelabel>vec</edgelabel>
+        </childnode>
+      </node>
+      <node id="338">
+        <label>qlib::quantum::qsystem</label>
+        <link refid="classqlib_1_1quantum_1_1qsystem"/>
+        <childnode refid="339" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/core/quantum/systems/qubit.hpp" line="20" column="1" bodyfile="src/core/quantum/systems/qubit.hpp" bodystart="20" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1quantum_1_1qubit_1ab3b0b76d5c6f0e627a742fcafbc768ae" prot="public" virt="virtual"><scope>qlib::quantum::qubit</scope><name>apply</name></member>
+      <member refid="classqlib_1_1quantum_1_1qubit_1abb97216eead736ab87e8756b9b4c2ce9" prot="private" virt="non-virtual"><scope>qlib::quantum::qubit</scope><name>distribution</name></member>
+      <member refid="classqlib_1_1quantum_1_1qubit_1aaf001eff84ccb4b7a6992e42bc2143cb" prot="public" virt="virtual"><scope>qlib::quantum::qubit</scope><name>measure</name></member>
+      <member refid="classqlib_1_1quantum_1_1qubit_1a32ca47a6fca663c267ddbbac49b12986" prot="public" virt="non-virtual"><scope>qlib::quantum::qubit</scope><name>qubit</name></member>
+      <member refid="classqlib_1_1quantum_1_1qubit_1a9c84248c8855841087687baa8b0a08c3" prot="public" virt="non-virtual"><scope>qlib::quantum::qubit</scope><name>qubit</name></member>
+      <member refid="classqlib_1_1quantum_1_1qubit_1af8eaf337ffcb95c2445ddf35189335e4" prot="public" virt="non-virtual"><scope>qlib::quantum::qubit</scope><name>state</name></member>
+      <member refid="classqlib_1_1quantum_1_1qubit_1a8bf29d1f66508e4878ea861c5d8e44ec" prot="public" virt="virtual"><scope>qlib::quantum::qubit</scope><name>toString</name></member>
+      <member refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" prot="private" virt="non-virtual"><scope>qlib::quantum::qubit</scope><name>vec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

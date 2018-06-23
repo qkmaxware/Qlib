@@ -1,0 +1,54 @@
+\hypertarget{classlexical_1_1lexer}{}\section{lexical\+:\+:lexer Class Reference}
+\label{classlexical_1_1lexer}\index{lexical\+::lexer@{lexical\+::lexer}}
+
+
+{\ttfamily \#include $<$lexer.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlexical_1_1lexer_a5fb29e19937c0e78267c42e13cb545b6}{lexer} (std\+::vector$<$ \hyperlink{classlexical_1_1lexeme}{lexeme} $\ast$ $>$ \hyperlink{classlexical_1_1lexer_acf8db5ce39817336f4cf12294b09bfcc}{tokens})
+\item 
+std\+::vector$<$ \hyperlink{structlexical_1_1match}{match} $>$ \hyperlink{classlexical_1_1lexer_a89f9fd380037709ace9c8fe7604b5460}{tokenize} (std\+::string file, std\+::string\+::iterator begin, std\+::string\+::iterator end)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classlexical_1_1lexeme}{lexeme} $\ast$ $>$ \hyperlink{classlexical_1_1lexer_acf8db5ce39817336f4cf12294b09bfcc}{tokens}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to tokenzie input string 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{lexical\+::lexer@{lexical\+::lexer}!lexer@{lexer}}
+\index{lexer@{lexer}!lexical\+::lexer@{lexical\+::lexer}}
+\subsubsection[{\texorpdfstring{lexer(std\+::vector$<$ lexeme $\ast$ $>$ tokens)}{lexer(std::vector< lexeme * > tokens)}}]{\setlength{\rightskip}{0pt plus 5cm}lexical\+::lexer\+::lexer (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf lexeme} $\ast$ $>$}]{tokens}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classlexical_1_1lexer_a5fb29e19937c0e78267c42e13cb545b6}{}\label{classlexical_1_1lexer_a5fb29e19937c0e78267c42e13cb545b6}
+Create a new lexer from a list of lexemes 
+
+\subsection{Member Function Documentation}
+\index{lexical\+::lexer@{lexical\+::lexer}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!lexical\+::lexer@{lexical\+::lexer}}
+\subsubsection[{\texorpdfstring{tokenize(std\+::string file, std\+::string\+::iterator begin, std\+::string\+::iterator end)}{tokenize(std::string file, std::string::iterator begin, std::string::iterator end)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf match}$>$ lexical\+::lexer\+::tokenize (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{file, }
+\item[{std\+::string\+::iterator}]{begin, }
+\item[{std\+::string\+::iterator}]{end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classlexical_1_1lexer_a89f9fd380037709ace9c8fe7604b5460}{}\label{classlexical_1_1lexer_a89f9fd380037709ace9c8fe7604b5460}
+Tokenize an input string. Lexical exception will be thrown if an unrecognized symbol is reached 
+
+\subsection{Member Data Documentation}
+\index{lexical\+::lexer@{lexical\+::lexer}!tokens@{tokens}}
+\index{tokens@{tokens}!lexical\+::lexer@{lexical\+::lexer}}
+\subsubsection[{\texorpdfstring{tokens}{tokens}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf lexeme}$\ast$$>$ lexical\+::lexer\+::tokens\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classlexical_1_1lexer_acf8db5ce39817336f4cf12294b09bfcc}{}\label{classlexical_1_1lexer_acf8db5ce39817336f4cf12294b09bfcc}
+List of lexemes to extract 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{lexer_8hpp}{lexer.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,106 @@
+\hypertarget{classqlib_1_1quantum_1_1ensemble}{}\section{qlib\+:\+:quantum\+:\+:ensemble Class Reference}
+\label{classqlib_1_1quantum_1_1ensemble}\index{qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}}
+
+
+{\ttfamily \#include $<$ensemble.\+hpp$>$}
+
+
+
+Inheritance diagram for qlib\+:\+:quantum\+:\+:ensemble\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classqlib_1_1quantum_1_1ensemble__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for qlib\+:\+:quantum\+:\+:ensemble\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classqlib_1_1quantum_1_1ensemble__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqlib_1_1quantum_1_1ensemble_a5e088d9ac7394f150f5a2affe0790f2a}{ensemble} (std\+::vector$<$ \hyperlink{classqlib_1_1quantum_1_1qsystem}{qsystem} $\ast$ $>$ eset)
+\item 
+\hyperlink{classqlib_1_1quantum_1_1ensemble_aae0c56d2d64d4be27b5ab976d60c2747}{$\sim$ensemble} ()
+\item 
+size\+\_\+t \hyperlink{classqlib_1_1quantum_1_1ensemble_a4b811e4778f5c845504ed8eec058dfe4}{size} ()
+\item 
+void \hyperlink{classqlib_1_1quantum_1_1ensemble_a9226b1108f8d45d052316f7c366f1d5a}{apply} (\hyperlink{classqlib_1_1quantum_1_1gates_1_1igate}{qlib\+::quantum\+::gates\+::igate} \&op, std\+::vector$<$ u64 $>$ input\+Bits)
+\item 
+i8 \hyperlink{classqlib_1_1quantum_1_1ensemble_ae5e3ebd119e1df6dbb966b7bb6222e5a}{measure} (i64 \hyperlink{classqlib_1_1quantum_1_1qubit}{qubit})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classqlib_1_1quantum_1_1qsystem}{qsystem} $\ast$ $>$ \hyperlink{classqlib_1_1quantum_1_1ensemble_ab77e11f30898f29060ff97236ec26319}{set}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a collection of multiple identical quantum systems 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}!ensemble@{ensemble}}
+\index{ensemble@{ensemble}!qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}}
+\subsubsection[{\texorpdfstring{ensemble(std\+::vector$<$ qsystem $\ast$ $>$ eset)}{ensemble(std::vector< qsystem * > eset)}}]{\setlength{\rightskip}{0pt plus 5cm}qlib\+::quantum\+::ensemble\+::ensemble (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf qsystem} $\ast$ $>$}]{eset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1quantum_1_1ensemble_a5e088d9ac7394f150f5a2affe0790f2a}{}\label{classqlib_1_1quantum_1_1ensemble_a5e088d9ac7394f150f5a2affe0790f2a}
+Create an ensemble from a given list of systems \index{qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}!````~ensemble@{$\sim$ensemble}}
+\index{````~ensemble@{$\sim$ensemble}!qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}}
+\subsubsection[{\texorpdfstring{$\sim$ensemble()}{~ensemble()}}]{\setlength{\rightskip}{0pt plus 5cm}qlib\+::quantum\+::ensemble\+::$\sim$ensemble (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1quantum_1_1ensemble_aae0c56d2d64d4be27b5ab976d60c2747}{}\label{classqlib_1_1quantum_1_1ensemble_aae0c56d2d64d4be27b5ab976d60c2747}
+Delete the ensemble and cleanup pointers 
+
+\subsection{Member Function Documentation}
+\index{qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}!apply@{apply}}
+\index{apply@{apply}!qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}}
+\subsubsection[{\texorpdfstring{apply(qlib\+::quantum\+::gates\+::igate \&op, std\+::vector$<$ u64 $>$ input\+Bits)}{apply(qlib::quantum::gates::igate &op, std::vector< u64 > inputBits)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib\+::quantum\+::ensemble\+::apply (
+\begin{DoxyParamCaption}
+\item[{{\bf qlib\+::quantum\+::gates\+::igate} \&}]{op, }
+\item[{std\+::vector$<$ u64 $>$}]{input\+Bits}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1ensemble_a9226b1108f8d45d052316f7c366f1d5a}{}\label{classqlib_1_1quantum_1_1ensemble_a9226b1108f8d45d052316f7c366f1d5a}
+Apply operator to all systems in the ensemble 
+
+Implements \hyperlink{classqlib_1_1quantum_1_1qsystem_adbb748feb351aac69ca4a0bf6c92d77c}{qlib\+::quantum\+::qsystem}.
+
+\index{qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}!measure@{measure}}
+\index{measure@{measure}!qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}}
+\subsubsection[{\texorpdfstring{measure(i64 qubit)}{measure(i64 qubit)}}]{\setlength{\rightskip}{0pt plus 5cm}i8 qlib\+::quantum\+::ensemble\+::measure (
+\begin{DoxyParamCaption}
+\item[{i64}]{qubit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1ensemble_ae5e3ebd119e1df6dbb966b7bb6222e5a}{}\label{classqlib_1_1quantum_1_1ensemble_ae5e3ebd119e1df6dbb966b7bb6222e5a}
+Measure all systems in the ensemble and return most common answer 
+
+Implements \hyperlink{classqlib_1_1quantum_1_1qsystem_a33d9954c6ca01cb400d940ff05614364}{qlib\+::quantum\+::qsystem}.
+
+\index{qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}!size@{size}}
+\index{size@{size}!qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}}
+\subsubsection[{\texorpdfstring{size()}{size()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t qlib\+::quantum\+::ensemble\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1quantum_1_1ensemble_a4b811e4778f5c845504ed8eec058dfe4}{}\label{classqlib_1_1quantum_1_1ensemble_a4b811e4778f5c845504ed8eec058dfe4}
+Size of the ensemble 
+
+\subsection{Member Data Documentation}
+\index{qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}!set@{set}}
+\index{set@{set}!qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}}
+\subsubsection[{\texorpdfstring{set}{set}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf qsystem}$\ast$$>$ qlib\+::quantum\+::ensemble\+::set\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1quantum_1_1ensemble_ab77e11f30898f29060ff97236ec26319}{}\label{classqlib_1_1quantum_1_1ensemble_ab77e11f30898f29060ff97236ec26319}
+List of all systems in this collection 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/quantum/systems/\hyperlink{ensemble_8hpp}{ensemble.\+hpp}\end{DoxyCompactItemize}

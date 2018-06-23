@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqasm_1_1runtime_1_1environment" kind="class" language="C++" prot="public">
+    <compoundname>qasm::runtime::environment</compoundname>
+    <includes refid="runtime_8hpp" local="no">runtime.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classqasm_1_1runtime_1_1environment_1ae65dc834296334c8b9ea6dd900210881" prot="private" static="no" mutable="no">
+        <type>map&lt; string, <ref refid="classqlib_1_1quantum_1_1qreg" kindref="compound">qreg</ref> &gt;</type>
+        <definition>map&lt;string,qreg&gt; qasm::runtime::environment::quantum_registers</definition>
+        <argsstring></argsstring>
+        <name>quantum_registers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of assigned quantum variables </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="55" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqasm_1_1runtime_1_1environment_1add156869a2a13e2ca877c39e4649757a" prot="private" static="no" mutable="no">
+        <type>map&lt; string, <ref refid="runtime_8hpp_1a20cf870406c99de2d935e3a77b8b60da" kindref="member">creg</ref> &gt;</type>
+        <definition>map&lt;string,creg&gt; qasm::runtime::environment::classic_registers</definition>
+        <argsstring></argsstring>
+        <name>classic_registers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of assigned classic varaibles </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="59" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1adb75f9df54d04d4f5d51c92093b5d466" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">igate</ref> *</type>
+        <definition>igate* qasm::runtime::environment::getGate</definition>
+        <argsstring>(string name)</argsstring>
+        <name>getGate</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For a given name, return the associated gate object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="65" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="65" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1a78ac575d7245e21c65fb31e6585c38cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="runtime_8hpp_1a20cf870406c99de2d935e3a77b8b60da" kindref="member">creg</ref> &amp;</type>
+        <definition>creg&amp; qasm::runtime::environment::getCreg</definition>
+        <argsstring>(string name)</argsstring>
+        <name>getCreg</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get classic variable from a name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="103" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="103" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1a4cd69bebda4f5957e52168c91654f5f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qasm::runtime::environment::hasCreg</definition>
+        <argsstring>(string name)</argsstring>
+        <name>hasCreg</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if a classic variable with name exists </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="110" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1a976c4f032feee9c47af587a0f6c759ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qasm::runtime::environment::setCreg</definition>
+        <argsstring>(string name, u64 size)</argsstring>
+        <name>setCreg</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>u64</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bind a classic variable to a name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="117" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="117" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1ae4f47f020b8baf4f94165345f26a6dca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1quantum_1_1qreg" kindref="compound">qreg</ref> &amp;</type>
+        <definition>qreg&amp; qasm::runtime::environment::getQreg</definition>
+        <argsstring>(string name)</argsstring>
+        <name>getQreg</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get quantum variable from a name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="128" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="128" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1a77a8db656f3c5b5a2fcdde9a205deee5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qasm::runtime::environment::hasQreg</definition>
+        <argsstring>(string name)</argsstring>
+        <name>hasQreg</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if a quantum variable with name exists </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="135" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="135" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1acd773cf48993b56c9f6b6b353a5a5e6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qasm::runtime::environment::setQreg</definition>
+        <argsstring>(string name, u64 size)</argsstring>
+        <name>setQreg</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>u64</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bind a quantum variable to a name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="142" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="142" bodyend="145"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Represents a runtime environment including variable values </para>    </detaileddescription>
+    <location file="src/runtime/runtime.hpp" line="50" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="50" bodyend="146"/>
+    <listofallmembers>
+      <member refid="classqasm_1_1runtime_1_1environment_1add156869a2a13e2ca877c39e4649757a" prot="private" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>classic_registers</name></member>
+      <member refid="classqasm_1_1runtime_1_1environment_1a78ac575d7245e21c65fb31e6585c38cc" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>getCreg</name></member>
+      <member refid="classqasm_1_1runtime_1_1environment_1adb75f9df54d04d4f5d51c92093b5d466" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>getGate</name></member>
+      <member refid="classqasm_1_1runtime_1_1environment_1ae4f47f020b8baf4f94165345f26a6dca" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>getQreg</name></member>
+      <member refid="classqasm_1_1runtime_1_1environment_1a4cd69bebda4f5957e52168c91654f5f5" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>hasCreg</name></member>
+      <member refid="classqasm_1_1runtime_1_1environment_1a77a8db656f3c5b5a2fcdde9a205deee5" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>hasQreg</name></member>
+      <member refid="classqasm_1_1runtime_1_1environment_1ae65dc834296334c8b9ea6dd900210881" prot="private" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>quantum_registers</name></member>
+      <member refid="classqasm_1_1runtime_1_1environment_1a976c4f032feee9c47af587a0f6c759ae" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>setCreg</name></member>
+      <member refid="classqasm_1_1runtime_1_1environment_1acd773cf48993b56c9f6b6b353a5a5e6a" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>setQreg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="standard__gates_8hpp" kind="file" language="C++">
+    <compoundname>standard_gates.hpp</compoundname>
+    <includes refid="ident_8hpp" local="yes">./gates/ident.hpp</includes>
+    <includes refid="hadamard_8hpp" local="yes">./gates/hadamard.hpp</includes>
+    <includes refid="pauliX_8hpp" local="yes">./gates/pauliX.hpp</includes>
+    <includes refid="pauliY_8hpp" local="yes">./gates/pauliY.hpp</includes>
+    <includes refid="pauliZ_8hpp" local="yes">./gates/pauliZ.hpp</includes>
+    <includes refid="phase_8hpp" local="yes">./gates/phase.hpp</includes>
+    <includes refid="cnot_8hpp" local="yes">./gates/cnot.hpp</includes>
+    <includes refid="cy_8hpp" local="yes">./gates/cy.hpp</includes>
+    <includes refid="cz_8hpp" local="yes">./gates/cz.hpp</includes>
+    <includes refid="toffoli_8hpp" local="yes">./gates/toffoli.hpp</includes>
+    <includedby refid="qlib_8h" local="yes">src/core/qlib.h</includedby>
+    <incdepgraph>
+      <node id="1596">
+        <label>limits</label>
+      </node>
+      <node id="1593">
+        <label>./../../general/object.hpp</label>
+        <link refid="object_8hpp"/>
+        <childnode refid="1594" relation="include">
+        </childnode>
+        <childnode refid="1597" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+        <childnode refid="1599" relation="include">
+        </childnode>
+        <childnode refid="1600" relation="include">
+        </childnode>
+        <childnode refid="1601" relation="include">
+        </childnode>
+      </node>
+      <node id="1595">
+        <label>stdint.h</label>
+      </node>
+      <node id="1604">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1605">
+        <label>./../../math/matrix.hpp</label>
+        <link refid="matrix_8hpp"/>
+        <childnode refid="1602" relation="include">
+        </childnode>
+        <childnode refid="1593" relation="include">
+        </childnode>
+        <childnode refid="1606" relation="include">
+        </childnode>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1603" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+      </node>
+      <node id="1613">
+        <label>cmath</label>
+      </node>
+      <node id="1592">
+        <label>./igate.hpp</label>
+        <link refid="igate_8hpp"/>
+        <childnode refid="1593" relation="include">
+        </childnode>
+        <childnode refid="1602" relation="include">
+        </childnode>
+        <childnode refid="1605" relation="include">
+        </childnode>
+      </node>
+      <node id="1606">
+        <label>stdexcept</label>
+      </node>
+      <node id="1612">
+        <label>./gates/phase.hpp</label>
+        <link refid="phase_8hpp"/>
+        <childnode refid="1591" relation="include">
+        </childnode>
+        <childnode refid="1603" relation="include">
+        </childnode>
+        <childnode refid="1613" relation="include">
+        </childnode>
+      </node>
+      <node id="1590">
+        <label>./gates/ident.hpp</label>
+        <link refid="ident_8hpp"/>
+        <childnode refid="1591" relation="include">
+        </childnode>
+      </node>
+      <node id="1599">
+        <label>exception</label>
+      </node>
+      <node id="1600">
+        <label>random</label>
+      </node>
+      <node id="1591">
+        <label>onequbitgate.hpp</label>
+        <link refid="onequbitgate_8hpp"/>
+        <childnode refid="1592" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+      </node>
+      <node id="1618">
+        <label>./gates/toffoli.hpp</label>
+        <link refid="toffoli_8hpp"/>
+        <childnode refid="1619" relation="include">
+        </childnode>
+        <childnode refid="1609" relation="include">
+        </childnode>
+      </node>
+      <node id="1602">
+        <label>./../../math/complex.hpp</label>
+        <link refid="complex_8hpp"/>
+        <childnode refid="1593" relation="include">
+        </childnode>
+        <childnode refid="1603" relation="include">
+        </childnode>
+        <childnode refid="1604" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+      </node>
+      <node id="1609">
+        <label>./gates/pauliX.hpp</label>
+        <link refid="pauliX_8hpp"/>
+        <childnode refid="1591" relation="include">
+        </childnode>
+      </node>
+      <node id="1607">
+        <label>vector</label>
+      </node>
+      <node id="1610">
+        <label>./gates/pauliY.hpp</label>
+        <link refid="pauliY_8hpp"/>
+        <childnode refid="1591" relation="include">
+        </childnode>
+      </node>
+      <node id="1614">
+        <label>./gates/cnot.hpp</label>
+        <link refid="cnot_8hpp"/>
+        <childnode refid="1615" relation="include">
+        </childnode>
+        <childnode refid="1609" relation="include">
+        </childnode>
+      </node>
+      <node id="1598">
+        <label>sstream</label>
+      </node>
+      <node id="1611">
+        <label>./gates/pauliZ.hpp</label>
+        <link refid="pauliZ_8hpp"/>
+        <childnode refid="1591" relation="include">
+        </childnode>
+      </node>
+      <node id="1617">
+        <label>./gates/cz.hpp</label>
+        <link refid="cz_8hpp"/>
+        <childnode refid="1615" relation="include">
+        </childnode>
+        <childnode refid="1611" relation="include">
+        </childnode>
+      </node>
+      <node id="1603">
+        <label>math.h</label>
+      </node>
+      <node id="1597">
+        <label>iostream</label>
+      </node>
+      <node id="1608">
+        <label>./gates/hadamard.hpp</label>
+        <link refid="hadamard_8hpp"/>
+        <childnode refid="1591" relation="include">
+        </childnode>
+      </node>
+      <node id="1589">
+        <label>src/core/quantum/standard_gates.hpp</label>
+        <link refid="standard_gates.hpp"/>
+        <childnode refid="1590" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+        <childnode refid="1609" relation="include">
+        </childnode>
+        <childnode refid="1610" relation="include">
+        </childnode>
+        <childnode refid="1611" relation="include">
+        </childnode>
+        <childnode refid="1612" relation="include">
+        </childnode>
+        <childnode refid="1614" relation="include">
+        </childnode>
+        <childnode refid="1616" relation="include">
+        </childnode>
+        <childnode refid="1617" relation="include">
+        </childnode>
+        <childnode refid="1618" relation="include">
+        </childnode>
+      </node>
+      <node id="1601">
+        <label>chrono</label>
+      </node>
+      <node id="1616">
+        <label>./gates/cy.hpp</label>
+        <link refid="cy_8hpp"/>
+        <childnode refid="1615" relation="include">
+        </childnode>
+        <childnode refid="1610" relation="include">
+        </childnode>
+      </node>
+      <node id="1594">
+        <label>./types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="1595" relation="include">
+        </childnode>
+        <childnode refid="1596" relation="include">
+        </childnode>
+      </node>
+      <node id="1615">
+        <label>controlledgate.hpp</label>
+        <link refid="controlledgate_8hpp"/>
+        <childnode refid="1592" relation="include">
+        </childnode>
+        <childnode refid="1591" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+      </node>
+      <node id="1619">
+        <label>controlled2gate.hpp</label>
+        <link refid="controlled2gate_8hpp"/>
+        <childnode refid="1592" relation="include">
+        </childnode>
+        <childnode refid="1591" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1623">
+        <label>src/runtime/main.cpp</label>
+        <link refid="runtime_2main_8cpp"/>
+      </node>
+      <node id="1624">
+        <label>src/runtime/runtime.hpp</label>
+        <link refid="runtime_8hpp"/>
+        <childnode refid="1625" relation="include">
+        </childnode>
+        <childnode refid="1623" relation="include">
+        </childnode>
+      </node>
+      <node id="1625">
+        <label>src/runtime/qasmparser.hpp</label>
+        <link refid="qasmparser_8hpp"/>
+        <childnode refid="1623" relation="include">
+        </childnode>
+      </node>
+      <node id="1622">
+        <label>src/core/main.cpp</label>
+        <link refid="core_2main_8cpp"/>
+      </node>
+      <node id="1621">
+        <label>src/core/qlib.h</label>
+        <link refid="qlib_8h"/>
+        <childnode refid="1622" relation="include">
+        </childnode>
+        <childnode refid="1623" relation="include">
+        </childnode>
+        <childnode refid="1624" relation="include">
+        </childnode>
+      </node>
+      <node id="1620">
+        <label>src/core/quantum/standard_gates.hpp</label>
+        <link refid="standard_gates.hpp"/>
+        <childnode refid="1621" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_QLIB_QUANTUM_STANDARD_GATES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_QLIB_QUANTUM_STANDARD_GATES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ident_8hpp" kindref="compound">./gates/ident.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="hadamard_8hpp" kindref="compound">./gates/hadamard.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pauliX_8hpp" kindref="compound">./gates/pauliX.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pauliY_8hpp" kindref="compound">./gates/pauliY.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pauliZ_8hpp" kindref="compound">./gates/pauliZ.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="phase_8hpp" kindref="compound">./gates/phase.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cnot_8hpp" kindref="compound">./gates/cnot.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cy_8hpp" kindref="compound">./gates/cy.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cz_8hpp" kindref="compound">./gates/cz.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="toffoli_8hpp" kindref="compound">./gates/toffoli.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//TODO<sp/>phase<sp/>shift<sp/>gate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">qop<sp/>SWAP<sp/>=<sp/>qop(&quot;Swap&quot;,<sp/>2,<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>complex(1),<sp/>complex(0),<sp/>complex(0),<sp/>complex(0),</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>complex(0),<sp/>complex(0),<sp/>complex(1),<sp/>complex(0),</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>complex(0),<sp/>complex(1),<sp/>complex(0),<sp/>complex(0),</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>complex(0),<sp/>complex(0),<sp/>complex(0),<sp/>complex(1)</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/core/quantum/standard_gates.hpp"/>
+  </compounddef>
+</doxygen>

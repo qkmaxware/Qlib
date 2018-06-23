@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlexical_1_1match" kind="struct" language="C++" prot="public">
+    <compoundname>lexical::match</compoundname>
+    <includes refid="lexer_8hpp" local="no">lexer.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlexical_1_1match_1a346ef13017b47ee41a6abe643e5732e1" prot="public" static="no" mutable="no">
+        <type><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref> *</type>
+        <definition>lexeme* lexical::match::lexemeptr</definition>
+        <argsstring></argsstring>
+        <name>lexemeptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the associated lexeme this match was extracted from </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="28" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlexical_1_1match_1a2ebda7888d347b3de302ffc465755f07" prot="public" static="no" mutable="no">
+        <type>std::match_results&lt; std::string::iterator &gt;</type>
+        <definition>std::match_results&lt;std::string::iterator&gt; lexical::match::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Regular expression match contents </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="32" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlexical_1_1match_1a854a8828680bbfc08aa214e875ba5514" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref></type>
+        <definition>ulong lexical::match::row_start</definition>
+        <argsstring></argsstring>
+        <name>row_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start row of match in source file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="36" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlexical_1_1match_1a3a1754ba678051a508ee2889c4a5f4eb" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref></type>
+        <definition>ulong lexical::match::column_start</definition>
+        <argsstring></argsstring>
+        <name>column_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start column of match in source file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="40" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlexical_1_1match_1abf7eca2de9cee016df02265a38666486" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref></type>
+        <definition>ulong lexical::match::row_end</definition>
+        <argsstring></argsstring>
+        <name>row_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>End row of match in source file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="44" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlexical_1_1match_1ac9b0f6134b653452a2b0ff8b36c89729" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref></type>
+        <definition>ulong lexical::match::column_end</definition>
+        <argsstring></argsstring>
+        <name>column_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>End column of match in source file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="48" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlexical_1_1match_1aafa3ddcad89ea3abb86b557cafe3e0d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lexical::match::matchExists</definition>
+        <argsstring>()</argsstring>
+        <name>matchExists</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if this match is valid </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="53" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class representing a regex match in a lexed document including row and column indexes </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="278">
+        <label>lexical::match</label>
+        <link refid="structlexical_1_1match"/>
+        <childnode refid="279" relation="usage">
+          <edgelabel>lexemeptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="279">
+        <label>lexical::lexeme</label>
+        <link refid="classlexical_1_1lexeme"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/lexer.hpp" line="23" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="23" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structlexical_1_1match_1ac9b0f6134b653452a2b0ff8b36c89729" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>column_end</name></member>
+      <member refid="structlexical_1_1match_1a3a1754ba678051a508ee2889c4a5f4eb" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>column_start</name></member>
+      <member refid="structlexical_1_1match_1a2ebda7888d347b3de302ffc465755f07" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>content</name></member>
+      <member refid="structlexical_1_1match_1a346ef13017b47ee41a6abe643e5732e1" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>lexemeptr</name></member>
+      <member refid="structlexical_1_1match_1aafa3ddcad89ea3abb86b557cafe3e0d7" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>matchExists</name></member>
+      <member refid="structlexical_1_1match_1abf7eca2de9cee016df02265a38666486" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>row_end</name></member>
+      <member refid="structlexical_1_1match_1a854a8828680bbfc08aa214e875ba5514" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>row_start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

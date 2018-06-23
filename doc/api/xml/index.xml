@@ -1,0 +1,541 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classqasm_1_1exec_1_1apply__gate" kind="class"><name>qasm::exec::apply_gate</name>
+    <member refid="classqasm_1_1exec_1_1apply__gate_1a2b5eea4ddab7101ab5353ecd160e0d30" kind="variable"><name>name</name></member>
+    <member refid="classqasm_1_1exec_1_1apply__gate_1afa925dd76a3c14f5a3739bbd1ab20258" kind="variable"><name>param_names</name></member>
+    <member refid="classqasm_1_1exec_1_1apply__gate_1a45e00e882c9241a288dae90ae0faa77f" kind="variable"><name>param_indecies</name></member>
+    <member refid="classqasm_1_1exec_1_1apply__gate_1a0e7787396ea68b95df1e6a395cd21f2e" kind="function"><name>apply_gate</name></member>
+    <member refid="classqasm_1_1exec_1_1apply__gate_1a4ab94a7feee1830b4be52a487e9cdef5" kind="function"><name>invoke_rootprogram</name></member>
+  </compound>
+  <compound refid="classqasm_1_1exec_1_1apply__subcircuit" kind="class"><name>qasm::exec::apply_subcircuit</name>
+    <member refid="classqasm_1_1exec_1_1apply__subcircuit_1a6bf64c96ecf46285e9d18987a91b37fa" kind="variable"><name>name</name></member>
+    <member refid="classqasm_1_1exec_1_1apply__subcircuit_1ac7828e8ae990026dbcf6bb7b5cdc1d9b" kind="variable"><name>params</name></member>
+    <member refid="classqasm_1_1exec_1_1apply__subcircuit_1ae8196f004b4d61d15a4ae6bad33ce8e5" kind="function"><name>apply_subcircuit</name></member>
+  </compound>
+  <compound refid="classqlib_1_1ide_1_1AutoComplete" kind="class"><name>qlib::ide::AutoComplete</name>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1ab41cb720a8247194d0c4c2cc5fa6aeef" kind="variable"><name>textComponent</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1a79190bf245b656b279233a982ed4248c" kind="variable"><name>docListener</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1a547307db6247e63b17bad503504dbd22" kind="variable"><name>suggestions</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1ab4de0d96f7b92c3768e1c08fbb47aed5" kind="variable"><name>lettersUntilShown</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1add24423a55cac629e8316c5918a6d954" kind="variable"><name>typedWord</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1a7a588e36bc43ffbb782e6f43d89176a2" kind="variable"><name>startPosition</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1ab737bdeda6e26125bc85ad00f5de14d2" kind="variable"><name>endPosition</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1a858e66824f2ef4066d9987b4206037a2" kind="variable"><name>window</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1ab04a22ed940369f199952db2ce1c04f8" kind="variable"><name>list</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1aaaa89916b82f63bd8d7079c84c251e27" kind="variable"><name>model</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1a312cdabc82431a5cc8d73c1884c416a7" kind="variable"><name>width</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1a8ebc95801d3b19aff09123cf8729e2c9" kind="variable"><name>maxHeight</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1a30e4dd8e6c36a6ef576641480d4368f7" kind="function"><name>AutoComplete</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1a6dfe58b003099399cbed40a8082631ff" kind="function"><name>isVisible</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1a1b3f11041ae6af9b54e56c19adbbae5c" kind="function"><name>addWord</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1a8e424fd802e81ab9a816c9b54c8cf364" kind="function"><name>removeWord</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1aea2eaa12383e22951f5ddef7b9182b07" kind="function"><name>setCharactersUntilSuggestions</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1af2b5cb3b8c9557abaed28883288f5f34" kind="function"><name>insertSuggestion</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1a9b4c1fc14bdff51a29b3a13622cba025" kind="function"><name>showSuggestions</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1a262b15fe050727186b0dc3d22e0d5143" kind="function"><name>hideSuggestions</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1acdc8c857e1580998523ee6f50c738a84" kind="function"><name>getText</name></member>
+    <member refid="classqlib_1_1ide_1_1AutoComplete_1a04a7f33c4d243d3d15592c3b0b1b19d4" kind="function"><name>checkForAndShowSuggestions</name></member>
+  </compound>
+  <compound refid="interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener" kind="interface"><name>qlib::ide::CodeEditor::ChangeListener</name>
+    <member refid="interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener_1a4eb57d86f7a6f23c781ebb1d1cd99ce6" kind="function"><name>invoke</name></member>
+  </compound>
+  <compound refid="classqlib_1_1ide_1_1CodeEditor" kind="class"><name>qlib::ide::CodeEditor</name>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1a7890793e4b90ebe797bb5e368e72e721" kind="variable"><name>editor</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1ad9b88b89dc797c2eb6511cb5026b30da" kind="variable"><name>numbers</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1a89cfdfd40de46ae17636669521f7c7e2" kind="variable"><name>doc</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1a126eb2c62a3df4b9f9ce29685f7a474d" kind="variable"><name>styles</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1a108318be527559a6a6fdc044ce91f379" kind="variable"><name>none</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1abbe985cdd77e9feb1818773c377257fb" kind="variable"><name>onChangeListeners</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1a9f3e1be7ea989d2011bf7d419341405c" kind="function"><name>CodeEditor</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1a89f62319ae0b01df34fa6ad8f06ddb10" kind="function"><name>addChangeListener</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1ab6e32fe9c4f6535ee81fe69d4a77c8f2" kind="function"><name>removeChangeListener</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1aabec5fb27bf75e4bb805240dc22c9875" kind="function"><name>setBackgroundColour</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1ae1b405cb3544e1869f229e0dbc1a4b0a" kind="function"><name>setFontColour</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1a8686347c695b958ea8a5e8737cc59a1f" kind="function"><name>setText</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1a7cf3ac3837b11ee6494d45bb7e3d2435" kind="function"><name>getText</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1a65a9670ed0303c4acdaa53b45cc8b5d8" kind="function"><name>setFont</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1a5a8026e92f259481f31e26dcbab0e5e2" kind="function"><name>addStyle</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1a50cf32315b6cb4d3358a2d00adbae74a" kind="function"><name>addStyle</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1a15327f7a8960ee54f65e4aca0b8e0c69" kind="function"><name>getEditor</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1accee26f5cf7da53ffda849ab6d4741e0" kind="function"><name>updateNumbering</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1a2fccea5703e28988470c1e4634316ac8" kind="function"><name>style</name></member>
+  </compound>
+  <compound refid="classqlib_1_1math_1_1complex" kind="class"><name>qlib::math::complex</name>
+    <member refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kind="variable"><name>r</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kind="variable"><name>i</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kind="function"><name>complex</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1a0eeea99f7c7d4a8e072f6c4836379ed0" kind="function"><name>complex</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1a0dd3216eb1b24c906b394e67c59adda1" kind="function"><name>complex</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1ab1471e90345a25e6d112216f1a634290" kind="function"><name>complex</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1ad1a8ab1ad95a47206e72d3a0d7be9511" kind="function"><name>sqrMagnitude</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1a8b365d2760802f1318e02c78c8938d2f" kind="function"><name>magnitude</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1a2cfd8546410a48d0568996e40beb85ce" kind="function"><name>conjugate</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1a088dcd1f0349632d0930177e95aa4729" kind="function"><name>normal</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1a7a670edef0db4264e211e68aea71f0ec" kind="function"><name>isPureReal</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1a4465bc164fe2b490c917fc9321530ebb" kind="function"><name>isPureImaginary</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1ae8f4008d499a05bbebecd48e0bf504d7" kind="function"><name>isZero</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1a760122d26f377b008e129ff92b134a43" kind="function"><name>arg</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1afd24fadb21a07815675481b131398cff" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate" kind="class"><name>qlib::quantum::gates::controlled2gate</name>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a32ec87dafda9c4c80af4dc93758f6275" kind="variable"><name>sname</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1abb21342d2206fbc4f7ab4e781997e471" kind="variable"><name>refgate</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a83775bed048e4856d99c8d59d6a20db3" kind="function"><name>controlled2gate</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a27a8793a3015aa9797f03fa0174113c2" kind="function"><name>inputs</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a25121d9bc52a594a718b6d8037ea6cc0" kind="function"><name>name</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a272635da6a7b8f65379f6ecb42df9389" kind="function"><name>operate</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1aeefab300e88034edbb5eacfa882ed218" kind="function"><name>getMatrix</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a4fda814b0336d103f5cdb7ea98507bd1" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classqlib_1_1quantum_1_1gates_1_1controlledgate" kind="class"><name>qlib::quantum::gates::controlledgate</name>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1a638c7bead4c936bc0c8672a1fee4b50f" kind="variable"><name>sname</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1a8712f70ae76ec442aebad49109ddea97" kind="variable"><name>refgate</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1abe6d1d959a5a781739fe962551d013e7" kind="function"><name>controlledgate</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1adb544cb10cd5f8836e331102f7c7e9d6" kind="function"><name>inputs</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1a7fb8875c83106b35d733cc96b312b957" kind="function"><name>name</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1aec6e423cc6ae442c5c3c5dc04581959e" kind="function"><name>operate</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1a7d9d8771acebaa39b35176c04f114cb1" kind="function"><name>getMatrix</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1a87b4d6e66acffc4e14eb3e39a19c4bee" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classqasm_1_1exec_1_1declaration" kind="class"><name>qasm::exec::declaration</name>
+    <member refid="classqasm_1_1exec_1_1declaration_1a165d72745d002f80716cbd37f27687fe" kind="variable"><name>type</name></member>
+    <member refid="classqasm_1_1exec_1_1declaration_1a72faf3aa92a6a3d100ff0f7ddf0aab65" kind="variable"><name>name</name></member>
+    <member refid="classqasm_1_1exec_1_1declaration_1a53d08c265c26517db99871b3dd54cf89" kind="variable"><name>size</name></member>
+    <member refid="classqasm_1_1exec_1_1declaration_1ae8f3a47af0a26055fb6fc90303defbeb" kind="function"><name>declaration</name></member>
+    <member refid="classqasm_1_1exec_1_1declaration_1a4f1396fca212fb0ce984d2cea90df0a8" kind="function"><name>invoke_rootprogram</name></member>
+  </compound>
+  <compound refid="classqlib_1_1quantum_1_1ensemble" kind="class"><name>qlib::quantum::ensemble</name>
+    <member refid="classqlib_1_1quantum_1_1ensemble_1ab77e11f30898f29060ff97236ec26319" kind="variable"><name>set</name></member>
+    <member refid="classqlib_1_1quantum_1_1ensemble_1a5e088d9ac7394f150f5a2affe0790f2a" kind="function"><name>ensemble</name></member>
+    <member refid="classqlib_1_1quantum_1_1ensemble_1aae0c56d2d64d4be27b5ab976d60c2747" kind="function"><name>~ensemble</name></member>
+    <member refid="classqlib_1_1quantum_1_1ensemble_1a4b811e4778f5c845504ed8eec058dfe4" kind="function"><name>size</name></member>
+    <member refid="classqlib_1_1quantum_1_1ensemble_1a9226b1108f8d45d052316f7c366f1d5a" kind="function"><name>apply</name></member>
+    <member refid="classqlib_1_1quantum_1_1ensemble_1ae5e3ebd119e1df6dbb966b7bb6222e5a" kind="function"><name>measure</name></member>
+  </compound>
+  <compound refid="classqasm_1_1runtime_1_1environment" kind="class"><name>qasm::runtime::environment</name>
+    <member refid="classqasm_1_1runtime_1_1environment_1ae65dc834296334c8b9ea6dd900210881" kind="variable"><name>quantum_registers</name></member>
+    <member refid="classqasm_1_1runtime_1_1environment_1add156869a2a13e2ca877c39e4649757a" kind="variable"><name>classic_registers</name></member>
+    <member refid="classqasm_1_1runtime_1_1environment_1adb75f9df54d04d4f5d51c92093b5d466" kind="function"><name>getGate</name></member>
+    <member refid="classqasm_1_1runtime_1_1environment_1a78ac575d7245e21c65fb31e6585c38cc" kind="function"><name>getCreg</name></member>
+    <member refid="classqasm_1_1runtime_1_1environment_1a4cd69bebda4f5957e52168c91654f5f5" kind="function"><name>hasCreg</name></member>
+    <member refid="classqasm_1_1runtime_1_1environment_1a976c4f032feee9c47af587a0f6c759ae" kind="function"><name>setCreg</name></member>
+    <member refid="classqasm_1_1runtime_1_1environment_1ae4f47f020b8baf4f94165345f26a6dca" kind="function"><name>getQreg</name></member>
+    <member refid="classqasm_1_1runtime_1_1environment_1a77a8db656f3c5b5a2fcdde9a205deee5" kind="function"><name>hasQreg</name></member>
+    <member refid="classqasm_1_1runtime_1_1environment_1acd773cf48993b56c9f6b6b353a5a5e6a" kind="function"><name>setQreg</name></member>
+  </compound>
+  <compound refid="classqasm_1_1exec_1_1executable" kind="class"><name>qasm::exec::executable</name>
+    <member refid="classqasm_1_1exec_1_1executable_1ad07f864a889edb0777ebbb1bc1628121" kind="function"><name>invoke_rootprogram</name></member>
+    <member refid="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" kind="function"><name>invoke_subprogram</name></member>
+  </compound>
+  <compound refid="classqlib_1_1ide_1_1FileManager" kind="class"><name>qlib::ide::FileManager</name>
+    <member refid="classqlib_1_1ide_1_1FileManager_1ad30cb7a3ba1310ab8cb38f11bb84f0c1" kind="variable"><name>tabs</name></member>
+    <member refid="classqlib_1_1ide_1_1FileManager_1af28dcef61bad9a512d4dfba62d9288a3" kind="variable"><name>openTabs</name></member>
+    <member refid="classqlib_1_1ide_1_1FileManager_1ad6a89c4b0f958a34dd7450ab8826f647" kind="function"><name>FileManager</name></member>
+    <member refid="classqlib_1_1ide_1_1FileManager_1a9b6923afb970442de71a07405abc6751" kind="function"><name>empty</name></member>
+    <member refid="classqlib_1_1ide_1_1FileManager_1a1a740e6ad8726d1caad504a4b7a53859" kind="function"><name>open</name></member>
+    <member refid="classqlib_1_1ide_1_1FileManager_1a043ddff761f62666fa4f6959b7e116c3" kind="function"><name>save</name></member>
+    <member refid="classqlib_1_1ide_1_1FileManager_1acefb35297452dccb1f7a2cbebd08b0fc" kind="function"><name>close</name></member>
+    <member refid="classqlib_1_1ide_1_1FileManager_1afa5d713317aa1248f7c102dd086e53b8" kind="function"><name>getActive</name></member>
+    <member refid="classqlib_1_1ide_1_1FileManager_1a986392eebf1b4d6df69bf3eca688d926" kind="function"><name>getPanel</name></member>
+  </compound>
+  <compound refid="classqlib_1_1quantum_1_1gates_1_1igate" kind="class"><name>qlib::quantum::gates::igate</name>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1igate_1ae8f8dda69d7742c12c743829abb3662b" kind="function"><name>name</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1igate_1ac8aa56b0095a94fdd437bc55d90aec9d" kind="function"><name>inputs</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1igate_1a66038ee65fec12c627789505e11f1e23" kind="function"><name>operate</name></member>
+  </compound>
+  <compound refid="classqlib_1_1ide_1_1IniIO" kind="class"><name>qlib::ide::IniIO</name>
+    <member refid="classqlib_1_1ide_1_1IniIO_1a632b3fd3f02261c98a2aecf793c956a5" kind="variable"><name>DEFAULT</name></member>
+    <member refid="classqlib_1_1ide_1_1IniIO_1a8676d10eea865975fca03579a63b9831" kind="variable"><name>options</name></member>
+    <member refid="classqlib_1_1ide_1_1IniIO_1a0eadd42f5485d6bff447436734eda253" kind="function"><name>IniIO</name></member>
+    <member refid="classqlib_1_1ide_1_1IniIO_1a02df232b5337879896c1e067b6e27601" kind="function"><name>template</name></member>
+    <member refid="classqlib_1_1ide_1_1IniIO_1ae79dc4c2b69222d0e1725e70406da4c6" kind="function"><name>read</name></member>
+    <member refid="classqlib_1_1ide_1_1IniIO_1aa8afcd3e7f28ea7d5324ab186650be1d" kind="function"><name>merge</name></member>
+    <member refid="classqlib_1_1ide_1_1IniIO_1a25c322821c43bb710404a05210fb20be" kind="function"><name>readAndUpdate</name></member>
+    <member refid="classqlib_1_1ide_1_1IniIO_1a10bafd582cb3816d23c93f1883b3e68b" kind="function"><name>write</name></member>
+    <member refid="classqlib_1_1ide_1_1IniIO_1a69a0c6a7e4bf6d161e37db728bff03a6" kind="function"><name>isSet</name></member>
+    <member refid="classqlib_1_1ide_1_1IniIO_1aab6608976c5f371d0f044fc7d39f0328" kind="function"><name>getString</name></member>
+    <member refid="classqlib_1_1ide_1_1IniIO_1a01a6fe06552fefab11669ea65ace7392" kind="function"><name>getInt</name></member>
+    <member refid="classqlib_1_1ide_1_1IniIO_1a2337d52ad4d343c74b808f64e70710f0" kind="function"><name>set</name></member>
+    <member refid="classqlib_1_1ide_1_1IniIO_1a68567b380e0074a223137077125eb060" kind="function"><name>exists</name></member>
+  </compound>
+  <compound refid="classlexical_1_1lexeme" kind="class"><name>lexical::lexeme</name>
+    <member refid="classlexical_1_1lexeme_1a43f46025bbc59bdaff06d4e4efc979c1" kind="variable"><name>name</name></member>
+    <member refid="classlexical_1_1lexeme_1a8265b6f1e87790a3ca3fcd82b5543726" kind="variable"><name>pattern</name></member>
+    <member refid="classlexical_1_1lexeme_1a2185fc486b1c6c75a57a3e30155eed15" kind="variable"><name>rx</name></member>
+    <member refid="classlexical_1_1lexeme_1accc3564ad951f163e3cf4dd8f93ede15" kind="variable"><name>skippable</name></member>
+    <member refid="classlexical_1_1lexeme_1a2a69e7860946ccb70ab8f8ca0970ca42" kind="function"><name>lexeme</name></member>
+    <member refid="classlexical_1_1lexeme_1a26fd45099f7e056db7f39cd9f222cf97" kind="function"><name>matches</name></member>
+    <member refid="classlexical_1_1lexeme_1ade092b47d889c338daa38902409747ab" kind="function"><name>extract</name></member>
+  </compound>
+  <compound refid="classlexical_1_1lexer" kind="class"><name>lexical::lexer</name>
+    <member refid="classlexical_1_1lexer_1acf8db5ce39817336f4cf12294b09bfcc" kind="variable"><name>tokens</name></member>
+    <member refid="classlexical_1_1lexer_1a5fb29e19937c0e78267c42e13cb545b6" kind="function"><name>lexer</name></member>
+    <member refid="classlexical_1_1lexer_1a89f9fd380037709ace9c8fe7604b5460" kind="function"><name>tokenize</name></member>
+  </compound>
+  <compound refid="classlexical_1_1lexicalexception" kind="class"><name>lexical::lexicalexception</name>
+    <member refid="classlexical_1_1lexicalexception_1ad116c229b30998b6630210dd86e8b10f" kind="variable"><name>what_message</name></member>
+    <member refid="classlexical_1_1lexicalexception_1a785417c9f8375670d73567db6562b74a" kind="variable"><name>r</name></member>
+    <member refid="classlexical_1_1lexicalexception_1a7d7aeb97fa40e634950b28a3d48a9b51" kind="variable"><name>c</name></member>
+    <member refid="classlexical_1_1lexicalexception_1a19c8e9b165ad5d2250d2a26c920462e3" kind="variable"><name>file</name></member>
+    <member refid="classlexical_1_1lexicalexception_1aca4560509cfad8e43c42def571bba550" kind="variable"><name>msg</name></member>
+    <member refid="classlexical_1_1lexicalexception_1a669fdad5e3c9cfc1404b3cff07f2cc2c" kind="function"><name>lexicalexception</name></member>
+    <member refid="classlexical_1_1lexicalexception_1a9d12fd196a80d2be20dfa616c063ffb4" kind="function"><name>what</name></member>
+  </compound>
+  <compound refid="classresources_1_1Loader" kind="class"><name>resources::Loader</name>
+    <member refid="classresources_1_1Loader_1a007cafedd048831f9d18ba4b8ac768ff" kind="variable"><name>resources</name></member>
+    <member refid="classresources_1_1Loader_1ab70c0099b53e57b6ce64132291e4f29d" kind="function"><name>load</name></member>
+  </compound>
+  <compound refid="structlexical_1_1match" kind="struct"><name>lexical::match</name>
+    <member refid="structlexical_1_1match_1a346ef13017b47ee41a6abe643e5732e1" kind="variable"><name>lexemeptr</name></member>
+    <member refid="structlexical_1_1match_1a2ebda7888d347b3de302ffc465755f07" kind="variable"><name>content</name></member>
+    <member refid="structlexical_1_1match_1a854a8828680bbfc08aa214e875ba5514" kind="variable"><name>row_start</name></member>
+    <member refid="structlexical_1_1match_1a3a1754ba678051a508ee2889c4a5f4eb" kind="variable"><name>column_start</name></member>
+    <member refid="structlexical_1_1match_1abf7eca2de9cee016df02265a38666486" kind="variable"><name>row_end</name></member>
+    <member refid="structlexical_1_1match_1ac9b0f6134b653452a2b0ff8b36c89729" kind="variable"><name>column_end</name></member>
+    <member refid="structlexical_1_1match_1aafa3ddcad89ea3abb86b557cafe3e0d7" kind="function"><name>matchExists</name></member>
+  </compound>
+  <compound refid="classqlib_1_1math_1_1matrix" kind="class"><name>qlib::math::matrix</name>
+    <member refid="classqlib_1_1math_1_1matrix_1ad764d65375ba1e50381f640bdc181c0b" kind="variable"><name>values</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1af29b6ea4316eb972bbdc55da6e54dbb3" kind="variable"><name>rows</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1ad3c2dd80c600d7bf37ae5bbdf5f056b8" kind="variable"><name>columns</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1aef00292f85054708922acef6b7744a40" kind="variable"><name>length</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1a6e66a3f67ecf06a42068d2dbf8885e66" kind="function"><name>matrix</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1a8cbac1f2ae9917a4742cd0d147e3ba9b" kind="function"><name>matrix</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1afebdd1cf189728ace53a594d5ef8b750" kind="function"><name>~matrix</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1a50cbbef6e5b7888aecffbf66def70154" kind="function"><name>operator()</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1af93c414d328b985c83c032f41f485a9a" kind="function"><name>operator()</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" kind="function"><name>countRows</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1a69ed708edf603637731e4f6fe46b0754" kind="function"><name>countColumns</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1a2f0ada8003cf2306534700502f598428" kind="function"><name>size</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1a2d09bd42691acdbf315d5cbd7a698698" kind="function"><name>set</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1ae97863a30bb445897ff63c77582a366a" kind="function"><name>set</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1a91fcadaccfcd68adb71de0da6f5d267f" kind="function"><name>get</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1a17dce2bfd8addcb026f6d9159134f1c7" kind="function"><name>get</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1a06ec639a654b5319f4eb1bff591d6e7b" kind="function"><name>toString</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1a1cbe9185c4f147d821eeb0b36ed9cc86" kind="function"><name>begin</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1ae250bb5455fe71b836a5252335575545" kind="function"><name>end</name></member>
+  </compound>
+  <compound refid="classqasm_1_1exec_1_1measurement" kind="class"><name>qasm::exec::measurement</name>
+    <member refid="classqasm_1_1exec_1_1measurement_1acd8ed10227ce8755b6449959c508e023" kind="variable"><name>qreg</name></member>
+    <member refid="classqasm_1_1exec_1_1measurement_1a083137ce86d7f8b1f92a34a2db604063" kind="variable"><name>qindex</name></member>
+    <member refid="classqasm_1_1exec_1_1measurement_1a419118b0574b066fdff6c7f00213dec3" kind="variable"><name>creg</name></member>
+    <member refid="classqasm_1_1exec_1_1measurement_1ab1ba29db121a9c17be8aacbd1f24ff7b" kind="variable"><name>cindex</name></member>
+    <member refid="classqasm_1_1exec_1_1measurement_1a1b67bc7f310bcba5a42989229268517d" kind="variable"><name>measureWhole</name></member>
+    <member refid="classqasm_1_1exec_1_1measurement_1aea704a014c6ae33420021ec54ab6447b" kind="function"><name>measurement</name></member>
+    <member refid="classqasm_1_1exec_1_1measurement_1a82af9b0d6dea17bd770e8c6e6b5d2fb8" kind="function"><name>measurement</name></member>
+    <member refid="classqasm_1_1exec_1_1measurement_1aefa96cf86f31c40a75fbc46924c94bb8" kind="function"><name>invoke_rootprogram</name></member>
+  </compound>
+  <compound refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate" kind="class"><name>qlib::quantum::gates::onequbitgate</name>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1abc5ac874b8a4174cc72a159d3c6d91d2" kind="variable"><name>sname</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a6d935a1219c646b16c136560a5b4f0bf" kind="variable"><name>m</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a587ebdfa032f58bf63433c89c6015149" kind="function"><name>onequbitgate</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a050ed71ebff89050c3123124f8ba8719" kind="function"><name>inputs</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1aacf3878010f0c1327bae4dcc7faf4c92" kind="function"><name>name</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a280c7a7d29032eeb95afcb3d6668e7db" kind="function"><name>operate</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a39490c6d1dcc94dc82bb7345fe984278" kind="function"><name>getMatrix</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a38af1af0f466add047c3e75780e28c80" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classparseexception" kind="class"><name>parseexception</name>
+    <member refid="classparseexception_1a4807889c64609ea29a275c9f66c15e61" kind="variable"><name>what_message</name></member>
+    <member refid="classparseexception_1a0e50402f7511e71332099355061b26ca" kind="variable"><name>r</name></member>
+    <member refid="classparseexception_1a671840c0e1441210c84084e235fa55c8" kind="variable"><name>c</name></member>
+    <member refid="classparseexception_1a99a096bfed3e48cd365cdae1952bc017" kind="variable"><name>file</name></member>
+    <member refid="classparseexception_1a5f02ff7145f65ba4e9b5be994bfc0edb" kind="variable"><name>msg</name></member>
+    <member refid="classparseexception_1a16accd5bc62f4465b611b38db6751e0e" kind="function"><name>parseexception</name></member>
+    <member refid="classparseexception_1a006c6421028f780b91eb4a473265dce7" kind="function"><name>what</name></member>
+  </compound>
+  <compound refid="classqasm_1_1exec_1_1print" kind="class"><name>qasm::exec::print</name>
+    <member refid="classqasm_1_1exec_1_1print_1a8d2e5bc3ca543419f7270f97fea27b9b" kind="variable"><name>reference</name></member>
+    <member refid="classqasm_1_1exec_1_1print_1ac6a07cc31446b99250263e748ac0c60d" kind="function"><name>print</name></member>
+    <member refid="classqasm_1_1exec_1_1print_1ae803c9f70d2a1afd3bbe6e0520e9678b" kind="function"><name>invoke_rootprogram</name></member>
+  </compound>
+  <compound refid="classprogram" kind="class"><name>program</name>
+    <member refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kind="variable"><name>lines</name></member>
+    <member refid="classprogram_1ae17b7e99958aa0770b1cc4a8c20acbfe" kind="variable"><name>anchors</name></member>
+    <member refid="classprogram_1a0772f916267bdb0eb4d803ea472e8e74" kind="function"><name>program</name></member>
+    <member refid="classprogram_1a31e130840978c25ba94a6ff2b192011c" kind="function"><name>~program</name></member>
+    <member refid="classprogram_1ada37ef3924e109909695ef9bd55f54b3" kind="function"><name>push</name></member>
+    <member refid="classprogram_1a40b1420af44c92684d8ecc035f8d004c" kind="function"><name>push</name></member>
+  </compound>
+  <compound refid="classptr" kind="class"><name>ptr</name>
+    <member refid="classptr_1ad7ba383d91da4c7a3a8efea91034f12e" kind="variable"><name>ref</name></member>
+    <member refid="classptr_1aaecf093f45d1937856112a59f4b2d011" kind="function"><name>ptr</name></member>
+    <member refid="classptr_1a6ef013cd782a43c7f619a7a3a6ae1467" kind="function"><name>~ptr</name></member>
+    <member refid="classptr_1aff3f6e83f352b352a2ed342c3a72c08a" kind="function"><name>operator*</name></member>
+    <member refid="classptr_1a0e368240adbbc89663b7b8ac79e9913e" kind="function"><name>operator-&gt;</name></member>
+  </compound>
+  <compound refid="classqlib_1_1ide_1_1QLibIDE" kind="class"><name>qlib::ide::QLibIDE</name>
+    <member refid="classqlib_1_1ide_1_1QLibIDE_1ae54da93b399d4d027f33c04ba7e392fd" kind="variable"><name>configLocation</name></member>
+    <member refid="classqlib_1_1ide_1_1QLibIDE_1a13a62cb428150031089c3824f16d6bef" kind="variable"><name>frame</name></member>
+    <member refid="classqlib_1_1ide_1_1QLibIDE_1a599d44725656f74ca6d6fc028b8973a8" kind="variable"><name>pane</name></member>
+    <member refid="classqlib_1_1ide_1_1QLibIDE_1aa92d671c5f0158e59c86767109afc92c" kind="variable"><name>log</name></member>
+    <member refid="classqlib_1_1ide_1_1QLibIDE_1a74ee30733f7d424f2e518f1171d70917" kind="variable"><name>log_scroll</name></member>
+    <member refid="classqlib_1_1ide_1_1QLibIDE_1a5af68fc042aeee1b69f27f3e1e67610b" kind="variable"><name>manager</name></member>
+    <member refid="classqlib_1_1ide_1_1QLibIDE_1ac1128e9b1f1d79af9c480383ab6a16ac" kind="variable"><name>dateFormat</name></member>
+    <member refid="classqlib_1_1ide_1_1QLibIDE_1a07b6d9558a76bd5d818a98debdb93d5f" kind="variable"><name>runtime</name></member>
+    <member refid="classqlib_1_1ide_1_1QLibIDE_1a4d8a71cb808c1796b48f83b05e3ca1b8" kind="function"><name>main</name></member>
+    <member refid="classqlib_1_1ide_1_1QLibIDE_1a3eafdf56320c066383975e5b2d22503a" kind="function"><name>QLibIDE</name></member>
+    <member refid="classqlib_1_1ide_1_1QLibIDE_1aa0b95da9f912317b1497e190748733d6" kind="function"><name>log</name></member>
+    <member refid="classqlib_1_1ide_1_1QLibIDE_1a53bc0b691fd24d3e2dad2603cf086760" kind="function"><name>show</name></member>
+    <member refid="classqlib_1_1ide_1_1QLibIDE_1a6f9aa8bdf86b91b456239c96202d2e3f" kind="function"><name>addShortcutKey</name></member>
+  </compound>
+  <compound refid="classqlib_1_1ide_1_1QLibRuntime" kind="class"><name>qlib::ide::QLibRuntime</name>
+    <member refid="classqlib_1_1ide_1_1QLibRuntime_1a4f27be4c59b8b5005822acc9e36e1279" kind="variable"><name>QlibPath</name></member>
+    <member refid="classqlib_1_1ide_1_1QLibRuntime_1a8525f2178485c12a94d9caf9fb09d47c" kind="function"><name>QLibRuntime</name></member>
+    <member refid="classqlib_1_1ide_1_1QLibRuntime_1a6e2d353e7b2bcd11ac50ee0e6465f044" kind="function"><name>dispatch</name></member>
+  </compound>
+  <compound refid="classqlib_1_1quantum_1_1qreg" kind="class"><name>qlib::quantum::qreg</name>
+    <member refid="classqlib_1_1quantum_1_1qreg_1a2d7c33e71a77d860d50d53a258a71a6f" kind="variable"><name>qubits</name></member>
+    <member refid="classqlib_1_1quantum_1_1qreg_1ad0e84b959f93f3da6ed81eb096f809d1" kind="variable"><name>states</name></member>
+    <member refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kind="variable"><name>amplitudes</name></member>
+    <member refid="classqlib_1_1quantum_1_1qreg_1aabd605497170f57cdbb175d21c99662e" kind="variable"><name>distribution</name></member>
+    <member refid="classqlib_1_1quantum_1_1qreg_1aa53d83236917f0048965b487088aacb9" kind="function"><name>qreg</name></member>
+    <member refid="classqlib_1_1quantum_1_1qreg_1a2ddfaef9a369571c9600c4c259fcb8b1" kind="function"><name>qreg</name></member>
+    <member refid="classqlib_1_1quantum_1_1qreg_1a3148742b59865d0ba04fdd327fccc048" kind="function"><name>size</name></member>
+    <member refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kind="function"><name>state</name></member>
+    <member refid="classqlib_1_1quantum_1_1qreg_1af38f95ecaaf7de400856094154343cfe" kind="function"><name>apply</name></member>
+    <member refid="classqlib_1_1quantum_1_1qreg_1acfcd58502c1e511766ede52a891f27c3" kind="function"><name>measure</name></member>
+    <member refid="classqlib_1_1quantum_1_1qreg_1ae4dbf316bf6452f3110cb05146f54954" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classqlib_1_1quantum_1_1qsystem" kind="class"><name>qlib::quantum::qsystem</name>
+    <member refid="classqlib_1_1quantum_1_1qsystem_1adbb748feb351aac69ca4a0bf6c92d77c" kind="function"><name>apply</name></member>
+    <member refid="classqlib_1_1quantum_1_1qsystem_1a33d9954c6ca01cb400d940ff05614364" kind="function"><name>measure</name></member>
+    <member refid="classqlib_1_1quantum_1_1qsystem_1a9d95030955e2fdb26bc9152c32310e7e" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classqlib_1_1quantum_1_1qubit" kind="class"><name>qlib::quantum::qubit</name>
+    <member refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kind="variable"><name>vec</name></member>
+    <member refid="classqlib_1_1quantum_1_1qubit_1abb97216eead736ab87e8756b9b4c2ce9" kind="variable"><name>distribution</name></member>
+    <member refid="classqlib_1_1quantum_1_1qubit_1a32ca47a6fca663c267ddbbac49b12986" kind="function"><name>qubit</name></member>
+    <member refid="classqlib_1_1quantum_1_1qubit_1a9c84248c8855841087687baa8b0a08c3" kind="function"><name>qubit</name></member>
+    <member refid="classqlib_1_1quantum_1_1qubit_1af8eaf337ffcb95c2445ddf35189335e4" kind="function"><name>state</name></member>
+    <member refid="classqlib_1_1quantum_1_1qubit_1ab3b0b76d5c6f0e627a742fcafbc768ae" kind="function"><name>apply</name></member>
+    <member refid="classqlib_1_1quantum_1_1qubit_1aaf001eff84ccb4b7a6992e42bc2143cb" kind="function"><name>measure</name></member>
+    <member refid="classqlib_1_1quantum_1_1qubit_1a8bf29d1f66508e4878ea861c5d8e44ec" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classqasm_1_1runtime_1_1runtimeexception" kind="class"><name>qasm::runtime::runtimeexception</name>
+    <member refid="classqasm_1_1runtime_1_1runtimeexception_1a4dbe6aefd35b6c30b9ccf89a7ccaacf9" kind="variable"><name>what_message</name></member>
+    <member refid="classqasm_1_1runtime_1_1runtimeexception_1a441e42301526a93e37ceb3f6eb0cc988" kind="function"><name>runtimeexception</name></member>
+    <member refid="classqasm_1_1runtime_1_1runtimeexception_1a574525d5f4cac73500dd11215bbb14a3" kind="function"><name>what</name></member>
+  </compound>
+  <compound refid="classqlib_1_1ide_1_1RuntimeReport" kind="class"><name>qlib::ide::RuntimeReport</name>
+    <member refid="classqlib_1_1ide_1_1RuntimeReport_1a92b04311367af6afee4add7142aebc99" kind="variable"><name>output</name></member>
+    <member refid="classqlib_1_1ide_1_1RuntimeReport_1a7fd9bcb04c31f5b5a9d57acc1bbcb443" kind="variable"><name>errors</name></member>
+    <member refid="classqlib_1_1ide_1_1RuntimeReport_1af74d795a13fc8b83eb8076380d115c27" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classqlib_1_1ide_1_1CodeEditor_1_1Style" kind="class"><name>qlib::ide::CodeEditor::Style</name>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1_1Style_1a98a1d4a5736741de2806f55f6aa55f1b" kind="variable"><name>pattern</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1_1Style_1aa248ffd9223379e30577632842250041" kind="variable"><name>font</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1_1Style_1aa185f06a718f6fffe30637733484a7b8" kind="variable"><name>background</name></member>
+    <member refid="classqlib_1_1ide_1_1CodeEditor_1_1Style_1a1798d9186d961170807fe95eead1029d" kind="variable"><name>attributes</name></member>
+  </compound>
+  <compound refid="classqlib_1_1ide_1_1FileManager_1_1Tab" kind="class"><name>qlib::ide::FileManager::Tab</name>
+    <member refid="classqlib_1_1ide_1_1FileManager_1_1Tab_1ad12255d140c8ad871496cfa64157c987" kind="variable"><name>name</name></member>
+    <member refid="classqlib_1_1ide_1_1FileManager_1_1Tab_1a0765cadcc1dc2dcecdc902bb72c0f573" kind="variable"><name>filepath</name></member>
+    <member refid="classqlib_1_1ide_1_1FileManager_1_1Tab_1ad8b41415e7daa1153c2f0a16278362a4" kind="variable"><name>panel</name></member>
+    <member refid="classqlib_1_1ide_1_1FileManager_1_1Tab_1a31feec1d770cf8dad4b3544539664da9" kind="variable"><name>editor</name></member>
+    <member refid="classqlib_1_1ide_1_1FileManager_1_1Tab_1a7d3928b4e9fbc952f9b0ff263bfa48fe" kind="variable"><name>edited</name></member>
+    <member refid="classqlib_1_1ide_1_1FileManager_1_1Tab_1a88f607b1e5cf352c82788451188e8bc8" kind="function"><name>setChanged</name></member>
+  </compound>
+  <compound refid="classxobject" kind="class"><name>xobject</name>
+    <member refid="classxobject_1ad76243a44c4e4959d3b16bb57d82600d" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="namespacejavax_1_1swing" kind="namespace"><name>javax::swing</name>
+  </compound>
+  <compound refid="namespacelexical" kind="namespace"><name>lexical</name>
+  </compound>
+  <compound refid="namespaceqasm" kind="namespace"><name>qasm</name>
+  </compound>
+  <compound refid="namespaceqasm_1_1exec" kind="namespace"><name>qasm::exec</name>
+  </compound>
+  <compound refid="namespaceqasm_1_1rules" kind="namespace"><name>qasm::rules</name>
+    <member refid="namespaceqasm_1_1rules_1a26247b01755121860f87e5a26d9bd391" kind="function"><name>try_parse_subcircuit_application</name></member>
+    <member refid="namespaceqasm_1_1rules_1aa583e7fb674ce302c13e04802c0ac371" kind="function"><name>try_parse_gate_application</name></member>
+    <member refid="namespaceqasm_1_1rules_1abe4777fa00a61066da5591048a9cbf54" kind="function"><name>try_parse_debug</name></member>
+    <member refid="namespaceqasm_1_1rules_1a5da8b5fa16a6eec3576f64c509a43ffd" kind="function"><name>try_parse_measurement</name></member>
+    <member refid="namespaceqasm_1_1rules_1a1e0101b23fdb03759ca22f831662a88b" kind="function"><name>try_parse_declaration</name></member>
+    <member refid="namespaceqasm_1_1rules_1ac9cd78216b8e48a2d5aa625d99240cb9" kind="function"><name>try_parse_label</name></member>
+    <member refid="namespaceqasm_1_1rules_1abe391ee7a042e770f440498767f889ba" kind="function"><name>try_parse_include</name></member>
+    <member refid="namespaceqasm_1_1rules_1af40aa89c9f5235a7d2e94af2de62a42b" kind="function"><name>try_parse_rule</name></member>
+  </compound>
+  <compound refid="namespaceqasm_1_1runtime" kind="namespace"><name>qasm::runtime</name>
+  </compound>
+  <compound refid="namespaceqlib" kind="namespace"><name>qlib</name>
+  </compound>
+  <compound refid="namespaceqlib_1_1ide" kind="namespace"><name>qlib::ide</name>
+  </compound>
+  <compound refid="namespaceqlib_1_1math" kind="namespace"><name>qlib::math</name>
+    <member refid="namespaceqlib_1_1math_1a750c1f90fa6c3ebec9a635de1d146a5b" kind="function"><name>operator+</name></member>
+    <member refid="namespaceqlib_1_1math_1a0824fabde8f47ad8f052b82ce7ffc7ba" kind="function"><name>operator-</name></member>
+    <member refid="namespaceqlib_1_1math_1aab8f60842d892b237625a8215572926a" kind="function"><name>operator*</name></member>
+    <member refid="namespaceqlib_1_1math_1a9cf242a604bfeb647f7700d437b23ad1" kind="function"><name>operator*</name></member>
+    <member refid="namespaceqlib_1_1math_1a07b837d7b7260a52a080a3ce11f28f6d" kind="function"><name>operator/</name></member>
+    <member refid="namespaceqlib_1_1math_1a511c85d9f0b2a72c4d7ac90a8fe8319b" kind="function"><name>operator*</name></member>
+    <member refid="namespaceqlib_1_1math_1ac7b6b93406f9a81e5187205fa869151f" kind="function"><name>operator/</name></member>
+    <member refid="namespaceqlib_1_1math_1abc12e050174e1760453206cc5bd3206a" kind="function"><name>operator+</name></member>
+    <member refid="namespaceqlib_1_1math_1a258ee58fb06869ced4551ec4eca20cf5" kind="function"><name>operator-</name></member>
+    <member refid="namespaceqlib_1_1math_1a76eeb4db471510ab7143369e8f5a7cb1" kind="function"><name>operator*</name></member>
+    <member refid="namespaceqlib_1_1math_1a01348bd4469d81d621104d4efaeb6f5a" kind="function"><name>operator*</name></member>
+    <member refid="namespaceqlib_1_1math_1a545e46c9d4ed76c49f027f633c717790" kind="function"><name>operator/</name></member>
+    <member refid="namespaceqlib_1_1math_1a4e25907425745791aece8ad080a45fec" kind="function"><name>operator*</name></member>
+    <member refid="namespaceqlib_1_1math_1a0e8e1dad475a4db8f847283d0104d424" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="namespaceqlib_1_1quantum" kind="namespace"><name>qlib::quantum</name>
+  </compound>
+  <compound refid="namespaceqlib_1_1quantum_1_1gates" kind="namespace"><name>qlib::quantum::gates</name>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1aebaea8ead9b15e75666143e3fa30b9d4" kind="variable"><name>CNOT</name></member>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1a932ac3dc30dfbfc065ef01b99b9f0ae1" kind="variable"><name>CX</name></member>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1afb32e9584e5434c3bff9087fe762ca9e" kind="variable"><name>CY</name></member>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1adaffb7ef8207f26d42d8756b38a61fe8" kind="variable"><name>CZ</name></member>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1a2519bc26f39ef5297d03a5fe7cdf3bc3" kind="variable"><name>H</name></member>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1a2a7dd0215add2c303251bb3a3ac596cc" kind="variable"><name>I</name></member>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1af56c4617497a46f091c27f7f4bc65ed5" kind="variable"><name>X</name></member>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1a7d495b8ebaa4b3a3f73a871bc993e82b" kind="variable"><name>Y</name></member>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1ad07d8c867d0463c3f66dfa80d5b6b53c" kind="variable"><name>Z</name></member>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1a9b72e189dcf40679247251dff199887d" kind="variable"><name>T</name></member>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1abe265e0dfc0f6dce748643ad93dc6e01" kind="variable"><name>CCNOT</name></member>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1a824d430d591160d7bd3237928d56570b" kind="variable"><name>TOFFOLI</name></member>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1a9404266e9a103216de1b3c5ae2b8c8e5" kind="function"><name>phase</name></member>
+  </compound>
+  <compound refid="namespaceresources" kind="namespace"><name>resources</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="object_8hpp" kind="file"><name>object.hpp</name>
+    <member refid="object_8hpp_1a64700614995ed98f6edbdb2b491b6374" kind="define"><name>_QLIB_GEN_OBJECT_H</name></member>
+    <member refid="object_8hpp_1a52c75811f4e394e7f1818d29ee034307" kind="function"><name>rng</name></member>
+  </compound>
+  <compound refid="types_8h" kind="file"><name>types.h</name>
+    <member refid="types_8h_1a8bbe49053267ab17a71f46ca8d0af818" kind="define"><name>COMPILE_CHECK</name></member>
+    <member refid="types_8h_1ac97db22a178e835a54d0d93b27029bdb" kind="define"><name>COMPILE_ASSERT</name></member>
+    <member refid="types_8h_1a0a69f7255e3e614abe44502ea6cb4c1f" kind="define"><name>SUPPORTS_INT8</name></member>
+    <member refid="types_8h_1ae0dc5ff9fd398bbb808e3ea1677f7143" kind="define"><name>SUPPORTS_INT16</name></member>
+    <member refid="types_8h_1a77e65c2447135d59e4debfa7d76dff77" kind="define"><name>SUPPORTS_INT32</name></member>
+    <member refid="types_8h_1ab30ba5ccec5a78bc39dbd3b1f11a4824" kind="define"><name>SUPPORTS_INT64</name></member>
+    <member refid="types_8h_1acd79ea495c7e6ffe8203fa3339c4b1b5" kind="define"><name>SUPPORTS_UNSIGNED8</name></member>
+    <member refid="types_8h_1a5f3a3529cb8f538ad790462e1dbbc63a" kind="define"><name>SUPPORTS_UNSIGNED16</name></member>
+    <member refid="types_8h_1aa649b342cd32297989bf1798890e47cb" kind="define"><name>SUPPORTS_UNSIGNED32</name></member>
+    <member refid="types_8h_1a1d055f3bd0c728d91872c4897ab8909d" kind="define"><name>SUPPORTS_UNSIGNED64</name></member>
+    <member refid="types_8h_1acdba7eeaa5148cdb678a94b9b0bd6445" kind="define"><name>SUPPORTS_FLOAT128</name></member>
+    <member refid="types_8h_1a641c3bde60c439b6740c5be90c6ff963" kind="define"><name>SUPPORTS_FLOAT64</name></member>
+    <member refid="types_8h_1aff139cc9f83f66c6095d804a44860de0" kind="define"><name>SUPPORTS_FLOAT32</name></member>
+    <member refid="types_8h_1a6b15b96d9ce9c6569ca7b929a68bbaa1" kind="define"><name>FLOAT_SIZE</name></member>
+    <member refid="types_8h_1ab76585832f426cd48230dbf01d7b6815" kind="define"><name>DOUBLE_SIZE</name></member>
+    <member refid="types_8h_1a9fdb72c70bf3316cb98449055a1a409d" kind="define"><name>LONGDOUBLE_SIZE</name></member>
+    <member refid="types_8h_1a844b54f8b6fad96bcab1648f54651aea" kind="define"><name>BITS_PER_CHAR</name></member>
+    <member refid="types_8h_1afc36f09e1e0bb44a911f5d65d1f1f780" kind="typedef"><name>isize</name></member>
+    <member refid="types_8h_1a77dec2108b06794f3682c319ef1487b2" kind="typedef"><name>ilong</name></member>
+    <member refid="types_8h_1a3c627c760b91bb1ea3ffbff49674964a" kind="typedef"><name>usize</name></member>
+    <member refid="types_8h_1a91ad9478d81a7aaf2593e8d9c3d06a14" kind="typedef"><name>uint</name></member>
+    <member refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kind="typedef"><name>ulong</name></member>
+    <member refid="types_8h_1a421c37a4c9ade238e8070a6b0e0d672d" kind="typedef"><name>fsize</name></member>
+  </compound>
+  <compound refid="core_2main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="core_2main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="runtime_2main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="runtime_2main_8cpp_1a877cce34f3e58fd7f9194fab90724cb8" kind="define"><name>MAJOR</name></member>
+    <member refid="runtime_2main_8cpp_1a4e10915d93013542d442d78de0e02e9a" kind="define"><name>MINOR</name></member>
+    <member refid="runtime_2main_8cpp_1af59c44c1f3ff875c35393428624473aa" kind="define"><name>PATCH</name></member>
+    <member refid="runtime_2main_8cpp_1a47f2e62c0dbebc787052c165afcada0e" kind="define"><name>NAME</name></member>
+    <member refid="runtime_2main_8cpp_1ab22d26d55aa2ef05c5de8abb9cadfd50" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="complex_8hpp" kind="file"><name>complex.hpp</name>
+  </compound>
+  <compound refid="matrix_8hpp" kind="file"><name>matrix.hpp</name>
+  </compound>
+  <compound refid="qlib_8h" kind="file"><name>qlib.h</name>
+  </compound>
+  <compound refid="cnot_8hpp" kind="file"><name>cnot.hpp</name>
+  </compound>
+  <compound refid="controlled2gate_8hpp" kind="file"><name>controlled2gate.hpp</name>
+  </compound>
+  <compound refid="controlledgate_8hpp" kind="file"><name>controlledgate.hpp</name>
+  </compound>
+  <compound refid="cy_8hpp" kind="file"><name>cy.hpp</name>
+  </compound>
+  <compound refid="cz_8hpp" kind="file"><name>cz.hpp</name>
+  </compound>
+  <compound refid="hadamard_8hpp" kind="file"><name>hadamard.hpp</name>
+  </compound>
+  <compound refid="ident_8hpp" kind="file"><name>ident.hpp</name>
+  </compound>
+  <compound refid="igate_8hpp" kind="file"><name>igate.hpp</name>
+  </compound>
+  <compound refid="onequbitgate_8hpp" kind="file"><name>onequbitgate.hpp</name>
+  </compound>
+  <compound refid="pauliX_8hpp" kind="file"><name>pauliX.hpp</name>
+  </compound>
+  <compound refid="pauliY_8hpp" kind="file"><name>pauliY.hpp</name>
+  </compound>
+  <compound refid="pauliZ_8hpp" kind="file"><name>pauliZ.hpp</name>
+  </compound>
+  <compound refid="phase_8hpp" kind="file"><name>phase.hpp</name>
+    <member refid="phase_8hpp_1ae71449b1cc6e6250b91f539153a7a0d3" kind="define"><name>M_PI</name></member>
+  </compound>
+  <compound refid="toffoli_8hpp" kind="file"><name>toffoli.hpp</name>
+  </compound>
+  <compound refid="standard__gates_8hpp" kind="file"><name>standard_gates.hpp</name>
+  </compound>
+  <compound refid="ensemble_8hpp" kind="file"><name>ensemble.hpp</name>
+  </compound>
+  <compound refid="qreg_8hpp" kind="file"><name>qreg.hpp</name>
+  </compound>
+  <compound refid="qubit_8hpp" kind="file"><name>qubit.hpp</name>
+  </compound>
+  <compound refid="system_8hpp" kind="file"><name>system.hpp</name>
+  </compound>
+  <compound refid="AutoComplete_8java" kind="file"><name>AutoComplete.java</name>
+  </compound>
+  <compound refid="CodeEditor_8java" kind="file"><name>CodeEditor.java</name>
+  </compound>
+  <compound refid="FileManager_8java" kind="file"><name>FileManager.java</name>
+  </compound>
+  <compound refid="IniIO_8java" kind="file"><name>IniIO.java</name>
+  </compound>
+  <compound refid="QLibIDE_8java" kind="file"><name>QLibIDE.java</name>
+  </compound>
+  <compound refid="QLibRuntime_8java" kind="file"><name>QLibRuntime.java</name>
+  </compound>
+  <compound refid="RuntimeReport_8java" kind="file"><name>RuntimeReport.java</name>
+  </compound>
+  <compound refid="Loader_8java" kind="file"><name>Loader.java</name>
+  </compound>
+  <compound refid="lexer_8hpp" kind="file"><name>lexer.hpp</name>
+  </compound>
+  <compound refid="parser_8hpp" kind="file"><name>parser.hpp</name>
+  </compound>
+  <compound refid="qasmparser_8hpp" kind="file"><name>qasmparser.hpp</name>
+    <member refid="qasmparser_8hpp_1ad6bb98bfd6757b98a471bb8c8670795a" kind="function"><name>try_parse_qasm</name></member>
+  </compound>
+  <compound refid="runtime_8hpp" kind="file"><name>runtime.hpp</name>
+    <member refid="runtime_8hpp_1a20cf870406c99de2d935e3a77b8b60da" kind="typedef"><name>creg</name></member>
+  </compound>
+  <compound refid="smartptr_8hpp" kind="file"><name>smartptr.hpp</name>
+  </compound>
+  <compound refid="dir_aebb8dcc11953d78e620bbef0b9e2183" kind="dir"><name>src/core</name>
+  </compound>
+  <compound refid="dir_727b8377c3d34501cb09cbc2fa0ab4c8" kind="dir"><name>src/core/quantum/gates</name>
+  </compound>
+  <compound refid="dir_69701fbc0bc4ffebc85a335e8fb848b9" kind="dir"><name>src/core/general</name>
+  </compound>
+  <compound refid="dir_4fac30b4f606137a9754f93479176508" kind="dir"><name>src/ide/src/qlib/ide</name>
+  </compound>
+  <compound refid="dir_2f72577c5693ba95ca5df1c19366e010" kind="dir"><name>src/ide</name>
+  </compound>
+  <compound refid="dir_e235ce117329fd16b24743c07cd49299" kind="dir"><name>src/core/math</name>
+  </compound>
+  <compound refid="dir_4a4642617364934476b873be530f7d0b" kind="dir"><name>src/ide/src/qlib</name>
+  </compound>
+  <compound refid="dir_61e701588704edfc84bb7b35b4be3d3d" kind="dir"><name>src/core/quantum</name>
+  </compound>
+  <compound refid="dir_dadf11aa045f5ea18b4f1f2d1ba47ccc" kind="dir"><name>src/ide/src/resources</name>
+  </compound>
+  <compound refid="dir_bf9f26469d00835ba20ff8d80ee5a804" kind="dir"><name>src/runtime</name>
+  </compound>
+  <compound refid="dir_96782dba94784a736843ea2959f14743" kind="dir"><name>src/ide/src</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_b16185ceaf26fe4b22b7fb0fead91775" kind="dir"><name>src/core/quantum/systems</name>
+  </compound>
+</doxygenindex>

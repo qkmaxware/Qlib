@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1ide_1_1FileManager" kind="class" language="Java" prot="public">
+    <compoundname>qlib::ide::FileManager</compoundname>
+    <innerclass refid="classqlib_1_1ide_1_1FileManager_1_1Tab" prot="private">qlib::ide::FileManager::Tab</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1FileManager_1ad30cb7a3ba1310ab8cb38f11bb84f0c1" prot="private" static="no" mutable="no">
+        <type>JTabbedPane</type>
+        <definition>JTabbedPane qlib.ide.FileManager.tabs</definition>
+        <argsstring></argsstring>
+        <name>tabs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal reference to a tabbed panel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/FileManager.java" line="28" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1FileManager_1af28dcef61bad9a512d4dfba62d9288a3" prot="private" static="no" mutable="no">
+        <type>LinkedList&lt; <ref refid="classqlib_1_1ide_1_1FileManager_1_1Tab" kindref="compound">Tab</ref> &gt;</type>
+        <definition>LinkedList&lt;Tab&gt; qlib.ide.FileManager.openTabs</definition>
+        <argsstring></argsstring>
+        <name>openTabs</name>
+        <initializer>= new LinkedList&lt;<ref refid="classqlib_1_1ide_1_1FileManager_1_1Tab" kindref="compound">Tab</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of tab data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/FileManager.java" line="56" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1ide_1_1FileManager_1ad6a89c4b0f958a34dd7450ab8826f647" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib.ide.FileManager.FileManager</definition>
+        <argsstring>()</argsstring>
+        <name>FileManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a file manager </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/FileManager.java" line="61" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1FileManager_1a9b6923afb970442de71a07405abc6751" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.FileManager.empty</definition>
+        <argsstring>()</argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an empty file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/FileManager.java" line="69" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1FileManager_1a1a740e6ad8726d1caad504a4b7a53859" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.FileManager.open</definition>
+        <argsstring>(String file)</argsstring>
+        <name>open</name>
+        <param>
+          <type>String</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open a file in the editor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/FileManager.java" line="77" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="77" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1FileManager_1a043ddff761f62666fa4f6959b7e116c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.FileManager.save</definition>
+        <argsstring>()</argsstring>
+        <name>save</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Save the current file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/FileManager.java" line="144" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="144" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1FileManager_1acefb35297452dccb1f7a2cbebd08b0fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.FileManager.close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close the current file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/FileManager.java" line="180" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="180" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1FileManager_1afa5d713317aa1248f7c102dd086e53b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>File</type>
+        <definition>File qlib.ide.FileManager.getActive</definition>
+        <argsstring>()</argsstring>
+        <name>getActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current file <simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/FileManager.java" line="194" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="194" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1FileManager_1a986392eebf1b4d6df69bf3eca688d926" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>JTabbedPane</type>
+        <definition>JTabbedPane qlib.ide.FileManager.getPanel</definition>
+        <argsstring>()</argsstring>
+        <name>getPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the internal reference to the tabbed panel <simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/FileManager.java" line="206" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="206" bodyend="208"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class for managing files and tabs in the IDE <simplesect kind="author"><para>halse </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="254">
+        <label>qlib.ide.FileManager</label>
+        <link refid="classqlib_1_1ide_1_1FileManager"/>
+        <childnode refid="255" relation="usage">
+          <edgelabel>openTabs</edgelabel>
+        </childnode>
+        <childnode refid="256" relation="usage">
+          <edgelabel>tabs</edgelabel>
+        </childnode>
+      </node>
+      <node id="255">
+        <label>LinkedList&lt; qlib.ide.FileManager.Tab &gt;</label>
+      </node>
+      <node id="256">
+        <label>JTabbedPane</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/ide/src/qlib/ide/FileManager.java" line="23" column="1" bodyfile="src/ide/src/qlib/ide/FileManager.java" bodystart="23" bodyend="210"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1ide_1_1FileManager_1acefb35297452dccb1f7a2cbebd08b0fc" prot="public" virt="non-virtual"><scope>qlib::ide::FileManager</scope><name>close</name></member>
+      <member refid="classqlib_1_1ide_1_1FileManager_1a9b6923afb970442de71a07405abc6751" prot="public" virt="non-virtual"><scope>qlib::ide::FileManager</scope><name>empty</name></member>
+      <member refid="classqlib_1_1ide_1_1FileManager_1ad6a89c4b0f958a34dd7450ab8826f647" prot="public" virt="non-virtual"><scope>qlib::ide::FileManager</scope><name>FileManager</name></member>
+      <member refid="classqlib_1_1ide_1_1FileManager_1afa5d713317aa1248f7c102dd086e53b8" prot="public" virt="non-virtual"><scope>qlib::ide::FileManager</scope><name>getActive</name></member>
+      <member refid="classqlib_1_1ide_1_1FileManager_1a986392eebf1b4d6df69bf3eca688d926" prot="public" virt="non-virtual"><scope>qlib::ide::FileManager</scope><name>getPanel</name></member>
+      <member refid="classqlib_1_1ide_1_1FileManager_1a1a740e6ad8726d1caad504a4b7a53859" prot="public" virt="non-virtual"><scope>qlib::ide::FileManager</scope><name>open</name></member>
+      <member refid="classqlib_1_1ide_1_1FileManager_1af28dcef61bad9a512d4dfba62d9288a3" prot="private" virt="non-virtual"><scope>qlib::ide::FileManager</scope><name>openTabs</name></member>
+      <member refid="classqlib_1_1ide_1_1FileManager_1a043ddff761f62666fa4f6959b7e116c3" prot="public" virt="non-virtual"><scope>qlib::ide::FileManager</scope><name>save</name></member>
+      <member refid="classqlib_1_1ide_1_1FileManager_1ad30cb7a3ba1310ab8cb38f11bb84f0c1" prot="private" virt="non-virtual"><scope>qlib::ide::FileManager</scope><name>tabs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

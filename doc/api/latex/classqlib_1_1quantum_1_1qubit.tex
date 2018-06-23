@@ -1,0 +1,125 @@
+\hypertarget{classqlib_1_1quantum_1_1qubit}{}\section{qlib\+:\+:quantum\+:\+:qubit Class Reference}
+\label{classqlib_1_1quantum_1_1qubit}\index{qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}}
+
+
+{\ttfamily \#include $<$qubit.\+hpp$>$}
+
+
+
+Inheritance diagram for qlib\+:\+:quantum\+:\+:qubit\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classqlib_1_1quantum_1_1qubit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for qlib\+:\+:quantum\+:\+:qubit\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classqlib_1_1quantum_1_1qubit__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqlib_1_1quantum_1_1qubit_a32ca47a6fca663c267ddbbac49b12986}{qubit} ()
+\item 
+\hyperlink{classqlib_1_1quantum_1_1qubit_a9c84248c8855841087687baa8b0a08c3}{qubit} (\hyperlink{classqlib_1_1math_1_1complex}{qlib\+::math\+::complex} zero, \hyperlink{classqlib_1_1math_1_1complex}{qlib\+::math\+::complex} one)
+\item 
+\hyperlink{classqlib_1_1math_1_1matrix}{matrix} \& \hyperlink{classqlib_1_1quantum_1_1qubit_af8eaf337ffcb95c2445ddf35189335e4}{state} ()
+\item 
+void \hyperlink{classqlib_1_1quantum_1_1qubit_ab3b0b76d5c6f0e627a742fcafbc768ae}{apply} (\hyperlink{classqlib_1_1quantum_1_1gates_1_1igate}{qlib\+::quantum\+::gates\+::igate} \&gate, std\+::vector$<$ u64 $>$ input\+Bits)
+\item 
+i8 \hyperlink{classqlib_1_1quantum_1_1qubit_aaf001eff84ccb4b7a6992e42bc2143cb}{measure} (i64 \hyperlink{classqlib_1_1quantum_1_1qubit}{qubit}=0)
+\item 
+std\+::string \hyperlink{classqlib_1_1quantum_1_1qubit_a8bf29d1f66508e4878ea861c5d8e44ec}{to\+String} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqlib_1_1math_1_1matrix}{qlib\+::math\+::matrix} \hyperlink{classqlib_1_1quantum_1_1qubit_a8f6e33dd5d0673f195360bc4b5c5442f}{vec}
+\item 
+std\+::uniform\+\_\+real\+\_\+distribution$<$ f32 $>$ \hyperlink{classqlib_1_1quantum_1_1qubit_abb97216eead736ab87e8756b9b4c2ce9}{distribution}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Representation of a single qubit 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}!qubit@{qubit}}
+\index{qubit@{qubit}!qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}}
+\subsubsection[{\texorpdfstring{qubit()}{qubit()}}]{\setlength{\rightskip}{0pt plus 5cm}qlib\+::quantum\+::qubit\+::qubit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1quantum_1_1qubit_a32ca47a6fca663c267ddbbac49b12986}{}\label{classqlib_1_1quantum_1_1qubit_a32ca47a6fca663c267ddbbac49b12986}
+Create a qubit in the $\vert$0$>$ state \index{qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}!qubit@{qubit}}
+\index{qubit@{qubit}!qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}}
+\subsubsection[{\texorpdfstring{qubit(qlib\+::math\+::complex zero, qlib\+::math\+::complex one)}{qubit(qlib::math::complex zero, qlib::math::complex one)}}]{\setlength{\rightskip}{0pt plus 5cm}qlib\+::quantum\+::qubit\+::qubit (
+\begin{DoxyParamCaption}
+\item[{{\bf qlib\+::math\+::complex}}]{zero, }
+\item[{{\bf qlib\+::math\+::complex}}]{one}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1quantum_1_1qubit_a9c84248c8855841087687baa8b0a08c3}{}\label{classqlib_1_1quantum_1_1qubit_a9c84248c8855841087687baa8b0a08c3}
+Create a qubit in desired superposition 
+
+\subsection{Member Function Documentation}
+\index{qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}!apply@{apply}}
+\index{apply@{apply}!qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}}
+\subsubsection[{\texorpdfstring{apply(qlib\+::quantum\+::gates\+::igate \&gate, std\+::vector$<$ u64 $>$ input\+Bits)}{apply(qlib::quantum::gates::igate &gate, std::vector< u64 > inputBits)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib\+::quantum\+::qubit\+::apply (
+\begin{DoxyParamCaption}
+\item[{{\bf qlib\+::quantum\+::gates\+::igate} \&}]{gate, }
+\item[{std\+::vector$<$ u64 $>$}]{input\+Bits}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1qubit_ab3b0b76d5c6f0e627a742fcafbc768ae}{}\label{classqlib_1_1quantum_1_1qubit_ab3b0b76d5c6f0e627a742fcafbc768ae}
+Apply a quantum gate to this qubit 
+
+Implements \hyperlink{classqlib_1_1quantum_1_1qsystem_adbb748feb351aac69ca4a0bf6c92d77c}{qlib\+::quantum\+::qsystem}.
+
+\index{qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}!measure@{measure}}
+\index{measure@{measure}!qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}}
+\subsubsection[{\texorpdfstring{measure(i64 qubit=0)}{measure(i64 qubit=0)}}]{\setlength{\rightskip}{0pt plus 5cm}i8 qlib\+::quantum\+::qubit\+::measure (
+\begin{DoxyParamCaption}
+\item[{i64}]{qubit = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1qubit_aaf001eff84ccb4b7a6992e42bc2143cb}{}\label{classqlib_1_1quantum_1_1qubit_aaf001eff84ccb4b7a6992e42bc2143cb}
+Apply a quantum measurement to this qubit 
+
+Implements \hyperlink{classqlib_1_1quantum_1_1qsystem_a33d9954c6ca01cb400d940ff05614364}{qlib\+::quantum\+::qsystem}.
+
+\index{qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}!state@{state}}
+\index{state@{state}!qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}}
+\subsubsection[{\texorpdfstring{state()}{state()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix}\& qlib\+::quantum\+::qubit\+::state (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1quantum_1_1qubit_af8eaf337ffcb95c2445ddf35189335e4}{}\label{classqlib_1_1quantum_1_1qubit_af8eaf337ffcb95c2445ddf35189335e4}
+Current state column vector \index{qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}}
+\subsubsection[{\texorpdfstring{to\+String()}{toString()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string qlib\+::quantum\+::qubit\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1qubit_a8bf29d1f66508e4878ea861c5d8e44ec}{}\label{classqlib_1_1quantum_1_1qubit_a8bf29d1f66508e4878ea861c5d8e44ec}
+Pretty print 
+
+Reimplemented from \hyperlink{classqlib_1_1quantum_1_1qsystem_a9d95030955e2fdb26bc9152c32310e7e}{qlib\+::quantum\+::qsystem}.
+
+
+
+\subsection{Member Data Documentation}
+\index{qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}!distribution@{distribution}}
+\index{distribution@{distribution}!qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}}
+\subsubsection[{\texorpdfstring{distribution}{distribution}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::uniform\+\_\+real\+\_\+distribution$<$f32$>$ qlib\+::quantum\+::qubit\+::distribution\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1quantum_1_1qubit_abb97216eead736ab87e8756b9b4c2ce9}{}\label{classqlib_1_1quantum_1_1qubit_abb97216eead736ab87e8756b9b4c2ce9}
+Random distribution used during measurement \index{qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}!vec@{vec}}
+\index{vec@{vec}!qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}}
+\subsubsection[{\texorpdfstring{vec}{vec}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf qlib\+::math\+::matrix} qlib\+::quantum\+::qubit\+::vec\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1quantum_1_1qubit_a8f6e33dd5d0673f195360bc4b5c5442f}{}\label{classqlib_1_1quantum_1_1qubit_a8f6e33dd5d0673f195360bc4b5c5442f}
+State vector amplitudes 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/quantum/systems/\hyperlink{qubit_8hpp}{qubit.\+hpp}\end{DoxyCompactItemize}

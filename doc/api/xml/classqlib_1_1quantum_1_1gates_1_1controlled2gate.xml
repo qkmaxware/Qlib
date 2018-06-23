@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1quantum_1_1gates_1_1controlled2gate" kind="class" language="C++" prot="public">
+    <compoundname>qlib::quantum::gates::controlled2gate</compoundname>
+    <basecompoundref refid="classqlib_1_1quantum_1_1gates_1_1igate" prot="public" virt="non-virtual">qlib::quantum::gates::igate</basecompoundref>
+    <includes refid="controlled2gate_8hpp" local="no">controlled2gate.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a32ec87dafda9c4c80af4dc93758f6275" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string qlib::quantum::gates::controlled2gate::sname</definition>
+        <argsstring></argsstring>
+        <name>sname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/controlled2gate.hpp" line="19" column="1" bodyfile="src/core/quantum/gates/controlled2gate.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1abb21342d2206fbc4f7ab4e781997e471" prot="private" static="no" mutable="no">
+        <type><ref refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate" kindref="compound">onequbitgate</ref> &amp;</type>
+        <definition>onequbitgate&amp; qlib::quantum::gates::controlled2gate::refgate</definition>
+        <argsstring></argsstring>
+        <name>refgate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/controlled2gate.hpp" line="20" column="1" bodyfile="src/core/quantum/gates/controlled2gate.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a83775bed048e4856d99c8d59d6a20db3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib::quantum::gates::controlled2gate::controlled2gate</definition>
+        <argsstring>(std::string name, onequbitgate &amp;gate)</argsstring>
+        <name>controlled2gate</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate" kindref="compound">onequbitgate</ref> &amp;</type>
+          <declname>gate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new quanutm operator for the given number of states </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/controlled2gate.hpp" line="26" column="1" bodyfile="src/core/quantum/gates/controlled2gate.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a27a8793a3015aa9797f03fa0174113c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t qlib::quantum::gates::controlled2gate::inputs</definition>
+        <argsstring>()</argsstring>
+        <name>inputs</name>
+        <reimplements refid="classqlib_1_1quantum_1_1gates_1_1igate_1ac8aa56b0095a94fdd437bc55d90aec9d">inputs</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of input qubits this operator can be applied to </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/controlled2gate.hpp" line="31" column="1" bodyfile="src/core/quantum/gates/controlled2gate.hpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a25121d9bc52a594a718b6d8037ea6cc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string qlib::quantum::gates::controlled2gate::name</definition>
+        <argsstring>()</argsstring>
+        <name>name</name>
+        <reimplements refid="classqlib_1_1quantum_1_1gates_1_1igate_1ae8f8dda69d7742c12c743829abb3662b">name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The name of this gate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/controlled2gate.hpp" line="38" column="1" bodyfile="src/core/quantum/gates/controlled2gate.hpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a272635da6a7b8f65379f6ecb42df9389" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void qlib::quantum::gates::controlled2gate::operate</definition>
+        <argsstring>(matrix &amp;in, matrix &amp;out, std::vector&lt; u64 &gt; inputQubits)</argsstring>
+        <name>operate</name>
+        <reimplements refid="classqlib_1_1quantum_1_1gates_1_1igate_1a66038ee65fec12c627789505e11f1e23">operate</reimplements>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref> &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; u64 &gt;</type>
+          <declname>inputQubits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Operate on a given column vector state superposition </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/controlled2gate.hpp" line="45" column="1" bodyfile="src/core/quantum/gates/controlled2gate.hpp" bodystart="45" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1aeefab300e88034edbb5eacfa882ed218" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">qlib::math::matrix</ref> &amp;</type>
+        <definition>qlib::math::matrix&amp; qlib::quantum::gates::controlled2gate::getMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>getMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the matrix representation of this operator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/controlled2gate.hpp" line="80" column="1" bodyfile="src/core/quantum/gates/controlled2gate.hpp" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a4fda814b0336d103f5cdb7ea98507bd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string qlib::quantum::gates::controlled2gate::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="classxobject_1ad76243a44c4e4959d3b16bb57d82600d">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pretty print </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/controlled2gate.hpp" line="87" column="1" bodyfile="src/core/quantum/gates/controlled2gate.hpp" bodystart="87" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="220">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="219">
+        <label>qlib::quantum::gates::igate</label>
+        <link refid="classqlib_1_1quantum_1_1gates_1_1igate"/>
+        <childnode refid="220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>qlib::quantum::gates::controlled2gate</label>
+        <link refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate"/>
+        <childnode refid="219" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="224">
+        <label>qlib::quantum::gates::onequbitgate</label>
+        <link refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate"/>
+        <childnode refid="222" relation="public-inheritance">
+        </childnode>
+        <childnode refid="225" relation="usage">
+          <edgelabel>m</edgelabel>
+        </childnode>
+      </node>
+      <node id="223">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="222">
+        <label>qlib::quantum::gates::igate</label>
+        <link refid="classqlib_1_1quantum_1_1gates_1_1igate"/>
+        <childnode refid="223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>qlib::math::matrix</label>
+        <link refid="classqlib_1_1math_1_1matrix"/>
+        <childnode refid="223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="221">
+        <label>qlib::quantum::gates::controlled2gate</label>
+        <link refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate"/>
+        <childnode refid="222" relation="public-inheritance">
+        </childnode>
+        <childnode refid="224" relation="usage">
+          <edgelabel>refgate</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/core/quantum/gates/controlled2gate.hpp" line="16" column="1" bodyfile="src/core/quantum/gates/controlled2gate.hpp" bodystart="16" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a83775bed048e4856d99c8d59d6a20db3" prot="public" virt="non-virtual"><scope>qlib::quantum::gates::controlled2gate</scope><name>controlled2gate</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1aeefab300e88034edbb5eacfa882ed218" prot="public" virt="non-virtual"><scope>qlib::quantum::gates::controlled2gate</scope><name>getMatrix</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a27a8793a3015aa9797f03fa0174113c2" prot="public" virt="virtual"><scope>qlib::quantum::gates::controlled2gate</scope><name>inputs</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a25121d9bc52a594a718b6d8037ea6cc0" prot="public" virt="virtual"><scope>qlib::quantum::gates::controlled2gate</scope><name>name</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a272635da6a7b8f65379f6ecb42df9389" prot="public" virt="virtual"><scope>qlib::quantum::gates::controlled2gate</scope><name>operate</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1abb21342d2206fbc4f7ab4e781997e471" prot="private" virt="non-virtual"><scope>qlib::quantum::gates::controlled2gate</scope><name>refgate</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a32ec87dafda9c4c80af4dc93758f6275" prot="private" virt="non-virtual"><scope>qlib::quantum::gates::controlled2gate</scope><name>sname</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a4fda814b0336d103f5cdb7ea98507bd1" prot="public" virt="virtual"><scope>qlib::quantum::gates::controlled2gate</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

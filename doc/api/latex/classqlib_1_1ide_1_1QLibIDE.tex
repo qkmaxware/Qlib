@@ -1,0 +1,159 @@
+\hypertarget{classqlib_1_1ide_1_1QLibIDE}{}\section{qlib.\+ide.\+Q\+Lib\+I\+DE Class Reference}
+\label{classqlib_1_1ide_1_1QLibIDE}\index{qlib.\+ide.\+Q\+Lib\+I\+DE@{qlib.\+ide.\+Q\+Lib\+I\+DE}}
+
+
+Collaboration diagram for qlib.\+ide.\+Q\+Lib\+I\+DE\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classqlib_1_1ide_1_1QLibIDE__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqlib_1_1ide_1_1QLibIDE_a3eafdf56320c066383975e5b2d22503a}{Q\+Lib\+I\+DE} (\hyperlink{classqlib_1_1ide_1_1IniIO}{Ini\+IO} config)  throws I\+O\+Exception
+\item 
+void \hyperlink{classqlib_1_1ide_1_1QLibIDE_aa0b95da9f912317b1497e190748733d6}{log} (Object message)
+\item 
+void \hyperlink{classqlib_1_1ide_1_1QLibIDE_a53bc0b691fd24d3e2dad2603cf086760}{show} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classqlib_1_1ide_1_1QLibIDE_a4d8a71cb808c1796b48f83b05e3ca1b8}{main} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classqlib_1_1ide_1_1QLibIDE_ae54da93b399d4d027f33c04ba7e392fd}{config\+Location} = \char`\"{}config.\+ini\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classqlib_1_1ide_1_1QLibIDE_a6f9aa8bdf86b91b456239c96202d2e3f}{add\+Shortcut\+Key} (int key, Mouse\+Listener\mbox{[}$\,$\mbox{]} listeners)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final J\+Frame \hyperlink{classqlib_1_1ide_1_1QLibIDE_a13a62cb428150031089c3824f16d6bef}{frame}
+\item 
+final J\+Panel \hyperlink{classqlib_1_1ide_1_1QLibIDE_a599d44725656f74ca6d6fc028b8973a8}{pane}
+\item 
+final J\+Text\+Area \hyperlink{classqlib_1_1ide_1_1QLibIDE_aa92d671c5f0158e59c86767109afc92c}{log}
+\item 
+final J\+Scroll\+Pane \hyperlink{classqlib_1_1ide_1_1QLibIDE_a74ee30733f7d424f2e518f1171d70917}{log\+\_\+scroll}
+\item 
+final \hyperlink{classqlib_1_1ide_1_1FileManager}{File\+Manager} \hyperlink{classqlib_1_1ide_1_1QLibIDE_a5af68fc042aeee1b69f27f3e1e67610b}{manager} = new \hyperlink{classqlib_1_1ide_1_1FileManager}{File\+Manager}()
+\item 
+final Date\+Format \hyperlink{classqlib_1_1ide_1_1QLibIDE_ac1128e9b1f1d79af9c480383ab6a16ac}{date\+Format} = new Simple\+Date\+Format(\char`\"{}yyyy/MM/dd H\+H\+:mm\+:ss\char`\"{})
+\item 
+final \hyperlink{classqlib_1_1ide_1_1QLibRuntime}{Q\+Lib\+Runtime} \hyperlink{classqlib_1_1ide_1_1QLibIDE_a07b6d9558a76bd5d818a98debdb93d5f}{runtime}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the Qlib\+I\+DE \begin{DoxyAuthor}{Author}
+halse 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}!Q\+Lib\+I\+DE@{Q\+Lib\+I\+DE}}
+\index{Q\+Lib\+I\+DE@{Q\+Lib\+I\+DE}!qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}}
+\subsubsection[{\texorpdfstring{Q\+Lib\+I\+D\+E(\+Ini\+I\+O config)}{QLibIDE(IniIO config)}}]{\setlength{\rightskip}{0pt plus 5cm}qlib.\+ide.\+Q\+Lib\+I\+D\+E.\+Q\+Lib\+I\+DE (
+\begin{DoxyParamCaption}
+\item[{{\bf Ini\+IO}}]{config}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1QLibIDE_a3eafdf56320c066383975e5b2d22503a}{}\label{classqlib_1_1ide_1_1QLibIDE_a3eafdf56320c066383975e5b2d22503a}
+Create a new I\+DE instance 
+\begin{DoxyParams}{Parameters}
+{\em config} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\index{qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}!add\+Shortcut\+Key@{add\+Shortcut\+Key}}
+\index{add\+Shortcut\+Key@{add\+Shortcut\+Key}!qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}}
+\subsubsection[{\texorpdfstring{add\+Shortcut\+Key(int key, Mouse\+Listener[] listeners)}{addShortcutKey(int key, MouseListener[] listeners)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Q\+Lib\+I\+D\+E.\+add\+Shortcut\+Key (
+\begin{DoxyParamCaption}
+\item[{int}]{key, }
+\item[{Mouse\+Listener\mbox{[}$\,$\mbox{]}}]{listeners}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1QLibIDE_a6f9aa8bdf86b91b456239c96202d2e3f}{}\label{classqlib_1_1ide_1_1QLibIDE_a6f9aa8bdf86b91b456239c96202d2e3f}
+Add a key press shortcut to the I\+DE 
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em listeners} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}!log@{log}}
+\index{log@{log}!qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}}
+\subsubsection[{\texorpdfstring{log(\+Object message)}{log(Object message)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Q\+Lib\+I\+D\+E.\+log (
+\begin{DoxyParamCaption}
+\item[{Object}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1QLibIDE_aa0b95da9f912317b1497e190748733d6}{}\label{classqlib_1_1ide_1_1QLibIDE_aa0b95da9f912317b1497e190748733d6}
+Add a string to the log 
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}!main@{main}}
+\index{main@{main}!qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}}
+\subsubsection[{\texorpdfstring{main(\+String[] args)}{main(String[] args)}}]{\setlength{\rightskip}{0pt plus 5cm}static void qlib.\+ide.\+Q\+Lib\+I\+D\+E.\+main (
+\begin{DoxyParamCaption}
+\item[{String\mbox{[}$\,$\mbox{]}}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classqlib_1_1ide_1_1QLibIDE_a4d8a71cb808c1796b48f83b05e3ca1b8}{}\label{classqlib_1_1ide_1_1QLibIDE_a4d8a71cb808c1796b48f83b05e3ca1b8}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}!show@{show}}
+\index{show@{show}!qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}}
+\subsubsection[{\texorpdfstring{show()}{show()}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Q\+Lib\+I\+D\+E.\+show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1QLibIDE_a53bc0b691fd24d3e2dad2603cf086760}{}\label{classqlib_1_1ide_1_1QLibIDE_a53bc0b691fd24d3e2dad2603cf086760}
+Show the I\+DE 
+
+\subsection{Member Data Documentation}
+\index{qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}!config\+Location@{config\+Location}}
+\index{config\+Location@{config\+Location}!qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}}
+\subsubsection[{\texorpdfstring{config\+Location}{configLocation}}]{\setlength{\rightskip}{0pt plus 5cm}final String qlib.\+ide.\+Q\+Lib\+I\+D\+E.\+config\+Location = \char`\"{}config.\+ini\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classqlib_1_1ide_1_1QLibIDE_ae54da93b399d4d027f33c04ba7e392fd}{}\label{classqlib_1_1ide_1_1QLibIDE_ae54da93b399d4d027f33c04ba7e392fd}
+Location of the config file \index{qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}!date\+Format@{date\+Format}}
+\index{date\+Format@{date\+Format}!qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}}
+\subsubsection[{\texorpdfstring{date\+Format}{dateFormat}}]{\setlength{\rightskip}{0pt plus 5cm}final Date\+Format qlib.\+ide.\+Q\+Lib\+I\+D\+E.\+date\+Format = new Simple\+Date\+Format(\char`\"{}yyyy/MM/dd H\+H\+:mm\+:ss\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1QLibIDE_ac1128e9b1f1d79af9c480383ab6a16ac}{}\label{classqlib_1_1ide_1_1QLibIDE_ac1128e9b1f1d79af9c480383ab6a16ac}
+Date format \index{qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}!frame@{frame}}
+\index{frame@{frame}!qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}}
+\subsubsection[{\texorpdfstring{frame}{frame}}]{\setlength{\rightskip}{0pt plus 5cm}final J\+Frame qlib.\+ide.\+Q\+Lib\+I\+D\+E.\+frame\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1QLibIDE_a13a62cb428150031089c3824f16d6bef}{}\label{classqlib_1_1ide_1_1QLibIDE_a13a62cb428150031089c3824f16d6bef}
+Reference to the frame \index{qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}!log@{log}}
+\index{log@{log}!qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}}
+\subsubsection[{\texorpdfstring{log}{log}}]{\setlength{\rightskip}{0pt plus 5cm}final J\+Text\+Area qlib.\+ide.\+Q\+Lib\+I\+D\+E.\+log\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1QLibIDE_aa92d671c5f0158e59c86767109afc92c}{}\label{classqlib_1_1ide_1_1QLibIDE_aa92d671c5f0158e59c86767109afc92c}
+Reference to the output log \index{qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}!log\+\_\+scroll@{log\+\_\+scroll}}
+\index{log\+\_\+scroll@{log\+\_\+scroll}!qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}}
+\subsubsection[{\texorpdfstring{log\+\_\+scroll}{log_scroll}}]{\setlength{\rightskip}{0pt plus 5cm}final J\+Scroll\+Pane qlib.\+ide.\+Q\+Lib\+I\+D\+E.\+log\+\_\+scroll\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1QLibIDE_a74ee30733f7d424f2e518f1171d70917}{}\label{classqlib_1_1ide_1_1QLibIDE_a74ee30733f7d424f2e518f1171d70917}
+Reference to the scroll panel for the output log \index{qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}!manager@{manager}}
+\index{manager@{manager}!qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}}
+\subsubsection[{\texorpdfstring{manager}{manager}}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf File\+Manager} qlib.\+ide.\+Q\+Lib\+I\+D\+E.\+manager = new {\bf File\+Manager}()\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1QLibIDE_a5af68fc042aeee1b69f27f3e1e67610b}{}\label{classqlib_1_1ide_1_1QLibIDE_a5af68fc042aeee1b69f27f3e1e67610b}
+Reference to the tabbed pane for file managers \index{qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}!pane@{pane}}
+\index{pane@{pane}!qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}}
+\subsubsection[{\texorpdfstring{pane}{pane}}]{\setlength{\rightskip}{0pt plus 5cm}final J\+Panel qlib.\+ide.\+Q\+Lib\+I\+D\+E.\+pane\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1QLibIDE_a599d44725656f74ca6d6fc028b8973a8}{}\label{classqlib_1_1ide_1_1QLibIDE_a599d44725656f74ca6d6fc028b8973a8}
+Reference to the central panel \index{qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}!runtime@{runtime}}
+\index{runtime@{runtime}!qlib\+::ide\+::\+Q\+Lib\+I\+DE@{qlib\+::ide\+::\+Q\+Lib\+I\+DE}}
+\subsubsection[{\texorpdfstring{runtime}{runtime}}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Q\+Lib\+Runtime} qlib.\+ide.\+Q\+Lib\+I\+D\+E.\+runtime\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1QLibIDE_a07b6d9558a76bd5d818a98debdb93d5f}{}\label{classqlib_1_1ide_1_1QLibIDE_a07b6d9558a76bd5d818a98debdb93d5f}
+Reference to class for executing the Q\+Lib runtime 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/ide/src/qlib/ide/\hyperlink{QLibIDE_8java}{Q\+Lib\+I\+D\+E.\+java}\end{DoxyCompactItemize}

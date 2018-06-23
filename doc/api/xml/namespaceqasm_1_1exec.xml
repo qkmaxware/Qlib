@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceqasm_1_1exec" kind="namespace" language="C++">
+    <compoundname>qasm::exec</compoundname>
+    <innerclass refid="classqasm_1_1exec_1_1apply__gate" prot="public">qasm::exec::apply_gate</innerclass>
+    <innerclass refid="classqasm_1_1exec_1_1apply__subcircuit" prot="public">qasm::exec::apply_subcircuit</innerclass>
+    <innerclass refid="classqasm_1_1exec_1_1declaration" prot="public">qasm::exec::declaration</innerclass>
+    <innerclass refid="classqasm_1_1exec_1_1executable" prot="public">qasm::exec::executable</innerclass>
+    <innerclass refid="classqasm_1_1exec_1_1measurement" prot="public">qasm::exec::measurement</innerclass>
+    <innerclass refid="classqasm_1_1exec_1_1print" prot="public">qasm::exec::print</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/runtime/runtime.hpp" line="151" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacelexical" kind="namespace" language="C++">
+    <compoundname>lexical</compoundname>
+    <innerclass refid="classlexical_1_1lexeme" prot="public">lexical::lexeme</innerclass>
+    <innerclass refid="classlexical_1_1lexer" prot="public">lexical::lexer</innerclass>
+    <innerclass refid="classlexical_1_1lexicalexception" prot="public">lexical::lexicalexception</innerclass>
+    <innerclass refid="structlexical_1_1match" prot="public">lexical::match</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/runtime/lexer.hpp" line="15" column="1"/>
+  </compounddef>
+</doxygen>

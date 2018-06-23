@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceqasm_1_1rules" kind="namespace" language="C++">
+    <compoundname>qasm::rules</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceqasm_1_1rules_1a26247b01755121860f87e5a26d9bd391" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qasm::rules::try_parse_subcircuit_application</definition>
+        <argsstring>(program &amp;prog, std::vector&lt; lexical::match &gt; &amp;tokens)</argsstring>
+        <name>try_parse_subcircuit_application</name>
+        <param>
+          <type><ref refid="classprogram" kindref="compound">program</ref> &amp;</type>
+          <declname>prog</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structlexical_1_1match" kindref="compound">lexical::match</ref> &gt; &amp;</type>
+          <declname>tokens</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse subcircuit_application: Name Name*; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="64" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="64" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceqasm_1_1rules_1aa583e7fb674ce302c13e04802c0ac371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qasm::rules::try_parse_gate_application</definition>
+        <argsstring>(program &amp;prog, std::vector&lt; lexical::match &gt; &amp;tokens)</argsstring>
+        <name>try_parse_gate_application</name>
+        <param>
+          <type><ref refid="classprogram" kindref="compound">program</ref> &amp;</type>
+          <declname>prog</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structlexical_1_1match" kindref="compound">lexical::match</ref> &gt; &amp;</type>
+          <declname>tokens</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse gate_application: Name Index*; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="88" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="88" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceqasm_1_1rules_1abe4777fa00a61066da5591048a9cbf54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qasm::rules::try_parse_debug</definition>
+        <argsstring>(program &amp;prog, std::vector&lt; lexical::match &gt; &amp;tokens)</argsstring>
+        <name>try_parse_debug</name>
+        <param>
+          <type><ref refid="classprogram" kindref="compound">program</ref> &amp;</type>
+          <declname>prog</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structlexical_1_1match" kindref="compound">lexical::match</ref> &gt; &amp;</type>
+          <declname>tokens</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse debug: Print Name; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="112" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="112" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceqasm_1_1rules_1a5da8b5fa16a6eec3576f64c509a43ffd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qasm::rules::try_parse_measurement</definition>
+        <argsstring>(program &amp;prog, std::vector&lt; lexical::match &gt; &amp;tokens)</argsstring>
+        <name>try_parse_measurement</name>
+        <param>
+          <type><ref refid="classprogram" kindref="compound">program</ref> &amp;</type>
+          <declname>prog</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structlexical_1_1match" kindref="compound">lexical::match</ref> &gt; &amp;</type>
+          <declname>tokens</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse measurement: Measure Index Mapping Index; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="130" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="130" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceqasm_1_1rules_1a1e0101b23fdb03759ca22f831662a88b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qasm::rules::try_parse_declaration</definition>
+        <argsstring>(program &amp;prog, std::vector&lt; lexical::match &gt; &amp;tokens)</argsstring>
+        <name>try_parse_declaration</name>
+        <param>
+          <type><ref refid="classprogram" kindref="compound">program</ref> &amp;</type>
+          <declname>prog</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structlexical_1_1match" kindref="compound">lexical::match</ref> &gt; &amp;</type>
+          <declname>tokens</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse declaration: Name Name &apos;[&apos; Integer+ &apos;]&apos;; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="168" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="168" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceqasm_1_1rules_1ac9cd78216b8e48a2d5aa625d99240cb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qasm::rules::try_parse_label</definition>
+        <argsstring>(program &amp;prog, std::vector&lt; lexical::match &gt; &amp;tokens)</argsstring>
+        <name>try_parse_label</name>
+        <param>
+          <type><ref refid="classprogram" kindref="compound">program</ref> &amp;</type>
+          <declname>prog</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structlexical_1_1match" kindref="compound">lexical::match</ref> &gt; &amp;</type>
+          <declname>tokens</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse label: Dot Name ; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="193" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="193" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceqasm_1_1rules_1abe391ee7a042e770f440498767f889ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qasm::rules::try_parse_include</definition>
+        <argsstring>(program &amp;prog, lexical::lexer &amp;tokenizer, std::vector&lt; lexical::match &gt; &amp;tokens)</argsstring>
+        <name>try_parse_include</name>
+        <param>
+          <type><ref refid="classprogram" kindref="compound">program</ref> &amp;</type>
+          <declname>prog</declname>
+        </param>
+        <param>
+          <type><ref refid="classlexical_1_1lexer" kindref="compound">lexical::lexer</ref> &amp;</type>
+          <declname>tokenizer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structlexical_1_1match" kindref="compound">lexical::match</ref> &gt; &amp;</type>
+          <declname>tokens</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse include: Include String; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="211" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="211" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceqasm_1_1rules_1af40aa89c9f5235a7d2e94af2de62a42b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qasm::rules::try_parse_rule</definition>
+        <argsstring>(program &amp;prog, lexical::lexer &amp;tokenizer, std::vector&lt; lexical::match &gt; &amp;tokens)</argsstring>
+        <name>try_parse_rule</name>
+        <param>
+          <type><ref refid="classprogram" kindref="compound">program</ref> &amp;</type>
+          <declname>prog</declname>
+        </param>
+        <param>
+          <type><ref refid="classlexical_1_1lexer" kindref="compound">lexical::lexer</ref> &amp;</type>
+          <declname>tokenizer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structlexical_1_1match" kindref="compound">lexical::match</ref> &gt; &amp;</type>
+          <declname>tokens</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test every rule against a list of matched tokens, If rule is matched an instruction is added to the program and this returns true </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="231" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="231" bodyend="253"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/runtime/qasmparser.hpp" line="59" column="1"/>
+  </compounddef>
+</doxygen>

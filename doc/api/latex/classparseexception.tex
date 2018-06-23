@@ -1,0 +1,96 @@
+\hypertarget{classparseexception}{}\section{parseexception Class Reference}
+\label{classparseexception}\index{parseexception@{parseexception}}
+
+
+{\ttfamily \#include $<$qasmparser.\+hpp$>$}
+
+
+
+Inheritance diagram for parseexception\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classparseexception__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for parseexception\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classparseexception__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classparseexception_a16accd5bc62f4465b611b38db6751e0e}{parseexception} (\hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} row, \hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} column, std\+::string \hyperlink{classparseexception_a99a096bfed3e48cd365cdae1952bc017}{file}, std\+::string message)
+\item 
+const char $\ast$ \hyperlink{classparseexception_a006c6421028f780b91eb4a473265dce7}{what} () const   throw ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} \hyperlink{classparseexception_a0e50402f7511e71332099355061b26ca}{r}
+\item 
+\hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} \hyperlink{classparseexception_a671840c0e1441210c84084e235fa55c8}{c}
+\item 
+std\+::string \hyperlink{classparseexception_a99a096bfed3e48cd365cdae1952bc017}{file}
+\item 
+std\+::string \hyperlink{classparseexception_a5f02ff7145f65ba4e9b5be994bfc0edb}{msg}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classparseexception_a4807889c64609ea29a275c9f66c15e61}{what\+\_\+message}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for exceptions occuring during parsing of lexical tokens 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{parseexception@{parseexception}!parseexception@{parseexception}}
+\index{parseexception@{parseexception}!parseexception@{parseexception}}
+\subsubsection[{\texorpdfstring{parseexception(ulong row, ulong column, std\+::string file, std\+::string message)}{parseexception(ulong row, ulong column, std::string file, std::string message)}}]{\setlength{\rightskip}{0pt plus 5cm}parseexception\+::parseexception (
+\begin{DoxyParamCaption}
+\item[{{\bf ulong}}]{row, }
+\item[{{\bf ulong}}]{column, }
+\item[{std\+::string}]{file, }
+\item[{std\+::string}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparseexception_a16accd5bc62f4465b611b38db6751e0e}{}\label{classparseexception_a16accd5bc62f4465b611b38db6751e0e}
+
+
+\subsection{Member Function Documentation}
+\index{parseexception@{parseexception}!what@{what}}
+\index{what@{what}!parseexception@{parseexception}}
+\subsubsection[{\texorpdfstring{what() const }{what() const }}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ parseexception\+::what (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparseexception_a006c6421028f780b91eb4a473265dce7}{}\label{classparseexception_a006c6421028f780b91eb4a473265dce7}
+
+
+\subsection{Member Data Documentation}
+\index{parseexception@{parseexception}!c@{c}}
+\index{c@{c}!parseexception@{parseexception}}
+\subsubsection[{\texorpdfstring{c}{c}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ulong} parseexception\+::c}\hypertarget{classparseexception_a671840c0e1441210c84084e235fa55c8}{}\label{classparseexception_a671840c0e1441210c84084e235fa55c8}
+Column of cause \index{parseexception@{parseexception}!file@{file}}
+\index{file@{file}!parseexception@{parseexception}}
+\subsubsection[{\texorpdfstring{file}{file}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string parseexception\+::file}\hypertarget{classparseexception_a99a096bfed3e48cd365cdae1952bc017}{}\label{classparseexception_a99a096bfed3e48cd365cdae1952bc017}
+Filename cause occurred in \index{parseexception@{parseexception}!msg@{msg}}
+\index{msg@{msg}!parseexception@{parseexception}}
+\subsubsection[{\texorpdfstring{msg}{msg}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string parseexception\+::msg}\hypertarget{classparseexception_a5f02ff7145f65ba4e9b5be994bfc0edb}{}\label{classparseexception_a5f02ff7145f65ba4e9b5be994bfc0edb}
+Cause of exception \index{parseexception@{parseexception}!r@{r}}
+\index{r@{r}!parseexception@{parseexception}}
+\subsubsection[{\texorpdfstring{r}{r}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ulong} parseexception\+::r}\hypertarget{classparseexception_a0e50402f7511e71332099355061b26ca}{}\label{classparseexception_a0e50402f7511e71332099355061b26ca}
+Row of cause \index{parseexception@{parseexception}!what\+\_\+message@{what\+\_\+message}}
+\index{what\+\_\+message@{what\+\_\+message}!parseexception@{parseexception}}
+\subsubsection[{\texorpdfstring{what\+\_\+message}{what_message}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string parseexception\+::what\+\_\+message\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classparseexception_a4807889c64609ea29a275c9f66c15e61}{}\label{classparseexception_a4807889c64609ea29a275c9f66c15e61}
+Combined message 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{qasmparser_8hpp}{qasmparser.\+hpp}\end{DoxyCompactItemize}

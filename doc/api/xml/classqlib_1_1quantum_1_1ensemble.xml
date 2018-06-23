@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1quantum_1_1ensemble" kind="class" language="C++" prot="public">
+    <compoundname>qlib::quantum::ensemble</compoundname>
+    <basecompoundref refid="classqlib_1_1quantum_1_1qsystem" prot="public" virt="non-virtual">qlib::quantum::qsystem</basecompoundref>
+    <includes refid="ensemble_8hpp" local="no">ensemble.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classqlib_1_1quantum_1_1ensemble_1ab77e11f30898f29060ff97236ec26319" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classqlib_1_1quantum_1_1qsystem" kindref="compound">qsystem</ref> * &gt;</type>
+        <definition>std::vector&lt;qsystem*&gt; qlib::quantum::ensemble::set</definition>
+        <argsstring></argsstring>
+        <name>set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of all systems in this collection </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/ensemble.hpp" line="20" column="1" bodyfile="src/core/quantum/systems/ensemble.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1ensemble_1a5e088d9ac7394f150f5a2affe0790f2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib::quantum::ensemble::ensemble</definition>
+        <argsstring>(std::vector&lt; qsystem * &gt; eset)</argsstring>
+        <name>ensemble</name>
+        <param>
+          <type>std::vector&lt; <ref refid="classqlib_1_1quantum_1_1qsystem" kindref="compound">qsystem</ref> * &gt;</type>
+          <declname>eset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an ensemble from a given list of systems </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/ensemble.hpp" line="26" column="1" bodyfile="src/core/quantum/systems/ensemble.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1ensemble_1aae0c56d2d64d4be27b5ab976d60c2747" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib::quantum::ensemble::~ensemble</definition>
+        <argsstring>()</argsstring>
+        <name>~ensemble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete the ensemble and cleanup pointers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/ensemble.hpp" line="30" column="1" bodyfile="src/core/quantum/systems/ensemble.hpp" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1ensemble_1a4b811e4778f5c845504ed8eec058dfe4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t qlib::quantum::ensemble::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of the ensemble </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/ensemble.hpp" line="40" column="1" bodyfile="src/core/quantum/systems/ensemble.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1ensemble_1a9226b1108f8d45d052316f7c366f1d5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void qlib::quantum::ensemble::apply</definition>
+        <argsstring>(qlib::quantum::gates::igate &amp;op, std::vector&lt; u64 &gt; inputBits)</argsstring>
+        <name>apply</name>
+        <reimplements refid="classqlib_1_1quantum_1_1qsystem_1adbb748feb351aac69ca4a0bf6c92d77c">apply</reimplements>
+        <param>
+          <type><ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">qlib::quantum::gates::igate</ref> &amp;</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; u64 &gt;</type>
+          <declname>inputBits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply operator to all systems in the ensemble </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/ensemble.hpp" line="47" column="1" bodyfile="src/core/quantum/systems/ensemble.hpp" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1ensemble_1ae5e3ebd119e1df6dbb966b7bb6222e5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>i8</type>
+        <definition>i8 qlib::quantum::ensemble::measure</definition>
+        <argsstring>(i64 qubit)</argsstring>
+        <name>measure</name>
+        <reimplements refid="classqlib_1_1quantum_1_1qsystem_1a33d9954c6ca01cb400d940ff05614364">measure</reimplements>
+        <param>
+          <type>i64</type>
+          <declname>qubit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Measure all systems in the ensemble and return most common answer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/ensemble.hpp" line="56" column="1" bodyfile="src/core/quantum/systems/ensemble.hpp" bodystart="56" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Represents a collection of multiple identical quantum systems </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="238">
+        <label>qlib::quantum::ensemble</label>
+        <link refid="classqlib_1_1quantum_1_1ensemble"/>
+        <childnode refid="239" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="240">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="239">
+        <label>qlib::quantum::qsystem</label>
+        <link refid="classqlib_1_1quantum_1_1qsystem"/>
+        <childnode refid="240" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="241">
+        <label>qlib::quantum::ensemble</label>
+        <link refid="classqlib_1_1quantum_1_1ensemble"/>
+        <childnode refid="242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="243">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="242">
+        <label>qlib::quantum::qsystem</label>
+        <link refid="classqlib_1_1quantum_1_1qsystem"/>
+        <childnode refid="243" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/core/quantum/systems/ensemble.hpp" line="15" column="1" bodyfile="src/core/quantum/systems/ensemble.hpp" bodystart="15" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1quantum_1_1ensemble_1a9226b1108f8d45d052316f7c366f1d5a" prot="public" virt="virtual"><scope>qlib::quantum::ensemble</scope><name>apply</name></member>
+      <member refid="classqlib_1_1quantum_1_1ensemble_1a5e088d9ac7394f150f5a2affe0790f2a" prot="public" virt="non-virtual"><scope>qlib::quantum::ensemble</scope><name>ensemble</name></member>
+      <member refid="classqlib_1_1quantum_1_1ensemble_1ae5e3ebd119e1df6dbb966b7bb6222e5a" prot="public" virt="virtual"><scope>qlib::quantum::ensemble</scope><name>measure</name></member>
+      <member refid="classqlib_1_1quantum_1_1ensemble_1ab77e11f30898f29060ff97236ec26319" prot="private" virt="non-virtual"><scope>qlib::quantum::ensemble</scope><name>set</name></member>
+      <member refid="classqlib_1_1quantum_1_1ensemble_1a4b811e4778f5c845504ed8eec058dfe4" prot="public" virt="non-virtual"><scope>qlib::quantum::ensemble</scope><name>size</name></member>
+      <member refid="classqlib_1_1quantum_1_1qsystem_1a9d95030955e2fdb26bc9152c32310e7e" prot="public" virt="virtual"><scope>qlib::quantum::ensemble</scope><name>toString</name></member>
+      <member refid="classqlib_1_1quantum_1_1ensemble_1aae0c56d2d64d4be27b5ab976d60c2747" prot="public" virt="non-virtual"><scope>qlib::quantum::ensemble</scope><name>~ensemble</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

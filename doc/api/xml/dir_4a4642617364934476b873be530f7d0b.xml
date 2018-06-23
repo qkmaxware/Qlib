@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_4a4642617364934476b873be530f7d0b" kind="dir">
+    <compoundname>src/ide/src/qlib</compoundname>
+    <innerdir refid="dir_4fac30b4f606137a9754f93479176508">src/ide/src/qlib/ide</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ide/src/qlib/"/>
+  </compounddef>
+</doxygen>

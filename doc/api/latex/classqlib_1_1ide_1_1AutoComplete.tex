@@ -1,0 +1,248 @@
+\hypertarget{classqlib_1_1ide_1_1AutoComplete}{}\section{qlib.\+ide.\+Auto\+Complete Class Reference}
+\label{classqlib_1_1ide_1_1AutoComplete}\index{qlib.\+ide.\+Auto\+Complete@{qlib.\+ide.\+Auto\+Complete}}
+
+
+Collaboration diagram for qlib.\+ide.\+Auto\+Complete\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classqlib_1_1ide_1_1AutoComplete__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqlib_1_1ide_1_1AutoComplete_a30e4dd8e6c36a6ef576641480d4368f7}{Auto\+Complete} (J\+Text\+Component \hyperlink{classqlib_1_1ide_1_1AutoComplete_ab41cb720a8247194d0c4c2cc5fa6aeef}{text\+Component})
+\item 
+boolean \hyperlink{classqlib_1_1ide_1_1AutoComplete_a6dfe58b003099399cbed40a8082631ff}{is\+Visible} ()
+\item 
+void \hyperlink{classqlib_1_1ide_1_1AutoComplete_a1b3f11041ae6af9b54e56c19adbbae5c}{add\+Word} (String s)
+\item 
+void \hyperlink{classqlib_1_1ide_1_1AutoComplete_a8e424fd802e81ab9a816c9b54c8cf364}{remove\+Word} (String s)
+\item 
+void \hyperlink{classqlib_1_1ide_1_1AutoComplete_aea2eaa12383e22951f5ddef7b9182b07}{set\+Characters\+Until\+Suggestions} (int characters)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classqlib_1_1ide_1_1AutoComplete_af2b5cb3b8c9557abaed28883288f5f34}{insert\+Suggestion} (Object o)
+\item 
+void \hyperlink{classqlib_1_1ide_1_1AutoComplete_a9b4c1fc14bdff51a29b3a13622cba025}{show\+Suggestions} ()
+\item 
+void \hyperlink{classqlib_1_1ide_1_1AutoComplete_a262b15fe050727186b0dc3d22e0d5143}{hide\+Suggestions} ()
+\item 
+String \hyperlink{classqlib_1_1ide_1_1AutoComplete_acdc8c857e1580998523ee6f50c738a84}{get\+Text} (int start, int length)
+\item 
+void \hyperlink{classqlib_1_1ide_1_1AutoComplete_a04a7f33c4d243d3d15592c3b0b1b19d4}{check\+For\+And\+Show\+Suggestions} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final J\+Text\+Component \hyperlink{classqlib_1_1ide_1_1AutoComplete_ab41cb720a8247194d0c4c2cc5fa6aeef}{text\+Component}
+\item 
+final Document\+Listener \hyperlink{classqlib_1_1ide_1_1AutoComplete_a79190bf245b656b279233a982ed4248c}{doc\+Listener}
+\item 
+final Array\+List$<$ String $>$ \hyperlink{classqlib_1_1ide_1_1AutoComplete_a547307db6247e63b17bad503504dbd22}{suggestions} = new Array\+List$<$String$>$()
+\item 
+int \hyperlink{classqlib_1_1ide_1_1AutoComplete_ab4de0d96f7b92c3768e1c08fbb47aed5}{letters\+Until\+Shown} = 1
+\item 
+String \hyperlink{classqlib_1_1ide_1_1AutoComplete_add24423a55cac629e8316c5918a6d954}{typed\+Word}
+\item 
+int \hyperlink{classqlib_1_1ide_1_1AutoComplete_a7a588e36bc43ffbb782e6f43d89176a2}{start\+Position}
+\item 
+int \hyperlink{classqlib_1_1ide_1_1AutoComplete_ab737bdeda6e26125bc85ad00f5de14d2}{end\+Position}
+\item 
+final J\+Window \hyperlink{classqlib_1_1ide_1_1AutoComplete_a858e66824f2ef4066d9987b4206037a2}{window} = new J\+Window()
+\item 
+J\+List \hyperlink{classqlib_1_1ide_1_1AutoComplete_ab04a22ed940369f199952db2ce1c04f8}{list} = new J\+List()
+\item 
+Default\+List\+Model \hyperlink{classqlib_1_1ide_1_1AutoComplete_aaaa89916b82f63bd8d7079c84c251e27}{model} = new Default\+List\+Model()
+\item 
+int \hyperlink{classqlib_1_1ide_1_1AutoComplete_a312cdabc82431a5cc8d73c1884c416a7}{width} = 430
+\item 
+int \hyperlink{classqlib_1_1ide_1_1AutoComplete_a8ebc95801d3b19aff09123cf8729e2c9}{max\+Height} = 160
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for auto complete word suggestions used with J\+Text\+Component \begin{DoxyAuthor}{Author}
+chalseth 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!Auto\+Complete@{Auto\+Complete}}
+\index{Auto\+Complete@{Auto\+Complete}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{Auto\+Complete(\+J\+Text\+Component text\+Component)}{AutoComplete(JTextComponent textComponent)}}]{\setlength{\rightskip}{0pt plus 5cm}qlib.\+ide.\+Auto\+Complete.\+Auto\+Complete (
+\begin{DoxyParamCaption}
+\item[{J\+Text\+Component}]{text\+Component}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_a30e4dd8e6c36a6ef576641480d4368f7}{}\label{classqlib_1_1ide_1_1AutoComplete_a30e4dd8e6c36a6ef576641480d4368f7}
+Create an auto complete suggestion dialog for the given text component 
+\begin{DoxyParams}{Parameters}
+{\em text\+Component} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!add\+Word@{add\+Word}}
+\index{add\+Word@{add\+Word}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{add\+Word(\+String s)}{addWord(String s)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Auto\+Complete.\+add\+Word (
+\begin{DoxyParamCaption}
+\item[{String}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_a1b3f11041ae6af9b54e56c19adbbae5c}{}\label{classqlib_1_1ide_1_1AutoComplete_a1b3f11041ae6af9b54e56c19adbbae5c}
+Add word to the dictionary 
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!check\+For\+And\+Show\+Suggestions@{check\+For\+And\+Show\+Suggestions}}
+\index{check\+For\+And\+Show\+Suggestions@{check\+For\+And\+Show\+Suggestions}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{check\+For\+And\+Show\+Suggestions()}{checkForAndShowSuggestions()}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Auto\+Complete.\+check\+For\+And\+Show\+Suggestions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_a04a7f33c4d243d3d15592c3b0b1b19d4}{}\label{classqlib_1_1ide_1_1AutoComplete_a04a7f33c4d243d3d15592c3b0b1b19d4}
+For use auto checking the suggestions as a user types \index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!get\+Text@{get\+Text}}
+\index{get\+Text@{get\+Text}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{get\+Text(int start, int length)}{getText(int start, int length)}}]{\setlength{\rightskip}{0pt plus 5cm}String qlib.\+ide.\+Auto\+Complete.\+get\+Text (
+\begin{DoxyParamCaption}
+\item[{int}]{start, }
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_acdc8c857e1580998523ee6f50c738a84}{}\label{classqlib_1_1ide_1_1AutoComplete_acdc8c857e1580998523ee6f50c738a84}
+Get the text between 2 indexes 
+\begin{DoxyParams}{Parameters}
+{\em start} & \\
+\hline
+{\em length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!hide\+Suggestions@{hide\+Suggestions}}
+\index{hide\+Suggestions@{hide\+Suggestions}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{hide\+Suggestions()}{hideSuggestions()}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Auto\+Complete.\+hide\+Suggestions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_a262b15fe050727186b0dc3d22e0d5143}{}\label{classqlib_1_1ide_1_1AutoComplete_a262b15fe050727186b0dc3d22e0d5143}
+Hide the suggestion box \index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!insert\+Suggestion@{insert\+Suggestion}}
+\index{insert\+Suggestion@{insert\+Suggestion}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{insert\+Suggestion(\+Object o)}{insertSuggestion(Object o)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Auto\+Complete.\+insert\+Suggestion (
+\begin{DoxyParamCaption}
+\item[{Object}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_af2b5cb3b8c9557abaed28883288f5f34}{}\label{classqlib_1_1ide_1_1AutoComplete_af2b5cb3b8c9557abaed28883288f5f34}
+Insert word, replacing the currently typed word 
+\begin{DoxyParams}{Parameters}
+{\em o} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!is\+Visible@{is\+Visible}}
+\index{is\+Visible@{is\+Visible}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{is\+Visible()}{isVisible()}}]{\setlength{\rightskip}{0pt plus 5cm}boolean qlib.\+ide.\+Auto\+Complete.\+is\+Visible (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_a6dfe58b003099399cbed40a8082631ff}{}\label{classqlib_1_1ide_1_1AutoComplete_a6dfe58b003099399cbed40a8082631ff}
+Check if the suggestion box is visible \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!remove\+Word@{remove\+Word}}
+\index{remove\+Word@{remove\+Word}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{remove\+Word(\+String s)}{removeWord(String s)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Auto\+Complete.\+remove\+Word (
+\begin{DoxyParamCaption}
+\item[{String}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_a8e424fd802e81ab9a816c9b54c8cf364}{}\label{classqlib_1_1ide_1_1AutoComplete_a8e424fd802e81ab9a816c9b54c8cf364}
+Remove word from the dictionary 
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!set\+Characters\+Until\+Suggestions@{set\+Characters\+Until\+Suggestions}}
+\index{set\+Characters\+Until\+Suggestions@{set\+Characters\+Until\+Suggestions}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{set\+Characters\+Until\+Suggestions(int characters)}{setCharactersUntilSuggestions(int characters)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Auto\+Complete.\+set\+Characters\+Until\+Suggestions (
+\begin{DoxyParamCaption}
+\item[{int}]{characters}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_aea2eaa12383e22951f5ddef7b9182b07}{}\label{classqlib_1_1ide_1_1AutoComplete_aea2eaa12383e22951f5ddef7b9182b07}
+Set the number of characters until the suggestion box is shown 
+\begin{DoxyParams}{Parameters}
+{\em characters} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!show\+Suggestions@{show\+Suggestions}}
+\index{show\+Suggestions@{show\+Suggestions}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{show\+Suggestions()}{showSuggestions()}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Auto\+Complete.\+show\+Suggestions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_a9b4c1fc14bdff51a29b3a13622cba025}{}\label{classqlib_1_1ide_1_1AutoComplete_a9b4c1fc14bdff51a29b3a13622cba025}
+Show the suggestion box 
+
+\subsection{Member Data Documentation}
+\index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!doc\+Listener@{doc\+Listener}}
+\index{doc\+Listener@{doc\+Listener}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{doc\+Listener}{docListener}}]{\setlength{\rightskip}{0pt plus 5cm}final Document\+Listener qlib.\+ide.\+Auto\+Complete.\+doc\+Listener\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_a79190bf245b656b279233a982ed4248c}{}\label{classqlib_1_1ide_1_1AutoComplete_a79190bf245b656b279233a982ed4248c}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} DocumentListener() \{
+        @Override
+        \textcolor{keyword}{public} \textcolor{keywordtype}{void} insertUpdate(DocumentEvent de) \{
+            \hyperlink{classqlib_1_1ide_1_1AutoComplete_a04a7f33c4d243d3d15592c3b0b1b19d4}{checkForAndShowSuggestions}();
+        \}
+
+        @Override
+        \textcolor{keyword}{public} \textcolor{keywordtype}{void} removeUpdate(DocumentEvent de) \{
+            \hyperlink{classqlib_1_1ide_1_1AutoComplete_a04a7f33c4d243d3d15592c3b0b1b19d4}{checkForAndShowSuggestions}();
+        \}
+
+        @Override
+        \textcolor{keyword}{public} \textcolor{keywordtype}{void} changedUpdate(DocumentEvent de) \{
+            \hyperlink{classqlib_1_1ide_1_1AutoComplete_a04a7f33c4d243d3d15592c3b0b1b19d4}{checkForAndShowSuggestions}();
+        \}
+    \}
+\end{DoxyCode}
+Document listener for the text\+Component \index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!end\+Position@{end\+Position}}
+\index{end\+Position@{end\+Position}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{end\+Position}{endPosition}}]{\setlength{\rightskip}{0pt plus 5cm}int qlib.\+ide.\+Auto\+Complete.\+end\+Position\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_ab737bdeda6e26125bc85ad00f5de14d2}{}\label{classqlib_1_1ide_1_1AutoComplete_ab737bdeda6e26125bc85ad00f5de14d2}
+End index of the typed word \index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!letters\+Until\+Shown@{letters\+Until\+Shown}}
+\index{letters\+Until\+Shown@{letters\+Until\+Shown}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{letters\+Until\+Shown}{lettersUntilShown}}]{\setlength{\rightskip}{0pt plus 5cm}int qlib.\+ide.\+Auto\+Complete.\+letters\+Until\+Shown = 1\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_ab4de0d96f7b92c3768e1c08fbb47aed5}{}\label{classqlib_1_1ide_1_1AutoComplete_ab4de0d96f7b92c3768e1c08fbb47aed5}
+Number of letters until suggestions get shown \index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!list@{list}}
+\index{list@{list}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{list}{list}}]{\setlength{\rightskip}{0pt plus 5cm}J\+List qlib.\+ide.\+Auto\+Complete.\+list = new J\+List()\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_ab04a22ed940369f199952db2ce1c04f8}{}\label{classqlib_1_1ide_1_1AutoComplete_ab04a22ed940369f199952db2ce1c04f8}
+Reference to the list of suggestions \index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!max\+Height@{max\+Height}}
+\index{max\+Height@{max\+Height}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{max\+Height}{maxHeight}}]{\setlength{\rightskip}{0pt plus 5cm}int qlib.\+ide.\+Auto\+Complete.\+max\+Height = 160\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_a8ebc95801d3b19aff09123cf8729e2c9}{}\label{classqlib_1_1ide_1_1AutoComplete_a8ebc95801d3b19aff09123cf8729e2c9}
+Maximum height of the suggestion window \index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!model@{model}}
+\index{model@{model}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{model}{model}}]{\setlength{\rightskip}{0pt plus 5cm}Default\+List\+Model qlib.\+ide.\+Auto\+Complete.\+model = new Default\+List\+Model()\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_aaaa89916b82f63bd8d7079c84c251e27}{}\label{classqlib_1_1ide_1_1AutoComplete_aaaa89916b82f63bd8d7079c84c251e27}
+Reference to the list\textquotesingle{}s data model \index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!start\+Position@{start\+Position}}
+\index{start\+Position@{start\+Position}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{start\+Position}{startPosition}}]{\setlength{\rightskip}{0pt plus 5cm}int qlib.\+ide.\+Auto\+Complete.\+start\+Position\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_a7a588e36bc43ffbb782e6f43d89176a2}{}\label{classqlib_1_1ide_1_1AutoComplete_a7a588e36bc43ffbb782e6f43d89176a2}
+Start index of the typed word \index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!suggestions@{suggestions}}
+\index{suggestions@{suggestions}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{suggestions}{suggestions}}]{\setlength{\rightskip}{0pt plus 5cm}final Array\+List$<$String$>$ qlib.\+ide.\+Auto\+Complete.\+suggestions = new Array\+List$<$String$>$()\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_a547307db6247e63b17bad503504dbd22}{}\label{classqlib_1_1ide_1_1AutoComplete_a547307db6247e63b17bad503504dbd22}
+List of words to suggest \index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!text\+Component@{text\+Component}}
+\index{text\+Component@{text\+Component}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{text\+Component}{textComponent}}]{\setlength{\rightskip}{0pt plus 5cm}final J\+Text\+Component qlib.\+ide.\+Auto\+Complete.\+text\+Component\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_ab41cb720a8247194d0c4c2cc5fa6aeef}{}\label{classqlib_1_1ide_1_1AutoComplete_ab41cb720a8247194d0c4c2cc5fa6aeef}
+Parent text component \index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!typed\+Word@{typed\+Word}}
+\index{typed\+Word@{typed\+Word}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{typed\+Word}{typedWord}}]{\setlength{\rightskip}{0pt plus 5cm}String qlib.\+ide.\+Auto\+Complete.\+typed\+Word\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_add24423a55cac629e8316c5918a6d954}{}\label{classqlib_1_1ide_1_1AutoComplete_add24423a55cac629e8316c5918a6d954}
+The currently typed word \index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!width@{width}}
+\index{width@{width}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{width}{width}}]{\setlength{\rightskip}{0pt plus 5cm}int qlib.\+ide.\+Auto\+Complete.\+width = 430\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_a312cdabc82431a5cc8d73c1884c416a7}{}\label{classqlib_1_1ide_1_1AutoComplete_a312cdabc82431a5cc8d73c1884c416a7}
+Width of suggestion window \index{qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}!window@{window}}
+\index{window@{window}!qlib\+::ide\+::\+Auto\+Complete@{qlib\+::ide\+::\+Auto\+Complete}}
+\subsubsection[{\texorpdfstring{window}{window}}]{\setlength{\rightskip}{0pt plus 5cm}final J\+Window qlib.\+ide.\+Auto\+Complete.\+window = new J\+Window()\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1AutoComplete_a858e66824f2ef4066d9987b4206037a2}{}\label{classqlib_1_1ide_1_1AutoComplete_a858e66824f2ef4066d9987b4206037a2}
+Reference to the suggestion window 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/ide/src/qlib/ide/\hyperlink{AutoComplete_8java}{Auto\+Complete.\+java}\end{DoxyCompactItemize}

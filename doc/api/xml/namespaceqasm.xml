@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceqasm" kind="namespace" language="C++">
+    <compoundname>qasm</compoundname>
+    <innernamespace refid="namespaceqasm_1_1exec">qasm::exec</innernamespace>
+    <innernamespace refid="namespaceqasm_1_1rules">qasm::rules</innernamespace>
+    <innernamespace refid="namespaceqasm_1_1runtime">qasm::runtime</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/runtime/qasmparser.hpp" line="58" column="1"/>
+  </compounddef>
+</doxygen>

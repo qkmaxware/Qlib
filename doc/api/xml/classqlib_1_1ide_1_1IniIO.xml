@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1ide_1_1IniIO" kind="class" language="Java" prot="public">
+    <compoundname>qlib::ide::IniIO</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1IniIO_1a632b3fd3f02261c98a2aecf793c956a5" prot="public" static="yes" mutable="no">
+        <type><ref refid="classqlib_1_1ide_1_1IniIO" kindref="compound">IniIO</ref></type>
+        <definition>IniIO qlib.ide.IniIO.DEFAULT</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static reference </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/IniIO.java" line="23" column="1" bodyfile="src/ide/src/qlib/ide/IniIO.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1IniIO_1a8676d10eea865975fca03579a63b9831" prot="private" static="no" mutable="no">
+        <type>HashMap&lt; String, String &gt;</type>
+        <definition>HashMap&lt;String,String&gt; qlib.ide.IniIO.options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <initializer>= new HashMap&lt;String,String&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of settings </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/IniIO.java" line="28" column="1" bodyfile="src/ide/src/qlib/ide/IniIO.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classqlib_1_1ide_1_1IniIO_1a0eadd42f5485d6bff447436734eda253" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib.ide.IniIO.IniIO</definition>
+        <argsstring>()</argsstring>
+        <name>IniIO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an empty config file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/IniIO.java" line="33" column="1" bodyfile="src/ide/src/qlib/ide/IniIO.java" bodystart="33" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classqlib_1_1ide_1_1IniIO_1a02df232b5337879896c1e067b6e27601" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1ide_1_1IniIO" kindref="compound">IniIO</ref></type>
+        <definition>static IniIO qlib.ide.IniIO.template</definition>
+        <argsstring>(String[] KeyValuePairs)</argsstring>
+        <name>template</name>
+        <param>
+          <type>String[]</type>
+          <declname>KeyValuePairs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a config from a template of key value pairs <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>KeyValuePairs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/IniIO.java" line="40" column="1" bodyfile="src/ide/src/qlib/ide/IniIO.java" bodystart="40" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1IniIO_1ae79dc4c2b69222d0e1725e70406da4c6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1ide_1_1IniIO" kindref="compound">IniIO</ref></type>
+        <definition>static IniIO qlib.ide.IniIO.read</definition>
+        <argsstring>(String filename)</argsstring>
+        <name>read</name>
+        <param>
+          <type>String</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read a config from a given file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/IniIO.java" line="55" column="1" bodyfile="src/ide/src/qlib/ide/IniIO.java" bodystart="55" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1IniIO_1aa8afcd3e7f28ea7d5324ab186650be1d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1ide_1_1IniIO" kindref="compound">IniIO</ref></type>
+        <definition>static IniIO qlib.ide.IniIO.merge</definition>
+        <argsstring>(IniIO a, IniIO b)</argsstring>
+        <name>merge</name>
+        <param>
+          <type><ref refid="classqlib_1_1ide_1_1IniIO" kindref="compound">IniIO</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1ide_1_1IniIO" kindref="compound">IniIO</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy-and-replace options from &apos;b&apos; and &apos;a&apos; into a new config <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/IniIO.java" line="86" column="1" bodyfile="src/ide/src/qlib/ide/IniIO.java" bodystart="86" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1IniIO_1a25c322821c43bb710404a05210fb20be" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1ide_1_1IniIO" kindref="compound">IniIO</ref></type>
+        <definition>static IniIO qlib.ide.IniIO.readAndUpdate</definition>
+        <argsstring>(String fname, IniIO updateTemplate)</argsstring>
+        <name>readAndUpdate</name>
+        <param>
+          <type>String</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1ide_1_1IniIO" kindref="compound">IniIO</ref></type>
+          <declname>updateTemplate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read config from file and automatically copy without replacement with a default template ensuring that all default options exist <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>updateTemplate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/IniIO.java" line="105" column="1" bodyfile="src/ide/src/qlib/ide/IniIO.java" bodystart="105" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1IniIO_1a10bafd582cb3816d23c93f1883b3e68b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void qlib.ide.IniIO.write</definition>
+        <argsstring>(IniIO settings, String filename)</argsstring>
+        <name>write</name>
+        <param>
+          <type><ref refid="classqlib_1_1ide_1_1IniIO" kindref="compound">IniIO</ref></type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write ini config options to a file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/IniIO.java" line="200" column="1" bodyfile="src/ide/src/qlib/ide/IniIO.java" bodystart="200" bodyend="210"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1ide_1_1IniIO_1a69a0c6a7e4bf6d161e37db728bff03a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean qlib.ide.IniIO.isSet</definition>
+        <argsstring>(String prop)</argsstring>
+        <name>isSet</name>
+        <param>
+          <type>String</type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a boolean value from a named property <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/IniIO.java" line="139" column="1" bodyfile="src/ide/src/qlib/ide/IniIO.java" bodystart="139" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1IniIO_1aab6608976c5f371d0f044fc7d39f0328" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String qlib.ide.IniIO.getString</definition>
+        <argsstring>(String prop)</argsstring>
+        <name>getString</name>
+        <param>
+          <type>String</type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a string from a named property <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/IniIO.java" line="152" column="1" bodyfile="src/ide/src/qlib/ide/IniIO.java" bodystart="152" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1IniIO_1a01a6fe06552fefab11669ea65ace7392" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer qlib.ide.IniIO.getInt</definition>
+        <argsstring>(String prop)</argsstring>
+        <name>getInt</name>
+        <param>
+          <type>String</type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse an integer from a named property <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/IniIO.java" line="165" column="1" bodyfile="src/ide/src/qlib/ide/IniIO.java" bodystart="165" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1IniIO_1a2337d52ad4d343c74b808f64e70710f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.IniIO.set</definition>
+        <argsstring>(String prop, Object value)</argsstring>
+        <name>set</name>
+        <param>
+          <type>String</type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a named property <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/IniIO.java" line="178" column="1" bodyfile="src/ide/src/qlib/ide/IniIO.java" bodystart="178" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1IniIO_1a68567b380e0074a223137077125eb060" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean qlib.ide.IniIO.exists</definition>
+        <argsstring>(String prop)</argsstring>
+        <name>exists</name>
+        <param>
+          <type>String</type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a property exists in the config <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/IniIO.java" line="187" column="1" bodyfile="src/ide/src/qlib/ide/IniIO.java" bodystart="187" bodyend="193"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class for storing INI type config information <simplesect kind="author"><para>Colin Halseth </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="266">
+        <label>HashMap&lt; String, String &gt;</label>
+      </node>
+      <node id="265">
+        <label>qlib.ide.IniIO</label>
+        <link refid="classqlib_1_1ide_1_1IniIO"/>
+        <childnode refid="266" relation="usage">
+          <edgelabel>options</edgelabel>
+        </childnode>
+        <childnode refid="265" relation="usage">
+          <edgelabel>DEFAULT</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/ide/src/qlib/ide/IniIO.java" line="18" column="1" bodyfile="src/ide/src/qlib/ide/IniIO.java" bodystart="18" bodyend="212"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1ide_1_1IniIO_1a632b3fd3f02261c98a2aecf793c956a5" prot="public" virt="non-virtual"><scope>qlib::ide::IniIO</scope><name>DEFAULT</name></member>
+      <member refid="classqlib_1_1ide_1_1IniIO_1a68567b380e0074a223137077125eb060" prot="public" virt="non-virtual"><scope>qlib::ide::IniIO</scope><name>exists</name></member>
+      <member refid="classqlib_1_1ide_1_1IniIO_1a01a6fe06552fefab11669ea65ace7392" prot="public" virt="non-virtual"><scope>qlib::ide::IniIO</scope><name>getInt</name></member>
+      <member refid="classqlib_1_1ide_1_1IniIO_1aab6608976c5f371d0f044fc7d39f0328" prot="public" virt="non-virtual"><scope>qlib::ide::IniIO</scope><name>getString</name></member>
+      <member refid="classqlib_1_1ide_1_1IniIO_1a0eadd42f5485d6bff447436734eda253" prot="private" virt="non-virtual"><scope>qlib::ide::IniIO</scope><name>IniIO</name></member>
+      <member refid="classqlib_1_1ide_1_1IniIO_1a69a0c6a7e4bf6d161e37db728bff03a6" prot="public" virt="non-virtual"><scope>qlib::ide::IniIO</scope><name>isSet</name></member>
+      <member refid="classqlib_1_1ide_1_1IniIO_1aa8afcd3e7f28ea7d5324ab186650be1d" prot="public" virt="non-virtual"><scope>qlib::ide::IniIO</scope><name>merge</name></member>
+      <member refid="classqlib_1_1ide_1_1IniIO_1a8676d10eea865975fca03579a63b9831" prot="private" virt="non-virtual"><scope>qlib::ide::IniIO</scope><name>options</name></member>
+      <member refid="classqlib_1_1ide_1_1IniIO_1ae79dc4c2b69222d0e1725e70406da4c6" prot="public" virt="non-virtual"><scope>qlib::ide::IniIO</scope><name>read</name></member>
+      <member refid="classqlib_1_1ide_1_1IniIO_1a25c322821c43bb710404a05210fb20be" prot="public" virt="non-virtual"><scope>qlib::ide::IniIO</scope><name>readAndUpdate</name></member>
+      <member refid="classqlib_1_1ide_1_1IniIO_1a2337d52ad4d343c74b808f64e70710f0" prot="public" virt="non-virtual"><scope>qlib::ide::IniIO</scope><name>set</name></member>
+      <member refid="classqlib_1_1ide_1_1IniIO_1a02df232b5337879896c1e067b6e27601" prot="public" virt="non-virtual"><scope>qlib::ide::IniIO</scope><name>template</name></member>
+      <member refid="classqlib_1_1ide_1_1IniIO_1a10bafd582cb3816d23c93f1883b3e68b" prot="public" virt="non-virtual"><scope>qlib::ide::IniIO</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

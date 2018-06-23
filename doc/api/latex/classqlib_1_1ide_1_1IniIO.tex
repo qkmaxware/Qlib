@@ -1,0 +1,241 @@
+\hypertarget{classqlib_1_1ide_1_1IniIO}{}\section{qlib.\+ide.\+Ini\+IO Class Reference}
+\label{classqlib_1_1ide_1_1IniIO}\index{qlib.\+ide.\+Ini\+IO@{qlib.\+ide.\+Ini\+IO}}
+
+
+Collaboration diagram for qlib.\+ide.\+Ini\+IO\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classqlib_1_1ide_1_1IniIO__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{classqlib_1_1ide_1_1IniIO_a69a0c6a7e4bf6d161e37db728bff03a6}{is\+Set} (String prop)
+\item 
+String \hyperlink{classqlib_1_1ide_1_1IniIO_aab6608976c5f371d0f044fc7d39f0328}{get\+String} (String prop)
+\item 
+Integer \hyperlink{classqlib_1_1ide_1_1IniIO_a01a6fe06552fefab11669ea65ace7392}{get\+Int} (String prop)
+\item 
+void \hyperlink{classqlib_1_1ide_1_1IniIO_a2337d52ad4d343c74b808f64e70710f0}{set} (String prop, Object value)
+\item 
+boolean \hyperlink{classqlib_1_1ide_1_1IniIO_a68567b380e0074a223137077125eb060}{exists} (String prop)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classqlib_1_1ide_1_1IniIO}{Ini\+IO} \hyperlink{classqlib_1_1ide_1_1IniIO_a02df232b5337879896c1e067b6e27601}{template} (String\mbox{[}$\,$\mbox{]} Key\+Value\+Pairs)
+\item 
+static \hyperlink{classqlib_1_1ide_1_1IniIO}{Ini\+IO} \hyperlink{classqlib_1_1ide_1_1IniIO_ae79dc4c2b69222d0e1725e70406da4c6}{read} (String filename)
+\item 
+static \hyperlink{classqlib_1_1ide_1_1IniIO}{Ini\+IO} \hyperlink{classqlib_1_1ide_1_1IniIO_aa8afcd3e7f28ea7d5324ab186650be1d}{merge} (\hyperlink{classqlib_1_1ide_1_1IniIO}{Ini\+IO} a, \hyperlink{classqlib_1_1ide_1_1IniIO}{Ini\+IO} b)
+\item 
+static \hyperlink{classqlib_1_1ide_1_1IniIO}{Ini\+IO} \hyperlink{classqlib_1_1ide_1_1IniIO_a25c322821c43bb710404a05210fb20be}{read\+And\+Update} (String fname, \hyperlink{classqlib_1_1ide_1_1IniIO}{Ini\+IO} update\+Template)
+\item 
+static void \hyperlink{classqlib_1_1ide_1_1IniIO_a10bafd582cb3816d23c93f1883b3e68b}{write} (\hyperlink{classqlib_1_1ide_1_1IniIO}{Ini\+IO} settings, String filename)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classqlib_1_1ide_1_1IniIO}{Ini\+IO} \hyperlink{classqlib_1_1ide_1_1IniIO_a632b3fd3f02261c98a2aecf793c956a5}{D\+E\+F\+A\+U\+LT}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqlib_1_1ide_1_1IniIO_a0eadd42f5485d6bff447436734eda253}{Ini\+IO} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Hash\+Map$<$ String, String $>$ \hyperlink{classqlib_1_1ide_1_1IniIO_a8676d10eea865975fca03579a63b9831}{options} = new Hash\+Map$<$String,String$>$()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for storing I\+NI type config information \begin{DoxyAuthor}{Author}
+Colin Halseth 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!Ini\+IO@{Ini\+IO}}
+\index{Ini\+IO@{Ini\+IO}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
+\subsubsection[{\texorpdfstring{Ini\+I\+O()}{IniIO()}}]{\setlength{\rightskip}{0pt plus 5cm}qlib.\+ide.\+Ini\+I\+O.\+Ini\+IO (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1IniIO_a0eadd42f5485d6bff447436734eda253}{}\label{classqlib_1_1ide_1_1IniIO_a0eadd42f5485d6bff447436734eda253}
+Create an empty config file 
+
+\subsection{Member Function Documentation}
+\index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!exists@{exists}}
+\index{exists@{exists}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
+\subsubsection[{\texorpdfstring{exists(\+String prop)}{exists(String prop)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean qlib.\+ide.\+Ini\+I\+O.\+exists (
+\begin{DoxyParamCaption}
+\item[{String}]{prop}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1IniIO_a68567b380e0074a223137077125eb060}{}\label{classqlib_1_1ide_1_1IniIO_a68567b380e0074a223137077125eb060}
+Check if a property exists in the config 
+\begin{DoxyParams}{Parameters}
+{\em prop} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!get\+Int@{get\+Int}}
+\index{get\+Int@{get\+Int}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
+\subsubsection[{\texorpdfstring{get\+Int(\+String prop)}{getInt(String prop)}}]{\setlength{\rightskip}{0pt plus 5cm}Integer qlib.\+ide.\+Ini\+I\+O.\+get\+Int (
+\begin{DoxyParamCaption}
+\item[{String}]{prop}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1IniIO_a01a6fe06552fefab11669ea65ace7392}{}\label{classqlib_1_1ide_1_1IniIO_a01a6fe06552fefab11669ea65ace7392}
+Parse an integer from a named property 
+\begin{DoxyParams}{Parameters}
+{\em prop} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!get\+String@{get\+String}}
+\index{get\+String@{get\+String}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
+\subsubsection[{\texorpdfstring{get\+String(\+String prop)}{getString(String prop)}}]{\setlength{\rightskip}{0pt plus 5cm}String qlib.\+ide.\+Ini\+I\+O.\+get\+String (
+\begin{DoxyParamCaption}
+\item[{String}]{prop}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1IniIO_aab6608976c5f371d0f044fc7d39f0328}{}\label{classqlib_1_1ide_1_1IniIO_aab6608976c5f371d0f044fc7d39f0328}
+Get a string from a named property 
+\begin{DoxyParams}{Parameters}
+{\em prop} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!is\+Set@{is\+Set}}
+\index{is\+Set@{is\+Set}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
+\subsubsection[{\texorpdfstring{is\+Set(\+String prop)}{isSet(String prop)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean qlib.\+ide.\+Ini\+I\+O.\+is\+Set (
+\begin{DoxyParamCaption}
+\item[{String}]{prop}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1IniIO_a69a0c6a7e4bf6d161e37db728bff03a6}{}\label{classqlib_1_1ide_1_1IniIO_a69a0c6a7e4bf6d161e37db728bff03a6}
+Get a boolean value from a named property 
+\begin{DoxyParams}{Parameters}
+{\em prop} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!merge@{merge}}
+\index{merge@{merge}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
+\subsubsection[{\texorpdfstring{merge(\+Ini\+I\+O a, Ini\+I\+O b)}{merge(IniIO a, IniIO b)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Ini\+IO} qlib.\+ide.\+Ini\+I\+O.\+merge (
+\begin{DoxyParamCaption}
+\item[{{\bf Ini\+IO}}]{a, }
+\item[{{\bf Ini\+IO}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classqlib_1_1ide_1_1IniIO_aa8afcd3e7f28ea7d5324ab186650be1d}{}\label{classqlib_1_1ide_1_1IniIO_aa8afcd3e7f28ea7d5324ab186650be1d}
+Copy-\/and-\/replace options from \textquotesingle{}b\textquotesingle{} and \textquotesingle{}a\textquotesingle{} into a new config 
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!read@{read}}
+\index{read@{read}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
+\subsubsection[{\texorpdfstring{read(\+String filename)}{read(String filename)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Ini\+IO} qlib.\+ide.\+Ini\+I\+O.\+read (
+\begin{DoxyParamCaption}
+\item[{String}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classqlib_1_1ide_1_1IniIO_ae79dc4c2b69222d0e1725e70406da4c6}{}\label{classqlib_1_1ide_1_1IniIO_ae79dc4c2b69222d0e1725e70406da4c6}
+Read a config from a given file 
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!read\+And\+Update@{read\+And\+Update}}
+\index{read\+And\+Update@{read\+And\+Update}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
+\subsubsection[{\texorpdfstring{read\+And\+Update(\+String fname, Ini\+I\+O update\+Template)}{readAndUpdate(String fname, IniIO updateTemplate)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Ini\+IO} qlib.\+ide.\+Ini\+I\+O.\+read\+And\+Update (
+\begin{DoxyParamCaption}
+\item[{String}]{fname, }
+\item[{{\bf Ini\+IO}}]{update\+Template}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classqlib_1_1ide_1_1IniIO_a25c322821c43bb710404a05210fb20be}{}\label{classqlib_1_1ide_1_1IniIO_a25c322821c43bb710404a05210fb20be}
+Read config from file and automatically copy without replacement with a default template ensuring that all default options exist 
+\begin{DoxyParams}{Parameters}
+{\em fname} & \\
+\hline
+{\em update\+Template} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!set@{set}}
+\index{set@{set}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
+\subsubsection[{\texorpdfstring{set(\+String prop, Object value)}{set(String prop, Object value)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Ini\+I\+O.\+set (
+\begin{DoxyParamCaption}
+\item[{String}]{prop, }
+\item[{Object}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1IniIO_a2337d52ad4d343c74b808f64e70710f0}{}\label{classqlib_1_1ide_1_1IniIO_a2337d52ad4d343c74b808f64e70710f0}
+Set a named property 
+\begin{DoxyParams}{Parameters}
+{\em prop} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!template@{template}}
+\index{template@{template}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
+\subsubsection[{\texorpdfstring{template(\+String[] Key\+Value\+Pairs)}{template(String[] KeyValuePairs)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Ini\+IO} qlib.\+ide.\+Ini\+I\+O.\+template (
+\begin{DoxyParamCaption}
+\item[{String\mbox{[}$\,$\mbox{]}}]{Key\+Value\+Pairs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classqlib_1_1ide_1_1IniIO_a02df232b5337879896c1e067b6e27601}{}\label{classqlib_1_1ide_1_1IniIO_a02df232b5337879896c1e067b6e27601}
+Create a config from a template of key value pairs 
+\begin{DoxyParams}{Parameters}
+{\em Key\+Value\+Pairs} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!write@{write}}
+\index{write@{write}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
+\subsubsection[{\texorpdfstring{write(\+Ini\+I\+O settings, String filename)}{write(IniIO settings, String filename)}}]{\setlength{\rightskip}{0pt plus 5cm}static void qlib.\+ide.\+Ini\+I\+O.\+write (
+\begin{DoxyParamCaption}
+\item[{{\bf Ini\+IO}}]{settings, }
+\item[{String}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classqlib_1_1ide_1_1IniIO_a10bafd582cb3816d23c93f1883b3e68b}{}\label{classqlib_1_1ide_1_1IniIO_a10bafd582cb3816d23c93f1883b3e68b}
+Write ini config options to a file 
+\begin{DoxyParams}{Parameters}
+{\em settings} & \\
+\hline
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!D\+E\+F\+A\+U\+LT@{D\+E\+F\+A\+U\+LT}}
+\index{D\+E\+F\+A\+U\+LT@{D\+E\+F\+A\+U\+LT}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
+\subsubsection[{\texorpdfstring{D\+E\+F\+A\+U\+LT}{DEFAULT}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ini\+IO} qlib.\+ide.\+Ini\+I\+O.\+D\+E\+F\+A\+U\+LT\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classqlib_1_1ide_1_1IniIO_a632b3fd3f02261c98a2aecf793c956a5}{}\label{classqlib_1_1ide_1_1IniIO_a632b3fd3f02261c98a2aecf793c956a5}
+Static reference \index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!options@{options}}
+\index{options@{options}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
+\subsubsection[{\texorpdfstring{options}{options}}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Map$<$String,String$>$ qlib.\+ide.\+Ini\+I\+O.\+options = new Hash\+Map$<$String,String$>$()\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1IniIO_a8676d10eea865975fca03579a63b9831}{}\label{classqlib_1_1ide_1_1IniIO_a8676d10eea865975fca03579a63b9831}
+List of settings 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/ide/src/qlib/ide/\hyperlink{IniIO_8java}{Ini\+I\+O.\+java}\end{DoxyCompactItemize}

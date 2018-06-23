@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1quantum_1_1qreg" kind="class" language="C++" prot="public">
+    <compoundname>qlib::quantum::qreg</compoundname>
+    <basecompoundref refid="classqlib_1_1quantum_1_1qsystem" prot="public" virt="non-virtual">qlib::quantum::qsystem</basecompoundref>
+    <includes refid="qreg_8hpp" local="no">qreg.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classqlib_1_1quantum_1_1qreg_1a2d7c33e71a77d860d50d53a258a71a6f" prot="private" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 qlib::quantum::qreg::qubits</definition>
+        <argsstring></argsstring>
+        <name>qubits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of qubits in this register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qreg.hpp" line="31" column="1" bodyfile="src/core/quantum/systems/qreg.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1quantum_1_1qreg_1ad0e84b959f93f3da6ed81eb096f809d1" prot="private" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 qlib::quantum::qreg::states</definition>
+        <argsstring></argsstring>
+        <name>states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of states represented by the given number of qubits </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qreg.hpp" line="35" column="1" bodyfile="src/core/quantum/systems/qreg.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" prot="private" static="no" mutable="no">
+        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
+        <definition>matrix qlib::quantum::qreg::amplitudes</definition>
+        <argsstring></argsstring>
+        <name>amplitudes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>State vector of complex amplitudes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qreg.hpp" line="39" column="1" bodyfile="src/core/quantum/systems/qreg.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1quantum_1_1qreg_1aabd605497170f57cdbb175d21c99662e" prot="private" static="no" mutable="no">
+        <type>std::uniform_real_distribution&lt; f32 &gt;</type>
+        <definition>std::uniform_real_distribution&lt;f32&gt; qlib::quantum::qreg::distribution</definition>
+        <argsstring></argsstring>
+        <name>distribution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Random distribution used during measurement </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qreg.hpp" line="43" column="1" bodyfile="src/core/quantum/systems/qreg.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qreg_1aa53d83236917f0048965b487088aacb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib::quantum::qreg::qreg</definition>
+        <argsstring>()</argsstring>
+        <name>qreg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Quantum register of 1 qubit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qreg.hpp" line="49" column="1" bodyfile="src/core/quantum/systems/qreg.hpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qreg_1a2ddfaef9a369571c9600c4c259fcb8b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib::quantum::qreg::qreg</definition>
+        <argsstring>(u32 qubits)</argsstring>
+        <name>qreg</name>
+        <param>
+          <type>u32</type>
+          <declname>qubits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Quantum register of &apos;N&apos; qubits </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qreg.hpp" line="53" column="1" bodyfile="src/core/quantum/systems/qreg.hpp" bodystart="53" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qreg_1a3148742b59865d0ba04fdd327fccc048" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t qlib::quantum::qreg::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of qubits in this register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qreg.hpp" line="63" column="1" bodyfile="src/core/quantum/systems/qreg.hpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref> &amp;</type>
+        <definition>matrix&amp; qlib::quantum::qreg::state</definition>
+        <argsstring>()</argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the complex amplitude matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qreg.hpp" line="70" column="1" bodyfile="src/core/quantum/systems/qreg.hpp" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qreg_1af38f95ecaaf7de400856094154343cfe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void qlib::quantum::qreg::apply</definition>
+        <argsstring>(qlib::quantum::gates::igate &amp;gate, std::vector&lt; u64 &gt; inputBits)</argsstring>
+        <name>apply</name>
+        <reimplements refid="classqlib_1_1quantum_1_1qsystem_1adbb748feb351aac69ca4a0bf6c92d77c">apply</reimplements>
+        <param>
+          <type><ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">qlib::quantum::gates::igate</ref> &amp;</type>
+          <declname>gate</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; u64 &gt;</type>
+          <declname>inputBits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply a quantum gate to this system </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qreg.hpp" line="77" column="1" bodyfile="src/core/quantum/systems/qreg.hpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qreg_1acfcd58502c1e511766ede52a891f27c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>i8</type>
+        <definition>i8 qlib::quantum::qreg::measure</definition>
+        <argsstring>(i64 qubit)</argsstring>
+        <name>measure</name>
+        <reimplements refid="classqlib_1_1quantum_1_1qsystem_1a33d9954c6ca01cb400d940ff05614364">measure</reimplements>
+        <param>
+          <type>i64</type>
+          <declname>qubit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Collapse the state and return the value of the measured qubit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qreg.hpp" line="85" column="1" bodyfile="src/core/quantum/systems/qreg.hpp" bodystart="85" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qreg_1ae4dbf316bf6452f3110cb05146f54954" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string qlib::quantum::qreg::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="classqlib_1_1quantum_1_1qsystem_1a9d95030955e2fdb26bc9152c32310e7e">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Human readable output </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qreg.hpp" line="139" column="1" bodyfile="src/core/quantum/systems/qreg.hpp" bodystart="139" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Represents a register of &apos;N&apos; qubits </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="322">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="320">
+        <label>qlib::quantum::qreg</label>
+        <link refid="classqlib_1_1quantum_1_1qreg"/>
+        <childnode refid="321" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="321">
+        <label>qlib::quantum::qsystem</label>
+        <link refid="classqlib_1_1quantum_1_1qsystem"/>
+        <childnode refid="322" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="325">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="326">
+        <label>qlib::math::matrix</label>
+        <link refid="classqlib_1_1math_1_1matrix"/>
+        <childnode refid="325" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>qlib::quantum::qreg</label>
+        <link refid="classqlib_1_1quantum_1_1qreg"/>
+        <childnode refid="324" relation="public-inheritance">
+        </childnode>
+        <childnode refid="326" relation="usage">
+          <edgelabel>amplitudes</edgelabel>
+        </childnode>
+      </node>
+      <node id="324">
+        <label>qlib::quantum::qsystem</label>
+        <link refid="classqlib_1_1quantum_1_1qsystem"/>
+        <childnode refid="325" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/core/quantum/systems/qreg.hpp" line="25" column="1" bodyfile="src/core/quantum/systems/qreg.hpp" bodystart="25" bodyend="157"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" prot="private" virt="non-virtual"><scope>qlib::quantum::qreg</scope><name>amplitudes</name></member>
+      <member refid="classqlib_1_1quantum_1_1qreg_1af38f95ecaaf7de400856094154343cfe" prot="public" virt="virtual"><scope>qlib::quantum::qreg</scope><name>apply</name></member>
+      <member refid="classqlib_1_1quantum_1_1qreg_1aabd605497170f57cdbb175d21c99662e" prot="private" virt="non-virtual"><scope>qlib::quantum::qreg</scope><name>distribution</name></member>
+      <member refid="classqlib_1_1quantum_1_1qreg_1acfcd58502c1e511766ede52a891f27c3" prot="public" virt="virtual"><scope>qlib::quantum::qreg</scope><name>measure</name></member>
+      <member refid="classqlib_1_1quantum_1_1qreg_1aa53d83236917f0048965b487088aacb9" prot="public" virt="non-virtual"><scope>qlib::quantum::qreg</scope><name>qreg</name></member>
+      <member refid="classqlib_1_1quantum_1_1qreg_1a2ddfaef9a369571c9600c4c259fcb8b1" prot="public" virt="non-virtual"><scope>qlib::quantum::qreg</scope><name>qreg</name></member>
+      <member refid="classqlib_1_1quantum_1_1qreg_1a2d7c33e71a77d860d50d53a258a71a6f" prot="private" virt="non-virtual"><scope>qlib::quantum::qreg</scope><name>qubits</name></member>
+      <member refid="classqlib_1_1quantum_1_1qreg_1a3148742b59865d0ba04fdd327fccc048" prot="public" virt="non-virtual"><scope>qlib::quantum::qreg</scope><name>size</name></member>
+      <member refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" prot="public" virt="non-virtual"><scope>qlib::quantum::qreg</scope><name>state</name></member>
+      <member refid="classqlib_1_1quantum_1_1qreg_1ad0e84b959f93f3da6ed81eb096f809d1" prot="private" virt="non-virtual"><scope>qlib::quantum::qreg</scope><name>states</name></member>
+      <member refid="classqlib_1_1quantum_1_1qreg_1ae4dbf316bf6452f3110cb05146f54954" prot="public" virt="virtual"><scope>qlib::quantum::qreg</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

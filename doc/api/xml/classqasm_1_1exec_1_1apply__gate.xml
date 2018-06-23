@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqasm_1_1exec_1_1apply__gate" kind="class" language="C++" prot="public">
+    <compoundname>qasm::exec::apply_gate</compoundname>
+    <basecompoundref refid="classqasm_1_1exec_1_1executable" prot="public" virt="non-virtual">qasm::exec::executable</basecompoundref>
+    <includes refid="runtime_8hpp" local="no">runtime.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1apply__gate_1a2b5eea4ddab7101ab5353ecd160e0d30" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string qasm::exec::apply_gate::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of gate to apply </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="194" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1apply__gate_1afa925dd76a3c14f5a3739bbd1ab20258" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; qasm::exec::apply_gate::param_names</definition>
+        <argsstring></argsstring>
+        <name>param_names</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of registers to apply to (should be all the same) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="198" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1apply__gate_1a45e00e882c9241a288dae90ae0faa77f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; u64 &gt;</type>
+        <definition>std::vector&lt;u64&gt; qasm::exec::apply_gate::param_indecies</definition>
+        <argsstring></argsstring>
+        <name>param_indecies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of each register to apply to </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="202" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqasm_1_1exec_1_1apply__gate_1a0e7787396ea68b95df1e6a395cd21f2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qasm::exec::apply_gate::apply_gate</definition>
+        <argsstring>(string name)</argsstring>
+        <name>apply_gate</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="204" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="204" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1exec_1_1apply__gate_1a4ab94a7feee1830b4be52a487e9cdef5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void qasm::exec::apply_gate::invoke_rootprogram</definition>
+        <argsstring>(runtime::environment &amp;env)</argsstring>
+        <name>invoke_rootprogram</name>
+        <reimplements refid="classqasm_1_1exec_1_1executable_1ad07f864a889edb0777ebbb1bc1628121">invoke_rootprogram</reimplements>
+        <param>
+          <type><ref refid="classqasm_1_1runtime_1_1environment" kindref="compound">runtime::environment</ref> &amp;</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run instruction&apos;s primary operation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="206" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="206" bodyend="256"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Instruction to apply a gate to a register </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="187">
+        <label>qasm::exec::apply_gate</label>
+        <link refid="classqasm_1_1exec_1_1apply__gate"/>
+        <childnode refid="188" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>qasm::exec::executable</label>
+        <link refid="classqasm_1_1exec_1_1executable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="189">
+        <label>qasm::exec::apply_gate</label>
+        <link refid="classqasm_1_1exec_1_1apply__gate"/>
+        <childnode refid="190" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>qasm::exec::executable</label>
+        <link refid="classqasm_1_1exec_1_1executable"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/runtime.hpp" line="189" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="189" bodyend="257"/>
+    <listofallmembers>
+      <member refid="classqasm_1_1exec_1_1apply__gate_1a0e7787396ea68b95df1e6a395cd21f2e" prot="public" virt="non-virtual"><scope>qasm::exec::apply_gate</scope><name>apply_gate</name></member>
+      <member refid="classqasm_1_1exec_1_1apply__gate_1a4ab94a7feee1830b4be52a487e9cdef5" prot="public" virt="virtual"><scope>qasm::exec::apply_gate</scope><name>invoke_rootprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" prot="public" virt="virtual"><scope>qasm::exec::apply_gate</scope><name>invoke_subprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1apply__gate_1a2b5eea4ddab7101ab5353ecd160e0d30" prot="public" virt="non-virtual"><scope>qasm::exec::apply_gate</scope><name>name</name></member>
+      <member refid="classqasm_1_1exec_1_1apply__gate_1a45e00e882c9241a288dae90ae0faa77f" prot="public" virt="non-virtual"><scope>qasm::exec::apply_gate</scope><name>param_indecies</name></member>
+      <member refid="classqasm_1_1exec_1_1apply__gate_1afa925dd76a3c14f5a3739bbd1ab20258" prot="public" virt="non-virtual"><scope>qasm::exec::apply_gate</scope><name>param_names</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

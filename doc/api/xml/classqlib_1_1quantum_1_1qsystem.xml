@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1quantum_1_1qsystem" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>qlib::quantum::qsystem</compoundname>
+    <basecompoundref refid="classxobject" prot="public" virt="non-virtual">xobject</basecompoundref>
+    <derivedcompoundref refid="classqlib_1_1quantum_1_1ensemble" prot="public" virt="non-virtual">qlib::quantum::ensemble</derivedcompoundref>
+    <derivedcompoundref refid="classqlib_1_1quantum_1_1qreg" prot="public" virt="non-virtual">qlib::quantum::qreg</derivedcompoundref>
+    <derivedcompoundref refid="classqlib_1_1quantum_1_1qubit" prot="public" virt="non-virtual">qlib::quantum::qubit</derivedcompoundref>
+    <includes refid="system_8hpp" local="no">system.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qsystem_1adbb748feb351aac69ca4a0bf6c92d77c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void qlib::quantum::qsystem::apply</definition>
+        <argsstring>(qlib::quantum::gates::igate &amp;gate, std::vector&lt; u64 &gt; inputBits)=0</argsstring>
+        <name>apply</name>
+        <reimplementedby refid="classqlib_1_1quantum_1_1ensemble_1a9226b1108f8d45d052316f7c366f1d5a">apply</reimplementedby>
+        <reimplementedby refid="classqlib_1_1quantum_1_1qubit_1ab3b0b76d5c6f0e627a742fcafbc768ae">apply</reimplementedby>
+        <reimplementedby refid="classqlib_1_1quantum_1_1qreg_1af38f95ecaaf7de400856094154343cfe">apply</reimplementedby>
+        <param>
+          <type><ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">qlib::quantum::gates::igate</ref> &amp;</type>
+          <declname>gate</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; u64 &gt;</type>
+          <declname>inputBits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply a quantum gate to this system </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/system.hpp" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qsystem_1a33d9954c6ca01cb400d940ff05614364" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>i8</type>
+        <definition>virtual i8 qlib::quantum::qsystem::measure</definition>
+        <argsstring>(i64 qubit)=0</argsstring>
+        <name>measure</name>
+        <reimplementedby refid="classqlib_1_1quantum_1_1ensemble_1ae5e3ebd119e1df6dbb966b7bb6222e5a">measure</reimplementedby>
+        <reimplementedby refid="classqlib_1_1quantum_1_1qubit_1aaf001eff84ccb4b7a6992e42bc2143cb">measure</reimplementedby>
+        <reimplementedby refid="classqlib_1_1quantum_1_1qreg_1acfcd58502c1e511766ede52a891f27c3">measure</reimplementedby>
+        <param>
+          <type>i64</type>
+          <declname>qubit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Collapse the state and return the value of the measured qubit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/system.hpp" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qsystem_1a9d95030955e2fdb26bc9152c32310e7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string qlib::quantum::qsystem::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="classxobject_1ad76243a44c4e4959d3b16bb57d82600d">toString</reimplements>
+        <reimplementedby refid="classqlib_1_1quantum_1_1qubit_1a8bf29d1f66508e4878ea861c5d8e44ec">toString</reimplementedby>
+        <reimplementedby refid="classqlib_1_1quantum_1_1qreg_1ae4dbf316bf6452f3110cb05146f54954">toString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Human readable output </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/system.hpp" line="32" column="1" bodyfile="src/core/quantum/systems/system.hpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class for all quantum systems </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="329">
+        <label>qlib::quantum::ensemble</label>
+        <link refid="classqlib_1_1quantum_1_1ensemble"/>
+        <childnode refid="327" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="328">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="330">
+        <label>qlib::quantum::qreg</label>
+        <link refid="classqlib_1_1quantum_1_1qreg"/>
+        <childnode refid="327" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="331">
+        <label>qlib::quantum::qubit</label>
+        <link refid="classqlib_1_1quantum_1_1qubit"/>
+        <childnode refid="327" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="327">
+        <label>qlib::quantum::qsystem</label>
+        <link refid="classqlib_1_1quantum_1_1qsystem"/>
+        <childnode refid="328" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="333">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="332">
+        <label>qlib::quantum::qsystem</label>
+        <link refid="classqlib_1_1quantum_1_1qsystem"/>
+        <childnode refid="333" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/core/quantum/systems/system.hpp" line="18" column="1" bodyfile="src/core/quantum/systems/system.hpp" bodystart="18" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1quantum_1_1qsystem_1adbb748feb351aac69ca4a0bf6c92d77c" prot="public" virt="pure-virtual"><scope>qlib::quantum::qsystem</scope><name>apply</name></member>
+      <member refid="classqlib_1_1quantum_1_1qsystem_1a33d9954c6ca01cb400d940ff05614364" prot="public" virt="pure-virtual"><scope>qlib::quantum::qsystem</scope><name>measure</name></member>
+      <member refid="classqlib_1_1quantum_1_1qsystem_1a9d95030955e2fdb26bc9152c32310e7e" prot="public" virt="virtual"><scope>qlib::quantum::qsystem</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

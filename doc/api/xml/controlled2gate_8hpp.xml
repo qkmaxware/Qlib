@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="controlled2gate_8hpp" kind="file" language="C++">
+    <compoundname>controlled2gate.hpp</compoundname>
+    <includes refid="igate_8hpp" local="yes">./igate.hpp</includes>
+    <includes refid="onequbitgate_8hpp" local="yes">onequbitgate.hpp</includes>
+    <includes local="no">sstream</includes>
+    <includedby refid="toffoli_8hpp" local="yes">src/core/quantum/gates/toffoli.hpp</includedby>
+    <incdepgraph>
+      <node id="1228">
+        <label>limits</label>
+      </node>
+      <node id="1225">
+        <label>./../../general/object.hpp</label>
+        <link refid="object_8hpp"/>
+        <childnode refid="1226" relation="include">
+        </childnode>
+        <childnode refid="1229" relation="include">
+        </childnode>
+        <childnode refid="1230" relation="include">
+        </childnode>
+        <childnode refid="1231" relation="include">
+        </childnode>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1233" relation="include">
+        </childnode>
+      </node>
+      <node id="1227">
+        <label>stdint.h</label>
+      </node>
+      <node id="1236">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1237">
+        <label>./../../math/matrix.hpp</label>
+        <link refid="matrix_8hpp"/>
+        <childnode refid="1234" relation="include">
+        </childnode>
+        <childnode refid="1225" relation="include">
+        </childnode>
+        <childnode refid="1238" relation="include">
+        </childnode>
+        <childnode refid="1239" relation="include">
+        </childnode>
+        <childnode refid="1235" relation="include">
+        </childnode>
+        <childnode refid="1230" relation="include">
+        </childnode>
+      </node>
+      <node id="1224">
+        <label>./igate.hpp</label>
+        <link refid="igate_8hpp"/>
+        <childnode refid="1225" relation="include">
+        </childnode>
+        <childnode refid="1234" relation="include">
+        </childnode>
+        <childnode refid="1237" relation="include">
+        </childnode>
+      </node>
+      <node id="1238">
+        <label>stdexcept</label>
+      </node>
+      <node id="1231">
+        <label>exception</label>
+      </node>
+      <node id="1232">
+        <label>random</label>
+      </node>
+      <node id="1240">
+        <label>onequbitgate.hpp</label>
+        <link refid="onequbitgate_8hpp"/>
+        <childnode refid="1224" relation="include">
+        </childnode>
+        <childnode refid="1230" relation="include">
+        </childnode>
+      </node>
+      <node id="1234">
+        <label>./../../math/complex.hpp</label>
+        <link refid="complex_8hpp"/>
+        <childnode refid="1225" relation="include">
+        </childnode>
+        <childnode refid="1235" relation="include">
+        </childnode>
+        <childnode refid="1236" relation="include">
+        </childnode>
+        <childnode refid="1230" relation="include">
+        </childnode>
+      </node>
+      <node id="1239">
+        <label>vector</label>
+      </node>
+      <node id="1230">
+        <label>sstream</label>
+      </node>
+      <node id="1235">
+        <label>math.h</label>
+      </node>
+      <node id="1229">
+        <label>iostream</label>
+      </node>
+      <node id="1233">
+        <label>chrono</label>
+      </node>
+      <node id="1226">
+        <label>./types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="1227" relation="include">
+        </childnode>
+        <childnode refid="1228" relation="include">
+        </childnode>
+      </node>
+      <node id="1223">
+        <label>src/core/quantum/gates/controlled2gate.hpp</label>
+        <link refid="controlled2gate.hpp"/>
+        <childnode refid="1224" relation="include">
+        </childnode>
+        <childnode refid="1240" relation="include">
+        </childnode>
+        <childnode refid="1230" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1246">
+        <label>src/runtime/main.cpp</label>
+        <link refid="runtime_2main_8cpp"/>
+      </node>
+      <node id="1247">
+        <label>src/runtime/runtime.hpp</label>
+        <link refid="runtime_8hpp"/>
+        <childnode refid="1248" relation="include">
+        </childnode>
+        <childnode refid="1246" relation="include">
+        </childnode>
+      </node>
+      <node id="1248">
+        <label>src/runtime/qasmparser.hpp</label>
+        <link refid="qasmparser_8hpp"/>
+        <childnode refid="1246" relation="include">
+        </childnode>
+      </node>
+      <node id="1245">
+        <label>src/core/main.cpp</label>
+        <link refid="core_2main_8cpp"/>
+      </node>
+      <node id="1242">
+        <label>src/core/quantum/gates/toffoli.hpp</label>
+        <link refid="toffoli_8hpp"/>
+        <childnode refid="1243" relation="include">
+        </childnode>
+      </node>
+      <node id="1244">
+        <label>src/core/qlib.h</label>
+        <link refid="qlib_8h"/>
+        <childnode refid="1245" relation="include">
+        </childnode>
+        <childnode refid="1246" relation="include">
+        </childnode>
+        <childnode refid="1247" relation="include">
+        </childnode>
+      </node>
+      <node id="1243">
+        <label>src/core/quantum/standard_gates.hpp</label>
+        <link refid="standard__gates_8hpp"/>
+        <childnode refid="1244" relation="include">
+        </childnode>
+      </node>
+      <node id="1241">
+        <label>src/core/quantum/gates/controlled2gate.hpp</label>
+        <link refid="controlled2gate.hpp"/>
+        <childnode refid="1242" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate" prot="public">qlib::quantum::gates::controlled2gate</innerclass>
+    <innernamespace refid="namespaceqlib">qlib</innernamespace>
+    <innernamespace refid="namespaceqlib_1_1quantum">qlib::quantum</innernamespace>
+    <innernamespace refid="namespaceqlib_1_1quantum_1_1gates">qlib::quantum::gates</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_QLIB_QUANTUM_CONTROLLED2GATE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_QLIB_QUANTUM_CONTROLLED2GATE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="igate_8hpp" kindref="compound">./igate.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="onequbitgate_8hpp" kindref="compound">onequbitgate.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceqlib" kindref="compound">qlib</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">quantum<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">gates<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Class<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate" kindref="compound">controlled2gate</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">igate</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a32ec87dafda9c4c80af4dc93758f6275" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a32ec87dafda9c4c80af4dc93758f6275" kindref="member">sname</ref>;</highlight></codeline>
+<codeline lineno="20" refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1abb21342d2206fbc4f7ab4e781997e471" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate" kindref="compound">onequbitgate</ref>&amp;<sp/><ref refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1abb21342d2206fbc4f7ab4e781997e471" kindref="member">refgate</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a83775bed048e4856d99c8d59d6a20db3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a83775bed048e4856d99c8d59d6a20db3" kindref="member">controlled2gate</ref>(std::string<sp/><ref refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a25121d9bc52a594a718b6d8037ea6cc0" kindref="member">name</ref>,<sp/><ref refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate" kindref="compound">onequbitgate</ref>&amp;<sp/>gate)<sp/>:<sp/>sname(name),<sp/>refgate(gate){}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a27a8793a3015aa9797f03fa0174113c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a27a8793a3015aa9797f03fa0174113c2" kindref="member">inputs</ref>(){</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>2;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a25121d9bc52a594a718b6d8037ea6cc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a25121d9bc52a594a718b6d8037ea6cc0" kindref="member">name</ref>(){</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a32ec87dafda9c4c80af4dc93758f6275" kindref="member">sname</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a272635da6a7b8f65379f6ecb42df9389" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a272635da6a7b8f65379f6ecb42df9389" kindref="member">operate</ref>(<ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>&amp;<sp/>in,<sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>&amp;<sp/>out,<sp/>std::vector&lt;u64&gt;<sp/>inputQubits){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(inputQubits.size()<sp/>!=<sp/>3){</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>sb;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Three<sp/>qubit<sp/>gates<sp/>operate<sp/>on<sp/>only<sp/>three<sp/>qubits,<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/>inputQubits.size();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>provided&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::length_error(sb.str());<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>&amp;<sp/>m<sp/>=<sp/>refgate.<ref refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a39490c6d1dcc94dc82bb7345fe984278" kindref="member">getMatrix</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Init<sp/>loop<sp/>--first<sp/>2<sp/>inputs<sp/>are<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>k<sp/>=<sp/>inputQubits[2];</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>c1<sp/>=<sp/>inputQubits[0];</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>c2<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>inputQubits[1];</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>stride<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>k;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(u64<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>in.<ref refid="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" kindref="member">countRows</ref>();<sp/>i++){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>mask<sp/>=<sp/>i<sp/>&amp;<sp/>c1;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>mask2<sp/>=<sp/>i<sp/>&amp;<sp/>c2;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>smask<sp/>=<sp/>i<sp/>&amp;<sp/>stride;<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!mask<sp/>||<sp/>!mask2){</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>c1_t0<sp/>=<sp/>i<sp/>&amp;<sp/>~smask;<sp/></highlight><highlight class="comment">//a(*1c*0t*...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>c1_t1<sp/>=<sp/>i<sp/>|<sp/>smask;<sp/><sp/></highlight><highlight class="comment">//a(*1c*1t*...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out(c1_t0,<sp/>0)<sp/>=<sp/>m(0,0)<sp/>*<sp/>in(c1_t0,0)<sp/>+<sp/>m(0,1)<sp/>*<sp/>in(c1_t1,0);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out(c1_t1,<sp/>0)<sp/>=<sp/>m(1,0)<sp/>*<sp/>in(c1_t0,0)<sp/>+<sp/>m(1,1)<sp/>*<sp/>in(c1_t1,0);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1aeefab300e88034edbb5eacfa882ed218" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">qlib::math::matrix</ref>&amp;<sp/><ref refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1aeefab300e88034edbb5eacfa882ed218" kindref="member">getMatrix</ref>(){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;refgate.<ref refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a39490c6d1dcc94dc82bb7345fe984278" kindref="member">getMatrix</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a4fda814b0336d103f5cdb7ea98507bd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a4fda814b0336d103f5cdb7ea98507bd1" kindref="member">toString</ref>(){</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>sb;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/>(this-&gt;<ref refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a32ec87dafda9c4c80af4dc93758f6275" kindref="member">sname</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(2)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>-&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(this-&gt;refgate.<ref refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a38af1af0f466add047c3e75780e28c80" kindref="member">toString</ref>());</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sb.str();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/core/quantum/gates/controlled2gate.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqasm_1_1exec_1_1declaration" kind="class" language="C++" prot="public">
+    <compoundname>qasm::exec::declaration</compoundname>
+    <basecompoundref refid="classqasm_1_1exec_1_1executable" prot="public" virt="non-virtual">qasm::exec::executable</basecompoundref>
+    <includes refid="runtime_8hpp" local="no">runtime.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1declaration_1a165d72745d002f80716cbd37f27687fe" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string qasm::exec::declaration::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of variable to declare </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="369" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1declaration_1a72faf3aa92a6a3d100ff0f7ddf0aab65" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string qasm::exec::declaration::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of variable to declare </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="373" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1declaration_1a53d08c265c26517db99871b3dd54cf89" prot="public" static="no" mutable="no">
+        <type>u64</type>
+        <definition>u64 qasm::exec::declaration::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of variable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="377" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqasm_1_1exec_1_1declaration_1ae8f3a47af0a26055fb6fc90303defbeb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qasm::exec::declaration::declaration</definition>
+        <argsstring>(string t, string n, u64 s)</argsstring>
+        <name>declaration</name>
+        <param>
+          <type>string</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>u64</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="379" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="379" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1exec_1_1declaration_1a4f1396fca212fb0ce984d2cea90df0a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void qasm::exec::declaration::invoke_rootprogram</definition>
+        <argsstring>(runtime::environment &amp;env)</argsstring>
+        <name>invoke_rootprogram</name>
+        <reimplements refid="classqasm_1_1exec_1_1executable_1ad07f864a889edb0777ebbb1bc1628121">invoke_rootprogram</reimplements>
+        <param>
+          <type><ref refid="classqasm_1_1runtime_1_1environment" kindref="compound">runtime::environment</ref> &amp;</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run instruction&apos;s primary operation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="381" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="381" bodyend="396"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Instruction to decare a variable </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="235">
+        <label>qasm::exec::executable</label>
+        <link refid="classqasm_1_1exec_1_1executable"/>
+      </node>
+      <node id="234">
+        <label>qasm::exec::declaration</label>
+        <link refid="classqasm_1_1exec_1_1declaration"/>
+        <childnode refid="235" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="237">
+        <label>qasm::exec::executable</label>
+        <link refid="classqasm_1_1exec_1_1executable"/>
+      </node>
+      <node id="236">
+        <label>qasm::exec::declaration</label>
+        <link refid="classqasm_1_1exec_1_1declaration"/>
+        <childnode refid="237" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/runtime.hpp" line="364" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="364" bodyend="397"/>
+    <listofallmembers>
+      <member refid="classqasm_1_1exec_1_1declaration_1ae8f3a47af0a26055fb6fc90303defbeb" prot="public" virt="non-virtual"><scope>qasm::exec::declaration</scope><name>declaration</name></member>
+      <member refid="classqasm_1_1exec_1_1declaration_1a4f1396fca212fb0ce984d2cea90df0a8" prot="public" virt="virtual"><scope>qasm::exec::declaration</scope><name>invoke_rootprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" prot="public" virt="virtual"><scope>qasm::exec::declaration</scope><name>invoke_subprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1declaration_1a72faf3aa92a6a3d100ff0f7ddf0aab65" prot="public" virt="non-virtual"><scope>qasm::exec::declaration</scope><name>name</name></member>
+      <member refid="classqasm_1_1exec_1_1declaration_1a53d08c265c26517db99871b3dd54cf89" prot="public" virt="non-virtual"><scope>qasm::exec::declaration</scope><name>size</name></member>
+      <member refid="classqasm_1_1exec_1_1declaration_1a165d72745d002f80716cbd37f27687fe" prot="public" virt="non-virtual"><scope>qasm::exec::declaration</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

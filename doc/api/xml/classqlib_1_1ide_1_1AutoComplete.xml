@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1ide_1_1AutoComplete" kind="class" language="Java" prot="public">
+    <compoundname>qlib::ide::AutoComplete</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1AutoComplete_1ab41cb720a8247194d0c4c2cc5fa6aeef" prot="private" static="no" mutable="no">
+        <type>final JTextComponent</type>
+        <definition>final JTextComponent qlib.ide.AutoComplete.textComponent</definition>
+        <argsstring></argsstring>
+        <name>textComponent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parent text component </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="40" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1AutoComplete_1a79190bf245b656b279233a982ed4248c" prot="private" static="no" mutable="no">
+        <type>final DocumentListener</type>
+        <definition>final DocumentListener qlib.ide.AutoComplete.docListener</definition>
+        <argsstring></argsstring>
+        <name>docListener</name>
+        <initializer>= new DocumentListener() {
+        @Override
+        public void insertUpdate(DocumentEvent de) {
+            <ref refid="classqlib_1_1ide_1_1AutoComplete_1a04a7f33c4d243d3d15592c3b0b1b19d4" kindref="member">checkForAndShowSuggestions</ref>();
+        }
+
+        @Override
+        public void removeUpdate(DocumentEvent de) {
+            <ref refid="classqlib_1_1ide_1_1AutoComplete_1a04a7f33c4d243d3d15592c3b0b1b19d4" kindref="member">checkForAndShowSuggestions</ref>();
+        }
+
+        @Override
+        public void changedUpdate(DocumentEvent de) {
+            <ref refid="classqlib_1_1ide_1_1AutoComplete_1a04a7f33c4d243d3d15592c3b0b1b19d4" kindref="member">checkForAndShowSuggestions</ref>();
+        }
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Document listener for the textComponent </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="44" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1AutoComplete_1a547307db6247e63b17bad503504dbd22" prot="private" static="no" mutable="no">
+        <type>final ArrayList&lt; String &gt;</type>
+        <definition>final ArrayList&lt;String&gt; qlib.ide.AutoComplete.suggestions</definition>
+        <argsstring></argsstring>
+        <name>suggestions</name>
+        <initializer>= new ArrayList&lt;String&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of words to suggest </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="63" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1AutoComplete_1ab4de0d96f7b92c3768e1c08fbb47aed5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int qlib.ide.AutoComplete.lettersUntilShown</definition>
+        <argsstring></argsstring>
+        <name>lettersUntilShown</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of letters until suggestions get shown </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="67" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1AutoComplete_1add24423a55cac629e8316c5918a6d954" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String qlib.ide.AutoComplete.typedWord</definition>
+        <argsstring></argsstring>
+        <name>typedWord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The currently typed word </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="71" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1AutoComplete_1a7a588e36bc43ffbb782e6f43d89176a2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int qlib.ide.AutoComplete.startPosition</definition>
+        <argsstring></argsstring>
+        <name>startPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start index of the typed word </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="75" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1AutoComplete_1ab737bdeda6e26125bc85ad00f5de14d2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int qlib.ide.AutoComplete.endPosition</definition>
+        <argsstring></argsstring>
+        <name>endPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>End index of the typed word </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="79" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1AutoComplete_1a858e66824f2ef4066d9987b4206037a2" prot="private" static="no" mutable="no">
+        <type>final JWindow</type>
+        <definition>final JWindow qlib.ide.AutoComplete.window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <initializer>= new JWindow()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reference to the suggestion window </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="83" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1AutoComplete_1ab04a22ed940369f199952db2ce1c04f8" prot="private" static="no" mutable="no">
+        <type>JList</type>
+        <definition>JList qlib.ide.AutoComplete.list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <initializer>= new JList()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reference to the list of suggestions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="87" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1AutoComplete_1aaaa89916b82f63bd8d7079c84c251e27" prot="private" static="no" mutable="no">
+        <type>DefaultListModel</type>
+        <definition>DefaultListModel qlib.ide.AutoComplete.model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <initializer>= new DefaultListModel()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reference to the list&apos;s data model </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="91" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1AutoComplete_1a312cdabc82431a5cc8d73c1884c416a7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int qlib.ide.AutoComplete.width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <initializer>= 430</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Width of suggestion window </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="95" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1AutoComplete_1a8ebc95801d3b19aff09123cf8729e2c9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int qlib.ide.AutoComplete.maxHeight</definition>
+        <argsstring></argsstring>
+        <name>maxHeight</name>
+        <initializer>= 160</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum height of the suggestion window </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="99" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1a30e4dd8e6c36a6ef576641480d4368f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib.ide.AutoComplete.AutoComplete</definition>
+        <argsstring>(JTextComponent textComponent)</argsstring>
+        <name>AutoComplete</name>
+        <param>
+          <type>JTextComponent</type>
+          <declname>textComponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an auto complete suggestion dialog for the given text component <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>textComponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="105" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="105" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1a6dfe58b003099399cbed40a8082631ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean qlib.ide.AutoComplete.isVisible</definition>
+        <argsstring>()</argsstring>
+        <name>isVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the suggestion box is visible <simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="169" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="169" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1a1b3f11041ae6af9b54e56c19adbbae5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.AutoComplete.addWord</definition>
+        <argsstring>(String s)</argsstring>
+        <name>addWord</name>
+        <param>
+          <type>String</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add word to the dictionary <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="177" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="177" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1a8e424fd802e81ab9a816c9b54c8cf364" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.AutoComplete.removeWord</definition>
+        <argsstring>(String s)</argsstring>
+        <name>removeWord</name>
+        <param>
+          <type>String</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove word from the dictionary <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="185" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="185" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1aea2eaa12383e22951f5ddef7b9182b07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.AutoComplete.setCharactersUntilSuggestions</definition>
+        <argsstring>(int characters)</argsstring>
+        <name>setCharactersUntilSuggestions</name>
+        <param>
+          <type>int</type>
+          <declname>characters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the number of characters until the suggestion box is shown <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>characters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="240" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="240" bodyend="242"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1af2b5cb3b8c9557abaed28883288f5f34" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.AutoComplete.insertSuggestion</definition>
+        <argsstring>(Object o)</argsstring>
+        <name>insertSuggestion</name>
+        <param>
+          <type>Object</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Insert word, replacing the currently typed word <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="193" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="193" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1a9b4c1fc14bdff51a29b3a13622cba025" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.AutoComplete.showSuggestions</definition>
+        <argsstring>()</argsstring>
+        <name>showSuggestions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Show the suggestion box </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="206" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="206" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1a262b15fe050727186b0dc3d22e0d5143" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.AutoComplete.hideSuggestions</definition>
+        <argsstring>()</argsstring>
+        <name>hideSuggestions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hide the suggestion box </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="247" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="247" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1acdc8c857e1580998523ee6f50c738a84" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String qlib.ide.AutoComplete.getText</definition>
+        <argsstring>(int start, int length)</argsstring>
+        <name>getText</name>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the text between 2 indexes <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="257" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="257" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1a04a7f33c4d243d3d15592c3b0b1b19d4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.AutoComplete.checkForAndShowSuggestions</definition>
+        <argsstring>()</argsstring>
+        <name>checkForAndShowSuggestions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For use auto checking the suggestions as a user types </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="268" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="268" bodyend="303"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class for auto complete word suggestions used with JTextComponent <simplesect kind="author"><para>chalseth </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="196">
+        <label>qlib.ide.AutoComplete</label>
+        <link refid="classqlib_1_1ide_1_1AutoComplete"/>
+        <childnode refid="197" relation="usage">
+          <edgelabel>model</edgelabel>
+        </childnode>
+        <childnode refid="198" relation="usage">
+          <edgelabel>window</edgelabel>
+        </childnode>
+        <childnode refid="199" relation="usage">
+          <edgelabel>suggestions</edgelabel>
+        </childnode>
+        <childnode refid="200" relation="usage">
+          <edgelabel>docListener</edgelabel>
+        </childnode>
+        <childnode refid="201" relation="usage">
+          <edgelabel>textComponent</edgelabel>
+        </childnode>
+        <childnode refid="202" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="201">
+        <label>JTextComponent</label>
+      </node>
+      <node id="200">
+        <label>DocumentListener</label>
+      </node>
+      <node id="197">
+        <label>DefaultListModel</label>
+      </node>
+      <node id="202">
+        <label>JList</label>
+      </node>
+      <node id="198">
+        <label>JWindow</label>
+      </node>
+      <node id="199">
+        <label>ArrayList&lt; String &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/ide/src/qlib/ide/AutoComplete.java" line="35" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="35" bodyend="305"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1a1b3f11041ae6af9b54e56c19adbbae5c" prot="public" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>addWord</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1a30e4dd8e6c36a6ef576641480d4368f7" prot="public" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>AutoComplete</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1a04a7f33c4d243d3d15592c3b0b1b19d4" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>checkForAndShowSuggestions</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1a79190bf245b656b279233a982ed4248c" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>docListener</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1ab737bdeda6e26125bc85ad00f5de14d2" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>endPosition</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1acdc8c857e1580998523ee6f50c738a84" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>getText</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1a262b15fe050727186b0dc3d22e0d5143" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>hideSuggestions</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1af2b5cb3b8c9557abaed28883288f5f34" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>insertSuggestion</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1a6dfe58b003099399cbed40a8082631ff" prot="public" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>isVisible</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1ab4de0d96f7b92c3768e1c08fbb47aed5" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>lettersUntilShown</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1ab04a22ed940369f199952db2ce1c04f8" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>list</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1a8ebc95801d3b19aff09123cf8729e2c9" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>maxHeight</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1aaaa89916b82f63bd8d7079c84c251e27" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>model</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1a8e424fd802e81ab9a816c9b54c8cf364" prot="public" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>removeWord</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1aea2eaa12383e22951f5ddef7b9182b07" prot="public" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>setCharactersUntilSuggestions</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1a9b4c1fc14bdff51a29b3a13622cba025" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>showSuggestions</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1a7a588e36bc43ffbb782e6f43d89176a2" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>startPosition</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1a547307db6247e63b17bad503504dbd22" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>suggestions</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1ab41cb720a8247194d0c4c2cc5fa6aeef" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>textComponent</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1add24423a55cac629e8316c5918a6d954" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>typedWord</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1a312cdabc82431a5cc8d73c1884c416a7" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>width</name></member>
+      <member refid="classqlib_1_1ide_1_1AutoComplete_1a858e66824f2ef4066d9987b4206037a2" prot="private" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

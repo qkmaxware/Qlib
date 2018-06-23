@@ -1,0 +1,214 @@
+\hypertarget{classqlib_1_1math_1_1matrix}{}\section{qlib\+:\+:math\+:\+:matrix Class Reference}
+\label{classqlib_1_1math_1_1matrix}\index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+
+
+{\ttfamily \#include $<$matrix.\+hpp$>$}
+
+
+
+Inheritance diagram for qlib\+:\+:math\+:\+:matrix\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classqlib_1_1math_1_1matrix__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for qlib\+:\+:math\+:\+:matrix\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classqlib_1_1math_1_1matrix__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqlib_1_1math_1_1matrix_a6e66a3f67ecf06a42068d2dbf8885e66}{matrix} (size\+\_\+t \hyperlink{classqlib_1_1math_1_1matrix_af29b6ea4316eb972bbdc55da6e54dbb3}{rows}, size\+\_\+t \hyperlink{classqlib_1_1math_1_1matrix_ad3c2dd80c600d7bf37ae5bbdf5f056b8}{columns})
+\item 
+\hyperlink{classqlib_1_1math_1_1matrix_a8cbac1f2ae9917a4742cd0d147e3ba9b}{matrix} (size\+\_\+t \hyperlink{classqlib_1_1math_1_1matrix_af29b6ea4316eb972bbdc55da6e54dbb3}{rows}, size\+\_\+t \hyperlink{classqlib_1_1math_1_1matrix_ad3c2dd80c600d7bf37ae5bbdf5f056b8}{columns}, std\+::vector$<$ \hyperlink{classqlib_1_1math_1_1complex}{complex} $>$ \hyperlink{classqlib_1_1math_1_1matrix_ad764d65375ba1e50381f640bdc181c0b}{values})
+\item 
+\hyperlink{classqlib_1_1math_1_1matrix_afebdd1cf189728ace53a594d5ef8b750}{$\sim$matrix} ()
+\item 
+\hyperlink{classqlib_1_1math_1_1complex}{complex} \& \hyperlink{classqlib_1_1math_1_1matrix_a50cbbef6e5b7888aecffbf66def70154}{operator()} (size\+\_\+t r, size\+\_\+t c)
+\item 
+\hyperlink{classqlib_1_1math_1_1complex}{complex} \& \hyperlink{classqlib_1_1math_1_1matrix_af93c414d328b985c83c032f41f485a9a}{operator()} (size\+\_\+t idx)
+\item 
+size\+\_\+t \hyperlink{classqlib_1_1math_1_1matrix_add844c31055d495274b037e7bcd8f0b7}{count\+Rows} ()
+\item 
+size\+\_\+t \hyperlink{classqlib_1_1math_1_1matrix_a69ed708edf603637731e4f6fe46b0754}{count\+Columns} ()
+\item 
+size\+\_\+t \hyperlink{classqlib_1_1math_1_1matrix_a2f0ada8003cf2306534700502f598428}{size} ()
+\item 
+void \hyperlink{classqlib_1_1math_1_1matrix_a2d09bd42691acdbf315d5cbd7a698698}{set} (size\+\_\+t r, size\+\_\+t c, \hyperlink{classqlib_1_1math_1_1complex}{complex} value)
+\item 
+void \hyperlink{classqlib_1_1math_1_1matrix_ae97863a30bb445897ff63c77582a366a}{set} (size\+\_\+t idx, \hyperlink{classqlib_1_1math_1_1complex}{complex} value)
+\item 
+\hyperlink{classqlib_1_1math_1_1complex}{complex} \hyperlink{classqlib_1_1math_1_1matrix_a91fcadaccfcd68adb71de0da6f5d267f}{get} (size\+\_\+t r, size\+\_\+t c)
+\item 
+\hyperlink{classqlib_1_1math_1_1complex}{complex} \hyperlink{classqlib_1_1math_1_1matrix_a17dce2bfd8addcb026f6d9159134f1c7}{get} (size\+\_\+t idx)
+\item 
+std\+::string \hyperlink{classqlib_1_1math_1_1matrix_a06ec639a654b5319f4eb1bff591d6e7b}{to\+String} ()
+\item 
+std\+::vector$<$ \hyperlink{classqlib_1_1math_1_1complex}{complex} $>$\+::iterator \hyperlink{classqlib_1_1math_1_1matrix_a1cbe9185c4f147d821eeb0b36ed9cc86}{begin} ()
+\item 
+std\+::vector$<$ \hyperlink{classqlib_1_1math_1_1complex}{complex} $>$\+::iterator \hyperlink{classqlib_1_1math_1_1matrix_ae250bb5455fe71b836a5252335575545}{end} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classqlib_1_1math_1_1complex}{complex} $>$ \hyperlink{classqlib_1_1math_1_1matrix_ad764d65375ba1e50381f640bdc181c0b}{values}
+\item 
+size\+\_\+t \hyperlink{classqlib_1_1math_1_1matrix_af29b6ea4316eb972bbdc55da6e54dbb3}{rows}
+\item 
+size\+\_\+t \hyperlink{classqlib_1_1math_1_1matrix_ad3c2dd80c600d7bf37ae5bbdf5f056b8}{columns}
+\item 
+size\+\_\+t \hyperlink{classqlib_1_1math_1_1matrix_aef00292f85054708922acef6b7744a40}{length}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Complex matrix class 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!matrix@{matrix}}
+\index{matrix@{matrix}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{matrix(size\+\_\+t rows, size\+\_\+t columns)}{matrix(size_t rows, size_t columns)}}]{\setlength{\rightskip}{0pt plus 5cm}qlib\+::math\+::matrix\+::matrix (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{rows, }
+\item[{size\+\_\+t}]{columns}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_a6e66a3f67ecf06a42068d2dbf8885e66}{}\label{classqlib_1_1math_1_1matrix_a6e66a3f67ecf06a42068d2dbf8885e66}
+Create an empty matrix of this size \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!matrix@{matrix}}
+\index{matrix@{matrix}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{matrix(size\+\_\+t rows, size\+\_\+t columns, std\+::vector$<$ complex $>$ values)}{matrix(size_t rows, size_t columns, std::vector< complex > values)}}]{\setlength{\rightskip}{0pt plus 5cm}qlib\+::math\+::matrix\+::matrix (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{rows, }
+\item[{size\+\_\+t}]{columns, }
+\item[{std\+::vector$<$ {\bf complex} $>$}]{values}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_a8cbac1f2ae9917a4742cd0d147e3ba9b}{}\label{classqlib_1_1math_1_1matrix_a8cbac1f2ae9917a4742cd0d147e3ba9b}
+Create a matrix of this size with the given values in compressed row-\/$>$column form \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!````~matrix@{$\sim$matrix}}
+\index{````~matrix@{$\sim$matrix}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{$\sim$matrix()}{~matrix()}}]{\setlength{\rightskip}{0pt plus 5cm}qlib\+::math\+::matrix\+::$\sim$matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_afebdd1cf189728ace53a594d5ef8b750}{}\label{classqlib_1_1math_1_1matrix_afebdd1cf189728ace53a594d5ef8b750}
+Matrix destructor 
+
+\subsection{Member Function Documentation}
+\index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!begin@{begin}}
+\index{begin@{begin}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf complex}$>$\+::iterator qlib\+::math\+::matrix\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_a1cbe9185c4f147d821eeb0b36ed9cc86}{}\label{classqlib_1_1math_1_1matrix_a1cbe9185c4f147d821eeb0b36ed9cc86}
+Iterator starting at element 0,0 \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!count\+Columns@{count\+Columns}}
+\index{count\+Columns@{count\+Columns}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{count\+Columns()}{countColumns()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t qlib\+::math\+::matrix\+::count\+Columns (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_a69ed708edf603637731e4f6fe46b0754}{}\label{classqlib_1_1math_1_1matrix_a69ed708edf603637731e4f6fe46b0754}
+Number of columns \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!count\+Rows@{count\+Rows}}
+\index{count\+Rows@{count\+Rows}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{count\+Rows()}{countRows()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t qlib\+::math\+::matrix\+::count\+Rows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_add844c31055d495274b037e7bcd8f0b7}{}\label{classqlib_1_1math_1_1matrix_add844c31055d495274b037e7bcd8f0b7}
+Number of rows \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!end@{end}}
+\index{end@{end}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{end()}{end()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf complex}$>$\+::iterator qlib\+::math\+::matrix\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_ae250bb5455fe71b836a5252335575545}{}\label{classqlib_1_1math_1_1matrix_ae250bb5455fe71b836a5252335575545}
+Iterator starting after element rows-\/1,columns-\/1 \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!get@{get}}
+\index{get@{get}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{get(size\+\_\+t r, size\+\_\+t c)}{get(size_t r, size_t c)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf complex} qlib\+::math\+::matrix\+::get (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{r, }
+\item[{size\+\_\+t}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_a91fcadaccfcd68adb71de0da6f5d267f}{}\label{classqlib_1_1math_1_1matrix_a91fcadaccfcd68adb71de0da6f5d267f}
+Get element from matrix \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!get@{get}}
+\index{get@{get}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{get(size\+\_\+t idx)}{get(size_t idx)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf complex} qlib\+::math\+::matrix\+::get (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_a17dce2bfd8addcb026f6d9159134f1c7}{}\label{classqlib_1_1math_1_1matrix_a17dce2bfd8addcb026f6d9159134f1c7}
+Get element from matrix \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{operator()(size\+\_\+t r, size\+\_\+t c)}{operator()(size_t r, size_t c)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf complex}\& qlib\+::math\+::matrix\+::operator() (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{r, }
+\item[{size\+\_\+t}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_a50cbbef6e5b7888aecffbf66def70154}{}\label{classqlib_1_1math_1_1matrix_a50cbbef6e5b7888aecffbf66def70154}
+Get element from matrix \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{operator()(size\+\_\+t idx)}{operator()(size_t idx)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf complex}\& qlib\+::math\+::matrix\+::operator() (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_af93c414d328b985c83c032f41f485a9a}{}\label{classqlib_1_1math_1_1matrix_af93c414d328b985c83c032f41f485a9a}
+Get element from matrix \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!set@{set}}
+\index{set@{set}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{set(size\+\_\+t r, size\+\_\+t c, complex value)}{set(size_t r, size_t c, complex value)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib\+::math\+::matrix\+::set (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{r, }
+\item[{size\+\_\+t}]{c, }
+\item[{{\bf complex}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_a2d09bd42691acdbf315d5cbd7a698698}{}\label{classqlib_1_1math_1_1matrix_a2d09bd42691acdbf315d5cbd7a698698}
+Set element in matrix \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!set@{set}}
+\index{set@{set}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{set(size\+\_\+t idx, complex value)}{set(size_t idx, complex value)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib\+::math\+::matrix\+::set (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{idx, }
+\item[{{\bf complex}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_ae97863a30bb445897ff63c77582a366a}{}\label{classqlib_1_1math_1_1matrix_ae97863a30bb445897ff63c77582a366a}
+Set element in matrix \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!size@{size}}
+\index{size@{size}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{size()}{size()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t qlib\+::math\+::matrix\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_a2f0ada8003cf2306534700502f598428}{}\label{classqlib_1_1math_1_1matrix_a2f0ada8003cf2306534700502f598428}
+Total number of elements \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{to\+String()}{toString()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string qlib\+::math\+::matrix\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1math_1_1matrix_a06ec639a654b5319f4eb1bff591d6e7b}{}\label{classqlib_1_1math_1_1matrix_a06ec639a654b5319f4eb1bff591d6e7b}
+String representation 
+
+Reimplemented from \hyperlink{classxobject_ad76243a44c4e4959d3b16bb57d82600d}{xobject}.
+
+
+
+\subsection{Member Data Documentation}
+\index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!columns@{columns}}
+\index{columns@{columns}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{columns}{columns}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t qlib\+::math\+::matrix\+::columns\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1math_1_1matrix_ad3c2dd80c600d7bf37ae5bbdf5f056b8}{}\label{classqlib_1_1math_1_1matrix_ad3c2dd80c600d7bf37ae5bbdf5f056b8}
+Number of columns \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!length@{length}}
+\index{length@{length}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{length}{length}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t qlib\+::math\+::matrix\+::length\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1math_1_1matrix_aef00292f85054708922acef6b7744a40}{}\label{classqlib_1_1math_1_1matrix_aef00292f85054708922acef6b7744a40}
+Number of elements \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!rows@{rows}}
+\index{rows@{rows}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{rows}{rows}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t qlib\+::math\+::matrix\+::rows\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1math_1_1matrix_af29b6ea4316eb972bbdc55da6e54dbb3}{}\label{classqlib_1_1math_1_1matrix_af29b6ea4316eb972bbdc55da6e54dbb3}
+Number of rows \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!values@{values}}
+\index{values@{values}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{values}{values}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf complex}$>$ qlib\+::math\+::matrix\+::values\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1math_1_1matrix_ad764d65375ba1e50381f640bdc181c0b}{}\label{classqlib_1_1math_1_1matrix_ad764d65375ba1e50381f640bdc181c0b}
+Flattened 1d array of matrix values 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/math/\hyperlink{matrix_8hpp}{matrix.\+hpp}\end{DoxyCompactItemize}

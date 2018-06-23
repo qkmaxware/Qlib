@@ -1,0 +1,84 @@
+\hypertarget{classqasm_1_1exec_1_1apply__gate}{}\section{qasm\+:\+:exec\+:\+:apply\+\_\+gate Class Reference}
+\label{classqasm_1_1exec_1_1apply__gate}\index{qasm\+::exec\+::apply\+\_\+gate@{qasm\+::exec\+::apply\+\_\+gate}}
+
+
+{\ttfamily \#include $<$runtime.\+hpp$>$}
+
+
+
+Inheritance diagram for qasm\+:\+:exec\+:\+:apply\+\_\+gate\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classqasm_1_1exec_1_1apply__gate__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for qasm\+:\+:exec\+:\+:apply\+\_\+gate\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classqasm_1_1exec_1_1apply__gate__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqasm_1_1exec_1_1apply__gate_a0e7787396ea68b95df1e6a395cd21f2e}{apply\+\_\+gate} (string \hyperlink{classqasm_1_1exec_1_1apply__gate_a2b5eea4ddab7101ab5353ecd160e0d30}{name})
+\item 
+virtual void \hyperlink{classqasm_1_1exec_1_1apply__gate_a4ab94a7feee1830b4be52a487e9cdef5}{invoke\+\_\+rootprogram} (\hyperlink{classqasm_1_1runtime_1_1environment}{runtime\+::environment} \&env)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classqasm_1_1exec_1_1apply__gate_a2b5eea4ddab7101ab5353ecd160e0d30}{name}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classqasm_1_1exec_1_1apply__gate_afa925dd76a3c14f5a3739bbd1ab20258}{param\+\_\+names}
+\item 
+std\+::vector$<$ u64 $>$ \hyperlink{classqasm_1_1exec_1_1apply__gate_a45e00e882c9241a288dae90ae0faa77f}{param\+\_\+indecies}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Instruction to apply a gate to a register 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{qasm\+::exec\+::apply\+\_\+gate@{qasm\+::exec\+::apply\+\_\+gate}!apply\+\_\+gate@{apply\+\_\+gate}}
+\index{apply\+\_\+gate@{apply\+\_\+gate}!qasm\+::exec\+::apply\+\_\+gate@{qasm\+::exec\+::apply\+\_\+gate}}
+\subsubsection[{\texorpdfstring{apply\+\_\+gate(string name)}{apply_gate(string name)}}]{\setlength{\rightskip}{0pt plus 5cm}qasm\+::exec\+::apply\+\_\+gate\+::apply\+\_\+gate (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqasm_1_1exec_1_1apply__gate_a0e7787396ea68b95df1e6a395cd21f2e}{}\label{classqasm_1_1exec_1_1apply__gate_a0e7787396ea68b95df1e6a395cd21f2e}
+
+
+\subsection{Member Function Documentation}
+\index{qasm\+::exec\+::apply\+\_\+gate@{qasm\+::exec\+::apply\+\_\+gate}!invoke\+\_\+rootprogram@{invoke\+\_\+rootprogram}}
+\index{invoke\+\_\+rootprogram@{invoke\+\_\+rootprogram}!qasm\+::exec\+::apply\+\_\+gate@{qasm\+::exec\+::apply\+\_\+gate}}
+\subsubsection[{\texorpdfstring{invoke\+\_\+rootprogram(runtime\+::environment \&env)}{invoke_rootprogram(runtime::environment &env)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void qasm\+::exec\+::apply\+\_\+gate\+::invoke\+\_\+rootprogram (
+\begin{DoxyParamCaption}
+\item[{{\bf runtime\+::environment} \&}]{env}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqasm_1_1exec_1_1apply__gate_a4ab94a7feee1830b4be52a487e9cdef5}{}\label{classqasm_1_1exec_1_1apply__gate_a4ab94a7feee1830b4be52a487e9cdef5}
+Run instruction\textquotesingle{}s primary operation 
+
+Reimplemented from \hyperlink{classqasm_1_1exec_1_1executable_ad07f864a889edb0777ebbb1bc1628121}{qasm\+::exec\+::executable}.
+
+
+
+\subsection{Member Data Documentation}
+\index{qasm\+::exec\+::apply\+\_\+gate@{qasm\+::exec\+::apply\+\_\+gate}!name@{name}}
+\index{name@{name}!qasm\+::exec\+::apply\+\_\+gate@{qasm\+::exec\+::apply\+\_\+gate}}
+\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string qasm\+::exec\+::apply\+\_\+gate\+::name}\hypertarget{classqasm_1_1exec_1_1apply__gate_a2b5eea4ddab7101ab5353ecd160e0d30}{}\label{classqasm_1_1exec_1_1apply__gate_a2b5eea4ddab7101ab5353ecd160e0d30}
+Name of gate to apply \index{qasm\+::exec\+::apply\+\_\+gate@{qasm\+::exec\+::apply\+\_\+gate}!param\+\_\+indecies@{param\+\_\+indecies}}
+\index{param\+\_\+indecies@{param\+\_\+indecies}!qasm\+::exec\+::apply\+\_\+gate@{qasm\+::exec\+::apply\+\_\+gate}}
+\subsubsection[{\texorpdfstring{param\+\_\+indecies}{param_indecies}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$u64$>$ qasm\+::exec\+::apply\+\_\+gate\+::param\+\_\+indecies}\hypertarget{classqasm_1_1exec_1_1apply__gate_a45e00e882c9241a288dae90ae0faa77f}{}\label{classqasm_1_1exec_1_1apply__gate_a45e00e882c9241a288dae90ae0faa77f}
+Index of each register to apply to \index{qasm\+::exec\+::apply\+\_\+gate@{qasm\+::exec\+::apply\+\_\+gate}!param\+\_\+names@{param\+\_\+names}}
+\index{param\+\_\+names@{param\+\_\+names}!qasm\+::exec\+::apply\+\_\+gate@{qasm\+::exec\+::apply\+\_\+gate}}
+\subsubsection[{\texorpdfstring{param\+\_\+names}{param_names}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ qasm\+::exec\+::apply\+\_\+gate\+::param\+\_\+names}\hypertarget{classqasm_1_1exec_1_1apply__gate_afa925dd76a3c14f5a3739bbd1ab20258}{}\label{classqasm_1_1exec_1_1apply__gate_afa925dd76a3c14f5a3739bbd1ab20258}
+Name of registers to apply to (should be all the same) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{runtime_8hpp}{runtime.\+hpp}\end{DoxyCompactItemize}

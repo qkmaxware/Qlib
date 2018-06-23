@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1quantum_1_1gates_1_1onequbitgate" kind="class" language="C++" prot="public">
+    <compoundname>qlib::quantum::gates::onequbitgate</compoundname>
+    <basecompoundref refid="classqlib_1_1quantum_1_1gates_1_1igate" prot="public" virt="non-virtual">qlib::quantum::gates::igate</basecompoundref>
+    <includes refid="onequbitgate_8hpp" local="no">onequbitgate.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1abc5ac874b8a4174cc72a159d3c6d91d2" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string qlib::quantum::gates::onequbitgate::sname</definition>
+        <argsstring></argsstring>
+        <name>sname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/onequbitgate.hpp" line="18" column="1" bodyfile="src/core/quantum/gates/onequbitgate.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a6d935a1219c646b16c136560a5b4f0bf" prot="private" static="no" mutable="no">
+        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
+        <definition>matrix qlib::quantum::gates::onequbitgate::m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/onequbitgate.hpp" line="19" column="1" bodyfile="src/core/quantum/gates/onequbitgate.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a587ebdfa032f58bf63433c89c6015149" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib::quantum::gates::onequbitgate::onequbitgate</definition>
+        <argsstring>(std::string name, std::vector&lt; complex &gt; values)</argsstring>
+        <name>onequbitgate</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref> &gt;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new quanutm operator for the given number of states </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/onequbitgate.hpp" line="25" column="1" bodyfile="src/core/quantum/gates/onequbitgate.hpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a050ed71ebff89050c3123124f8ba8719" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t qlib::quantum::gates::onequbitgate::inputs</definition>
+        <argsstring>()</argsstring>
+        <name>inputs</name>
+        <reimplements refid="classqlib_1_1quantum_1_1gates_1_1igate_1ac8aa56b0095a94fdd437bc55d90aec9d">inputs</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of input qubits this operator can be applied to </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/onequbitgate.hpp" line="32" column="1" bodyfile="src/core/quantum/gates/onequbitgate.hpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1aacf3878010f0c1327bae4dcc7faf4c92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string qlib::quantum::gates::onequbitgate::name</definition>
+        <argsstring>()</argsstring>
+        <name>name</name>
+        <reimplements refid="classqlib_1_1quantum_1_1gates_1_1igate_1ae8f8dda69d7742c12c743829abb3662b">name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The name of this gate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/onequbitgate.hpp" line="39" column="1" bodyfile="src/core/quantum/gates/onequbitgate.hpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a280c7a7d29032eeb95afcb3d6668e7db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void qlib::quantum::gates::onequbitgate::operate</definition>
+        <argsstring>(matrix &amp;in, matrix &amp;out, std::vector&lt; u64 &gt; inputQubits)</argsstring>
+        <name>operate</name>
+        <reimplements refid="classqlib_1_1quantum_1_1gates_1_1igate_1a66038ee65fec12c627789505e11f1e23">operate</reimplements>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref> &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; u64 &gt;</type>
+          <declname>inputQubits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Operate on a given column vector state superposition </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/onequbitgate.hpp" line="46" column="1" bodyfile="src/core/quantum/gates/onequbitgate.hpp" bodystart="46" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a39490c6d1dcc94dc82bb7345fe984278" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">qlib::math::matrix</ref> &amp;</type>
+        <definition>qlib::math::matrix&amp; qlib::quantum::gates::onequbitgate::getMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>getMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the matrix representation of this operator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/onequbitgate.hpp" line="75" column="1" bodyfile="src/core/quantum/gates/onequbitgate.hpp" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a38af1af0f466add047c3e75780e28c80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string qlib::quantum::gates::onequbitgate::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="classxobject_1ad76243a44c4e4959d3b16bb57d82600d">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pretty print </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/onequbitgate.hpp" line="82" column="1" bodyfile="src/core/quantum/gates/onequbitgate.hpp" bodystart="82" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="288">
+        <label>qlib::quantum::gates::onequbitgate</label>
+        <link refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate"/>
+        <childnode refid="289" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="289">
+        <label>qlib::quantum::gates::igate</label>
+        <link refid="classqlib_1_1quantum_1_1gates_1_1igate"/>
+        <childnode refid="290" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="291">
+        <label>qlib::quantum::gates::onequbitgate</label>
+        <link refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate"/>
+        <childnode refid="292" relation="public-inheritance">
+        </childnode>
+        <childnode refid="294" relation="usage">
+          <edgelabel>m</edgelabel>
+        </childnode>
+      </node>
+      <node id="293">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="292">
+        <label>qlib::quantum::gates::igate</label>
+        <link refid="classqlib_1_1quantum_1_1gates_1_1igate"/>
+        <childnode refid="293" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>qlib::math::matrix</label>
+        <link refid="classqlib_1_1math_1_1matrix"/>
+        <childnode refid="293" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/core/quantum/gates/onequbitgate.hpp" line="15" column="1" bodyfile="src/core/quantum/gates/onequbitgate.hpp" bodystart="15" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a39490c6d1dcc94dc82bb7345fe984278" prot="public" virt="non-virtual"><scope>qlib::quantum::gates::onequbitgate</scope><name>getMatrix</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a050ed71ebff89050c3123124f8ba8719" prot="public" virt="virtual"><scope>qlib::quantum::gates::onequbitgate</scope><name>inputs</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a6d935a1219c646b16c136560a5b4f0bf" prot="private" virt="non-virtual"><scope>qlib::quantum::gates::onequbitgate</scope><name>m</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1aacf3878010f0c1327bae4dcc7faf4c92" prot="public" virt="virtual"><scope>qlib::quantum::gates::onequbitgate</scope><name>name</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a587ebdfa032f58bf63433c89c6015149" prot="public" virt="non-virtual"><scope>qlib::quantum::gates::onequbitgate</scope><name>onequbitgate</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a280c7a7d29032eeb95afcb3d6668e7db" prot="public" virt="virtual"><scope>qlib::quantum::gates::onequbitgate</scope><name>operate</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1abc5ac874b8a4174cc72a159d3c6d91d2" prot="private" virt="non-virtual"><scope>qlib::quantum::gates::onequbitgate</scope><name>sname</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a38af1af0f466add047c3e75780e28c80" prot="public" virt="virtual"><scope>qlib::quantum::gates::onequbitgate</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

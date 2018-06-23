@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1quantum_1_1gates_1_1igate" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>qlib::quantum::gates::igate</compoundname>
+    <basecompoundref refid="classxobject" prot="public" virt="non-virtual">xobject</basecompoundref>
+    <derivedcompoundref refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate" prot="public" virt="non-virtual">qlib::quantum::gates::controlled2gate</derivedcompoundref>
+    <derivedcompoundref refid="classqlib_1_1quantum_1_1gates_1_1controlledgate" prot="public" virt="non-virtual">qlib::quantum::gates::controlledgate</derivedcompoundref>
+    <derivedcompoundref refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate" prot="public" virt="non-virtual">qlib::quantum::gates::onequbitgate</derivedcompoundref>
+    <includes refid="igate_8hpp" local="no">igate.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1gates_1_1igate_1ae8f8dda69d7742c12c743829abb3662b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string qlib::quantum::gates::igate::name</definition>
+        <argsstring>()=0</argsstring>
+        <name>name</name>
+        <reimplementedby refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1a7fb8875c83106b35d733cc96b312b957">name</reimplementedby>
+        <reimplementedby refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a25121d9bc52a594a718b6d8037ea6cc0">name</reimplementedby>
+        <reimplementedby refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1aacf3878010f0c1327bae4dcc7faf4c92">name</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/igate.hpp" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1gates_1_1igate_1ac8aa56b0095a94fdd437bc55d90aec9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t qlib::quantum::gates::igate::inputs</definition>
+        <argsstring>()=0</argsstring>
+        <name>inputs</name>
+        <reimplementedby refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1adb544cb10cd5f8836e331102f7c7e9d6">inputs</reimplementedby>
+        <reimplementedby refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a27a8793a3015aa9797f03fa0174113c2">inputs</reimplementedby>
+        <reimplementedby refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a050ed71ebff89050c3123124f8ba8719">inputs</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/igate.hpp" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1gates_1_1igate_1a66038ee65fec12c627789505e11f1e23" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void qlib::quantum::gates::igate::operate</definition>
+        <argsstring>(matrix &amp;in, matrix &amp;out, std::vector&lt; u64 &gt; inputQubits)=0</argsstring>
+        <name>operate</name>
+        <reimplementedby refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1aec6e423cc6ae442c5c3c5dc04581959e">operate</reimplementedby>
+        <reimplementedby refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a272635da6a7b8f65379f6ecb42df9389">operate</reimplementedby>
+        <reimplementedby refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate_1a280c7a7d29032eeb95afcb3d6668e7db">operate</reimplementedby>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref> &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; u64 &gt;</type>
+          <declname>inputQubits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/igate.hpp" line="25" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="261">
+        <label>qlib::quantum::gates::onequbitgate</label>
+        <link refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate"/>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="257">
+        <label>qlib::quantum::gates::igate</label>
+        <link refid="classqlib_1_1quantum_1_1gates_1_1igate"/>
+        <childnode refid="258" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="259">
+        <label>qlib::quantum::gates::controlled2gate</label>
+        <link refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate"/>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="260">
+        <label>qlib::quantum::gates::controlledgate</label>
+        <link refid="classqlib_1_1quantum_1_1gates_1_1controlledgate"/>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="263">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="262">
+        <label>qlib::quantum::gates::igate</label>
+        <link refid="classqlib_1_1quantum_1_1gates_1_1igate"/>
+        <childnode refid="263" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/core/quantum/gates/igate.hpp" line="17" column="1" bodyfile="src/core/quantum/gates/igate.hpp" bodystart="17" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1igate_1ac8aa56b0095a94fdd437bc55d90aec9d" prot="public" virt="pure-virtual"><scope>qlib::quantum::gates::igate</scope><name>inputs</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1igate_1ae8f8dda69d7742c12c743829abb3662b" prot="public" virt="pure-virtual"><scope>qlib::quantum::gates::igate</scope><name>name</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1igate_1a66038ee65fec12c627789505e11f1e23" prot="public" virt="pure-virtual"><scope>qlib::quantum::gates::igate</scope><name>operate</name></member>
+      <member refid="classxobject_1ad76243a44c4e4959d3b16bb57d82600d" prot="public" virt="virtual"><scope>qlib::quantum::gates::igate</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

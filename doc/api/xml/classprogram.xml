@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classprogram" kind="class" language="C++" prot="public">
+    <compoundname>program</compoundname>
+    <includes refid="qasmparser_8hpp" local="no">qasmparser.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classqasm_1_1exec_1_1executable" kindref="compound">qasm::exec::executable</ref> * &gt;</type>
+        <definition>std::vector&lt;qasm::exec::executable*&gt; program::lines</definition>
+        <argsstring></argsstring>
+        <name>lines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of executable instructions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="28" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classprogram_1ae17b7e99958aa0770b1cc4a8c20acbfe" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref> &gt;</type>
+        <definition>std::map&lt;std::string, ulong&gt; program::anchors</definition>
+        <argsstring></argsstring>
+        <name>anchors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map of name to line index of each anchor for jump operations </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="32" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classprogram_1a0772f916267bdb0eb4d803ea472e8e74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>program::program</definition>
+        <argsstring>()</argsstring>
+        <name>program</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="34" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classprogram_1a31e130840978c25ba94a6ff2b192011c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>program::~program</definition>
+        <argsstring>()</argsstring>
+        <name>~program</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="35" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="35" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classprogram_1ada37ef3924e109909695ef9bd55f54b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void program::push</definition>
+        <argsstring>(qasm::exec::executable *ptr)</argsstring>
+        <name>push</name>
+        <param>
+          <type><ref refid="classqasm_1_1exec_1_1executable" kindref="compound">qasm::exec::executable</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add instruction </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="44" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classprogram_1a40b1420af44c92684d8ecc035f8d004c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void program::push</definition>
+        <argsstring>(std::vector&lt; qasm::exec::executable * &gt; lines)</argsstring>
+        <name>push</name>
+        <param>
+          <type>std::vector&lt; <ref refid="classqasm_1_1exec_1_1executable" kindref="compound">qasm::exec::executable</ref> * &gt;</type>
+          <declname>lines</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add several instructions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/qasmparser.hpp" line="51" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="51" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class containing all instructions to execute </para>    </detaileddescription>
+    <location file="src/runtime/qasmparser.hpp" line="23" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="23" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classprogram_1ae17b7e99958aa0770b1cc4a8c20acbfe" prot="public" virt="non-virtual"><scope>program</scope><name>anchors</name></member>
+      <member refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" prot="public" virt="non-virtual"><scope>program</scope><name>lines</name></member>
+      <member refid="classprogram_1a0772f916267bdb0eb4d803ea472e8e74" prot="public" virt="non-virtual"><scope>program</scope><name>program</name></member>
+      <member refid="classprogram_1ada37ef3924e109909695ef9bd55f54b3" prot="public" virt="non-virtual"><scope>program</scope><name>push</name></member>
+      <member refid="classprogram_1a40b1420af44c92684d8ecc035f8d004c" prot="public" virt="non-virtual"><scope>program</scope><name>push</name></member>
+      <member refid="classprogram_1a31e130840978c25ba94a6ff2b192011c" prot="public" virt="non-virtual"><scope>program</scope><name>~program</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

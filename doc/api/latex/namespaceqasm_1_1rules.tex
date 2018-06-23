@@ -1,0 +1,91 @@
+\hypertarget{namespaceqasm_1_1rules}{}\section{qasm\+:\+:rules Namespace Reference}
+\label{namespaceqasm_1_1rules}\index{qasm\+::rules@{qasm\+::rules}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_a26247b01755121860f87e5a26d9bd391}{try\+\_\+parse\+\_\+subcircuit\+\_\+application} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_aa583e7fb674ce302c13e04802c0ac371}{try\+\_\+parse\+\_\+gate\+\_\+application} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_abe4777fa00a61066da5591048a9cbf54}{try\+\_\+parse\+\_\+debug} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_a5da8b5fa16a6eec3576f64c509a43ffd}{try\+\_\+parse\+\_\+measurement} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_a1e0101b23fdb03759ca22f831662a88b}{try\+\_\+parse\+\_\+declaration} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_ac9cd78216b8e48a2d5aa625d99240cb9}{try\+\_\+parse\+\_\+label} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_abe391ee7a042e770f440498767f889ba}{try\+\_\+parse\+\_\+include} (\hyperlink{classprogram}{program} \&prog, \hyperlink{classlexical_1_1lexer}{lexical\+::lexer} \&tokenizer, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_af40aa89c9f5235a7d2e94af2de62a42b}{try\+\_\+parse\+\_\+rule} (\hyperlink{classprogram}{program} \&prog, \hyperlink{classlexical_1_1lexer}{lexical\+::lexer} \&tokenizer, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{qasm\+::rules@{qasm\+::rules}!try\+\_\+parse\+\_\+debug@{try\+\_\+parse\+\_\+debug}}
+\index{try\+\_\+parse\+\_\+debug@{try\+\_\+parse\+\_\+debug}!qasm\+::rules@{qasm\+::rules}}
+\subsubsection[{\texorpdfstring{try\+\_\+parse\+\_\+debug(program \&prog, std\+::vector$<$ lexical\+::match $>$ \&tokens)}{try_parse_debug(program &prog, std::vector< lexical::match > &tokens)}}]{\setlength{\rightskip}{0pt plus 5cm}bool qasm\+::rules\+::try\+\_\+parse\+\_\+debug (
+\begin{DoxyParamCaption}
+\item[{{\bf program} \&}]{prog, }
+\item[{std\+::vector$<$ {\bf lexical\+::match} $>$ \&}]{tokens}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceqasm_1_1rules_abe4777fa00a61066da5591048a9cbf54}{}\label{namespaceqasm_1_1rules_abe4777fa00a61066da5591048a9cbf54}
+Parse debug\+: Print Name; \index{qasm\+::rules@{qasm\+::rules}!try\+\_\+parse\+\_\+declaration@{try\+\_\+parse\+\_\+declaration}}
+\index{try\+\_\+parse\+\_\+declaration@{try\+\_\+parse\+\_\+declaration}!qasm\+::rules@{qasm\+::rules}}
+\subsubsection[{\texorpdfstring{try\+\_\+parse\+\_\+declaration(program \&prog, std\+::vector$<$ lexical\+::match $>$ \&tokens)}{try_parse_declaration(program &prog, std::vector< lexical::match > &tokens)}}]{\setlength{\rightskip}{0pt plus 5cm}bool qasm\+::rules\+::try\+\_\+parse\+\_\+declaration (
+\begin{DoxyParamCaption}
+\item[{{\bf program} \&}]{prog, }
+\item[{std\+::vector$<$ {\bf lexical\+::match} $>$ \&}]{tokens}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceqasm_1_1rules_a1e0101b23fdb03759ca22f831662a88b}{}\label{namespaceqasm_1_1rules_a1e0101b23fdb03759ca22f831662a88b}
+Parse declaration\+: Name Name \textquotesingle{}\mbox{[}\textquotesingle{} Integer+ \textquotesingle{}\mbox{]}\textquotesingle{}; \index{qasm\+::rules@{qasm\+::rules}!try\+\_\+parse\+\_\+gate\+\_\+application@{try\+\_\+parse\+\_\+gate\+\_\+application}}
+\index{try\+\_\+parse\+\_\+gate\+\_\+application@{try\+\_\+parse\+\_\+gate\+\_\+application}!qasm\+::rules@{qasm\+::rules}}
+\subsubsection[{\texorpdfstring{try\+\_\+parse\+\_\+gate\+\_\+application(program \&prog, std\+::vector$<$ lexical\+::match $>$ \&tokens)}{try_parse_gate_application(program &prog, std::vector< lexical::match > &tokens)}}]{\setlength{\rightskip}{0pt plus 5cm}bool qasm\+::rules\+::try\+\_\+parse\+\_\+gate\+\_\+application (
+\begin{DoxyParamCaption}
+\item[{{\bf program} \&}]{prog, }
+\item[{std\+::vector$<$ {\bf lexical\+::match} $>$ \&}]{tokens}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceqasm_1_1rules_aa583e7fb674ce302c13e04802c0ac371}{}\label{namespaceqasm_1_1rules_aa583e7fb674ce302c13e04802c0ac371}
+Parse gate\+\_\+application\+: Name Index$\ast$; \index{qasm\+::rules@{qasm\+::rules}!try\+\_\+parse\+\_\+include@{try\+\_\+parse\+\_\+include}}
+\index{try\+\_\+parse\+\_\+include@{try\+\_\+parse\+\_\+include}!qasm\+::rules@{qasm\+::rules}}
+\subsubsection[{\texorpdfstring{try\+\_\+parse\+\_\+include(program \&prog, lexical\+::lexer \&tokenizer, std\+::vector$<$ lexical\+::match $>$ \&tokens)}{try_parse_include(program &prog, lexical::lexer &tokenizer, std::vector< lexical::match > &tokens)}}]{\setlength{\rightskip}{0pt plus 5cm}bool qasm\+::rules\+::try\+\_\+parse\+\_\+include (
+\begin{DoxyParamCaption}
+\item[{{\bf program} \&}]{prog, }
+\item[{{\bf lexical\+::lexer} \&}]{tokenizer, }
+\item[{std\+::vector$<$ {\bf lexical\+::match} $>$ \&}]{tokens}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceqasm_1_1rules_abe391ee7a042e770f440498767f889ba}{}\label{namespaceqasm_1_1rules_abe391ee7a042e770f440498767f889ba}
+Parse include\+: Include String; \index{qasm\+::rules@{qasm\+::rules}!try\+\_\+parse\+\_\+label@{try\+\_\+parse\+\_\+label}}
+\index{try\+\_\+parse\+\_\+label@{try\+\_\+parse\+\_\+label}!qasm\+::rules@{qasm\+::rules}}
+\subsubsection[{\texorpdfstring{try\+\_\+parse\+\_\+label(program \&prog, std\+::vector$<$ lexical\+::match $>$ \&tokens)}{try_parse_label(program &prog, std::vector< lexical::match > &tokens)}}]{\setlength{\rightskip}{0pt plus 5cm}bool qasm\+::rules\+::try\+\_\+parse\+\_\+label (
+\begin{DoxyParamCaption}
+\item[{{\bf program} \&}]{prog, }
+\item[{std\+::vector$<$ {\bf lexical\+::match} $>$ \&}]{tokens}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceqasm_1_1rules_ac9cd78216b8e48a2d5aa625d99240cb9}{}\label{namespaceqasm_1_1rules_ac9cd78216b8e48a2d5aa625d99240cb9}
+Parse label\+: Dot Name ; \index{qasm\+::rules@{qasm\+::rules}!try\+\_\+parse\+\_\+measurement@{try\+\_\+parse\+\_\+measurement}}
+\index{try\+\_\+parse\+\_\+measurement@{try\+\_\+parse\+\_\+measurement}!qasm\+::rules@{qasm\+::rules}}
+\subsubsection[{\texorpdfstring{try\+\_\+parse\+\_\+measurement(program \&prog, std\+::vector$<$ lexical\+::match $>$ \&tokens)}{try_parse_measurement(program &prog, std::vector< lexical::match > &tokens)}}]{\setlength{\rightskip}{0pt plus 5cm}bool qasm\+::rules\+::try\+\_\+parse\+\_\+measurement (
+\begin{DoxyParamCaption}
+\item[{{\bf program} \&}]{prog, }
+\item[{std\+::vector$<$ {\bf lexical\+::match} $>$ \&}]{tokens}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceqasm_1_1rules_a5da8b5fa16a6eec3576f64c509a43ffd}{}\label{namespaceqasm_1_1rules_a5da8b5fa16a6eec3576f64c509a43ffd}
+Parse measurement\+: Measure Index Mapping Index; \index{qasm\+::rules@{qasm\+::rules}!try\+\_\+parse\+\_\+rule@{try\+\_\+parse\+\_\+rule}}
+\index{try\+\_\+parse\+\_\+rule@{try\+\_\+parse\+\_\+rule}!qasm\+::rules@{qasm\+::rules}}
+\subsubsection[{\texorpdfstring{try\+\_\+parse\+\_\+rule(program \&prog, lexical\+::lexer \&tokenizer, std\+::vector$<$ lexical\+::match $>$ \&tokens)}{try_parse_rule(program &prog, lexical::lexer &tokenizer, std::vector< lexical::match > &tokens)}}]{\setlength{\rightskip}{0pt plus 5cm}bool qasm\+::rules\+::try\+\_\+parse\+\_\+rule (
+\begin{DoxyParamCaption}
+\item[{{\bf program} \&}]{prog, }
+\item[{{\bf lexical\+::lexer} \&}]{tokenizer, }
+\item[{std\+::vector$<$ {\bf lexical\+::match} $>$ \&}]{tokens}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceqasm_1_1rules_af40aa89c9f5235a7d2e94af2de62a42b}{}\label{namespaceqasm_1_1rules_af40aa89c9f5235a7d2e94af2de62a42b}
+Test every rule against a list of matched tokens, If rule is matched an instruction is added to the program and this returns true \index{qasm\+::rules@{qasm\+::rules}!try\+\_\+parse\+\_\+subcircuit\+\_\+application@{try\+\_\+parse\+\_\+subcircuit\+\_\+application}}
+\index{try\+\_\+parse\+\_\+subcircuit\+\_\+application@{try\+\_\+parse\+\_\+subcircuit\+\_\+application}!qasm\+::rules@{qasm\+::rules}}
+\subsubsection[{\texorpdfstring{try\+\_\+parse\+\_\+subcircuit\+\_\+application(program \&prog, std\+::vector$<$ lexical\+::match $>$ \&tokens)}{try_parse_subcircuit_application(program &prog, std::vector< lexical::match > &tokens)}}]{\setlength{\rightskip}{0pt plus 5cm}bool qasm\+::rules\+::try\+\_\+parse\+\_\+subcircuit\+\_\+application (
+\begin{DoxyParamCaption}
+\item[{{\bf program} \&}]{prog, }
+\item[{std\+::vector$<$ {\bf lexical\+::match} $>$ \&}]{tokens}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceqasm_1_1rules_a26247b01755121860f87e5a26d9bd391}{}\label{namespaceqasm_1_1rules_a26247b01755121860f87e5a26d9bd391}
+Parse subcircuit\+\_\+application\+: Name Name$\ast$; 

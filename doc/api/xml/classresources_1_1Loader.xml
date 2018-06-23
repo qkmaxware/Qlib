@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classresources_1_1Loader" kind="class" language="Java" prot="public">
+    <compoundname>resources::Loader</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classresources_1_1Loader_1a007cafedd048831f9d18ba4b8ac768ff" prot="public" static="yes" mutable="no">
+        <type><ref refid="classresources_1_1Loader" kindref="compound">Loader</ref></type>
+        <definition>Loader resources.Loader.resources</definition>
+        <argsstring></argsstring>
+        <name>resources</name>
+        <initializer>= new <ref refid="classresources_1_1Loader" kindref="compound">Loader</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/resources/Loader.java" line="19" column="1" bodyfile="src/ide/src/resources/Loader.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classresources_1_1Loader_1ab70c0099b53e57b6ce64132291e4f29d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Image</type>
+        <definition>Image resources.Loader.load</definition>
+        <argsstring>(String resource)</argsstring>
+        <name>load</name>
+        <param>
+          <type>String</type>
+          <declname>resource</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/resources/Loader.java" line="21" column="1" bodyfile="src/ide/src/resources/Loader.java" bodystart="21" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>halse </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="276">
+        <label>resources.Loader</label>
+        <link refid="classresources_1_1Loader"/>
+        <childnode refid="276" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/ide/src/resources/Loader.java" line="17" column="1" bodyfile="src/ide/src/resources/Loader.java" bodystart="17" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classresources_1_1Loader_1ab70c0099b53e57b6ce64132291e4f29d" prot="public" virt="non-virtual"><scope>resources::Loader</scope><name>load</name></member>
+      <member refid="classresources_1_1Loader_1a007cafedd048831f9d18ba4b8ac768ff" prot="public" virt="non-virtual"><scope>resources::Loader</scope><name>resources</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

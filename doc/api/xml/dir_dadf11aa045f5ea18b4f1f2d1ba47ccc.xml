@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_dadf11aa045f5ea18b4f1f2d1ba47ccc" kind="dir">
+    <compoundname>src/ide/src/resources</compoundname>
+    <innerfile refid="Loader_8java">Loader.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ide/src/resources/"/>
+  </compounddef>
+</doxygen>

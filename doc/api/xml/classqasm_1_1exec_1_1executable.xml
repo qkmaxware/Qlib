@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqasm_1_1exec_1_1executable" kind="class" language="C++" prot="public">
+    <compoundname>qasm::exec::executable</compoundname>
+    <derivedcompoundref refid="classqasm_1_1exec_1_1apply__gate" prot="public" virt="non-virtual">qasm::exec::apply_gate</derivedcompoundref>
+    <derivedcompoundref refid="classqasm_1_1exec_1_1apply__subcircuit" prot="public" virt="non-virtual">qasm::exec::apply_subcircuit</derivedcompoundref>
+    <derivedcompoundref refid="classqasm_1_1exec_1_1declaration" prot="public" virt="non-virtual">qasm::exec::declaration</derivedcompoundref>
+    <derivedcompoundref refid="classqasm_1_1exec_1_1measurement" prot="public" virt="non-virtual">qasm::exec::measurement</derivedcompoundref>
+    <derivedcompoundref refid="classqasm_1_1exec_1_1print" prot="public" virt="non-virtual">qasm::exec::print</derivedcompoundref>
+    <includes refid="runtime_8hpp" local="no">runtime.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqasm_1_1exec_1_1executable_1ad07f864a889edb0777ebbb1bc1628121" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void qasm::exec::executable::invoke_rootprogram</definition>
+        <argsstring>(runtime::environment &amp;env)</argsstring>
+        <name>invoke_rootprogram</name>
+        <reimplementedby refid="classqasm_1_1exec_1_1apply__gate_1a4ab94a7feee1830b4be52a487e9cdef5">invoke_rootprogram</reimplementedby>
+        <reimplementedby refid="classqasm_1_1exec_1_1print_1ae803c9f70d2a1afd3bbe6e0520e9678b">invoke_rootprogram</reimplementedby>
+        <reimplementedby refid="classqasm_1_1exec_1_1measurement_1aefa96cf86f31c40a75fbc46924c94bb8">invoke_rootprogram</reimplementedby>
+        <reimplementedby refid="classqasm_1_1exec_1_1declaration_1a4f1396fca212fb0ce984d2cea90df0a8">invoke_rootprogram</reimplementedby>
+        <param>
+          <type><ref refid="classqasm_1_1runtime_1_1environment" kindref="compound">runtime::environment</ref> &amp;</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run instruction&apos;s primary operation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="162" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="162" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void qasm::exec::executable::invoke_subprogram</definition>
+        <argsstring>(runtime::environment &amp;env)</argsstring>
+        <name>invoke_subprogram</name>
+        <param>
+          <type><ref refid="classqasm_1_1runtime_1_1environment" kindref="compound">runtime::environment</ref> &amp;</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run instruction&apos;s secondary operation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="166" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="166" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Represents an instruction that can be run </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="248">
+        <label>qasm::exec::apply_subcircuit</label>
+        <link refid="classqasm_1_1exec_1_1apply__subcircuit"/>
+        <childnode refid="246" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="250">
+        <label>qasm::exec::measurement</label>
+        <link refid="classqasm_1_1exec_1_1measurement"/>
+        <childnode refid="246" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>qasm::exec::apply_gate</label>
+        <link refid="classqasm_1_1exec_1_1apply__gate"/>
+        <childnode refid="246" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>qasm::exec::executable</label>
+        <link refid="classqasm_1_1exec_1_1executable"/>
+      </node>
+      <node id="251">
+        <label>qasm::exec::print</label>
+        <link refid="classqasm_1_1exec_1_1print"/>
+        <childnode refid="246" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>qasm::exec::declaration</label>
+        <link refid="classqasm_1_1exec_1_1declaration"/>
+        <childnode refid="246" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/runtime/runtime.hpp" line="156" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="156" bodyend="167"/>
+    <listofallmembers>
+      <member refid="classqasm_1_1exec_1_1executable_1ad07f864a889edb0777ebbb1bc1628121" prot="public" virt="virtual"><scope>qasm::exec::executable</scope><name>invoke_rootprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" prot="public" virt="virtual"><scope>qasm::exec::executable</scope><name>invoke_subprogram</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

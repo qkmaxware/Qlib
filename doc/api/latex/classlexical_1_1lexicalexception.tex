@@ -1,0 +1,96 @@
+\hypertarget{classlexical_1_1lexicalexception}{}\section{lexical\+:\+:lexicalexception Class Reference}
+\label{classlexical_1_1lexicalexception}\index{lexical\+::lexicalexception@{lexical\+::lexicalexception}}
+
+
+{\ttfamily \#include $<$lexer.\+hpp$>$}
+
+
+
+Inheritance diagram for lexical\+:\+:lexicalexception\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classlexical_1_1lexicalexception__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for lexical\+:\+:lexicalexception\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classlexical_1_1lexicalexception__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlexical_1_1lexicalexception_a669fdad5e3c9cfc1404b3cff07f2cc2c}{lexicalexception} (\hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} row, \hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} column, std\+::string \hyperlink{classlexical_1_1lexicalexception_a19c8e9b165ad5d2250d2a26c920462e3}{file}, std\+::string message)
+\item 
+const char $\ast$ \hyperlink{classlexical_1_1lexicalexception_a9d12fd196a80d2be20dfa616c063ffb4}{what} () const   throw ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} \hyperlink{classlexical_1_1lexicalexception_a785417c9f8375670d73567db6562b74a}{r}
+\item 
+\hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} \hyperlink{classlexical_1_1lexicalexception_a7d7aeb97fa40e634950b28a3d48a9b51}{c}
+\item 
+std\+::string \hyperlink{classlexical_1_1lexicalexception_a19c8e9b165ad5d2250d2a26c920462e3}{file}
+\item 
+std\+::string \hyperlink{classlexical_1_1lexicalexception_aca4560509cfad8e43c42def571bba550}{msg}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classlexical_1_1lexicalexception_ad116c229b30998b6630210dd86e8b10f}{what\+\_\+message}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing an exception generated from the lexer 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{lexical\+::lexicalexception@{lexical\+::lexicalexception}!lexicalexception@{lexicalexception}}
+\index{lexicalexception@{lexicalexception}!lexical\+::lexicalexception@{lexical\+::lexicalexception}}
+\subsubsection[{\texorpdfstring{lexicalexception(ulong row, ulong column, std\+::string file, std\+::string message)}{lexicalexception(ulong row, ulong column, std::string file, std::string message)}}]{\setlength{\rightskip}{0pt plus 5cm}lexical\+::lexicalexception\+::lexicalexception (
+\begin{DoxyParamCaption}
+\item[{{\bf ulong}}]{row, }
+\item[{{\bf ulong}}]{column, }
+\item[{std\+::string}]{file, }
+\item[{std\+::string}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classlexical_1_1lexicalexception_a669fdad5e3c9cfc1404b3cff07f2cc2c}{}\label{classlexical_1_1lexicalexception_a669fdad5e3c9cfc1404b3cff07f2cc2c}
+Create a new exception 
+
+\subsection{Member Function Documentation}
+\index{lexical\+::lexicalexception@{lexical\+::lexicalexception}!what@{what}}
+\index{what@{what}!lexical\+::lexicalexception@{lexical\+::lexicalexception}}
+\subsubsection[{\texorpdfstring{what() const }{what() const }}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ lexical\+::lexicalexception\+::what (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classlexical_1_1lexicalexception_a9d12fd196a80d2be20dfa616c063ffb4}{}\label{classlexical_1_1lexicalexception_a9d12fd196a80d2be20dfa616c063ffb4}
+Print the message 
+
+\subsection{Member Data Documentation}
+\index{lexical\+::lexicalexception@{lexical\+::lexicalexception}!c@{c}}
+\index{c@{c}!lexical\+::lexicalexception@{lexical\+::lexicalexception}}
+\subsubsection[{\texorpdfstring{c}{c}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ulong} lexical\+::lexicalexception\+::c}\hypertarget{classlexical_1_1lexicalexception_a7d7aeb97fa40e634950b28a3d48a9b51}{}\label{classlexical_1_1lexicalexception_a7d7aeb97fa40e634950b28a3d48a9b51}
+Column exception occurred on \index{lexical\+::lexicalexception@{lexical\+::lexicalexception}!file@{file}}
+\index{file@{file}!lexical\+::lexicalexception@{lexical\+::lexicalexception}}
+\subsubsection[{\texorpdfstring{file}{file}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string lexical\+::lexicalexception\+::file}\hypertarget{classlexical_1_1lexicalexception_a19c8e9b165ad5d2250d2a26c920462e3}{}\label{classlexical_1_1lexicalexception_a19c8e9b165ad5d2250d2a26c920462e3}
+File name exception occurred in \index{lexical\+::lexicalexception@{lexical\+::lexicalexception}!msg@{msg}}
+\index{msg@{msg}!lexical\+::lexicalexception@{lexical\+::lexicalexception}}
+\subsubsection[{\texorpdfstring{msg}{msg}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string lexical\+::lexicalexception\+::msg}\hypertarget{classlexical_1_1lexicalexception_aca4560509cfad8e43c42def571bba550}{}\label{classlexical_1_1lexicalexception_aca4560509cfad8e43c42def571bba550}
+Message for this exception \index{lexical\+::lexicalexception@{lexical\+::lexicalexception}!r@{r}}
+\index{r@{r}!lexical\+::lexicalexception@{lexical\+::lexicalexception}}
+\subsubsection[{\texorpdfstring{r}{r}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ulong} lexical\+::lexicalexception\+::r}\hypertarget{classlexical_1_1lexicalexception_a785417c9f8375670d73567db6562b74a}{}\label{classlexical_1_1lexicalexception_a785417c9f8375670d73567db6562b74a}
+Row exception occurred on \index{lexical\+::lexicalexception@{lexical\+::lexicalexception}!what\+\_\+message@{what\+\_\+message}}
+\index{what\+\_\+message@{what\+\_\+message}!lexical\+::lexicalexception@{lexical\+::lexicalexception}}
+\subsubsection[{\texorpdfstring{what\+\_\+message}{what_message}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string lexical\+::lexicalexception\+::what\+\_\+message\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classlexical_1_1lexicalexception_ad116c229b30998b6630210dd86e8b10f}{}\label{classlexical_1_1lexicalexception_ad116c229b30998b6630210dd86e8b10f}
+Combined exception message 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{lexer_8hpp}{lexer.\+hpp}\end{DoxyCompactItemize}

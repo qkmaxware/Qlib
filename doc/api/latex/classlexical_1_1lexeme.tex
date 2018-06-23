@@ -1,0 +1,81 @@
+\hypertarget{classlexical_1_1lexeme}{}\section{lexical\+:\+:lexeme Class Reference}
+\label{classlexical_1_1lexeme}\index{lexical\+::lexeme@{lexical\+::lexeme}}
+
+
+{\ttfamily \#include $<$lexer.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlexical_1_1lexeme_a2a69e7860946ccb70ab8f8ca0970ca42}{lexeme} (std\+::string \hyperlink{classlexical_1_1lexeme_a43f46025bbc59bdaff06d4e4efc979c1}{name}, std\+::string \hyperlink{classlexical_1_1lexeme_a8265b6f1e87790a3ca3fcd82b5543726}{pattern})
+\item 
+bool \hyperlink{classlexical_1_1lexeme_a26fd45099f7e056db7f39cd9f222cf97}{matches} (std\+::string\+::iterator begin, std\+::string\+::iterator end)
+\item 
+\hyperlink{structlexical_1_1match}{match} \hyperlink{classlexical_1_1lexeme_ade092b47d889c338daa38902409747ab}{extract} (\hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} row, \hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} column, std\+::string\+::iterator begin, std\+::string\+::iterator end)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classlexical_1_1lexeme_a43f46025bbc59bdaff06d4e4efc979c1}{name}
+\item 
+std\+::string \hyperlink{classlexical_1_1lexeme_a8265b6f1e87790a3ca3fcd82b5543726}{pattern}
+\item 
+std\+::regex \hyperlink{classlexical_1_1lexeme_a2185fc486b1c6c75a57a3e30155eed15}{rx}
+\item 
+bool \hyperlink{classlexical_1_1lexeme_accc3564ad951f163e3cf4dd8f93ede15}{skippable}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing a lexical literal using regular expressions 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{lexical\+::lexeme@{lexical\+::lexeme}!lexeme@{lexeme}}
+\index{lexeme@{lexeme}!lexical\+::lexeme@{lexical\+::lexeme}}
+\subsubsection[{\texorpdfstring{lexeme(std\+::string name, std\+::string pattern)}{lexeme(std::string name, std::string pattern)}}]{\setlength{\rightskip}{0pt plus 5cm}lexical\+::lexeme\+::lexeme (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{std\+::string}]{pattern}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classlexical_1_1lexeme_a2a69e7860946ccb70ab8f8ca0970ca42}{}\label{classlexical_1_1lexeme_a2a69e7860946ccb70ab8f8ca0970ca42}
+Create a lexeme from a name and regex pattern 
+
+\subsection{Member Function Documentation}
+\index{lexical\+::lexeme@{lexical\+::lexeme}!extract@{extract}}
+\index{extract@{extract}!lexical\+::lexeme@{lexical\+::lexeme}}
+\subsubsection[{\texorpdfstring{extract(ulong row, ulong column, std\+::string\+::iterator begin, std\+::string\+::iterator end)}{extract(ulong row, ulong column, std::string::iterator begin, std::string::iterator end)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf match} lexical\+::lexeme\+::extract (
+\begin{DoxyParamCaption}
+\item[{{\bf ulong}}]{row, }
+\item[{{\bf ulong}}]{column, }
+\item[{std\+::string\+::iterator}]{begin, }
+\item[{std\+::string\+::iterator}]{end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classlexical_1_1lexeme_ade092b47d889c338daa38902409747ab}{}\label{classlexical_1_1lexeme_ade092b47d889c338daa38902409747ab}
+Extract a match from a string \index{lexical\+::lexeme@{lexical\+::lexeme}!matches@{matches}}
+\index{matches@{matches}!lexical\+::lexeme@{lexical\+::lexeme}}
+\subsubsection[{\texorpdfstring{matches(std\+::string\+::iterator begin, std\+::string\+::iterator end)}{matches(std::string::iterator begin, std::string::iterator end)}}]{\setlength{\rightskip}{0pt plus 5cm}bool lexical\+::lexeme\+::matches (
+\begin{DoxyParamCaption}
+\item[{std\+::string\+::iterator}]{begin, }
+\item[{std\+::string\+::iterator}]{end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classlexical_1_1lexeme_a26fd45099f7e056db7f39cd9f222cf97}{}\label{classlexical_1_1lexeme_a26fd45099f7e056db7f39cd9f222cf97}
+Test if this lexeme can be extracted from a string 
+
+\subsection{Member Data Documentation}
+\index{lexical\+::lexeme@{lexical\+::lexeme}!name@{name}}
+\index{name@{name}!lexical\+::lexeme@{lexical\+::lexeme}}
+\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string lexical\+::lexeme\+::name}\hypertarget{classlexical_1_1lexeme_a43f46025bbc59bdaff06d4e4efc979c1}{}\label{classlexical_1_1lexeme_a43f46025bbc59bdaff06d4e4efc979c1}
+Lexeme name \index{lexical\+::lexeme@{lexical\+::lexeme}!pattern@{pattern}}
+\index{pattern@{pattern}!lexical\+::lexeme@{lexical\+::lexeme}}
+\subsubsection[{\texorpdfstring{pattern}{pattern}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string lexical\+::lexeme\+::pattern}\hypertarget{classlexical_1_1lexeme_a8265b6f1e87790a3ca3fcd82b5543726}{}\label{classlexical_1_1lexeme_a8265b6f1e87790a3ca3fcd82b5543726}
+Lexeme regular expression pattern \index{lexical\+::lexeme@{lexical\+::lexeme}!rx@{rx}}
+\index{rx@{rx}!lexical\+::lexeme@{lexical\+::lexeme}}
+\subsubsection[{\texorpdfstring{rx}{rx}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::regex lexical\+::lexeme\+::rx}\hypertarget{classlexical_1_1lexeme_a2185fc486b1c6c75a57a3e30155eed15}{}\label{classlexical_1_1lexeme_a2185fc486b1c6c75a57a3e30155eed15}
+Compiled regex lexeme \index{lexical\+::lexeme@{lexical\+::lexeme}!skippable@{skippable}}
+\index{skippable@{skippable}!lexical\+::lexeme@{lexical\+::lexeme}}
+\subsubsection[{\texorpdfstring{skippable}{skippable}}]{\setlength{\rightskip}{0pt plus 5cm}bool lexical\+::lexeme\+::skippable}\hypertarget{classlexical_1_1lexeme_accc3564ad951f163e3cf4dd8f93ede15}{}\label{classlexical_1_1lexeme_accc3564ad951f163e3cf4dd8f93ede15}
+Flag to test if this lexeme can be skipped in results 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{lexer_8hpp}{lexer.\+hpp}\end{DoxyCompactItemize}

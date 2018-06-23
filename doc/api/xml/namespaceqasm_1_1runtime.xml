@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceqasm_1_1runtime" kind="namespace" language="C++">
+    <compoundname>qasm::runtime</compoundname>
+    <innerclass refid="classqasm_1_1runtime_1_1environment" prot="public">qasm::runtime::environment</innerclass>
+    <innerclass refid="classqasm_1_1runtime_1_1runtimeexception" prot="public">qasm::runtime::runtimeexception</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/runtime/runtime.hpp" line="19" column="1"/>
+  </compounddef>
+</doxygen>

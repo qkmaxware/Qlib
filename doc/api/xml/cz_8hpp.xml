@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cz_8hpp" kind="file" language="C++">
+    <compoundname>cz.hpp</compoundname>
+    <includes refid="controlledgate_8hpp" local="yes">controlledgate.hpp</includes>
+    <includes refid="pauliZ_8hpp" local="yes">pauliZ.hpp</includes>
+    <includedby refid="standard__gates_8hpp" local="yes">src/core/quantum/standard_gates.hpp</includedby>
+    <incdepgraph>
+      <node id="1310">
+        <label>limits</label>
+      </node>
+      <node id="1307">
+        <label>./../../general/object.hpp</label>
+        <link refid="object_8hpp"/>
+        <childnode refid="1308" relation="include">
+        </childnode>
+        <childnode refid="1311" relation="include">
+        </childnode>
+        <childnode refid="1312" relation="include">
+        </childnode>
+        <childnode refid="1313" relation="include">
+        </childnode>
+        <childnode refid="1314" relation="include">
+        </childnode>
+        <childnode refid="1315" relation="include">
+        </childnode>
+      </node>
+      <node id="1309">
+        <label>stdint.h</label>
+      </node>
+      <node id="1318">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1319">
+        <label>./../../math/matrix.hpp</label>
+        <link refid="matrix_8hpp"/>
+        <childnode refid="1316" relation="include">
+        </childnode>
+        <childnode refid="1307" relation="include">
+        </childnode>
+        <childnode refid="1320" relation="include">
+        </childnode>
+        <childnode refid="1321" relation="include">
+        </childnode>
+        <childnode refid="1317" relation="include">
+        </childnode>
+        <childnode refid="1312" relation="include">
+        </childnode>
+      </node>
+      <node id="1306">
+        <label>./igate.hpp</label>
+        <link refid="igate_8hpp"/>
+        <childnode refid="1307" relation="include">
+        </childnode>
+        <childnode refid="1316" relation="include">
+        </childnode>
+        <childnode refid="1319" relation="include">
+        </childnode>
+      </node>
+      <node id="1320">
+        <label>stdexcept</label>
+      </node>
+      <node id="1313">
+        <label>exception</label>
+      </node>
+      <node id="1314">
+        <label>random</label>
+      </node>
+      <node id="1322">
+        <label>onequbitgate.hpp</label>
+        <link refid="onequbitgate_8hpp"/>
+        <childnode refid="1306" relation="include">
+        </childnode>
+        <childnode refid="1312" relation="include">
+        </childnode>
+      </node>
+      <node id="1316">
+        <label>./../../math/complex.hpp</label>
+        <link refid="complex_8hpp"/>
+        <childnode refid="1307" relation="include">
+        </childnode>
+        <childnode refid="1317" relation="include">
+        </childnode>
+        <childnode refid="1318" relation="include">
+        </childnode>
+        <childnode refid="1312" relation="include">
+        </childnode>
+      </node>
+      <node id="1321">
+        <label>vector</label>
+      </node>
+      <node id="1312">
+        <label>sstream</label>
+      </node>
+      <node id="1323">
+        <label>pauliZ.hpp</label>
+        <link refid="pauliZ_8hpp"/>
+        <childnode refid="1322" relation="include">
+        </childnode>
+      </node>
+      <node id="1304">
+        <label>src/core/quantum/gates/cz.hpp</label>
+        <link refid="cz.hpp"/>
+        <childnode refid="1305" relation="include">
+        </childnode>
+        <childnode refid="1323" relation="include">
+        </childnode>
+      </node>
+      <node id="1317">
+        <label>math.h</label>
+      </node>
+      <node id="1311">
+        <label>iostream</label>
+      </node>
+      <node id="1315">
+        <label>chrono</label>
+      </node>
+      <node id="1308">
+        <label>./types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="1309" relation="include">
+        </childnode>
+        <childnode refid="1310" relation="include">
+        </childnode>
+      </node>
+      <node id="1305">
+        <label>controlledgate.hpp</label>
+        <link refid="controlledgate_8hpp"/>
+        <childnode refid="1306" relation="include">
+        </childnode>
+        <childnode refid="1322" relation="include">
+        </childnode>
+        <childnode refid="1312" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1328">
+        <label>src/runtime/main.cpp</label>
+        <link refid="runtime_2main_8cpp"/>
+      </node>
+      <node id="1329">
+        <label>src/runtime/runtime.hpp</label>
+        <link refid="runtime_8hpp"/>
+        <childnode refid="1330" relation="include">
+        </childnode>
+        <childnode refid="1328" relation="include">
+        </childnode>
+      </node>
+      <node id="1330">
+        <label>src/runtime/qasmparser.hpp</label>
+        <link refid="qasmparser_8hpp"/>
+        <childnode refid="1328" relation="include">
+        </childnode>
+      </node>
+      <node id="1327">
+        <label>src/core/main.cpp</label>
+        <link refid="core_2main_8cpp"/>
+      </node>
+      <node id="1326">
+        <label>src/core/qlib.h</label>
+        <link refid="qlib_8h"/>
+        <childnode refid="1327" relation="include">
+        </childnode>
+        <childnode refid="1328" relation="include">
+        </childnode>
+        <childnode refid="1329" relation="include">
+        </childnode>
+      </node>
+      <node id="1324">
+        <label>src/core/quantum/gates/cz.hpp</label>
+        <link refid="cz.hpp"/>
+        <childnode refid="1325" relation="include">
+        </childnode>
+      </node>
+      <node id="1325">
+        <label>src/core/quantum/standard_gates.hpp</label>
+        <link refid="standard__gates_8hpp"/>
+        <childnode refid="1326" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceqlib">qlib</innernamespace>
+    <innernamespace refid="namespaceqlib_1_1quantum">qlib::quantum</innernamespace>
+    <innernamespace refid="namespaceqlib_1_1quantum_1_1gates">qlib::quantum::gates</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_QLIB_QUANTUM_GATES_CZ_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_QLIB_QUANTUM_GATES_CZ_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="controlledgate_8hpp" kindref="compound">controlledgate.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pauliZ_8hpp" kindref="compound">pauliZ.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceqlib" kindref="compound">qlib</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">quantum<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">gates<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="namespaceqlib_1_1quantum_1_1gates_1adaffb7ef8207f26d42d8756b38a61fe8" refkind="member"><highlight class="normal"><ref refid="classqlib_1_1quantum_1_1gates_1_1controlledgate" kindref="compound">controlledgate</ref><sp/><ref refid="namespaceqlib_1_1quantum_1_1gates_1adaffb7ef8207f26d42d8756b38a61fe8" kindref="member">CZ</ref><sp/>=<sp/><ref refid="classqlib_1_1quantum_1_1gates_1_1controlledgate" kindref="compound">controlledgate</ref>(</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CZ&quot;</highlight><highlight class="normal">,<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceqlib_1_1quantum_1_1gates_1ad07d8c867d0463c3f66dfa80d5b6b53c" kindref="member">Z</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/core/quantum/gates/cz.hpp"/>
+  </compounddef>
+</doxygen>

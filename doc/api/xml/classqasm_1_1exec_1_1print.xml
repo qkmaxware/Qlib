@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqasm_1_1exec_1_1print" kind="class" language="C++" prot="public">
+    <compoundname>qasm::exec::print</compoundname>
+    <basecompoundref refid="classqasm_1_1exec_1_1executable" prot="public" virt="non-virtual">qasm::exec::executable</basecompoundref>
+    <includes refid="runtime_8hpp" local="no">runtime.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1print_1a8d2e5bc3ca543419f7270f97fea27b9b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string qasm::exec::print::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>What variable to print to console </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="267" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqasm_1_1exec_1_1print_1ac6a07cc31446b99250263e748ac0c60d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qasm::exec::print::print</definition>
+        <argsstring>(string ref)</argsstring>
+        <name>print</name>
+        <param>
+          <type>string</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="269" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="269" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1exec_1_1print_1ae803c9f70d2a1afd3bbe6e0520e9678b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void qasm::exec::print::invoke_rootprogram</definition>
+        <argsstring>(runtime::environment &amp;env)</argsstring>
+        <name>invoke_rootprogram</name>
+        <reimplements refid="classqasm_1_1exec_1_1executable_1ad07f864a889edb0777ebbb1bc1628121">invoke_rootprogram</reimplements>
+        <param>
+          <type><ref refid="classqasm_1_1runtime_1_1environment" kindref="compound">runtime::environment</ref> &amp;</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run instruction&apos;s primary operation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="271" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="271" bodyend="289"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Instruction to print register to console </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="300">
+        <label>qasm::exec::executable</label>
+        <link refid="classqasm_1_1exec_1_1executable"/>
+      </node>
+      <node id="299">
+        <label>qasm::exec::print</label>
+        <link refid="classqasm_1_1exec_1_1print"/>
+        <childnode refid="300" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="302">
+        <label>qasm::exec::executable</label>
+        <link refid="classqasm_1_1exec_1_1executable"/>
+      </node>
+      <node id="301">
+        <label>qasm::exec::print</label>
+        <link refid="classqasm_1_1exec_1_1print"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/runtime.hpp" line="262" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="262" bodyend="290"/>
+    <listofallmembers>
+      <member refid="classqasm_1_1exec_1_1print_1ae803c9f70d2a1afd3bbe6e0520e9678b" prot="public" virt="virtual"><scope>qasm::exec::print</scope><name>invoke_rootprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" prot="public" virt="virtual"><scope>qasm::exec::print</scope><name>invoke_subprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1print_1ac6a07cc31446b99250263e748ac0c60d" prot="public" virt="non-virtual"><scope>qasm::exec::print</scope><name>print</name></member>
+      <member refid="classqasm_1_1exec_1_1print_1a8d2e5bc3ca543419f7270f97fea27b9b" prot="public" virt="non-virtual"><scope>qasm::exec::print</scope><name>reference</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

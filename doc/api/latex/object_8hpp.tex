@@ -1,0 +1,54 @@
+\hypertarget{object_8hpp}{}\section{src/core/general/object.hpp File Reference}
+\label{object_8hpp}\index{src/core/general/object.\+hpp@{src/core/general/object.\+hpp}}
+{\ttfamily \#include \char`\"{}./types.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$exception$>$}\\*
+{\ttfamily \#include $<$random$>$}\\*
+{\ttfamily \#include $<$chrono$>$}\\*
+Include dependency graph for object.\+hpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{object_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{object_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classxobject}{xobject}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{object_8hpp_a64700614995ed98f6edbdb2b491b6374}{\+\_\+\+Q\+L\+I\+B\+\_\+\+G\+E\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+H}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::default\+\_\+random\+\_\+engine \hyperlink{object_8hpp_a52c75811f4e394e7f1818d29ee034307}{rng} (std\+::chrono\+::system\+\_\+clock\+::now().time\+\_\+since\+\_\+epoch().count())
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{object.\+hpp@{object.\+hpp}!\+\_\+\+Q\+L\+I\+B\+\_\+\+G\+E\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+H@{\+\_\+\+Q\+L\+I\+B\+\_\+\+G\+E\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+H}}
+\index{\+\_\+\+Q\+L\+I\+B\+\_\+\+G\+E\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+H@{\+\_\+\+Q\+L\+I\+B\+\_\+\+G\+E\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+H}!object.\+hpp@{object.\+hpp}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Q\+L\+I\+B\+\_\+\+G\+E\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+H}{_QLIB_GEN_OBJECT_H}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+Q\+L\+I\+B\+\_\+\+G\+E\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+H}\hypertarget{object_8hpp_a64700614995ed98f6edbdb2b491b6374}{}\label{object_8hpp_a64700614995ed98f6edbdb2b491b6374}
+
+
+\subsection{Function Documentation}
+\index{object.\+hpp@{object.\+hpp}!rng@{rng}}
+\index{rng@{rng}!object.\+hpp@{object.\+hpp}}
+\subsubsection[{\texorpdfstring{rng(std\+::chrono\+::system\+\_\+clock\+::now().\+time\+\_\+since\+\_\+epoch().\+count())}{rng(std::chrono::system_clock::now().time_since_epoch().count())}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::default\+\_\+random\+\_\+engine rng (
+\begin{DoxyParamCaption}
+\item[{std\+::chrono\+::system\+\_\+clock\+::now().time\+\_\+since\+\_\+epoch().count()}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8hpp_a52c75811f4e394e7f1818d29ee034307}{}\label{object_8hpp_a52c75811f4e394e7f1818d29ee034307}
+Global random number generator, seed is based on current system time 

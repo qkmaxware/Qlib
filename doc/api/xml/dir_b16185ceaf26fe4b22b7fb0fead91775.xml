@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_b16185ceaf26fe4b22b7fb0fead91775" kind="dir">
+    <compoundname>src/core/quantum/systems</compoundname>
+    <innerfile refid="ensemble_8hpp">ensemble.hpp</innerfile>
+    <innerfile refid="qreg_8hpp">qreg.hpp</innerfile>
+    <innerfile refid="qubit_8hpp">qubit.hpp</innerfile>
+    <innerfile refid="system_8hpp">system.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/quantum/systems/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,101 @@
+\hypertarget{classqasm_1_1runtime_1_1environment}{}\section{qasm\+:\+:runtime\+:\+:environment Class Reference}
+\label{classqasm_1_1runtime_1_1environment}\index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
+
+
+{\ttfamily \#include $<$runtime.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqlib_1_1quantum_1_1gates_1_1igate}{igate} $\ast$ \hyperlink{classqasm_1_1runtime_1_1environment_adb75f9df54d04d4f5d51c92093b5d466}{get\+Gate} (string name)
+\item 
+\hyperlink{runtime_8hpp_a20cf870406c99de2d935e3a77b8b60da}{creg} \& \hyperlink{classqasm_1_1runtime_1_1environment_a78ac575d7245e21c65fb31e6585c38cc}{get\+Creg} (string name)
+\item 
+bool \hyperlink{classqasm_1_1runtime_1_1environment_a4cd69bebda4f5957e52168c91654f5f5}{has\+Creg} (string name)
+\item 
+void \hyperlink{classqasm_1_1runtime_1_1environment_a976c4f032feee9c47af587a0f6c759ae}{set\+Creg} (string name, u64 size)
+\item 
+\hyperlink{classqlib_1_1quantum_1_1qreg}{qreg} \& \hyperlink{classqasm_1_1runtime_1_1environment_ae4f47f020b8baf4f94165345f26a6dca}{get\+Qreg} (string name)
+\item 
+bool \hyperlink{classqasm_1_1runtime_1_1environment_a77a8db656f3c5b5a2fcdde9a205deee5}{has\+Qreg} (string name)
+\item 
+void \hyperlink{classqasm_1_1runtime_1_1environment_acd773cf48993b56c9f6b6b353a5a5e6a}{set\+Qreg} (string name, u64 size)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, \hyperlink{classqlib_1_1quantum_1_1qreg}{qreg} $>$ \hyperlink{classqasm_1_1runtime_1_1environment_ae65dc834296334c8b9ea6dd900210881}{quantum\+\_\+registers}
+\item 
+map$<$ string, \hyperlink{runtime_8hpp_a20cf870406c99de2d935e3a77b8b60da}{creg} $>$ \hyperlink{classqasm_1_1runtime_1_1environment_add156869a2a13e2ca877c39e4649757a}{classic\+\_\+registers}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a runtime environment including variable values 
+
+\subsection{Member Function Documentation}
+\index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!get\+Creg@{get\+Creg}}
+\index{get\+Creg@{get\+Creg}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
+\subsubsection[{\texorpdfstring{get\+Creg(string name)}{getCreg(string name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf creg}\& qasm\+::runtime\+::environment\+::get\+Creg (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqasm_1_1runtime_1_1environment_a78ac575d7245e21c65fb31e6585c38cc}{}\label{classqasm_1_1runtime_1_1environment_a78ac575d7245e21c65fb31e6585c38cc}
+Get classic variable from a name \index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!get\+Gate@{get\+Gate}}
+\index{get\+Gate@{get\+Gate}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
+\subsubsection[{\texorpdfstring{get\+Gate(string name)}{getGate(string name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf igate}$\ast$ qasm\+::runtime\+::environment\+::get\+Gate (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqasm_1_1runtime_1_1environment_adb75f9df54d04d4f5d51c92093b5d466}{}\label{classqasm_1_1runtime_1_1environment_adb75f9df54d04d4f5d51c92093b5d466}
+For a given name, return the associated gate object \index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!get\+Qreg@{get\+Qreg}}
+\index{get\+Qreg@{get\+Qreg}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
+\subsubsection[{\texorpdfstring{get\+Qreg(string name)}{getQreg(string name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf qreg}\& qasm\+::runtime\+::environment\+::get\+Qreg (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqasm_1_1runtime_1_1environment_ae4f47f020b8baf4f94165345f26a6dca}{}\label{classqasm_1_1runtime_1_1environment_ae4f47f020b8baf4f94165345f26a6dca}
+Get quantum variable from a name \index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!has\+Creg@{has\+Creg}}
+\index{has\+Creg@{has\+Creg}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
+\subsubsection[{\texorpdfstring{has\+Creg(string name)}{hasCreg(string name)}}]{\setlength{\rightskip}{0pt plus 5cm}bool qasm\+::runtime\+::environment\+::has\+Creg (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqasm_1_1runtime_1_1environment_a4cd69bebda4f5957e52168c91654f5f5}{}\label{classqasm_1_1runtime_1_1environment_a4cd69bebda4f5957e52168c91654f5f5}
+Test if a classic variable with name exists \index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!has\+Qreg@{has\+Qreg}}
+\index{has\+Qreg@{has\+Qreg}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
+\subsubsection[{\texorpdfstring{has\+Qreg(string name)}{hasQreg(string name)}}]{\setlength{\rightskip}{0pt plus 5cm}bool qasm\+::runtime\+::environment\+::has\+Qreg (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqasm_1_1runtime_1_1environment_a77a8db656f3c5b5a2fcdde9a205deee5}{}\label{classqasm_1_1runtime_1_1environment_a77a8db656f3c5b5a2fcdde9a205deee5}
+Test if a quantum variable with name exists \index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!set\+Creg@{set\+Creg}}
+\index{set\+Creg@{set\+Creg}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
+\subsubsection[{\texorpdfstring{set\+Creg(string name, u64 size)}{setCreg(string name, u64 size)}}]{\setlength{\rightskip}{0pt plus 5cm}void qasm\+::runtime\+::environment\+::set\+Creg (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{u64}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqasm_1_1runtime_1_1environment_a976c4f032feee9c47af587a0f6c759ae}{}\label{classqasm_1_1runtime_1_1environment_a976c4f032feee9c47af587a0f6c759ae}
+Bind a classic variable to a name \index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!set\+Qreg@{set\+Qreg}}
+\index{set\+Qreg@{set\+Qreg}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
+\subsubsection[{\texorpdfstring{set\+Qreg(string name, u64 size)}{setQreg(string name, u64 size)}}]{\setlength{\rightskip}{0pt plus 5cm}void qasm\+::runtime\+::environment\+::set\+Qreg (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{u64}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqasm_1_1runtime_1_1environment_acd773cf48993b56c9f6b6b353a5a5e6a}{}\label{classqasm_1_1runtime_1_1environment_acd773cf48993b56c9f6b6b353a5a5e6a}
+Bind a quantum variable to a name 
+
+\subsection{Member Data Documentation}
+\index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!classic\+\_\+registers@{classic\+\_\+registers}}
+\index{classic\+\_\+registers@{classic\+\_\+registers}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
+\subsubsection[{\texorpdfstring{classic\+\_\+registers}{classic_registers}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string,{\bf creg}$>$ qasm\+::runtime\+::environment\+::classic\+\_\+registers\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqasm_1_1runtime_1_1environment_add156869a2a13e2ca877c39e4649757a}{}\label{classqasm_1_1runtime_1_1environment_add156869a2a13e2ca877c39e4649757a}
+List of assigned classic varaibles \index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!quantum\+\_\+registers@{quantum\+\_\+registers}}
+\index{quantum\+\_\+registers@{quantum\+\_\+registers}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
+\subsubsection[{\texorpdfstring{quantum\+\_\+registers}{quantum_registers}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string,{\bf qreg}$>$ qasm\+::runtime\+::environment\+::quantum\+\_\+registers\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqasm_1_1runtime_1_1environment_ae65dc834296334c8b9ea6dd900210881}{}\label{classqasm_1_1runtime_1_1environment_ae65dc834296334c8b9ea6dd900210881}
+List of assigned quantum variables 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{runtime_8hpp}{runtime.\+hpp}\end{DoxyCompactItemize}

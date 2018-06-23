@@ -1,0 +1,126 @@
+\hypertarget{classqlib_1_1ide_1_1FileManager}{}\section{qlib.\+ide.\+File\+Manager Class Reference}
+\label{classqlib_1_1ide_1_1FileManager}\index{qlib.\+ide.\+File\+Manager@{qlib.\+ide.\+File\+Manager}}
+
+
+Collaboration diagram for qlib.\+ide.\+File\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classqlib_1_1ide_1_1FileManager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classqlib_1_1ide_1_1FileManager_1_1Tab}{Tab}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqlib_1_1ide_1_1FileManager_ad6a89c4b0f958a34dd7450ab8826f647}{File\+Manager} ()
+\item 
+void \hyperlink{classqlib_1_1ide_1_1FileManager_a9b6923afb970442de71a07405abc6751}{empty} ()
+\item 
+void \hyperlink{classqlib_1_1ide_1_1FileManager_a1a740e6ad8726d1caad504a4b7a53859}{open} (String file)
+\item 
+void \hyperlink{classqlib_1_1ide_1_1FileManager_a043ddff761f62666fa4f6959b7e116c3}{save} ()
+\item 
+void \hyperlink{classqlib_1_1ide_1_1FileManager_acefb35297452dccb1f7a2cbebd08b0fc}{close} ()
+\item 
+File \hyperlink{classqlib_1_1ide_1_1FileManager_afa5d713317aa1248f7c102dd086e53b8}{get\+Active} ()
+\item 
+J\+Tabbed\+Pane \hyperlink{classqlib_1_1ide_1_1FileManager_a986392eebf1b4d6df69bf3eca688d926}{get\+Panel} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+J\+Tabbed\+Pane \hyperlink{classqlib_1_1ide_1_1FileManager_ad30cb7a3ba1310ab8cb38f11bb84f0c1}{tabs}
+\item 
+Linked\+List$<$ \hyperlink{classqlib_1_1ide_1_1FileManager_1_1Tab}{Tab} $>$ \hyperlink{classqlib_1_1ide_1_1FileManager_af28dcef61bad9a512d4dfba62d9288a3}{open\+Tabs} = new Linked\+List$<$\hyperlink{classqlib_1_1ide_1_1FileManager_1_1Tab}{Tab}$>$()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for managing files and tabs in the I\+DE \begin{DoxyAuthor}{Author}
+halse 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}!File\+Manager@{File\+Manager}}
+\index{File\+Manager@{File\+Manager}!qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}}
+\subsubsection[{\texorpdfstring{File\+Manager()}{FileManager()}}]{\setlength{\rightskip}{0pt plus 5cm}qlib.\+ide.\+File\+Manager.\+File\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1FileManager_ad6a89c4b0f958a34dd7450ab8826f647}{}\label{classqlib_1_1ide_1_1FileManager_ad6a89c4b0f958a34dd7450ab8826f647}
+Create a file manager 
+
+\subsection{Member Function Documentation}
+\index{qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}!close@{close}}
+\index{close@{close}!qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}}
+\subsubsection[{\texorpdfstring{close()}{close()}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+File\+Manager.\+close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1FileManager_acefb35297452dccb1f7a2cbebd08b0fc}{}\label{classqlib_1_1ide_1_1FileManager_acefb35297452dccb1f7a2cbebd08b0fc}
+Close the current file \index{qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}!empty@{empty}}
+\index{empty@{empty}!qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}}
+\subsubsection[{\texorpdfstring{empty()}{empty()}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+File\+Manager.\+empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1FileManager_a9b6923afb970442de71a07405abc6751}{}\label{classqlib_1_1ide_1_1FileManager_a9b6923afb970442de71a07405abc6751}
+Create an empty file \index{qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}!get\+Active@{get\+Active}}
+\index{get\+Active@{get\+Active}!qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Active()}{getActive()}}]{\setlength{\rightskip}{0pt plus 5cm}File qlib.\+ide.\+File\+Manager.\+get\+Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1FileManager_afa5d713317aa1248f7c102dd086e53b8}{}\label{classqlib_1_1ide_1_1FileManager_afa5d713317aa1248f7c102dd086e53b8}
+Get the current file \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}!get\+Panel@{get\+Panel}}
+\index{get\+Panel@{get\+Panel}!qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Panel()}{getPanel()}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Tabbed\+Pane qlib.\+ide.\+File\+Manager.\+get\+Panel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1FileManager_a986392eebf1b4d6df69bf3eca688d926}{}\label{classqlib_1_1ide_1_1FileManager_a986392eebf1b4d6df69bf3eca688d926}
+Get the internal reference to the tabbed panel \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}!open@{open}}
+\index{open@{open}!qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}}
+\subsubsection[{\texorpdfstring{open(\+String file)}{open(String file)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+File\+Manager.\+open (
+\begin{DoxyParamCaption}
+\item[{String}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1FileManager_a1a740e6ad8726d1caad504a4b7a53859}{}\label{classqlib_1_1ide_1_1FileManager_a1a740e6ad8726d1caad504a4b7a53859}
+Open a file in the editor 
+\begin{DoxyParams}{Parameters}
+{\em file} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}!save@{save}}
+\index{save@{save}!qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}}
+\subsubsection[{\texorpdfstring{save()}{save()}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+File\+Manager.\+save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1FileManager_a043ddff761f62666fa4f6959b7e116c3}{}\label{classqlib_1_1ide_1_1FileManager_a043ddff761f62666fa4f6959b7e116c3}
+Save the current file 
+
+\subsection{Member Data Documentation}
+\index{qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}!open\+Tabs@{open\+Tabs}}
+\index{open\+Tabs@{open\+Tabs}!qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}}
+\subsubsection[{\texorpdfstring{open\+Tabs}{openTabs}}]{\setlength{\rightskip}{0pt plus 5cm}Linked\+List$<${\bf Tab}$>$ qlib.\+ide.\+File\+Manager.\+open\+Tabs = new Linked\+List$<${\bf Tab}$>$()\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1FileManager_af28dcef61bad9a512d4dfba62d9288a3}{}\label{classqlib_1_1ide_1_1FileManager_af28dcef61bad9a512d4dfba62d9288a3}
+List of tab data \index{qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}!tabs@{tabs}}
+\index{tabs@{tabs}!qlib\+::ide\+::\+File\+Manager@{qlib\+::ide\+::\+File\+Manager}}
+\subsubsection[{\texorpdfstring{tabs}{tabs}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Tabbed\+Pane qlib.\+ide.\+File\+Manager.\+tabs\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1FileManager_ad30cb7a3ba1310ab8cb38f11bb84f0c1}{}\label{classqlib_1_1ide_1_1FileManager_ad30cb7a3ba1310ab8cb38f11bb84f0c1}
+Internal reference to a tabbed panel 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/ide/src/qlib/ide/\hyperlink{FileManager_8java}{File\+Manager.\+java}\end{DoxyCompactItemize}

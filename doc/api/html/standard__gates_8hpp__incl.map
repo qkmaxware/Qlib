@@ -1,0 +1,20 @@
+<map id="src/core/quantum/standard_gates.hpp" name="src/core/quantum/standard_gates.hpp">
+<area shape="rect" id="node2" href="$ident_8hpp.html" title="./gates/ident.hpp" alt="" coords="197,95,315,121"/>
+<area shape="rect" id="node20" href="$hadamard_8hpp.html" title="./gates/hadamard.hpp" alt="" coords="25,95,173,121"/>
+<area shape="rect" id="node21" href="$pauliX_8hpp.html" title="./gates/pauliX.hpp" alt="" coords="746,169,873,196"/>
+<area shape="rect" id="node22" href="$pauliY_8hpp.html" title="./gates/pauliY.hpp" alt="" coords="291,169,418,196"/>
+<area shape="rect" id="node23" href="$pauliZ_8hpp.html" title="./gates/pauliZ.hpp" alt="" coords="442,169,569,196"/>
+<area shape="rect" id="node24" href="$phase_8hpp.html" title="./gates/phase.hpp" alt="" coords="38,169,165,196"/>
+<area shape="rect" id="node26" href="$cnot_8hpp.html" title="./gates/cnot.hpp" alt="" coords="702,95,818,121"/>
+<area shape="rect" id="node28" href="$cy_8hpp.html" title="./gates/cy.hpp" alt="" coords="391,95,497,121"/>
+<area shape="rect" id="node29" href="$cz_8hpp.html" title="./gates/cz.hpp" alt="" coords="573,95,678,121"/>
+<area shape="rect" id="node30" href="$toffoli_8hpp.html" title="./gates/toffoli.hpp" alt="" coords="893,95,1016,121"/>
+<area shape="rect" id="node3" href="$onequbitgate_8hpp.html" title="onequbitgate.hpp" alt="" coords="294,244,415,271"/>
+<area shape="rect" id="node4" href="$igate_8hpp.html" title="./igate.hpp" alt="" coords="737,319,820,345"/>
+<area shape="rect" id="node5" href="$object_8hpp.html" title="./../../general/object.hpp" alt="" coords="928,543,1088,569"/>
+<area shape="rect" id="node14" href="$complex_8hpp.html" title="File containing complex number class and operators. " alt="" coords="739,468,901,495"/>
+<area shape="rect" id="node17" href="$matrix_8hpp.html" title="./../../math/matrix.hpp" alt="" coords="627,393,775,420"/>
+<area shape="rect" id="node6" href="$types_8h.html" title="./types.h" alt="" coords="971,617,1045,644"/>
+<area shape="rect" id="node27" href="$controlledgate_8hpp.html" title="controlledgate.hpp" alt="" coords="593,169,721,196"/>
+<area shape="rect" id="node31" href="$controlled2gate_8hpp.html" title="controlled2gate.hpp" alt="" coords="897,169,1031,196"/>
+</map>

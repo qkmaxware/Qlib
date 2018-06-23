@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="parser_8hpp" kind="file" language="C++">
+    <compoundname>parser.hpp</compoundname>
+    <includes refid="lexer_8hpp" local="yes">./lexer.hpp</includes>
+    <includedby refid="runtime_2main_8cpp" local="yes">src/runtime/main.cpp</includedby>
+    <incdepgraph>
+      <node id="1754">
+        <label>regex</label>
+      </node>
+      <node id="1756">
+        <label>exception</label>
+      </node>
+      <node id="1751">
+        <label>src/runtime/parser.hpp</label>
+        <link refid="parser.hpp"/>
+        <childnode refid="1752" relation="include">
+        </childnode>
+      </node>
+      <node id="1755">
+        <label>vector</label>
+      </node>
+      <node id="1757">
+        <label>sstream</label>
+      </node>
+      <node id="1753">
+        <label>iostream</label>
+      </node>
+      <node id="1752">
+        <label>./lexer.hpp</label>
+        <link refid="lexer_8hpp"/>
+        <childnode refid="1753" relation="include">
+        </childnode>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1755" relation="include">
+        </childnode>
+        <childnode refid="1756" relation="include">
+        </childnode>
+        <childnode refid="1757" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1759">
+        <label>src/runtime/main.cpp</label>
+        <link refid="runtime_2main_8cpp"/>
+      </node>
+      <node id="1758">
+        <label>src/runtime/parser.hpp</label>
+        <link refid="parser.hpp"/>
+        <childnode refid="1759" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_PARSING_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_PARSING_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lexer_8hpp" kindref="compound">./lexer.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">namespace<sp/>parsing<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">class<sp/>repeat<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>private:</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>long<sp/>min;</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>long<sp/>max;</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>hasMax;</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>public:</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>repeat():<sp/>min(1),<sp/>max(1),<sp/>hasMax(true)<sp/>{}</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>repeat(long<sp/>min):<sp/>min(min),<sp/>max(0),<sp/>hasMax(false)<sp/>{}</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>repeat(long<sp/>min,<sp/>long<sp/>max)<sp/>:<sp/>min(min),<sp/>max(max),<sp/>hasMax(true)<sp/>{}</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>inRange(long<sp/>x){</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>x<sp/>&gt;=<sp/>min<sp/>&amp;&amp;<sp/>(!hasMax<sp/>||<sp/>x<sp/>&lt;=<sp/>max);<sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"></highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>underMin(long<sp/>x){</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>x<sp/>&lt;<sp/>min;</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>overMax(long<sp/>x){</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>hasMax<sp/>&amp;&amp;<sp/>x<sp/>&gt;<sp/>max;</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>hasRepetitionsRemaining(long<sp/>x){</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>underMin(x)<sp/>||<sp/>inRange(x);</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"></highlight></codeline>
+<codeline lineno="40"><highlight class="comment">const<sp/>repeat<sp/>KLEENE_STAR<sp/><sp/><sp/><sp/><sp/>=<sp/>repeat(0);</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">const<sp/>repeat<sp/>KLEENE_PLUS<sp/><sp/><sp/><sp/><sp/>=<sp/>repeat(1);</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">const<sp/>repeat<sp/>KLEENE_ONCE<sp/><sp/><sp/><sp/><sp/>=<sp/>repeat(1,1);</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">const<sp/>repeat<sp/>KLEENE_OPTIONAL<sp/>=<sp/>repeat(0,1);</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"></highlight></codeline>
+<codeline lineno="45"><highlight class="comment">class<sp/>rule<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/>private:</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/>public:</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>repeat&amp;<sp/>repetitions()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"></highlight></codeline>
+<codeline lineno="51"><highlight class="comment">class<sp/>choice<sp/>:<sp/>public<sp/>rule<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/>private:</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rule&amp;<sp/>left;</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rule&amp;<sp/>right;</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>repeat<sp/>rep;</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"></highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/>public:</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>choice(rule&amp;<sp/>left,<sp/>rule&amp;<sp/>right)<sp/>:<sp/>left(left),<sp/>right(right)<sp/>{}</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>choice(repeat<sp/>rep,<sp/>rule&amp;<sp/>left,<sp/>rule&amp;<sp/>right)<sp/>:<sp/>rep(rep),<sp/>left(left),<sp/>right(right)<sp/>{}</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"></highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rule&amp;<sp/>car(){</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>left;</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"></highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rule&amp;<sp/>cdr(){</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>right;</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"></highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>repeat&amp;<sp/>repetitions()<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>rep;</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"></highlight></codeline>
+<codeline lineno="74"><highlight class="comment">class<sp/>sequence<sp/>:<sp/>public<sp/>rule<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/><sp/>private:</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rule&amp;<sp/>first;</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rule&amp;<sp/>next;</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>repeat<sp/>rep;</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"></highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/><sp/>public:</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sequence(rule&amp;<sp/>first,<sp/>rule&amp;<sp/>next)<sp/>:<sp/>first(first),<sp/>next(next)<sp/>{}</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sequence(repeat<sp/>rep,<sp/>rule&amp;<sp/>first,<sp/>rule&amp;<sp/>next)<sp/>:<sp/>rep(rep),<sp/>first(first),<sp/>next(next)<sp/>{}</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"></highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rule&amp;<sp/>car(){</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>first;</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"></highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rule&amp;<sp/>cdr(){</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>next;</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"></highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>repeat&amp;<sp/>repetitions()<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>rep;</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"></highlight></codeline>
+<codeline lineno="97"><highlight class="comment">class<sp/>literal<sp/>:<sp/>public<sp/>rule<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/><sp/><sp/><sp/>private:</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lexical::lexeme&amp;<sp/>lex;</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>repeat<sp/>rep;</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"></highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/><sp/><sp/>public:</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>literal(lexical::lexeme&amp;<sp/>lex):<sp/>lex(lex)<sp/>{}</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>literal(lexical::lexeme&amp;<sp/>lex,<sp/>repeat<sp/>rep):<sp/>lex(lex),<sp/>rep(rep)<sp/>{}</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"></highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lexical::lexeme&amp;<sp/>token(){</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>lex;</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"></highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>repeat&amp;<sp/>repetitions()<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>rep;</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"></highlight></codeline>
+<codeline lineno="115"><highlight class="comment">//<sp/>-----------------------------------------------------------</highlight></codeline>
+<codeline lineno="116"><highlight class="comment">//<sp/>KLEENE<sp/>operators</highlight></codeline>
+<codeline lineno="117"><highlight class="comment">//<sp/>-----------------------------------------------------------</highlight></codeline>
+<codeline lineno="118"><highlight class="comment">literal<sp/>operator<sp/>*(literal&amp;<sp/>right){</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>literal(right.token(),<sp/>KLEENE_STAR);</highlight></codeline>
+<codeline lineno="120"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"></highlight></codeline>
+<codeline lineno="122"><highlight class="comment">choice<sp/>operator<sp/>*(choice&amp;<sp/>right){</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>choice(KLEENE_STAR,<sp/>right.car(),<sp/>right.cdr());</highlight></codeline>
+<codeline lineno="124"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"></highlight></codeline>
+<codeline lineno="126"><highlight class="comment">sequence<sp/>operator<sp/>*(sequence&amp;<sp/>right){</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>sequence(KLEENE_STAR,<sp/>right.car(),<sp/>right.cdr());</highlight></codeline>
+<codeline lineno="128"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"></highlight></codeline>
+<codeline lineno="130"><highlight class="comment">literal<sp/>operator<sp/>+(literal&amp;<sp/>right){</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>literal(right.token(),KLEENE_PLUS);</highlight></codeline>
+<codeline lineno="132"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"></highlight></codeline>
+<codeline lineno="134"><highlight class="comment">sequence<sp/>operator<sp/>+(sequence&amp;<sp/>right){</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>sequence(KLEENE_PLUS,<sp/>right.car(),<sp/>right.cdr());</highlight></codeline>
+<codeline lineno="136"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"></highlight></codeline>
+<codeline lineno="138"><highlight class="comment">choice<sp/>operator<sp/>+(choice&amp;<sp/>right){</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>choice(KLEENE_PLUS,<sp/>right.car(),<sp/>right.cdr());</highlight></codeline>
+<codeline lineno="140"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"></highlight></codeline>
+<codeline lineno="142"><highlight class="comment">literal<sp/>operator<sp/>~(literal&amp;<sp/>right){</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>literal(right.token(),<sp/>KLEENE_OPTIONAL);</highlight></codeline>
+<codeline lineno="144"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"></highlight></codeline>
+<codeline lineno="146"><highlight class="comment">sequence<sp/>operator<sp/>~(sequence&amp;<sp/>right){</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>sequence(KLEENE_OPTIONAL,<sp/>right.car(),<sp/>right.cdr());</highlight></codeline>
+<codeline lineno="148"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"></highlight></codeline>
+<codeline lineno="150"><highlight class="comment">choice<sp/>operator<sp/>~(choice&amp;<sp/>right){</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>choice(KLEENE_OPTIONAL,<sp/>right.car(),<sp/>right.cdr());</highlight></codeline>
+<codeline lineno="152"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"></highlight></codeline>
+<codeline lineno="154"><highlight class="comment">//<sp/>-----------------------------------------------------------</highlight></codeline>
+<codeline lineno="155"><highlight class="comment">//<sp/>Logical<sp/>operators</highlight></codeline>
+<codeline lineno="156"><highlight class="comment">//<sp/>-----------------------------------------------------------</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"></highlight></codeline>
+<codeline lineno="158"><highlight class="comment">sequence<sp/>operator<sp/>&gt;&gt;<sp/>(rule&amp;<sp/>left,<sp/>rule&amp;<sp/>right)<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>sequence(left,<sp/>right);</highlight></codeline>
+<codeline lineno="160"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"></highlight></codeline>
+<codeline lineno="162"><highlight class="comment">choice<sp/>operator<sp/>|<sp/>(rule&amp;<sp/>left,<sp/>rule&amp;<sp/>right)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>choice(left,<sp/>right);</highlight></codeline>
+<codeline lineno="164"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"></highlight></codeline>
+<codeline lineno="166"><highlight class="comment">//<sp/>----------------------------------------------------------</highlight></codeline>
+<codeline lineno="167"><highlight class="comment">//<sp/>Example<sp/>use</highlight></codeline>
+<codeline lineno="168"><highlight class="comment">//<sp/>----------------------------------------------------------</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"></highlight></codeline>
+<codeline lineno="170"><highlight class="comment"></highlight></codeline>
+<codeline lineno="171"><highlight class="comment">choice<sp/>s<sp/>=<sp/>(literal(token)<sp/>&gt;&gt;<sp/>*literal(token2))<sp/>|<sp/>literal(token3);</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"></highlight></codeline>
+<codeline lineno="173"><highlight class="comment"></highlight></codeline>
+<codeline lineno="174"><highlight class="comment">}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/runtime/parser.hpp"/>
+  </compounddef>
+</doxygen>

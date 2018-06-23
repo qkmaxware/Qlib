@@ -1,0 +1,263 @@
+\hypertarget{classqlib_1_1ide_1_1CodeEditor}{}\section{qlib.\+ide.\+Code\+Editor Class Reference}
+\label{classqlib_1_1ide_1_1CodeEditor}\index{qlib.\+ide.\+Code\+Editor@{qlib.\+ide.\+Code\+Editor}}
+
+
+Inheritance diagram for qlib.\+ide.\+Code\+Editor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{classqlib_1_1ide_1_1CodeEditor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for qlib.\+ide.\+Code\+Editor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classqlib_1_1ide_1_1CodeEditor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+interface \hyperlink{interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener}{Change\+Listener}
+\item 
+class \hyperlink{classqlib_1_1ide_1_1CodeEditor_1_1Style}{Style}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqlib_1_1ide_1_1CodeEditor_a9f3e1be7ea989d2011bf7d419341405c}{Code\+Editor} ()
+\item 
+void \hyperlink{classqlib_1_1ide_1_1CodeEditor_a89f62319ae0b01df34fa6ad8f06ddb10}{add\+Change\+Listener} (\hyperlink{interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener}{Change\+Listener} listener)
+\item 
+void \hyperlink{classqlib_1_1ide_1_1CodeEditor_ab6e32fe9c4f6535ee81fe69d4a77c8f2}{remove\+Change\+Listener} (\hyperlink{interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener}{Change\+Listener} listener)
+\item 
+void \hyperlink{classqlib_1_1ide_1_1CodeEditor_aabec5fb27bf75e4bb805240dc22c9875}{set\+Background\+Colour} (Color c)
+\item 
+void \hyperlink{classqlib_1_1ide_1_1CodeEditor_ae1b405cb3544e1869f229e0dbc1a4b0a}{set\+Font\+Colour} (Color c)
+\item 
+void \hyperlink{classqlib_1_1ide_1_1CodeEditor_a8686347c695b958ea8a5e8737cc59a1f}{set\+Text} (String text)
+\item 
+String \hyperlink{classqlib_1_1ide_1_1CodeEditor_a7cf3ac3837b11ee6494d45bb7e3d2435}{get\+Text} ()
+\item 
+void \hyperlink{classqlib_1_1ide_1_1CodeEditor_a65a9670ed0303c4acdaa53b45cc8b5d8}{set\+Font} (Font font)
+\item 
+void \hyperlink{classqlib_1_1ide_1_1CodeEditor_a5a8026e92f259481f31e26dcbab0e5e2}{add\+Style} (String regex, Color text)
+\item 
+void \hyperlink{classqlib_1_1ide_1_1CodeEditor_a50cf32315b6cb4d3358a2d00adbae74a}{add\+Style} (String regex, Color text, Color background)
+\item 
+J\+Text\+Pane \hyperlink{classqlib_1_1ide_1_1CodeEditor_a15327f7a8960ee54f65e4aca0b8e0c69}{get\+Editor} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classqlib_1_1ide_1_1CodeEditor_accee26f5cf7da53ffda849ab6d4741e0}{update\+Numbering} ()
+\item 
+void \hyperlink{classqlib_1_1ide_1_1CodeEditor_a2fccea5703e28988470c1e4634316ac8}{style} (Default\+Styled\+Document \hyperlink{classqlib_1_1ide_1_1CodeEditor_a89cfdfd40de46ae17636669521f7c7e2}{doc})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+J\+Text\+Pane \hyperlink{classqlib_1_1ide_1_1CodeEditor_a7890793e4b90ebe797bb5e368e72e721}{editor}
+\item 
+J\+Text\+Pane \hyperlink{classqlib_1_1ide_1_1CodeEditor_ad9b88b89dc797c2eb6511cb5026b30da}{numbers}
+\item 
+Default\+Styled\+Document \hyperlink{classqlib_1_1ide_1_1CodeEditor_a89cfdfd40de46ae17636669521f7c7e2}{doc}
+\item 
+Linked\+List$<$ \hyperlink{classqlib_1_1ide_1_1CodeEditor_1_1Style}{Style} $>$ \hyperlink{classqlib_1_1ide_1_1CodeEditor_a126eb2c62a3df4b9f9ce29685f7a474d}{styles} = new Linked\+List$<$\hyperlink{classqlib_1_1ide_1_1CodeEditor_1_1Style}{Style}$>$()
+\item 
+Attribute\+Set \hyperlink{classqlib_1_1ide_1_1CodeEditor_a108318be527559a6a6fdc044ce91f379}{none}
+\item 
+Linked\+List$<$ \hyperlink{interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener}{Change\+Listener} $>$ \hyperlink{classqlib_1_1ide_1_1CodeEditor_abbe985cdd77e9feb1818773c377257fb}{on\+Change\+Listeners} = new Linked\+List$<$\hyperlink{interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener}{Change\+Listener}$>$()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing a code editor with line numbering and syntax highlighting \begin{DoxyAuthor}{Author}
+Colin Halseth 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!Code\+Editor@{Code\+Editor}}
+\index{Code\+Editor@{Code\+Editor}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{Code\+Editor()}{CodeEditor()}}]{\setlength{\rightskip}{0pt plus 5cm}qlib.\+ide.\+Code\+Editor.\+Code\+Editor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_a9f3e1be7ea989d2011bf7d419341405c}{}\label{classqlib_1_1ide_1_1CodeEditor_a9f3e1be7ea989d2011bf7d419341405c}
+Create a new code editor 
+
+\subsection{Member Function Documentation}
+\index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!add\+Change\+Listener@{add\+Change\+Listener}}
+\index{add\+Change\+Listener@{add\+Change\+Listener}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{add\+Change\+Listener(\+Change\+Listener listener)}{addChangeListener(ChangeListener listener)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Code\+Editor.\+add\+Change\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Change\+Listener}}]{listener}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_a89f62319ae0b01df34fa6ad8f06ddb10}{}\label{classqlib_1_1ide_1_1CodeEditor_a89f62319ae0b01df34fa6ad8f06ddb10}
+Add a change listener 
+\begin{DoxyParams}{Parameters}
+{\em listener} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!add\+Style@{add\+Style}}
+\index{add\+Style@{add\+Style}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{add\+Style(\+String regex, Color text)}{addStyle(String regex, Color text)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Code\+Editor.\+add\+Style (
+\begin{DoxyParamCaption}
+\item[{String}]{regex, }
+\item[{Color}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_a5a8026e92f259481f31e26dcbab0e5e2}{}\label{classqlib_1_1ide_1_1CodeEditor_a5a8026e92f259481f31e26dcbab0e5e2}
+Add style for regex 
+\begin{DoxyParams}{Parameters}
+{\em regex} & \\
+\hline
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!add\+Style@{add\+Style}}
+\index{add\+Style@{add\+Style}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{add\+Style(\+String regex, Color text, Color background)}{addStyle(String regex, Color text, Color background)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Code\+Editor.\+add\+Style (
+\begin{DoxyParamCaption}
+\item[{String}]{regex, }
+\item[{Color}]{text, }
+\item[{Color}]{background}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_a50cf32315b6cb4d3358a2d00adbae74a}{}\label{classqlib_1_1ide_1_1CodeEditor_a50cf32315b6cb4d3358a2d00adbae74a}
+Add style for regex 
+\begin{DoxyParams}{Parameters}
+{\em regex} & \\
+\hline
+{\em text} & \\
+\hline
+{\em background} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!get\+Editor@{get\+Editor}}
+\index{get\+Editor@{get\+Editor}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{get\+Editor()}{getEditor()}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Text\+Pane qlib.\+ide.\+Code\+Editor.\+get\+Editor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_a15327f7a8960ee54f65e4aca0b8e0c69}{}\label{classqlib_1_1ide_1_1CodeEditor_a15327f7a8960ee54f65e4aca0b8e0c69}
+Get the internal editor panel \begin{DoxyReturn}{Returns}
+J\+Text\+Pane 
+\end{DoxyReturn}
+\index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!get\+Text@{get\+Text}}
+\index{get\+Text@{get\+Text}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{get\+Text()}{getText()}}]{\setlength{\rightskip}{0pt plus 5cm}String qlib.\+ide.\+Code\+Editor.\+get\+Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_a7cf3ac3837b11ee6494d45bb7e3d2435}{}\label{classqlib_1_1ide_1_1CodeEditor_a7cf3ac3837b11ee6494d45bb7e3d2435}
+Get the editor text \begin{DoxyReturn}{Returns}
+text 
+\end{DoxyReturn}
+\index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!remove\+Change\+Listener@{remove\+Change\+Listener}}
+\index{remove\+Change\+Listener@{remove\+Change\+Listener}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{remove\+Change\+Listener(\+Change\+Listener listener)}{removeChangeListener(ChangeListener listener)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Code\+Editor.\+remove\+Change\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Change\+Listener}}]{listener}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_ab6e32fe9c4f6535ee81fe69d4a77c8f2}{}\label{classqlib_1_1ide_1_1CodeEditor_ab6e32fe9c4f6535ee81fe69d4a77c8f2}
+Remove a change listener 
+\begin{DoxyParams}{Parameters}
+{\em listener} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!set\+Background\+Colour@{set\+Background\+Colour}}
+\index{set\+Background\+Colour@{set\+Background\+Colour}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{set\+Background\+Colour(\+Color c)}{setBackgroundColour(Color c)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Code\+Editor.\+set\+Background\+Colour (
+\begin{DoxyParamCaption}
+\item[{Color}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_aabec5fb27bf75e4bb805240dc22c9875}{}\label{classqlib_1_1ide_1_1CodeEditor_aabec5fb27bf75e4bb805240dc22c9875}
+Set the editor background colour 
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!set\+Font@{set\+Font}}
+\index{set\+Font@{set\+Font}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{set\+Font(\+Font font)}{setFont(Font font)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Code\+Editor.\+set\+Font (
+\begin{DoxyParamCaption}
+\item[{Font}]{font}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_a65a9670ed0303c4acdaa53b45cc8b5d8}{}\label{classqlib_1_1ide_1_1CodeEditor_a65a9670ed0303c4acdaa53b45cc8b5d8}
+Set the font used by the code editor 
+\begin{DoxyParams}{Parameters}
+{\em font} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!set\+Font\+Colour@{set\+Font\+Colour}}
+\index{set\+Font\+Colour@{set\+Font\+Colour}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{set\+Font\+Colour(\+Color c)}{setFontColour(Color c)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Code\+Editor.\+set\+Font\+Colour (
+\begin{DoxyParamCaption}
+\item[{Color}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_ae1b405cb3544e1869f229e0dbc1a4b0a}{}\label{classqlib_1_1ide_1_1CodeEditor_ae1b405cb3544e1869f229e0dbc1a4b0a}
+Set the editor font colour 
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!set\+Text@{set\+Text}}
+\index{set\+Text@{set\+Text}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{set\+Text(\+String text)}{setText(String text)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Code\+Editor.\+set\+Text (
+\begin{DoxyParamCaption}
+\item[{String}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_a8686347c695b958ea8a5e8737cc59a1f}{}\label{classqlib_1_1ide_1_1CodeEditor_a8686347c695b958ea8a5e8737cc59a1f}
+Set the editor text 
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!style@{style}}
+\index{style@{style}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{style(\+Default\+Styled\+Document doc)}{style(DefaultStyledDocument doc)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Code\+Editor.\+style (
+\begin{DoxyParamCaption}
+\item[{Default\+Styled\+Document}]{doc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_a2fccea5703e28988470c1e4634316ac8}{}\label{classqlib_1_1ide_1_1CodeEditor_a2fccea5703e28988470c1e4634316ac8}
+\hyperlink{classqlib_1_1ide_1_1CodeEditor_1_1Style}{Style} the document 
+\begin{DoxyParams}{Parameters}
+{\em doc} & \\
+\hline
+\end{DoxyParams}
+\index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!update\+Numbering@{update\+Numbering}}
+\index{update\+Numbering@{update\+Numbering}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{update\+Numbering()}{updateNumbering()}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Code\+Editor.\+update\+Numbering (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_accee26f5cf7da53ffda849ab6d4741e0}{}\label{classqlib_1_1ide_1_1CodeEditor_accee26f5cf7da53ffda849ab6d4741e0}
+Update the line numbers 
+
+\subsection{Member Data Documentation}
+\index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!doc@{doc}}
+\index{doc@{doc}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{doc}{doc}}]{\setlength{\rightskip}{0pt plus 5cm}Default\+Styled\+Document qlib.\+ide.\+Code\+Editor.\+doc\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_a89cfdfd40de46ae17636669521f7c7e2}{}\label{classqlib_1_1ide_1_1CodeEditor_a89cfdfd40de46ae17636669521f7c7e2}
+Reference to the editor\textquotesingle{}s document \index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!editor@{editor}}
+\index{editor@{editor}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{editor}{editor}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Text\+Pane qlib.\+ide.\+Code\+Editor.\+editor\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_a7890793e4b90ebe797bb5e368e72e721}{}\label{classqlib_1_1ide_1_1CodeEditor_a7890793e4b90ebe797bb5e368e72e721}
+Reference to the editor pane \index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!none@{none}}
+\index{none@{none}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{none}{none}}]{\setlength{\rightskip}{0pt plus 5cm}Attribute\+Set qlib.\+ide.\+Code\+Editor.\+none\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_a108318be527559a6a6fdc044ce91f379}{}\label{classqlib_1_1ide_1_1CodeEditor_a108318be527559a6a6fdc044ce91f379}
+Blank attribute set when no style is chosen \index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!numbers@{numbers}}
+\index{numbers@{numbers}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{numbers}{numbers}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Text\+Pane qlib.\+ide.\+Code\+Editor.\+numbers\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_ad9b88b89dc797c2eb6511cb5026b30da}{}\label{classqlib_1_1ide_1_1CodeEditor_ad9b88b89dc797c2eb6511cb5026b30da}
+Reference to the line number pane \index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!on\+Change\+Listeners@{on\+Change\+Listeners}}
+\index{on\+Change\+Listeners@{on\+Change\+Listeners}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{on\+Change\+Listeners}{onChangeListeners}}]{\setlength{\rightskip}{0pt plus 5cm}Linked\+List$<${\bf Change\+Listener}$>$ qlib.\+ide.\+Code\+Editor.\+on\+Change\+Listeners = new Linked\+List$<${\bf Change\+Listener}$>$()\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_abbe985cdd77e9feb1818773c377257fb}{}\label{classqlib_1_1ide_1_1CodeEditor_abbe985cdd77e9feb1818773c377257fb}
+List of listeners to call when the document is changed \index{qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}!styles@{styles}}
+\index{styles@{styles}!qlib\+::ide\+::\+Code\+Editor@{qlib\+::ide\+::\+Code\+Editor}}
+\subsubsection[{\texorpdfstring{styles}{styles}}]{\setlength{\rightskip}{0pt plus 5cm}Linked\+List$<${\bf Style}$>$ qlib.\+ide.\+Code\+Editor.\+styles = new Linked\+List$<${\bf Style}$>$()\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1ide_1_1CodeEditor_a126eb2c62a3df4b9f9ce29685f7a474d}{}\label{classqlib_1_1ide_1_1CodeEditor_a126eb2c62a3df4b9f9ce29685f7a474d}
+List of style rules 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/ide/src/qlib/ide/\hyperlink{CodeEditor_8java}{Code\+Editor.\+java}\end{DoxyCompactItemize}

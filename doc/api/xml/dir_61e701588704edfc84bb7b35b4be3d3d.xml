@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_61e701588704edfc84bb7b35b4be3d3d" kind="dir">
+    <compoundname>src/core/quantum</compoundname>
+    <innerdir refid="dir_727b8377c3d34501cb09cbc2fa0ab4c8">src/core/quantum/gates</innerdir>
+    <innerdir refid="dir_b16185ceaf26fe4b22b7fb0fead91775">src/core/quantum/systems</innerdir>
+    <innerfile refid="standard__gates_8hpp">standard_gates.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/quantum/"/>
+  </compounddef>
+</doxygen>

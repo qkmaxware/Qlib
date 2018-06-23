@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_69701fbc0bc4ffebc85a335e8fb848b9" kind="dir">
+    <compoundname>src/core/general</compoundname>
+    <innerfile refid="object_8hpp">object.hpp</innerfile>
+    <innerfile refid="types_8h">types.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/general/"/>
+  </compounddef>
+</doxygen>

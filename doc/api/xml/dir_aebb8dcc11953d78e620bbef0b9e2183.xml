@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_aebb8dcc11953d78e620bbef0b9e2183" kind="dir">
+    <compoundname>src/core</compoundname>
+    <innerdir refid="dir_69701fbc0bc4ffebc85a335e8fb848b9">src/core/general</innerdir>
+    <innerdir refid="dir_e235ce117329fd16b24743c07cd49299">src/core/math</innerdir>
+    <innerdir refid="dir_61e701588704edfc84bb7b35b4be3d3d">src/core/quantum</innerdir>
+    <innerfile refid="core_2main_8cpp">main.cpp</innerfile>
+    <innerfile refid="qlib_8h">qlib.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/"/>
+  </compounddef>
+</doxygen>

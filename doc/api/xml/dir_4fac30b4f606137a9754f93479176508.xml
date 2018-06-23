@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_4fac30b4f606137a9754f93479176508" kind="dir">
+    <compoundname>src/ide/src/qlib/ide</compoundname>
+    <innerfile refid="AutoComplete_8java">AutoComplete.java</innerfile>
+    <innerfile refid="CodeEditor_8java">CodeEditor.java</innerfile>
+    <innerfile refid="FileManager_8java">FileManager.java</innerfile>
+    <innerfile refid="IniIO_8java">IniIO.java</innerfile>
+    <innerfile refid="QLibIDE_8java">QLibIDE.java</innerfile>
+    <innerfile refid="QLibRuntime_8java">QLibRuntime.java</innerfile>
+    <innerfile refid="RuntimeReport_8java">RuntimeReport.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ide/src/qlib/ide/"/>
+  </compounddef>
+</doxygen>

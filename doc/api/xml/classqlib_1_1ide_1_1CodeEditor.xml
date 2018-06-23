@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1ide_1_1CodeEditor" kind="class" language="Java" prot="public">
+    <compoundname>qlib::ide::CodeEditor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JPanel</basecompoundref>
+    <innerclass refid="interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener" prot="public">qlib::ide::CodeEditor::ChangeListener</innerclass>
+    <innerclass refid="classqlib_1_1ide_1_1CodeEditor_1_1Style" prot="private">qlib::ide::CodeEditor::Style</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1CodeEditor_1a7890793e4b90ebe797bb5e368e72e721" prot="private" static="no" mutable="no">
+        <type>JTextPane</type>
+        <definition>JTextPane qlib.ide.CodeEditor.editor</definition>
+        <argsstring></argsstring>
+        <name>editor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reference to the editor pane </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="51" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1CodeEditor_1ad9b88b89dc797c2eb6511cb5026b30da" prot="private" static="no" mutable="no">
+        <type>JTextPane</type>
+        <definition>JTextPane qlib.ide.CodeEditor.numbers</definition>
+        <argsstring></argsstring>
+        <name>numbers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reference to the line number pane </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="55" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1CodeEditor_1a89cfdfd40de46ae17636669521f7c7e2" prot="private" static="no" mutable="no">
+        <type>DefaultStyledDocument</type>
+        <definition>DefaultStyledDocument qlib.ide.CodeEditor.doc</definition>
+        <argsstring></argsstring>
+        <name>doc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reference to the editor&apos;s document </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="59" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1CodeEditor_1a126eb2c62a3df4b9f9ce29685f7a474d" prot="private" static="no" mutable="no">
+        <type>LinkedList&lt; <ref refid="classqlib_1_1ide_1_1CodeEditor_1_1Style" kindref="compound">Style</ref> &gt;</type>
+        <definition>LinkedList&lt;Style&gt; qlib.ide.CodeEditor.styles</definition>
+        <argsstring></argsstring>
+        <name>styles</name>
+        <initializer>= new LinkedList&lt;<ref refid="classqlib_1_1ide_1_1CodeEditor_1_1Style" kindref="compound">Style</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of style rules </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="64" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1CodeEditor_1a108318be527559a6a6fdc044ce91f379" prot="private" static="no" mutable="no">
+        <type>AttributeSet</type>
+        <definition>AttributeSet qlib.ide.CodeEditor.none</definition>
+        <argsstring></argsstring>
+        <name>none</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blank attribute set when no style is chosen </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="68" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1CodeEditor_1abbe985cdd77e9feb1818773c377257fb" prot="private" static="no" mutable="no">
+        <type>LinkedList&lt; <ref refid="interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener" kindref="compound">ChangeListener</ref> &gt;</type>
+        <definition>LinkedList&lt;ChangeListener&gt; qlib.ide.CodeEditor.onChangeListeners</definition>
+        <argsstring></argsstring>
+        <name>onChangeListeners</name>
+        <initializer>= new LinkedList&lt;<ref refid="interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener" kindref="compound">ChangeListener</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of listeners to call when the document is changed </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="72" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1ide_1_1CodeEditor_1a9f3e1be7ea989d2011bf7d419341405c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib.ide.CodeEditor.CodeEditor</definition>
+        <argsstring>()</argsstring>
+        <name>CodeEditor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new code editor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="77" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="77" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1CodeEditor_1a89f62319ae0b01df34fa6ad8f06ddb10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.CodeEditor.addChangeListener</definition>
+        <argsstring>(ChangeListener listener)</argsstring>
+        <name>addChangeListener</name>
+        <param>
+          <type><ref refid="interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener" kindref="compound">ChangeListener</ref></type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a change listener <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="162" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="162" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1CodeEditor_1ab6e32fe9c4f6535ee81fe69d4a77c8f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.CodeEditor.removeChangeListener</definition>
+        <argsstring>(ChangeListener listener)</argsstring>
+        <name>removeChangeListener</name>
+        <param>
+          <type><ref refid="interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener" kindref="compound">ChangeListener</ref></type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a change listener <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="170" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="170" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1CodeEditor_1aabec5fb27bf75e4bb805240dc22c9875" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.CodeEditor.setBackgroundColour</definition>
+        <argsstring>(Color c)</argsstring>
+        <name>setBackgroundColour</name>
+        <param>
+          <type>Color</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the editor background colour <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="178" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="178" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1CodeEditor_1ae1b405cb3544e1869f229e0dbc1a4b0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.CodeEditor.setFontColour</definition>
+        <argsstring>(Color c)</argsstring>
+        <name>setFontColour</name>
+        <param>
+          <type>Color</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the editor font colour <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="186" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="186" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1CodeEditor_1a8686347c695b958ea8a5e8737cc59a1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.CodeEditor.setText</definition>
+        <argsstring>(String text)</argsstring>
+        <name>setText</name>
+        <param>
+          <type>String</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the editor text <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="195" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="195" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1CodeEditor_1a7cf3ac3837b11ee6494d45bb7e3d2435" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String qlib.ide.CodeEditor.getText</definition>
+        <argsstring>()</argsstring>
+        <name>getText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the editor text <simplesect kind="return"><para>text </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="203" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="203" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1CodeEditor_1a65a9670ed0303c4acdaa53b45cc8b5d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.CodeEditor.setFont</definition>
+        <argsstring>(Font font)</argsstring>
+        <name>setFont</name>
+        <param>
+          <type>Font</type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the font used by the code editor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="228" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="228" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1CodeEditor_1a5a8026e92f259481f31e26dcbab0e5e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.CodeEditor.addStyle</definition>
+        <argsstring>(String regex, Color text)</argsstring>
+        <name>addStyle</name>
+        <param>
+          <type>String</type>
+          <declname>regex</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add style for regex <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>regex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="240" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="240" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1CodeEditor_1a50cf32315b6cb4d3358a2d00adbae74a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.CodeEditor.addStyle</definition>
+        <argsstring>(String regex, Color text, Color background)</argsstring>
+        <name>addStyle</name>
+        <param>
+          <type>String</type>
+          <declname>regex</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>background</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add style for regex <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>regex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>background</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="250" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="250" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1CodeEditor_1a15327f7a8960ee54f65e4aca0b8e0c69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>JTextPane</type>
+        <definition>JTextPane qlib.ide.CodeEditor.getEditor</definition>
+        <argsstring>()</argsstring>
+        <name>getEditor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the internal editor panel <simplesect kind="return"><para>JTextPane </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="291" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="291" bodyend="293"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classqlib_1_1ide_1_1CodeEditor_1accee26f5cf7da53ffda849ab6d4741e0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.CodeEditor.updateNumbering</definition>
+        <argsstring>()</argsstring>
+        <name>updateNumbering</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the line numbers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="210" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="210" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1ide_1_1CodeEditor_1a2fccea5703e28988470c1e4634316ac8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib.ide.CodeEditor.style</definition>
+        <argsstring>(DefaultStyledDocument doc)</argsstring>
+        <name>style</name>
+        <param>
+          <type>DefaultStyledDocument</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classqlib_1_1ide_1_1CodeEditor_1_1Style" kindref="compound">Style</ref> the document <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>doc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/CodeEditor.java" line="269" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="269" bodyend="285"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class representing a code editor with line numbering and syntax highlighting <simplesect kind="author"><para>Colin Halseth </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="206">
+        <label>JPanel</label>
+      </node>
+      <node id="205">
+        <label>qlib.ide.CodeEditor</label>
+        <link refid="classqlib_1_1ide_1_1CodeEditor"/>
+        <childnode refid="206" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="208">
+        <label>JPanel</label>
+      </node>
+      <node id="211">
+        <label>JTextPane</label>
+      </node>
+      <node id="213">
+        <label>LinkedList&lt; qlib.ide.CodeEditor.ChangeListener &gt;</label>
+      </node>
+      <node id="210">
+        <label>DefaultStyledDocument</label>
+      </node>
+      <node id="209">
+        <label>AttributeSet</label>
+      </node>
+      <node id="212">
+        <label>LinkedList&lt; qlib.ide.CodeEditor.Style &gt;</label>
+      </node>
+      <node id="207">
+        <label>qlib.ide.CodeEditor</label>
+        <link refid="classqlib_1_1ide_1_1CodeEditor"/>
+        <childnode refid="208" relation="public-inheritance">
+        </childnode>
+        <childnode refid="209" relation="usage">
+          <edgelabel>none</edgelabel>
+        </childnode>
+        <childnode refid="210" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="211" relation="usage">
+          <edgelabel>numbers</edgelabel>
+          <edgelabel>editor</edgelabel>
+        </childnode>
+        <childnode refid="212" relation="usage">
+          <edgelabel>styles</edgelabel>
+        </childnode>
+        <childnode refid="213" relation="usage">
+          <edgelabel>onChangeListeners</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/ide/src/qlib/ide/CodeEditor.java" line="29" column="1" bodyfile="src/ide/src/qlib/ide/CodeEditor.java" bodystart="29" bodyend="294"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1a89f62319ae0b01df34fa6ad8f06ddb10" prot="public" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>addChangeListener</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1a5a8026e92f259481f31e26dcbab0e5e2" prot="public" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>addStyle</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1a50cf32315b6cb4d3358a2d00adbae74a" prot="public" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>addStyle</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1a9f3e1be7ea989d2011bf7d419341405c" prot="public" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>CodeEditor</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1a89cfdfd40de46ae17636669521f7c7e2" prot="private" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>doc</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1a7890793e4b90ebe797bb5e368e72e721" prot="private" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>editor</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1a15327f7a8960ee54f65e4aca0b8e0c69" prot="public" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>getEditor</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1a7cf3ac3837b11ee6494d45bb7e3d2435" prot="public" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>getText</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1a108318be527559a6a6fdc044ce91f379" prot="private" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>none</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1ad9b88b89dc797c2eb6511cb5026b30da" prot="private" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>numbers</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1abbe985cdd77e9feb1818773c377257fb" prot="private" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>onChangeListeners</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1ab6e32fe9c4f6535ee81fe69d4a77c8f2" prot="public" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>removeChangeListener</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1aabec5fb27bf75e4bb805240dc22c9875" prot="public" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>setBackgroundColour</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1a65a9670ed0303c4acdaa53b45cc8b5d8" prot="public" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>setFont</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1ae1b405cb3544e1869f229e0dbc1a4b0a" prot="public" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>setFontColour</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1a8686347c695b958ea8a5e8737cc59a1f" prot="public" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>setText</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1a2fccea5703e28988470c1e4634316ac8" prot="private" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>style</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1a126eb2c62a3df4b9f9ce29685f7a474d" prot="private" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>styles</name></member>
+      <member refid="classqlib_1_1ide_1_1CodeEditor_1accee26f5cf7da53ffda849ab6d4741e0" prot="private" virt="non-virtual"><scope>qlib::ide::CodeEditor</scope><name>updateNumbering</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

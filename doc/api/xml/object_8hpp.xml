@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="object_8hpp" kind="file" language="C++">
+    <compoundname>object.hpp</compoundname>
+    <includes refid="types_8h" local="yes">./types.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">exception</includes>
+    <includes local="no">random</includes>
+    <includes local="no">chrono</includes>
+    <includedby refid="qlib_8h" local="yes">src/core/qlib.h</includedby>
+    <includedby refid="complex_8hpp" local="yes">src/core/math/complex.hpp</includedby>
+    <includedby refid="matrix_8hpp" local="yes">src/core/math/matrix.hpp</includedby>
+    <includedby refid="qubit_8hpp" local="yes">src/core/quantum/systems/qubit.hpp</includedby>
+    <includedby refid="igate_8hpp" local="yes">src/core/quantum/gates/igate.hpp</includedby>
+    <includedby refid="system_8hpp" local="yes">src/core/quantum/systems/system.hpp</includedby>
+    <includedby refid="qreg_8hpp" local="yes">src/core/quantum/systems/qreg.hpp</includedby>
+    <incdepgraph>
+      <node id="927">
+        <label>limits</label>
+      </node>
+      <node id="924">
+        <label>src/core/general/object.hpp</label>
+        <link refid="object.hpp"/>
+        <childnode refid="925" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+        <childnode refid="929" relation="include">
+        </childnode>
+        <childnode refid="930" relation="include">
+        </childnode>
+        <childnode refid="931" relation="include">
+        </childnode>
+        <childnode refid="932" relation="include">
+        </childnode>
+      </node>
+      <node id="926">
+        <label>stdint.h</label>
+      </node>
+      <node id="930">
+        <label>exception</label>
+      </node>
+      <node id="931">
+        <label>random</label>
+      </node>
+      <node id="929">
+        <label>sstream</label>
+      </node>
+      <node id="928">
+        <label>iostream</label>
+      </node>
+      <node id="932">
+        <label>chrono</label>
+      </node>
+      <node id="925">
+        <label>./types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="926" relation="include">
+        </childnode>
+        <childnode refid="927" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="936">
+        <label>src/runtime/main.cpp</label>
+        <link refid="runtime_2main_8cpp"/>
+      </node>
+      <node id="933">
+        <label>src/core/general/object.hpp</label>
+        <link refid="object.hpp"/>
+        <childnode refid="934" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="940" relation="include">
+        </childnode>
+        <childnode refid="941" relation="include">
+        </childnode>
+        <childnode refid="942" relation="include">
+        </childnode>
+        <childnode refid="943" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+      </node>
+      <node id="937">
+        <label>src/runtime/runtime.hpp</label>
+        <link refid="runtime_8hpp"/>
+        <childnode refid="938" relation="include">
+        </childnode>
+        <childnode refid="936" relation="include">
+        </childnode>
+      </node>
+      <node id="940">
+        <label>src/core/math/matrix.hpp</label>
+        <link refid="matrix_8hpp"/>
+        <childnode refid="934" relation="include">
+        </childnode>
+        <childnode refid="941" relation="include">
+        </childnode>
+        <childnode refid="942" relation="include">
+        </childnode>
+        <childnode refid="943" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+      </node>
+      <node id="941">
+        <label>src/core/quantum/systems/qubit.hpp</label>
+        <link refid="qubit_8hpp"/>
+        <childnode refid="934" relation="include">
+        </childnode>
+      </node>
+      <node id="938">
+        <label>src/runtime/qasmparser.hpp</label>
+        <link refid="qasmparser_8hpp"/>
+        <childnode refid="936" relation="include">
+        </childnode>
+      </node>
+      <node id="942">
+        <label>src/core/quantum/gates/igate.hpp</label>
+        <link refid="igate_8hpp"/>
+        <childnode refid="941" relation="include">
+        </childnode>
+        <childnode refid="943" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+        <childnode refid="946" relation="include">
+        </childnode>
+        <childnode refid="958" relation="include">
+        </childnode>
+        <childnode refid="959" relation="include">
+        </childnode>
+      </node>
+      <node id="957">
+        <label>src/core/quantum/gates/phase.hpp</label>
+        <link refid="phase_8hpp"/>
+        <childnode refid="948" relation="include">
+        </childnode>
+      </node>
+      <node id="947">
+        <label>src/core/quantum/gates/ident.hpp</label>
+        <link refid="ident_8hpp"/>
+        <childnode refid="948" relation="include">
+        </childnode>
+      </node>
+      <node id="943">
+        <label>src/core/quantum/systems/system.hpp</label>
+        <link refid="system_8hpp"/>
+        <childnode refid="941" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+        <childnode refid="934" relation="include">
+        </childnode>
+        <childnode refid="945" relation="include">
+        </childnode>
+      </node>
+      <node id="935">
+        <label>src/core/main.cpp</label>
+        <link refid="core_2main_8cpp"/>
+      </node>
+      <node id="945">
+        <label>src/core/quantum/systems/ensemble.hpp</label>
+        <link refid="ensemble_8hpp"/>
+        <childnode refid="934" relation="include">
+        </childnode>
+      </node>
+      <node id="946">
+        <label>src/core/quantum/gates/onequbitgate.hpp</label>
+        <link refid="onequbitgate_8hpp"/>
+        <childnode refid="947" relation="include">
+        </childnode>
+        <childnode refid="949" relation="include">
+        </childnode>
+        <childnode refid="950" relation="include">
+        </childnode>
+        <childnode refid="953" relation="include">
+        </childnode>
+        <childnode refid="955" relation="include">
+        </childnode>
+        <childnode refid="957" relation="include">
+        </childnode>
+        <childnode refid="958" relation="include">
+        </childnode>
+        <childnode refid="959" relation="include">
+        </childnode>
+      </node>
+      <node id="952">
+        <label>src/core/quantum/gates/toffoli.hpp</label>
+        <link refid="toffoli_8hpp"/>
+        <childnode refid="948" relation="include">
+        </childnode>
+      </node>
+      <node id="939">
+        <label>src/core/math/complex.hpp</label>
+        <link refid="complex_8hpp"/>
+        <childnode refid="934" relation="include">
+        </childnode>
+        <childnode refid="940" relation="include">
+        </childnode>
+        <childnode refid="941" relation="include">
+        </childnode>
+        <childnode refid="942" relation="include">
+        </childnode>
+        <childnode refid="943" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+      </node>
+      <node id="950">
+        <label>src/core/quantum/gates/pauliX.hpp</label>
+        <link refid="pauliX_8hpp"/>
+        <childnode refid="948" relation="include">
+        </childnode>
+        <childnode refid="951" relation="include">
+        </childnode>
+        <childnode refid="952" relation="include">
+        </childnode>
+      </node>
+      <node id="953">
+        <label>src/core/quantum/gates/pauliY.hpp</label>
+        <link refid="pauliY_8hpp"/>
+        <childnode refid="948" relation="include">
+        </childnode>
+        <childnode refid="954" relation="include">
+        </childnode>
+      </node>
+      <node id="934">
+        <label>src/core/qlib.h</label>
+        <link refid="qlib_8h"/>
+        <childnode refid="935" relation="include">
+        </childnode>
+        <childnode refid="936" relation="include">
+        </childnode>
+        <childnode refid="937" relation="include">
+        </childnode>
+      </node>
+      <node id="951">
+        <label>src/core/quantum/gates/cnot.hpp</label>
+        <link refid="cnot_8hpp"/>
+        <childnode refid="948" relation="include">
+        </childnode>
+      </node>
+      <node id="955">
+        <label>src/core/quantum/gates/pauliZ.hpp</label>
+        <link refid="pauliZ_8hpp"/>
+        <childnode refid="948" relation="include">
+        </childnode>
+        <childnode refid="956" relation="include">
+        </childnode>
+      </node>
+      <node id="944">
+        <label>src/core/quantum/systems/qreg.hpp</label>
+        <link refid="qreg_8hpp"/>
+        <childnode refid="934" relation="include">
+        </childnode>
+      </node>
+      <node id="956">
+        <label>src/core/quantum/gates/cz.hpp</label>
+        <link refid="cz_8hpp"/>
+        <childnode refid="948" relation="include">
+        </childnode>
+      </node>
+      <node id="949">
+        <label>src/core/quantum/gates/hadamard.hpp</label>
+        <link refid="hadamard_8hpp"/>
+        <childnode refid="948" relation="include">
+        </childnode>
+      </node>
+      <node id="948">
+        <label>src/core/quantum/standard_gates.hpp</label>
+        <link refid="standard__gates_8hpp"/>
+        <childnode refid="934" relation="include">
+        </childnode>
+      </node>
+      <node id="954">
+        <label>src/core/quantum/gates/cy.hpp</label>
+        <link refid="cy_8hpp"/>
+        <childnode refid="948" relation="include">
+        </childnode>
+      </node>
+      <node id="958">
+        <label>src/core/quantum/gates/controlledgate.hpp</label>
+        <link refid="controlledgate_8hpp"/>
+        <childnode refid="951" relation="include">
+        </childnode>
+        <childnode refid="954" relation="include">
+        </childnode>
+        <childnode refid="956" relation="include">
+        </childnode>
+      </node>
+      <node id="959">
+        <label>src/core/quantum/gates/controlled2gate.hpp</label>
+        <link refid="controlled2gate_8hpp"/>
+        <childnode refid="952" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxobject" prot="public">xobject</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="object_8hpp_1a64700614995ed98f6edbdb2b491b6374" prot="public" static="no">
+        <name>_QLIB_GEN_OBJECT_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/general/object.hpp" line="10" column="9" bodyfile="src/core/general/object.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="object_8hpp_1a52c75811f4e394e7f1818d29ee034307" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::default_random_engine</type>
+        <definition>std::default_random_engine rng</definition>
+        <argsstring>(std::chrono::system_clock::now().time_since_epoch().count())</argsstring>
+        <name>rng</name>
+        <param>
+          <type>std::chrono::system_clock::now().time_since_epoch().count()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Global random number generator, seed is based on current system time </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/general/object.hpp" line="15" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">./types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;random&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_QLIB_GEN_OBJECT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="object_8hpp_1a64700614995ed98f6edbdb2b491b6374" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_QLIB_GEN_OBJECT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">std::default_random_engine<sp/><ref refid="object_8hpp_1a52c75811f4e394e7f1818d29ee034307" kindref="member">rng</ref>(std::chrono::system_clock::now().time_since_epoch().count());</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classxobject" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxobject" kindref="compound">xobject</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25" refid="classxobject_1ad76243a44c4e4959d3b16bb57d82600d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classxobject_1ad76243a44c4e4959d3b16bb57d82600d" kindref="member">toString</ref>(){</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>sb;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sb.str();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/core/general/object.hpp"/>
+  </compounddef>
+</doxygen>

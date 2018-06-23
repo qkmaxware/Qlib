@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1ide_1_1RuntimeReport" kind="class" language="Java" prot="public">
+    <compoundname>qlib::ide::RuntimeReport</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1RuntimeReport_1a92b04311367af6afee4add7142aebc99" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String qlib.ide.RuntimeReport.output</definition>
+        <argsstring></argsstring>
+        <name>output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Terminal output string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/RuntimeReport.java" line="17" column="1" bodyfile="src/ide/src/qlib/ide/RuntimeReport.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1ide_1_1RuntimeReport_1a7fd9bcb04c31f5b5a9d57acc1bbcb443" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String qlib.ide.RuntimeReport.errors</definition>
+        <argsstring></argsstring>
+        <name>errors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Terminal error string; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/RuntimeReport.java" line="21" column="1" bodyfile="src/ide/src/qlib/ide/RuntimeReport.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1ide_1_1RuntimeReport_1af74d795a13fc8b83eb8076380d115c27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String qlib.ide.RuntimeReport.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print report <simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/RuntimeReport.java" line="27" column="1" bodyfile="src/ide/src/qlib/ide/RuntimeReport.java" bodystart="27" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Report generated from the <ref refid="classqlib_1_1ide_1_1QLibRuntime" kindref="compound">QLibRuntime</ref> class <simplesect kind="author"><para>halse </para></simplesect>
+</para>    </detaileddescription>
+    <location file="src/ide/src/qlib/ide/RuntimeReport.java" line="12" column="1" bodyfile="src/ide/src/qlib/ide/RuntimeReport.java" bodystart="12" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1ide_1_1RuntimeReport_1a7fd9bcb04c31f5b5a9d57acc1bbcb443" prot="public" virt="non-virtual"><scope>qlib::ide::RuntimeReport</scope><name>errors</name></member>
+      <member refid="classqlib_1_1ide_1_1RuntimeReport_1a92b04311367af6afee4add7142aebc99" prot="public" virt="non-virtual"><scope>qlib::ide::RuntimeReport</scope><name>output</name></member>
+      <member refid="classqlib_1_1ide_1_1RuntimeReport_1af74d795a13fc8b83eb8076380d115c27" prot="public" virt="non-virtual"><scope>qlib::ide::RuntimeReport</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

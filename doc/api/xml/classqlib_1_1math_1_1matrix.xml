@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1math_1_1matrix" kind="class" language="C++" prot="public">
+    <compoundname>qlib::math::matrix</compoundname>
+    <basecompoundref refid="classxobject" prot="public" virt="non-virtual">xobject</basecompoundref>
+    <includes refid="matrix_8hpp" local="no">matrix.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classqlib_1_1math_1_1matrix_1ad764d65375ba1e50381f640bdc181c0b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref> &gt;</type>
+        <definition>std::vector&lt;complex&gt; qlib::math::matrix::values</definition>
+        <argsstring></argsstring>
+        <name>values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flattened 1d array of matrix values </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="29" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1math_1_1matrix_1af29b6ea4316eb972bbdc55da6e54dbb3" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t qlib::math::matrix::rows</definition>
+        <argsstring></argsstring>
+        <name>rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of rows </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="33" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1math_1_1matrix_1ad3c2dd80c600d7bf37ae5bbdf5f056b8" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t qlib::math::matrix::columns</definition>
+        <argsstring></argsstring>
+        <name>columns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of columns </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="37" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqlib_1_1math_1_1matrix_1aef00292f85054708922acef6b7744a40" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t qlib::math::matrix::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of elements </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="41" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1math_1_1matrix_1a6e66a3f67ecf06a42068d2dbf8885e66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib::math::matrix::matrix</definition>
+        <argsstring>(size_t rows, size_t columns)</argsstring>
+        <name>matrix</name>
+        <param>
+          <type>size_t</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>columns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an empty matrix of this size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="47" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="47" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1matrix_1a8cbac1f2ae9917a4742cd0d147e3ba9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib::math::matrix::matrix</definition>
+        <argsstring>(size_t rows, size_t columns, std::vector&lt; complex &gt; values)</argsstring>
+        <name>matrix</name>
+        <param>
+          <type>size_t</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>columns</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref> &gt;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a matrix of this size with the given values in compressed row-&gt;column form </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="59" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="59" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1matrix_1afebdd1cf189728ace53a594d5ef8b750" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib::math::matrix::~matrix</definition>
+        <argsstring>()</argsstring>
+        <name>~matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Matrix destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="69" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1matrix_1a50cbbef6e5b7888aecffbf66def70154" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref> &amp;</type>
+        <definition>complex&amp; qlib::math::matrix::operator()</definition>
+        <argsstring>(size_t r, size_t c)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>size_t</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get element from matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="76" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="76" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1matrix_1af93c414d328b985c83c032f41f485a9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref> &amp;</type>
+        <definition>complex&amp; qlib::math::matrix::operator()</definition>
+        <argsstring>(size_t idx)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>size_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get element from matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="87" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="87" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t qlib::math::matrix::countRows</definition>
+        <argsstring>()</argsstring>
+        <name>countRows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of rows </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="97" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1matrix_1a69ed708edf603637731e4f6fe46b0754" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t qlib::math::matrix::countColumns</definition>
+        <argsstring>()</argsstring>
+        <name>countColumns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of columns </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="104" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1matrix_1a2f0ada8003cf2306534700502f598428" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t qlib::math::matrix::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Total number of elements </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="111" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1matrix_1a2d09bd42691acdbf315d5cbd7a698698" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib::math::matrix::set</definition>
+        <argsstring>(size_t r, size_t c, complex value)</argsstring>
+        <name>set</name>
+        <param>
+          <type>size_t</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set element in matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="118" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="118" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1matrix_1ae97863a30bb445897ff63c77582a366a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qlib::math::matrix::set</definition>
+        <argsstring>(size_t idx, complex value)</argsstring>
+        <name>set</name>
+        <param>
+          <type>size_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set element in matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="129" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="129" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1matrix_1a91fcadaccfcd68adb71de0da6f5d267f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
+        <definition>complex qlib::math::matrix::get</definition>
+        <argsstring>(size_t r, size_t c)</argsstring>
+        <name>get</name>
+        <param>
+          <type>size_t</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get element from matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="139" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="139" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1matrix_1a17dce2bfd8addcb026f6d9159134f1c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
+        <definition>complex qlib::math::matrix::get</definition>
+        <argsstring>(size_t idx)</argsstring>
+        <name>get</name>
+        <param>
+          <type>size_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get element from matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="150" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="150" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1matrix_1a06ec639a654b5319f4eb1bff591d6e7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string qlib::math::matrix::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="classxobject_1ad76243a44c4e4959d3b16bb57d82600d">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String representation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="160" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="160" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1matrix_1a1cbe9185c4f147d821eeb0b36ed9cc86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref> &gt;::iterator</type>
+        <definition>std::vector&lt;complex&gt;::iterator qlib::math::matrix::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterator starting at element 0,0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="181" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="181" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classqlib_1_1math_1_1matrix_1ae250bb5455fe71b836a5252335575545" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref> &gt;::iterator</type>
+        <definition>std::vector&lt;complex&gt;::iterator qlib::math::matrix::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterator starting after element rows-1,columns-1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="188" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="188" bodyend="190"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Complex matrix class </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="281">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="280">
+        <label>qlib::math::matrix</label>
+        <link refid="classqlib_1_1math_1_1matrix"/>
+        <childnode refid="281" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="283">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="282">
+        <label>qlib::math::matrix</label>
+        <link refid="classqlib_1_1math_1_1matrix"/>
+        <childnode refid="283" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/core/math/matrix.hpp" line="23" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="23" bodyend="191"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1math_1_1matrix_1a1cbe9185c4f147d821eeb0b36ed9cc86" prot="public" virt="non-virtual"><scope>qlib::math::matrix</scope><name>begin</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1ad3c2dd80c600d7bf37ae5bbdf5f056b8" prot="private" virt="non-virtual"><scope>qlib::math::matrix</scope><name>columns</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1a69ed708edf603637731e4f6fe46b0754" prot="public" virt="non-virtual"><scope>qlib::math::matrix</scope><name>countColumns</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" prot="public" virt="non-virtual"><scope>qlib::math::matrix</scope><name>countRows</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1ae250bb5455fe71b836a5252335575545" prot="public" virt="non-virtual"><scope>qlib::math::matrix</scope><name>end</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1a91fcadaccfcd68adb71de0da6f5d267f" prot="public" virt="non-virtual"><scope>qlib::math::matrix</scope><name>get</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1a17dce2bfd8addcb026f6d9159134f1c7" prot="public" virt="non-virtual"><scope>qlib::math::matrix</scope><name>get</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1aef00292f85054708922acef6b7744a40" prot="private" virt="non-virtual"><scope>qlib::math::matrix</scope><name>length</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1a6e66a3f67ecf06a42068d2dbf8885e66" prot="public" virt="non-virtual"><scope>qlib::math::matrix</scope><name>matrix</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1a8cbac1f2ae9917a4742cd0d147e3ba9b" prot="public" virt="non-virtual"><scope>qlib::math::matrix</scope><name>matrix</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1a50cbbef6e5b7888aecffbf66def70154" prot="public" virt="non-virtual"><scope>qlib::math::matrix</scope><name>operator()</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1af93c414d328b985c83c032f41f485a9a" prot="public" virt="non-virtual"><scope>qlib::math::matrix</scope><name>operator()</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1af29b6ea4316eb972bbdc55da6e54dbb3" prot="private" virt="non-virtual"><scope>qlib::math::matrix</scope><name>rows</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1a2d09bd42691acdbf315d5cbd7a698698" prot="public" virt="non-virtual"><scope>qlib::math::matrix</scope><name>set</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1ae97863a30bb445897ff63c77582a366a" prot="public" virt="non-virtual"><scope>qlib::math::matrix</scope><name>set</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1a2f0ada8003cf2306534700502f598428" prot="public" virt="non-virtual"><scope>qlib::math::matrix</scope><name>size</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1a06ec639a654b5319f4eb1bff591d6e7b" prot="public" virt="virtual"><scope>qlib::math::matrix</scope><name>toString</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1ad764d65375ba1e50381f640bdc181c0b" prot="private" virt="non-virtual"><scope>qlib::math::matrix</scope><name>values</name></member>
+      <member refid="classqlib_1_1math_1_1matrix_1afebdd1cf189728ace53a594d5ef8b750" prot="public" virt="non-virtual"><scope>qlib::math::matrix</scope><name>~matrix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

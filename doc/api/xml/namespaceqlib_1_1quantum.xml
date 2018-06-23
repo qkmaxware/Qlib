@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceqlib_1_1quantum" kind="namespace" language="C++">
+    <compoundname>qlib::quantum</compoundname>
+    <innerclass refid="classqlib_1_1quantum_1_1ensemble" prot="public">qlib::quantum::ensemble</innerclass>
+    <innerclass refid="classqlib_1_1quantum_1_1qreg" prot="public">qlib::quantum::qreg</innerclass>
+    <innerclass refid="classqlib_1_1quantum_1_1qsystem" prot="public">qlib::quantum::qsystem</innerclass>
+    <innerclass refid="classqlib_1_1quantum_1_1qubit" prot="public">qlib::quantum::qubit</innerclass>
+    <innernamespace refid="namespaceqlib_1_1quantum_1_1gates">qlib::quantum::gates</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/quantum/gates/cnot.hpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

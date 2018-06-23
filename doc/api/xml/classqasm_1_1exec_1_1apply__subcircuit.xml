@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqasm_1_1exec_1_1apply__subcircuit" kind="class" language="C++" prot="public">
+    <compoundname>qasm::exec::apply_subcircuit</compoundname>
+    <basecompoundref refid="classqasm_1_1exec_1_1executable" prot="public" virt="non-virtual">qasm::exec::executable</basecompoundref>
+    <includes refid="runtime_8hpp" local="no">runtime.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1apply__subcircuit_1a6bf64c96ecf46285e9d18987a91b37fa" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string qasm::exec::apply_subcircuit::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of subcircuit to run </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="177" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1apply__subcircuit_1ac7828e8ae990026dbcf6bb7b5cdc1d9b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; qasm::exec::apply_subcircuit::params</definition>
+        <argsstring></argsstring>
+        <name>params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parameters to pass to subcircuit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="181" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqasm_1_1exec_1_1apply__subcircuit_1ae8196f004b4d61d15a4ae6bad33ce8e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qasm::exec::apply_subcircuit::apply_subcircuit</definition>
+        <argsstring>(string name)</argsstring>
+        <name>apply_subcircuit</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="183" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="183" bodyend="183"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Instruction to execute a subcircuit program </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="191">
+        <label>qasm::exec::apply_subcircuit</label>
+        <link refid="classqasm_1_1exec_1_1apply__subcircuit"/>
+        <childnode refid="192" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>qasm::exec::executable</label>
+        <link refid="classqasm_1_1exec_1_1executable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="193">
+        <label>qasm::exec::apply_subcircuit</label>
+        <link refid="classqasm_1_1exec_1_1apply__subcircuit"/>
+        <childnode refid="194" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>qasm::exec::executable</label>
+        <link refid="classqasm_1_1exec_1_1executable"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/runtime.hpp" line="172" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="172" bodyend="184"/>
+    <listofallmembers>
+      <member refid="classqasm_1_1exec_1_1apply__subcircuit_1ae8196f004b4d61d15a4ae6bad33ce8e5" prot="public" virt="non-virtual"><scope>qasm::exec::apply_subcircuit</scope><name>apply_subcircuit</name></member>
+      <member refid="classqasm_1_1exec_1_1executable_1ad07f864a889edb0777ebbb1bc1628121" prot="public" virt="virtual"><scope>qasm::exec::apply_subcircuit</scope><name>invoke_rootprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" prot="public" virt="virtual"><scope>qasm::exec::apply_subcircuit</scope><name>invoke_subprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1apply__subcircuit_1a6bf64c96ecf46285e9d18987a91b37fa" prot="public" virt="non-virtual"><scope>qasm::exec::apply_subcircuit</scope><name>name</name></member>
+      <member refid="classqasm_1_1exec_1_1apply__subcircuit_1ac7828e8ae990026dbcf6bb7b5cdc1d9b" prot="public" virt="non-virtual"><scope>qasm::exec::apply_subcircuit</scope><name>params</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

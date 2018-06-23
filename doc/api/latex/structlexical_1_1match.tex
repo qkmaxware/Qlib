@@ -1,0 +1,74 @@
+\hypertarget{structlexical_1_1match}{}\section{lexical\+:\+:match Struct Reference}
+\label{structlexical_1_1match}\index{lexical\+::match@{lexical\+::match}}
+
+
+{\ttfamily \#include $<$lexer.\+hpp$>$}
+
+
+
+Collaboration diagram for lexical\+:\+:match\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{structlexical_1_1match__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structlexical_1_1match_aafa3ddcad89ea3abb86b557cafe3e0d7}{match\+Exists} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlexical_1_1lexeme}{lexeme} $\ast$ \hyperlink{structlexical_1_1match_a346ef13017b47ee41a6abe643e5732e1}{lexemeptr}
+\item 
+std\+::match\+\_\+results$<$ std\+::string\+::iterator $>$ \hyperlink{structlexical_1_1match_a2ebda7888d347b3de302ffc465755f07}{content}
+\item 
+\hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} \hyperlink{structlexical_1_1match_a854a8828680bbfc08aa214e875ba5514}{row\+\_\+start}
+\item 
+\hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} \hyperlink{structlexical_1_1match_a3a1754ba678051a508ee2889c4a5f4eb}{column\+\_\+start}
+\item 
+\hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} \hyperlink{structlexical_1_1match_abf7eca2de9cee016df02265a38666486}{row\+\_\+end}
+\item 
+\hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} \hyperlink{structlexical_1_1match_ac9b0f6134b653452a2b0ff8b36c89729}{column\+\_\+end}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing a regex match in a lexed document including row and column indexes 
+
+\subsection{Member Function Documentation}
+\index{lexical\+::match@{lexical\+::match}!match\+Exists@{match\+Exists}}
+\index{match\+Exists@{match\+Exists}!lexical\+::match@{lexical\+::match}}
+\subsubsection[{\texorpdfstring{match\+Exists()}{matchExists()}}]{\setlength{\rightskip}{0pt plus 5cm}bool lexical\+::match\+::match\+Exists (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structlexical_1_1match_aafa3ddcad89ea3abb86b557cafe3e0d7}{}\label{structlexical_1_1match_aafa3ddcad89ea3abb86b557cafe3e0d7}
+Test if this match is valid 
+
+\subsection{Member Data Documentation}
+\index{lexical\+::match@{lexical\+::match}!column\+\_\+end@{column\+\_\+end}}
+\index{column\+\_\+end@{column\+\_\+end}!lexical\+::match@{lexical\+::match}}
+\subsubsection[{\texorpdfstring{column\+\_\+end}{column_end}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ulong} lexical\+::match\+::column\+\_\+end}\hypertarget{structlexical_1_1match_ac9b0f6134b653452a2b0ff8b36c89729}{}\label{structlexical_1_1match_ac9b0f6134b653452a2b0ff8b36c89729}
+End column of match in source file \index{lexical\+::match@{lexical\+::match}!column\+\_\+start@{column\+\_\+start}}
+\index{column\+\_\+start@{column\+\_\+start}!lexical\+::match@{lexical\+::match}}
+\subsubsection[{\texorpdfstring{column\+\_\+start}{column_start}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ulong} lexical\+::match\+::column\+\_\+start}\hypertarget{structlexical_1_1match_a3a1754ba678051a508ee2889c4a5f4eb}{}\label{structlexical_1_1match_a3a1754ba678051a508ee2889c4a5f4eb}
+Start column of match in source file \index{lexical\+::match@{lexical\+::match}!content@{content}}
+\index{content@{content}!lexical\+::match@{lexical\+::match}}
+\subsubsection[{\texorpdfstring{content}{content}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::match\+\_\+results$<$std\+::string\+::iterator$>$ lexical\+::match\+::content}\hypertarget{structlexical_1_1match_a2ebda7888d347b3de302ffc465755f07}{}\label{structlexical_1_1match_a2ebda7888d347b3de302ffc465755f07}
+Regular expression match contents \index{lexical\+::match@{lexical\+::match}!lexemeptr@{lexemeptr}}
+\index{lexemeptr@{lexemeptr}!lexical\+::match@{lexical\+::match}}
+\subsubsection[{\texorpdfstring{lexemeptr}{lexemeptr}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf lexeme}$\ast$ lexical\+::match\+::lexemeptr}\hypertarget{structlexical_1_1match_a346ef13017b47ee41a6abe643e5732e1}{}\label{structlexical_1_1match_a346ef13017b47ee41a6abe643e5732e1}
+Pointer to the associated lexeme this match was extracted from \index{lexical\+::match@{lexical\+::match}!row\+\_\+end@{row\+\_\+end}}
+\index{row\+\_\+end@{row\+\_\+end}!lexical\+::match@{lexical\+::match}}
+\subsubsection[{\texorpdfstring{row\+\_\+end}{row_end}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ulong} lexical\+::match\+::row\+\_\+end}\hypertarget{structlexical_1_1match_abf7eca2de9cee016df02265a38666486}{}\label{structlexical_1_1match_abf7eca2de9cee016df02265a38666486}
+End row of match in source file \index{lexical\+::match@{lexical\+::match}!row\+\_\+start@{row\+\_\+start}}
+\index{row\+\_\+start@{row\+\_\+start}!lexical\+::match@{lexical\+::match}}
+\subsubsection[{\texorpdfstring{row\+\_\+start}{row_start}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ulong} lexical\+::match\+::row\+\_\+start}\hypertarget{structlexical_1_1match_a854a8828680bbfc08aa214e875ba5514}{}\label{structlexical_1_1match_a854a8828680bbfc08aa214e875ba5514}
+Start row of match in source file 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{lexer_8hpp}{lexer.\+hpp}\end{DoxyCompactItemize}

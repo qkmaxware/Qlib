@@ -49,8 +49,8 @@ int main(int arg_count, char* arg_values[]){
 
 	//Literals
 	lexeme _string("String", "^\\\"[^\\r\\n]*?\\\""); 
-	lexeme _indexor("Indexor", "^([a-z_][a-zA-Z_]*)([0-9]+)");
-	lexeme _reference("Reference", "^[a-z_][a-zA-Z_]*");
+	lexeme _indexor("Indexor", "^([a-zA-Z_]+)([0-9]+)");
+	lexeme _reference("Reference", "^[a-zA-Z_]+");
 	lexeme _integer("Integer", "^[0-9]+");
 	lexeme _leftb("Left [", "^\\[");
 	lexeme _rightb("Right ]", "^\\]");

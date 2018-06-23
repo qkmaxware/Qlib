@@ -1,0 +1,127 @@
+\hypertarget{classqlib_1_1quantum_1_1gates_1_1controlled2gate}{}\section{qlib\+:\+:quantum\+:\+:gates\+:\+:controlled2gate Class Reference}
+\label{classqlib_1_1quantum_1_1gates_1_1controlled2gate}\index{qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}}
+
+
+{\ttfamily \#include $<$controlled2gate.\+hpp$>$}
+
+
+
+Inheritance diagram for qlib\+:\+:quantum\+:\+:gates\+:\+:controlled2gate\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classqlib_1_1quantum_1_1gates_1_1controlled2gate__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for qlib\+:\+:quantum\+:\+:gates\+:\+:controlled2gate\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classqlib_1_1quantum_1_1gates_1_1controlled2gate__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a83775bed048e4856d99c8d59d6a20db3}{controlled2gate} (std\+::string \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a25121d9bc52a594a718b6d8037ea6cc0}{name}, \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate}{onequbitgate} \&gate)
+\item 
+size\+\_\+t \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a27a8793a3015aa9797f03fa0174113c2}{inputs} ()
+\item 
+std\+::string \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a25121d9bc52a594a718b6d8037ea6cc0}{name} ()
+\item 
+void \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a272635da6a7b8f65379f6ecb42df9389}{operate} (\hyperlink{classqlib_1_1math_1_1matrix}{matrix} \&in, \hyperlink{classqlib_1_1math_1_1matrix}{matrix} \&out, std\+::vector$<$ u64 $>$ input\+Qubits)
+\item 
+\hyperlink{classqlib_1_1math_1_1matrix}{qlib\+::math\+::matrix} \& \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate_aeefab300e88034edbb5eacfa882ed218}{get\+Matrix} ()
+\item 
+std\+::string \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a4fda814b0336d103f5cdb7ea98507bd1}{to\+String} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a32ec87dafda9c4c80af4dc93758f6275}{sname}
+\item 
+\hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate}{onequbitgate} \& \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate_abb21342d2206fbc4f7ab4e781997e471}{refgate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}!controlled2gate@{controlled2gate}}
+\index{controlled2gate@{controlled2gate}!qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}}
+\subsubsection[{\texorpdfstring{controlled2gate(std\+::string name, onequbitgate \&gate)}{controlled2gate(std::string name, onequbitgate &gate)}}]{\setlength{\rightskip}{0pt plus 5cm}qlib\+::quantum\+::gates\+::controlled2gate\+::controlled2gate (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{{\bf onequbitgate} \&}]{gate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a83775bed048e4856d99c8d59d6a20db3}{}\label{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a83775bed048e4856d99c8d59d6a20db3}
+Create a new quanutm operator for the given number of states 
+
+\subsection{Member Function Documentation}
+\index{qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}!get\+Matrix@{get\+Matrix}}
+\index{get\+Matrix@{get\+Matrix}!qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}}
+\subsubsection[{\texorpdfstring{get\+Matrix()}{getMatrix()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf qlib\+::math\+::matrix}\& qlib\+::quantum\+::gates\+::controlled2gate\+::get\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1controlled2gate_aeefab300e88034edbb5eacfa882ed218}{}\label{classqlib_1_1quantum_1_1gates_1_1controlled2gate_aeefab300e88034edbb5eacfa882ed218}
+Returns the matrix representation of this operator \index{qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}!inputs@{inputs}}
+\index{inputs@{inputs}!qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}}
+\subsubsection[{\texorpdfstring{inputs()}{inputs()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t qlib\+::quantum\+::gates\+::controlled2gate\+::inputs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a27a8793a3015aa9797f03fa0174113c2}{}\label{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a27a8793a3015aa9797f03fa0174113c2}
+Number of input qubits this operator can be applied to 
+
+Implements \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate_ac8aa56b0095a94fdd437bc55d90aec9d}{qlib\+::quantum\+::gates\+::igate}.
+
+\index{qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}!name@{name}}
+\index{name@{name}!qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}}
+\subsubsection[{\texorpdfstring{name()}{name()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string qlib\+::quantum\+::gates\+::controlled2gate\+::name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a25121d9bc52a594a718b6d8037ea6cc0}{}\label{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a25121d9bc52a594a718b6d8037ea6cc0}
+The name of this gate 
+
+Implements \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate_ae8f8dda69d7742c12c743829abb3662b}{qlib\+::quantum\+::gates\+::igate}.
+
+\index{qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}!operate@{operate}}
+\index{operate@{operate}!qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}}
+\subsubsection[{\texorpdfstring{operate(matrix \&in, matrix \&out, std\+::vector$<$ u64 $>$ input\+Qubits)}{operate(matrix &in, matrix &out, std::vector< u64 > inputQubits)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib\+::quantum\+::gates\+::controlled2gate\+::operate (
+\begin{DoxyParamCaption}
+\item[{{\bf matrix} \&}]{in, }
+\item[{{\bf matrix} \&}]{out, }
+\item[{std\+::vector$<$ u64 $>$}]{input\+Qubits}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a272635da6a7b8f65379f6ecb42df9389}{}\label{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a272635da6a7b8f65379f6ecb42df9389}
+Operate on a given column vector state superposition 
+
+Implements \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate_a66038ee65fec12c627789505e11f1e23}{qlib\+::quantum\+::gates\+::igate}.
+
+\index{qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}}
+\subsubsection[{\texorpdfstring{to\+String()}{toString()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string qlib\+::quantum\+::gates\+::controlled2gate\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a4fda814b0336d103f5cdb7ea98507bd1}{}\label{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a4fda814b0336d103f5cdb7ea98507bd1}
+Pretty print 
+
+Reimplemented from \hyperlink{classxobject_ad76243a44c4e4959d3b16bb57d82600d}{xobject}.
+
+
+
+\subsection{Member Data Documentation}
+\index{qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}!refgate@{refgate}}
+\index{refgate@{refgate}!qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}}
+\subsubsection[{\texorpdfstring{refgate}{refgate}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf onequbitgate}\& qlib\+::quantum\+::gates\+::controlled2gate\+::refgate\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1controlled2gate_abb21342d2206fbc4f7ab4e781997e471}{}\label{classqlib_1_1quantum_1_1gates_1_1controlled2gate_abb21342d2206fbc4f7ab4e781997e471}
+\index{qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}!sname@{sname}}
+\index{sname@{sname}!qlib\+::quantum\+::gates\+::controlled2gate@{qlib\+::quantum\+::gates\+::controlled2gate}}
+\subsubsection[{\texorpdfstring{sname}{sname}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string qlib\+::quantum\+::gates\+::controlled2gate\+::sname\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a32ec87dafda9c4c80af4dc93758f6275}{}\label{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a32ec87dafda9c4c80af4dc93758f6275}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/quantum/gates/\hyperlink{controlled2gate_8hpp}{controlled2gate.\+hpp}\end{DoxyCompactItemize}
