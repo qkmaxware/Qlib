@@ -65,7 +65,7 @@ get: clean init
 	mkdir lib
 
 docs: 
-	doxygen doxyfile
+	doxywizard doxyfile
 
 $(BIN_DIR): init $(TOCOMPILE)
 	$(GCC) $(LINKLIST) -o $(BIN_DIR)/$(EXE_NAME) $(COMPILE_FLAGS)
@@ -91,6 +91,11 @@ install-win-tools:
 	sudo apt-cache search mingw | grep "Win32"
 	sudo apt-cache search mingw | grep "Win64"
 	sudo apt-get install mingw-w64 binutils-mingw-w64
+
+install-doxygen:
+	sudo apt-get install graphviz
+	sudo apt-get install doxygen
+	sudo apt-get install doxygen-gui
 
 compress:
 	zip -r compressed.zip .

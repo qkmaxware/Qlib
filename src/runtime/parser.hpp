@@ -169,9 +169,9 @@ choice operator | (rule& left, rule& right) {
 
 
 choice s = (literal(token) >> *literal(token2)) | literal(token3);
-*/
 
-}
+
+}*/
 
 
 #endif

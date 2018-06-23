@@ -29,12 +29,18 @@ import javax.swing.text.JTextComponent;
 import javax.swing.text.Utilities;
 
 /**
- *
+ * Class for auto complete word suggestions used with JTextComponent
  * @author chalseth
  */
 public class AutoComplete {
-
+    
+    /**
+     * Parent text component
+     */
     private final JTextComponent textComponent;
+    /**
+     * Document listener for the textComponent
+     */
     private final DocumentListener docListener = new DocumentListener() {
         @Override
         public void insertUpdate(DocumentEvent de) {
@@ -51,18 +57,51 @@ public class AutoComplete {
             checkForAndShowSuggestions();
         }
     };
+    /**
+     * List of words to suggest
+     */
     private final ArrayList<String> suggestions = new ArrayList<String>();
+    /**
+     * Number of letters until suggestions get shown
+     */
     private int lettersUntilShown = 1;
+    /**
+     * The currently typed word
+     */
     private String typedWord;
+    /**
+     * Start index of the typed word
+     */
     private int startPosition;
+    /**
+     * End index of the typed word
+     */
     private int endPosition;
+    /**
+     * Reference to the suggestion window
+     */
     private final JWindow window = new JWindow();
+    /**
+     * Reference to the list of suggestions
+     */
     private JList list = new JList();
+    /**
+     * Reference to the list's data model
+     */
     private DefaultListModel model = new DefaultListModel();
-
+    /**
+     * Width of suggestion window
+     */
     private int width = 430;
+    /**
+     * Maximum height of the suggestion window
+     */
     private int maxHeight = 160;
     
+    /**
+     * Create an auto complete suggestion dialog for the given text component
+     * @param textComponent 
+     */
     public AutoComplete(JTextComponent textComponent) {
         this.textComponent = textComponent;
         this.textComponent.getDocument().addDocumentListener(docListener);
@@ -123,18 +162,34 @@ public class AutoComplete {
         window.setSize(new Dimension(width, maxHeight));
     }
 
+    /**
+     * Check if the suggestion box is visible
+     * @return 
+     */
     public boolean isVisible() {
         return window.isVisible();
     }
 
+    /**
+     * Add word to the dictionary
+     * @param s 
+     */
     public void addWord(String s) {
         suggestions.add(s);
     }
 
+    /**
+     * Remove word from the dictionary
+     * @param s 
+     */
     public void removeWord(String s) {
         suggestions.remove(s);
     }
 
+    /**
+     * Insert word, replacing the currently typed word
+     * @param o 
+     */
     private void insertSuggestion(Object o) {
         String k = String.valueOf(o);
         String s = textComponent.getText();
@@ -145,6 +200,9 @@ public class AutoComplete {
         hideSuggestions();
     }
 
+    /**
+     * Show the suggestion box
+     */
     private void showSuggestions() {
         if (typedWord == null) {
             return;
@@ -175,14 +233,27 @@ public class AutoComplete {
         }
     }
 
+    /**
+     * Set the number of characters until the suggestion box is shown
+     * @param characters 
+     */
     public void setCharactersUntilSuggestions(int characters) {
         this.lettersUntilShown = characters;
     }
 
+    /**
+     * Hide the suggestion box
+     */
     private void hideSuggestions() {
         window.setVisible(false);
     }
 
+    /**
+     * Get the text between 2 indexes
+     * @param start
+     * @param length
+     * @return 
+     */
     private String getText(int start, int length) {
         try {
             return textComponent.getText(start, length);
@@ -191,6 +262,9 @@ public class AutoComplete {
         }
     }
 
+    /**
+     * For use auto checking the suggestions as a user types
+     */
     private void checkForAndShowSuggestions() {
 
         int caret = textComponent.getCaretPosition() - 1;
@@ -215,7 +289,7 @@ public class AutoComplete {
         }
         
         
-        String word = getText(start, end - start);
+        String word = getText(start, end - start).trim();
         
         if (word != null && word.length() >= lettersUntilShown) {
             startPosition = start;

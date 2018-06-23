@@ -12,17 +12,30 @@ import java.io.InputStreamReader;
 import java.util.Map;
 
 /**
- *
+ * Class for sending files to the QLib runtime executable
  * @author halse
  */
 public class QLibRuntime {
     
+    /**
+     * Reference to the QLib runtime file
+     */
     private File QlibPath;
     
+    /**
+     * Create a Qlib runtime reference to the given file
+     * @param QlibPath 
+     */
     public QLibRuntime(File QlibPath){
         this.QlibPath = QlibPath;
     }
     
+    /**
+     * Invoke the QLib runtime and pass in the given file
+     * @param f
+     * @return
+     * @throws IOException 
+     */
     public RuntimeReport dispatch(File f) throws IOException{
         //Build process
         //ProcessBuilder pb = new ProcessBuilder(QlibPath.getName());

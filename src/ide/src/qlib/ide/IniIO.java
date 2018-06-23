@@ -12,17 +12,31 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 
 /**
- *
+ * Class for storing INI type config information
  * @author Colin Halseth
  */
 public class IniIO {
     
+    /**
+     * Static reference
+     */
     public static IniIO DEFAULT;
     
+    /**
+     * List of settings
+     */
     private HashMap<String,String> options = new HashMap<String,String>();
     
+    /**
+     * Create an empty config file
+     */
     private IniIO(){}
     
+    /**
+     * Create a config from a template of key value pairs
+     * @param KeyValuePairs
+     * @return 
+     */
     public static IniIO template(String[] KeyValuePairs){
         IniIO io = new IniIO();
         for(String line : KeyValuePairs){
@@ -33,6 +47,11 @@ public class IniIO {
         return io;
     }
     
+    /**
+     * Read a config from a given file
+     * @param filename
+     * @return 
+     */
     public static IniIO read(String filename){
         File f = new File(filename);
         if(!f.exists()){
@@ -58,6 +77,12 @@ public class IniIO {
         }
     }
     
+    /**
+     * Copy-and-replace options from 'b' and 'a' into a new config
+     * @param a
+     * @param b
+     * @return 
+     */
     public static IniIO merge(IniIO a, IniIO b){
         IniIO c = new IniIO();
         for(String key : a.options.keySet()){
@@ -71,6 +96,12 @@ public class IniIO {
         return c;
     }
    
+    /**
+     * Read config from file and automatically copy without replacement with a default template ensuring that all default options exist
+     * @param fname
+     * @param updateTemplate
+     * @return 
+     */
     public static IniIO readAndUpdate(String fname, IniIO updateTemplate){
         IniIO n = IniIO.read(fname);
         
@@ -100,7 +131,11 @@ public class IniIO {
         return n;
     }
     
-    
+    /**
+     * Get a boolean value from a named property
+     * @param prop
+     * @return 
+     */
     public boolean isSet(String prop){
         prop = prop.toLowerCase();
         if(this.options.containsKey(prop)){
@@ -109,6 +144,11 @@ public class IniIO {
         return false;
     }
     
+    /**
+     * Get a string from a named property
+     * @param prop
+     * @return 
+     */
     public String getString(String prop){
         prop = prop.toLowerCase();
         if(this.options.containsKey(prop)){
@@ -117,6 +157,11 @@ public class IniIO {
         return null;
     }
     
+    /**
+     * Parse an integer from a named property
+     * @param prop
+     * @return 
+     */
     public Integer getInt(String prop){
         prop = prop.toLowerCase();
         if(this.options.containsKey(prop)){
@@ -125,10 +170,20 @@ public class IniIO {
         return -1;
     }
     
+    /**
+     * Set a named property
+     * @param prop
+     * @param value 
+     */
     public void set(String prop, Object value){
         this.options.put(prop, String.valueOf(value));
     }
     
+    /**
+     * Check if a property exists in the config
+     * @param prop
+     * @return 
+     */
     public boolean exists(String prop){
         prop = prop.toLowerCase();
         if(this.options.containsKey(prop)){
@@ -137,6 +192,11 @@ public class IniIO {
         return false;
     }
     
+    /**
+     * Write ini config options to a file
+     * @param settings
+     * @param filename 
+     */
     public static void write(IniIO settings, String filename){
         try{
             FileWriter writer = new FileWriter(filename);

@@ -6,14 +6,24 @@
 package qlib.ide;
 
 /**
- *
+ * Report generated from the QLibRuntime class
  * @author halse
  */
 public class RuntimeReport {
     
+    /**
+     * Terminal output string
+     */
     public String output;
+    /**
+     * Terminal error string;
+     */
     public String errors;
     
+    /**
+     * Print report
+     * @return 
+     */
     public String toString(){
         StringBuilder sb = new StringBuilder();
         

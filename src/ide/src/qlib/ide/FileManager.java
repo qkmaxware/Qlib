@@ -5,7 +5,6 @@
  */
 package qlib.ide;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.io.File;
 import java.io.PrintWriter;
@@ -14,18 +13,23 @@ import java.nio.file.Paths;
 import java.util.LinkedList;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 
 /**
- *
+ * Class for managing files and tabs in the IDE
  * @author halse
  */
 public class FileManager {
     
+    /**
+     * Internal reference to a tabbed panel
+     */
     private JTabbedPane tabs;
     
+    /**
+     * Internal class to represent tab data
+     */
     private class Tab {
         String name;
         String filepath;
@@ -46,17 +50,30 @@ public class FileManager {
         }
     }
     
+    /**
+     * List of tab data
+     */
     private LinkedList<Tab> openTabs = new LinkedList<Tab>();
     
+    /**
+     * Create a file manager
+     */
     public FileManager(){
         tabs = new JTabbedPane();
         tabs.setAutoscrolls(false);
     }
     
+    /**
+     * Create an empty file
+     */
     public void empty(){
         open(null);
     }
     
+    /**
+     * Open a file in the editor
+     * @param file 
+     */
     public void open(String file){
         try{
             Tab t = new Tab();
@@ -121,6 +138,9 @@ public class FileManager {
         }catch(Exception e){}
     }
     
+    /**
+     * Save the current file
+     */
     public void save(){
         try{
             int i = tabs.getSelectedIndex();
@@ -154,6 +174,9 @@ public class FileManager {
         }
     }
     
+    /**
+     * Close the current file
+     */
     public void close(){
         int i = tabs.getSelectedIndex();
         if(i < 0)
@@ -164,6 +187,10 @@ public class FileManager {
         tabs.repaint();
     }
     
+    /**
+     * Get the current file
+     * @return 
+     */
     public File getActive(){
         int i = tabs.getSelectedIndex();
         if(i < 0)
@@ -172,6 +199,10 @@ public class FileManager {
         return new File(openTab.filepath);
     }
     
+    /**
+     * Get the internal reference to the tabbed panel
+     * @return 
+     */
     public JTabbedPane getPanel(){
         return tabs;
     }

@@ -82,24 +82,21 @@ class qreg : public qsystem {
         /// <Summary>
         /// Collapse the state and return the value of the measured qubit
         /// </Summary>
-        i8 measure(i64 qubit){
-            
+        i8 measure(i64 qubit){   
             f64 zero = 0.0;
             f64 one = 0.0;
 
-            i64 state = 0;
-            i64 mask = 1 << qubit;
+            u64 mask = 1 << qubit;
             
-            for(std::vector<complex>::iterator it = amplitudes.begin(); it != amplitudes.end(); it++){
-                //State has '1'
-                if(state & mask > 0){
-                    one += it->sqrMagnitude();
+            for(size_t state = 0; state < amplitudes.countRows(); state++){
+                if((state & mask) > 0){
+                    //State has '1' at qubit
+                    one += amplitudes(state, 0).sqrMagnitude();
                 }
-                //State has '0'
                 else{
-                    zero += it->sqrMagnitude();
+                    //State has '0' at qubit
+                    zero += amplitudes(state, 0).sqrMagnitude();
                 }
-                state ++;
             }
             
             f64 prob = this->distribution(rng);

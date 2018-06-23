@@ -23,11 +23,14 @@ import javax.swing.text.StyleConstants;
 import javax.swing.text.StyleContext;
 
 /**
- *
+ * Class representing a code editor with line numbering and syntax highlighting
  * @author Colin Halseth
  */
 public class CodeEditor extends JPanel {
     
+    /**
+     * Internal class representing text style for a given pattern
+     */
     private class Style {
         public Pattern pattern;
         public Color font;
@@ -35,18 +38,42 @@ public class CodeEditor extends JPanel {
         public AttributeSet[] attributes;
     }
     
+    /**
+     * Internal interface for listeners
+     */
     public interface ChangeListener {
         void invoke(String change);
     }
     
+    /**
+     * Reference to the editor pane
+     */
     private JTextPane editor;
+    /**
+     * Reference to the line number pane
+     */
     private JTextPane numbers;
+    /**
+     * Reference to the editor's document
+     */
     private DefaultStyledDocument doc;
     
+    /**
+     * List of style rules
+     */
     private LinkedList<Style> styles = new LinkedList<Style>();
+    /**
+     * Blank attribute set when no style is chosen
+     */
     private AttributeSet none;
+    /**
+     * List of listeners to call when the document is changed
+     */
     private LinkedList<ChangeListener> onChangeListeners = new LinkedList<ChangeListener>();
     
+    /**
+     * Create a new code editor
+     */
     public CodeEditor(){
         super();
         this.setLayout(new BorderLayout());
@@ -128,31 +155,58 @@ public class CodeEditor extends JPanel {
         updateNumbering();
     }
    
+    /**
+     * Add a change listener
+     * @param listener 
+     */
     public void addChangeListener(ChangeListener listener){
         this.onChangeListeners.add(listener);
     }
     
+    /**
+     * Remove a change listener
+     * @param listener 
+     */
     public void removeChangeListener(ChangeListener listener){
         this.onChangeListeners.remove(listener);
     }
     
-    public void setBackgroundColor(Color c){
+    /**
+     * Set the editor background colour
+     * @param c 
+     */
+    public void setBackgroundColour(Color c){
         this.editor.setBackground(c);
     } 
     
-    public void setFontColor(Color c){
+    /**
+     * Set the editor font colour
+     * @param c 
+     */
+    public void setFontColour(Color c){
         StyleContext context = StyleContext.getDefaultStyleContext();
         none = context.addAttribute(context.getEmptySet(), StyleConstants.Foreground, c);
     }
     
+    /**
+     * Set the editor text
+     * @param text 
+     */
     public void setText(String text){
         this.editor.setText(text);
     }
     
+    /**
+     * Get the editor text
+     * @return text
+     */
     public String getText(){
         return this.editor.getText();
     }
     
+    /**
+     * Update the line numbers
+     */
     private void updateNumbering(){
         String t = editor.getText();
         StringBuffer buffer = new StringBuffer();
@@ -178,10 +232,21 @@ public class CodeEditor extends JPanel {
             numbers.setFont(font);
     }
 
+    /**
+     * Add style for regex
+     * @param regex
+     * @param text 
+     */
     public void addStyle(String regex, Color text){
         addStyle(regex, text, this.editor.getBackground());
     }
     
+    /**
+     * Add style for regex
+     * @param regex
+     * @param text 
+     * @param background 
+     */
     public void addStyle(String regex, Color text, Color background){
         StyleContext context = StyleContext.getDefaultStyleContext();
         
@@ -197,6 +262,10 @@ public class CodeEditor extends JPanel {
         this.styles.add(s);
     }
  
+    /**
+     * Style the document
+     * @param doc 
+     */
     private void style(DefaultStyledDocument doc){
         //Clear colours
         doc.setCharacterAttributes(0, doc.getLength(), none, true);
@@ -215,6 +284,10 @@ public class CodeEditor extends JPanel {
         }catch(Exception e){}
     }
     
+    /**
+     * Get the internal editor panel
+     * @return JTextPane
+     */
     public JTextPane getEditor(){
         return this.editor;
     }

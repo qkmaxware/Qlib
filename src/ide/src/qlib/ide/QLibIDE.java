@@ -25,11 +25,14 @@ import javax.swing.border.EmptyBorder;
 import resources.Loader;
 
 /**
- *
+ * Class for the QlibIDE
  * @author halse
  */
 public class QLibIDE {
 
+    /**
+     * Location of the config file
+     */
     public static final String configLocation = "config.ini";
     
     /**
@@ -52,16 +55,41 @@ public class QLibIDE {
         });
     }
     
-    
+    /**
+     * Reference to the frame
+     */
     private final JFrame frame;
+    /**
+     * Reference to the central panel
+     */
     private final JPanel pane;
+    /**
+     * Reference to the output log
+     */
     private final JTextArea log;
+    /**
+     * Reference to the scroll panel for the output log
+     */
     private final JScrollPane log_scroll;
+    /**
+     * Reference to the tabbed pane for file managers
+     */
     private final FileManager manager = new FileManager();
+    /**
+     * Date format
+     */
     private final DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
     
+    /**
+     * Reference to class for executing the QLib runtime
+     */
     private final QLibRuntime runtime;
     
+    /**
+     * Create a new IDE instance
+     * @param config
+     * @throws IOException 
+     */
     public QLibIDE(IniIO config) throws IOException{
         runtime = new QLibRuntime(new File(config.getString("Binary Path")));
         
@@ -224,6 +252,10 @@ public class QLibIDE {
         frame.setSize(640, 480);
     }
     
+    /**
+     * Add a string to the log
+     * @param message 
+     */
     public void log(Object message){
         if(message == null)
             return;
@@ -238,10 +270,18 @@ public class QLibIDE {
         log_scroll.getVerticalScrollBar().setValue(log_scroll.getVerticalScrollBar().getMaximum());
     }
     
+    /**
+     * Show the IDE
+     */
     public void show(){
         frame.setVisible(true);
     }
     
+    /**
+     * Add a key press shortcut to the IDE
+     * @param key
+     * @param listeners 
+     */
     private void addShortcutKey(int key, MouseListener[] listeners){
         KeyboardFocusManager kmanager = KeyboardFocusManager.getCurrentKeyboardFocusManager();
         kmanager.addKeyEventDispatcher(new KeyEventDispatcher (){
