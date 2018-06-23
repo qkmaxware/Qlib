@@ -1,6 +1,9 @@
 #ifndef _SMART_POINTER_H
 #define _SMART_POINTER_H
 
+/// <Summary>
+/// Simple smart pointer class
+/// </Summary>
 template <class t>
 class ptr {
     private:

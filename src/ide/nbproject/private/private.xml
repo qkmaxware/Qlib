@@ -5,8 +5,8 @@
         <group>
             <file>file:/C:/Users/halse/Documents/Qlib/src/ide/src/qlib/ide/QLibRuntime.java</file>
             <file>file:/C:/Users/halse/Documents/Qlib/src/ide/src/qlib/ide/FileManager.java</file>
+            <file>file:/C:/Users/halse/Documents/Qlib/src/ide/src/qlib/ide/AutoComplete.java</file>
             <file>file:/C:/Users/halse/Documents/Qlib/src/ide/src/qlib/ide/RuntimeReport.java</file>
-            <file>file:/C:/Users/halse/Documents/Qlib/src/ide/src/qlib/ide/CodeEditor.java</file>
             <file>file:/C:/Users/halse/Documents/Qlib/src/ide/src/qlib/ide/QLibIDE.java</file>
         </group>
     </open-files>

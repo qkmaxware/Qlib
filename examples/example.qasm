@@ -1,4 +1,4 @@
-include "./my_includes.qasm"
+//include "./my_includes.qasm"
  
 //Define quantum and classical registers
 qreg q[2]

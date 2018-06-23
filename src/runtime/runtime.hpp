@@ -18,81 +18,127 @@ namespace qasm {
 
 namespace runtime {
 
+/// <Summary>
+/// Class for exceptions thrown when executing instructions
+/// </Summary>
 class runtimeexception : public std::exception {
     private:
+        /// <Summary>
+        /// Exception message
+        /// </Summary>
         std::string what_message;
 
     public:
-        std::string msg;
 
+        /// <Summary>
+        /// Create exception
+        /// </Summary>
         runtimeexception(std::string message) : what_message(message){
         }
 
+        /// <Summary>
+        /// Get cause message
+        /// </Summary>
         const char* what() const throw() {
             return what_message.c_str();
         }
 };
 
+/// <Summary>
+/// Represents a runtime environment including variable values
+/// </Summary>
 class environment {
     private:
+        /// <Summary>
+        /// List of assigned quantum variables
+        /// </Summary>
         map<string,qreg> quantum_registers;
+        /// <Summary>
+        /// List of assigned classic varaibles
+        /// </Summary>
         map<string,creg> classic_registers;
 
     public:
-        void getGate(string name, igate* gateptr){
+        /// <Summary>
+        /// For a given name, return the associated gate object
+        /// </Summary>
+        igate* getGate(string name){
+            igate* gateptr = NULL;
             if(name == "h"){
-                *gateptr = qlib::quantum::gates::H;
+                gateptr = &qlib::quantum::gates::H;
             }
             else if(name == "cnot" || name == "cx"){
-                *gateptr = qlib::quantum::gates::CNOT;
+                gateptr = &qlib::quantum::gates::CNOT;
             }
             else if(name == "cy"){
-                *gateptr = qlib::quantum::gates::CY;
+                gateptr = &qlib::quantum::gates::CY;
             }
             else if(name == "cz"){
-                *gateptr = qlib::quantum::gates::CZ;
+                gateptr = &qlib::quantum::gates::CZ;
             }
             else if(name == "i"){
-                *gateptr = qlib::quantum::gates::I;
+                gateptr = &qlib::quantum::gates::I;
             }
             else if(name == "x"){
-                *gateptr = qlib::quantum::gates::X;
+                gateptr = &qlib::quantum::gates::X;
             }
             else if(name == "y"){
-                *gateptr = qlib::quantum::gates::Y;
+                gateptr = &qlib::quantum::gates::Y;
             }
             else if(name == "z"){
-                *gateptr = qlib::quantum::gates::Z;
+                gateptr = &qlib::quantum::gates::Z;
+            }
+            else if(name == "t"){
+                gateptr = &qlib::quantum::gates::T;
             }
             else if(name == "ccnot" || name == "toffoli"){
-                *gateptr = qlib::quantum::gates::CCNOT;
+                gateptr = &qlib::quantum::gates::CCNOT;
             }
+            return gateptr;
         }
 
+        /// <Summary>
+        /// Get classic variable from a name
+        /// </Summary>
         creg& getCreg(string name){
             return classic_registers[name];
         }
 
+        /// <Summary>
+        /// Test if a classic variable with name exists
+        /// </Summary>
         bool hasCreg(string name){
             return classic_registers.count(name) > 0;
         }
 
+        /// <Summary>
+        /// Bind a classic variable to a name
+        /// </Summary>
         void setCreg(string name, u64 size){
             creg r;
-            for(ulong i = 0; i < size; i++){
+            for(u64 i = 0; i < size; i++){
                 r.push_back(false);
             }
             classic_registers[name] = r;
         }
 
+        /// <Summary>
+        /// Get quantum variable from a name
+        /// </Summary>
         qreg& getQreg(string name){
             return quantum_registers[name];
         }
 
+        /// <Summary>
+        /// Test if a quantum variable with name exists
+        /// </Summary>
         bool hasQreg(string name){
             return quantum_registers.count(name) > 0;
         }
 
+        /// <Summary>
+        /// Bind a quantum variable to a name
+        /// </Summary>
         void setQreg(string name, u64 size){
             qreg q(size);
             quantum_registers[name] = q;
@@ -104,32 +150,61 @@ class environment {
 
 namespace exec {
 
+    /// <Summary>
+    /// Represents an instruction that can be run
+    /// </Summary>
     class executable {
         private:
         public: 
+            /// <Summary>
+            /// Run instruction's primary operation
+            /// </Summary>
             virtual void invoke_rootprogram(runtime::environment& env) {};
+            /// <Summary>
+            /// Run instruction's secondary operation
+            /// </Summary>
             virtual void invoke_subprogram(runtime::environment& env) {};
     };
 
+    /// <Summary>
+    /// Instruction to execute a subcircuit program
+    /// </Summary>
     class apply_subcircuit : public executable {
         public: 
+            /// <Summary>
+            /// Name of subcircuit to run
+            /// </Summary>
             std::string name;
+            /// <Summary>
+            /// Parameters to pass to subcircuit
+            /// </Summary>
             std::vector<std::string> params;
 
             apply_subcircuit(string name) : name(name) {}
     };
 
+    /// <Summary>
+    /// Instruction to apply a gate to a register
+    /// </Summary>
     class apply_gate : public executable {
         public:
+            /// <Summary>
+            /// Name of gate to apply
+            /// </Summary>
             std::string name;
+            /// <Summary>
+            /// Name of registers to apply to (should be all the same)
+            /// </Summary>
             std::vector<std::string> param_names;
+            /// <Summary>
+            /// Index of each register to apply to
+            /// </Summary>
             std::vector<u64> param_indecies;
 
             apply_gate(string name): name(name){}
 
             virtual void invoke_rootprogram(runtime::environment& env) {
-                igate* ptr = NULL;
-                env.getGate(name, ptr);
+                igate* ptr = env.getGate(name);
 
                 //Gate doesn't exist
                 if(ptr == NULL){
@@ -181,8 +256,14 @@ namespace exec {
             };
     };
 
+    /// <Summary>
+    /// Instruction to print register to console
+    /// </Summary>
     class print : public executable{
         public:
+            /// <Summary>
+            /// What variable to print to console
+            /// </Summary>
             std::string reference;
 
             print(string ref): reference(ref){}
@@ -192,7 +273,7 @@ namespace exec {
                 std::cout << "print: ";
                 if(env.hasCreg(reference)){
                     creg& r = env.getCreg(reference);
-                    for (creg::const_iterator i = r.begin(); i != r.end(); i++)
+                    for (creg::const_reverse_iterator  i = r.rbegin(); i != r.rend(); i++)
                         std::cout << (*i == true ? "1" : "0");
                 }else if(env.hasQreg(reference)){
                     std::cout << env.getQreg(reference).toString();
@@ -208,12 +289,30 @@ namespace exec {
             };
     };
 
+    /// <Summary>
+    /// Instruction to measure a quantum variable into a classical one
+    /// </Summary>
     class measurement : public executable {
         public: 
+            /// <Summary>
+            /// Quantum register name
+            /// </Summary>
             std::string qreg;
+            /// <Summary>
+            /// Quantum register index
+            /// </Summary>
             long qindex;
+            /// <Summary>
+            /// Classic register name
+            /// </Summary>
             std::string creg;
+            /// <Summary>
+            /// Classic register index
+            /// </Summary>
             long cindex;
+            /// <Summary>
+            /// Flag if whole register is to be measured or just the given indexes
+            /// </Summary>
             bool measureWhole;
 
             measurement(string qr, long qi, string cr, long ci) : qreg(qr), qindex(qi), creg(cr), cindex(ci), measureWhole(false) {}
@@ -232,8 +331,9 @@ namespace exec {
                 if(measureWhole){
                     for(size_t s = 0; s < q.size(); s++){
                         u8 value = q.measure(s);
+                        bool isOne = value > 0;
                         if(s < c.size())
-                            c[s] = value;
+                            c[s] = isOne;
                     }
                 }else {
                     
@@ -246,22 +346,34 @@ namespace exec {
                     }
                     if(cindex < 0 || cindex >= c.size()){
                         //Cbit index out of range
-                        //Qbit index out of range
                         stringstream sb;
                         sb << "Classical index: ";
                         sb << creg << cindex << " out of range";
                         throw qasm::runtime::runtimeexception(sb.str());
                     }
+                    
                     u8 value = q.measure(qindex);
                     c[cindex] = value;
                 }
             };
     };
 
+    /// <Summary>
+    /// Instruction to decare a variable
+    /// </Summary>
     class declaration : public executable{
         public: 
+            /// <Summary>
+            /// Type of variable to declare
+            /// </Summary>
             std::string type;
+            /// <Summary>
+            /// Name of variable to declare
+            /// </Summary>
             std::string name;
+            /// <Summary>
+            /// Size of variable
+            /// </Summary>
             u64 size;
         
             declaration(string t, string n, u64 s) : type(t), name(n), size(s) {}

@@ -17,9 +17,18 @@ class program;
 bool try_parse_qasm(program& prog, std::string file_name, lexical::lexer& tokenizer);
 //----------------------
 
+/// <Summary>
+/// Class containing all instructions to execute
+/// </Summary>
 class program {    
     public:
+        /// <Summary>
+        /// List of executable instructions
+        /// </Summary>
         std::vector<qasm::exec::executable*> lines;
+        /// <Summary>
+        /// Map of name to line index of each anchor for jump operations
+        /// </Summary>
         std::map<std::string, ulong> anchors;
 
         program(){}
@@ -29,10 +38,16 @@ class program {
             }
         }
 
+        /// <Summary>
+        /// Add instruction
+        /// </Summary>
         void push(qasm::exec::executable* ptr){
             lines.push_back(ptr);
         }
 
+        /// <Summary>
+        /// Add several instructions
+        /// </Summary>
         void push(std::vector<qasm::exec::executable*> lines){
             for(std::vector<qasm::exec::executable*>::iterator it = lines.begin(); it != lines.end(); it++){
                 push(*it);
@@ -43,7 +58,9 @@ class program {
 namespace qasm {
 namespace rules {
 
-    //subcircuit_application: Name Name*;
+    /// <Summary>
+    /// Parse subcircuit_application: Name Name*;
+    /// </Summary>
     bool try_parse_subcircuit_application(program& prog, std::vector<lexical::match>& tokens){
         if(tokens.size() < 1){
             return false;
@@ -65,7 +82,9 @@ namespace rules {
         }
     }
 
-    //gate_application: Name Index*; 
+    /// <Summary>
+    /// Parse gate_application: Name Index*; 
+    /// </Summary>
     bool try_parse_gate_application(program& prog, std::vector<lexical::match>& tokens){
         if(tokens.size() < 2){
             return false;
@@ -87,7 +106,9 @@ namespace rules {
         }
     }
 
-    //debug: Print Name; 
+    /// <Summary>
+    /// Parse debug: Print Name;  
+    /// </Summary>
     bool try_parse_debug(program& prog, std::vector<lexical::match>& tokens){
         if(tokens.size() < 2){
             return false;
@@ -103,7 +124,9 @@ namespace rules {
         }
     }
 
-    //measurement: Measure Index Mapping Index;
+    /// <Summary>
+    /// Parse measurement: Measure Index Mapping Index;
+    /// </Summary>
     bool try_parse_measurement(program& prog, std::vector<lexical::match>& tokens){
         if(tokens.size() < 4){
             return false;
@@ -129,8 +152,8 @@ namespace rules {
             (tokens[3].lexemeptr)->name == "Reference"
         ){
             prog.push(new qasm::exec::measurement(
-                tokens[1].content[1], 
-                tokens[3].content[1]
+                tokens[1].content[0], 
+                tokens[3].content[0]
             ));
             return true;
         }
@@ -139,7 +162,9 @@ namespace rules {
         }
     }
 
-    //declaration: Name Name '[' Integer+ ']';  
+    /// <Summary>
+    /// Parse declaration: Name Name '[' Integer+ ']';  
+    /// </Summary>
     bool try_parse_declaration(program& prog, std::vector<lexical::match>& tokens){
         if(tokens.size() < 5){
             return false;
@@ -162,7 +187,9 @@ namespace rules {
         }
     }
 
-    //label: Dot Name ;
+    /// <Summary>
+    /// Parse label: Dot Name ;  
+    /// </Summary>
     bool try_parse_label(program& prog, std::vector<lexical::match>& tokens){
         if(tokens.size() < 2){
             return false;
@@ -178,7 +205,9 @@ namespace rules {
         }
     }
 
-    //include: Include String;
+    /// <Summary>
+    /// Parse include: Include String;
+    /// </Summary>
     bool try_parse_include(program& prog, lexical::lexer& tokenizer, std::vector<lexical::match>& tokens){
         if(tokens.size() < 2){
             return false;
@@ -196,9 +225,9 @@ namespace rules {
         }
     }
 
-    //
-    //Catch all, try every sub-rule
-    //
+    /// <Summary>
+    /// Test every rule against a list of matched tokens, If rule is matched an instruction is added to the program and this returns true
+    /// </Summary>
     bool try_parse_rule(program& prog, lexical::lexer& tokenizer, std::vector<lexical::match>& tokens){
         if(try_parse_include(prog, tokenizer, tokens)){
             return true;
@@ -226,14 +255,32 @@ namespace rules {
 }
 }
 
+/// <Summary>
+/// Class for exceptions occuring during parsing of lexical tokens
+/// </Summary>
 class parseexception : public std::exception {
     private:
+        /// <Summary>
+        /// Combined message
+        /// </Summary>
         std::string what_message;
 
     public:
+        /// <Summary>
+        /// Row of cause
+        /// </Summary>
         ulong r;
+        /// <Summary>
+        /// Column of cause
+        /// </Summary>
         ulong c;
+        /// <Summary>
+        /// Filename cause occurred in
+        /// </Summary>
         std::string file;
+        /// <Summary>
+        /// Cause of exception
+        /// </Summary>
         std::string msg;
 
         parseexception(ulong row, ulong column, std::string file, std::string message) : r(row), c(column), file(file), msg(message){
@@ -247,6 +294,9 @@ class parseexception : public std::exception {
         }
 };
 
+/// <Summary>
+/// Try and parse a file into a program
+/// </Summary>
 bool try_parse_qasm(program& prog, std::string file_name, lexical::lexer& tokenizer){
     std::ifstream file(file_name);
 	std::string line;
@@ -259,7 +309,7 @@ bool try_parse_qasm(program& prog, std::string file_name, lexical::lexer& tokeni
                 file_line++;
                 continue;
             }
-            cout << "line " << file_line << endl;
+            
             if(qasm::rules::try_parse_rule(prog, tokenizer, tokens)){
 
             }else{

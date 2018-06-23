@@ -3,8 +3,12 @@
 
 #include "./lexer.hpp"
 
+/*
 namespace parsing {
 
+/// <Summary>
+/// Class representing how many times something can be repeates
+/// </Summary>
 class repeat {
     private:
         long min;
@@ -163,7 +167,7 @@ choice operator | (rule& left, rule& right) {
 // Example use
 // ----------------------------------------------------------
 
-/*
+
 choice s = (literal(token) >> *literal(token2)) | literal(token3);
 */
 

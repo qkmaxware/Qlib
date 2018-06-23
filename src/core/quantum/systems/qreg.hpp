@@ -83,14 +83,16 @@ class qreg : public qsystem {
         /// Collapse the state and return the value of the measured qubit
         /// </Summary>
         i8 measure(i64 qubit){
+            
             f64 zero = 0.0;
             f64 one = 0.0;
 
             i64 state = 0;
             i64 mask = 1 << qubit;
+            
             for(std::vector<complex>::iterator it = amplitudes.begin(); it != amplitudes.end(); it++){
                 //State has '1'
-                if(state && qubit > 0){
+                if(state & mask > 0){
                     one += it->sqrMagnitude();
                 }
                 //State has '0'
@@ -102,39 +104,32 @@ class qreg : public qsystem {
             
             f64 prob = this->distribution(rng);
             
-            state = 0;
             f64 rootOne = sqrt(one);
             f64 rootZero = sqrt(zero);
             bool zeroChosen = prob <= zero;
             if(zeroChosen){
                 //Collapse qubit has chosen to be '0'
-                for(std::vector<complex>::iterator it = amplitudes.begin(); it != amplitudes.end(); it++){
-                    
+                for(size_t r = 0; r < amplitudes.countRows(); r++){
                     //State has '1'
-                    if(state && qubit > 0){
-                        it[state] = complex(0,0);
+                    if(r & mask > 0){
+                        amplitudes(r,0) = complex(0,0);
                     }
                     //State has '0', re-normalize
                     else {
-                        it[state] = it[state] / rootZero;
+                        amplitudes(r,0) = amplitudes(r,0) / rootZero;
                     }
-            
-                    state ++;
                 }
             }else {
-                //Collapse qubit has chosen to be '1'
-                for(std::vector<complex>::iterator it = amplitudes.begin(); it != amplitudes.end(); it++){
-                    
+                //Collapse qubit has chosen to be '0'
+                for(size_t r = 0; r < amplitudes.countRows(); r++){
                     //State has '1', re-normalize
-                    if(state && qubit > 0){
-                        it[state] = it[state] / rootOne;
+                    if(r & mask > 0){
+                       amplitudes(r,0) = amplitudes(r,0) / rootOne;
                     }
                     //State has '0'
                     else {
-                        it[state] = complex(0,0);
+                        amplitudes(r,0) = complex(0,0);
                     }
-            
-                    state ++;
                 }
             }
 
@@ -146,16 +141,18 @@ class qreg : public qsystem {
         /// </Summary>
         std::string toString(){
             std::stringstream sb;
+            bool first = true;
 
-            for(uint i = 0; i < states; i++){
+            for(u32 i = 0; i < states; i++){
                 qlib::math::complex& cp = (this->amplitudes(i,0));
                 //basically 0, skip
                 if(cp.sqrMagnitude() < std::numeric_limits<float>::epsilon()){
                     continue;
                 }
-                if(i != 0)
+                if(!first)
                     sb << " + ";
                 sb << "(" << cp.toString() << ")|" << i << ">";
+                first = false;
             }
 
             return sb.str();

@@ -18,15 +18,11 @@ public class RuntimeReport {
         StringBuilder sb = new StringBuilder();
         
         if(output.trim().length() != 0){
-            sb.append("\n//-----------------------");
-            sb.append("\nProgram Execution Success");
-            sb.append("\n//-----------------------\n");
+            sb.append("\n// Program Execution Success ----------------------- \n");
             sb.append(output);
         }
         if(errors.trim().length() != 0){
-            sb.append("\n//-----------------------");
-            sb.append("\nErrors");
-            sb.append("\n//-----------------------\n");
+            sb.append("\n// Errors -----------------------\n");
             sb.append(errors);
         }
         

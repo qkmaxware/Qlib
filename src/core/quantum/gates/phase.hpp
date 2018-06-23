@@ -3,6 +3,7 @@
 
 #include "onequbitgate.hpp"
 #include <math.h>
+#include <cmath>
 
 namespace qlib {
 namespace quantum {
@@ -19,6 +20,8 @@ onequbitgate phase(f32 angle){
             complex(0), complex(cos(angle), sin(angle))
         });
 }
+
+onequbitgate T = phase(M_PI / 8);
 
 }
 }

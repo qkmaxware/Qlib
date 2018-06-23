@@ -9,18 +9,12 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
-import java.awt.event.ActionEvent;
-import java.awt.event.FocusAdapter;
-import java.awt.event.FocusEvent;
-import java.awt.event.InputEvent;
-import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Paths;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -28,7 +22,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import javax.swing.text.DefaultCaret;
 import resources.Loader;
 
 /**
@@ -192,6 +185,18 @@ public class QLibIDE {
             }
         });
         addShortcutKey(KeyEvent.VK_ENTER, run.getMouseListeners());
+        
+        JLabel clear = new JLabel(new ImageIcon(Loader.resources.load("glyphicons-551-erase.png")));
+        header.add(clear);
+        clear.setToolTipText("Clear Terminal");
+        clear.setBorder(new EmptyBorder(4, 4, 4, 4));
+        clear.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                log.setText("");
+            }
+        });
+        
                 
         header.add(Box.createHorizontalGlue());
         

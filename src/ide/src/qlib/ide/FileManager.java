@@ -73,7 +73,7 @@ public class FileManager {
             //First word of line colour
             editor.addStyle("(?:^|\\n)\\s*.*?(?=(?:$|\\s))", new Color(99,125,160));
             //Keyword colour
-            editor.addStyle("\\b(?:begin|end|measure)\\b", new Color(88, 108, 167));
+            editor.addStyle("\\b(?:begin|end|measure)\\b", new Color(168, 23, 141));
             //Label colour
             editor.addStyle("\\..+", new Color(236, 173, 135));
             //String colour
@@ -100,6 +100,22 @@ public class FileManager {
             
             tabs.add(t.panel);
             tabs.repaint();
+            
+            AutoComplete auto = new AutoComplete(editor.getEditor());
+            auto.setCharactersUntilSuggestions(2);
+            auto.addWord("measure");
+            auto.addWord("qreg");
+            auto.addWord("creg");
+            auto.addWord("import");
+            auto.addWord("begin");
+            auto.addWord("end");
+            
+            auto.addWord("ccnot");
+            auto.addWord("toffoli");
+            auto.addWord("cnot");
+            auto.addWord("cx");
+            auto.addWord("cy");
+            auto.addWord("cz");
             
             openTabs.add(t);
         }catch(Exception e){}

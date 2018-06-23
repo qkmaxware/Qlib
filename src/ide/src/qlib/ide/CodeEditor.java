@@ -10,7 +10,6 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.util.LinkedList;
-import java.util.function.Supplier;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.swing.JPanel;
@@ -19,7 +18,6 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.text.AttributeSet;
 import javax.swing.text.BadLocationException;
-import javax.swing.text.DefaultCaret;
 import javax.swing.text.DefaultStyledDocument;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyleContext;
@@ -129,7 +127,7 @@ public class CodeEditor extends JPanel {
         
         updateNumbering();
     }
-    
+   
     public void addChangeListener(ChangeListener listener){
         this.onChangeListeners.add(listener);
     }
@@ -217,4 +215,7 @@ public class CodeEditor extends JPanel {
         }catch(Exception e){}
     }
     
+    public JTextPane getEditor(){
+        return this.editor;
+    }
 }

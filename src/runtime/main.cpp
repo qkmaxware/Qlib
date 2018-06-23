@@ -18,6 +18,7 @@
 #include "./lexer.hpp"
 #include "./parser.hpp"
 #include "./qasmparser.hpp"
+#include "./runtime.hpp"
 
 using namespace std;
 using namespace lexical;
@@ -78,12 +79,12 @@ int main(int arg_count, char* arg_values[]){
 
 	//Arg is filename
 	program prog;
+	qasm::runtime::environment env;
 	if(try_parse_qasm(prog, arg_values[1], tokenizer)){
 		//qasmenv env;
 		//prog.run(env);
 		for(std::vector<qasm::exec::executable*>::iterator it = prog.lines.begin(); it != prog.lines.end(); it++){
-			//(*it)->invoke_rootprogram(prog, env);
-			
+			(*it)->invoke_rootprogram(env);	
 		}
 	}
 
