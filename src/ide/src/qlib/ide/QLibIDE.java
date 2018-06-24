@@ -76,6 +76,10 @@ public class QLibIDE {
      */
     private final FileManager manager = new FileManager();
     /**
+     * UI for configuring options
+     */
+    private OptionsMenu menu;
+    /**
      * Date format
      */
     private final DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
@@ -118,6 +122,10 @@ public class QLibIDE {
         log_scroll.getVerticalScrollBar().setUnitIncrement(16);
         log.setEditable(false);
         pane.add(log_scroll, BorderLayout.SOUTH);
+        
+        menu = new OptionsMenu(config, configLocation);
+        menu.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        menu.setSize(340, 260);
         
         //-Actions
 
@@ -189,7 +197,6 @@ public class QLibIDE {
         
         header.add(Box.createHorizontalGlue());
         
-        
         JLabel run = new JLabel(new ImageIcon(Loader.resources.load("glyphicons-174-play.png")));
         header.add(run);
         run.setDisplayedMnemonic(KeyEvent.VK_ENTER);
@@ -243,7 +250,9 @@ public class QLibIDE {
         settings.setBorder(new EmptyBorder(4, 4, 4, 4));
         settings.addMouseListener(new MouseAdapter() {
             @Override
-            public void mouseClicked(MouseEvent e) {}
+            public void mouseClicked(MouseEvent e) {
+                menu.setVisible(true);
+            }
         });
         
         //--------

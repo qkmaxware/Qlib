@@ -7,6 +7,5 @@ print q
 x q1
 
 //Measure
-print q
 measure q -> c 
 print c

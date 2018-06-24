@@ -25,12 +25,16 @@ Copy the file to your windows machine
 ##Usage
 The runtime is a command line utility to parse, and run QAS scripts using the Qlib - Core backend. To invoke the runtime, simply use terminal/cmd/powershell to execute the binary and pass in the path to the script file.
 ```
-> ./run <path-to-file>
+> <path-to-binary> <path-to-file>
+```
+for example
+```
+> ./qlib.exe ./my_script.qas
 ```
 
 ##QAS
 ####Summary
-Syntactically, QAS is organized as a list of quantum assembly instructions with one instruction per line. Instructions get executed one at a time in sequential order. The following sections describe each of the types of instruction in QAS.
+QAS is the programming language that is used by the Qlib - Runtime. Syntactically, QAS is organized as a list of quantum assembly instructions with one instruction per line. Instructions get executed one at a time in sequential order. The following sections describe each type of instruction in the QAS language.
 ####Register Declaration
 ```
 qreg my_quantum_reg[2]
@@ -78,9 +82,9 @@ cnot q0 q1
 Gate application is written as a gate's name followed by the qubits that the gate is to operate on. The qubits are identified by the name of the variable followed by an integer indicating the qubit index in the register. The indexes start at 0 and end at register.size - 1;
 ```
 q0          - quantum register 'q', qubit 0
-q1          - quantum register '1', qubit 1
+q1          - quantum register 'q', qubit 1
 ```
-All of the gates that are defined in Qlib - Core can be used. These gates are defined follows, where the QAS Name is the name is used as the first argument in the gate application statement.
+All of the gates that are defined in Qlib - Core can be used. These gates are defined as follows, where the QAS Name is the name is used as the first argument in the gate application statement.
 | Operator | QAS Name | Qlib Alias | Number of Qubits |
 |---|---|---|---|
 |  Identity | i | gates::I | 1 |
@@ -102,7 +106,7 @@ The above 2 statements are the two different kinds of measurement statement. The
 ```
 measure qN -> cN 
 ```
-where {N | N &#8712; I* : N >= 0 and N < qreg.size }. In other words, N is an integer between 0 and the size of the quantum register. Measurements will put either 0 or 1 into a classical register, and will collapse the quantum register into a new superposition.
+where  {N &#8712; Z* | N < qreg.size}. In other words, N is an integer between 0 and the size of the quantum register. Measurements will put either 0 or 1 into a classical register, and will collapse the quantum register into a new superposition.
 ####Include
 ```
 include "./other_file.qas"
