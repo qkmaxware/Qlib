@@ -85,18 +85,74 @@ q0          - quantum register 'q', qubit 0
 q1          - quantum register 'q', qubit 1
 ```
 All of the gates that are defined in Qlib - Core can be used. These gates are defined as follows, where the QAS Name is the name is used as the first argument in the gate application statement.
-| Operator | QAS Name | Qlib Alias | Number of Qubits |
-|---|---|---|---|
-|  Identity | i | gates::I | 1 |
-|  Hadamard | h | gates::H | 1 |
-|  Pauli X  | x | gates::X | 1 |
-|  Pauli Y  | y | gates::Y | 1 |
-|  Pauli Z  | z | gates::Z | 1 |
-|  T        | t | gates::T | 1 |
-|  Controlled NOT | cnot, cx | gates::CNOT, gates::CX | 2 |
-|  Controlled Y | cy | gates::CY | 2 |
-|  Controlled Z | cz | gates::CZ | 2 |
-|  Toffoli |  toffoli| gates::CCNOT, gates::TOFFOLI | 3 |
+<table>
+    <tr>
+        <th>Operator</th>
+        <th>QAS Name</th>
+        <th>Qlib Alias</th>
+        <th>Number of Qubits</th>
+    </tr>
+    <tr>
+        <td>Identity</td>
+        <td>i</td>
+        <td>gates::I</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Hadamard</td>
+        <td>h</td>
+        <td>gates::H</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Pauli X</td>
+        <td>x</td>
+        <td>gates::X</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Pauli Y</td>
+        <td>y</td>
+        <td>gates::Y</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Pauli Z</td>
+        <td>z</td>
+        <td>gates::Z</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>T</td>
+        <td>t</td>
+        <td>gates::T</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Controlled NOT</td>
+        <td>cnot, cx</td>
+        <td>gates::CNOT, gates::CX</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>Controlled Y</td>
+        <td>cy</td>
+        <td>gates::CY</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>Controlled Z</td>
+        <td>cz</td>
+        <td>gates::CZ</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>Toffoli</td>
+        <td>toffoli, ccnot</td>
+        <td>gates::TOFFOLI, gates::CCNOT</td>
+        <td>3</td>
+    </tr>
+</table>
 ####Measure
 ```
 measure q0 -> c0

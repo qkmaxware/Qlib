@@ -36,10 +36,29 @@ The first button on the far right will open the internet browser to the online d
 The final button on the far right of the header will open a new window where the settings for the IDE can be modified.
 
 ##Shortcuts
-| Action | Key |
-| ------ | --- |
-| New File | Ctrl + N |
-| Open File | Ctrl + O |
-| Save File | Ctrl + S |
-| Close File | Ctrl + W |
-| Run Script | Ctrl + Enter |
+<table>
+    <tr>
+        <th>Action</th>
+        <th>Key</th>
+    </tr>
+    <tr>
+        <td>New File</td>
+        <td>Ctrl + N</td>
+    </tr>
+    <tr>
+        <td>Open File</td>
+        <td>Ctrl + O</td>
+    </tr>
+    <tr>
+        <td>Save File</td>
+        <td>Ctrl + S</td>
+    </tr>
+    <tr>
+        <td>Close File</td>
+        <td>Ctrl + W</td>
+    </tr>
+    <tr>
+        <td>Run Script</td>
+        <td>Ctrl + Enter</td>
+    </tr>
+</table>

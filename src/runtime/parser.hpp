@@ -3,40 +3,42 @@
 
 #include "./lexer.hpp"
 
-/*
-namespace parsing {
+#include <memory> 
+#include <iostream>
 
-/// <Summary>
-/// Class representing how many times something can be repeates
-/// </Summary>
+using namespace lexical;
+
+namespace parser {
+
 class repeat {
     private:
         long min;
         long max;
         bool hasMax;
-
+ 
     public:
         repeat(): min(1), max(1), hasMax(true) {}
         repeat(long min): min(min), max(0), hasMax(false) {}
         repeat(long min, long max) : min(min), max(max), hasMax(true) {}
-
+        repeat(const repeat& rep) : min(rep.min), max(rep.max), hasMax(rep.hasMax) {}
+ 
         bool inRange(long x){
-            return x >= min && (!hasMax || x <= max); 
+            return x >= min && (!hasMax || x <= max);
         }
-
+ 
         bool underMin(long x){
             return x < min;
         }
-
+ 
         bool overMax(long x){
             return hasMax && x > max;
         }
-
+ 
         bool hasRepetitionsRemaining(long x){
             return underMin(x) || inRange(x);
         }
 };
-
+ 
 const repeat KLEENE_STAR     = repeat(0);
 const repeat KLEENE_PLUS     = repeat(1);
 const repeat KLEENE_ONCE     = repeat(1,1);
@@ -45,133 +47,113 @@ const repeat KLEENE_OPTIONAL = repeat(0,1);
 class rule {
     private:
     public:
-        virtual repeat& repetitions() = 0;
+        virtual~rule() {}
+        virtual void parse() {}
 };
 
-class choice : public rule {
-    private:
-        rule& left;
-        rule& right;
+typedef std::shared_ptr < rule > sp;
+
+class repeater: public rule {
+    private: 
+        sp rl;
         repeat rep;
-
-    public:
-        choice(rule& left, rule& right) : left(left), right(right) {}
-        choice(repeat rep, rule& left, rule& right) : rep(rep), left(left), right(right) {}
-
-        rule& car(){
-            return left;
-        }
-
-        rule& cdr(){
-            return right;
-        }
-
-        repeat& repetitions() {
-            return rep;
-        }
+    public: 
+        repeater(sp r, repeat rep): rl(r),rep(rep) {}
 };
 
-class sequence : public rule {
-    private:
-        rule& first;
-        rule& next;
-        repeat rep;
-
-    public:
-        sequence(rule& first, rule& next) : first(first), next(next) {}
-        sequence(repeat rep, rule& first, rule& next) : rep(rep), first(first), next(next) {}
-
-        rule& car(){
-            return first;
-        }
-
-        rule& cdr(){
-            return next;
-        }
-
-        repeat& repetitions() {
-            return rep;
-        }
+class terminal: public rule {
+    private: 
+        lexeme & lex;
+    public: 
+        terminal(lexeme & lex): lex(lex) {}
 };
 
-class literal : public rule {
-    private:
-        lexical::lexeme& lex;
-        repeat rep;
-
-    public:
-        literal(lexical::lexeme& lex): lex(lex) {}
-        literal(lexical::lexeme& lex, repeat rep): lex(lex), rep(rep) {}
-
-        lexical::lexeme& token(){
-            return lex;
-        }
-
-        repeat& repetitions() {
-            return rep;
-        }
+class sequence: public rule {
+    private: 
+        sp left;
+        sp right;
+    public: 
+        sequence(sp first, sp next): left(first), right(next) {}
 };
 
-// -----------------------------------------------------------
-// KLEENE operators
-// -----------------------------------------------------------
-literal operator *(literal& right){
-    return literal(right.token(), KLEENE_STAR);
+class choice: public rule {
+    private: 
+        sp left;
+        sp right;
+    public: 
+        choice(sp first, sp second): left(first), right(second) {}
 };
+}
 
-choice operator *(choice& right){
-    return choice(KLEENE_STAR, right.car(), right.cdr());
-};
+// -------------------------------------------------------------------
+// Unitary
+// -------------------------------------------------------------------
 
-sequence operator *(sequence& right){
-    return sequence(KLEENE_STAR, right.car(), right.cdr());
-};
+parser::sp operator * (parser::sp right) {
+  return parser::sp((parser::rule * ) new parser::repeater(right, parser::KLEENE_STAR));
+}
 
-literal operator +(literal& right){
-    return literal(right.token(),KLEENE_PLUS);
-};
+parser::sp operator + (parser::sp right) {
+  return parser::sp((parser::rule * ) new parser::repeater(right, parser::KLEENE_PLUS));
+}
 
-sequence operator +(sequence& right){
-    return sequence(KLEENE_PLUS, right.car(), right.cdr());
-};
+parser::sp operator!(parser::sp right) {
+  return parser::sp((parser::rule * ) new parser::repeater(right, parser::KLEENE_OPTIONAL));
+}
 
-choice operator +(choice& right){
-    return choice(KLEENE_PLUS, right.car(), right.cdr());
-};
+parser::sp operator * (lexeme & right) {
+  parser::sp pt = parser::sp((parser::rule * ) new parser::terminal(right));
+  return parser::sp((parser::rule * ) new parser::repeater(pt, parser::KLEENE_STAR));
+}
 
-literal operator ~(literal& right){
-    return literal(right.token(), KLEENE_OPTIONAL);
-};
+parser::sp operator + (lexeme & right) {
+  parser::sp pt = parser::sp((parser::rule * ) new parser::terminal(right));
+  return parser::sp((parser::rule * ) new parser::repeater(pt, parser::KLEENE_PLUS));
+}
 
-sequence operator ~(sequence& right){
-    return sequence(KLEENE_OPTIONAL, right.car(), right.cdr());
-};
+parser::sp operator!(lexeme & right) {
+  parser::sp pt = parser::sp((parser::rule * ) new parser::terminal(right));
+  return parser::sp((parser::rule * ) new parser::repeater(pt, parser::KLEENE_OPTIONAL));
+}
 
-choice operator ~(choice& right){
-    return choice(KLEENE_OPTIONAL, right.car(), right.cdr());
-};
+// -------------------------------------------------------------------
+// Binary
+// -------------------------------------------------------------------
 
-// -----------------------------------------------------------
-// Logical operators
-// -----------------------------------------------------------
+parser::sp operator << (parser::sp left, parser::sp right) {
+  return parser::sp((parser::rule * ) new parser::sequence(left, right));
+}
 
-sequence operator >> (rule& left, rule& right) {
-    return sequence(left, right);
-};
+parser::sp operator << (parser::sp left, lexeme & right) {
+  return parser::sp((parser::rule * ) new parser::sequence(left,
+    parser::sp((parser::rule * ) new parser::terminal(right))));
+}
 
-choice operator | (rule& left, rule& right) {
-    return choice(left, right);
-};
+parser::sp operator << (lexeme & left, parser::sp right) {
+  return parser::sp((parser::rule * ) new parser::sequence(parser::sp((parser::rule * ) new parser::terminal(left)), right));
+}
 
-// ----------------------------------------------------------
-// Example use
-// ----------------------------------------------------------
+parser::sp operator << (lexeme & left, lexeme & right) {
+  return parser::sp((parser::rule * ) new parser::sequence(parser::sp((parser::rule * ) new parser::terminal(left)),
+    parser::sp((parser::rule * ) new parser::terminal(right))));
+}
 
+parser::sp operator | (parser::sp left, parser::sp right) {
+  return parser::sp((parser::rule * ) new parser::choice(left, right));
+}
 
-choice s = (literal(token) >> *literal(token2)) | literal(token3);
+parser::sp operator | (parser::sp left, lexeme & right) {
+  return parser::sp((parser::rule * ) new parser::choice(left,
+    parser::sp((parser::rule * ) new parser::terminal(right))));
+}
 
+parser::sp operator | (lexeme & left, parser::sp right) {
+  return parser::sp((parser::rule * ) new parser::choice(parser::sp((parser::rule * ) new parser::terminal(left)), right));
+}
 
-}*/
-
+parser::sp operator | (lexeme & left, lexeme & right) {
+  return parser::sp((parser::rule * ) new parser::choice(parser::sp((parser::rule * ) new parser::terminal(left)),
+    parser::sp((parser::rule * ) new parser::terminal(right))));
+}
 
 #endif

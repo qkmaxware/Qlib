@@ -11,6 +11,10 @@
         - [Description](#description-1)
         - [Qubit Operators](#qubit-operators-1)
         - [Measurement](#measurement-1)
+    - [Ensemble](#ensemble)
+        - [Description](#description-2)
+        - [Qubit Operators](#qubit-operators-2)
+        - [Measurement](#measurement-2)
     - [Quantum System Interface](#quantum-system-interface)
 
 <!-- /TOC -->
@@ -91,13 +95,13 @@ In qlib, we can compute the number of elements in the state vector by a left bit
 long states = 1 << Number_of_Qubits;
 ```
 ####Qubit Operators
-Similarily to single qubits, operators are MxM hermitian matrices where M = 2^qubits. Most operators for quantum computing only operate on a single qubit, with a couple that take in more than one qubit. The reason for this is that we can constuct a set of universal quantum gates from as little as 3 gates: {H, T, CNOT} ([Phillip Kaye, Raymond Laflamme, Michele Mosca; 2007]()). By universal we mean that any operator on the space can be represented by some combination of gates from the universal set up to some level arbitrary level of precision.
+Similarily to single qubits, operators are MxM hermitian matrices where M = 2^qubits. Most operators for quantum computing only operate on a single qubit, with a couple that take in more than one qubit. The reason for this is that we can constuct a set of universal quantum gates from as little as 3 gates: {H, T, CNOT} (Phillip Kaye, Raymond Laflamme, Michele Mosca). By universal we mean that any operator on the space can be represented by some combination of gates from the universal set up to some level arbitrary level of precision.
 
 Application of operators in Qlib are limited to one-qubit operators and controlled qubit operators to simplify the code. Since we can get a universal set of gates from just one qubit opertors and any 2-qubit operator, this is sufficient. Applying a single qubit operator to an 'N' qubit systems involves constructing an MxM matrix using only 2x2 identity matrices and the  single-qubit operator one wishes to apply. For example, if one wanted to apply the H opertor to the 'K'th qubit in an 'N' qubit system (K < N), then the new operator in matrix form would look as it does in below.
 
 I<sub>0</sub> &#8855; I<sub>1</sub> &#8855; ... &#8855; H<sub>K</sub> &#8855; ... &#8855; I<sub>N</sub>
 
-However, this would not be an time or space efficient computation to perform on a computer as it would involve the allocation of an MxM matrix rather than just using a single-qubit 2x2 matrix. Intel described an alternative method in their paper discussing how the build their qHipster quantum simulator ([Mikhail Smelyanskiy, Nicolas P. D. Sawaya, Alán Aspuru-Guzik; 2016](https://arxiv.org/abs/1601.07195)). In this implementation we assume that states are ordered sequentially and we apply the 2x2 matrix to different pairs of values separated by a stride of 2^k where k is the index of the qubit being operated on (left-to-right). The psudo-code for this is shown below where the state vector is labeled "α" and the 2x2 operator is labeled as "q".
+However, this would not be an time or space efficient computation to perform on a computer as it would involve the allocation of an MxM matrix rather than just using a single-qubit 2x2 matrix. Intel described an alternative method in their paper discussing how the build their qHipster quantum simulator (Mikhail Smelyanskiy, Nicolas P. D. Sawaya, Alán Aspuru-Guzik). In this implementation we assume that states are ordered sequentially and we apply the 2x2 matrix to different pairs of values separated by a stride of 2^k where k is the index of the qubit being operated on (left-to-right). The psudo-code for this is shown below where the state vector is labeled "α" and the 2x2 operator is labeled as "q".
 ```
 for g ← 0; g < 2; g += 2^(k+1) do
     for i ← g; i < g + 2^k; i++ do
@@ -109,7 +113,7 @@ end for
 From here, we can extend this idea of applying one-qubit operators to pairs of states to controlled operators. In essence, we do the same procedure as above but we skip applying the opertro to pairs of states where the second-qubit or "control" qubit is unset. If one wanted to apply the controlled-X (CNOT) gate to a 2-qubit register with the first qubit is the target and the second qubit is the control, then we would apply the X operator to the state pair `|10> and |11>` since the second qubit is set (1) but would skip `|00> and |01>` because the second qubit is unset (0). This extention continues for 3 qubit gates with 2 control qubits.
 
 ####Measurement
-Measurement of an 'N' qubit system can be described in two ways. The first is a complete measurement where the whole system collapses to a specific state. This is similar to the method for single-qubit measurements where the system collapses into either 0 or 1, but instead of 0 or 1 the system is some binary string of 0's and 1's. For instance, with a 2-qubit system a complete measurment could collapse the whole system to state '01' where the first qubit collapsed to state 1 and the second qubit collapsed to state 0. The second way to describe a measurement, is a partial measurement of a specific qubit in the system. In this description, the measured qubit collapses to either state 0 or 1 but the other qubits remain in a superposition. This description is more general because we could apply this to each qubit sequentially and the end result is the same as applying a complete measurement. The basic algorithm for a partial measurement is shown in psudo-code below.
+Measurement of an 'N' qubit system can be described in two ways. The first is a complete measurement where the whole system collapses to a specific state. This is similar to the method for single-qubit measurements where the system collapses into either 0 or 1, but instead of 0 or 1 the system is some binary string of 0's and 1's. For instance, with a 2-qubit system, this kind of measurement could collapse the whole system to state '01' where the first qubit collapsed to state 1 and the second qubit collapsed to state 0. The second way to describe a measurement, is a partial measurement of a specific qubit in the system. In this description, the measured qubit collapses to either state 0 or 1 but the other qubits remain in a superposition. This description is more general because we could apply this to each qubit sequentially and the end result is the same as applying a the first method. The basic algorithm for a partial measurement is shown in psudo-code below.
 ```
 p0 ← sum amplitude^2 where qubit 'k' in state label is 0
 p1 ← sum amplitude^2 where qubit 'k' in state label is 1
@@ -124,6 +128,22 @@ else
     return 1
 ```
 The collapse function here takes in the qubit index and the measured value. If 0 is measured, then all state amplitudes in the superposition where the 'k'th qubit is 1 are set to 0, and the state-vector is then normalized. Alternatively if 1 was measured then state amplitudes where the 'k'th qubit was 0 are set to 0 and then the state-vector is normalized.
+###Ensemble
+####Description
+An ensemble represents a collection of identical systems. Since quantum computations are probabilisitic in nature, and the desired answer may not have 100% likelihood of occuring, an ensemble allows us to get the correct answer more often. The idea is that is you have several identical systems and you have a 75% chance of getting answer 'A' and a 25% chance of getting answer 'B', then the majority of these systems will yield answer 'A. Ensembled can technically store any quantum system, but are most effective when all the stored quantum systems are of the same type. An example of creating an ensemble can be seen below for an ensemble of 10 identical qubits.
+```cpp
+vector<qsystem*> systems;
+for(int i = 0; i < 10; i++){
+    systems.push_back(new qubit());
+}
+ensemble en(systems);
+``` 
+
+####Qubit Operators
+Since an ensemble is just a collection of systems, quantum operators bebaviors are described by the stored systems. The ensemble simply facilitates applying the given operator to all the systems at the same time. 
+
+####Measurement
+Similarily to operator application, the ensemble itself does not actually measure anything. Instead, the ensemble tells eash system to measure itself, and then returns the most common result from all the systems. 
 
 ###Quantum System Interface
 Each of the systems above shared the same kinds of operations (Apply Operator, Measure). Since these operations are shared for each type of quantum system, Qlib implements each of these systems as super-classes of a base "quantum system" interface. This interface definition can be seen below.
