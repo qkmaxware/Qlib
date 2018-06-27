@@ -22,6 +22,7 @@
 
 using namespace std;
 using namespace lexical;
+using namespace parser;
 
 int main(int arg_count, char* arg_values[]){
 	//-------------------------------------
@@ -67,6 +68,12 @@ int main(int arg_count, char* arg_values[]){
 	//-------------------------------------
 	//Create rules
 	//-------------------------------------
+	ruleptr import_ 			= _include << _string;
+	ruleptr label_ 				= _anchor << _reference;
+	ruleptr print_ 				= _print << _reference;
+	ruleptr application_ 		= _reference << *_indexor;
+	ruleptr typedecl_			= _reference << _reference << _leftb << _integer << _rightb;
+	ruleptr measurement_		= _measure << ((_indexor << _mapping << _indexor) | (_reference << _mapping << _reference));
 
 	//-------------------------------------
 	//Read in parameters

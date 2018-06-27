@@ -12,10 +12,11 @@ Since compiling a new application every time you write a quantum algorithm can b
 ###Qlib - IDE
 The Qlib - IDE is a front-end for the Qlib - Runtime. It is a java executable which contains basic syntax highlighting, code completion, and documentation. It can be used to quickly write scripts and then invoke them in the runtime without resorting to terminal commands. 
 
-###Component Documentation
+###Documentation Parts
 [QLib - Core](doc/core)
 [QLib - Runtime](doc/runtime)
 [QLib - IDE](doc/ide)
+[QLib - Application Programmer Interface](doc/api);
 [Appendix](/appendix.md)
 [Bibliography](/bibliography.md)
 
