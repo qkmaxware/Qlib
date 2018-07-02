@@ -255,6 +255,16 @@ public class QLibIDE {
             }
         });
         
+        //Shortcut to open last opened file
+        addShortcutKey(KeyEvent.VK_T, new MouseListener[]{new MouseAdapter(){
+            public void mouseClicked(MouseEvent e) {
+                if(config.getString("last file") != null){
+                    File file = new File(config.getString("last file"));
+                    manager.open(file.getAbsolutePath());
+                }
+            }
+        }});
+        
         //--------
         
         frame.pack();

@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classparser_1_1tokenqueue" kind="class" language="C++" prot="public">
+    <compoundname>parser::tokenqueue</compoundname>
+    <includes refid="parser_8hpp" local="no">parser.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classparser_1_1tokenqueue_1af9c381cb6495ade00167f2242b6862c5" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="structlexical_1_1match" kindref="compound">match</ref> &gt;</type>
+        <definition>vector&lt;match&gt; parser::tokenqueue::tokens</definition>
+        <argsstring></argsstring>
+        <name>tokens</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Token list </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="75" column="1" bodyfile="src/runtime/parser.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparser_1_1tokenqueue_1a442939c8efd904678d30e863da8db52b" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t parser::tokenqueue::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index to currently selected token </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="79" column="1" bodyfile="src/runtime/parser.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparser_1_1tokenqueue_1a8727f483d2c016495487b7fe1aa9d2be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>parser::tokenqueue::tokenqueue</definition>
+        <argsstring>(vector&lt; match &gt; &amp;toks)</argsstring>
+        <name>tokenqueue</name>
+        <param>
+          <type>vector&lt; <ref refid="structlexical_1_1match" kindref="compound">match</ref> &gt; &amp;</type>
+          <declname>toks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tokenqueue from vector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="84" column="1" bodyfile="src/runtime/parser.hpp" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1tokenqueue_1a19ed9dd34d5c205531e963241bbb4db5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t parser::tokenqueue::length</definition>
+        <argsstring>()</argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Elements remaining in the queue </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="88" column="1" bodyfile="src/runtime/parser.hpp" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1tokenqueue_1a177e88ad8ccef06bb18777fe59fff7bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool parser::tokenqueue::hasNext</definition>
+        <argsstring>()</argsstring>
+        <name>hasNext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if queue has more tokens </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="94" column="1" bodyfile="src/runtime/parser.hpp" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1tokenqueue_1a69326556cef2a89af0eb7310d2eb19d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t parser::tokenqueue::getRestorePoint</definition>
+        <argsstring>()</argsstring>
+        <name>getRestorePoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get current index in order to restore back to this point </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="100" column="1" bodyfile="src/runtime/parser.hpp" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1tokenqueue_1a9e57fac92d33fe369a7ad6b87d63e7d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void parser::tokenqueue::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start from the begining of the queue </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="106" column="1" bodyfile="src/runtime/parser.hpp" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1tokenqueue_1a39e90ab211fa63af79852763312f3242" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void parser::tokenqueue::restore</definition>
+        <argsstring>(size_t restorePoint)</argsstring>
+        <name>restore</name>
+        <param>
+          <type>size_t</type>
+          <declname>restorePoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the pointer to a particular element </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="112" column="1" bodyfile="src/runtime/parser.hpp" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1tokenqueue_1a981f451b1248537433bdb5aaa0ca6368" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structlexical_1_1match" kindref="compound">match</ref> &amp;</type>
+        <definition>match&amp; parser::tokenqueue::operator[]</definition>
+        <argsstring>(int ind)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the &apos;n&apos;th element in the queue </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="118" column="1" bodyfile="src/runtime/parser.hpp" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1tokenqueue_1afa7d5f0dcdce020660def60538c9f7eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structlexical_1_1match" kindref="compound">match</ref> &amp;</type>
+        <definition>match&amp; parser::tokenqueue::peek</definition>
+        <argsstring>()</argsstring>
+        <name>peek</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current element under the pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="124" column="1" bodyfile="src/runtime/parser.hpp" bodystart="124" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1tokenqueue_1aa8c2fdc681835f88dfe43659d18b0922" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structlexical_1_1match" kindref="compound">match</ref> &amp;</type>
+        <definition>match&amp; parser::tokenqueue::pop</definition>
+        <argsstring>()</argsstring>
+        <name>pop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the element under the pointer and increments the pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="130" column="1" bodyfile="src/runtime/parser.hpp" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1tokenqueue_1a75841d5aaa1b6eb3686481f61de07bbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void parser::tokenqueue::next</definition>
+        <argsstring>()</argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Increment the pointer if possible </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="137" column="1" bodyfile="src/runtime/parser.hpp" bodystart="137" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class representing a list of tokens with a pointer that can be changed </para>    </detaileddescription>
+    <location file="src/runtime/parser.hpp" line="70" column="1" bodyfile="src/runtime/parser.hpp" bodystart="70" bodyend="142"/>
+    <listofallmembers>
+      <member refid="classparser_1_1tokenqueue_1a69326556cef2a89af0eb7310d2eb19d3" prot="public" virt="non-virtual"><scope>parser::tokenqueue</scope><name>getRestorePoint</name></member>
+      <member refid="classparser_1_1tokenqueue_1a177e88ad8ccef06bb18777fe59fff7bd" prot="public" virt="non-virtual"><scope>parser::tokenqueue</scope><name>hasNext</name></member>
+      <member refid="classparser_1_1tokenqueue_1a442939c8efd904678d30e863da8db52b" prot="private" virt="non-virtual"><scope>parser::tokenqueue</scope><name>index</name></member>
+      <member refid="classparser_1_1tokenqueue_1a19ed9dd34d5c205531e963241bbb4db5" prot="public" virt="non-virtual"><scope>parser::tokenqueue</scope><name>length</name></member>
+      <member refid="classparser_1_1tokenqueue_1a75841d5aaa1b6eb3686481f61de07bbf" prot="public" virt="non-virtual"><scope>parser::tokenqueue</scope><name>next</name></member>
+      <member refid="classparser_1_1tokenqueue_1a981f451b1248537433bdb5aaa0ca6368" prot="public" virt="non-virtual"><scope>parser::tokenqueue</scope><name>operator[]</name></member>
+      <member refid="classparser_1_1tokenqueue_1afa7d5f0dcdce020660def60538c9f7eb" prot="public" virt="non-virtual"><scope>parser::tokenqueue</scope><name>peek</name></member>
+      <member refid="classparser_1_1tokenqueue_1aa8c2fdc681835f88dfe43659d18b0922" prot="public" virt="non-virtual"><scope>parser::tokenqueue</scope><name>pop</name></member>
+      <member refid="classparser_1_1tokenqueue_1a9e57fac92d33fe369a7ad6b87d63e7d5" prot="public" virt="non-virtual"><scope>parser::tokenqueue</scope><name>reset</name></member>
+      <member refid="classparser_1_1tokenqueue_1a39e90ab211fa63af79852763312f3242" prot="public" virt="non-virtual"><scope>parser::tokenqueue</scope><name>restore</name></member>
+      <member refid="classparser_1_1tokenqueue_1a8727f483d2c016495487b7fe1aa9d2be" prot="public" virt="non-virtual"><scope>parser::tokenqueue</scope><name>tokenqueue</name></member>
+      <member refid="classparser_1_1tokenqueue_1af9c381cb6495ade00167f2242b6862c5" prot="private" virt="non-virtual"><scope>parser::tokenqueue</scope><name>tokens</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

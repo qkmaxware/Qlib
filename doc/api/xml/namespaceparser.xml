@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceparser" kind="namespace" language="C++">
+    <compoundname>parser</compoundname>
+    <innerclass refid="classparser_1_1choice" prot="public">parser::choice</innerclass>
+    <innerclass refid="structparser_1_1parsetree" prot="public">parser::parsetree</innerclass>
+    <innerclass refid="classparser_1_1repeat" prot="public">parser::repeat</innerclass>
+    <innerclass refid="classparser_1_1repeater" prot="public">parser::repeater</innerclass>
+    <innerclass refid="classparser_1_1rule" prot="public">parser::rule</innerclass>
+    <innerclass refid="classparser_1_1sequence" prot="public">parser::sequence</innerclass>
+    <innerclass refid="classparser_1_1terminal" prot="public">parser::terminal</innerclass>
+    <innerclass refid="classparser_1_1tokenqueue" prot="public">parser::tokenqueue</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classparser_1_1rule" kindref="compound">rule</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;rule&gt; parser::ruleptr</definition>
+        <argsstring></argsstring>
+        <name>ruleptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A shared pointer to a rule </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="218" column="1" bodyfile="src/runtime/parser.hpp" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceparser_1ac46e69b1e6ac0db5fa1b987e69e0c64e" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classparser_1_1repeat" kindref="compound">repeat</ref></type>
+        <definition>const repeat parser::KLEENE_STAR</definition>
+        <argsstring></argsstring>
+        <name>KLEENE_STAR</name>
+        <initializer>= <ref refid="classparser_1_1repeat" kindref="compound">repeat</ref>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Repeat 0 to infinite times </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="53" column="1" bodyfile="src/runtime/parser.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceparser_1a97ed17cb3337d680cb84ca3f2af8c2dd" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classparser_1_1repeat" kindref="compound">repeat</ref></type>
+        <definition>const repeat parser::KLEENE_PLUS</definition>
+        <argsstring></argsstring>
+        <name>KLEENE_PLUS</name>
+        <initializer>= <ref refid="classparser_1_1repeat" kindref="compound">repeat</ref>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Repeat 1 to infinite times </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="57" column="1" bodyfile="src/runtime/parser.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceparser_1a1856f1b1a3996f6388d8686cf35daff9" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classparser_1_1repeat" kindref="compound">repeat</ref></type>
+        <definition>const repeat parser::KLEENE_ONCE</definition>
+        <argsstring></argsstring>
+        <name>KLEENE_ONCE</name>
+        <initializer>= <ref refid="classparser_1_1repeat" kindref="compound">repeat</ref>(1,1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Repeat exactly once </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="61" column="1" bodyfile="src/runtime/parser.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceparser_1ac97f2803cfa3a6e9328865ea4744d4d6" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classparser_1_1repeat" kindref="compound">repeat</ref></type>
+        <definition>const repeat parser::KLEENE_OPTIONAL</definition>
+        <argsstring></argsstring>
+        <name>KLEENE_OPTIONAL</name>
+        <initializer>= <ref refid="classparser_1_1repeat" kindref="compound">repeat</ref>(0,1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Repeat 0 or 1 times </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="65" column="1" bodyfile="src/runtime/parser.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Namespace for parser library </para>    </detaileddescription>
+    <location file="src/runtime/parser.hpp" line="16" column="1"/>
+  </compounddef>
+</doxygen>

@@ -22,7 +22,7 @@
 <para>Parse subcircuit_application: Name Name*; </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/qasmparser.hpp" line="64" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="64" bodyend="83"/>
+        <location file="src/runtime/compiler.hpp" line="70" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="70" bodyend="89"/>
       </memberdef>
       <memberdef kind="function" id="namespaceqasm_1_1rules_1aa583e7fb674ce302c13e04802c0ac371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -43,7 +43,7 @@
 <para>Parse gate_application: Name Index*; </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/qasmparser.hpp" line="88" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="88" bodyend="107"/>
+        <location file="src/runtime/compiler.hpp" line="94" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="94" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="namespaceqasm_1_1rules_1abe4777fa00a61066da5591048a9cbf54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -64,7 +64,7 @@
 <para>Parse debug: Print Name; </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/qasmparser.hpp" line="112" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="112" bodyend="125"/>
+        <location file="src/runtime/compiler.hpp" line="118" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="118" bodyend="131"/>
       </memberdef>
       <memberdef kind="function" id="namespaceqasm_1_1rules_1a5da8b5fa16a6eec3576f64c509a43ffd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -85,7 +85,7 @@
 <para>Parse measurement: Measure Index Mapping Index; </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/qasmparser.hpp" line="130" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="130" bodyend="163"/>
+        <location file="src/runtime/compiler.hpp" line="136" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="136" bodyend="169"/>
       </memberdef>
       <memberdef kind="function" id="namespaceqasm_1_1rules_1a1e0101b23fdb03759ca22f831662a88b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -106,7 +106,7 @@
 <para>Parse declaration: Name Name &apos;[&apos; Integer+ &apos;]&apos;; </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/qasmparser.hpp" line="168" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="168" bodyend="188"/>
+        <location file="src/runtime/compiler.hpp" line="174" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="174" bodyend="194"/>
       </memberdef>
       <memberdef kind="function" id="namespaceqasm_1_1rules_1ac9cd78216b8e48a2d5aa625d99240cb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -127,7 +127,7 @@
 <para>Parse label: Dot Name ; </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/qasmparser.hpp" line="193" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="193" bodyend="206"/>
+        <location file="src/runtime/compiler.hpp" line="199" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="199" bodyend="212"/>
       </memberdef>
       <memberdef kind="function" id="namespaceqasm_1_1rules_1abe391ee7a042e770f440498767f889ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -152,7 +152,7 @@
 <para>Parse include: Include String; </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/qasmparser.hpp" line="211" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="211" bodyend="226"/>
+        <location file="src/runtime/compiler.hpp" line="217" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="217" bodyend="233"/>
       </memberdef>
       <memberdef kind="function" id="namespaceqasm_1_1rules_1af40aa89c9f5235a7d2e94af2de62a42b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -177,13 +177,13 @@
 <para>Test every rule against a list of matched tokens, If rule is matched an instruction is added to the program and this returns true </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/qasmparser.hpp" line="231" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="231" bodyend="253"/>
+        <location file="src/runtime/compiler.hpp" line="238" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="238" bodyend="260"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/runtime/qasmparser.hpp" line="59" column="1"/>
+    <location file="src/runtime/compiler.hpp" line="65" column="1"/>
   </compounddef>
 </doxygen>

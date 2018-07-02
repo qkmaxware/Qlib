@@ -123,24 +123,24 @@
     <detaileddescription>
 <para>Class representing an exception generated from the lexer </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="271">
+      <node id="347">
         <label>lexical::lexicalexception</label>
         <link refid="classlexical_1_1lexicalexception"/>
-        <childnode refid="272" relation="public-inheritance">
+        <childnode refid="348" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="272">
+      <node id="348">
         <label>std::exception</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="273">
+      <node id="349">
         <label>lexical::lexicalexception</label>
         <link refid="classlexical_1_1lexicalexception"/>
-        <childnode refid="274" relation="public-inheritance">
+        <childnode refid="350" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="274">
+      <node id="350">
         <label>std::exception</label>
       </node>
     </collaborationgraph>

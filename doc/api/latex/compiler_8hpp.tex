@@ -1,0 +1,172 @@
+\hypertarget{compiler_8hpp}{}\section{src/runtime/compiler.hpp File Reference}
+\label{compiler_8hpp}\index{src/runtime/compiler.\+hpp@{src/runtime/compiler.\+hpp}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$stack$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}./lexer.\+hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}./parser.\+hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}./runtime.\+hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}./scanner.\+hpp\char`\"{}}\\*
+Include dependency graph for compiler.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{compiler_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{compiler_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classprogram}{program}
+\item 
+class \hyperlink{classparseexception}{parseexception}
+\item 
+class \hyperlink{classcompiler}{compiler}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceqasm}{qasm}
+\item 
+ \hyperlink{namespaceqasm_1_1rules}{qasm\+::rules}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{compiler_8hpp_ad6bb98bfd6757b98a471bb8c8670795a}{try\+\_\+parse\+\_\+qasm} (\hyperlink{classprogram}{program} \&prog, std\+::string file\+\_\+name, \hyperlink{classlexical_1_1lexer}{lexical\+::lexer} \&tokenizer)
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_a26247b01755121860f87e5a26d9bd391}{qasm\+::rules\+::try\+\_\+parse\+\_\+subcircuit\+\_\+application} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_aa583e7fb674ce302c13e04802c0ac371}{qasm\+::rules\+::try\+\_\+parse\+\_\+gate\+\_\+application} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_abe4777fa00a61066da5591048a9cbf54}{qasm\+::rules\+::try\+\_\+parse\+\_\+debug} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_a5da8b5fa16a6eec3576f64c509a43ffd}{qasm\+::rules\+::try\+\_\+parse\+\_\+measurement} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_a1e0101b23fdb03759ca22f831662a88b}{qasm\+::rules\+::try\+\_\+parse\+\_\+declaration} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_ac9cd78216b8e48a2d5aa625d99240cb9}{qasm\+::rules\+::try\+\_\+parse\+\_\+label} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_abe391ee7a042e770f440498767f889ba}{qasm\+::rules\+::try\+\_\+parse\+\_\+include} (\hyperlink{classprogram}{program} \&prog, \hyperlink{classlexical_1_1lexer}{lexical\+::lexer} \&tokenizer, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\item 
+bool \hyperlink{namespaceqasm_1_1rules_af40aa89c9f5235a7d2e94af2de62a42b}{qasm\+::rules\+::try\+\_\+parse\+\_\+rule} (\hyperlink{classprogram}{program} \&prog, \hyperlink{classlexical_1_1lexer}{lexical\+::lexer} \&tokenizer, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
+\item 
+\hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$ \hyperlink{compiler_8hpp_af29ea58956d1e519877cf79d81d5f8b8}{convert\+\_\+import} (\hyperlink{structparser_1_1parsetree}{parser\+::parsetree} \&ref)
+\item 
+\hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$ \hyperlink{compiler_8hpp_a3a9fc818a308f225f17b30cf26a3f674}{convert\+\_\+anchor} (\hyperlink{structparser_1_1parsetree}{parser\+::parsetree} \&ref)
+\item 
+\hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$ \hyperlink{compiler_8hpp_af4b1195ebe9533956bca833f365dccfb}{convert\+\_\+print} (\hyperlink{structparser_1_1parsetree}{parser\+::parsetree} \&ref)
+\item 
+\hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$ \hyperlink{compiler_8hpp_aef48a14daa35b8b1ac149d4507745272}{convert\+\_\+gate\+\_\+application} (\hyperlink{structparser_1_1parsetree}{parser\+::parsetree} \&ref)
+\item 
+\hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$ \hyperlink{compiler_8hpp_a3fadce05c7730406d98ffa5c57beee3a}{convert\+\_\+typedef} (\hyperlink{structparser_1_1parsetree}{parser\+::parsetree} \&ref)
+\item 
+\hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$ \hyperlink{compiler_8hpp_a68fba8c9d7b383e00bd8786cb4581374}{convert\+\_\+measurement} (\hyperlink{structparser_1_1parsetree}{parser\+::parsetree} \&ref)
+\item 
+void \hyperlink{compiler_8hpp_a859ddd4d6a4adc68346506c50a08f063}{post\+\_\+none} (\hyperlink{classcompiler}{compiler} \&comp, \hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$runable)
+\item 
+void \hyperlink{compiler_8hpp_a01ae4a79dc45ca04bac94915f97db422}{post\+\_\+add} (\hyperlink{classcompiler}{compiler} \&comp, \hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$runable)
+\item 
+void \hyperlink{compiler_8hpp_a5f86ad821427272c82f91807bed4ffe0}{post\+\_\+import} (\hyperlink{classcompiler}{compiler} \&comp, \hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$runable)
+\item 
+void \hyperlink{compiler_8hpp_a6a17a035bad361ab796fcc69b5e57431}{post\+\_\+anchor} (\hyperlink{classcompiler}{compiler} \&comp, \hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$runable)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{compiler.\+hpp@{compiler.\+hpp}!convert\+\_\+anchor@{convert\+\_\+anchor}}
+\index{convert\+\_\+anchor@{convert\+\_\+anchor}!compiler.\+hpp@{compiler.\+hpp}}
+\subsubsection[{\texorpdfstring{convert\+\_\+anchor(parser\+::parsetree \&ref)}{convert_anchor(parser::parsetree &ref)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf qasm\+::exec\+::executable}$\ast$ convert\+\_\+anchor (
+\begin{DoxyParamCaption}
+\item[{{\bf parser\+::parsetree} \&}]{ref}
+\end{DoxyParamCaption}
+)}\hypertarget{compiler_8hpp_a3a9fc818a308f225f17b30cf26a3f674}{}\label{compiler_8hpp_a3a9fc818a308f225f17b30cf26a3f674}
+Convert parse tree to anchor executable \index{compiler.\+hpp@{compiler.\+hpp}!convert\+\_\+gate\+\_\+application@{convert\+\_\+gate\+\_\+application}}
+\index{convert\+\_\+gate\+\_\+application@{convert\+\_\+gate\+\_\+application}!compiler.\+hpp@{compiler.\+hpp}}
+\subsubsection[{\texorpdfstring{convert\+\_\+gate\+\_\+application(parser\+::parsetree \&ref)}{convert_gate_application(parser::parsetree &ref)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf qasm\+::exec\+::executable}$\ast$ convert\+\_\+gate\+\_\+application (
+\begin{DoxyParamCaption}
+\item[{{\bf parser\+::parsetree} \&}]{ref}
+\end{DoxyParamCaption}
+)}\hypertarget{compiler_8hpp_aef48a14daa35b8b1ac149d4507745272}{}\label{compiler_8hpp_aef48a14daa35b8b1ac149d4507745272}
+Convert parse tree to gate executable \index{compiler.\+hpp@{compiler.\+hpp}!convert\+\_\+import@{convert\+\_\+import}}
+\index{convert\+\_\+import@{convert\+\_\+import}!compiler.\+hpp@{compiler.\+hpp}}
+\subsubsection[{\texorpdfstring{convert\+\_\+import(parser\+::parsetree \&ref)}{convert_import(parser::parsetree &ref)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf qasm\+::exec\+::executable}$\ast$ convert\+\_\+import (
+\begin{DoxyParamCaption}
+\item[{{\bf parser\+::parsetree} \&}]{ref}
+\end{DoxyParamCaption}
+)}\hypertarget{compiler_8hpp_af29ea58956d1e519877cf79d81d5f8b8}{}\label{compiler_8hpp_af29ea58956d1e519877cf79d81d5f8b8}
+Convert parse tree to import executable \index{compiler.\+hpp@{compiler.\+hpp}!convert\+\_\+measurement@{convert\+\_\+measurement}}
+\index{convert\+\_\+measurement@{convert\+\_\+measurement}!compiler.\+hpp@{compiler.\+hpp}}
+\subsubsection[{\texorpdfstring{convert\+\_\+measurement(parser\+::parsetree \&ref)}{convert_measurement(parser::parsetree &ref)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf qasm\+::exec\+::executable}$\ast$ convert\+\_\+measurement (
+\begin{DoxyParamCaption}
+\item[{{\bf parser\+::parsetree} \&}]{ref}
+\end{DoxyParamCaption}
+)}\hypertarget{compiler_8hpp_a68fba8c9d7b383e00bd8786cb4581374}{}\label{compiler_8hpp_a68fba8c9d7b383e00bd8786cb4581374}
+Convert parse tree to measurement executable \index{compiler.\+hpp@{compiler.\+hpp}!convert\+\_\+print@{convert\+\_\+print}}
+\index{convert\+\_\+print@{convert\+\_\+print}!compiler.\+hpp@{compiler.\+hpp}}
+\subsubsection[{\texorpdfstring{convert\+\_\+print(parser\+::parsetree \&ref)}{convert_print(parser::parsetree &ref)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf qasm\+::exec\+::executable}$\ast$ convert\+\_\+print (
+\begin{DoxyParamCaption}
+\item[{{\bf parser\+::parsetree} \&}]{ref}
+\end{DoxyParamCaption}
+)}\hypertarget{compiler_8hpp_af4b1195ebe9533956bca833f365dccfb}{}\label{compiler_8hpp_af4b1195ebe9533956bca833f365dccfb}
+Convert parse tree to pint executable \index{compiler.\+hpp@{compiler.\+hpp}!convert\+\_\+typedef@{convert\+\_\+typedef}}
+\index{convert\+\_\+typedef@{convert\+\_\+typedef}!compiler.\+hpp@{compiler.\+hpp}}
+\subsubsection[{\texorpdfstring{convert\+\_\+typedef(parser\+::parsetree \&ref)}{convert_typedef(parser::parsetree &ref)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf qasm\+::exec\+::executable}$\ast$ convert\+\_\+typedef (
+\begin{DoxyParamCaption}
+\item[{{\bf parser\+::parsetree} \&}]{ref}
+\end{DoxyParamCaption}
+)}\hypertarget{compiler_8hpp_a3fadce05c7730406d98ffa5c57beee3a}{}\label{compiler_8hpp_a3fadce05c7730406d98ffa5c57beee3a}
+Convert parse tree to declaration executable \index{compiler.\+hpp@{compiler.\+hpp}!post\+\_\+add@{post\+\_\+add}}
+\index{post\+\_\+add@{post\+\_\+add}!compiler.\+hpp@{compiler.\+hpp}}
+\subsubsection[{\texorpdfstring{post\+\_\+add(compiler \&comp, qasm\+::exec\+::executable $\ast$runable)}{post_add(compiler &comp, qasm::exec::executable *runable)}}]{\setlength{\rightskip}{0pt plus 5cm}void post\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{{\bf compiler} \&}]{comp, }
+\item[{{\bf qasm\+::exec\+::executable} $\ast$}]{runable}
+\end{DoxyParamCaption}
+)}\hypertarget{compiler_8hpp_a01ae4a79dc45ca04bac94915f97db422}{}\label{compiler_8hpp_a01ae4a79dc45ca04bac94915f97db422}
+Add converted value to program to execute \index{compiler.\+hpp@{compiler.\+hpp}!post\+\_\+anchor@{post\+\_\+anchor}}
+\index{post\+\_\+anchor@{post\+\_\+anchor}!compiler.\+hpp@{compiler.\+hpp}}
+\subsubsection[{\texorpdfstring{post\+\_\+anchor(compiler \&comp, qasm\+::exec\+::executable $\ast$runable)}{post_anchor(compiler &comp, qasm::exec::executable *runable)}}]{\setlength{\rightskip}{0pt plus 5cm}void post\+\_\+anchor (
+\begin{DoxyParamCaption}
+\item[{{\bf compiler} \&}]{comp, }
+\item[{{\bf qasm\+::exec\+::executable} $\ast$}]{runable}
+\end{DoxyParamCaption}
+)}\hypertarget{compiler_8hpp_a6a17a035bad361ab796fcc69b5e57431}{}\label{compiler_8hpp_a6a17a035bad361ab796fcc69b5e57431}
+Add a jump anchor to the program \index{compiler.\+hpp@{compiler.\+hpp}!post\+\_\+import@{post\+\_\+import}}
+\index{post\+\_\+import@{post\+\_\+import}!compiler.\+hpp@{compiler.\+hpp}}
+\subsubsection[{\texorpdfstring{post\+\_\+import(compiler \&comp, qasm\+::exec\+::executable $\ast$runable)}{post_import(compiler &comp, qasm::exec::executable *runable)}}]{\setlength{\rightskip}{0pt plus 5cm}void post\+\_\+import (
+\begin{DoxyParamCaption}
+\item[{{\bf compiler} \&}]{comp, }
+\item[{{\bf qasm\+::exec\+::executable} $\ast$}]{runable}
+\end{DoxyParamCaption}
+)}\hypertarget{compiler_8hpp_a5f86ad821427272c82f91807bed4ffe0}{}\label{compiler_8hpp_a5f86ad821427272c82f91807bed4ffe0}
+Load another file into the program \index{compiler.\+hpp@{compiler.\+hpp}!post\+\_\+none@{post\+\_\+none}}
+\index{post\+\_\+none@{post\+\_\+none}!compiler.\+hpp@{compiler.\+hpp}}
+\subsubsection[{\texorpdfstring{post\+\_\+none(compiler \&comp, qasm\+::exec\+::executable $\ast$runable)}{post_none(compiler &comp, qasm::exec::executable *runable)}}]{\setlength{\rightskip}{0pt plus 5cm}void post\+\_\+none (
+\begin{DoxyParamCaption}
+\item[{{\bf compiler} \&}]{comp, }
+\item[{{\bf qasm\+::exec\+::executable} $\ast$}]{runable}
+\end{DoxyParamCaption}
+)}\hypertarget{compiler_8hpp_a859ddd4d6a4adc68346506c50a08f063}{}\label{compiler_8hpp_a859ddd4d6a4adc68346506c50a08f063}
+Discard converted value \index{compiler.\+hpp@{compiler.\+hpp}!try\+\_\+parse\+\_\+qasm@{try\+\_\+parse\+\_\+qasm}}
+\index{try\+\_\+parse\+\_\+qasm@{try\+\_\+parse\+\_\+qasm}!compiler.\+hpp@{compiler.\+hpp}}
+\subsubsection[{\texorpdfstring{try\+\_\+parse\+\_\+qasm(program \&prog, std\+::string file\+\_\+name, lexical\+::lexer \&tokenizer)}{try_parse_qasm(program &prog, std::string file_name, lexical::lexer &tokenizer)}}]{\setlength{\rightskip}{0pt plus 5cm}bool try\+\_\+parse\+\_\+qasm (
+\begin{DoxyParamCaption}
+\item[{{\bf program} \&}]{prog, }
+\item[{std\+::string}]{file\+\_\+name, }
+\item[{{\bf lexical\+::lexer} \&}]{tokenizer}
+\end{DoxyParamCaption}
+)}\hypertarget{compiler_8hpp_ad6bb98bfd6757b98a471bb8c8670795a}{}\label{compiler_8hpp_ad6bb98bfd6757b98a471bb8c8670795a}
+Try and parse a file into a program 

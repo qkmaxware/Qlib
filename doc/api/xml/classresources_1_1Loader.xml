@@ -44,10 +44,10 @@
 <para><simplesect kind="author"><para>halse </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="276">
+      <node id="352">
         <label>resources.Loader</label>
         <link refid="classresources_1_1Loader"/>
-        <childnode refid="276" relation="usage">
+        <childnode refid="352" relation="usage">
           <edgelabel>resources</edgelabel>
         </childnode>
       </node>

@@ -6,6 +6,8 @@
     <innerclass refid="classqasm_1_1exec_1_1apply__subcircuit" prot="public">qasm::exec::apply_subcircuit</innerclass>
     <innerclass refid="classqasm_1_1exec_1_1declaration" prot="public">qasm::exec::declaration</innerclass>
     <innerclass refid="classqasm_1_1exec_1_1executable" prot="public">qasm::exec::executable</innerclass>
+    <innerclass refid="classqasm_1_1exec_1_1import" prot="public">qasm::exec::import</innerclass>
+    <innerclass refid="classqasm_1_1exec_1_1label" prot="public">qasm::exec::label</innerclass>
     <innerclass refid="classqasm_1_1exec_1_1measurement" prot="public">qasm::exec::measurement</innerclass>
     <innerclass refid="classqasm_1_1exec_1_1print" prot="public">qasm::exec::print</innerclass>
     <briefdescription>

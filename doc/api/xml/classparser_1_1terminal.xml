@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classparser_1_1terminal" kind="class" language="C++" prot="public">
+    <compoundname>parser::terminal</compoundname>
+    <basecompoundref refid="classparser_1_1rule" prot="public" virt="non-virtual">parser::rule</basecompoundref>
+    <includes refid="parser_8hpp" local="no">parser.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classparser_1_1terminal_1a497d13e62829b69f558be62614846236" prot="private" static="no" mutable="no">
+        <type><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref> &amp;</type>
+        <definition>lexeme&amp; parser::terminal::lex</definition>
+        <argsstring></argsstring>
+        <name>lex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="262" column="1" bodyfile="src/runtime/parser.hpp" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparser_1_1terminal_1a0029f9a855c1d9dd6939c8fdd5107d72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>parser::terminal::terminal</definition>
+        <argsstring>(lexeme &amp;lex)</argsstring>
+        <name>terminal</name>
+        <param>
+          <type><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref> &amp;</type>
+          <declname>lex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="264" column="1" bodyfile="src/runtime/parser.hpp" bodystart="264" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1terminal_1a04f78fdc1855ad6a61909d1c9ae0df13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>parser::terminal::~terminal</definition>
+        <argsstring>()</argsstring>
+        <name>~terminal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="267" column="1" bodyfile="src/runtime/parser.hpp" bodystart="267" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1terminal_1abf7f4ea72388f2e96140769bc5d2acc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool parser::terminal::tryParse</definition>
+        <argsstring>(tokenqueue &amp;queue, parsetree *ref)</argsstring>
+        <name>tryParse</name>
+        <reimplements refid="classparser_1_1rule_1a60ccfb91ea4fe7def5ec2a15bb97c5ec">tryParse</reimplements>
+        <param>
+          <type><ref refid="classparser_1_1tokenqueue" kindref="compound">tokenqueue</ref> &amp;</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type><ref refid="structparser_1_1parsetree" kindref="compound">parsetree</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Virtual function to parse an input tokenqueue into a parse tree Returns true if parsing successful and sets the value under the parsetree pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="270" column="1" bodyfile="src/runtime/parser.hpp" bodystart="270" bodyend="278"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class representing parsing elements that match a lexeme </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="468">
+        <label>parser::rule</label>
+        <link refid="classparser_1_1rule"/>
+      </node>
+      <node id="467">
+        <label>parser::terminal</label>
+        <link refid="classparser_1_1terminal"/>
+        <childnode refid="468" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="470">
+        <label>parser::rule</label>
+        <link refid="classparser_1_1rule"/>
+      </node>
+      <node id="469">
+        <label>parser::terminal</label>
+        <link refid="classparser_1_1terminal"/>
+        <childnode refid="470" relation="public-inheritance">
+        </childnode>
+        <childnode refid="471" relation="usage">
+          <edgelabel>lex</edgelabel>
+        </childnode>
+      </node>
+      <node id="471">
+        <label>lexical::lexeme</label>
+        <link refid="classlexical_1_1lexeme"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/parser.hpp" line="260" column="1" bodyfile="src/runtime/parser.hpp" bodystart="260" bodyend="279"/>
+    <listofallmembers>
+      <member refid="classparser_1_1terminal_1a497d13e62829b69f558be62614846236" prot="private" virt="non-virtual"><scope>parser::terminal</scope><name>lex</name></member>
+      <member refid="classparser_1_1terminal_1a0029f9a855c1d9dd6939c8fdd5107d72" prot="public" virt="non-virtual"><scope>parser::terminal</scope><name>terminal</name></member>
+      <member refid="classparser_1_1terminal_1abf7f4ea72388f2e96140769bc5d2acc8" prot="public" virt="virtual"><scope>parser::terminal</scope><name>tryParse</name></member>
+      <member refid="classparser_1_1rule_1abbe02436a9cb7b38b2186a82ff12b29a" prot="public" virt="non-virtual"><scope>parser::terminal</scope><name>~rule</name></member>
+      <member refid="classparser_1_1terminal_1a04f78fdc1855ad6a61909d1c9ae0df13" prot="public" virt="non-virtual"><scope>parser::terminal</scope><name>~terminal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

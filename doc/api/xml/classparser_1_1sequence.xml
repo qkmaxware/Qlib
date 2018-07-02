@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classparser_1_1sequence" kind="class" language="C++" prot="public">
+    <compoundname>parser::sequence</compoundname>
+    <basecompoundref refid="classparser_1_1rule" prot="public" virt="non-virtual">parser::rule</basecompoundref>
+    <includes refid="parser_8hpp" local="no">parser.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classparser_1_1sequence_1ad21658f30f62d93e41c2f10b6a8f004d" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref></type>
+        <definition>ruleptr parser::sequence::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="286" column="1" bodyfile="src/runtime/parser.hpp" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparser_1_1sequence_1adb4d13535498d0d639a11443b9d869e0" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref></type>
+        <definition>ruleptr parser::sequence::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="287" column="1" bodyfile="src/runtime/parser.hpp" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparser_1_1sequence_1a360c88bf21abc2066043c03735b5341f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>parser::sequence::sequence</definition>
+        <argsstring>(ruleptr first, ruleptr next)</argsstring>
+        <name>sequence</name>
+        <param>
+          <type><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref></type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref></type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="289" column="1" bodyfile="src/runtime/parser.hpp" bodystart="289" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1sequence_1ac7681fd304c236f9667f48d6d53ffee7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>parser::sequence::~sequence</definition>
+        <argsstring>()</argsstring>
+        <name>~sequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="292" column="1" bodyfile="src/runtime/parser.hpp" bodystart="292" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1sequence_1a499005d2dd4a3f39985d2deddb413cea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool parser::sequence::tryParse</definition>
+        <argsstring>(tokenqueue &amp;queue, parsetree *ref)</argsstring>
+        <name>tryParse</name>
+        <reimplements refid="classparser_1_1rule_1a60ccfb91ea4fe7def5ec2a15bb97c5ec">tryParse</reimplements>
+        <param>
+          <type><ref refid="classparser_1_1tokenqueue" kindref="compound">tokenqueue</ref> &amp;</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type><ref refid="structparser_1_1parsetree" kindref="compound">parsetree</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Virtual function to parse an input tokenqueue into a parse tree Returns true if parsing successful and sets the value under the parsetree pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="295" column="1" bodyfile="src/runtime/parser.hpp" bodystart="295" bodyend="312"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class representing parsing elements that follow each other </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="448">
+        <label>parser::sequence</label>
+        <link refid="classparser_1_1sequence"/>
+        <childnode refid="449" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="449">
+        <label>parser::rule</label>
+        <link refid="classparser_1_1rule"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="450">
+        <label>parser::sequence</label>
+        <link refid="classparser_1_1sequence"/>
+        <childnode refid="451" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="451">
+        <label>parser::rule</label>
+        <link refid="classparser_1_1rule"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/parser.hpp" line="284" column="1" bodyfile="src/runtime/parser.hpp" bodystart="284" bodyend="313"/>
+    <listofallmembers>
+      <member refid="classparser_1_1sequence_1ad21658f30f62d93e41c2f10b6a8f004d" prot="private" virt="non-virtual"><scope>parser::sequence</scope><name>left</name></member>
+      <member refid="classparser_1_1sequence_1adb4d13535498d0d639a11443b9d869e0" prot="private" virt="non-virtual"><scope>parser::sequence</scope><name>right</name></member>
+      <member refid="classparser_1_1sequence_1a360c88bf21abc2066043c03735b5341f" prot="public" virt="non-virtual"><scope>parser::sequence</scope><name>sequence</name></member>
+      <member refid="classparser_1_1sequence_1a499005d2dd4a3f39985d2deddb413cea" prot="public" virt="virtual"><scope>parser::sequence</scope><name>tryParse</name></member>
+      <member refid="classparser_1_1rule_1abbe02436a9cb7b38b2186a82ff12b29a" prot="public" virt="non-virtual"><scope>parser::sequence</scope><name>~rule</name></member>
+      <member refid="classparser_1_1sequence_1ac7681fd304c236f9667f48d6d53ffee7" prot="public" virt="non-virtual"><scope>parser::sequence</scope><name>~sequence</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

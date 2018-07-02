@@ -6,7 +6,8 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ]
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -15,7 +16,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
@@ -34,8 +35,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AutoComplete_8java.html",
-"classqlib_1_1quantum_1_1gates_1_1controlledgate.html",
-"types_8h.html#a9fdb72c70bf3316cb98449055a1a409d"
+"classqlib_1_1ide_1_1QLibIDE.html#a4d8a71cb808c1796b48f83b05e3ca1b8",
+"index.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

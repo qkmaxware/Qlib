@@ -6,6 +6,7 @@
     <innerfile refid="CodeEditor_8java">CodeEditor.java</innerfile>
     <innerfile refid="FileManager_8java">FileManager.java</innerfile>
     <innerfile refid="IniIO_8java">IniIO.java</innerfile>
+    <innerfile refid="OptionsMenu_8java">OptionsMenu.java</innerfile>
     <innerfile refid="QLibIDE_8java">QLibIDE.java</innerfile>
     <innerfile refid="QLibRuntime_8java">QLibRuntime.java</innerfile>
     <innerfile refid="RuntimeReport_8java">RuntimeReport.java</innerfile>

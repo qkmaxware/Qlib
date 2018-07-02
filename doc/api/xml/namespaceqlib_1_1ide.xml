@@ -6,6 +6,7 @@
     <innerclass refid="classqlib_1_1ide_1_1CodeEditor" prot="public">qlib::ide::CodeEditor</innerclass>
     <innerclass refid="classqlib_1_1ide_1_1FileManager" prot="public">qlib::ide::FileManager</innerclass>
     <innerclass refid="classqlib_1_1ide_1_1IniIO" prot="public">qlib::ide::IniIO</innerclass>
+    <innerclass refid="classqlib_1_1ide_1_1OptionsMenu" prot="public">qlib::ide::OptionsMenu</innerclass>
     <innerclass refid="classqlib_1_1ide_1_1QLibIDE" prot="public">qlib::ide::QLibIDE</innerclass>
     <innerclass refid="classqlib_1_1ide_1_1QLibRuntime" prot="public">qlib::ide::QLibRuntime</innerclass>
     <innerclass refid="classqlib_1_1ide_1_1RuntimeReport" prot="public">qlib::ide::RuntimeReport</innerclass>

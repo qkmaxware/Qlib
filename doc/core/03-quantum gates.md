@@ -1,16 +1,21 @@
+#Qlib - Core: 
+##1.2 Quantum Gates
+
 ##Table of contents
 <!-- TOC -->
 
-- [Table of contents](#table-of-contents)
-    - [Included Quantum Gates](#included-quantum-gates)
-    - [Custom Quantum Gates](#custom-quantum-gates)
+- [Qlib - Core:](#qlib---core)
+    - [1.2 Quantum Gates](#12-quantum-gates)
+    - [Table of contents](#table-of-contents)
+        - [Included Quantum Gates](#included-quantum-gates)
+        - [Custom Quantum Gates](#custom-quantum-gates)
 
 <!-- /TOC -->
 
 ###Included Quantum Gates
-Qlib - Core includes many pre-made gates that are commonly used. Table 1 lists each of the pre-made gates.
+Qlib - Core includes many pre-made gates that are commonly used. Table 1.2.0 lists each of the pre-made gates.
 
-**Table 1**: List of all gates included in Qlib - Core. Each entry contains a gate name, the c++ namespace alias, the input parameters to use the gate, the matrix representation of the gate, and the description of what kind of operation the gate performs.
+**Table 1.2.0**: List of all gates included in Qlib - Core. Each entry contains a gate name, the c++ namespace alias, the input parameters to use the gate, the matrix representation of the gate, and the description of what kind of operation the gate performs.
 <table>
     <tr>
         <th>Gate</th>
@@ -114,7 +119,8 @@ class igate : public xobject {
         virtual void operate(matrix& in, matrix& out, std::vector<ulong> inputQubits) = 0;
 };
 ```
-For example, below is an example of a custom gate that can be applied to a single qubit.
+
+*Example 1.2.0: Creating a custom quantum gate by implementing the igate interface.*
 ```cpp
 class MyGate : public igate {
     public:

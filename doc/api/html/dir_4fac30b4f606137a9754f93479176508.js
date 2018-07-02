@@ -15,6 +15,9 @@ var dir_4fac30b4f606137a9754f93479176508 =
     [ "IniIO.java", "IniIO_8java.html", [
       [ "IniIO", "classqlib_1_1ide_1_1IniIO.html", "classqlib_1_1ide_1_1IniIO" ]
     ] ],
+    [ "OptionsMenu.java", "OptionsMenu_8java.html", [
+      [ "OptionsMenu", "classqlib_1_1ide_1_1OptionsMenu.html", "classqlib_1_1ide_1_1OptionsMenu" ]
+    ] ],
     [ "QLibIDE.java", "QLibIDE_8java.html", [
       [ "QLibIDE", "classqlib_1_1ide_1_1QLibIDE.html", "classqlib_1_1ide_1_1QLibIDE" ]
     ] ],

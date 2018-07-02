@@ -87,7 +87,7 @@
 <para>Run instruction&apos;s primary operation </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="381" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="381" bodyend="396"/>
+        <location file="src/runtime/runtime.hpp" line="381" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="381" bodyend="397"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -95,30 +95,30 @@
     <detaileddescription>
 <para>Instruction to decare a variable </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="235">
+      <node id="299">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
-      <node id="234">
+      <node id="298">
         <label>qasm::exec::declaration</label>
         <link refid="classqasm_1_1exec_1_1declaration"/>
-        <childnode refid="235" relation="public-inheritance">
+        <childnode refid="299" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="237">
+      <node id="301">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
-      <node id="236">
+      <node id="300">
         <label>qasm::exec::declaration</label>
         <link refid="classqasm_1_1exec_1_1declaration"/>
-        <childnode refid="237" relation="public-inheritance">
+        <childnode refid="301" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/runtime.hpp" line="364" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="364" bodyend="397"/>
+    <location file="src/runtime/runtime.hpp" line="364" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="364" bodyend="398"/>
     <listofallmembers>
       <member refid="classqasm_1_1exec_1_1declaration_1ae8f3a47af0a26055fb6fc90303defbeb" prot="public" virt="non-virtual"><scope>qasm::exec::declaration</scope><name>declaration</name></member>
       <member refid="classqasm_1_1exec_1_1declaration_1a4f1396fca212fb0ce984d2cea90df0a8" prot="public" virt="virtual"><scope>qasm::exec::declaration</scope><name>invoke_rootprogram</name></member>

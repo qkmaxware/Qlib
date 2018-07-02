@@ -74,44 +74,44 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="261">
+      <node id="327">
         <label>qlib::quantum::gates::onequbitgate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate"/>
-        <childnode refid="257" relation="public-inheritance">
+        <childnode refid="323" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="258">
+      <node id="324">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="257">
+      <node id="323">
         <label>qlib::quantum::gates::igate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1igate"/>
-        <childnode refid="258" relation="public-inheritance">
+        <childnode refid="324" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="259">
+      <node id="325">
         <label>qlib::quantum::gates::controlled2gate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate"/>
-        <childnode refid="257" relation="public-inheritance">
+        <childnode refid="323" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="260">
+      <node id="326">
         <label>qlib::quantum::gates::controlledgate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1controlledgate"/>
-        <childnode refid="257" relation="public-inheritance">
+        <childnode refid="323" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="263">
+      <node id="329">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="262">
+      <node id="328">
         <label>qlib::quantum::gates::igate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1igate"/>
-        <childnode refid="263" relation="public-inheritance">
+        <childnode refid="329" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

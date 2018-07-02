@@ -17,8 +17,9 @@
 
 #include "./lexer.hpp"
 #include "./parser.hpp"
-#include "./qasmparser.hpp"
+#include "./compiler.hpp"
 #include "./runtime.hpp"
+#include "./scanner.hpp"
 
 using namespace std;
 using namespace lexical;
@@ -72,8 +73,20 @@ int main(int arg_count, char* arg_values[]){
 	ruleptr label_ 				= _anchor << _reference;
 	ruleptr print_ 				= _print << _reference;
 	ruleptr application_ 		= _reference << *_indexor;
-	ruleptr typedecl_			= _reference << _reference << _leftb << _integer << _rightb;
+	ruleptr typedecl_			= (((_reference << _reference) << _leftb) << _integer) << _rightb;
 	ruleptr measurement_		= _measure << ((_indexor << _mapping << _indexor) | (_reference << _mapping << _reference));
+
+	//-------------------------------------
+	//Create parse lists
+	//-------------------------------------
+	vector<ruleptr> rules 
+		= {import_, label_, print_, typedecl_, application_, measurement_};
+
+	vector<qasm::exec::executable* (*)(parser::parsetree&)> converters
+		= {convert_import, convert_anchor, convert_print, convert_typedef, convert_gate_application, convert_measurement};
+
+	vector<void(*)(compiler&, qasm::exec::executable*)> post_events
+		= {post_import, post_anchor, post_add, post_add, post_add, post_add};
 
 	//-------------------------------------
 	//Read in parameters
@@ -84,16 +97,33 @@ int main(int arg_count, char* arg_values[]){
 		return 0;
 	}
 
+	//-------------------------------------
+	//Begin compilation
+	//-------------------------------------
 	//Arg is filename
+	std::string filename = arg_values[1];
 	program prog;
 	qasm::runtime::environment env;
-	if(try_parse_qasm(prog, arg_values[1], tokenizer)){
-		//qasmenv env;
-		//prog.run(env);
+
+	//New
+	compiler cmp(tokenizer, rules, converters, post_events, prog);
+	bool b = cmp.try_parse_file(filename);
+
+	//-------------------------------------
+	//Run
+	//-------------------------------------
+	cout << "program length " << prog.lines.size() << endl;
+	if(b && prog.lines.size() > 0){
+		for(std::vector<qasm::exec::executable*>::iterator it = prog.lines.begin(); it != prog.lines.end(); it++){
+			//(*it)->invoke_rootprogram(env);	
+		}
+	}
+	//Old		
+	/*if(try_parse_qasm(prog, filename, tokenizer)){
 		for(std::vector<qasm::exec::executable*>::iterator it = prog.lines.begin(); it != prog.lines.end(); it++){
 			(*it)->invoke_rootprogram(env);	
 		}
-	}
+	}*/
 
 	//Program and executable lines are cleaned up by program destructor
 	return 0;

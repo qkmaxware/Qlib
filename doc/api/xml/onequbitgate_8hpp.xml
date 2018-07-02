@@ -13,251 +13,251 @@
     <includedby refid="controlledgate_8hpp" local="yes">src/core/quantum/gates/controlledgate.hpp</includedby>
     <includedby refid="controlled2gate_8hpp" local="yes">src/core/quantum/gates/controlled2gate.hpp</includedby>
     <incdepgraph>
-      <node id="1426">
+      <node id="1446">
         <label>limits</label>
       </node>
-      <node id="1423">
+      <node id="1443">
         <label>./../../general/object.hpp</label>
         <link refid="object_8hpp"/>
-        <childnode refid="1424" relation="include">
+        <childnode refid="1444" relation="include">
         </childnode>
-        <childnode refid="1427" relation="include">
+        <childnode refid="1447" relation="include">
         </childnode>
-        <childnode refid="1428" relation="include">
+        <childnode refid="1448" relation="include">
         </childnode>
-        <childnode refid="1429" relation="include">
+        <childnode refid="1449" relation="include">
         </childnode>
-        <childnode refid="1430" relation="include">
+        <childnode refid="1450" relation="include">
         </childnode>
-        <childnode refid="1431" relation="include">
+        <childnode refid="1451" relation="include">
         </childnode>
       </node>
-      <node id="1425">
+      <node id="1445">
         <label>stdint.h</label>
       </node>
-      <node id="1434">
+      <node id="1454">
         <label>stdlib.h</label>
       </node>
-      <node id="1435">
+      <node id="1455">
         <label>./../../math/matrix.hpp</label>
         <link refid="matrix_8hpp"/>
-        <childnode refid="1432" relation="include">
+        <childnode refid="1452" relation="include">
         </childnode>
-        <childnode refid="1423" relation="include">
+        <childnode refid="1443" relation="include">
         </childnode>
-        <childnode refid="1436" relation="include">
+        <childnode refid="1456" relation="include">
         </childnode>
-        <childnode refid="1437" relation="include">
+        <childnode refid="1457" relation="include">
         </childnode>
-        <childnode refid="1433" relation="include">
+        <childnode refid="1453" relation="include">
         </childnode>
-        <childnode refid="1428" relation="include">
+        <childnode refid="1448" relation="include">
         </childnode>
       </node>
-      <node id="1422">
+      <node id="1442">
         <label>./igate.hpp</label>
         <link refid="igate_8hpp"/>
-        <childnode refid="1423" relation="include">
+        <childnode refid="1443" relation="include">
         </childnode>
-        <childnode refid="1432" relation="include">
+        <childnode refid="1452" relation="include">
         </childnode>
-        <childnode refid="1435" relation="include">
+        <childnode refid="1455" relation="include">
         </childnode>
       </node>
-      <node id="1436">
+      <node id="1456">
         <label>stdexcept</label>
       </node>
-      <node id="1429">
+      <node id="1449">
         <label>exception</label>
       </node>
-      <node id="1430">
+      <node id="1450">
         <label>random</label>
       </node>
-      <node id="1421">
+      <node id="1441">
         <label>src/core/quantum/gates/onequbitgate.hpp</label>
         <link refid="onequbitgate.hpp"/>
-        <childnode refid="1422" relation="include">
+        <childnode refid="1442" relation="include">
         </childnode>
-        <childnode refid="1428" relation="include">
+        <childnode refid="1448" relation="include">
         </childnode>
       </node>
-      <node id="1432">
+      <node id="1452">
         <label>./../../math/complex.hpp</label>
         <link refid="complex_8hpp"/>
-        <childnode refid="1423" relation="include">
+        <childnode refid="1443" relation="include">
         </childnode>
-        <childnode refid="1433" relation="include">
+        <childnode refid="1453" relation="include">
         </childnode>
-        <childnode refid="1434" relation="include">
+        <childnode refid="1454" relation="include">
         </childnode>
-        <childnode refid="1428" relation="include">
+        <childnode refid="1448" relation="include">
         </childnode>
       </node>
-      <node id="1437">
+      <node id="1457">
         <label>vector</label>
       </node>
-      <node id="1428">
+      <node id="1448">
         <label>sstream</label>
       </node>
-      <node id="1433">
+      <node id="1453">
         <label>math.h</label>
       </node>
-      <node id="1427">
+      <node id="1447">
         <label>iostream</label>
       </node>
-      <node id="1431">
+      <node id="1451">
         <label>chrono</label>
       </node>
-      <node id="1424">
+      <node id="1444">
         <label>./types.h</label>
         <link refid="types_8h"/>
-        <childnode refid="1425" relation="include">
+        <childnode refid="1445" relation="include">
         </childnode>
-        <childnode refid="1426" relation="include">
+        <childnode refid="1446" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1443">
+      <node id="1465">
         <label>src/runtime/main.cpp</label>
         <link refid="runtime_2main_8cpp"/>
       </node>
-      <node id="1444">
+      <node id="1463">
         <label>src/runtime/runtime.hpp</label>
         <link refid="runtime_8hpp"/>
-        <childnode refid="1445" relation="include">
+        <childnode refid="1464" relation="include">
         </childnode>
-        <childnode refid="1443" relation="include">
-        </childnode>
-      </node>
-      <node id="1445">
-        <label>src/runtime/qasmparser.hpp</label>
-        <link refid="qasmparser_8hpp"/>
-        <childnode refid="1443" relation="include">
+        <childnode refid="1465" relation="include">
         </childnode>
       </node>
-      <node id="1454">
+      <node id="1474">
         <label>src/core/quantum/gates/phase.hpp</label>
         <link refid="phase_8hpp"/>
-        <childnode refid="1440" relation="include">
+        <childnode refid="1460" relation="include">
         </childnode>
       </node>
-      <node id="1439">
+      <node id="1459">
         <label>src/core/quantum/gates/ident.hpp</label>
         <link refid="ident_8hpp"/>
-        <childnode refid="1440" relation="include">
+        <childnode refid="1460" relation="include">
         </childnode>
       </node>
-      <node id="1442">
+      <node id="1462">
         <label>src/core/main.cpp</label>
         <link refid="core_2main_8cpp"/>
       </node>
-      <node id="1438">
+      <node id="1458">
         <label>src/core/quantum/gates/onequbitgate.hpp</label>
         <link refid="onequbitgate.hpp"/>
-        <childnode refid="1439" relation="include">
+        <childnode refid="1459" relation="include">
         </childnode>
-        <childnode refid="1446" relation="include">
+        <childnode refid="1466" relation="include">
         </childnode>
-        <childnode refid="1447" relation="include">
+        <childnode refid="1467" relation="include">
         </childnode>
-        <childnode refid="1450" relation="include">
+        <childnode refid="1470" relation="include">
         </childnode>
-        <childnode refid="1452" relation="include">
+        <childnode refid="1472" relation="include">
         </childnode>
-        <childnode refid="1454" relation="include">
+        <childnode refid="1474" relation="include">
         </childnode>
-        <childnode refid="1455" relation="include">
+        <childnode refid="1475" relation="include">
         </childnode>
-        <childnode refid="1456" relation="include">
+        <childnode refid="1476" relation="include">
         </childnode>
       </node>
-      <node id="1449">
+      <node id="1469">
         <label>src/core/quantum/gates/toffoli.hpp</label>
         <link refid="toffoli_8hpp"/>
-        <childnode refid="1440" relation="include">
+        <childnode refid="1460" relation="include">
         </childnode>
       </node>
-      <node id="1447">
+      <node id="1467">
         <label>src/core/quantum/gates/pauliX.hpp</label>
         <link refid="pauliX_8hpp"/>
-        <childnode refid="1440" relation="include">
+        <childnode refid="1460" relation="include">
         </childnode>
-        <childnode refid="1448" relation="include">
+        <childnode refid="1468" relation="include">
         </childnode>
-        <childnode refid="1449" relation="include">
+        <childnode refid="1469" relation="include">
         </childnode>
       </node>
-      <node id="1450">
+      <node id="1470">
         <label>src/core/quantum/gates/pauliY.hpp</label>
         <link refid="pauliY_8hpp"/>
-        <childnode refid="1440" relation="include">
+        <childnode refid="1460" relation="include">
         </childnode>
-        <childnode refid="1451" relation="include">
+        <childnode refid="1471" relation="include">
         </childnode>
       </node>
-      <node id="1441">
+      <node id="1461">
         <label>src/core/qlib.h</label>
         <link refid="qlib_8h"/>
-        <childnode refid="1442" relation="include">
+        <childnode refid="1462" relation="include">
         </childnode>
-        <childnode refid="1443" relation="include">
+        <childnode refid="1463" relation="include">
         </childnode>
-        <childnode refid="1444" relation="include">
+        <childnode refid="1465" relation="include">
         </childnode>
       </node>
-      <node id="1448">
+      <node id="1468">
         <label>src/core/quantum/gates/cnot.hpp</label>
         <link refid="cnot_8hpp"/>
-        <childnode refid="1440" relation="include">
+        <childnode refid="1460" relation="include">
         </childnode>
       </node>
-      <node id="1452">
+      <node id="1464">
+        <label>src/runtime/compiler.hpp</label>
+        <link refid="compiler_8hpp"/>
+        <childnode refid="1465" relation="include">
+        </childnode>
+      </node>
+      <node id="1472">
         <label>src/core/quantum/gates/pauliZ.hpp</label>
         <link refid="pauliZ_8hpp"/>
-        <childnode refid="1440" relation="include">
+        <childnode refid="1460" relation="include">
         </childnode>
-        <childnode refid="1453" relation="include">
+        <childnode refid="1473" relation="include">
         </childnode>
       </node>
-      <node id="1453">
+      <node id="1473">
         <label>src/core/quantum/gates/cz.hpp</label>
         <link refid="cz_8hpp"/>
-        <childnode refid="1440" relation="include">
+        <childnode refid="1460" relation="include">
         </childnode>
       </node>
-      <node id="1446">
+      <node id="1466">
         <label>src/core/quantum/gates/hadamard.hpp</label>
         <link refid="hadamard_8hpp"/>
-        <childnode refid="1440" relation="include">
+        <childnode refid="1460" relation="include">
         </childnode>
       </node>
-      <node id="1440">
+      <node id="1460">
         <label>src/core/quantum/standard_gates.hpp</label>
         <link refid="standard__gates_8hpp"/>
-        <childnode refid="1441" relation="include">
+        <childnode refid="1461" relation="include">
         </childnode>
       </node>
-      <node id="1451">
+      <node id="1471">
         <label>src/core/quantum/gates/cy.hpp</label>
         <link refid="cy_8hpp"/>
-        <childnode refid="1440" relation="include">
+        <childnode refid="1460" relation="include">
         </childnode>
       </node>
-      <node id="1455">
+      <node id="1475">
         <label>src/core/quantum/gates/controlledgate.hpp</label>
         <link refid="controlledgate_8hpp"/>
-        <childnode refid="1448" relation="include">
+        <childnode refid="1468" relation="include">
         </childnode>
-        <childnode refid="1451" relation="include">
+        <childnode refid="1471" relation="include">
         </childnode>
-        <childnode refid="1453" relation="include">
+        <childnode refid="1473" relation="include">
         </childnode>
       </node>
-      <node id="1456">
+      <node id="1476">
         <label>src/core/quantum/gates/controlled2gate.hpp</label>
         <link refid="controlled2gate_8hpp"/>
-        <childnode refid="1449" relation="include">
+        <childnode refid="1469" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

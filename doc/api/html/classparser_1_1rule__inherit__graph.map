@@ -1,0 +1,6 @@
+<map id="parser::rule" name="parser::rule">
+<area shape="rect" id="node2" href="$classparser_1_1choice.html" title="parser::choice" alt="" coords="5,80,109,107"/>
+<area shape="rect" id="node3" href="$classparser_1_1repeater.html" title="parser::repeater" alt="" coords="134,80,247,107"/>
+<area shape="rect" id="node4" href="$classparser_1_1sequence.html" title="parser::sequence" alt="" coords="272,80,395,107"/>
+<area shape="rect" id="node5" href="$classparser_1_1terminal.html" title="parser::terminal" alt="" coords="419,80,531,107"/>
+</map>

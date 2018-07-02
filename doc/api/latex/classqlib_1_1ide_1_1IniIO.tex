@@ -2,11 +2,22 @@
 \label{classqlib_1_1ide_1_1IniIO}\index{qlib.\+ide.\+Ini\+IO@{qlib.\+ide.\+Ini\+IO}}
 
 
-Collaboration diagram for qlib.\+ide.\+Ini\+IO\+:\nopagebreak
+Inheritance diagram for qlib.\+ide.\+Ini\+IO\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=250pt]{classqlib_1_1ide_1_1IniIO__coll__graph}
+\includegraphics[width=199pt]{classqlib_1_1ide_1_1IniIO__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for qlib.\+ide.\+Ini\+IO\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classqlib_1_1ide_1_1IniIO__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -21,6 +32,10 @@ Integer \hyperlink{classqlib_1_1ide_1_1IniIO_a01a6fe06552fefab11669ea65ace7392}{
 void \hyperlink{classqlib_1_1ide_1_1IniIO_a2337d52ad4d343c74b808f64e70710f0}{set} (String prop, Object value)
 \item 
 boolean \hyperlink{classqlib_1_1ide_1_1IniIO_a68567b380e0074a223137077125eb060}{exists} (String prop)
+\item 
+void \hyperlink{classqlib_1_1ide_1_1IniIO_a586ba8be1bf5be1d406c75da8a99464f}{clear} ()
+\item 
+Iterator$<$ Entry$<$ String, String $>$ $>$ \hyperlink{classqlib_1_1ide_1_1IniIO_a51efa19f17cc902c47b577d39177172f}{iterator} ()
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -69,7 +84,14 @@ Colin Halseth
 Create an empty config file 
 
 \subsection{Member Function Documentation}
-\index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!exists@{exists}}
+\index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!clear@{clear}}
+\index{clear@{clear}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib.\+ide.\+Ini\+I\+O.\+clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1IniIO_a586ba8be1bf5be1d406c75da8a99464f}{}\label{classqlib_1_1ide_1_1IniIO_a586ba8be1bf5be1d406c75da8a99464f}
+Remove all config options \index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!exists@{exists}}
 \index{exists@{exists}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
 \subsubsection[{\texorpdfstring{exists(\+String prop)}{exists(String prop)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean qlib.\+ide.\+Ini\+I\+O.\+exists (
 \begin{DoxyParamCaption}
@@ -127,6 +149,16 @@ Get a boolean value from a named property
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!iterator@{iterator}}
+\index{iterator@{iterator}!qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}}
+\subsubsection[{\texorpdfstring{iterator()}{iterator()}}]{\setlength{\rightskip}{0pt plus 5cm}Iterator$<$Entry$<$String, String$>$ $>$ qlib.\+ide.\+Ini\+I\+O.\+iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1ide_1_1IniIO_a51efa19f17cc902c47b577d39177172f}{}\label{classqlib_1_1ide_1_1IniIO_a51efa19f17cc902c47b577d39177172f}
+Iterate over all key value pairs \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
 \index{qlib\+::ide\+::\+Ini\+IO@{qlib\+::ide\+::\+Ini\+IO}!merge@{merge}}

@@ -1,0 +1,129 @@
+\hypertarget{classparser_1_1tokenqueue}{}\section{parser\+:\+:tokenqueue Class Reference}
+\label{classparser_1_1tokenqueue}\index{parser\+::tokenqueue@{parser\+::tokenqueue}}
+
+
+{\ttfamily \#include $<$parser.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classparser_1_1tokenqueue_a8727f483d2c016495487b7fe1aa9d2be}{tokenqueue} (vector$<$ \hyperlink{structlexical_1_1match}{match} $>$ \&toks)
+\item 
+size\+\_\+t \hyperlink{classparser_1_1tokenqueue_a19ed9dd34d5c205531e963241bbb4db5}{length} ()
+\item 
+bool \hyperlink{classparser_1_1tokenqueue_a177e88ad8ccef06bb18777fe59fff7bd}{has\+Next} ()
+\item 
+size\+\_\+t \hyperlink{classparser_1_1tokenqueue_a69326556cef2a89af0eb7310d2eb19d3}{get\+Restore\+Point} ()
+\item 
+void \hyperlink{classparser_1_1tokenqueue_a9e57fac92d33fe369a7ad6b87d63e7d5}{reset} ()
+\item 
+void \hyperlink{classparser_1_1tokenqueue_a39e90ab211fa63af79852763312f3242}{restore} (size\+\_\+t restore\+Point)
+\item 
+\hyperlink{structlexical_1_1match}{match} \& \hyperlink{classparser_1_1tokenqueue_a981f451b1248537433bdb5aaa0ca6368}{operator\mbox{[}$\,$\mbox{]}} (int ind)
+\item 
+\hyperlink{structlexical_1_1match}{match} \& \hyperlink{classparser_1_1tokenqueue_afa7d5f0dcdce020660def60538c9f7eb}{peek} ()
+\item 
+\hyperlink{structlexical_1_1match}{match} \& \hyperlink{classparser_1_1tokenqueue_aa8c2fdc681835f88dfe43659d18b0922}{pop} ()
+\item 
+void \hyperlink{classparser_1_1tokenqueue_a75841d5aaa1b6eb3686481f61de07bbf}{next} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{structlexical_1_1match}{match} $>$ \hyperlink{classparser_1_1tokenqueue_af9c381cb6495ade00167f2242b6862c5}{tokens}
+\item 
+size\+\_\+t \hyperlink{classparser_1_1tokenqueue_a442939c8efd904678d30e863da8db52b}{index}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing a list of tokens with a pointer that can be changed 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{parser\+::tokenqueue@{parser\+::tokenqueue}!tokenqueue@{tokenqueue}}
+\index{tokenqueue@{tokenqueue}!parser\+::tokenqueue@{parser\+::tokenqueue}}
+\subsubsection[{\texorpdfstring{tokenqueue(vector$<$ match $>$ \&toks)}{tokenqueue(vector< match > &toks)}}]{\setlength{\rightskip}{0pt plus 5cm}parser\+::tokenqueue\+::tokenqueue (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf match} $>$ \&}]{toks}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1tokenqueue_a8727f483d2c016495487b7fe1aa9d2be}{}\label{classparser_1_1tokenqueue_a8727f483d2c016495487b7fe1aa9d2be}
+Tokenqueue from vector 
+
+\subsection{Member Function Documentation}
+\index{parser\+::tokenqueue@{parser\+::tokenqueue}!get\+Restore\+Point@{get\+Restore\+Point}}
+\index{get\+Restore\+Point@{get\+Restore\+Point}!parser\+::tokenqueue@{parser\+::tokenqueue}}
+\subsubsection[{\texorpdfstring{get\+Restore\+Point()}{getRestorePoint()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t parser\+::tokenqueue\+::get\+Restore\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1tokenqueue_a69326556cef2a89af0eb7310d2eb19d3}{}\label{classparser_1_1tokenqueue_a69326556cef2a89af0eb7310d2eb19d3}
+Get current index in order to restore back to this point \index{parser\+::tokenqueue@{parser\+::tokenqueue}!has\+Next@{has\+Next}}
+\index{has\+Next@{has\+Next}!parser\+::tokenqueue@{parser\+::tokenqueue}}
+\subsubsection[{\texorpdfstring{has\+Next()}{hasNext()}}]{\setlength{\rightskip}{0pt plus 5cm}bool parser\+::tokenqueue\+::has\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1tokenqueue_a177e88ad8ccef06bb18777fe59fff7bd}{}\label{classparser_1_1tokenqueue_a177e88ad8ccef06bb18777fe59fff7bd}
+Test if queue has more tokens \index{parser\+::tokenqueue@{parser\+::tokenqueue}!length@{length}}
+\index{length@{length}!parser\+::tokenqueue@{parser\+::tokenqueue}}
+\subsubsection[{\texorpdfstring{length()}{length()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t parser\+::tokenqueue\+::length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1tokenqueue_a19ed9dd34d5c205531e963241bbb4db5}{}\label{classparser_1_1tokenqueue_a19ed9dd34d5c205531e963241bbb4db5}
+Elements remaining in the queue \index{parser\+::tokenqueue@{parser\+::tokenqueue}!next@{next}}
+\index{next@{next}!parser\+::tokenqueue@{parser\+::tokenqueue}}
+\subsubsection[{\texorpdfstring{next()}{next()}}]{\setlength{\rightskip}{0pt plus 5cm}void parser\+::tokenqueue\+::next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1tokenqueue_a75841d5aaa1b6eb3686481f61de07bbf}{}\label{classparser_1_1tokenqueue_a75841d5aaa1b6eb3686481f61de07bbf}
+Increment the pointer if possible \index{parser\+::tokenqueue@{parser\+::tokenqueue}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!parser\+::tokenqueue@{parser\+::tokenqueue}}
+\subsubsection[{\texorpdfstring{operator[](int ind)}{operator[](int ind)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf match}\& parser\+::tokenqueue\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{ind}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1tokenqueue_a981f451b1248537433bdb5aaa0ca6368}{}\label{classparser_1_1tokenqueue_a981f451b1248537433bdb5aaa0ca6368}
+Get the \textquotesingle{}n\textquotesingle{}th element in the queue \index{parser\+::tokenqueue@{parser\+::tokenqueue}!peek@{peek}}
+\index{peek@{peek}!parser\+::tokenqueue@{parser\+::tokenqueue}}
+\subsubsection[{\texorpdfstring{peek()}{peek()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf match}\& parser\+::tokenqueue\+::peek (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1tokenqueue_afa7d5f0dcdce020660def60538c9f7eb}{}\label{classparser_1_1tokenqueue_afa7d5f0dcdce020660def60538c9f7eb}
+Get the current element under the pointer \index{parser\+::tokenqueue@{parser\+::tokenqueue}!pop@{pop}}
+\index{pop@{pop}!parser\+::tokenqueue@{parser\+::tokenqueue}}
+\subsubsection[{\texorpdfstring{pop()}{pop()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf match}\& parser\+::tokenqueue\+::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1tokenqueue_aa8c2fdc681835f88dfe43659d18b0922}{}\label{classparser_1_1tokenqueue_aa8c2fdc681835f88dfe43659d18b0922}
+Get the element under the pointer and increments the pointer \index{parser\+::tokenqueue@{parser\+::tokenqueue}!reset@{reset}}
+\index{reset@{reset}!parser\+::tokenqueue@{parser\+::tokenqueue}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}void parser\+::tokenqueue\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1tokenqueue_a9e57fac92d33fe369a7ad6b87d63e7d5}{}\label{classparser_1_1tokenqueue_a9e57fac92d33fe369a7ad6b87d63e7d5}
+Start from the begining of the queue \index{parser\+::tokenqueue@{parser\+::tokenqueue}!restore@{restore}}
+\index{restore@{restore}!parser\+::tokenqueue@{parser\+::tokenqueue}}
+\subsubsection[{\texorpdfstring{restore(size\+\_\+t restore\+Point)}{restore(size_t restorePoint)}}]{\setlength{\rightskip}{0pt plus 5cm}void parser\+::tokenqueue\+::restore (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{restore\+Point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1tokenqueue_a39e90ab211fa63af79852763312f3242}{}\label{classparser_1_1tokenqueue_a39e90ab211fa63af79852763312f3242}
+Set the pointer to a particular element 
+
+\subsection{Member Data Documentation}
+\index{parser\+::tokenqueue@{parser\+::tokenqueue}!index@{index}}
+\index{index@{index}!parser\+::tokenqueue@{parser\+::tokenqueue}}
+\subsubsection[{\texorpdfstring{index}{index}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t parser\+::tokenqueue\+::index\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classparser_1_1tokenqueue_a442939c8efd904678d30e863da8db52b}{}\label{classparser_1_1tokenqueue_a442939c8efd904678d30e863da8db52b}
+Index to currently selected token \index{parser\+::tokenqueue@{parser\+::tokenqueue}!tokens@{tokens}}
+\index{tokens@{tokens}!parser\+::tokenqueue@{parser\+::tokenqueue}}
+\subsubsection[{\texorpdfstring{tokens}{tokens}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf match}$>$ parser\+::tokenqueue\+::tokens\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classparser_1_1tokenqueue_af9c381cb6495ade00167f2242b6862c5}{}\label{classparser_1_1tokenqueue_af9c381cb6495ade00167f2242b6862c5}
+Token list 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{parser_8hpp}{parser.\+hpp}\end{DoxyCompactItemize}

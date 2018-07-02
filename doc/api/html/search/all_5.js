@@ -10,6 +10,7 @@ var searchData=
   ['ensemble_2ehpp',['ensemble.hpp',['../ensemble_8hpp.html',1,'']]],
   ['environment',['environment',['../classqasm_1_1runtime_1_1environment.html',1,'qasm::runtime']]],
   ['errors',['errors',['../classqlib_1_1ide_1_1RuntimeReport.html#a7fd9bcb04c31f5b5a9d57acc1bbcb443',1,'qlib::ide::RuntimeReport']]],
+  ['events',['events',['../classcompiler.html#aa9d1b362adff0ca48511cf824ca1fe4c',1,'compiler']]],
   ['executable',['executable',['../classqasm_1_1exec_1_1executable.html',1,'qasm::exec']]],
   ['exists',['exists',['../classqlib_1_1ide_1_1IniIO.html#a68567b380e0074a223137077125eb060',1,'qlib::ide::IniIO']]],
   ['extract',['extract',['../classlexical_1_1lexeme.html#ade092b47d889c338daa38902409747ab',1,'lexical::lexeme']]]

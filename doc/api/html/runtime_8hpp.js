@@ -8,5 +8,7 @@ var runtime_8hpp =
     [ "print", "classqasm_1_1exec_1_1print.html", "classqasm_1_1exec_1_1print" ],
     [ "measurement", "classqasm_1_1exec_1_1measurement.html", "classqasm_1_1exec_1_1measurement" ],
     [ "declaration", "classqasm_1_1exec_1_1declaration.html", "classqasm_1_1exec_1_1declaration" ],
+    [ "import", "classqasm_1_1exec_1_1import.html", "classqasm_1_1exec_1_1import" ],
+    [ "label", "classqasm_1_1exec_1_1label.html", "classqasm_1_1exec_1_1label" ],
     [ "creg", "runtime_8hpp.html#a20cf870406c99de2d935e3a77b8b60da", null ]
 ];

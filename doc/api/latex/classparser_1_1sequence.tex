@@ -1,0 +1,92 @@
+\hypertarget{classparser_1_1sequence}{}\section{parser\+:\+:sequence Class Reference}
+\label{classparser_1_1sequence}\index{parser\+::sequence@{parser\+::sequence}}
+
+
+{\ttfamily \#include $<$parser.\+hpp$>$}
+
+
+
+Inheritance diagram for parser\+:\+:sequence\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classparser_1_1sequence__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for parser\+:\+:sequence\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classparser_1_1sequence__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classparser_1_1sequence_a360c88bf21abc2066043c03735b5341f}{sequence} (\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{ruleptr} first, \hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{ruleptr} next)
+\item 
+\hyperlink{classparser_1_1sequence_ac7681fd304c236f9667f48d6d53ffee7}{$\sim$sequence} ()
+\item 
+bool \hyperlink{classparser_1_1sequence_a499005d2dd4a3f39985d2deddb413cea}{try\+Parse} (\hyperlink{classparser_1_1tokenqueue}{tokenqueue} \&queue, \hyperlink{structparser_1_1parsetree}{parsetree} $\ast$ref)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{ruleptr} \hyperlink{classparser_1_1sequence_ad21658f30f62d93e41c2f10b6a8f004d}{left}
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{ruleptr} \hyperlink{classparser_1_1sequence_adb4d13535498d0d639a11443b9d869e0}{right}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing parsing elements that follow each other 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{parser\+::sequence@{parser\+::sequence}!sequence@{sequence}}
+\index{sequence@{sequence}!parser\+::sequence@{parser\+::sequence}}
+\subsubsection[{\texorpdfstring{sequence(ruleptr first, ruleptr next)}{sequence(ruleptr first, ruleptr next)}}]{\setlength{\rightskip}{0pt plus 5cm}parser\+::sequence\+::sequence (
+\begin{DoxyParamCaption}
+\item[{{\bf ruleptr}}]{first, }
+\item[{{\bf ruleptr}}]{next}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1sequence_a360c88bf21abc2066043c03735b5341f}{}\label{classparser_1_1sequence_a360c88bf21abc2066043c03735b5341f}
+\index{parser\+::sequence@{parser\+::sequence}!````~sequence@{$\sim$sequence}}
+\index{````~sequence@{$\sim$sequence}!parser\+::sequence@{parser\+::sequence}}
+\subsubsection[{\texorpdfstring{$\sim$sequence()}{~sequence()}}]{\setlength{\rightskip}{0pt plus 5cm}parser\+::sequence\+::$\sim$sequence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1sequence_ac7681fd304c236f9667f48d6d53ffee7}{}\label{classparser_1_1sequence_ac7681fd304c236f9667f48d6d53ffee7}
+
+
+\subsection{Member Function Documentation}
+\index{parser\+::sequence@{parser\+::sequence}!try\+Parse@{try\+Parse}}
+\index{try\+Parse@{try\+Parse}!parser\+::sequence@{parser\+::sequence}}
+\subsubsection[{\texorpdfstring{try\+Parse(tokenqueue \&queue, parsetree $\ast$ref)}{tryParse(tokenqueue &queue, parsetree *ref)}}]{\setlength{\rightskip}{0pt plus 5cm}bool parser\+::sequence\+::try\+Parse (
+\begin{DoxyParamCaption}
+\item[{{\bf tokenqueue} \&}]{queue, }
+\item[{{\bf parsetree} $\ast$}]{ref}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classparser_1_1sequence_a499005d2dd4a3f39985d2deddb413cea}{}\label{classparser_1_1sequence_a499005d2dd4a3f39985d2deddb413cea}
+Virtual function to parse an input tokenqueue into a parse tree Returns true if parsing successful and sets the value under the parsetree pointer 
+
+Reimplemented from \hyperlink{classparser_1_1rule_a60ccfb91ea4fe7def5ec2a15bb97c5ec}{parser\+::rule}.
+
+
+
+\subsection{Member Data Documentation}
+\index{parser\+::sequence@{parser\+::sequence}!left@{left}}
+\index{left@{left}!parser\+::sequence@{parser\+::sequence}}
+\subsubsection[{\texorpdfstring{left}{left}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ruleptr} parser\+::sequence\+::left\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classparser_1_1sequence_ad21658f30f62d93e41c2f10b6a8f004d}{}\label{classparser_1_1sequence_ad21658f30f62d93e41c2f10b6a8f004d}
+\index{parser\+::sequence@{parser\+::sequence}!right@{right}}
+\index{right@{right}!parser\+::sequence@{parser\+::sequence}}
+\subsubsection[{\texorpdfstring{right}{right}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ruleptr} parser\+::sequence\+::right\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classparser_1_1sequence_adb4d13535498d0d639a11443b9d869e0}{}\label{classparser_1_1sequence_adb4d13535498d0d639a11443b9d869e0}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{parser_8hpp}{parser.\+hpp}\end{DoxyCompactItemize}

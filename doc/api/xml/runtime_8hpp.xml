@@ -7,352 +7,352 @@
     <includes local="no">vector</includes>
     <includes local="no">map</includes>
     <includes refid="qlib_8h" local="yes">./../core/qlib.h</includes>
-    <includedby refid="qasmparser_8hpp" local="yes">src/runtime/qasmparser.hpp</includedby>
+    <includedby refid="compiler_8hpp" local="yes">src/runtime/compiler.hpp</includedby>
     <includedby refid="runtime_2main_8cpp" local="yes">src/runtime/main.cpp</includedby>
     <incdepgraph>
-      <node id="1814">
+      <node id="1842">
         <label>limits</label>
       </node>
-      <node id="1811">
+      <node id="1839">
         <label>./general/object.hpp</label>
         <link refid="object_8hpp"/>
-        <childnode refid="1812" relation="include">
-        </childnode>
-        <childnode refid="1807" relation="include">
-        </childnode>
-        <childnode refid="1806" relation="include">
-        </childnode>
-        <childnode refid="1815" relation="include">
-        </childnode>
-        <childnode refid="1816" relation="include">
-        </childnode>
-        <childnode refid="1817" relation="include">
-        </childnode>
-      </node>
-      <node id="1805">
-        <label>src/runtime/runtime.hpp</label>
-        <link refid="runtime.hpp"/>
-        <childnode refid="1806" relation="include">
-        </childnode>
-        <childnode refid="1807" relation="include">
-        </childnode>
-        <childnode refid="1808" relation="include">
-        </childnode>
-        <childnode refid="1809" relation="include">
-        </childnode>
-        <childnode refid="1810" relation="include">
-        </childnode>
-      </node>
-      <node id="1813">
-        <label>stdint.h</label>
-      </node>
-      <node id="1820">
-        <label>stdlib.h</label>
-      </node>
-      <node id="1821">
-        <label>./math/matrix.hpp</label>
-        <link refid="matrix_8hpp"/>
-        <childnode refid="1818" relation="include">
-        </childnode>
-        <childnode refid="1811" relation="include">
-        </childnode>
-        <childnode refid="1822" relation="include">
-        </childnode>
-        <childnode refid="1808" relation="include">
-        </childnode>
-        <childnode refid="1819" relation="include">
-        </childnode>
-        <childnode refid="1806" relation="include">
-        </childnode>
-      </node>
-      <node id="1823">
-        <label>./quantum/systems/qubit.hpp</label>
-        <link refid="qubit_8hpp"/>
-        <childnode refid="1811" relation="include">
-        </childnode>
-        <childnode refid="1818" relation="include">
-        </childnode>
-        <childnode refid="1821" relation="include">
-        </childnode>
-        <childnode refid="1824" relation="include">
-        </childnode>
-        <childnode refid="1825" relation="include">
-        </childnode>
-        <childnode refid="1819" relation="include">
-        </childnode>
-        <childnode refid="1806" relation="include">
-        </childnode>
-        <childnode refid="1808" relation="include">
-        </childnode>
-      </node>
-      <node id="1835">
-        <label>cmath</label>
-      </node>
-      <node id="1824">
-        <label>./../gates/igate.hpp</label>
-        <link refid="igate_8hpp"/>
-        <childnode refid="1811" relation="include">
-        </childnode>
-        <childnode refid="1818" relation="include">
-        </childnode>
-        <childnode refid="1821" relation="include">
-        </childnode>
-      </node>
-      <node id="1822">
-        <label>stdexcept</label>
-      </node>
-      <node id="1834">
-        <label>./gates/phase.hpp</label>
-        <link refid="phase_8hpp"/>
-        <childnode refid="1829" relation="include">
-        </childnode>
-        <childnode refid="1819" relation="include">
+        <childnode refid="1840" relation="include">
         </childnode>
         <childnode refid="1835" relation="include">
         </childnode>
-      </node>
-      <node id="1828">
-        <label>./gates/ident.hpp</label>
-        <link refid="ident_8hpp"/>
-        <childnode refid="1829" relation="include">
-        </childnode>
-      </node>
-      <node id="1825">
-        <label>system.hpp</label>
-        <link refid="system_8hpp"/>
-        <childnode refid="1811" relation="include">
-        </childnode>
-        <childnode refid="1818" relation="include">
-        </childnode>
-        <childnode refid="1821" relation="include">
-        </childnode>
-        <childnode refid="1824" relation="include">
-        </childnode>
-      </node>
-      <node id="1809">
-        <label>map</label>
-      </node>
-      <node id="1815">
-        <label>exception</label>
-      </node>
-      <node id="1842">
-        <label>./quantum/systems/ensemble.hpp</label>
-        <link refid="ensemble_8hpp"/>
-        <childnode refid="1825" relation="include">
-        </childnode>
-        <childnode refid="1808" relation="include">
-        </childnode>
-        <childnode refid="1809" relation="include">
-        </childnode>
-      </node>
-      <node id="1816">
-        <label>random</label>
-      </node>
-      <node id="1829">
-        <label>onequbitgate.hpp</label>
-        <link refid="onequbitgate_8hpp"/>
-        <childnode refid="1824" relation="include">
-        </childnode>
-        <childnode refid="1806" relation="include">
-        </childnode>
-      </node>
-      <node id="1840">
-        <label>./gates/toffoli.hpp</label>
-        <link refid="toffoli_8hpp"/>
-        <childnode refid="1841" relation="include">
-        </childnode>
-        <childnode refid="1831" relation="include">
-        </childnode>
-      </node>
-      <node id="1818">
-        <label>./math/complex.hpp</label>
-        <link refid="complex_8hpp"/>
-        <childnode refid="1811" relation="include">
-        </childnode>
-        <childnode refid="1819" relation="include">
-        </childnode>
-        <childnode refid="1820" relation="include">
-        </childnode>
-        <childnode refid="1806" relation="include">
-        </childnode>
-      </node>
-      <node id="1831">
-        <label>./gates/pauliX.hpp</label>
-        <link refid="pauliX_8hpp"/>
-        <childnode refid="1829" relation="include">
-        </childnode>
-      </node>
-      <node id="1808">
-        <label>vector</label>
-      </node>
-      <node id="1832">
-        <label>./gates/pauliY.hpp</label>
-        <link refid="pauliY_8hpp"/>
-        <childnode refid="1829" relation="include">
-        </childnode>
-      </node>
-      <node id="1810">
-        <label>./../core/qlib.h</label>
-        <link refid="qlib_8h"/>
-        <childnode refid="1811" relation="include">
-        </childnode>
-        <childnode refid="1812" relation="include">
-        </childnode>
-        <childnode refid="1818" relation="include">
-        </childnode>
-        <childnode refid="1821" relation="include">
-        </childnode>
-        <childnode refid="1823" relation="include">
-        </childnode>
-        <childnode refid="1826" relation="include">
-        </childnode>
-        <childnode refid="1827" relation="include">
-        </childnode>
-        <childnode refid="1825" relation="include">
-        </childnode>
-        <childnode refid="1842" relation="include">
-        </childnode>
-      </node>
-      <node id="1836">
-        <label>./gates/cnot.hpp</label>
-        <link refid="cnot_8hpp"/>
-        <childnode refid="1837" relation="include">
-        </childnode>
-        <childnode refid="1831" relation="include">
-        </childnode>
-      </node>
-      <node id="1806">
-        <label>sstream</label>
-      </node>
-      <node id="1833">
-        <label>./gates/pauliZ.hpp</label>
-        <link refid="pauliZ_8hpp"/>
-        <childnode refid="1829" relation="include">
-        </childnode>
-      </node>
-      <node id="1826">
-        <label>./quantum/systems/qreg.hpp</label>
-        <link refid="qreg_8hpp"/>
-        <childnode refid="1811" relation="include">
-        </childnode>
-        <childnode refid="1818" relation="include">
-        </childnode>
-        <childnode refid="1821" relation="include">
-        </childnode>
-        <childnode refid="1824" relation="include">
-        </childnode>
-        <childnode refid="1825" relation="include">
-        </childnode>
-        <childnode refid="1814" relation="include">
-        </childnode>
-        <childnode refid="1819" relation="include">
-        </childnode>
-        <childnode refid="1806" relation="include">
-        </childnode>
-        <childnode refid="1808" relation="include">
-        </childnode>
-      </node>
-      <node id="1839">
-        <label>./gates/cz.hpp</label>
-        <link refid="cz_8hpp"/>
-        <childnode refid="1837" relation="include">
-        </childnode>
-        <childnode refid="1833" relation="include">
-        </childnode>
-      </node>
-      <node id="1819">
-        <label>math.h</label>
-      </node>
-      <node id="1807">
-        <label>iostream</label>
-      </node>
-      <node id="1830">
-        <label>./gates/hadamard.hpp</label>
-        <link refid="hadamard_8hpp"/>
-        <childnode refid="1829" relation="include">
-        </childnode>
-      </node>
-      <node id="1827">
-        <label>./quantum/standard_gates.hpp</label>
-        <link refid="standard__gates_8hpp"/>
-        <childnode refid="1828" relation="include">
-        </childnode>
-        <childnode refid="1830" relation="include">
-        </childnode>
-        <childnode refid="1831" relation="include">
-        </childnode>
-        <childnode refid="1832" relation="include">
-        </childnode>
-        <childnode refid="1833" relation="include">
-        </childnode>
         <childnode refid="1834" relation="include">
         </childnode>
-        <childnode refid="1836" relation="include">
+        <childnode refid="1843" relation="include">
         </childnode>
-        <childnode refid="1838" relation="include">
-        </childnode>
-        <childnode refid="1839" relation="include">
-        </childnode>
-        <childnode refid="1840" relation="include">
-        </childnode>
-      </node>
-      <node id="1817">
-        <label>chrono</label>
-      </node>
-      <node id="1838">
-        <label>./gates/cy.hpp</label>
-        <link refid="cy_8hpp"/>
-        <childnode refid="1837" relation="include">
-        </childnode>
-        <childnode refid="1832" relation="include">
-        </childnode>
-      </node>
-      <node id="1812">
-        <label>./types.h</label>
-        <link refid="types_8h"/>
-        <childnode refid="1813" relation="include">
-        </childnode>
-        <childnode refid="1814" relation="include">
-        </childnode>
-      </node>
-      <node id="1837">
-        <label>controlledgate.hpp</label>
-        <link refid="controlledgate_8hpp"/>
-        <childnode refid="1824" relation="include">
-        </childnode>
-        <childnode refid="1829" relation="include">
-        </childnode>
-        <childnode refid="1806" relation="include">
-        </childnode>
-      </node>
-      <node id="1841">
-        <label>controlled2gate.hpp</label>
-        <link refid="controlled2gate_8hpp"/>
-        <childnode refid="1824" relation="include">
-        </childnode>
-        <childnode refid="1829" relation="include">
-        </childnode>
-        <childnode refid="1806" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="1845">
-        <label>src/runtime/main.cpp</label>
-        <link refid="runtime_2main_8cpp"/>
-      </node>
-      <node id="1843">
-        <label>src/runtime/runtime.hpp</label>
-        <link refid="runtime.hpp"/>
         <childnode refid="1844" relation="include">
         </childnode>
         <childnode refid="1845" relation="include">
         </childnode>
       </node>
+      <node id="1833">
+        <label>src/runtime/runtime.hpp</label>
+        <link refid="runtime.hpp"/>
+        <childnode refid="1834" relation="include">
+        </childnode>
+        <childnode refid="1835" relation="include">
+        </childnode>
+        <childnode refid="1836" relation="include">
+        </childnode>
+        <childnode refid="1837" relation="include">
+        </childnode>
+        <childnode refid="1838" relation="include">
+        </childnode>
+      </node>
+      <node id="1841">
+        <label>stdint.h</label>
+      </node>
+      <node id="1848">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1849">
+        <label>./math/matrix.hpp</label>
+        <link refid="matrix_8hpp"/>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1839" relation="include">
+        </childnode>
+        <childnode refid="1850" relation="include">
+        </childnode>
+        <childnode refid="1836" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+      </node>
+      <node id="1851">
+        <label>./quantum/systems/qubit.hpp</label>
+        <link refid="qubit_8hpp"/>
+        <childnode refid="1839" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1853" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+        <childnode refid="1836" relation="include">
+        </childnode>
+      </node>
+      <node id="1863">
+        <label>cmath</label>
+      </node>
+      <node id="1852">
+        <label>./../gates/igate.hpp</label>
+        <link refid="igate_8hpp"/>
+        <childnode refid="1839" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1849" relation="include">
+        </childnode>
+      </node>
+      <node id="1850">
+        <label>stdexcept</label>
+      </node>
+      <node id="1862">
+        <label>./gates/phase.hpp</label>
+        <link refid="phase_8hpp"/>
+        <childnode refid="1857" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1863" relation="include">
+        </childnode>
+      </node>
+      <node id="1856">
+        <label>./gates/ident.hpp</label>
+        <link refid="ident_8hpp"/>
+        <childnode refid="1857" relation="include">
+        </childnode>
+      </node>
+      <node id="1853">
+        <label>system.hpp</label>
+        <link refid="system_8hpp"/>
+        <childnode refid="1839" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1852" relation="include">
+        </childnode>
+      </node>
+      <node id="1837">
+        <label>map</label>
+      </node>
+      <node id="1843">
+        <label>exception</label>
+      </node>
+      <node id="1870">
+        <label>./quantum/systems/ensemble.hpp</label>
+        <link refid="ensemble_8hpp"/>
+        <childnode refid="1853" relation="include">
+        </childnode>
+        <childnode refid="1836" relation="include">
+        </childnode>
+        <childnode refid="1837" relation="include">
+        </childnode>
+      </node>
       <node id="1844">
-        <label>src/runtime/qasmparser.hpp</label>
-        <link refid="qasmparser_8hpp"/>
-        <childnode refid="1845" relation="include">
+        <label>random</label>
+      </node>
+      <node id="1857">
+        <label>onequbitgate.hpp</label>
+        <link refid="onequbitgate_8hpp"/>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+      </node>
+      <node id="1868">
+        <label>./gates/toffoli.hpp</label>
+        <link refid="toffoli_8hpp"/>
+        <childnode refid="1869" relation="include">
+        </childnode>
+        <childnode refid="1859" relation="include">
+        </childnode>
+      </node>
+      <node id="1846">
+        <label>./math/complex.hpp</label>
+        <link refid="complex_8hpp"/>
+        <childnode refid="1839" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1848" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+      </node>
+      <node id="1859">
+        <label>./gates/pauliX.hpp</label>
+        <link refid="pauliX_8hpp"/>
+        <childnode refid="1857" relation="include">
+        </childnode>
+      </node>
+      <node id="1836">
+        <label>vector</label>
+      </node>
+      <node id="1860">
+        <label>./gates/pauliY.hpp</label>
+        <link refid="pauliY_8hpp"/>
+        <childnode refid="1857" relation="include">
+        </childnode>
+      </node>
+      <node id="1838">
+        <label>./../core/qlib.h</label>
+        <link refid="qlib_8h"/>
+        <childnode refid="1839" relation="include">
+        </childnode>
+        <childnode refid="1840" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+        <childnode refid="1854" relation="include">
+        </childnode>
+        <childnode refid="1855" relation="include">
+        </childnode>
+        <childnode refid="1853" relation="include">
+        </childnode>
+        <childnode refid="1870" relation="include">
+        </childnode>
+      </node>
+      <node id="1864">
+        <label>./gates/cnot.hpp</label>
+        <link refid="cnot_8hpp"/>
+        <childnode refid="1865" relation="include">
+        </childnode>
+        <childnode refid="1859" relation="include">
+        </childnode>
+      </node>
+      <node id="1834">
+        <label>sstream</label>
+      </node>
+      <node id="1861">
+        <label>./gates/pauliZ.hpp</label>
+        <link refid="pauliZ_8hpp"/>
+        <childnode refid="1857" relation="include">
+        </childnode>
+      </node>
+      <node id="1854">
+        <label>./quantum/systems/qreg.hpp</label>
+        <link refid="qreg_8hpp"/>
+        <childnode refid="1839" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1853" relation="include">
+        </childnode>
+        <childnode refid="1842" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+        <childnode refid="1836" relation="include">
+        </childnode>
+      </node>
+      <node id="1867">
+        <label>./gates/cz.hpp</label>
+        <link refid="cz_8hpp"/>
+        <childnode refid="1865" relation="include">
+        </childnode>
+        <childnode refid="1861" relation="include">
+        </childnode>
+      </node>
+      <node id="1847">
+        <label>math.h</label>
+      </node>
+      <node id="1835">
+        <label>iostream</label>
+      </node>
+      <node id="1858">
+        <label>./gates/hadamard.hpp</label>
+        <link refid="hadamard_8hpp"/>
+        <childnode refid="1857" relation="include">
+        </childnode>
+      </node>
+      <node id="1855">
+        <label>./quantum/standard_gates.hpp</label>
+        <link refid="standard__gates_8hpp"/>
+        <childnode refid="1856" relation="include">
+        </childnode>
+        <childnode refid="1858" relation="include">
+        </childnode>
+        <childnode refid="1859" relation="include">
+        </childnode>
+        <childnode refid="1860" relation="include">
+        </childnode>
+        <childnode refid="1861" relation="include">
+        </childnode>
+        <childnode refid="1862" relation="include">
+        </childnode>
+        <childnode refid="1864" relation="include">
+        </childnode>
+        <childnode refid="1866" relation="include">
+        </childnode>
+        <childnode refid="1867" relation="include">
+        </childnode>
+        <childnode refid="1868" relation="include">
+        </childnode>
+      </node>
+      <node id="1845">
+        <label>chrono</label>
+      </node>
+      <node id="1866">
+        <label>./gates/cy.hpp</label>
+        <link refid="cy_8hpp"/>
+        <childnode refid="1865" relation="include">
+        </childnode>
+        <childnode refid="1860" relation="include">
+        </childnode>
+      </node>
+      <node id="1840">
+        <label>./types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1842" relation="include">
+        </childnode>
+      </node>
+      <node id="1865">
+        <label>controlledgate.hpp</label>
+        <link refid="controlledgate_8hpp"/>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1857" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+      </node>
+      <node id="1869">
+        <label>controlled2gate.hpp</label>
+        <link refid="controlled2gate_8hpp"/>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1857" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1873">
+        <label>src/runtime/main.cpp</label>
+        <link refid="runtime_2main_8cpp"/>
+      </node>
+      <node id="1871">
+        <label>src/runtime/runtime.hpp</label>
+        <link refid="runtime.hpp"/>
+        <childnode refid="1872" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+      </node>
+      <node id="1872">
+        <label>src/runtime/compiler.hpp</label>
+        <link refid="compiler_8hpp"/>
+        <childnode refid="1873" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -364,6 +364,8 @@
     <innerclass refid="classqasm_1_1exec_1_1print" prot="public">qasm::exec::print</innerclass>
     <innerclass refid="classqasm_1_1exec_1_1measurement" prot="public">qasm::exec::measurement</innerclass>
     <innerclass refid="classqasm_1_1exec_1_1declaration" prot="public">qasm::exec::declaration</innerclass>
+    <innerclass refid="classqasm_1_1exec_1_1import" prot="public">qasm::exec::import</innerclass>
+    <innerclass refid="classqasm_1_1exec_1_1label" prot="public">qasm::exec::label</innerclass>
     <innernamespace refid="namespaceqasm">qasm</innernamespace>
     <innernamespace refid="namespaceqasm_1_1runtime">qasm::runtime</innernamespace>
     <innernamespace refid="namespaceqasm_1_1exec">qasm::exec</innernamespace>
@@ -660,27 +662,39 @@
 <codeline lineno="379" refid="classqasm_1_1exec_1_1declaration_1ae8f3a47af0a26055fb6fc90303defbeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqasm_1_1exec_1_1declaration_1ae8f3a47af0a26055fb6fc90303defbeb" kindref="member">declaration</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>n,<sp/>u64<sp/>s)<sp/>:<sp/>type(t),<sp/>name(n),<sp/>size(s)<sp/>{}</highlight></codeline>
 <codeline lineno="380"><highlight class="normal"></highlight></codeline>
 <codeline lineno="381" refid="classqasm_1_1exec_1_1declaration_1a4f1396fca212fb0ce984d2cea90df0a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqasm_1_1exec_1_1declaration_1a4f1396fca212fb0ce984d2cea90df0a8" kindref="member">invoke_rootprogram</ref>(<ref refid="classqasm_1_1runtime_1_1environment" kindref="compound">runtime::environment</ref>&amp;<sp/>env)<sp/>{</highlight></codeline>
-<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;qreg&quot;</highlight><highlight class="normal">){</highlight></codeline>
-<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>env.<ref refid="classqasm_1_1runtime_1_1environment_1acd773cf48993b56c9f6b6b353a5a5e6a" kindref="member">setQreg</ref>(name,<sp/>size);</highlight></codeline>
-<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;creg&quot;</highlight><highlight class="normal">){</highlight></codeline>
-<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>env.<ref refid="classqasm_1_1runtime_1_1environment_1a976c4f032feee9c47af587a0f6c759ae" kindref="member">setCreg</ref>(name,<sp/>size);</highlight></codeline>
-<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stringstream<sp/>sb;</highlight></codeline>
-<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>type:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/>type;</highlight></codeline>
-<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>can&apos;t<sp/>define<sp/>variable<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/>name;<sp/></highlight></codeline>
-<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>of<sp/>size<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/>size;</highlight></codeline>
-<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classqasm_1_1runtime_1_1runtimeexception" kindref="compound">qasm::runtime::runtimeexception</ref>(sb.str());</highlight></codeline>
-<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="398"><highlight class="normal"></highlight></codeline>
-<codeline lineno="399"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="400"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="401"><highlight class="normal"></highlight></codeline>
-<codeline lineno="402"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;DELCARE:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>type<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>size<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;qreg&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>env.<ref refid="classqasm_1_1runtime_1_1environment_1acd773cf48993b56c9f6b6b353a5a5e6a" kindref="member">setQreg</ref>(name,<sp/>size);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;creg&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>env.<ref refid="classqasm_1_1runtime_1_1environment_1a976c4f032feee9c47af587a0f6c759ae" kindref="member">setCreg</ref>(name,<sp/>size);</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stringstream<sp/>sb;</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>type:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/>type;</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>can&apos;t<sp/>define<sp/>variable<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/>name;<sp/></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>of<sp/>size<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/>size;</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classqasm_1_1runtime_1_1runtimeexception" kindref="compound">qasm::runtime::runtimeexception</ref>(sb.str());</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="403" refid="classqasm_1_1exec_1_1import" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classqasm_1_1exec_1_1import" kindref="compound">import</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classqasm_1_1exec_1_1executable" kindref="compound">executable</ref><sp/>{</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="405" refid="classqasm_1_1exec_1_1import_1a421f281a62fa921c13a3fc86d6c6fa17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classqasm_1_1exec_1_1import_1a421f281a62fa921c13a3fc86d6c6fa17" kindref="member">filename</ref>;</highlight></codeline>
+<codeline lineno="406" refid="classqasm_1_1exec_1_1import_1a95ac5a6910c5820c41314dc4de5dd98a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>file)<sp/>:<sp/>filename(file)<sp/>{}</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412" refid="classqasm_1_1exec_1_1label" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classqasm_1_1exec_1_1label" kindref="compound">label</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classqasm_1_1exec_1_1executable" kindref="compound">executable</ref><sp/>{</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="414" refid="classqasm_1_1exec_1_1label_1ae88393dae0bd5ddbe32a65cfb2d8f247" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classqasm_1_1exec_1_1label_1ae88393dae0bd5ddbe32a65cfb2d8f247" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="415" refid="classqasm_1_1exec_1_1label_1aea2a4500ead46240c26215b6d964fae4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqasm_1_1exec_1_1label_1aea2a4500ead46240c26215b6d964fae4" kindref="member">label</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name)<sp/>:<sp/>name(name)<sp/>{}</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="417"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="418"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="src/runtime/runtime.hpp"/>
   </compounddef>

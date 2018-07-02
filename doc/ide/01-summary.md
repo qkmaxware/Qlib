@@ -2,7 +2,7 @@
 ##Development environment for use with the Qlib - Runtime and the QAS langauge
 
 ##Installation
-The /src/ide directory contains a Netbeans project folder. Either download the precompiled .jar from the Releases or download Netbeans, open the project and compile your own executable.
+The /src/ide directory contains a Netbeans project folder. Either download the pre-compiled .jar from the Releases or download Netbeans, open the project and compile your own executable.
 
 ##How to Launch
 Launch the .jar by double clicking the jar file or by entering the following command into your terminal/cmd/powershell.
@@ -48,6 +48,10 @@ The final button on the far right of the header will open a new window where the
     <tr>
         <td>Open File</td>
         <td>Ctrl + O</td>
+    </tr>
+    <tr>
+        <td>Open Most Recent File</td>
+        <td>Ctrl + T</td>
     </tr>
     <tr>
         <td>Save File</td>

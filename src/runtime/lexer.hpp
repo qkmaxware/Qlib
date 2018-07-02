@@ -48,6 +48,21 @@ struct match {
         ulong column_end;
 
         /// <Summary>
+        /// Match constructor
+        /// </Summary>
+        match() : lexemeptr(NULL), content(), row_start(0), row_end(0), column_start(0), column_end(0) {}
+
+        /// <Summary>
+        /// Print match to string
+        /// </Summary>
+        std::string toString(){
+            if(content.size() > 0){
+                return content[0];
+            }
+            return "No Match";
+        }
+
+        /// <Summary>
         /// Test if this match is valid
         /// </Summary>
         bool matchExists(){

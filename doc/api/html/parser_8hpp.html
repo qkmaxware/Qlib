@@ -106,17 +106,26 @@ $(document).ready(function(){initNavTree('parser_8hpp.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">parser.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="lexer_8hpp_source.html">./lexer.hpp</a>&quot;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for parser.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="parser_8hpp__incl.png" border="0" usemap="#src_2runtime_2parser_8hpp" alt=""/></div>
 <map name="src_2runtime_2parser_8hpp" id="src_2runtime_2parser_8hpp">
-<area shape="rect" id="node2" href="lexer_8hpp.html" title="./lexer.hpp" alt="" coords="169,80,252,107"/>
+<area shape="rect" id="node2" href="lexer_8hpp.html" title="./lexer.hpp" alt="" coords="179,80,261,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -124,11 +133,403 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="parser_8hpp__dep__incl.png" border="0" usemap="#src_2runtime_2parser_8hppdep" alt=""/></div>
 <map name="src_2runtime_2parser_8hppdep" id="src_2runtime_2parser_8hppdep">
-<area shape="rect" id="node2" href="runtime_2main_8cpp.html" title="src/runtime/main.cpp" alt="" coords="9,80,153,107"/>
+<area shape="rect" id="node2" href="compiler_8hpp.html" title="src/runtime/compiler.hpp" alt="" coords="5,80,171,107"/>
+<area shape="rect" id="node3" href="runtime_2main_8cpp.html" title="src/runtime/main.cpp" alt="" coords="76,155,220,181"/>
 </map>
 </div>
 </div>
 <p><a href="parser_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparser_1_1repeat.html">parser::repeat</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparser_1_1tokenqueue.html">parser::tokenqueue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structparser_1_1parsetree.html">parser::parsetree</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparser_1_1rule.html">parser::rule</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparser_1_1repeater.html">parser::repeater</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparser_1_1terminal.html">parser::terminal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparser_1_1sequence.html">parser::sequence</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparser_1_1choice.html">parser::choice</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceparser"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceparser.html">parser</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a85b2df48287fddaca144a5f6c01b4761"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; rule &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a></td></tr>
+<tr class="separator:a85b2df48287fddaca144a5f6c01b4761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a722923e496599a4427f533b0c347e3f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8hpp.html#a722923e496599a4427f533b0c347e3f0">operator*</a> (<a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> right)</td></tr>
+<tr class="separator:a722923e496599a4427f533b0c347e3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971b8d5e9b8114ff9b5940fad5fc98f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8hpp.html#a971b8d5e9b8114ff9b5940fad5fc98f4">operator+</a> (<a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> right)</td></tr>
+<tr class="separator:a971b8d5e9b8114ff9b5940fad5fc98f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3613c7c9db8f7e35060e86555ed82006"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8hpp.html#a3613c7c9db8f7e35060e86555ed82006">operator!</a> (<a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> right)</td></tr>
+<tr class="separator:a3613c7c9db8f7e35060e86555ed82006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a010182413c1f69e351a507067f73e307"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8hpp.html#a010182413c1f69e351a507067f73e307">operator*</a> (<a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;right)</td></tr>
+<tr class="separator:a010182413c1f69e351a507067f73e307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0150c00791055dedf9b8ea4335a00151"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8hpp.html#a0150c00791055dedf9b8ea4335a00151">operator+</a> (<a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;right)</td></tr>
+<tr class="separator:a0150c00791055dedf9b8ea4335a00151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032b3d4cc0c96c7b43edf8290128bbb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8hpp.html#a032b3d4cc0c96c7b43edf8290128bbb3">operator!</a> (<a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;right)</td></tr>
+<tr class="separator:a032b3d4cc0c96c7b43edf8290128bbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27dd049f5fefd3819dce94f81bcaea5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8hpp.html#a27dd049f5fefd3819dce94f81bcaea5b">operator&lt;&lt;</a> (<a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> left, <a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> right)</td></tr>
+<tr class="separator:a27dd049f5fefd3819dce94f81bcaea5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a3cfa71695ff27939e79879070a7b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8hpp.html#a40a3cfa71695ff27939e79879070a7b6">operator&lt;&lt;</a> (<a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> left, <a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;right)</td></tr>
+<tr class="separator:a40a3cfa71695ff27939e79879070a7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e9bb412dfdf4084df429b5cb9ad25c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8hpp.html#a01e9bb412dfdf4084df429b5cb9ad25c">operator&lt;&lt;</a> (<a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;left, <a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> right)</td></tr>
+<tr class="separator:a01e9bb412dfdf4084df429b5cb9ad25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addcf969a66b1191560d0702cbfef8087"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8hpp.html#addcf969a66b1191560d0702cbfef8087">operator&lt;&lt;</a> (<a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;left, <a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;right)</td></tr>
+<tr class="separator:addcf969a66b1191560d0702cbfef8087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83ae991f5883e5298c5000de800d5c60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8hpp.html#a83ae991f5883e5298c5000de800d5c60">operator|</a> (<a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> left, <a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> right)</td></tr>
+<tr class="separator:a83ae991f5883e5298c5000de800d5c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382e1d6e85a342495aa289d72f01873a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8hpp.html#a382e1d6e85a342495aa289d72f01873a">operator|</a> (<a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> left, <a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;right)</td></tr>
+<tr class="separator:a382e1d6e85a342495aa289d72f01873a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94f7bc23c74a7071b4a3c09fadac754"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8hpp.html#ac94f7bc23c74a7071b4a3c09fadac754">operator|</a> (<a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;left, <a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> right)</td></tr>
+<tr class="separator:ac94f7bc23c74a7071b4a3c09fadac754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c60b97dec81fe6c23646c03d2f4223"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8hpp.html#ae0c60b97dec81fe6c23646c03d2f4223">operator|</a> (<a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;left, <a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;right)</td></tr>
+<tr class="separator:ae0c60b97dec81fe6c23646c03d2f4223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac46e69b1e6ac0db5fa1b987e69e0c64e"><td class="memItemLeft" align="right" valign="top">const repeat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceparser.html#ac46e69b1e6ac0db5fa1b987e69e0c64e">parser::KLEENE_STAR</a> = repeat(0)</td></tr>
+<tr class="separator:ac46e69b1e6ac0db5fa1b987e69e0c64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ed17cb3337d680cb84ca3f2af8c2dd"><td class="memItemLeft" align="right" valign="top">const repeat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceparser.html#a97ed17cb3337d680cb84ca3f2af8c2dd">parser::KLEENE_PLUS</a> = repeat(1)</td></tr>
+<tr class="separator:a97ed17cb3337d680cb84ca3f2af8c2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1856f1b1a3996f6388d8686cf35daff9"><td class="memItemLeft" align="right" valign="top">const repeat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceparser.html#a1856f1b1a3996f6388d8686cf35daff9">parser::KLEENE_ONCE</a> = repeat(1,1)</td></tr>
+<tr class="separator:a1856f1b1a3996f6388d8686cf35daff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97f2803cfa3a6e9328865ea4744d4d6"><td class="memItemLeft" align="right" valign="top">const repeat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceparser.html#ac97f2803cfa3a6e9328865ea4744d4d6">parser::KLEENE_OPTIONAL</a> = repeat(0,1)</td></tr>
+<tr class="separator:ac97f2803cfa3a6e9328865ea4744d4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a3613c7c9db8f7e35060e86555ed82006"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> operator! </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td>
+          <td class="paramname"><em>right</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Repeat a rule </p>
+
+</div>
+</div>
+<a class="anchor" id="a032b3d4cc0c96c7b43edf8290128bbb3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> operator! </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;&#160;</td>
+          <td class="paramname"><em>right</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create terminal rule and repeat it </p>
+
+</div>
+</div>
+<a class="anchor" id="a722923e496599a4427f533b0c347e3f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td>
+          <td class="paramname"><em>right</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Repeat a rule </p>
+
+</div>
+</div>
+<a class="anchor" id="a010182413c1f69e351a507067f73e307"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;&#160;</td>
+          <td class="paramname"><em>right</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create terminal rule and repeat it </p>
+
+</div>
+</div>
+<a class="anchor" id="a971b8d5e9b8114ff9b5940fad5fc98f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td>
+          <td class="paramname"><em>right</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Repeat a rule </p>
+
+</div>
+</div>
+<a class="anchor" id="a0150c00791055dedf9b8ea4335a00151"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;&#160;</td>
+          <td class="paramname"><em>right</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create terminal rule and repeat it </p>
+
+</div>
+</div>
+<a class="anchor" id="a27dd049f5fefd3819dce94f81bcaea5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create sequence of rules </p>
+
+</div>
+</div>
+<a class="anchor" id="a40a3cfa71695ff27939e79879070a7b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create terminal rule and then add it to a sequence of rules </p>
+
+</div>
+</div>
+<a class="anchor" id="a01e9bb412dfdf4084df429b5cb9ad25c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create terminal rule and then add it to a sequence of rules </p>
+
+</div>
+</div>
+<a class="anchor" id="addcf969a66b1191560d0702cbfef8087"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create terminal rule and then add it to a sequence of rules </p>
+
+</div>
+</div>
+<a class="anchor" id="a83ae991f5883e5298c5000de800d5c60"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> operator| </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a choice between 2 rules </p>
+
+</div>
+</div>
+<a class="anchor" id="a382e1d6e85a342495aa289d72f01873a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> operator| </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a terminal rule and add it to a choice between 2 rules </p>
+
+</div>
+</div>
+<a class="anchor" id="ac94f7bc23c74a7071b4a3c09fadac754"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> operator| </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a>&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a terminal rule and add it to a choice between 2 rules </p>
+
+</div>
+</div>
+<a class="anchor" id="ae0c60b97dec81fe6c23646c03d2f4223"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceparser.html#a85b2df48287fddaca144a5f6c01b4761">parser::ruleptr</a> operator| </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlexical_1_1lexeme.html">lexeme</a> &amp;&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a terminal rule and add it to a choice between 2 rules </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -175,47 +175,47 @@
     <detaileddescription>
 <para>Represents a register of &apos;N&apos; qubits </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="322">
+      <node id="408">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="320">
+      <node id="406">
         <label>qlib::quantum::qreg</label>
         <link refid="classqlib_1_1quantum_1_1qreg"/>
-        <childnode refid="321" relation="public-inheritance">
+        <childnode refid="407" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="321">
+      <node id="407">
         <label>qlib::quantum::qsystem</label>
         <link refid="classqlib_1_1quantum_1_1qsystem"/>
-        <childnode refid="322" relation="public-inheritance">
+        <childnode refid="408" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="325">
+      <node id="411">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="326">
+      <node id="412">
         <label>qlib::math::matrix</label>
         <link refid="classqlib_1_1math_1_1matrix"/>
-        <childnode refid="325" relation="public-inheritance">
+        <childnode refid="411" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="323">
+      <node id="409">
         <label>qlib::quantum::qreg</label>
         <link refid="classqlib_1_1quantum_1_1qreg"/>
-        <childnode refid="324" relation="public-inheritance">
+        <childnode refid="410" relation="public-inheritance">
         </childnode>
-        <childnode refid="326" relation="usage">
+        <childnode refid="412" relation="usage">
           <edgelabel>amplitudes</edgelabel>
         </childnode>
       </node>
-      <node id="324">
+      <node id="410">
         <label>qlib::quantum::qsystem</label>
         <link refid="classqlib_1_1quantum_1_1qsystem"/>
-        <childnode refid="325" relation="public-inheritance">
+        <childnode refid="411" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

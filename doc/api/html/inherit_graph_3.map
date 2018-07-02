@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structlexical_1_1match.html" title="lexical::match" alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node2" href="$classlexical_1_1lexicalexception.html" title="lexical::lexicalexception" alt="" coords="158,5,318,32"/>
+<area shape="rect" id="node3" href="$classparseexception.html" title="parseexception" alt="" coords="183,56,293,83"/>
+<area shape="rect" id="node4" href="$classqasm_1_1runtime_1_1runtimeexception.html" title="qasm::runtime::runtimeexception" alt="" coords="132,107,344,133"/>
 </map>

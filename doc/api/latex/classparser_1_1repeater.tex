@@ -1,0 +1,92 @@
+\hypertarget{classparser_1_1repeater}{}\section{parser\+:\+:repeater Class Reference}
+\label{classparser_1_1repeater}\index{parser\+::repeater@{parser\+::repeater}}
+
+
+{\ttfamily \#include $<$parser.\+hpp$>$}
+
+
+
+Inheritance diagram for parser\+:\+:repeater\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classparser_1_1repeater__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for parser\+:\+:repeater\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classparser_1_1repeater__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classparser_1_1repeater_aa5c267969cb13f7000e1767c2231f56c}{repeater} (\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{ruleptr} r, \hyperlink{classparser_1_1repeat}{repeat} \hyperlink{classparser_1_1repeater_ad76ca9d514283b1fa25e20d01b110104}{rep})
+\item 
+\hyperlink{classparser_1_1repeater_a6f369d919c6f590156e3bb60259f1a45}{$\sim$repeater} ()
+\item 
+bool \hyperlink{classparser_1_1repeater_acb57c02da3e60b3ca751a2eda3e145c2}{try\+Parse} (\hyperlink{classparser_1_1tokenqueue}{tokenqueue} \&queue, \hyperlink{structparser_1_1parsetree}{parsetree} $\ast$ref)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{ruleptr} \hyperlink{classparser_1_1repeater_a1969288aaeb1b6957586356bf2986194}{rl}
+\item 
+\hyperlink{classparser_1_1repeat}{repeat} \hyperlink{classparser_1_1repeater_ad76ca9d514283b1fa25e20d01b110104}{rep}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing parsing elements that are repeated 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{parser\+::repeater@{parser\+::repeater}!repeater@{repeater}}
+\index{repeater@{repeater}!parser\+::repeater@{parser\+::repeater}}
+\subsubsection[{\texorpdfstring{repeater(ruleptr r, repeat rep)}{repeater(ruleptr r, repeat rep)}}]{\setlength{\rightskip}{0pt plus 5cm}parser\+::repeater\+::repeater (
+\begin{DoxyParamCaption}
+\item[{{\bf ruleptr}}]{r, }
+\item[{{\bf repeat}}]{rep}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1repeater_aa5c267969cb13f7000e1767c2231f56c}{}\label{classparser_1_1repeater_aa5c267969cb13f7000e1767c2231f56c}
+\index{parser\+::repeater@{parser\+::repeater}!````~repeater@{$\sim$repeater}}
+\index{````~repeater@{$\sim$repeater}!parser\+::repeater@{parser\+::repeater}}
+\subsubsection[{\texorpdfstring{$\sim$repeater()}{~repeater()}}]{\setlength{\rightskip}{0pt plus 5cm}parser\+::repeater\+::$\sim$repeater (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1repeater_a6f369d919c6f590156e3bb60259f1a45}{}\label{classparser_1_1repeater_a6f369d919c6f590156e3bb60259f1a45}
+
+
+\subsection{Member Function Documentation}
+\index{parser\+::repeater@{parser\+::repeater}!try\+Parse@{try\+Parse}}
+\index{try\+Parse@{try\+Parse}!parser\+::repeater@{parser\+::repeater}}
+\subsubsection[{\texorpdfstring{try\+Parse(tokenqueue \&queue, parsetree $\ast$ref)}{tryParse(tokenqueue &queue, parsetree *ref)}}]{\setlength{\rightskip}{0pt plus 5cm}bool parser\+::repeater\+::try\+Parse (
+\begin{DoxyParamCaption}
+\item[{{\bf tokenqueue} \&}]{queue, }
+\item[{{\bf parsetree} $\ast$}]{ref}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classparser_1_1repeater_acb57c02da3e60b3ca751a2eda3e145c2}{}\label{classparser_1_1repeater_acb57c02da3e60b3ca751a2eda3e145c2}
+Virtual function to parse an input tokenqueue into a parse tree Returns true if parsing successful and sets the value under the parsetree pointer 
+
+Reimplemented from \hyperlink{classparser_1_1rule_a60ccfb91ea4fe7def5ec2a15bb97c5ec}{parser\+::rule}.
+
+
+
+\subsection{Member Data Documentation}
+\index{parser\+::repeater@{parser\+::repeater}!rep@{rep}}
+\index{rep@{rep}!parser\+::repeater@{parser\+::repeater}}
+\subsubsection[{\texorpdfstring{rep}{rep}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf repeat} parser\+::repeater\+::rep\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classparser_1_1repeater_ad76ca9d514283b1fa25e20d01b110104}{}\label{classparser_1_1repeater_ad76ca9d514283b1fa25e20d01b110104}
+\index{parser\+::repeater@{parser\+::repeater}!rl@{rl}}
+\index{rl@{rl}!parser\+::repeater@{parser\+::repeater}}
+\subsubsection[{\texorpdfstring{rl}{rl}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ruleptr} parser\+::repeater\+::rl\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classparser_1_1repeater_a1969288aaeb1b6957586356bf2986194}{}\label{classparser_1_1repeater_a1969288aaeb1b6957586356bf2986194}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{parser_8hpp}{parser.\+hpp}\end{DoxyCompactItemize}

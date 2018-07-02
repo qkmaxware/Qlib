@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['values',['values',['../classqlib_1_1math_1_1matrix.html#ad764d65375ba1e50381f640bdc181c0b',1,'qlib::math::matrix']]],
-  ['vec',['vec',['../classqlib_1_1quantum_1_1qubit.html#a8f6e33dd5d0673f195360bc4b5c5442f',1,'qlib::quantum::qubit']]]
+  ['uint',['uint',['../types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14',1,'types.h']]],
+  ['ulong',['ulong',['../types_8h.html#ab2bb0e5480d1d957383df6b350794313',1,'types.h']]],
+  ['undermin',['underMin',['../classparser_1_1repeat.html#a67c60e501c7e0fa33f2f3f1b99e44b62',1,'parser::repeat']]],
+  ['updatenumbering',['updateNumbering',['../classqlib_1_1ide_1_1CodeEditor.html#accee26f5cf7da53ffda849ab6d4741e0',1,'qlib::ide::CodeEditor']]],
+  ['usize',['usize',['../types_8h.html#a3c627c760b91bb1ea3ffbff49674964a',1,'types.h']]]
 ];

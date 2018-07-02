@@ -7,65 +7,67 @@
     <includes local="no">vector</includes>
     <includes local="no">exception</includes>
     <includes local="no">sstream</includes>
-    <includedby refid="runtime_2main_8cpp" local="yes">src/runtime/main.cpp</includedby>
+    <includedby refid="compiler_8hpp" local="yes">src/runtime/compiler.hpp</includedby>
     <includedby refid="parser_8hpp" local="yes">src/runtime/parser.hpp</includedby>
-    <includedby refid="qasmparser_8hpp" local="yes">src/runtime/qasmparser.hpp</includedby>
+    <includedby refid="runtime_2main_8cpp" local="yes">src/runtime/main.cpp</includedby>
     <incdepgraph>
-      <node id="1743">
+      <node id="1814">
         <label>regex</label>
       </node>
-      <node id="1745">
+      <node id="1816">
         <label>exception</label>
       </node>
-      <node id="1744">
+      <node id="1815">
         <label>vector</label>
       </node>
-      <node id="1746">
+      <node id="1817">
         <label>sstream</label>
       </node>
-      <node id="1742">
+      <node id="1813">
         <label>iostream</label>
       </node>
-      <node id="1741">
+      <node id="1812">
         <label>src/runtime/lexer.hpp</label>
         <link refid="lexer.hpp"/>
-        <childnode refid="1742" relation="include">
+        <childnode refid="1813" relation="include">
         </childnode>
-        <childnode refid="1743" relation="include">
+        <childnode refid="1814" relation="include">
         </childnode>
-        <childnode refid="1744" relation="include">
+        <childnode refid="1815" relation="include">
         </childnode>
-        <childnode refid="1745" relation="include">
+        <childnode refid="1816" relation="include">
         </childnode>
-        <childnode refid="1746" relation="include">
+        <childnode refid="1817" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1748">
+      <node id="1820">
         <label>src/runtime/main.cpp</label>
         <link refid="runtime_2main_8cpp"/>
       </node>
-      <node id="1750">
-        <label>src/runtime/qasmparser.hpp</label>
-        <link refid="qasmparser_8hpp"/>
-        <childnode refid="1748" relation="include">
-        </childnode>
-      </node>
-      <node id="1749">
+      <node id="1821">
         <label>src/runtime/parser.hpp</label>
         <link refid="parser_8hpp"/>
-        <childnode refid="1748" relation="include">
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1820" relation="include">
         </childnode>
       </node>
-      <node id="1747">
+      <node id="1819">
+        <label>src/runtime/compiler.hpp</label>
+        <link refid="compiler_8hpp"/>
+        <childnode refid="1820" relation="include">
+        </childnode>
+      </node>
+      <node id="1818">
         <label>src/runtime/lexer.hpp</label>
         <link refid="lexer.hpp"/>
-        <childnode refid="1748" relation="include">
+        <childnode refid="1819" relation="include">
         </childnode>
-        <childnode refid="1749" relation="include">
+        <childnode refid="1821" relation="include">
         </childnode>
-        <childnode refid="1750" relation="include">
+        <childnode refid="1820" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

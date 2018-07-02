@@ -1,4 +1,5 @@
 <map id="qlib.ide.QLibIDE" name="qlib.ide.QLibIDE">
-<area shape="rect" id="node3" href="$classqlib_1_1ide_1_1QLibRuntime.html" title="qlib.ide.QLibRuntime" alt="" coords="121,109,263,136"/>
-<area shape="rect" id="node5" href="$classqlib_1_1ide_1_1FileManager.html" title="qlib.ide.FileManager" alt="" coords="288,109,427,136"/>
+<area shape="rect" id="node3" href="$classqlib_1_1ide_1_1OptionsMenu.html" title="qlib.ide.OptionsMenu" alt="" coords="273,119,417,145"/>
+<area shape="rect" id="node5" href="$classqlib_1_1ide_1_1QLibRuntime.html" title="qlib.ide.QLibRuntime" alt="" coords="274,169,417,196"/>
+<area shape="rect" id="node7" href="$classqlib_1_1ide_1_1FileManager.html" title="qlib.ide.FileManager" alt="" coords="276,220,415,247"/>
 </map>

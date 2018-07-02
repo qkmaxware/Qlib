@@ -74,44 +74,44 @@
     <detaileddescription>
 <para>Base class for all quantum systems </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="329">
+      <node id="415">
         <label>qlib::quantum::ensemble</label>
         <link refid="classqlib_1_1quantum_1_1ensemble"/>
-        <childnode refid="327" relation="public-inheritance">
+        <childnode refid="413" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="328">
+      <node id="414">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="330">
+      <node id="416">
         <label>qlib::quantum::qreg</label>
         <link refid="classqlib_1_1quantum_1_1qreg"/>
-        <childnode refid="327" relation="public-inheritance">
+        <childnode refid="413" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="331">
+      <node id="417">
         <label>qlib::quantum::qubit</label>
         <link refid="classqlib_1_1quantum_1_1qubit"/>
-        <childnode refid="327" relation="public-inheritance">
+        <childnode refid="413" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="327">
+      <node id="413">
         <label>qlib::quantum::qsystem</label>
         <link refid="classqlib_1_1quantum_1_1qsystem"/>
-        <childnode refid="328" relation="public-inheritance">
+        <childnode refid="414" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="333">
+      <node id="419">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="332">
+      <node id="418">
         <label>qlib::quantum::qsystem</label>
         <link refid="classqlib_1_1quantum_1_1qsystem"/>
-        <childnode refid="333" relation="public-inheritance">
+        <childnode refid="419" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

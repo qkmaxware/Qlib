@@ -1,0 +1,86 @@
+\hypertarget{classcompiler}{}\section{compiler Class Reference}
+\label{classcompiler}\index{compiler@{compiler}}
+
+
+{\ttfamily \#include $<$compiler.\+hpp$>$}
+
+
+
+Collaboration diagram for compiler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classcompiler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcompiler_aac603e3e8c3851dfb420e6e007adbad0}{compiler} (\hyperlink{classlexical_1_1lexer}{lexical\+::lexer} \&\hyperlink{classcompiler_a888ac16dbb82fa8a9500633addcd22ba}{tokenizer}, vector$<$ \hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} $>$ \&\hyperlink{classcompiler_a1b712963929882f359df919ce73bbf4e}{rules}, vector$<$ \hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$($\ast$)(\hyperlink{structparser_1_1parsetree}{parser\+::parsetree} \&)$>$ \&\hyperlink{classcompiler_a76cbb22ce5238f2fd9b3946f541dba0c}{converters}, vector$<$ void($\ast$)(\hyperlink{classcompiler}{compiler} \&, \hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$)$>$ \&\hyperlink{classcompiler_aa9d1b362adff0ca48511cf824ca1fe4c}{events}, \hyperlink{classprogram}{program} \&\hyperlink{classcompiler_a801700690bf711169679cb6ca890168a}{prog})
+\item 
+bool \hyperlink{classcompiler_af3984a0a53279c28bee8aee4b0ef84ca}{try\+\_\+parse\+\_\+file} (std\+::string filename)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlexical_1_1lexer}{lexical\+::lexer} \& \hyperlink{classcompiler_a888ac16dbb82fa8a9500633addcd22ba}{tokenizer}
+\item 
+vector$<$ \hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} $>$ \& \hyperlink{classcompiler_a1b712963929882f359df919ce73bbf4e}{rules}
+\item 
+vector$<$ \hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$($\ast$)(\hyperlink{structparser_1_1parsetree}{parser\+::parsetree} \&)$>$ \& \hyperlink{classcompiler_a76cbb22ce5238f2fd9b3946f541dba0c}{converters}
+\item 
+vector$<$ void($\ast$)(\hyperlink{classcompiler}{compiler} \&, \hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$)$>$ \& \hyperlink{classcompiler_aa9d1b362adff0ca48511cf824ca1fe4c}{events}
+\item 
+\hyperlink{classprogram}{program} \& \hyperlink{classcompiler_a801700690bf711169679cb6ca890168a}{prog}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class wrapping up all compiler components 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{compiler@{compiler}!compiler@{compiler}}
+\index{compiler@{compiler}!compiler@{compiler}}
+\subsubsection[{\texorpdfstring{compiler(lexical\+::lexer \&tokenizer, vector$<$ parser\+::ruleptr $>$ \&rules, vector$<$ qasm\+::exec\+::executable $\ast$($\ast$)(parser\+::parsetree \&)$>$ \&converters, vector$<$ void($\ast$)(compiler \&, qasm\+::exec\+::executable $\ast$)$>$ \&events, program \&prog)}{compiler(lexical::lexer &tokenizer, vector< parser::ruleptr > &rules, vector< qasm::exec::executable *(*)(parser::parsetree &)> &converters, vector< void(*)(compiler &, qasm::exec::executable *)> &events, program &prog)}}]{\setlength{\rightskip}{0pt plus 5cm}compiler\+::compiler (
+\begin{DoxyParamCaption}
+\item[{{\bf lexical\+::lexer} \&}]{tokenizer, }
+\item[{vector$<$ {\bf parser\+::ruleptr} $>$ \&}]{rules, }
+\item[{vector$<$ {\bf qasm\+::exec\+::executable} $\ast$($\ast$)({\bf parser\+::parsetree} \&)$>$ \&}]{converters, }
+\item[{vector$<$ void($\ast$)({\bf compiler} \&, {\bf qasm\+::exec\+::executable} $\ast$)$>$ \&}]{events, }
+\item[{{\bf program} \&}]{prog}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcompiler_aac603e3e8c3851dfb420e6e007adbad0}{}\label{classcompiler_aac603e3e8c3851dfb420e6e007adbad0}
+
+
+\subsection{Member Function Documentation}
+\index{compiler@{compiler}!try\+\_\+parse\+\_\+file@{try\+\_\+parse\+\_\+file}}
+\index{try\+\_\+parse\+\_\+file@{try\+\_\+parse\+\_\+file}!compiler@{compiler}}
+\subsubsection[{\texorpdfstring{try\+\_\+parse\+\_\+file(std\+::string filename)}{try_parse_file(std::string filename)}}]{\setlength{\rightskip}{0pt plus 5cm}bool compiler\+::try\+\_\+parse\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcompiler_af3984a0a53279c28bee8aee4b0ef84ca}{}\label{classcompiler_af3984a0a53279c28bee8aee4b0ef84ca}
+
+
+\subsection{Member Data Documentation}
+\index{compiler@{compiler}!converters@{converters}}
+\index{converters@{converters}!compiler@{compiler}}
+\subsubsection[{\texorpdfstring{converters}{converters}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf qasm\+::exec\+::executable}$\ast$ ($\ast$)({\bf parser\+::parsetree}\&)$>$\& compiler\+::converters}\hypertarget{classcompiler_a76cbb22ce5238f2fd9b3946f541dba0c}{}\label{classcompiler_a76cbb22ce5238f2fd9b3946f541dba0c}
+\index{compiler@{compiler}!events@{events}}
+\index{events@{events}!compiler@{compiler}}
+\subsubsection[{\texorpdfstring{events}{events}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$void($\ast$)({\bf compiler}\&, {\bf qasm\+::exec\+::executable}$\ast$)$>$\& compiler\+::events}\hypertarget{classcompiler_aa9d1b362adff0ca48511cf824ca1fe4c}{}\label{classcompiler_aa9d1b362adff0ca48511cf824ca1fe4c}
+\index{compiler@{compiler}!prog@{prog}}
+\index{prog@{prog}!compiler@{compiler}}
+\subsubsection[{\texorpdfstring{prog}{prog}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf program}\& compiler\+::prog}\hypertarget{classcompiler_a801700690bf711169679cb6ca890168a}{}\label{classcompiler_a801700690bf711169679cb6ca890168a}
+\index{compiler@{compiler}!rules@{rules}}
+\index{rules@{rules}!compiler@{compiler}}
+\subsubsection[{\texorpdfstring{rules}{rules}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf parser\+::ruleptr}$>$\& compiler\+::rules}\hypertarget{classcompiler_a1b712963929882f359df919ce73bbf4e}{}\label{classcompiler_a1b712963929882f359df919ce73bbf4e}
+\index{compiler@{compiler}!tokenizer@{tokenizer}}
+\index{tokenizer@{tokenizer}!compiler@{compiler}}
+\subsubsection[{\texorpdfstring{tokenizer}{tokenizer}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf lexical\+::lexer}\& compiler\+::tokenizer}\hypertarget{classcompiler_a888ac16dbb82fa8a9500633addcd22ba}{}\label{classcompiler_a888ac16dbb82fa8a9500633addcd22ba}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{compiler_8hpp}{compiler.\+hpp}\end{DoxyCompactItemize}

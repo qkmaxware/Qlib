@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classparser_1_1repeater" kind="class" language="C++" prot="public">
+    <compoundname>parser::repeater</compoundname>
+    <basecompoundref refid="classparser_1_1rule" prot="public" virt="non-virtual">parser::rule</basecompoundref>
+    <includes refid="parser_8hpp" local="no">parser.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classparser_1_1repeater_1a1969288aaeb1b6957586356bf2986194" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref></type>
+        <definition>ruleptr parser::repeater::rl</definition>
+        <argsstring></argsstring>
+        <name>rl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="225" column="1" bodyfile="src/runtime/parser.hpp" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparser_1_1repeater_1ad76ca9d514283b1fa25e20d01b110104" prot="private" static="no" mutable="no">
+        <type><ref refid="classparser_1_1repeat" kindref="compound">repeat</ref></type>
+        <definition>repeat parser::repeater::rep</definition>
+        <argsstring></argsstring>
+        <name>rep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="226" column="1" bodyfile="src/runtime/parser.hpp" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparser_1_1repeater_1aa5c267969cb13f7000e1767c2231f56c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>parser::repeater::repeater</definition>
+        <argsstring>(ruleptr r, repeat rep)</argsstring>
+        <name>repeater</name>
+        <param>
+          <type><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="classparser_1_1repeat" kindref="compound">repeat</ref></type>
+          <declname>rep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="228" column="1" bodyfile="src/runtime/parser.hpp" bodystart="228" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1repeater_1a6f369d919c6f590156e3bb60259f1a45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>parser::repeater::~repeater</definition>
+        <argsstring>()</argsstring>
+        <name>~repeater</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="231" column="1" bodyfile="src/runtime/parser.hpp" bodystart="231" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1repeater_1acb57c02da3e60b3ca751a2eda3e145c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool parser::repeater::tryParse</definition>
+        <argsstring>(tokenqueue &amp;queue, parsetree *ref)</argsstring>
+        <name>tryParse</name>
+        <reimplements refid="classparser_1_1rule_1a60ccfb91ea4fe7def5ec2a15bb97c5ec">tryParse</reimplements>
+        <param>
+          <type><ref refid="classparser_1_1tokenqueue" kindref="compound">tokenqueue</ref> &amp;</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type><ref refid="structparser_1_1parsetree" kindref="compound">parsetree</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Virtual function to parse an input tokenqueue into a parse tree Returns true if parsing successful and sets the value under the parsetree pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="234" column="1" bodyfile="src/runtime/parser.hpp" bodystart="234" bodyend="254"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class representing parsing elements that are repeated </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="430">
+        <label>parser::rule</label>
+        <link refid="classparser_1_1rule"/>
+      </node>
+      <node id="429">
+        <label>parser::repeater</label>
+        <link refid="classparser_1_1repeater"/>
+        <childnode refid="430" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="433">
+        <label>parser::repeat</label>
+        <link refid="classparser_1_1repeat"/>
+      </node>
+      <node id="432">
+        <label>parser::rule</label>
+        <link refid="classparser_1_1rule"/>
+      </node>
+      <node id="431">
+        <label>parser::repeater</label>
+        <link refid="classparser_1_1repeater"/>
+        <childnode refid="432" relation="public-inheritance">
+        </childnode>
+        <childnode refid="433" relation="usage">
+          <edgelabel>rep</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/parser.hpp" line="223" column="1" bodyfile="src/runtime/parser.hpp" bodystart="223" bodyend="255"/>
+    <listofallmembers>
+      <member refid="classparser_1_1repeater_1ad76ca9d514283b1fa25e20d01b110104" prot="private" virt="non-virtual"><scope>parser::repeater</scope><name>rep</name></member>
+      <member refid="classparser_1_1repeater_1aa5c267969cb13f7000e1767c2231f56c" prot="public" virt="non-virtual"><scope>parser::repeater</scope><name>repeater</name></member>
+      <member refid="classparser_1_1repeater_1a1969288aaeb1b6957586356bf2986194" prot="private" virt="non-virtual"><scope>parser::repeater</scope><name>rl</name></member>
+      <member refid="classparser_1_1repeater_1acb57c02da3e60b3ca751a2eda3e145c2" prot="public" virt="virtual"><scope>parser::repeater</scope><name>tryParse</name></member>
+      <member refid="classparser_1_1repeater_1a6f369d919c6f590156e3bb60259f1a45" prot="public" virt="non-virtual"><scope>parser::repeater</scope><name>~repeater</name></member>
+      <member refid="classparser_1_1rule_1abbe02436a9cb7b38b2186a82ff12b29a" prot="public" virt="non-virtual"><scope>parser::repeater</scope><name>~rule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

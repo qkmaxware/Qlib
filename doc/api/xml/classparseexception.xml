@@ -3,7 +3,7 @@
   <compounddef id="classparseexception" kind="class" language="C++" prot="public">
     <compoundname>parseexception</compoundname>
     <basecompoundref prot="public" virt="non-virtual">exception</basecompoundref>
-    <includes refid="qasmparser_8hpp" local="no">qasmparser.hpp</includes>
+    <includes refid="compiler_8hpp" local="no">compiler.hpp</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classparseexception_1a4807889c64609ea29a275c9f66c15e61" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -16,7 +16,7 @@
 <para>Combined message </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/qasmparser.hpp" line="266" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="266" bodyend="-1"/>
+        <location file="src/runtime/compiler.hpp" line="273" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="273" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -31,7 +31,7 @@
 <para>Row of cause </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/qasmparser.hpp" line="272" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="272" bodyend="-1"/>
+        <location file="src/runtime/compiler.hpp" line="279" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="279" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classparseexception_1a671840c0e1441210c84084e235fa55c8" prot="public" static="no" mutable="no">
         <type><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref></type>
@@ -44,7 +44,7 @@
 <para>Column of cause </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/qasmparser.hpp" line="276" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="276" bodyend="-1"/>
+        <location file="src/runtime/compiler.hpp" line="283" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="283" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classparseexception_1a99a096bfed3e48cd365cdae1952bc017" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -57,7 +57,7 @@
 <para>Filename cause occurred in </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/qasmparser.hpp" line="280" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="280" bodyend="-1"/>
+        <location file="src/runtime/compiler.hpp" line="287" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="287" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classparseexception_1a5f02ff7145f65ba4e9b5be994bfc0edb" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -70,7 +70,7 @@
 <para>Cause of exception </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/qasmparser.hpp" line="284" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="284" bodyend="-1"/>
+        <location file="src/runtime/compiler.hpp" line="291" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="291" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/qasmparser.hpp" line="286" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="286" bodyend="290"/>
+        <location file="src/runtime/compiler.hpp" line="293" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="293" bodyend="297"/>
       </memberdef>
       <memberdef kind="function" id="classparseexception_1a006c6421028f780b91eb4a473265dce7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const char *</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/qasmparser.hpp" line="292" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="292" bodyend="294"/>
+        <location file="src/runtime/compiler.hpp" line="299" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="299" bodyend="301"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -123,28 +123,28 @@
     <detaileddescription>
 <para>Class for exceptions occuring during parsing of lexical tokens </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="296">
+      <node id="376">
         <label>exception</label>
       </node>
-      <node id="295">
+      <node id="375">
         <label>parseexception</label>
         <link refid="classparseexception"/>
-        <childnode refid="296" relation="public-inheritance">
+        <childnode refid="376" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="298">
+      <node id="378">
         <label>exception</label>
       </node>
-      <node id="297">
+      <node id="377">
         <label>parseexception</label>
         <link refid="classparseexception"/>
-        <childnode refid="298" relation="public-inheritance">
+        <childnode refid="378" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/qasmparser.hpp" line="261" column="1" bodyfile="src/runtime/qasmparser.hpp" bodystart="261" bodyend="295"/>
+    <location file="src/runtime/compiler.hpp" line="268" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="268" bodyend="302"/>
     <listofallmembers>
       <member refid="classparseexception_1a671840c0e1441210c84084e235fa55c8" prot="public" virt="non-virtual"><scope>parseexception</scope><name>c</name></member>
       <member refid="classparseexception_1a99a096bfed3e48cd365cdae1952bc017" prot="public" virt="non-virtual"><scope>parseexception</scope><name>file</name></member>

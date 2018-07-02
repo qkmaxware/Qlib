@@ -1,6 +1,8 @@
 var searchData=
 [
   ['save',['save',['../classqlib_1_1ide_1_1FileManager.html#a043ddff761f62666fa4f6959b7e116c3',1,'qlib::ide::FileManager']]],
+  ['scanner',['scanner',['../classscanner.html#a97823931b3c1fdfaabde9b0eb31310a6',1,'scanner']]],
+  ['sequence',['sequence',['../classparser_1_1sequence.html#a360c88bf21abc2066043c03735b5341f',1,'parser::sequence']]],
   ['set',['set',['../classqlib_1_1math_1_1matrix.html#a2d09bd42691acdbf315d5cbd7a698698',1,'qlib::math::matrix::set(size_t r, size_t c, complex value)'],['../classqlib_1_1math_1_1matrix.html#ae97863a30bb445897ff63c77582a366a',1,'qlib::math::matrix::set(size_t idx, complex value)'],['../classqlib_1_1ide_1_1IniIO.html#a2337d52ad4d343c74b808f64e70710f0',1,'qlib.ide.IniIO.set()']]],
   ['setbackgroundcolour',['setBackgroundColour',['../classqlib_1_1ide_1_1CodeEditor.html#aabec5fb27bf75e4bb805240dc22c9875',1,'qlib::ide::CodeEditor']]],
   ['setchanged',['setChanged',['../classqlib_1_1ide_1_1FileManager_1_1Tab.html#a88f607b1e5cf352c82788451188e8bc8',1,'qlib::ide::FileManager::Tab']]],

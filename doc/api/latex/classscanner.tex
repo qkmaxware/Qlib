@@ -1,0 +1,66 @@
+\hypertarget{classscanner}{}\section{scanner Class Reference}
+\label{classscanner}\index{scanner@{scanner}}
+
+
+{\ttfamily \#include $<$scanner.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classscanner_a97823931b3c1fdfaabde9b0eb31310a6}{scanner} (std\+::string file\+\_\+name)
+\item 
+bool \hyperlink{classscanner_ae0216bb31141042c9459f6d91cd18e91}{next} (std\+::string \&line)
+\item 
+\hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} \hyperlink{classscanner_ada10515d2de6c37656a4e07d7257eaba}{get\+Line\+Number} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ifstream \hyperlink{classscanner_a6b136b858fa02bb408dd7744edc546bf}{file}
+\item 
+\hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} \hyperlink{classscanner_adf0c8e5cf0ec04c0ff4d7c158f7bcb33}{file\+\_\+line}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to read through a file line by line 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{scanner@{scanner}!scanner@{scanner}}
+\index{scanner@{scanner}!scanner@{scanner}}
+\subsubsection[{\texorpdfstring{scanner(std\+::string file\+\_\+name)}{scanner(std::string file_name)}}]{\setlength{\rightskip}{0pt plus 5cm}scanner\+::scanner (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{file\+\_\+name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classscanner_a97823931b3c1fdfaabde9b0eb31310a6}{}\label{classscanner_a97823931b3c1fdfaabde9b0eb31310a6}
+Create scanner for file 
+
+\subsection{Member Function Documentation}
+\index{scanner@{scanner}!get\+Line\+Number@{get\+Line\+Number}}
+\index{get\+Line\+Number@{get\+Line\+Number}!scanner@{scanner}}
+\subsubsection[{\texorpdfstring{get\+Line\+Number()}{getLineNumber()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ulong} scanner\+::get\+Line\+Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classscanner_ada10515d2de6c37656a4e07d7257eaba}{}\label{classscanner_ada10515d2de6c37656a4e07d7257eaba}
+Get the line number \index{scanner@{scanner}!next@{next}}
+\index{next@{next}!scanner@{scanner}}
+\subsubsection[{\texorpdfstring{next(std\+::string \&line)}{next(std::string &line)}}]{\setlength{\rightskip}{0pt plus 5cm}bool scanner\+::next (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classscanner_ae0216bb31141042c9459f6d91cd18e91}{}\label{classscanner_ae0216bb31141042c9459f6d91cd18e91}
+Get the next line 
+
+\subsection{Member Data Documentation}
+\index{scanner@{scanner}!file@{file}}
+\index{file@{file}!scanner@{scanner}}
+\subsubsection[{\texorpdfstring{file}{file}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ifstream scanner\+::file\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classscanner_a6b136b858fa02bb408dd7744edc546bf}{}\label{classscanner_a6b136b858fa02bb408dd7744edc546bf}
+File object \index{scanner@{scanner}!file\+\_\+line@{file\+\_\+line}}
+\index{file\+\_\+line@{file\+\_\+line}!scanner@{scanner}}
+\subsubsection[{\texorpdfstring{file\+\_\+line}{file_line}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ulong} scanner\+::file\+\_\+line\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classscanner_adf0c8e5cf0ec04c0ff4d7c158f7bcb33}{}\label{classscanner_adf0c8e5cf0ec04c0ff4d7c158f7bcb33}
+File line count 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{scanner_8hpp}{scanner.\+hpp}\end{DoxyCompactItemize}

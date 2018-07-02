@@ -1,0 +1,62 @@
+\hypertarget{namespaceparser}{}\section{parser Namespace Reference}
+\label{namespaceparser}\index{parser@{parser}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classparser_1_1choice}{choice}
+\item 
+struct \hyperlink{structparser_1_1parsetree}{parsetree}
+\item 
+class \hyperlink{classparser_1_1repeat}{repeat}
+\item 
+class \hyperlink{classparser_1_1repeater}{repeater}
+\item 
+class \hyperlink{classparser_1_1rule}{rule}
+\item 
+class \hyperlink{classparser_1_1sequence}{sequence}
+\item 
+class \hyperlink{classparser_1_1terminal}{terminal}
+\item 
+class \hyperlink{classparser_1_1tokenqueue}{tokenqueue}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classparser_1_1rule}{rule} $>$ \hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{ruleptr}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classparser_1_1repeat}{repeat} \hyperlink{namespaceparser_ac46e69b1e6ac0db5fa1b987e69e0c64e}{K\+L\+E\+E\+N\+E\+\_\+\+S\+T\+AR} = \hyperlink{classparser_1_1repeat}{repeat}(0)
+\item 
+const \hyperlink{classparser_1_1repeat}{repeat} \hyperlink{namespaceparser_a97ed17cb3337d680cb84ca3f2af8c2dd}{K\+L\+E\+E\+N\+E\+\_\+\+P\+L\+US} = \hyperlink{classparser_1_1repeat}{repeat}(1)
+\item 
+const \hyperlink{classparser_1_1repeat}{repeat} \hyperlink{namespaceparser_a1856f1b1a3996f6388d8686cf35daff9}{K\+L\+E\+E\+N\+E\+\_\+\+O\+N\+CE} = \hyperlink{classparser_1_1repeat}{repeat}(1,1)
+\item 
+const \hyperlink{classparser_1_1repeat}{repeat} \hyperlink{namespaceparser_ac97f2803cfa3a6e9328865ea4744d4d6}{K\+L\+E\+E\+N\+E\+\_\+\+O\+P\+T\+I\+O\+N\+AL} = \hyperlink{classparser_1_1repeat}{repeat}(0,1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Namespace for parser library 
+
+\subsection{Typedef Documentation}
+\index{parser@{parser}!ruleptr@{ruleptr}}
+\index{ruleptr@{ruleptr}!parser@{parser}}
+\subsubsection[{\texorpdfstring{ruleptr}{ruleptr}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::shared\+\_\+ptr$<${\bf rule}$>$ {\bf parser\+::ruleptr}}\hypertarget{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{}\label{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}
+A shared pointer to a rule 
+
+\subsection{Variable Documentation}
+\index{parser@{parser}!K\+L\+E\+E\+N\+E\+\_\+\+O\+N\+CE@{K\+L\+E\+E\+N\+E\+\_\+\+O\+N\+CE}}
+\index{K\+L\+E\+E\+N\+E\+\_\+\+O\+N\+CE@{K\+L\+E\+E\+N\+E\+\_\+\+O\+N\+CE}!parser@{parser}}
+\subsubsection[{\texorpdfstring{K\+L\+E\+E\+N\+E\+\_\+\+O\+N\+CE}{KLEENE_ONCE}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf repeat} parser\+::\+K\+L\+E\+E\+N\+E\+\_\+\+O\+N\+CE = {\bf repeat}(1,1)}\hypertarget{namespaceparser_a1856f1b1a3996f6388d8686cf35daff9}{}\label{namespaceparser_a1856f1b1a3996f6388d8686cf35daff9}
+Repeat exactly once \index{parser@{parser}!K\+L\+E\+E\+N\+E\+\_\+\+O\+P\+T\+I\+O\+N\+AL@{K\+L\+E\+E\+N\+E\+\_\+\+O\+P\+T\+I\+O\+N\+AL}}
+\index{K\+L\+E\+E\+N\+E\+\_\+\+O\+P\+T\+I\+O\+N\+AL@{K\+L\+E\+E\+N\+E\+\_\+\+O\+P\+T\+I\+O\+N\+AL}!parser@{parser}}
+\subsubsection[{\texorpdfstring{K\+L\+E\+E\+N\+E\+\_\+\+O\+P\+T\+I\+O\+N\+AL}{KLEENE_OPTIONAL}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf repeat} parser\+::\+K\+L\+E\+E\+N\+E\+\_\+\+O\+P\+T\+I\+O\+N\+AL = {\bf repeat}(0,1)}\hypertarget{namespaceparser_ac97f2803cfa3a6e9328865ea4744d4d6}{}\label{namespaceparser_ac97f2803cfa3a6e9328865ea4744d4d6}
+Repeat 0 or 1 times \index{parser@{parser}!K\+L\+E\+E\+N\+E\+\_\+\+P\+L\+US@{K\+L\+E\+E\+N\+E\+\_\+\+P\+L\+US}}
+\index{K\+L\+E\+E\+N\+E\+\_\+\+P\+L\+US@{K\+L\+E\+E\+N\+E\+\_\+\+P\+L\+US}!parser@{parser}}
+\subsubsection[{\texorpdfstring{K\+L\+E\+E\+N\+E\+\_\+\+P\+L\+US}{KLEENE_PLUS}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf repeat} parser\+::\+K\+L\+E\+E\+N\+E\+\_\+\+P\+L\+US = {\bf repeat}(1)}\hypertarget{namespaceparser_a97ed17cb3337d680cb84ca3f2af8c2dd}{}\label{namespaceparser_a97ed17cb3337d680cb84ca3f2af8c2dd}
+Repeat 1 to infinite times \index{parser@{parser}!K\+L\+E\+E\+N\+E\+\_\+\+S\+T\+AR@{K\+L\+E\+E\+N\+E\+\_\+\+S\+T\+AR}}
+\index{K\+L\+E\+E\+N\+E\+\_\+\+S\+T\+AR@{K\+L\+E\+E\+N\+E\+\_\+\+S\+T\+AR}!parser@{parser}}
+\subsubsection[{\texorpdfstring{K\+L\+E\+E\+N\+E\+\_\+\+S\+T\+AR}{KLEENE_STAR}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf repeat} parser\+::\+K\+L\+E\+E\+N\+E\+\_\+\+S\+T\+AR = {\bf repeat}(0)}\hypertarget{namespaceparser_ac46e69b1e6ac0db5fa1b987e69e0c64e}{}\label{namespaceparser_ac46e69b1e6ac0db5fa1b987e69e0c64e}
+Repeat 0 to infinite times 

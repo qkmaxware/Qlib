@@ -1,0 +1,91 @@
+\hypertarget{structparser_1_1parsetree}{}\section{parser\+:\+:parsetree Struct Reference}
+\label{structparser_1_1parsetree}\index{parser\+::parsetree@{parser\+::parsetree}}
+
+
+{\ttfamily \#include $<$parser.\+hpp$>$}
+
+
+
+Collaboration diagram for parser\+:\+:parsetree\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{structparser_1_1parsetree__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structparser_1_1parsetree_a8ba2bf7b05dd8e858edf2fab9f3d0165}{is\+Leaf} ()
+\item 
+bool \hyperlink{structparser_1_1parsetree_a2e876beca6bc762fa2ecb849f681f311}{is\+Branch} ()
+\item 
+\hyperlink{structparser_1_1parsetree}{parsetree} \& \hyperlink{structparser_1_1parsetree_a74fd9e1633a6581f3c07a6263a686bd3}{get\+Left} ()
+\item 
+\hyperlink{structparser_1_1parsetree}{parsetree} \& \hyperlink{structparser_1_1parsetree_a3f158cea846ac57f787eb81a9ac2477f}{get\+Right} ()
+\item 
+void \hyperlink{structparser_1_1parsetree_ada59e97da6280e95cf96cbb8f85df364}{print} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structlexical_1_1match}{match} \hyperlink{structparser_1_1parsetree_a4ee1d9214dd2a25fcf0494afaa9be7d7}{value}
+\item 
+vector$<$ \hyperlink{structparser_1_1parsetree}{parsetree} $>$ \hyperlink{structparser_1_1parsetree_a46c4ae92fc6d3fb1ac7cbe2827728149}{children}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing a single node in an abstract tree structure 
+
+\subsection{Member Function Documentation}
+\index{parser\+::parsetree@{parser\+::parsetree}!get\+Left@{get\+Left}}
+\index{get\+Left@{get\+Left}!parser\+::parsetree@{parser\+::parsetree}}
+\subsubsection[{\texorpdfstring{get\+Left()}{getLeft()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parsetree}\& parser\+::parsetree\+::get\+Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structparser_1_1parsetree_a74fd9e1633a6581f3c07a6263a686bd3}{}\label{structparser_1_1parsetree_a74fd9e1633a6581f3c07a6263a686bd3}
+If tree is binary, get the left hand child (index 0) \index{parser\+::parsetree@{parser\+::parsetree}!get\+Right@{get\+Right}}
+\index{get\+Right@{get\+Right}!parser\+::parsetree@{parser\+::parsetree}}
+\subsubsection[{\texorpdfstring{get\+Right()}{getRight()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parsetree}\& parser\+::parsetree\+::get\+Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structparser_1_1parsetree_a3f158cea846ac57f787eb81a9ac2477f}{}\label{structparser_1_1parsetree_a3f158cea846ac57f787eb81a9ac2477f}
+If tree is binary, get the right hand child (index 1) \index{parser\+::parsetree@{parser\+::parsetree}!is\+Branch@{is\+Branch}}
+\index{is\+Branch@{is\+Branch}!parser\+::parsetree@{parser\+::parsetree}}
+\subsubsection[{\texorpdfstring{is\+Branch()}{isBranch()}}]{\setlength{\rightskip}{0pt plus 5cm}bool parser\+::parsetree\+::is\+Branch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structparser_1_1parsetree_a2e876beca6bc762fa2ecb849f681f311}{}\label{structparser_1_1parsetree_a2e876beca6bc762fa2ecb849f681f311}
+Check if node has children \index{parser\+::parsetree@{parser\+::parsetree}!is\+Leaf@{is\+Leaf}}
+\index{is\+Leaf@{is\+Leaf}!parser\+::parsetree@{parser\+::parsetree}}
+\subsubsection[{\texorpdfstring{is\+Leaf()}{isLeaf()}}]{\setlength{\rightskip}{0pt plus 5cm}bool parser\+::parsetree\+::is\+Leaf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structparser_1_1parsetree_a8ba2bf7b05dd8e858edf2fab9f3d0165}{}\label{structparser_1_1parsetree_a8ba2bf7b05dd8e858edf2fab9f3d0165}
+Check if node has no children \index{parser\+::parsetree@{parser\+::parsetree}!print@{print}}
+\index{print@{print}!parser\+::parsetree@{parser\+::parsetree}}
+\subsubsection[{\texorpdfstring{print()}{print()}}]{\setlength{\rightskip}{0pt plus 5cm}void parser\+::parsetree\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structparser_1_1parsetree_ada59e97da6280e95cf96cbb8f85df364}{}\label{structparser_1_1parsetree_ada59e97da6280e95cf96cbb8f85df364}
+Print tree to standard out, usefull in debugging 
+
+\subsection{Member Data Documentation}
+\index{parser\+::parsetree@{parser\+::parsetree}!children@{children}}
+\index{children@{children}!parser\+::parsetree@{parser\+::parsetree}}
+\subsubsection[{\texorpdfstring{children}{children}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf parsetree}$>$ parser\+::parsetree\+::children}\hypertarget{structparser_1_1parsetree_a46c4ae92fc6d3fb1ac7cbe2827728149}{}\label{structparser_1_1parsetree_a46c4ae92fc6d3fb1ac7cbe2827728149}
+Children of this node (usually 2) \index{parser\+::parsetree@{parser\+::parsetree}!value@{value}}
+\index{value@{value}!parser\+::parsetree@{parser\+::parsetree}}
+\subsubsection[{\texorpdfstring{value}{value}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf match} parser\+::parsetree\+::value}\hypertarget{structparser_1_1parsetree_a4ee1d9214dd2a25fcf0494afaa9be7d7}{}\label{structparser_1_1parsetree_a4ee1d9214dd2a25fcf0494afaa9be7d7}
+Lexical match associated with this node 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{parser_8hpp}{parser.\+hpp}\end{DoxyCompactItemize}

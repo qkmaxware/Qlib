@@ -1,0 +1,56 @@
+\hypertarget{classparser_1_1rule}{}\section{parser\+:\+:rule Class Reference}
+\label{classparser_1_1rule}\index{parser\+::rule@{parser\+::rule}}
+
+
+{\ttfamily \#include $<$parser.\+hpp$>$}
+
+
+
+Inheritance diagram for parser\+:\+:rule\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classparser_1_1rule__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classparser_1_1rule_abbe02436a9cb7b38b2186a82ff12b29a}{$\sim$rule} ()
+\item 
+virtual bool \hyperlink{classparser_1_1rule_a60ccfb91ea4fe7def5ec2a15bb97c5ec}{try\+Parse} (\hyperlink{classparser_1_1tokenqueue}{tokenqueue} \&queue, \hyperlink{structparser_1_1parsetree}{parsetree} $\ast$ref)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for all parse rules 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{parser\+::rule@{parser\+::rule}!````~rule@{$\sim$rule}}
+\index{````~rule@{$\sim$rule}!parser\+::rule@{parser\+::rule}}
+\subsubsection[{\texorpdfstring{$\sim$rule()}{~rule()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual parser\+::rule\+::$\sim$rule (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1rule_abbe02436a9cb7b38b2186a82ff12b29a}{}\label{classparser_1_1rule_abbe02436a9cb7b38b2186a82ff12b29a}
+
+
+\subsection{Member Function Documentation}
+\index{parser\+::rule@{parser\+::rule}!try\+Parse@{try\+Parse}}
+\index{try\+Parse@{try\+Parse}!parser\+::rule@{parser\+::rule}}
+\subsubsection[{\texorpdfstring{try\+Parse(tokenqueue \&queue, parsetree $\ast$ref)}{tryParse(tokenqueue &queue, parsetree *ref)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool parser\+::rule\+::try\+Parse (
+\begin{DoxyParamCaption}
+\item[{{\bf tokenqueue} \&}]{queue, }
+\item[{{\bf parsetree} $\ast$}]{ref}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classparser_1_1rule_a60ccfb91ea4fe7def5ec2a15bb97c5ec}{}\label{classparser_1_1rule_a60ccfb91ea4fe7def5ec2a15bb97c5ec}
+Virtual function to parse an input tokenqueue into a parse tree Returns true if parsing successful and sets the value under the parsetree pointer 
+
+Reimplemented in \hyperlink{classparser_1_1choice_a76d73bd6b3adb0c8a062b46a4d49cd11}{parser\+::choice}, \hyperlink{classparser_1_1sequence_a499005d2dd4a3f39985d2deddb413cea}{parser\+::sequence}, \hyperlink{classparser_1_1terminal_abf7f4ea72388f2e96140769bc5d2acc8}{parser\+::terminal}, and \hyperlink{classparser_1_1repeater_acb57c02da3e60b3ca751a2eda3e145c2}{parser\+::repeater}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{parser_8hpp}{parser.\+hpp}\end{DoxyCompactItemize}

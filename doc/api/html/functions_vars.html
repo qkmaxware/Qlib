@@ -93,6 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_d"><span>d</span></a></li>
       <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_h"><span>h</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_l"><span>l</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
@@ -164,6 +165,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="classlexical_1_1lexicalexception.html#a7d7aeb97fa40e634950b28a3d48a9b51">lexical::lexicalexception</a>
 , <a class="el" href="classparseexception.html#a671840c0e1441210c84084e235fa55c8">parseexception</a>
 </li>
+<li>children
+: <a class="el" href="structparser_1_1parsetree.html#a46c4ae92fc6d3fb1ac7cbe2827728149">parser::parsetree</a>
+</li>
 <li>cindex
 : <a class="el" href="classqasm_1_1exec_1_1measurement.html#ab1ba29db121a9c17be8aacbd1f24ff7b">qasm::exec::measurement</a>
 </li>
@@ -184,6 +188,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>content
 : <a class="el" href="structlexical_1_1match.html#a2ebda7888d347b3de302ffc465755f07">lexical::match</a>
+</li>
+<li>converters
+: <a class="el" href="classcompiler.html#a76cbb22ce5238f2fd9b3946f541dba0c">compiler</a>
 </li>
 <li>creg
 : <a class="el" href="classqasm_1_1exec_1_1measurement.html#a419118b0574b066fdff6c7f00213dec3">qasm::exec::measurement</a>
@@ -225,6 +232,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>errors
 : <a class="el" href="classqlib_1_1ide_1_1RuntimeReport.html#a7fd9bcb04c31f5b5a9d57acc1bbcb443">qlib.ide.RuntimeReport</a>
 </li>
+<li>events
+: <a class="el" href="classcompiler.html#aa9d1b362adff0ca48511cf824ca1fe4c">compiler</a>
+</li>
 </ul>
 
 
@@ -232,6 +242,13 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>file
 : <a class="el" href="classlexical_1_1lexicalexception.html#a19c8e9b165ad5d2250d2a26c920462e3">lexical::lexicalexception</a>
 , <a class="el" href="classparseexception.html#a99a096bfed3e48cd365cdae1952bc017">parseexception</a>
+, <a class="el" href="classscanner.html#a6b136b858fa02bb408dd7744edc546bf">scanner</a>
+</li>
+<li>file_line
+: <a class="el" href="classscanner.html#adf0c8e5cf0ec04c0ff4d7c158f7bcb33">scanner</a>
+</li>
+<li>filename
+: <a class="el" href="classqasm_1_1exec_1_1import.html#a421f281a62fa921c13a3fc86d6c6fa17">qasm::exec::import</a>
 </li>
 <li>filepath
 : <a class="el" href="classqlib_1_1ide_1_1FileManager_1_1Tab.html#a0765cadcc1dc2dcecdc902bb72c0f573">qlib.ide.FileManager.Tab</a>
@@ -245,19 +262,36 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </ul>
 
 
+<h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>hasMax
+: <a class="el" href="classparser_1_1repeat.html#a997f9a57da38d6d3893212cf7129603e">parser::repeat</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>i
 : <a class="el" href="classqlib_1_1math_1_1complex.html#a4d599b5885fd37c300cdb79433356bb5">qlib::math::complex</a>
+</li>
+<li>index
+: <a class="el" href="classparser_1_1tokenqueue.html#a442939c8efd904678d30e863da8db52b">parser::tokenqueue</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>left
+: <a class="el" href="classparser_1_1choice.html#a7ddb22bce6c8446a35a6fbc9ceaaf962">parser::choice</a>
+, <a class="el" href="classparser_1_1sequence.html#ad21658f30f62d93e41c2f10b6a8f004d">parser::sequence</a>
+</li>
 <li>length
 : <a class="el" href="classqlib_1_1math_1_1matrix.html#aef00292f85054708922acef6b7744a40">qlib::math::matrix</a>
 </li>
 <li>lettersUntilShown
 : <a class="el" href="classqlib_1_1ide_1_1AutoComplete.html#ab4de0d96f7b92c3768e1c08fbb47aed5">qlib.ide.AutoComplete</a>
+</li>
+<li>lex
+: <a class="el" href="classparser_1_1terminal.html#a497d13e62829b69f558be62614846236">parser::terminal</a>
 </li>
 <li>lexemeptr
 : <a class="el" href="structlexical_1_1match.html#a346ef13017b47ee41a6abe643e5732e1">lexical::match</a>
@@ -284,11 +318,20 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>manager
 : <a class="el" href="classqlib_1_1ide_1_1QLibIDE.html#a5af68fc042aeee1b69f27f3e1e67610b">qlib.ide.QLibIDE</a>
 </li>
+<li>max
+: <a class="el" href="classparser_1_1repeat.html#a5d423398c46938e601f07ae95f119ea7">parser::repeat</a>
+</li>
 <li>maxHeight
 : <a class="el" href="classqlib_1_1ide_1_1AutoComplete.html#a8ebc95801d3b19aff09123cf8729e2c9">qlib.ide.AutoComplete</a>
 </li>
 <li>measureWhole
 : <a class="el" href="classqasm_1_1exec_1_1measurement.html#a1b67bc7f310bcba5a42989229268517d">qasm::exec::measurement</a>
+</li>
+<li>menu
+: <a class="el" href="classqlib_1_1ide_1_1QLibIDE.html#ae822573114cbc618b4af0ddf3726b06b">qlib.ide.QLibIDE</a>
+</li>
+<li>min
+: <a class="el" href="classparser_1_1repeat.html#a4a52b46d6d8139c877b78454942c03fd">parser::repeat</a>
 </li>
 <li>model
 : <a class="el" href="classqlib_1_1ide_1_1AutoComplete.html#aaaa89916b82f63bd8d7079c84c251e27">qlib.ide.AutoComplete</a>
@@ -306,6 +349,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 , <a class="el" href="classqasm_1_1exec_1_1apply__gate.html#a2b5eea4ddab7101ab5353ecd160e0d30">qasm::exec::apply_gate</a>
 , <a class="el" href="classqasm_1_1exec_1_1apply__subcircuit.html#a6bf64c96ecf46285e9d18987a91b37fa">qasm::exec::apply_subcircuit</a>
 , <a class="el" href="classqasm_1_1exec_1_1declaration.html#a72faf3aa92a6a3d100ff0f7ddf0aab65">qasm::exec::declaration</a>
+, <a class="el" href="classqasm_1_1exec_1_1label.html#ae88393dae0bd5ddbe32a65cfb2d8f247">qasm::exec::label</a>
 , <a class="el" href="classqlib_1_1ide_1_1FileManager_1_1Tab.html#ad12255d140c8ad871496cfa64157c987">qlib.ide.FileManager.Tab</a>
 </li>
 <li>none
@@ -353,6 +397,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="classlexical_1_1lexeme.html#a8265b6f1e87790a3ca3fcd82b5543726">lexical::lexeme</a>
 , <a class="el" href="classqlib_1_1ide_1_1CodeEditor_1_1Style.html#a98a1d4a5736741de2806f55f6aa55f1b">qlib.ide.CodeEditor.Style</a>
 </li>
+<li>prog
+: <a class="el" href="classcompiler.html#a801700690bf711169679cb6ca890168a">compiler</a>
+</li>
 </ul>
 
 
@@ -391,8 +438,18 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="classqlib_1_1quantum_1_1gates_1_1controlled2gate.html#abb21342d2206fbc4f7ab4e781997e471">qlib::quantum::gates::controlled2gate</a>
 , <a class="el" href="classqlib_1_1quantum_1_1gates_1_1controlledgate.html#a8712f70ae76ec442aebad49109ddea97">qlib::quantum::gates::controlledgate</a>
 </li>
+<li>rep
+: <a class="el" href="classparser_1_1repeater.html#ad76ca9d514283b1fa25e20d01b110104">parser::repeater</a>
+</li>
 <li>resources
 : <a class="el" href="classresources_1_1Loader.html#a007cafedd048831f9d18ba4b8ac768ff">resources.Loader</a>
+</li>
+<li>right
+: <a class="el" href="classparser_1_1choice.html#a5cd2aac2dea54c11da1495cacd00db10">parser::choice</a>
+, <a class="el" href="classparser_1_1sequence.html#adb4d13535498d0d639a11443b9d869e0">parser::sequence</a>
+</li>
+<li>rl
+: <a class="el" href="classparser_1_1repeater.html#a1969288aaeb1b6957586356bf2986194">parser::repeater</a>
 </li>
 <li>row_end
 : <a class="el" href="structlexical_1_1match.html#abf7eca2de9cee016df02265a38666486">lexical::match</a>
@@ -402,6 +459,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>rows
 : <a class="el" href="classqlib_1_1math_1_1matrix.html#af29b6ea4316eb972bbdc55da6e54dbb3">qlib::math::matrix</a>
+</li>
+<li>rules
+: <a class="el" href="classcompiler.html#a1b712963929882f359df919ce73bbf4e">compiler</a>
 </li>
 <li>runtime
 : <a class="el" href="classqlib_1_1ide_1_1QLibIDE.html#a07b6d9558a76bd5d818a98debdb93d5f">qlib.ide.QLibIDE</a>
@@ -449,8 +509,12 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>textComponent
 : <a class="el" href="classqlib_1_1ide_1_1AutoComplete.html#ab41cb720a8247194d0c4c2cc5fa6aeef">qlib.ide.AutoComplete</a>
 </li>
+<li>tokenizer
+: <a class="el" href="classcompiler.html#a888ac16dbb82fa8a9500633addcd22ba">compiler</a>
+</li>
 <li>tokens
 : <a class="el" href="classlexical_1_1lexer.html#acf8db5ce39817336f4cf12294b09bfcc">lexical::lexer</a>
+, <a class="el" href="classparser_1_1tokenqueue.html#af9c381cb6495ade00167f2242b6862c5">parser::tokenqueue</a>
 </li>
 <li>type
 : <a class="el" href="classqasm_1_1exec_1_1declaration.html#a165d72745d002f80716cbd37f27687fe">qasm::exec::declaration</a>
@@ -462,6 +526,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 
 <h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
+<li>value
+: <a class="el" href="structparser_1_1parsetree.html#a4ee1d9214dd2a25fcf0494afaa9be7d7">parser::parsetree</a>
+</li>
 <li>values
 : <a class="el" href="classqlib_1_1math_1_1matrix.html#ad764d65375ba1e50381f640bdc181c0b">qlib::math::matrix</a>
 </li>

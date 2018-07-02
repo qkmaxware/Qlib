@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqlib_1_1ide_1_1OptionsMenu" kind="class" language="Java" prot="public">
+    <compoundname>qlib::ide::OptionsMenu</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JFrame</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqlib_1_1ide_1_1OptionsMenu_1a51481ab49936fea97fbf021ae7b37a13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qlib.ide.OptionsMenu.OptionsMenu</definition>
+        <argsstring>(IniIO ini, String config_path)</argsstring>
+        <name>OptionsMenu</name>
+        <param>
+          <type><ref refid="classqlib_1_1ide_1_1IniIO" kindref="compound">IniIO</ref></type>
+          <declname>ini</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>config_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ide/src/qlib/ide/OptionsMenu.java" line="25" column="1" bodyfile="src/ide/src/qlib/ide/OptionsMenu.java" bodystart="25" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>JFrame with a table for modifying key-value pairs in an INI file <simplesect kind="author"><para>halse </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="371">
+        <label>qlib.ide.OptionsMenu</label>
+        <link refid="classqlib_1_1ide_1_1OptionsMenu"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="372">
+        <label>JFrame</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="373">
+        <label>qlib.ide.OptionsMenu</label>
+        <link refid="classqlib_1_1ide_1_1OptionsMenu"/>
+        <childnode refid="374" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="374">
+        <label>JFrame</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/ide/src/qlib/ide/OptionsMenu.java" line="23" column="1" bodyfile="src/ide/src/qlib/ide/OptionsMenu.java" bodystart="23" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classqlib_1_1ide_1_1OptionsMenu_1a51481ab49936fea97fbf021ae7b37a13" prot="public" virt="non-virtual"><scope>qlib::ide::OptionsMenu</scope><name>OptionsMenu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

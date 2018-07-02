@@ -1,17 +1,203 @@
 \hypertarget{parser_8hpp}{}\section{src/runtime/parser.hpp File Reference}
 \label{parser_8hpp}\index{src/runtime/parser.\+hpp@{src/runtime/parser.\+hpp}}
 {\ttfamily \#include \char`\"{}./lexer.\+hpp\char`\"{}}\\*
-Include dependency graph for parser.\+hpp\+:\nopagebreak
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for parser.\+hpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{parser_8hpp__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=194pt]{parser_8hpp__dep__incl}
+\includegraphics[width=244pt]{parser_8hpp__dep__incl}
 \end{center}
 \end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classparser_1_1repeat}{parser\+::repeat}
+\item 
+class \hyperlink{classparser_1_1tokenqueue}{parser\+::tokenqueue}
+\item 
+struct \hyperlink{structparser_1_1parsetree}{parser\+::parsetree}
+\item 
+class \hyperlink{classparser_1_1rule}{parser\+::rule}
+\item 
+class \hyperlink{classparser_1_1repeater}{parser\+::repeater}
+\item 
+class \hyperlink{classparser_1_1terminal}{parser\+::terminal}
+\item 
+class \hyperlink{classparser_1_1sequence}{parser\+::sequence}
+\item 
+class \hyperlink{classparser_1_1choice}{parser\+::choice}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceparser}{parser}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ rule $>$ \hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} \hyperlink{parser_8hpp_a722923e496599a4427f533b0c347e3f0}{operator$\ast$} (\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} right)
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} \hyperlink{parser_8hpp_a971b8d5e9b8114ff9b5940fad5fc98f4}{operator+} (\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} right)
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} \hyperlink{parser_8hpp_a3613c7c9db8f7e35060e86555ed82006}{operator!} (\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} right)
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} \hyperlink{parser_8hpp_a010182413c1f69e351a507067f73e307}{operator$\ast$} (\hyperlink{classlexical_1_1lexeme}{lexeme} \&right)
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} \hyperlink{parser_8hpp_a0150c00791055dedf9b8ea4335a00151}{operator+} (\hyperlink{classlexical_1_1lexeme}{lexeme} \&right)
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} \hyperlink{parser_8hpp_a032b3d4cc0c96c7b43edf8290128bbb3}{operator!} (\hyperlink{classlexical_1_1lexeme}{lexeme} \&right)
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} \hyperlink{parser_8hpp_a27dd049f5fefd3819dce94f81bcaea5b}{operator$<$$<$} (\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} left, \hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} right)
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} \hyperlink{parser_8hpp_a40a3cfa71695ff27939e79879070a7b6}{operator$<$$<$} (\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} left, \hyperlink{classlexical_1_1lexeme}{lexeme} \&right)
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} \hyperlink{parser_8hpp_a01e9bb412dfdf4084df429b5cb9ad25c}{operator$<$$<$} (\hyperlink{classlexical_1_1lexeme}{lexeme} \&left, \hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} right)
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} \hyperlink{parser_8hpp_addcf969a66b1191560d0702cbfef8087}{operator$<$$<$} (\hyperlink{classlexical_1_1lexeme}{lexeme} \&left, \hyperlink{classlexical_1_1lexeme}{lexeme} \&right)
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} \hyperlink{parser_8hpp_a83ae991f5883e5298c5000de800d5c60}{operator$\vert$} (\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} left, \hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} right)
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} \hyperlink{parser_8hpp_a382e1d6e85a342495aa289d72f01873a}{operator$\vert$} (\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} left, \hyperlink{classlexical_1_1lexeme}{lexeme} \&right)
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} \hyperlink{parser_8hpp_ac94f7bc23c74a7071b4a3c09fadac754}{operator$\vert$} (\hyperlink{classlexical_1_1lexeme}{lexeme} \&left, \hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} right)
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} \hyperlink{parser_8hpp_ae0c60b97dec81fe6c23646c03d2f4223}{operator$\vert$} (\hyperlink{classlexical_1_1lexeme}{lexeme} \&left, \hyperlink{classlexical_1_1lexeme}{lexeme} \&right)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const repeat \hyperlink{namespaceparser_ac46e69b1e6ac0db5fa1b987e69e0c64e}{parser\+::\+K\+L\+E\+E\+N\+E\+\_\+\+S\+T\+AR} = repeat(0)
+\item 
+const repeat \hyperlink{namespaceparser_a97ed17cb3337d680cb84ca3f2af8c2dd}{parser\+::\+K\+L\+E\+E\+N\+E\+\_\+\+P\+L\+US} = repeat(1)
+\item 
+const repeat \hyperlink{namespaceparser_a1856f1b1a3996f6388d8686cf35daff9}{parser\+::\+K\+L\+E\+E\+N\+E\+\_\+\+O\+N\+CE} = repeat(1,1)
+\item 
+const repeat \hyperlink{namespaceparser_ac97f2803cfa3a6e9328865ea4744d4d6}{parser\+::\+K\+L\+E\+E\+N\+E\+\_\+\+O\+P\+T\+I\+O\+N\+AL} = repeat(0,1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{parser.\+hpp@{parser.\+hpp}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!parser.\+hpp@{parser.\+hpp}}
+\subsubsection[{\texorpdfstring{operator"!(parser\+::ruleptr right)}{operator!(parser::ruleptr right)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\+::ruleptr} operator! (
+\begin{DoxyParamCaption}
+\item[{{\bf parser\+::ruleptr}}]{right}
+\end{DoxyParamCaption}
+)}\hypertarget{parser_8hpp_a3613c7c9db8f7e35060e86555ed82006}{}\label{parser_8hpp_a3613c7c9db8f7e35060e86555ed82006}
+Repeat a rule \index{parser.\+hpp@{parser.\+hpp}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!parser.\+hpp@{parser.\+hpp}}
+\subsubsection[{\texorpdfstring{operator"!(lexeme \&right)}{operator!(lexeme &right)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\+::ruleptr} operator! (
+\begin{DoxyParamCaption}
+\item[{{\bf lexeme} \&}]{right}
+\end{DoxyParamCaption}
+)}\hypertarget{parser_8hpp_a032b3d4cc0c96c7b43edf8290128bbb3}{}\label{parser_8hpp_a032b3d4cc0c96c7b43edf8290128bbb3}
+Create terminal rule and repeat it \index{parser.\+hpp@{parser.\+hpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!parser.\+hpp@{parser.\+hpp}}
+\subsubsection[{\texorpdfstring{operator$\ast$(parser\+::ruleptr right)}{operator*(parser::ruleptr right)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\+::ruleptr} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf parser\+::ruleptr}}]{right}
+\end{DoxyParamCaption}
+)}\hypertarget{parser_8hpp_a722923e496599a4427f533b0c347e3f0}{}\label{parser_8hpp_a722923e496599a4427f533b0c347e3f0}
+Repeat a rule \index{parser.\+hpp@{parser.\+hpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!parser.\+hpp@{parser.\+hpp}}
+\subsubsection[{\texorpdfstring{operator$\ast$(lexeme \&right)}{operator*(lexeme &right)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\+::ruleptr} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf lexeme} \&}]{right}
+\end{DoxyParamCaption}
+)}\hypertarget{parser_8hpp_a010182413c1f69e351a507067f73e307}{}\label{parser_8hpp_a010182413c1f69e351a507067f73e307}
+Create terminal rule and repeat it \index{parser.\+hpp@{parser.\+hpp}!operator+@{operator+}}
+\index{operator+@{operator+}!parser.\+hpp@{parser.\+hpp}}
+\subsubsection[{\texorpdfstring{operator+(parser\+::ruleptr right)}{operator+(parser::ruleptr right)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\+::ruleptr} operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf parser\+::ruleptr}}]{right}
+\end{DoxyParamCaption}
+)}\hypertarget{parser_8hpp_a971b8d5e9b8114ff9b5940fad5fc98f4}{}\label{parser_8hpp_a971b8d5e9b8114ff9b5940fad5fc98f4}
+Repeat a rule \index{parser.\+hpp@{parser.\+hpp}!operator+@{operator+}}
+\index{operator+@{operator+}!parser.\+hpp@{parser.\+hpp}}
+\subsubsection[{\texorpdfstring{operator+(lexeme \&right)}{operator+(lexeme &right)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\+::ruleptr} operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf lexeme} \&}]{right}
+\end{DoxyParamCaption}
+)}\hypertarget{parser_8hpp_a0150c00791055dedf9b8ea4335a00151}{}\label{parser_8hpp_a0150c00791055dedf9b8ea4335a00151}
+Create terminal rule and repeat it \index{parser.\+hpp@{parser.\+hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!parser.\+hpp@{parser.\+hpp}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(parser\+::ruleptr left, parser\+::ruleptr right)}{operator<<(parser::ruleptr left, parser::ruleptr right)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\+::ruleptr} operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf parser\+::ruleptr}}]{left, }
+\item[{{\bf parser\+::ruleptr}}]{right}
+\end{DoxyParamCaption}
+)}\hypertarget{parser_8hpp_a27dd049f5fefd3819dce94f81bcaea5b}{}\label{parser_8hpp_a27dd049f5fefd3819dce94f81bcaea5b}
+Create sequence of rules \index{parser.\+hpp@{parser.\+hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!parser.\+hpp@{parser.\+hpp}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(parser\+::ruleptr left, lexeme \&right)}{operator<<(parser::ruleptr left, lexeme &right)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\+::ruleptr} operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf parser\+::ruleptr}}]{left, }
+\item[{{\bf lexeme} \&}]{right}
+\end{DoxyParamCaption}
+)}\hypertarget{parser_8hpp_a40a3cfa71695ff27939e79879070a7b6}{}\label{parser_8hpp_a40a3cfa71695ff27939e79879070a7b6}
+Create terminal rule and then add it to a sequence of rules \index{parser.\+hpp@{parser.\+hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!parser.\+hpp@{parser.\+hpp}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(lexeme \&left, parser\+::ruleptr right)}{operator<<(lexeme &left, parser::ruleptr right)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\+::ruleptr} operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf lexeme} \&}]{left, }
+\item[{{\bf parser\+::ruleptr}}]{right}
+\end{DoxyParamCaption}
+)}\hypertarget{parser_8hpp_a01e9bb412dfdf4084df429b5cb9ad25c}{}\label{parser_8hpp_a01e9bb412dfdf4084df429b5cb9ad25c}
+Create terminal rule and then add it to a sequence of rules \index{parser.\+hpp@{parser.\+hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!parser.\+hpp@{parser.\+hpp}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(lexeme \&left, lexeme \&right)}{operator<<(lexeme &left, lexeme &right)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\+::ruleptr} operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf lexeme} \&}]{left, }
+\item[{{\bf lexeme} \&}]{right}
+\end{DoxyParamCaption}
+)}\hypertarget{parser_8hpp_addcf969a66b1191560d0702cbfef8087}{}\label{parser_8hpp_addcf969a66b1191560d0702cbfef8087}
+Create terminal rule and then add it to a sequence of rules \index{parser.\+hpp@{parser.\+hpp}!operator\texttt{"|}@{operator\texttt{"|}}}
+\index{operator\texttt{"|}@{operator\texttt{"|}}!parser.\+hpp@{parser.\+hpp}}
+\subsubsection[{\texorpdfstring{operator\texttt{"|}(parser\+::ruleptr left, parser\+::ruleptr right)}{operator|(parser::ruleptr left, parser::ruleptr right)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\+::ruleptr} operator$\vert$ (
+\begin{DoxyParamCaption}
+\item[{{\bf parser\+::ruleptr}}]{left, }
+\item[{{\bf parser\+::ruleptr}}]{right}
+\end{DoxyParamCaption}
+)}\hypertarget{parser_8hpp_a83ae991f5883e5298c5000de800d5c60}{}\label{parser_8hpp_a83ae991f5883e5298c5000de800d5c60}
+Create a choice between 2 rules \index{parser.\+hpp@{parser.\+hpp}!operator\texttt{"|}@{operator\texttt{"|}}}
+\index{operator\texttt{"|}@{operator\texttt{"|}}!parser.\+hpp@{parser.\+hpp}}
+\subsubsection[{\texorpdfstring{operator\texttt{"|}(parser\+::ruleptr left, lexeme \&right)}{operator|(parser::ruleptr left, lexeme &right)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\+::ruleptr} operator$\vert$ (
+\begin{DoxyParamCaption}
+\item[{{\bf parser\+::ruleptr}}]{left, }
+\item[{{\bf lexeme} \&}]{right}
+\end{DoxyParamCaption}
+)}\hypertarget{parser_8hpp_a382e1d6e85a342495aa289d72f01873a}{}\label{parser_8hpp_a382e1d6e85a342495aa289d72f01873a}
+Create a terminal rule and add it to a choice between 2 rules \index{parser.\+hpp@{parser.\+hpp}!operator\texttt{"|}@{operator\texttt{"|}}}
+\index{operator\texttt{"|}@{operator\texttt{"|}}!parser.\+hpp@{parser.\+hpp}}
+\subsubsection[{\texorpdfstring{operator\texttt{"|}(lexeme \&left, parser\+::ruleptr right)}{operator|(lexeme &left, parser::ruleptr right)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\+::ruleptr} operator$\vert$ (
+\begin{DoxyParamCaption}
+\item[{{\bf lexeme} \&}]{left, }
+\item[{{\bf parser\+::ruleptr}}]{right}
+\end{DoxyParamCaption}
+)}\hypertarget{parser_8hpp_ac94f7bc23c74a7071b4a3c09fadac754}{}\label{parser_8hpp_ac94f7bc23c74a7071b4a3c09fadac754}
+Create a terminal rule and add it to a choice between 2 rules \index{parser.\+hpp@{parser.\+hpp}!operator\texttt{"|}@{operator\texttt{"|}}}
+\index{operator\texttt{"|}@{operator\texttt{"|}}!parser.\+hpp@{parser.\+hpp}}
+\subsubsection[{\texorpdfstring{operator\texttt{"|}(lexeme \&left, lexeme \&right)}{operator|(lexeme &left, lexeme &right)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\+::ruleptr} operator$\vert$ (
+\begin{DoxyParamCaption}
+\item[{{\bf lexeme} \&}]{left, }
+\item[{{\bf lexeme} \&}]{right}
+\end{DoxyParamCaption}
+)}\hypertarget{parser_8hpp_ae0c60b97dec81fe6c23646c03d2f4223}{}\label{parser_8hpp_ae0c60b97dec81fe6c23646c03d2f4223}
+Create a terminal rule and add it to a choice between 2 rules 

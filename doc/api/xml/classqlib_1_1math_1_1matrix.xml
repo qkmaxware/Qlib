@@ -325,26 +325,26 @@
     <detaileddescription>
 <para>Complex matrix class </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="281">
+      <node id="357">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="280">
+      <node id="356">
         <label>qlib::math::matrix</label>
         <link refid="classqlib_1_1math_1_1matrix"/>
-        <childnode refid="281" relation="public-inheritance">
+        <childnode refid="357" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="283">
+      <node id="359">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="282">
+      <node id="358">
         <label>qlib::math::matrix</label>
         <link refid="classqlib_1_1math_1_1matrix"/>
-        <childnode refid="283" relation="public-inheritance">
+        <childnode refid="359" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

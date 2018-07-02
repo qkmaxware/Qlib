@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classparser_1_1choice" kind="class" language="C++" prot="public">
+    <compoundname>parser::choice</compoundname>
+    <basecompoundref refid="classparser_1_1rule" prot="public" virt="non-virtual">parser::rule</basecompoundref>
+    <includes refid="parser_8hpp" local="no">parser.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classparser_1_1choice_1a7ddb22bce6c8446a35a6fbc9ceaaf962" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref></type>
+        <definition>ruleptr parser::choice::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="320" column="1" bodyfile="src/runtime/parser.hpp" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparser_1_1choice_1a5cd2aac2dea54c11da1495cacd00db10" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref></type>
+        <definition>ruleptr parser::choice::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="321" column="1" bodyfile="src/runtime/parser.hpp" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparser_1_1choice_1ae9e624b9260ed9006741d6870ea334e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>parser::choice::choice</definition>
+        <argsstring>(ruleptr first, ruleptr second)</argsstring>
+        <name>choice</name>
+        <param>
+          <type><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref></type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref></type>
+          <declname>second</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="323" column="1" bodyfile="src/runtime/parser.hpp" bodystart="323" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1choice_1ad6fe3cd8e19171e387c8ff34e1291f83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>parser::choice::~choice</definition>
+        <argsstring>()</argsstring>
+        <name>~choice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="326" column="1" bodyfile="src/runtime/parser.hpp" bodystart="326" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1choice_1a76d73bd6b3adb0c8a062b46a4d49cd11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool parser::choice::tryParse</definition>
+        <argsstring>(tokenqueue &amp;queue, parsetree *ref)</argsstring>
+        <name>tryParse</name>
+        <reimplements refid="classparser_1_1rule_1a60ccfb91ea4fe7def5ec2a15bb97c5ec">tryParse</reimplements>
+        <param>
+          <type><ref refid="classparser_1_1tokenqueue" kindref="compound">tokenqueue</ref> &amp;</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type><ref refid="structparser_1_1parsetree" kindref="compound">parsetree</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Virtual function to parse an input tokenqueue into a parse tree Returns true if parsing successful and sets the value under the parsetree pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="329" column="1" bodyfile="src/runtime/parser.hpp" bodystart="329" bodyend="343"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class representing parsing elements that are either one thing exclusive or another </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="261">
+        <label>parser::choice</label>
+        <link refid="classparser_1_1choice"/>
+        <childnode refid="262" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="262">
+        <label>parser::rule</label>
+        <link refid="classparser_1_1rule"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="263">
+        <label>parser::choice</label>
+        <link refid="classparser_1_1choice"/>
+        <childnode refid="264" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>parser::rule</label>
+        <link refid="classparser_1_1rule"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/parser.hpp" line="318" column="1" bodyfile="src/runtime/parser.hpp" bodystart="318" bodyend="344"/>
+    <listofallmembers>
+      <member refid="classparser_1_1choice_1ae9e624b9260ed9006741d6870ea334e4" prot="public" virt="non-virtual"><scope>parser::choice</scope><name>choice</name></member>
+      <member refid="classparser_1_1choice_1a7ddb22bce6c8446a35a6fbc9ceaaf962" prot="private" virt="non-virtual"><scope>parser::choice</scope><name>left</name></member>
+      <member refid="classparser_1_1choice_1a5cd2aac2dea54c11da1495cacd00db10" prot="private" virt="non-virtual"><scope>parser::choice</scope><name>right</name></member>
+      <member refid="classparser_1_1choice_1a76d73bd6b3adb0c8a062b46a4d49cd11" prot="public" virt="virtual"><scope>parser::choice</scope><name>tryParse</name></member>
+      <member refid="classparser_1_1choice_1ad6fe3cd8e19171e387c8ff34e1291f83" prot="public" virt="non-virtual"><scope>parser::choice</scope><name>~choice</name></member>
+      <member refid="classparser_1_1rule_1abbe02436a9cb7b38b2186a82ff12b29a" prot="public" virt="non-virtual"><scope>parser::choice</scope><name>~rule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

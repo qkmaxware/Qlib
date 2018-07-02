@@ -7,340 +7,39 @@
     <includes refid="qlib_8h" local="yes">./../core/qlib.h</includes>
     <includes refid="lexer_8hpp" local="yes">./lexer.hpp</includes>
     <includes refid="parser_8hpp" local="yes">./parser.hpp</includes>
-    <includes refid="qasmparser_8hpp" local="yes">./qasmparser.hpp</includes>
+    <includes refid="compiler_8hpp" local="yes">./compiler.hpp</includes>
     <includes refid="runtime_8hpp" local="yes">./runtime.hpp</includes>
+    <includes refid="scanner_8hpp" local="yes">./scanner.hpp</includes>
     <incdepgraph>
-      <node id="1030">
+      <node id="1047">
         <label>src/runtime/main.cpp</label>
         <link refid="runtime/main.cpp"/>
-        <childnode refid="1031" relation="include">
-        </childnode>
-        <childnode refid="1032" relation="include">
-        </childnode>
-        <childnode refid="1033" relation="include">
-        </childnode>
-        <childnode refid="1069" relation="include">
-        </childnode>
-        <childnode refid="1071" relation="include">
-        </childnode>
-        <childnode refid="1072" relation="include">
-        </childnode>
-        <childnode refid="1074" relation="include">
-        </childnode>
-      </node>
-      <node id="1037">
-        <label>limits</label>
-      </node>
-      <node id="1034">
-        <label>./general/object.hpp</label>
-        <link refid="object_8hpp"/>
-        <childnode refid="1035" relation="include">
-        </childnode>
-        <childnode refid="1031" relation="include">
-        </childnode>
-        <childnode refid="1038" relation="include">
-        </childnode>
-        <childnode refid="1039" relation="include">
-        </childnode>
-        <childnode refid="1040" relation="include">
-        </childnode>
-        <childnode refid="1041" relation="include">
-        </childnode>
-      </node>
-      <node id="1074">
-        <label>./runtime.hpp</label>
-        <link refid="runtime_8hpp"/>
-        <childnode refid="1038" relation="include">
-        </childnode>
-        <childnode refid="1031" relation="include">
-        </childnode>
-        <childnode refid="1047" relation="include">
-        </childnode>
-        <childnode refid="1068" relation="include">
-        </childnode>
-        <childnode refid="1033" relation="include">
-        </childnode>
-      </node>
-      <node id="1036">
-        <label>stdint.h</label>
-      </node>
-      <node id="1044">
-        <label>stdlib.h</label>
-      </node>
-      <node id="1045">
-        <label>./math/matrix.hpp</label>
-        <link refid="matrix_8hpp"/>
-        <childnode refid="1042" relation="include">
-        </childnode>
-        <childnode refid="1034" relation="include">
-        </childnode>
-        <childnode refid="1046" relation="include">
-        </childnode>
-        <childnode refid="1047" relation="include">
-        </childnode>
-        <childnode refid="1043" relation="include">
-        </childnode>
-        <childnode refid="1038" relation="include">
-        </childnode>
-      </node>
-      <node id="1048">
-        <label>./quantum/systems/qubit.hpp</label>
-        <link refid="qubit_8hpp"/>
-        <childnode refid="1034" relation="include">
-        </childnode>
-        <childnode refid="1042" relation="include">
-        </childnode>
-        <childnode refid="1045" relation="include">
-        </childnode>
-        <childnode refid="1049" relation="include">
-        </childnode>
-        <childnode refid="1050" relation="include">
-        </childnode>
-        <childnode refid="1043" relation="include">
-        </childnode>
-        <childnode refid="1038" relation="include">
-        </childnode>
-        <childnode refid="1047" relation="include">
-        </childnode>
-      </node>
-      <node id="1072">
-        <label>./qasmparser.hpp</label>
-        <link refid="qasmparser_8hpp"/>
-        <childnode refid="1031" relation="include">
-        </childnode>
-        <childnode refid="1032" relation="include">
-        </childnode>
-        <childnode refid="1047" relation="include">
-        </childnode>
-        <childnode refid="1068" relation="include">
-        </childnode>
-        <childnode refid="1073" relation="include">
-        </childnode>
-        <childnode refid="1069" relation="include">
-        </childnode>
-        <childnode refid="1074" relation="include">
-        </childnode>
-      </node>
-      <node id="1060">
-        <label>cmath</label>
-      </node>
-      <node id="1049">
-        <label>./../gates/igate.hpp</label>
-        <link refid="igate_8hpp"/>
-        <childnode refid="1034" relation="include">
-        </childnode>
-        <childnode refid="1042" relation="include">
-        </childnode>
-        <childnode refid="1045" relation="include">
-        </childnode>
-      </node>
-      <node id="1046">
-        <label>stdexcept</label>
-      </node>
-      <node id="1059">
-        <label>./gates/phase.hpp</label>
-        <link refid="phase_8hpp"/>
-        <childnode refid="1054" relation="include">
-        </childnode>
-        <childnode refid="1043" relation="include">
-        </childnode>
-        <childnode refid="1060" relation="include">
-        </childnode>
-      </node>
-      <node id="1073">
-        <label>string</label>
-      </node>
-      <node id="1053">
-        <label>./gates/ident.hpp</label>
-        <link refid="ident_8hpp"/>
-        <childnode refid="1054" relation="include">
-        </childnode>
-      </node>
-      <node id="1050">
-        <label>system.hpp</label>
-        <link refid="system_8hpp"/>
-        <childnode refid="1034" relation="include">
-        </childnode>
-        <childnode refid="1042" relation="include">
-        </childnode>
-        <childnode refid="1045" relation="include">
-        </childnode>
-        <childnode refid="1049" relation="include">
-        </childnode>
-      </node>
-      <node id="1068">
-        <label>map</label>
-      </node>
-      <node id="1070">
-        <label>regex</label>
-      </node>
-      <node id="1039">
-        <label>exception</label>
-      </node>
-      <node id="1032">
-        <label>fstream</label>
-      </node>
-      <node id="1071">
-        <label>./parser.hpp</label>
-        <link refid="parser_8hpp"/>
-        <childnode refid="1069" relation="include">
-        </childnode>
-      </node>
-      <node id="1067">
-        <label>./quantum/systems/ensemble.hpp</label>
-        <link refid="ensemble_8hpp"/>
-        <childnode refid="1050" relation="include">
-        </childnode>
-        <childnode refid="1047" relation="include">
-        </childnode>
-        <childnode refid="1068" relation="include">
-        </childnode>
-      </node>
-      <node id="1040">
-        <label>random</label>
-      </node>
-      <node id="1054">
-        <label>onequbitgate.hpp</label>
-        <link refid="onequbitgate_8hpp"/>
-        <childnode refid="1049" relation="include">
-        </childnode>
-        <childnode refid="1038" relation="include">
-        </childnode>
-      </node>
-      <node id="1065">
-        <label>./gates/toffoli.hpp</label>
-        <link refid="toffoli_8hpp"/>
-        <childnode refid="1066" relation="include">
-        </childnode>
-        <childnode refid="1056" relation="include">
-        </childnode>
-      </node>
-      <node id="1042">
-        <label>./math/complex.hpp</label>
-        <link refid="complex_8hpp"/>
-        <childnode refid="1034" relation="include">
-        </childnode>
-        <childnode refid="1043" relation="include">
-        </childnode>
-        <childnode refid="1044" relation="include">
-        </childnode>
-        <childnode refid="1038" relation="include">
-        </childnode>
-      </node>
-      <node id="1056">
-        <label>./gates/pauliX.hpp</label>
-        <link refid="pauliX_8hpp"/>
-        <childnode refid="1054" relation="include">
-        </childnode>
-      </node>
-      <node id="1047">
-        <label>vector</label>
-      </node>
-      <node id="1057">
-        <label>./gates/pauliY.hpp</label>
-        <link refid="pauliY_8hpp"/>
-        <childnode refid="1054" relation="include">
-        </childnode>
-      </node>
-      <node id="1033">
-        <label>./../core/qlib.h</label>
-        <link refid="qlib_8h"/>
-        <childnode refid="1034" relation="include">
-        </childnode>
-        <childnode refid="1035" relation="include">
-        </childnode>
-        <childnode refid="1042" relation="include">
-        </childnode>
-        <childnode refid="1045" relation="include">
-        </childnode>
         <childnode refid="1048" relation="include">
         </childnode>
-        <childnode refid="1051" relation="include">
-        </childnode>
-        <childnode refid="1052" relation="include">
-        </childnode>
-        <childnode refid="1050" relation="include">
-        </childnode>
-        <childnode refid="1067" relation="include">
-        </childnode>
-      </node>
-      <node id="1061">
-        <label>./gates/cnot.hpp</label>
-        <link refid="cnot_8hpp"/>
-        <childnode refid="1062" relation="include">
-        </childnode>
-        <childnode refid="1056" relation="include">
-        </childnode>
-      </node>
-      <node id="1038">
-        <label>sstream</label>
-      </node>
-      <node id="1058">
-        <label>./gates/pauliZ.hpp</label>
-        <link refid="pauliZ_8hpp"/>
-        <childnode refid="1054" relation="include">
-        </childnode>
-      </node>
-      <node id="1051">
-        <label>./quantum/systems/qreg.hpp</label>
-        <link refid="qreg_8hpp"/>
-        <childnode refid="1034" relation="include">
-        </childnode>
-        <childnode refid="1042" relation="include">
-        </childnode>
-        <childnode refid="1045" relation="include">
-        </childnode>
         <childnode refid="1049" relation="include">
         </childnode>
         <childnode refid="1050" relation="include">
         </childnode>
-        <childnode refid="1037" relation="include">
+        <childnode refid="1086" relation="include">
         </childnode>
-        <childnode refid="1043" relation="include">
+        <childnode refid="1088" relation="include">
         </childnode>
-        <childnode refid="1038" relation="include">
+        <childnode refid="1090" relation="include">
         </childnode>
-        <childnode refid="1047" relation="include">
+        <childnode refid="1093" relation="include">
         </childnode>
-      </node>
-      <node id="1064">
-        <label>./gates/cz.hpp</label>
-        <link refid="cz_8hpp"/>
-        <childnode refid="1062" relation="include">
-        </childnode>
-        <childnode refid="1058" relation="include">
+        <childnode refid="1094" relation="include">
         </childnode>
       </node>
-      <node id="1043">
-        <label>math.h</label>
+      <node id="1054">
+        <label>limits</label>
       </node>
-      <node id="1031">
-        <label>iostream</label>
-      </node>
-      <node id="1069">
-        <label>./lexer.hpp</label>
-        <link refid="lexer_8hpp"/>
-        <childnode refid="1031" relation="include">
+      <node id="1051">
+        <label>./general/object.hpp</label>
+        <link refid="object_8hpp"/>
+        <childnode refid="1052" relation="include">
         </childnode>
-        <childnode refid="1070" relation="include">
-        </childnode>
-        <childnode refid="1047" relation="include">
-        </childnode>
-        <childnode refid="1039" relation="include">
-        </childnode>
-        <childnode refid="1038" relation="include">
-        </childnode>
-      </node>
-      <node id="1055">
-        <label>./gates/hadamard.hpp</label>
-        <link refid="hadamard_8hpp"/>
-        <childnode refid="1054" relation="include">
-        </childnode>
-      </node>
-      <node id="1052">
-        <label>./quantum/standard_gates.hpp</label>
-        <link refid="standard__gates_8hpp"/>
-        <childnode refid="1053" relation="include">
+        <childnode refid="1048" relation="include">
         </childnode>
         <childnode refid="1055" relation="include">
         </childnode>
@@ -350,54 +49,384 @@
         </childnode>
         <childnode refid="1058" relation="include">
         </childnode>
+      </node>
+      <node id="1093">
+        <label>./runtime.hpp</label>
+        <link refid="runtime_8hpp"/>
+        <childnode refid="1055" relation="include">
+        </childnode>
+        <childnode refid="1048" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1085" relation="include">
+        </childnode>
+        <childnode refid="1050" relation="include">
+        </childnode>
+      </node>
+      <node id="1053">
+        <label>stdint.h</label>
+      </node>
+      <node id="1061">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1062">
+        <label>./math/matrix.hpp</label>
+        <link refid="matrix_8hpp"/>
         <childnode refid="1059" relation="include">
         </childnode>
-        <childnode refid="1061" relation="include">
+        <childnode refid="1051" relation="include">
         </childnode>
         <childnode refid="1063" relation="include">
         </childnode>
         <childnode refid="1064" relation="include">
         </childnode>
-        <childnode refid="1065" relation="include">
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1055" relation="include">
         </childnode>
       </node>
-      <node id="1041">
-        <label>chrono</label>
-      </node>
-      <node id="1063">
-        <label>./gates/cy.hpp</label>
-        <link refid="cy_8hpp"/>
+      <node id="1065">
+        <label>./quantum/systems/qubit.hpp</label>
+        <link refid="qubit_8hpp"/>
+        <childnode refid="1051" relation="include">
+        </childnode>
+        <childnode refid="1059" relation="include">
+        </childnode>
         <childnode refid="1062" relation="include">
         </childnode>
-        <childnode refid="1057" relation="include">
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1067" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1055" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
         </childnode>
       </node>
-      <node id="1035">
-        <label>./types.h</label>
-        <link refid="types_8h"/>
-        <childnode refid="1036" relation="include">
-        </childnode>
-        <childnode refid="1037" relation="include">
-        </childnode>
-      </node>
-      <node id="1062">
-        <label>controlledgate.hpp</label>
-        <link refid="controlledgate_8hpp"/>
-        <childnode refid="1049" relation="include">
-        </childnode>
-        <childnode refid="1054" relation="include">
-        </childnode>
-        <childnode refid="1038" relation="include">
-        </childnode>
+      <node id="1077">
+        <label>cmath</label>
       </node>
       <node id="1066">
-        <label>controlled2gate.hpp</label>
-        <link refid="controlled2gate_8hpp"/>
+        <label>./../gates/igate.hpp</label>
+        <link refid="igate_8hpp"/>
+        <childnode refid="1051" relation="include">
+        </childnode>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1062" relation="include">
+        </childnode>
+      </node>
+      <node id="1063">
+        <label>stdexcept</label>
+      </node>
+      <node id="1076">
+        <label>./gates/phase.hpp</label>
+        <link refid="phase_8hpp"/>
+        <childnode refid="1071" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1077" relation="include">
+        </childnode>
+      </node>
+      <node id="1092">
+        <label>string</label>
+      </node>
+      <node id="1070">
+        <label>./gates/ident.hpp</label>
+        <link refid="ident_8hpp"/>
+        <childnode refid="1071" relation="include">
+        </childnode>
+      </node>
+      <node id="1067">
+        <label>system.hpp</label>
+        <link refid="system_8hpp"/>
+        <childnode refid="1051" relation="include">
+        </childnode>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1062" relation="include">
+        </childnode>
+        <childnode refid="1066" relation="include">
+        </childnode>
+      </node>
+      <node id="1085">
+        <label>map</label>
+      </node>
+      <node id="1087">
+        <label>regex</label>
+      </node>
+      <node id="1056">
+        <label>exception</label>
+      </node>
+      <node id="1049">
+        <label>fstream</label>
+      </node>
+      <node id="1088">
+        <label>./parser.hpp</label>
+        <link refid="parser_8hpp"/>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1048" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+      </node>
+      <node id="1084">
+        <label>./quantum/systems/ensemble.hpp</label>
+        <link refid="ensemble_8hpp"/>
+        <childnode refid="1067" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1085" relation="include">
+        </childnode>
+      </node>
+      <node id="1057">
+        <label>random</label>
+      </node>
+      <node id="1071">
+        <label>onequbitgate.hpp</label>
+        <link refid="onequbitgate_8hpp"/>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1055" relation="include">
+        </childnode>
+      </node>
+      <node id="1082">
+        <label>./gates/toffoli.hpp</label>
+        <link refid="toffoli_8hpp"/>
+        <childnode refid="1083" relation="include">
+        </childnode>
+        <childnode refid="1073" relation="include">
+        </childnode>
+      </node>
+      <node id="1059">
+        <label>./math/complex.hpp</label>
+        <link refid="complex_8hpp"/>
+        <childnode refid="1051" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
+        </childnode>
+        <childnode refid="1055" relation="include">
+        </childnode>
+      </node>
+      <node id="1073">
+        <label>./gates/pauliX.hpp</label>
+        <link refid="pauliX_8hpp"/>
+        <childnode refid="1071" relation="include">
+        </childnode>
+      </node>
+      <node id="1091">
+        <label>stack</label>
+      </node>
+      <node id="1064">
+        <label>vector</label>
+      </node>
+      <node id="1074">
+        <label>./gates/pauliY.hpp</label>
+        <link refid="pauliY_8hpp"/>
+        <childnode refid="1071" relation="include">
+        </childnode>
+      </node>
+      <node id="1050">
+        <label>./../core/qlib.h</label>
+        <link refid="qlib_8h"/>
+        <childnode refid="1051" relation="include">
+        </childnode>
+        <childnode refid="1052" relation="include">
+        </childnode>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1062" relation="include">
+        </childnode>
+        <childnode refid="1065" relation="include">
+        </childnode>
+        <childnode refid="1068" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1067" relation="include">
+        </childnode>
+        <childnode refid="1084" relation="include">
+        </childnode>
+      </node>
+      <node id="1078">
+        <label>./gates/cnot.hpp</label>
+        <link refid="cnot_8hpp"/>
+        <childnode refid="1079" relation="include">
+        </childnode>
+        <childnode refid="1073" relation="include">
+        </childnode>
+      </node>
+      <node id="1090">
+        <label>./compiler.hpp</label>
+        <link refid="compiler_8hpp"/>
+        <childnode refid="1048" relation="include">
+        </childnode>
         <childnode refid="1049" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1091" relation="include">
+        </childnode>
+        <childnode refid="1085" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1093" relation="include">
+        </childnode>
+        <childnode refid="1094" relation="include">
+        </childnode>
+      </node>
+      <node id="1055">
+        <label>sstream</label>
+      </node>
+      <node id="1075">
+        <label>./gates/pauliZ.hpp</label>
+        <link refid="pauliZ_8hpp"/>
+        <childnode refid="1071" relation="include">
+        </childnode>
+      </node>
+      <node id="1068">
+        <label>./quantum/systems/qreg.hpp</label>
+        <link refid="qreg_8hpp"/>
+        <childnode refid="1051" relation="include">
+        </childnode>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1062" relation="include">
+        </childnode>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1067" relation="include">
         </childnode>
         <childnode refid="1054" relation="include">
         </childnode>
-        <childnode refid="1038" relation="include">
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1055" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+      </node>
+      <node id="1081">
+        <label>./gates/cz.hpp</label>
+        <link refid="cz_8hpp"/>
+        <childnode refid="1079" relation="include">
+        </childnode>
+        <childnode refid="1075" relation="include">
+        </childnode>
+      </node>
+      <node id="1060">
+        <label>math.h</label>
+      </node>
+      <node id="1048">
+        <label>iostream</label>
+      </node>
+      <node id="1086">
+        <label>./lexer.hpp</label>
+        <link refid="lexer_8hpp"/>
+        <childnode refid="1048" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1056" relation="include">
+        </childnode>
+        <childnode refid="1055" relation="include">
+        </childnode>
+      </node>
+      <node id="1072">
+        <label>./gates/hadamard.hpp</label>
+        <link refid="hadamard_8hpp"/>
+        <childnode refid="1071" relation="include">
+        </childnode>
+      </node>
+      <node id="1069">
+        <label>./quantum/standard_gates.hpp</label>
+        <link refid="standard__gates_8hpp"/>
+        <childnode refid="1070" relation="include">
+        </childnode>
+        <childnode refid="1072" relation="include">
+        </childnode>
+        <childnode refid="1073" relation="include">
+        </childnode>
+        <childnode refid="1074" relation="include">
+        </childnode>
+        <childnode refid="1075" relation="include">
+        </childnode>
+        <childnode refid="1076" relation="include">
+        </childnode>
+        <childnode refid="1078" relation="include">
+        </childnode>
+        <childnode refid="1080" relation="include">
+        </childnode>
+        <childnode refid="1081" relation="include">
+        </childnode>
+        <childnode refid="1082" relation="include">
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>./scanner.hpp</label>
+        <link refid="scanner_8hpp"/>
+        <childnode refid="1048" relation="include">
+        </childnode>
+        <childnode refid="1049" relation="include">
+        </childnode>
+      </node>
+      <node id="1058">
+        <label>chrono</label>
+      </node>
+      <node id="1080">
+        <label>./gates/cy.hpp</label>
+        <link refid="cy_8hpp"/>
+        <childnode refid="1079" relation="include">
+        </childnode>
+        <childnode refid="1074" relation="include">
+        </childnode>
+      </node>
+      <node id="1052">
+        <label>./types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="1053" relation="include">
+        </childnode>
+        <childnode refid="1054" relation="include">
+        </childnode>
+      </node>
+      <node id="1079">
+        <label>controlledgate.hpp</label>
+        <link refid="controlledgate_8hpp"/>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1071" relation="include">
+        </childnode>
+        <childnode refid="1055" relation="include">
+        </childnode>
+      </node>
+      <node id="1089">
+        <label>memory</label>
+      </node>
+      <node id="1083">
+        <label>controlled2gate.hpp</label>
+        <link refid="controlled2gate_8hpp"/>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1071" relation="include">
+        </childnode>
+        <childnode refid="1055" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -468,7 +497,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/main.cpp" line="26" column="1" bodyfile="src/runtime/main.cpp" bodystart="26" bodyend="93"/>
+        <location file="src/runtime/main.cpp" line="28" column="1" bodyfile="src/runtime/main.cpp" bodystart="28" bodyend="130"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -495,80 +524,117 @@
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lexer_8hpp" kindref="compound">./lexer.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="parser_8hpp" kindref="compound">./parser.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="qasmparser_8hpp" kindref="compound">./qasmparser.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="compiler_8hpp" kindref="compound">./compiler.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="runtime_8hpp" kindref="compound">./runtime.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacelexical" kindref="compound">lexical</ref>;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="core_2main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>arg_count,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>arg_values[]){</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Configure<sp/>lexical<sp/>tokens</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="scanner_8hpp" kindref="compound">./scanner.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacelexical" kindref="compound">lexical</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceparser" kindref="compound">parser</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="core_2main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>arg_count,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>arg_values[]){</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Keywords</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_anchor(</highlight><highlight class="stringliteral">&quot;Anchor&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^\\.&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_goto(</highlight><highlight class="stringliteral">&quot;Goto&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^goto\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_start(</highlight><highlight class="stringliteral">&quot;Start&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^begin\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_mapping(</highlight><highlight class="stringliteral">&quot;Map&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^-&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_measure(</highlight><highlight class="stringliteral">&quot;Measure&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^measure\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_print(</highlight><highlight class="stringliteral">&quot;Print&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^print\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_end(</highlight><highlight class="stringliteral">&quot;End&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^end\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_if(</highlight><highlight class="stringliteral">&quot;If&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^if\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_then(</highlight><highlight class="stringliteral">&quot;Then&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^then\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_for(</highlight><highlight class="stringliteral">&quot;For&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^for\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_loop(</highlight><highlight class="stringliteral">&quot;Loop&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^loop\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_include(</highlight><highlight class="stringliteral">&quot;Include&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^include\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Skippables</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_lineComment(</highlight><highlight class="stringliteral">&quot;Line<sp/>Comment&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^//[^\\r\\n]*&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_lineComment.skippable<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_whitespace(</highlight><highlight class="stringliteral">&quot;Whitespace&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^[\\t\\f\\v\\r\\n<sp/>]+&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_whitespace.skippable<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Literals</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_string(</highlight><highlight class="stringliteral">&quot;String&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^\\\&quot;[^\\r\\n]*?\\\&quot;&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_indexor(</highlight><highlight class="stringliteral">&quot;Indexor&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^([a-zA-Z_]+)([0-9]+)&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_reference(</highlight><highlight class="stringliteral">&quot;Reference&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^[a-zA-Z_]+&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_integer(</highlight><highlight class="stringliteral">&quot;Integer&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^[0-9]+&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_leftb(</highlight><highlight class="stringliteral">&quot;Left<sp/>[&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^\\[&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_rightb(</highlight><highlight class="stringliteral">&quot;Right<sp/>]&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^\\]&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Create<sp/>tokenizer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Configure<sp/>lexical<sp/>tokens</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Keywords</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_anchor(</highlight><highlight class="stringliteral">&quot;Anchor&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^\\.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_goto(</highlight><highlight class="stringliteral">&quot;Goto&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^goto\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_start(</highlight><highlight class="stringliteral">&quot;Start&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^begin\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_mapping(</highlight><highlight class="stringliteral">&quot;Map&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^-&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_measure(</highlight><highlight class="stringliteral">&quot;Measure&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^measure\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_print(</highlight><highlight class="stringliteral">&quot;Print&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^print\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_end(</highlight><highlight class="stringliteral">&quot;End&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^end\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_if(</highlight><highlight class="stringliteral">&quot;If&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^if\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_then(</highlight><highlight class="stringliteral">&quot;Then&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^then\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_for(</highlight><highlight class="stringliteral">&quot;For&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^for\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_loop(</highlight><highlight class="stringliteral">&quot;Loop&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^loop\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_include(</highlight><highlight class="stringliteral">&quot;Include&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^include\\b&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Skippables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_lineComment(</highlight><highlight class="stringliteral">&quot;Line<sp/>Comment&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^//[^\\r\\n]*&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_lineComment.skippable<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_whitespace(</highlight><highlight class="stringliteral">&quot;Whitespace&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^[\\t\\f\\v\\r\\n<sp/>]+&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_whitespace.skippable<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Literals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_string(</highlight><highlight class="stringliteral">&quot;String&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^\\\&quot;[^\\r\\n]*?\\\&quot;&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_indexor(</highlight><highlight class="stringliteral">&quot;Indexor&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^([a-zA-Z_]+)([0-9]+)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_reference(</highlight><highlight class="stringliteral">&quot;Reference&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^[a-zA-Z_]+&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_integer(</highlight><highlight class="stringliteral">&quot;Integer&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^[0-9]+&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_leftb(</highlight><highlight class="stringliteral">&quot;Left<sp/>[&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^\\[&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme" kindref="compound">lexeme</ref><sp/>_rightb(</highlight><highlight class="stringliteral">&quot;Right<sp/>]&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;^\\]&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexer" kindref="compound">lexer</ref><sp/>tokenizer({</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;_anchor,<sp/>&amp;_goto,<sp/>&amp;_start,<sp/>&amp;_mapping,<sp/>&amp;_measure,<sp/>&amp;_print,<sp/>&amp;_end,<sp/>&amp;_if,<sp/>&amp;_then,<sp/>&amp;_for,<sp/>&amp;_loop,<sp/>&amp;_include,</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;_lineComment,<sp/>&amp;_whitespace,</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;_string,<sp/>&amp;_indexor,<sp/>&amp;_reference,<sp/>&amp;_integer,<sp/>&amp;_leftb,<sp/>&amp;_rightb</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Create<sp/>rules</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Create<sp/>tokenizer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexer" kindref="compound">lexer</ref><sp/>tokenizer({</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;_anchor,<sp/>&amp;_goto,<sp/>&amp;_start,<sp/>&amp;_mapping,<sp/>&amp;_measure,<sp/>&amp;_print,<sp/>&amp;_end,<sp/>&amp;_if,<sp/>&amp;_then,<sp/>&amp;_for,<sp/>&amp;_loop,<sp/>&amp;_include,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;_lineComment,<sp/>&amp;_whitespace,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;_string,<sp/>&amp;_indexor,<sp/>&amp;_reference,<sp/>&amp;_integer,<sp/>&amp;_leftb,<sp/>&amp;_rightb</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Create<sp/>rules</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Read<sp/>in<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//First<sp/>arg<sp/>is<sp/>the<sp/>program<sp/>name</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(arg_count<sp/>&lt;<sp/>2){</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="runtime_2main_8cpp_1a47f2e62c0dbebc787052c165afcada0e" kindref="member">NAME</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>version:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="runtime_2main_8cpp_1a877cce34f3e58fd7f9194fab90724cb8" kindref="member">MAJOR</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="runtime_2main_8cpp_1a4e10915d93013542d442d78de0e02e9a" kindref="member">MINOR</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="runtime_2main_8cpp_1af59c44c1f3ff875c35393428624473aa" kindref="member">PATCH</ref><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Arg<sp/>is<sp/>filename</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classprogram" kindref="compound">program</ref><sp/>prog;</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classqasm_1_1runtime_1_1environment" kindref="compound">qasm::runtime::environment</ref><sp/>env;</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="qasmparser_8hpp_1ad6bb98bfd6757b98a471bb8c8670795a" kindref="member">try_parse_qasm</ref>(prog,<sp/>arg_values[1],<sp/>tokenizer)){</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//qasmenv<sp/>env;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//prog.run(env);</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::vector&lt;qasm::exec::executable*&gt;::iterator<sp/>it<sp/>=<sp/>prog.<ref refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kindref="member">lines</ref>.begin();<sp/>it<sp/>!=<sp/>prog.<ref refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kindref="member">lines</ref>.end();<sp/>it++){</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it)-&gt;invoke_rootprogram(env);<sp/></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref><sp/>import_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>_include<sp/>&lt;&lt;<sp/>_string;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref><sp/>label_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>_anchor<sp/>&lt;&lt;<sp/>_reference;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref><sp/>print_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>_print<sp/>&lt;&lt;<sp/>_reference;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref><sp/>application_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>_reference<sp/>&lt;&lt;<sp/>*_indexor;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref><sp/>typedecl_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>_reference<sp/>&lt;&lt;<sp/>_reference<sp/>&lt;&lt;<sp/>_leftb<sp/>&lt;&lt;<sp/>_integer<sp/>&lt;&lt;<sp/>_rightb;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref><sp/>measurement_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>_measure<sp/>&lt;&lt;<sp/>((_indexor<sp/>&lt;&lt;<sp/>_mapping<sp/>&lt;&lt;<sp/>_indexor)<sp/>|<sp/>(_reference<sp/>&lt;&lt;<sp/>_mapping<sp/>&lt;&lt;<sp/>_reference));</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Create<sp/>parse<sp/>lists</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;ruleptr&gt;<sp/>rules<sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{import_,<sp/>label_,<sp/>print_,<sp/>application_,<sp/>typedecl_,<sp/>measurement_};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;qasm::exec::executable*<sp/>(*)(parser::parsetree&amp;)&gt;<sp/>converters</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{<ref refid="compiler_8hpp_1af29ea58956d1e519877cf79d81d5f8b8" kindref="member">convert_import</ref>,<sp/><ref refid="compiler_8hpp_1a3a9fc818a308f225f17b30cf26a3f674" kindref="member">convert_anchor</ref>,<sp/><ref refid="compiler_8hpp_1af4b1195ebe9533956bca833f365dccfb" kindref="member">convert_print</ref>,<sp/><ref refid="compiler_8hpp_1aef48a14daa35b8b1ac149d4507745272" kindref="member">convert_gate_application</ref>,<sp/><ref refid="compiler_8hpp_1a3fadce05c7730406d98ffa5c57beee3a" kindref="member">convert_typedef</ref>,<sp/><ref refid="compiler_8hpp_1a68fba8c9d7b383e00bd8786cb4581374" kindref="member">convert_measurement</ref>};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;void(*)(compiler&amp;,<sp/>qasm::exec::executable*)&gt;<sp/>post_events</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{<ref refid="compiler_8hpp_1a5f86ad821427272c82f91807bed4ffe0" kindref="member">post_import</ref>,<sp/><ref refid="compiler_8hpp_1a6a17a035bad361ab796fcc69b5e57431" kindref="member">post_anchor</ref>,<sp/><ref refid="compiler_8hpp_1a01ae4a79dc45ca04bac94915f97db422" kindref="member">post_add</ref>,<sp/><ref refid="compiler_8hpp_1a01ae4a79dc45ca04bac94915f97db422" kindref="member">post_add</ref>,<sp/><ref refid="compiler_8hpp_1a01ae4a79dc45ca04bac94915f97db422" kindref="member">post_add</ref>,<sp/>post_add};</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Program<sp/>and<sp/>executable<sp/>lines<sp/>are<sp/>cleaned<sp/>up<sp/>by<sp/>program<sp/>destructor</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Read<sp/>in<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//First<sp/>arg<sp/>is<sp/>the<sp/>program<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(arg_count<sp/>&lt;<sp/>2){</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="runtime_2main_8cpp_1a47f2e62c0dbebc787052c165afcada0e" kindref="member">NAME</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>version:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="runtime_2main_8cpp_1a877cce34f3e58fd7f9194fab90724cb8" kindref="member">MAJOR</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="runtime_2main_8cpp_1a4e10915d93013542d442d78de0e02e9a" kindref="member">MINOR</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="runtime_2main_8cpp_1af59c44c1f3ff875c35393428624473aa" kindref="member">PATCH</ref><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Begin<sp/>compilation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Arg<sp/>is<sp/>filename</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>filename<sp/>=<sp/>arg_values[1];</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classprogram" kindref="compound">program</ref><sp/>prog;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classqasm_1_1runtime_1_1environment" kindref="compound">qasm::runtime::environment</ref><sp/>env;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//New</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcompiler" kindref="compound">compiler</ref><sp/>cmp(tokenizer,<sp/>rules,<sp/>converters,<sp/>post_events,<sp/>prog);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b<sp/>=<sp/>cmp.try_parse_file(filename);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Run</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;program<sp/>length<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>prog.<ref refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kindref="member">lines</ref>.size()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(b<sp/>&amp;&amp;<sp/>prog.<ref refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kindref="member">lines</ref>.size()<sp/>&gt;<sp/>0){</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::vector&lt;qasm::exec::executable*&gt;::iterator<sp/>it<sp/>=<sp/>prog.<ref refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kindref="member">lines</ref>.begin();<sp/>it<sp/>!=<sp/>prog.<ref refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kindref="member">lines</ref>.end();<sp/>it++){</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*it)-&gt;invoke_rootprogram(env);<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Old<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*if(try_parse_qasm(prog,<sp/>filename,<sp/>tokenizer)){</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for(std::vector&lt;qasm::exec::executable*&gt;::iterator<sp/>it<sp/>=<sp/>prog.lines.begin();<sp/>it<sp/>!=<sp/>prog.lines.end();<sp/>it++){</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it)-&gt;invoke_rootprogram(env);<sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Program<sp/>and<sp/>executable<sp/>lines<sp/>are<sp/>cleaned<sp/>up<sp/>by<sp/>program<sp/>destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/runtime/main.cpp"/>
   </compounddef>

@@ -1,0 +1,92 @@
+\hypertarget{classparser_1_1choice}{}\section{parser\+:\+:choice Class Reference}
+\label{classparser_1_1choice}\index{parser\+::choice@{parser\+::choice}}
+
+
+{\ttfamily \#include $<$parser.\+hpp$>$}
+
+
+
+Inheritance diagram for parser\+:\+:choice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classparser_1_1choice__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for parser\+:\+:choice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classparser_1_1choice__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classparser_1_1choice_ae9e624b9260ed9006741d6870ea334e4}{choice} (\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{ruleptr} first, \hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{ruleptr} second)
+\item 
+\hyperlink{classparser_1_1choice_ad6fe3cd8e19171e387c8ff34e1291f83}{$\sim$choice} ()
+\item 
+bool \hyperlink{classparser_1_1choice_a76d73bd6b3adb0c8a062b46a4d49cd11}{try\+Parse} (\hyperlink{classparser_1_1tokenqueue}{tokenqueue} \&queue, \hyperlink{structparser_1_1parsetree}{parsetree} $\ast$ref)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{ruleptr} \hyperlink{classparser_1_1choice_a7ddb22bce6c8446a35a6fbc9ceaaf962}{left}
+\item 
+\hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{ruleptr} \hyperlink{classparser_1_1choice_a5cd2aac2dea54c11da1495cacd00db10}{right}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing parsing elements that are either one thing exclusive or another 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{parser\+::choice@{parser\+::choice}!choice@{choice}}
+\index{choice@{choice}!parser\+::choice@{parser\+::choice}}
+\subsubsection[{\texorpdfstring{choice(ruleptr first, ruleptr second)}{choice(ruleptr first, ruleptr second)}}]{\setlength{\rightskip}{0pt plus 5cm}parser\+::choice\+::choice (
+\begin{DoxyParamCaption}
+\item[{{\bf ruleptr}}]{first, }
+\item[{{\bf ruleptr}}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1choice_ae9e624b9260ed9006741d6870ea334e4}{}\label{classparser_1_1choice_ae9e624b9260ed9006741d6870ea334e4}
+\index{parser\+::choice@{parser\+::choice}!````~choice@{$\sim$choice}}
+\index{````~choice@{$\sim$choice}!parser\+::choice@{parser\+::choice}}
+\subsubsection[{\texorpdfstring{$\sim$choice()}{~choice()}}]{\setlength{\rightskip}{0pt plus 5cm}parser\+::choice\+::$\sim$choice (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classparser_1_1choice_ad6fe3cd8e19171e387c8ff34e1291f83}{}\label{classparser_1_1choice_ad6fe3cd8e19171e387c8ff34e1291f83}
+
+
+\subsection{Member Function Documentation}
+\index{parser\+::choice@{parser\+::choice}!try\+Parse@{try\+Parse}}
+\index{try\+Parse@{try\+Parse}!parser\+::choice@{parser\+::choice}}
+\subsubsection[{\texorpdfstring{try\+Parse(tokenqueue \&queue, parsetree $\ast$ref)}{tryParse(tokenqueue &queue, parsetree *ref)}}]{\setlength{\rightskip}{0pt plus 5cm}bool parser\+::choice\+::try\+Parse (
+\begin{DoxyParamCaption}
+\item[{{\bf tokenqueue} \&}]{queue, }
+\item[{{\bf parsetree} $\ast$}]{ref}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classparser_1_1choice_a76d73bd6b3adb0c8a062b46a4d49cd11}{}\label{classparser_1_1choice_a76d73bd6b3adb0c8a062b46a4d49cd11}
+Virtual function to parse an input tokenqueue into a parse tree Returns true if parsing successful and sets the value under the parsetree pointer 
+
+Reimplemented from \hyperlink{classparser_1_1rule_a60ccfb91ea4fe7def5ec2a15bb97c5ec}{parser\+::rule}.
+
+
+
+\subsection{Member Data Documentation}
+\index{parser\+::choice@{parser\+::choice}!left@{left}}
+\index{left@{left}!parser\+::choice@{parser\+::choice}}
+\subsubsection[{\texorpdfstring{left}{left}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ruleptr} parser\+::choice\+::left\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classparser_1_1choice_a7ddb22bce6c8446a35a6fbc9ceaaf962}{}\label{classparser_1_1choice_a7ddb22bce6c8446a35a6fbc9ceaaf962}
+\index{parser\+::choice@{parser\+::choice}!right@{right}}
+\index{right@{right}!parser\+::choice@{parser\+::choice}}
+\subsubsection[{\texorpdfstring{right}{right}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ruleptr} parser\+::choice\+::right\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classparser_1_1choice_a5cd2aac2dea54c11da1495cacd00db10}{}\label{classparser_1_1choice_a5cd2aac2dea54c11da1495cacd00db10}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{parser_8hpp}{parser.\+hpp}\end{DoxyCompactItemize}

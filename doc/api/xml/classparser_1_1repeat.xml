@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classparser_1_1repeat" kind="class" language="C++" prot="public">
+    <compoundname>parser::repeat</compoundname>
+    <includes refid="parser_8hpp" local="no">parser.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classparser_1_1repeat_1a4a52b46d6d8139c877b78454942c03fd" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long parser::repeat::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="23" column="1" bodyfile="src/runtime/parser.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparser_1_1repeat_1a5d423398c46938e601f07ae95f119ea7" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long parser::repeat::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="24" column="1" bodyfile="src/runtime/parser.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparser_1_1repeat_1a997f9a57da38d6d3893212cf7129603e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool parser::repeat::hasMax</definition>
+        <argsstring></argsstring>
+        <name>hasMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="25" column="1" bodyfile="src/runtime/parser.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparser_1_1repeat_1a5f4b0f9282d8683b57d999d9c9596155" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>parser::repeat::repeat</definition>
+        <argsstring>()</argsstring>
+        <name>repeat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="28" column="1" bodyfile="src/runtime/parser.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1repeat_1a95498b83f117d845cb1a91aa22ff2067" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>parser::repeat::repeat</definition>
+        <argsstring>(long min)</argsstring>
+        <name>repeat</name>
+        <param>
+          <type>long</type>
+          <declname>min</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="29" column="1" bodyfile="src/runtime/parser.hpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1repeat_1a08e03f68f22e34134d347a62f2a62373" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>parser::repeat::repeat</definition>
+        <argsstring>(long min, long max)</argsstring>
+        <name>repeat</name>
+        <param>
+          <type>long</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="30" column="1" bodyfile="src/runtime/parser.hpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1repeat_1ac1320ff0936d3e4e14c9e67cdd6dc481" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>parser::repeat::repeat</definition>
+        <argsstring>(const repeat &amp;rep)</argsstring>
+        <name>repeat</name>
+        <param>
+          <type>const <ref refid="classparser_1_1repeat" kindref="compound">repeat</ref> &amp;</type>
+          <declname>rep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="31" column="1" bodyfile="src/runtime/parser.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1repeat_1a5034ec8bb7dd25a9c6f53a62875aace3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool parser::repeat::inRange</definition>
+        <argsstring>(long x)</argsstring>
+        <name>inRange</name>
+        <param>
+          <type>long</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="33" column="1" bodyfile="src/runtime/parser.hpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1repeat_1a67c60e501c7e0fa33f2f3f1b99e44b62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool parser::repeat::underMin</definition>
+        <argsstring>(long x)</argsstring>
+        <name>underMin</name>
+        <param>
+          <type>long</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="37" column="1" bodyfile="src/runtime/parser.hpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1repeat_1ab52008340dc919bf7b81c50ba36f55e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool parser::repeat::overMax</definition>
+        <argsstring>(long x)</argsstring>
+        <name>overMax</name>
+        <param>
+          <type>long</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="41" column="1" bodyfile="src/runtime/parser.hpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1repeat_1a20153be6931a239d9aa32cf0adb948ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool parser::repeat::hasRepetitionsRemaining</definition>
+        <argsstring>(long x)</argsstring>
+        <name>hasRepetitionsRemaining</name>
+        <param>
+          <type>long</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="45" column="1" bodyfile="src/runtime/parser.hpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class representing how many times a thing is to be repeated </para>    </detaileddescription>
+    <location file="src/runtime/parser.hpp" line="21" column="1" bodyfile="src/runtime/parser.hpp" bodystart="21" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classparser_1_1repeat_1a997f9a57da38d6d3893212cf7129603e" prot="private" virt="non-virtual"><scope>parser::repeat</scope><name>hasMax</name></member>
+      <member refid="classparser_1_1repeat_1a20153be6931a239d9aa32cf0adb948ac" prot="public" virt="non-virtual"><scope>parser::repeat</scope><name>hasRepetitionsRemaining</name></member>
+      <member refid="classparser_1_1repeat_1a5034ec8bb7dd25a9c6f53a62875aace3" prot="public" virt="non-virtual"><scope>parser::repeat</scope><name>inRange</name></member>
+      <member refid="classparser_1_1repeat_1a5d423398c46938e601f07ae95f119ea7" prot="private" virt="non-virtual"><scope>parser::repeat</scope><name>max</name></member>
+      <member refid="classparser_1_1repeat_1a4a52b46d6d8139c877b78454942c03fd" prot="private" virt="non-virtual"><scope>parser::repeat</scope><name>min</name></member>
+      <member refid="classparser_1_1repeat_1ab52008340dc919bf7b81c50ba36f55e7" prot="public" virt="non-virtual"><scope>parser::repeat</scope><name>overMax</name></member>
+      <member refid="classparser_1_1repeat_1a5f4b0f9282d8683b57d999d9c9596155" prot="public" virt="non-virtual"><scope>parser::repeat</scope><name>repeat</name></member>
+      <member refid="classparser_1_1repeat_1a95498b83f117d845cb1a91aa22ff2067" prot="public" virt="non-virtual"><scope>parser::repeat</scope><name>repeat</name></member>
+      <member refid="classparser_1_1repeat_1a08e03f68f22e34134d347a62f2a62373" prot="public" virt="non-virtual"><scope>parser::repeat</scope><name>repeat</name></member>
+      <member refid="classparser_1_1repeat_1ac1320ff0936d3e4e14c9e67cdd6dc481" prot="public" virt="non-virtual"><scope>parser::repeat</scope><name>repeat</name></member>
+      <member refid="classparser_1_1repeat_1a67c60e501c7e0fa33f2f3f1b99e44b62" prot="public" virt="non-virtual"><scope>parser::repeat</scope><name>underMin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

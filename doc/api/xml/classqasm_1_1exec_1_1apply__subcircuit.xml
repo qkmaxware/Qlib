@@ -56,25 +56,25 @@
     <detaileddescription>
 <para>Instruction to execute a subcircuit program </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="191">
+      <node id="247">
         <label>qasm::exec::apply_subcircuit</label>
         <link refid="classqasm_1_1exec_1_1apply__subcircuit"/>
-        <childnode refid="192" relation="public-inheritance">
+        <childnode refid="248" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="192">
+      <node id="248">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="193">
+      <node id="249">
         <label>qasm::exec::apply_subcircuit</label>
         <link refid="classqasm_1_1exec_1_1apply__subcircuit"/>
-        <childnode refid="194" relation="public-inheritance">
+        <childnode refid="250" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="194">
+      <node id="250">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>

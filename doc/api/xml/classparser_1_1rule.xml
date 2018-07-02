@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classparser_1_1rule" kind="class" language="C++" prot="public">
+    <compoundname>parser::rule</compoundname>
+    <derivedcompoundref refid="classparser_1_1choice" prot="public" virt="non-virtual">parser::choice</derivedcompoundref>
+    <derivedcompoundref refid="classparser_1_1repeater" prot="public" virt="non-virtual">parser::repeater</derivedcompoundref>
+    <derivedcompoundref refid="classparser_1_1sequence" prot="public" virt="non-virtual">parser::sequence</derivedcompoundref>
+    <derivedcompoundref refid="classparser_1_1terminal" prot="public" virt="non-virtual">parser::terminal</derivedcompoundref>
+    <includes refid="parser_8hpp" local="no">parser.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparser_1_1rule_1abbe02436a9cb7b38b2186a82ff12b29a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>virtual parser::rule::~rule</definition>
+        <argsstring>()</argsstring>
+        <name>~rule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="207" column="1" bodyfile="src/runtime/parser.hpp" bodystart="207" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classparser_1_1rule_1a60ccfb91ea4fe7def5ec2a15bb97c5ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool parser::rule::tryParse</definition>
+        <argsstring>(tokenqueue &amp;queue, parsetree *ref)</argsstring>
+        <name>tryParse</name>
+        <reimplementedby refid="classparser_1_1repeater_1acb57c02da3e60b3ca751a2eda3e145c2">tryParse</reimplementedby>
+        <reimplementedby refid="classparser_1_1terminal_1abf7f4ea72388f2e96140769bc5d2acc8">tryParse</reimplementedby>
+        <reimplementedby refid="classparser_1_1sequence_1a499005d2dd4a3f39985d2deddb413cea">tryParse</reimplementedby>
+        <reimplementedby refid="classparser_1_1choice_1a76d73bd6b3adb0c8a062b46a4d49cd11">tryParse</reimplementedby>
+        <param>
+          <type><ref refid="classparser_1_1tokenqueue" kindref="compound">tokenqueue</ref> &amp;</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type><ref refid="structparser_1_1parsetree" kindref="compound">parsetree</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Virtual function to parse an input tokenqueue into a parse tree Returns true if parsing successful and sets the value under the parsetree pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="212" column="1" bodyfile="src/runtime/parser.hpp" bodystart="212" bodyend="212"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Interface for all parse rules </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="435">
+        <label>parser::choice</label>
+        <link refid="classparser_1_1choice"/>
+        <childnode refid="434" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="437">
+        <label>parser::sequence</label>
+        <link refid="classparser_1_1sequence"/>
+        <childnode refid="434" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="434">
+        <label>parser::rule</label>
+        <link refid="classparser_1_1rule"/>
+      </node>
+      <node id="438">
+        <label>parser::terminal</label>
+        <link refid="classparser_1_1terminal"/>
+        <childnode refid="434" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="436">
+        <label>parser::repeater</label>
+        <link refid="classparser_1_1repeater"/>
+        <childnode refid="434" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/runtime/parser.hpp" line="204" column="1" bodyfile="src/runtime/parser.hpp" bodystart="204" bodyend="213"/>
+    <listofallmembers>
+      <member refid="classparser_1_1rule_1a60ccfb91ea4fe7def5ec2a15bb97c5ec" prot="public" virt="virtual"><scope>parser::rule</scope><name>tryParse</name></member>
+      <member refid="classparser_1_1rule_1abbe02436a9cb7b38b2186a82ff12b29a" prot="public" virt="non-virtual"><scope>parser::rule</scope><name>~rule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

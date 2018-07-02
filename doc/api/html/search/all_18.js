@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['z',['Z',['../namespaceqlib_1_1quantum_1_1gates.html#ad07d8c867d0463c3f66dfa80d5b6b53c',1,'qlib::quantum::gates']]]
+  ['y',['Y',['../namespaceqlib_1_1quantum_1_1gates.html#a7d495b8ebaa4b3a3f73a871bc993e82b',1,'qlib::quantum::gates']]]
 ];

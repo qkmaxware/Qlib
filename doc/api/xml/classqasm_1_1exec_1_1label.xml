@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqasm_1_1exec_1_1label" kind="class" language="C++" prot="public">
+    <compoundname>qasm::exec::label</compoundname>
+    <basecompoundref refid="classqasm_1_1exec_1_1executable" prot="public" virt="non-virtual">qasm::exec::executable</basecompoundref>
+    <includes refid="runtime_8hpp" local="no">runtime.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1label_1ae88393dae0bd5ddbe32a65cfb2d8f247" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string qasm::exec::label::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="414" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqasm_1_1exec_1_1label_1aea2a4500ead46240c26215b6d964fae4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qasm::exec::label::label</definition>
+        <argsstring>(string name)</argsstring>
+        <name>label</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="415" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="415" bodyend="415"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Instruction to label a line </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="339">
+        <label>qasm::exec::label</label>
+        <link refid="classqasm_1_1exec_1_1label"/>
+        <childnode refid="340" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="340">
+        <label>qasm::exec::executable</label>
+        <link refid="classqasm_1_1exec_1_1executable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="341">
+        <label>qasm::exec::label</label>
+        <link refid="classqasm_1_1exec_1_1label"/>
+        <childnode refid="342" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>qasm::exec::executable</label>
+        <link refid="classqasm_1_1exec_1_1executable"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/runtime.hpp" line="412" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="412" bodyend="416"/>
+    <listofallmembers>
+      <member refid="classqasm_1_1exec_1_1executable_1ad07f864a889edb0777ebbb1bc1628121" prot="public" virt="virtual"><scope>qasm::exec::label</scope><name>invoke_rootprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" prot="public" virt="virtual"><scope>qasm::exec::label</scope><name>invoke_subprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1label_1aea2a4500ead46240c26215b6d964fae4" prot="public" virt="non-virtual"><scope>qasm::exec::label</scope><name>label</name></member>
+      <member refid="classqasm_1_1exec_1_1label_1ae88393dae0bd5ddbe32a65cfb2d8f247" prot="public" virt="non-virtual"><scope>qasm::exec::label</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

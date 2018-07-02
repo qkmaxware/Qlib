@@ -379,6 +379,7 @@ namespace exec {
             declaration(string t, string n, u64 s) : type(t), name(n), size(s) {}
 
             virtual void invoke_rootprogram(runtime::environment& env) {
+                cout << "DELCARE: " << type << " " << name << " " << size << endl;
                 if(type == "qreg"){
                     env.setQreg(name, size);
                 }else if(type == "creg"){
@@ -396,6 +397,23 @@ namespace exec {
             };
     };
 
+    /// <Summary>
+    /// Instruction to import a file
+    /// </Summary>
+    class import : public executable {
+        public:
+            string filename;
+            import(string file) : filename(file) {}
+    };
+
+    /// <Summary>
+    /// Instruction to label a line
+    /// </Summary>
+    class label : public executable {
+        public:
+            string name;
+            label(string name) : name(name) {}
+    };
 }
 }
 

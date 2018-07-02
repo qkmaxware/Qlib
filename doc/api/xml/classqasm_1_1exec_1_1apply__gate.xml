@@ -87,25 +87,25 @@
     <detaileddescription>
 <para>Instruction to apply a gate to a register </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="187">
+      <node id="243">
         <label>qasm::exec::apply_gate</label>
         <link refid="classqasm_1_1exec_1_1apply__gate"/>
-        <childnode refid="188" relation="public-inheritance">
+        <childnode refid="244" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="188">
+      <node id="244">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="189">
+      <node id="245">
         <label>qasm::exec::apply_gate</label>
         <link refid="classqasm_1_1exec_1_1apply__gate"/>
-        <childnode refid="190" relation="public-inheritance">
+        <childnode refid="246" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="190">
+      <node id="246">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>

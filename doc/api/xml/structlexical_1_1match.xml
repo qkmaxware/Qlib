@@ -103,14 +103,14 @@
     <detaileddescription>
 <para>Class representing a regex match in a lexed document including row and column indexes </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="278">
+      <node id="354">
         <label>lexical::match</label>
         <link refid="structlexical_1_1match"/>
-        <childnode refid="279" relation="usage">
+        <childnode refid="355" relation="usage">
           <edgelabel>lexemeptr</edgelabel>
         </childnode>
       </node>
-      <node id="279">
+      <node id="355">
         <label>lexical::lexeme</label>
         <link refid="classlexical_1_1lexeme"/>
       </node>
