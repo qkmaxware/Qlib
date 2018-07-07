@@ -6,193 +6,53 @@
     <includes local="no">vector</includes>
     <includes refid="qlib_8h" local="yes">qlib.h</includes>
     <incdepgraph>
-      <node id="1015">
+      <node id="1017">
         <label>limits</label>
       </node>
-      <node id="1012">
+      <node id="1014">
         <label>./general/object.hpp</label>
         <link refid="object_8hpp"/>
-        <childnode refid="1013" relation="include">
+        <childnode refid="1015" relation="include">
         </childnode>
-        <childnode refid="1009" relation="include">
-        </childnode>
-        <childnode refid="1016" relation="include">
-        </childnode>
-        <childnode refid="1017" relation="include">
+        <childnode refid="1011" relation="include">
         </childnode>
         <childnode refid="1018" relation="include">
         </childnode>
         <childnode refid="1019" relation="include">
         </childnode>
-      </node>
-      <node id="1014">
-        <label>stdint.h</label>
-      </node>
-      <node id="1022">
-        <label>stdlib.h</label>
-      </node>
-      <node id="1023">
-        <label>./math/matrix.hpp</label>
-        <link refid="matrix_8hpp"/>
         <childnode refid="1020" relation="include">
-        </childnode>
-        <childnode refid="1012" relation="include">
-        </childnode>
-        <childnode refid="1024" relation="include">
-        </childnode>
-        <childnode refid="1010" relation="include">
         </childnode>
         <childnode refid="1021" relation="include">
         </childnode>
-        <childnode refid="1016" relation="include">
-        </childnode>
+      </node>
+      <node id="1016">
+        <label>stdint.h</label>
+      </node>
+      <node id="1024">
+        <label>stdlib.h</label>
       </node>
       <node id="1025">
-        <label>./quantum/systems/qubit.hpp</label>
-        <link refid="qubit_8hpp"/>
-        <childnode refid="1012" relation="include">
+        <label>./math/matrix.hpp</label>
+        <link refid="matrix_8hpp"/>
+        <childnode refid="1022" relation="include">
         </childnode>
-        <childnode refid="1020" relation="include">
-        </childnode>
-        <childnode refid="1023" relation="include">
+        <childnode refid="1014" relation="include">
         </childnode>
         <childnode refid="1026" relation="include">
         </childnode>
-        <childnode refid="1027" relation="include">
-        </childnode>
-        <childnode refid="1021" relation="include">
-        </childnode>
-        <childnode refid="1016" relation="include">
-        </childnode>
-        <childnode refid="1010" relation="include">
-        </childnode>
-      </node>
-      <node id="1037">
-        <label>cmath</label>
-      </node>
-      <node id="1026">
-        <label>./../gates/igate.hpp</label>
-        <link refid="igate_8hpp"/>
         <childnode refid="1012" relation="include">
-        </childnode>
-        <childnode refid="1020" relation="include">
         </childnode>
         <childnode refid="1023" relation="include">
         </childnode>
-      </node>
-      <node id="1024">
-        <label>stdexcept</label>
-      </node>
-      <node id="1036">
-        <label>./gates/phase.hpp</label>
-        <link refid="phase_8hpp"/>
-        <childnode refid="1031" relation="include">
-        </childnode>
-        <childnode refid="1021" relation="include">
-        </childnode>
-        <childnode refid="1037" relation="include">
-        </childnode>
-      </node>
-      <node id="1030">
-        <label>./gates/ident.hpp</label>
-        <link refid="ident_8hpp"/>
-        <childnode refid="1031" relation="include">
+        <childnode refid="1018" relation="include">
         </childnode>
       </node>
       <node id="1027">
-        <label>system.hpp</label>
-        <link refid="system_8hpp"/>
-        <childnode refid="1012" relation="include">
-        </childnode>
-        <childnode refid="1020" relation="include">
-        </childnode>
-        <childnode refid="1023" relation="include">
-        </childnode>
-        <childnode refid="1026" relation="include">
-        </childnode>
-      </node>
-      <node id="1045">
-        <label>map</label>
-      </node>
-      <node id="1017">
-        <label>exception</label>
-      </node>
-      <node id="1008">
-        <label>src/core/main.cpp</label>
-        <link refid="core/main.cpp"/>
-        <childnode refid="1009" relation="include">
-        </childnode>
-        <childnode refid="1010" relation="include">
-        </childnode>
-        <childnode refid="1011" relation="include">
-        </childnode>
-      </node>
-      <node id="1044">
-        <label>./quantum/systems/ensemble.hpp</label>
-        <link refid="ensemble_8hpp"/>
-        <childnode refid="1027" relation="include">
-        </childnode>
-        <childnode refid="1010" relation="include">
-        </childnode>
-        <childnode refid="1045" relation="include">
-        </childnode>
-      </node>
-      <node id="1018">
-        <label>random</label>
-      </node>
-      <node id="1031">
-        <label>onequbitgate.hpp</label>
-        <link refid="onequbitgate_8hpp"/>
-        <childnode refid="1026" relation="include">
-        </childnode>
-        <childnode refid="1016" relation="include">
-        </childnode>
-      </node>
-      <node id="1042">
-        <label>./gates/toffoli.hpp</label>
-        <link refid="toffoli_8hpp"/>
-        <childnode refid="1043" relation="include">
-        </childnode>
-        <childnode refid="1033" relation="include">
-        </childnode>
-      </node>
-      <node id="1020">
-        <label>./math/complex.hpp</label>
-        <link refid="complex_8hpp"/>
-        <childnode refid="1012" relation="include">
-        </childnode>
-        <childnode refid="1021" relation="include">
+        <label>./quantum/systems/qubit.hpp</label>
+        <link refid="qubit_8hpp"/>
+        <childnode refid="1014" relation="include">
         </childnode>
         <childnode refid="1022" relation="include">
-        </childnode>
-        <childnode refid="1016" relation="include">
-        </childnode>
-      </node>
-      <node id="1033">
-        <label>./gates/pauliX.hpp</label>
-        <link refid="pauliX_8hpp"/>
-        <childnode refid="1031" relation="include">
-        </childnode>
-      </node>
-      <node id="1010">
-        <label>vector</label>
-      </node>
-      <node id="1034">
-        <label>./gates/pauliY.hpp</label>
-        <link refid="pauliY_8hpp"/>
-        <childnode refid="1031" relation="include">
-        </childnode>
-      </node>
-      <node id="1011">
-        <label>qlib.h</label>
-        <link refid="qlib_8h"/>
-        <childnode refid="1012" relation="include">
-        </childnode>
-        <childnode refid="1013" relation="include">
-        </childnode>
-        <childnode refid="1020" relation="include">
-        </childnode>
-        <childnode refid="1023" relation="include">
         </childnode>
         <childnode refid="1025" relation="include">
         </childnode>
@@ -200,78 +60,214 @@
         </childnode>
         <childnode refid="1029" relation="include">
         </childnode>
-        <childnode refid="1027" relation="include">
+        <childnode refid="1023" relation="include">
         </childnode>
-        <childnode refid="1044" relation="include">
+        <childnode refid="1018" relation="include">
         </childnode>
-      </node>
-      <node id="1038">
-        <label>./gates/cnot.hpp</label>
-        <link refid="cnot_8hpp"/>
-        <childnode refid="1039" relation="include">
-        </childnode>
-        <childnode refid="1033" relation="include">
-        </childnode>
-      </node>
-      <node id="1016">
-        <label>sstream</label>
-      </node>
-      <node id="1035">
-        <label>./gates/pauliZ.hpp</label>
-        <link refid="pauliZ_8hpp"/>
-        <childnode refid="1031" relation="include">
-        </childnode>
-      </node>
-      <node id="1028">
-        <label>./quantum/systems/qreg.hpp</label>
-        <link refid="qreg_8hpp"/>
         <childnode refid="1012" relation="include">
         </childnode>
-        <childnode refid="1020" relation="include">
+      </node>
+      <node id="1039">
+        <label>cmath</label>
+      </node>
+      <node id="1028">
+        <label>./../gates/igate.hpp</label>
+        <link refid="igate_8hpp"/>
+        <childnode refid="1014" relation="include">
+        </childnode>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+      </node>
+      <node id="1026">
+        <label>stdexcept</label>
+      </node>
+      <node id="1038">
+        <label>./gates/phase.hpp</label>
+        <link refid="phase_8hpp"/>
+        <childnode refid="1033" relation="include">
         </childnode>
         <childnode refid="1023" relation="include">
         </childnode>
-        <childnode refid="1026" relation="include">
-        </childnode>
-        <childnode refid="1027" relation="include">
-        </childnode>
-        <childnode refid="1015" relation="include">
-        </childnode>
-        <childnode refid="1021" relation="include">
-        </childnode>
-        <childnode refid="1016" relation="include">
-        </childnode>
-        <childnode refid="1010" relation="include">
+        <childnode refid="1039" relation="include">
         </childnode>
       </node>
-      <node id="1041">
-        <label>./gates/cz.hpp</label>
-        <link refid="cz_8hpp"/>
-        <childnode refid="1039" relation="include">
+      <node id="1032">
+        <label>./gates/ident.hpp</label>
+        <link refid="ident_8hpp"/>
+        <childnode refid="1033" relation="include">
+        </childnode>
+      </node>
+      <node id="1029">
+        <label>system.hpp</label>
+        <link refid="system_8hpp"/>
+        <childnode refid="1014" relation="include">
+        </childnode>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1028" relation="include">
+        </childnode>
+      </node>
+      <node id="1047">
+        <label>map</label>
+      </node>
+      <node id="1019">
+        <label>exception</label>
+      </node>
+      <node id="1010">
+        <label>src/core/main.cpp</label>
+        <link refid="core/main.cpp"/>
+        <childnode refid="1011" relation="include">
+        </childnode>
+        <childnode refid="1012" relation="include">
+        </childnode>
+        <childnode refid="1013" relation="include">
+        </childnode>
+      </node>
+      <node id="1046">
+        <label>./quantum/systems/ensemble.hpp</label>
+        <link refid="ensemble_8hpp"/>
+        <childnode refid="1029" relation="include">
+        </childnode>
+        <childnode refid="1012" relation="include">
+        </childnode>
+        <childnode refid="1047" relation="include">
+        </childnode>
+      </node>
+      <node id="1020">
+        <label>random</label>
+      </node>
+      <node id="1033">
+        <label>onequbitgate.hpp</label>
+        <link refid="onequbitgate_8hpp"/>
+        <childnode refid="1028" relation="include">
+        </childnode>
+        <childnode refid="1018" relation="include">
+        </childnode>
+      </node>
+      <node id="1044">
+        <label>./gates/toffoli.hpp</label>
+        <link refid="toffoli_8hpp"/>
+        <childnode refid="1045" relation="include">
         </childnode>
         <childnode refid="1035" relation="include">
         </childnode>
       </node>
-      <node id="1021">
-        <label>math.h</label>
-      </node>
-      <node id="1009">
-        <label>iostream</label>
-      </node>
-      <node id="1032">
-        <label>./gates/hadamard.hpp</label>
-        <link refid="hadamard_8hpp"/>
-        <childnode refid="1031" relation="include">
+      <node id="1022">
+        <label>./math/complex.hpp</label>
+        <link refid="complex_8hpp"/>
+        <childnode refid="1014" relation="include">
+        </childnode>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1018" relation="include">
         </childnode>
       </node>
-      <node id="1029">
-        <label>./quantum/standard_gates.hpp</label>
-        <link refid="standard__gates_8hpp"/>
+      <node id="1035">
+        <label>./gates/pauliX.hpp</label>
+        <link refid="pauliX_8hpp"/>
+        <childnode refid="1033" relation="include">
+        </childnode>
+      </node>
+      <node id="1012">
+        <label>vector</label>
+      </node>
+      <node id="1036">
+        <label>./gates/pauliY.hpp</label>
+        <link refid="pauliY_8hpp"/>
+        <childnode refid="1033" relation="include">
+        </childnode>
+      </node>
+      <node id="1013">
+        <label>qlib.h</label>
+        <link refid="qlib_8h"/>
+        <childnode refid="1014" relation="include">
+        </childnode>
+        <childnode refid="1015" relation="include">
+        </childnode>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1027" relation="include">
+        </childnode>
         <childnode refid="1030" relation="include">
         </childnode>
-        <childnode refid="1032" relation="include">
+        <childnode refid="1031" relation="include">
         </childnode>
+        <childnode refid="1029" relation="include">
+        </childnode>
+        <childnode refid="1046" relation="include">
+        </childnode>
+      </node>
+      <node id="1040">
+        <label>./gates/cnot.hpp</label>
+        <link refid="cnot_8hpp"/>
+        <childnode refid="1041" relation="include">
+        </childnode>
+        <childnode refid="1035" relation="include">
+        </childnode>
+      </node>
+      <node id="1018">
+        <label>sstream</label>
+      </node>
+      <node id="1037">
+        <label>./gates/pauliZ.hpp</label>
+        <link refid="pauliZ_8hpp"/>
         <childnode refid="1033" relation="include">
+        </childnode>
+      </node>
+      <node id="1030">
+        <label>./quantum/systems/qreg.hpp</label>
+        <link refid="qreg_8hpp"/>
+        <childnode refid="1014" relation="include">
+        </childnode>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1028" relation="include">
+        </childnode>
+        <childnode refid="1029" relation="include">
+        </childnode>
+        <childnode refid="1017" relation="include">
+        </childnode>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1018" relation="include">
+        </childnode>
+        <childnode refid="1012" relation="include">
+        </childnode>
+      </node>
+      <node id="1043">
+        <label>./gates/cz.hpp</label>
+        <link refid="cz_8hpp"/>
+        <childnode refid="1041" relation="include">
+        </childnode>
+        <childnode refid="1037" relation="include">
+        </childnode>
+      </node>
+      <node id="1023">
+        <label>math.h</label>
+      </node>
+      <node id="1011">
+        <label>iostream</label>
+      </node>
+      <node id="1034">
+        <label>./gates/hadamard.hpp</label>
+        <link refid="hadamard_8hpp"/>
+        <childnode refid="1033" relation="include">
+        </childnode>
+      </node>
+      <node id="1031">
+        <label>./quantum/standard_gates.hpp</label>
+        <link refid="standard__gates_8hpp"/>
+        <childnode refid="1032" relation="include">
         </childnode>
         <childnode refid="1034" relation="include">
         </childnode>
@@ -279,52 +275,56 @@
         </childnode>
         <childnode refid="1036" relation="include">
         </childnode>
+        <childnode refid="1037" relation="include">
+        </childnode>
         <childnode refid="1038" relation="include">
         </childnode>
         <childnode refid="1040" relation="include">
         </childnode>
-        <childnode refid="1041" relation="include">
-        </childnode>
         <childnode refid="1042" relation="include">
         </childnode>
+        <childnode refid="1043" relation="include">
+        </childnode>
+        <childnode refid="1044" relation="include">
+        </childnode>
       </node>
-      <node id="1019">
+      <node id="1021">
         <label>chrono</label>
       </node>
-      <node id="1040">
+      <node id="1042">
         <label>./gates/cy.hpp</label>
         <link refid="cy_8hpp"/>
-        <childnode refid="1039" relation="include">
+        <childnode refid="1041" relation="include">
         </childnode>
-        <childnode refid="1034" relation="include">
+        <childnode refid="1036" relation="include">
         </childnode>
       </node>
-      <node id="1013">
+      <node id="1015">
         <label>./types.h</label>
         <link refid="types_8h"/>
-        <childnode refid="1014" relation="include">
+        <childnode refid="1016" relation="include">
         </childnode>
-        <childnode refid="1015" relation="include">
+        <childnode refid="1017" relation="include">
         </childnode>
       </node>
-      <node id="1039">
+      <node id="1041">
         <label>controlledgate.hpp</label>
         <link refid="controlledgate_8hpp"/>
-        <childnode refid="1026" relation="include">
+        <childnode refid="1028" relation="include">
         </childnode>
-        <childnode refid="1031" relation="include">
+        <childnode refid="1033" relation="include">
         </childnode>
-        <childnode refid="1016" relation="include">
+        <childnode refid="1018" relation="include">
         </childnode>
       </node>
-      <node id="1043">
+      <node id="1045">
         <label>controlled2gate.hpp</label>
         <link refid="controlled2gate_8hpp"/>
-        <childnode refid="1026" relation="include">
+        <childnode refid="1028" relation="include">
         </childnode>
-        <childnode refid="1031" relation="include">
+        <childnode refid="1033" relation="include">
         </childnode>
-        <childnode refid="1016" relation="include">
+        <childnode refid="1018" relation="include">
         </childnode>
       </node>
     </incdepgraph>

@@ -7,7 +7,7 @@
 #include <stack>
 #include <map>
 #include <string>
-//#include <filesystem>
+#include <algorithm>
 
 #include "./lexer.hpp"
 #include "./parser.hpp"
@@ -375,10 +375,10 @@ class compiler {
 
                     //Iterate over all rules determining if the tokens match
                     size_t index = 0;
-                    for(vector<match>::iterator iq = tokens.begin(); iq != tokens.end(); iq++){
-                        cout << iq->toString() << " ";
-                    }
-                    cout << endl;
+                    //for(vector<match>::iterator iq = tokens.begin(); iq != tokens.end(); iq++){
+                        //cout << iq->toString() << " ";
+                    //}
+                    //cout << endl;
                     for(vector<parser::ruleptr>::iterator it = rules.begin(); it != rules.end(); it++){
                         parser::parsetree pt;
                         parser::tokenqueue q(tokens);
@@ -447,17 +447,21 @@ qasm::exec::executable* convert_gate_application (parser::parsetree& ref){
         parser::parsetree* node = list.top();
         list.pop();
         if(node->isBranch()){
-            list.push(&(node->getLeft()));
-            list.push(&(node->getRight()));
+            for(size_t t = 0; t < node->size(); t++){
+                list.push(&(node->getChild(t)));
+            }
         }else{
             if(node->value.lexemeptr->name == "Reference"){
-
+                name = node->value.content[0];
             }else if(node->value.lexemeptr->name == "Indexor"){
                 params.push_back(node->value.content[1]);
                 indecies.push_back(std::stol(node->value.content[2]));
             }
         }
     }
+    
+    std::reverse(params.begin(), params.end());
+    std::reverse(indecies.begin(), indecies.end());
 
     qasm::exec::apply_gate* rule = new qasm::exec::apply_gate(name);
     rule->param_names = params;
@@ -472,8 +476,8 @@ qasm::exec::executable* convert_typedef (parser::parsetree& ref){
     string type;
     u64 size;
 
-    name = ref.getLeft().getLeft().getLeft().getLeft().value.content[0];
-    type = ref.getLeft().getLeft().getLeft().getRight().value.content[0];
+    name = ref.getLeft().getLeft().getLeft().getRight().value.content[0];
+    type = ref.getLeft().getLeft().getLeft().getLeft().value.content[0];
     size = std::stol(ref.getLeft().getRight().value.content[0]);
 
     qasm::exec::declaration* ptr = new qasm::exec::declaration(type, name, size);
@@ -484,7 +488,6 @@ qasm::exec::executable* convert_typedef (parser::parsetree& ref){
 /// </Summary>
 qasm::exec::executable* convert_measurement (parser::parsetree& ref){
     //two ways to measure
-    return new qasm::exec::measurement("","");
     if(ref.getRight().getRight().value.lexemeptr->name == "Reference"){
         string first = ref.getRight().getLeft().getLeft().value.content[0];
         string second = ref.getRight().getRight().value.content[0];

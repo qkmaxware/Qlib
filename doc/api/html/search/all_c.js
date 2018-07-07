@@ -9,6 +9,7 @@ var searchData=
   ['major',['MAJOR',['../runtime_2main_8cpp.html#a877cce34f3e58fd7f9194fab90724cb8',1,'main.cpp']]],
   ['manager',['manager',['../classqlib_1_1ide_1_1QLibIDE.html#a5af68fc042aeee1b69f27f3e1e67610b',1,'qlib::ide::QLibIDE']]],
   ['match',['match',['../structlexical_1_1match.html',1,'lexical']]],
+  ['match',['match',['../structlexical_1_1match.html#ace4aee5410296a2cfca192700098891a',1,'lexical::match']]],
   ['matches',['matches',['../classlexical_1_1lexeme.html#a26fd45099f7e056db7f39cd9f222cf97',1,'lexical::lexeme']]],
   ['matchexists',['matchExists',['../structlexical_1_1match.html#aafa3ddcad89ea3abb86b557cafe3e0d7',1,'lexical::match']]],
   ['matrix',['matrix',['../classqlib_1_1math_1_1matrix.html',1,'qlib::math']]],

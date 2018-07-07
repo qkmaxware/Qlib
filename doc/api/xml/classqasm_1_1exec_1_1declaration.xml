@@ -16,7 +16,7 @@
 <para>Type of variable to declare </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="369" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="369" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="370" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="370" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classqasm_1_1exec_1_1declaration_1a72faf3aa92a6a3d100ff0f7ddf0aab65" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -29,7 +29,7 @@
 <para>Name of variable to declare </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="373" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="373" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="374" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="374" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classqasm_1_1exec_1_1declaration_1a53d08c265c26517db99871b3dd54cf89" prot="public" static="no" mutable="no">
         <type>u64</type>
@@ -42,7 +42,7 @@
 <para>Size of variable </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="377" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="377" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="378" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="378" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="379" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="379" bodyend="379"/>
+        <location file="src/runtime/runtime.hpp" line="380" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="380" bodyend="380"/>
       </memberdef>
       <memberdef kind="function" id="classqasm_1_1exec_1_1declaration_1a4f1396fca212fb0ce984d2cea90df0a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -87,7 +87,7 @@
 <para>Run instruction&apos;s primary operation </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="381" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="381" bodyend="397"/>
+        <location file="src/runtime/runtime.hpp" line="382" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="382" bodyend="397"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -118,7 +118,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/runtime.hpp" line="364" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="364" bodyend="398"/>
+    <location file="src/runtime/runtime.hpp" line="365" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="365" bodyend="398"/>
     <listofallmembers>
       <member refid="classqasm_1_1exec_1_1declaration_1ae8f3a47af0a26055fb6fc90303defbeb" prot="public" virt="non-virtual"><scope>qasm::exec::declaration</scope><name>declaration</name></member>
       <member refid="classqasm_1_1exec_1_1declaration_1a4f1396fca212fb0ce984d2cea90df0a8" prot="public" virt="virtual"><scope>qasm::exec::declaration</scope><name>invoke_rootprogram</name></member>

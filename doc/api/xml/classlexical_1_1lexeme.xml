@@ -15,7 +15,7 @@
 <para>Lexeme name </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/lexer.hpp" line="66" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="66" bodyend="-1"/>
+        <location file="src/runtime/lexer.hpp" line="81" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlexical_1_1lexeme_1a8265b6f1e87790a3ca3fcd82b5543726" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -28,7 +28,7 @@
 <para>Lexeme regular expression pattern </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/lexer.hpp" line="70" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="70" bodyend="-1"/>
+        <location file="src/runtime/lexer.hpp" line="85" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="85" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlexical_1_1lexeme_1a2185fc486b1c6c75a57a3e30155eed15" prot="public" static="no" mutable="no">
         <type>std::regex</type>
@@ -41,7 +41,7 @@
 <para>Compiled regex lexeme </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/lexer.hpp" line="74" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="74" bodyend="-1"/>
+        <location file="src/runtime/lexer.hpp" line="89" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlexical_1_1lexeme_1accc3564ad951f163e3cf4dd8f93ede15" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -54,7 +54,7 @@
 <para>Flag to test if this lexeme can be skipped in results </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/lexer.hpp" line="78" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="78" bodyend="-1"/>
+        <location file="src/runtime/lexer.hpp" line="93" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="93" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -77,7 +77,7 @@
 <para>Create a lexeme from a name and regex pattern </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/lexer.hpp" line="83" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="83" bodyend="83"/>
+        <location file="src/runtime/lexer.hpp" line="98" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="98" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="classlexical_1_1lexeme_1a26fd45099f7e056db7f39cd9f222cf97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -98,7 +98,7 @@
 <para>Test if this lexeme can be extracted from a string </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/lexer.hpp" line="88" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="88" bodyend="90"/>
+        <location file="src/runtime/lexer.hpp" line="103" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="103" bodyend="105"/>
       </memberdef>
       <memberdef kind="function" id="classlexical_1_1lexeme_1ade092b47d889c338daa38902409747ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structlexical_1_1match" kindref="compound">match</ref></type>
@@ -127,14 +127,14 @@
 <para>Extract a match from a string </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/lexer.hpp" line="95" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="95" bodyend="120"/>
+        <location file="src/runtime/lexer.hpp" line="110" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="110" bodyend="135"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>Class representing a lexical literal using regular expressions </para>    </detaileddescription>
-    <location file="src/runtime/lexer.hpp" line="61" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="61" bodyend="122"/>
+    <location file="src/runtime/lexer.hpp" line="76" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="76" bodyend="137"/>
     <listofallmembers>
       <member refid="classlexical_1_1lexeme_1ade092b47d889c338daa38902409747ab" prot="public" virt="non-virtual"><scope>lexical::lexeme</scope><name>extract</name></member>
       <member refid="classlexical_1_1lexeme_1a2a69e7860946ccb70ab8f8ca0970ca42" prot="public" virt="non-virtual"><scope>lexical::lexeme</scope><name>lexeme</name></member>

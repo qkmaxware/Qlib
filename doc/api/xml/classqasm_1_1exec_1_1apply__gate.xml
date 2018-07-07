@@ -79,7 +79,7 @@
 <para>Run instruction&apos;s primary operation </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="206" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="206" bodyend="256"/>
+        <location file="src/runtime/runtime.hpp" line="206" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="206" bodyend="257"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -110,7 +110,7 @@
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/runtime.hpp" line="189" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="189" bodyend="257"/>
+    <location file="src/runtime/runtime.hpp" line="189" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="189" bodyend="258"/>
     <listofallmembers>
       <member refid="classqasm_1_1exec_1_1apply__gate_1a0e7787396ea68b95df1e6a395cd21f2e" prot="public" virt="non-virtual"><scope>qasm::exec::apply_gate</scope><name>apply_gate</name></member>
       <member refid="classqasm_1_1exec_1_1apply__gate_1a4ab94a7feee1830b4be52a487e9cdef5" prot="public" virt="virtual"><scope>qasm::exec::apply_gate</scope><name>invoke_rootprogram</name></member>

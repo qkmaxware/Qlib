@@ -6,8 +6,7 @@
 
 
 
-Collaboration diagram for parser\+:\+:parsetree\+:
-\nopagebreak
+Collaboration diagram for parser\+:\+:parsetree\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,9 +20,15 @@ bool \hyperlink{structparser_1_1parsetree_a8ba2bf7b05dd8e858edf2fab9f3d0165}{is\
 \item 
 bool \hyperlink{structparser_1_1parsetree_a2e876beca6bc762fa2ecb849f681f311}{is\+Branch} ()
 \item 
+bool \hyperlink{structparser_1_1parsetree_a460a38e7e9a33cafe00c7f7b2163f75a}{is\+Binary} ()
+\item 
 \hyperlink{structparser_1_1parsetree}{parsetree} \& \hyperlink{structparser_1_1parsetree_a74fd9e1633a6581f3c07a6263a686bd3}{get\+Left} ()
 \item 
 \hyperlink{structparser_1_1parsetree}{parsetree} \& \hyperlink{structparser_1_1parsetree_a3f158cea846ac57f787eb81a9ac2477f}{get\+Right} ()
+\item 
+size\+\_\+t \hyperlink{structparser_1_1parsetree_a791b5113d65303aa8d272b0eb749cb54}{size} ()
+\item 
+\hyperlink{structparser_1_1parsetree}{parsetree} \& \hyperlink{structparser_1_1parsetree_af238368fcc40aea999cab62ba7d74fda}{get\+Child} (size\+\_\+t i)
 \item 
 void \hyperlink{structparser_1_1parsetree_ada59e97da6280e95cf96cbb8f85df364}{print} ()
 \end{DoxyCompactItemize}
@@ -40,7 +45,14 @@ vector$<$ \hyperlink{structparser_1_1parsetree}{parsetree} $>$ \hyperlink{struct
 Class representing a single node in an abstract tree structure 
 
 \subsection{Member Function Documentation}
-\index{parser\+::parsetree@{parser\+::parsetree}!get\+Left@{get\+Left}}
+\index{parser\+::parsetree@{parser\+::parsetree}!get\+Child@{get\+Child}}
+\index{get\+Child@{get\+Child}!parser\+::parsetree@{parser\+::parsetree}}
+\subsubsection[{\texorpdfstring{get\+Child(size\+\_\+t i)}{getChild(size_t i)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parsetree}\& parser\+::parsetree\+::get\+Child (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structparser_1_1parsetree_af238368fcc40aea999cab62ba7d74fda}{}\label{structparser_1_1parsetree_af238368fcc40aea999cab62ba7d74fda}
+Get a specific child element \index{parser\+::parsetree@{parser\+::parsetree}!get\+Left@{get\+Left}}
 \index{get\+Left@{get\+Left}!parser\+::parsetree@{parser\+::parsetree}}
 \subsubsection[{\texorpdfstring{get\+Left()}{getLeft()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parsetree}\& parser\+::parsetree\+::get\+Left (
 \begin{DoxyParamCaption}
@@ -54,7 +66,14 @@ If tree is binary, get the left hand child (index 0) \index{parser\+::parsetree@
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structparser_1_1parsetree_a3f158cea846ac57f787eb81a9ac2477f}{}\label{structparser_1_1parsetree_a3f158cea846ac57f787eb81a9ac2477f}
-If tree is binary, get the right hand child (index 1) \index{parser\+::parsetree@{parser\+::parsetree}!is\+Branch@{is\+Branch}}
+If tree is binary, get the right hand child (index 1) \index{parser\+::parsetree@{parser\+::parsetree}!is\+Binary@{is\+Binary}}
+\index{is\+Binary@{is\+Binary}!parser\+::parsetree@{parser\+::parsetree}}
+\subsubsection[{\texorpdfstring{is\+Binary()}{isBinary()}}]{\setlength{\rightskip}{0pt plus 5cm}bool parser\+::parsetree\+::is\+Binary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structparser_1_1parsetree_a460a38e7e9a33cafe00c7f7b2163f75a}{}\label{structparser_1_1parsetree_a460a38e7e9a33cafe00c7f7b2163f75a}
+Test if the parse tree node is binary \index{parser\+::parsetree@{parser\+::parsetree}!is\+Branch@{is\+Branch}}
 \index{is\+Branch@{is\+Branch}!parser\+::parsetree@{parser\+::parsetree}}
 \subsubsection[{\texorpdfstring{is\+Branch()}{isBranch()}}]{\setlength{\rightskip}{0pt plus 5cm}bool parser\+::parsetree\+::is\+Branch (
 \begin{DoxyParamCaption}
@@ -75,7 +94,14 @@ Check if node has no children \index{parser\+::parsetree@{parser\+::parsetree}!p
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structparser_1_1parsetree_ada59e97da6280e95cf96cbb8f85df364}{}\label{structparser_1_1parsetree_ada59e97da6280e95cf96cbb8f85df364}
-Print tree to standard out, usefull in debugging 
+Print tree to standard out, usefull in debugging \index{parser\+::parsetree@{parser\+::parsetree}!size@{size}}
+\index{size@{size}!parser\+::parsetree@{parser\+::parsetree}}
+\subsubsection[{\texorpdfstring{size()}{size()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t parser\+::parsetree\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structparser_1_1parsetree_a791b5113d65303aa8d272b0eb749cb54}{}\label{structparser_1_1parsetree_a791b5113d65303aa8d272b0eb749cb54}
+Number of children elements 
 
 \subsection{Member Data Documentation}
 \index{parser\+::parsetree@{parser\+::parsetree}!children@{children}}

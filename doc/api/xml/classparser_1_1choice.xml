@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="320" column="1" bodyfile="src/runtime/parser.hpp" bodystart="320" bodyend="-1"/>
+        <location file="src/runtime/parser.hpp" line="339" column="1" bodyfile="src/runtime/parser.hpp" bodystart="339" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classparser_1_1choice_1a5cd2aac2dea54c11da1495cacd00db10" prot="private" static="no" mutable="no">
         <type><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="321" column="1" bodyfile="src/runtime/parser.hpp" bodystart="321" bodyend="-1"/>
+        <location file="src/runtime/parser.hpp" line="340" column="1" bodyfile="src/runtime/parser.hpp" bodystart="340" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="323" column="1" bodyfile="src/runtime/parser.hpp" bodystart="323" bodyend="325"/>
+        <location file="src/runtime/parser.hpp" line="342" column="1" bodyfile="src/runtime/parser.hpp" bodystart="342" bodyend="344"/>
       </memberdef>
       <memberdef kind="function" id="classparser_1_1choice_1ad6fe3cd8e19171e387c8ff34e1291f83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="326" column="1" bodyfile="src/runtime/parser.hpp" bodystart="326" bodyend="328"/>
+        <location file="src/runtime/parser.hpp" line="345" column="1" bodyfile="src/runtime/parser.hpp" bodystart="345" bodyend="347"/>
       </memberdef>
       <memberdef kind="function" id="classparser_1_1choice_1a76d73bd6b3adb0c8a062b46a4d49cd11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -87,7 +87,7 @@
 <para>Virtual function to parse an input tokenqueue into a parse tree Returns true if parsing successful and sets the value under the parsetree pointer </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="329" column="1" bodyfile="src/runtime/parser.hpp" bodystart="329" bodyend="343"/>
+        <location file="src/runtime/parser.hpp" line="348" column="1" bodyfile="src/runtime/parser.hpp" bodystart="348" bodyend="362"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -118,7 +118,7 @@
         <link refid="classparser_1_1rule"/>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/parser.hpp" line="318" column="1" bodyfile="src/runtime/parser.hpp" bodystart="318" bodyend="344"/>
+    <location file="src/runtime/parser.hpp" line="337" column="1" bodyfile="src/runtime/parser.hpp" bodystart="337" bodyend="363"/>
     <listofallmembers>
       <member refid="classparser_1_1choice_1ae9e624b9260ed9006741d6870ea334e4" prot="public" virt="non-virtual"><scope>parser::choice</scope><name>choice</name></member>
       <member refid="classparser_1_1choice_1a7ddb22bce6c8446a35a6fbc9ceaaf962" prot="private" virt="non-virtual"><scope>parser::choice</scope><name>left</name></member>

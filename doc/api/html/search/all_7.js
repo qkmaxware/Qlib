@@ -2,6 +2,7 @@ var searchData=
 [
   ['get',['get',['../classqlib_1_1math_1_1matrix.html#a91fcadaccfcd68adb71de0da6f5d267f',1,'qlib::math::matrix::get(size_t r, size_t c)'],['../classqlib_1_1math_1_1matrix.html#a17dce2bfd8addcb026f6d9159134f1c7',1,'qlib::math::matrix::get(size_t idx)']]],
   ['getactive',['getActive',['../classqlib_1_1ide_1_1FileManager.html#afa5d713317aa1248f7c102dd086e53b8',1,'qlib::ide::FileManager']]],
+  ['getchild',['getChild',['../structparser_1_1parsetree.html#af238368fcc40aea999cab62ba7d74fda',1,'parser::parsetree']]],
   ['getcreg',['getCreg',['../classqasm_1_1runtime_1_1environment.html#a78ac575d7245e21c65fb31e6585c38cc',1,'qasm::runtime::environment']]],
   ['geteditor',['getEditor',['../classqlib_1_1ide_1_1CodeEditor.html#a15327f7a8960ee54f65e4aca0b8e0c69',1,'qlib::ide::CodeEditor']]],
   ['getgate',['getGate',['../classqasm_1_1runtime_1_1environment.html#adb75f9df54d04d4f5d51c92093b5d466',1,'qasm::runtime::environment']]],

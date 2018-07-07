@@ -209,9 +209,9 @@ namespace exec {
                 //Gate doesn't exist
                 if(ptr == NULL){
                     stringstream sb;
-                    sb << "No gate: ";
+                    sb << "No gate: \"";
                     sb << name;
-                    sb << " exists";
+                    sb << "\" exists";
                     throw qasm::runtime::runtimeexception(sb.str());
                 }
                 
@@ -234,10 +234,11 @@ namespace exec {
                     
                     if(*it != name){
                         stringstream sb;
-                        sb << "Expecting gate to operate on register ";
+                        sb << "Expecting gate to operate on register \"";
                         sb << name;
-                        sb << " but got ";
+                        sb << "\" but got \"";
                         sb << (*it);
+                        sb << "\"";
                         throw qasm::runtime::runtimeexception(sb.str());
                     }
                 }
@@ -247,9 +248,9 @@ namespace exec {
                 }else{
                     //Register doesn't exist
                     stringstream sb;
-                    sb << "No quantum register: ";
+                    sb << "No quantum register: \"";
                     sb << name;
-                    sb << " exists";
+                    sb << "\" exists";
                     throw qasm::runtime::runtimeexception(sb.str());
                 }
 
@@ -280,9 +281,9 @@ namespace exec {
                 }else{
                     //Throw exception
                     stringstream sb;
-                    sb << "No register: ";
+                    sb << "No register: \"";
                     sb << reference;
-                    sb << " to print";
+                    sb << "\" to print";
                     throw qasm::runtime::runtimeexception(sb.str());
                 }
                 std::cout << std::endl;
@@ -321,8 +322,8 @@ namespace exec {
             virtual void invoke_rootprogram(runtime::environment& env) {
                 if(!env.hasQreg(qreg) || !env.hasCreg(creg)){
                     stringstream sb;
-                    sb << "Registers: ";
-                    sb << qreg << ", " << creg << " don't correspond to a quantum and classical register pair";
+                    sb << "Registers: \"";
+                    sb << qreg << "\", \"" << creg << "\" don't correspond to a quantum and classical register pair";
                     throw qasm::runtime::runtimeexception(sb.str());
                 }
                 qlib::quantum::qreg& q = env.getQreg(qreg);
@@ -340,15 +341,15 @@ namespace exec {
                     if(qindex < 0 || qindex >= q.size()){
                         //Qbit index out of range
                         stringstream sb;
-                        sb << "Quantum index: ";
-                        sb << qreg << qindex << " out of range";
+                        sb << "Quantum index: \"";
+                        sb << qreg << qindex << "\" out of range";
                         throw qasm::runtime::runtimeexception(sb.str());
                     }
                     if(cindex < 0 || cindex >= c.size()){
                         //Cbit index out of range
                         stringstream sb;
-                        sb << "Classical index: ";
-                        sb << creg << cindex << " out of range";
+                        sb << "Classical index: \"";
+                        sb << creg << cindex << "\" out of range";
                         throw qasm::runtime::runtimeexception(sb.str());
                     }
                     
@@ -379,18 +380,17 @@ namespace exec {
             declaration(string t, string n, u64 s) : type(t), name(n), size(s) {}
 
             virtual void invoke_rootprogram(runtime::environment& env) {
-                cout << "DELCARE: " << type << " " << name << " " << size << endl;
                 if(type == "qreg"){
                     env.setQreg(name, size);
                 }else if(type == "creg"){
                     env.setCreg(name, size);
                 }else{
                     stringstream sb;
-                    sb << "Unknown type: ";
+                    sb << "Unknown type: \"";
                     sb << type;
-                    sb << " can't define variable ";
+                    sb << "\" can't define variable \"";
                     sb << name; 
-                    sb << " of size ";
+                    sb << "\" of size ";
                     sb << size;
                     throw qasm::runtime::runtimeexception(sb.str());
                 }

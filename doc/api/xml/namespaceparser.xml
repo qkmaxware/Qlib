@@ -22,7 +22,7 @@
 <para>A shared pointer to a rule </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="218" column="1" bodyfile="src/runtime/parser.hpp" bodystart="218" bodyend="-1"/>
+        <location file="src/runtime/parser.hpp" line="237" column="1" bodyfile="src/runtime/parser.hpp" bodystart="237" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">

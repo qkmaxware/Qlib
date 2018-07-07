@@ -12,6 +12,7 @@ var classqlib_1_1ide_1_1QLibIDE =
     [ "log_scroll", "classqlib_1_1ide_1_1QLibIDE.html#a74ee30733f7d424f2e518f1171d70917", null ],
     [ "manager", "classqlib_1_1ide_1_1QLibIDE.html#a5af68fc042aeee1b69f27f3e1e67610b", null ],
     [ "menu", "classqlib_1_1ide_1_1QLibIDE.html#ae822573114cbc618b4af0ddf3726b06b", null ],
+    [ "onlineResources", "classqlib_1_1ide_1_1QLibIDE.html#aeaa0895eee29e9d5cf4e657134d56803", null ],
     [ "pane", "classqlib_1_1ide_1_1QLibIDE.html#a599d44725656f74ca6d6fc028b8973a8", null ],
     [ "runtime", "classqlib_1_1ide_1_1QLibIDE.html#a07b6d9558a76bd5d818a98debdb93d5f", null ]
 ];

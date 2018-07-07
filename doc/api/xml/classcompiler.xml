@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/compiler.hpp" line="362" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="362" bodyend="408"/>
+        <location file="src/runtime/compiler.hpp" line="362" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="362" bodyend="407"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -146,7 +146,7 @@
         <link refid="classlexical_1_1lexer"/>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/compiler.hpp" line="345" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="345" bodyend="409"/>
+    <location file="src/runtime/compiler.hpp" line="345" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="345" bodyend="408"/>
     <listofallmembers>
       <member refid="classcompiler_1aac603e3e8c3851dfb420e6e007adbad0" prot="public" virt="non-virtual"><scope>compiler</scope><name>compiler</name></member>
       <member refid="classcompiler_1a76cbb22ce5238f2fd9b3946f541dba0c" prot="public" virt="non-virtual"><scope>compiler</scope><name>converters</name></member>

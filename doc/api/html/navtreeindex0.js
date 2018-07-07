@@ -247,7 +247,7 @@ var NAVTREEINDEX0 =
 "classqlib_1_1ide_1_1OptionsMenu.html":[1,0,3,0,4],
 "classqlib_1_1ide_1_1OptionsMenu.html#a51481ab49936fea97fbf021ae7b37a13":[1,0,3,0,4,0],
 "classqlib_1_1ide_1_1QLibIDE.html":[1,0,3,0,5],
-"classqlib_1_1ide_1_1QLibIDE.html#a07b6d9558a76bd5d818a98debdb93d5f":[1,0,3,0,5,13],
+"classqlib_1_1ide_1_1QLibIDE.html#a07b6d9558a76bd5d818a98debdb93d5f":[1,0,3,0,5,14],
 "classqlib_1_1ide_1_1QLibIDE.html#a13a62cb428150031089c3824f16d6bef":[1,0,3,0,5,7],
 "classqlib_1_1ide_1_1QLibIDE.html#a3eafdf56320c066383975e5b2d22503a":[1,0,3,0,5,0]
 };

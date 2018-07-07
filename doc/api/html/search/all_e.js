@@ -5,6 +5,7 @@ var searchData=
   ['onequbitgate',['onequbitgate',['../classqlib_1_1quantum_1_1gates_1_1onequbitgate.html',1,'qlib::quantum::gates']]],
   ['onequbitgate',['onequbitgate',['../classqlib_1_1quantum_1_1gates_1_1onequbitgate.html#a587ebdfa032f58bf63433c89c6015149',1,'qlib::quantum::gates::onequbitgate']]],
   ['onequbitgate_2ehpp',['onequbitgate.hpp',['../onequbitgate_8hpp.html',1,'']]],
+  ['onlineresources',['onlineResources',['../classqlib_1_1ide_1_1QLibIDE.html#aeaa0895eee29e9d5cf4e657134d56803',1,'qlib::ide::QLibIDE']]],
   ['open',['open',['../classqlib_1_1ide_1_1FileManager.html#a1a740e6ad8726d1caad504a4b7a53859',1,'qlib::ide::FileManager']]],
   ['opentabs',['openTabs',['../classqlib_1_1ide_1_1FileManager.html#af28dcef61bad9a512d4dfba62d9288a3',1,'qlib::ide::FileManager']]],
   ['operate',['operate',['../classqlib_1_1quantum_1_1gates_1_1controlled2gate.html#a272635da6a7b8f65379f6ecb42df9389',1,'qlib::quantum::gates::controlled2gate::operate()'],['../classqlib_1_1quantum_1_1gates_1_1controlledgate.html#aec6e423cc6ae442c5c3c5dc04581959e',1,'qlib::quantum::gates::controlledgate::operate()'],['../classqlib_1_1quantum_1_1gates_1_1igate.html#a66038ee65fec12c627789505e11f1e23',1,'qlib::quantum::gates::igate::operate()'],['../classqlib_1_1quantum_1_1gates_1_1onequbitgate.html#a280c7a7d29032eeb95afcb3d6668e7db',1,'qlib::quantum::gates::onequbitgate::operate()']]],

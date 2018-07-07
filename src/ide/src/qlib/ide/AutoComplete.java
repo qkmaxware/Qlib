@@ -205,6 +205,7 @@ public class AutoComplete {
      */
     private void showSuggestions() {
         if (typedWord == null) {
+            hideSuggestions();
             return;
         }
 
@@ -229,7 +230,11 @@ public class AutoComplete {
                 window.setSize(new Dimension(width, size));
                 window.setVisible(true);
                 list.setSelectedIndex(0);
-            } catch (Exception ex) {}
+            } catch (Exception ex) {
+                hideSuggestions();
+            }
+        }else{
+            hideSuggestions();
         }
     }
 

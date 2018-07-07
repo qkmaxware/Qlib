@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="225" column="1" bodyfile="src/runtime/parser.hpp" bodystart="225" bodyend="-1"/>
+        <location file="src/runtime/parser.hpp" line="244" column="1" bodyfile="src/runtime/parser.hpp" bodystart="244" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classparser_1_1repeater_1ad76ca9d514283b1fa25e20d01b110104" prot="private" static="no" mutable="no">
         <type><ref refid="classparser_1_1repeat" kindref="compound">repeat</ref></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="226" column="1" bodyfile="src/runtime/parser.hpp" bodystart="226" bodyend="-1"/>
+        <location file="src/runtime/parser.hpp" line="245" column="1" bodyfile="src/runtime/parser.hpp" bodystart="245" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="228" column="1" bodyfile="src/runtime/parser.hpp" bodystart="228" bodyend="230"/>
+        <location file="src/runtime/parser.hpp" line="247" column="1" bodyfile="src/runtime/parser.hpp" bodystart="247" bodyend="249"/>
       </memberdef>
       <memberdef kind="function" id="classparser_1_1repeater_1a6f369d919c6f590156e3bb60259f1a45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="231" column="1" bodyfile="src/runtime/parser.hpp" bodystart="231" bodyend="233"/>
+        <location file="src/runtime/parser.hpp" line="250" column="1" bodyfile="src/runtime/parser.hpp" bodystart="250" bodyend="252"/>
       </memberdef>
       <memberdef kind="function" id="classparser_1_1repeater_1acb57c02da3e60b3ca751a2eda3e145c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -87,7 +87,7 @@
 <para>Virtual function to parse an input tokenqueue into a parse tree Returns true if parsing successful and sets the value under the parsetree pointer </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="234" column="1" bodyfile="src/runtime/parser.hpp" bodystart="234" bodyend="254"/>
+        <location file="src/runtime/parser.hpp" line="253" column="1" bodyfile="src/runtime/parser.hpp" bodystart="253" bodyend="273"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -125,7 +125,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/parser.hpp" line="223" column="1" bodyfile="src/runtime/parser.hpp" bodystart="223" bodyend="255"/>
+    <location file="src/runtime/parser.hpp" line="242" column="1" bodyfile="src/runtime/parser.hpp" bodystart="242" bodyend="274"/>
     <listofallmembers>
       <member refid="classparser_1_1repeater_1ad76ca9d514283b1fa25e20d01b110104" prot="private" virt="non-virtual"><scope>parser::repeater</scope><name>rep</name></member>
       <member refid="classparser_1_1repeater_1aa5c267969cb13f7000e1767c2231f56c" prot="public" virt="non-virtual"><scope>parser::repeater</scope><name>repeater</name></member>

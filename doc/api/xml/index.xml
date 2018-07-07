@@ -218,6 +218,8 @@
     <member refid="structlexical_1_1match_1a3a1754ba678051a508ee2889c4a5f4eb" kind="variable"><name>column_start</name></member>
     <member refid="structlexical_1_1match_1abf7eca2de9cee016df02265a38666486" kind="variable"><name>row_end</name></member>
     <member refid="structlexical_1_1match_1ac9b0f6134b653452a2b0ff8b36c89729" kind="variable"><name>column_end</name></member>
+    <member refid="structlexical_1_1match_1ace4aee5410296a2cfca192700098891a" kind="function"><name>match</name></member>
+    <member refid="structlexical_1_1match_1a09ae2bd81b43191fa58ce13c2245b6f9" kind="function"><name>toString</name></member>
     <member refid="structlexical_1_1match_1aafa3ddcad89ea3abb86b557cafe3e0d7" kind="function"><name>matchExists</name></member>
   </compound>
   <compound refid="classqlib_1_1math_1_1matrix" kind="class"><name>qlib::math::matrix</name>
@@ -278,8 +280,11 @@
     <member refid="structparser_1_1parsetree_1a46c4ae92fc6d3fb1ac7cbe2827728149" kind="variable"><name>children</name></member>
     <member refid="structparser_1_1parsetree_1a8ba2bf7b05dd8e858edf2fab9f3d0165" kind="function"><name>isLeaf</name></member>
     <member refid="structparser_1_1parsetree_1a2e876beca6bc762fa2ecb849f681f311" kind="function"><name>isBranch</name></member>
+    <member refid="structparser_1_1parsetree_1a460a38e7e9a33cafe00c7f7b2163f75a" kind="function"><name>isBinary</name></member>
     <member refid="structparser_1_1parsetree_1a74fd9e1633a6581f3c07a6263a686bd3" kind="function"><name>getLeft</name></member>
     <member refid="structparser_1_1parsetree_1a3f158cea846ac57f787eb81a9ac2477f" kind="function"><name>getRight</name></member>
+    <member refid="structparser_1_1parsetree_1a791b5113d65303aa8d272b0eb749cb54" kind="function"><name>size</name></member>
+    <member refid="structparser_1_1parsetree_1af238368fcc40aea999cab62ba7d74fda" kind="function"><name>getChild</name></member>
     <member refid="structparser_1_1parsetree_1ada59e97da6280e95cf96cbb8f85df364" kind="function"><name>print</name></member>
   </compound>
   <compound refid="classqasm_1_1exec_1_1print" kind="class"><name>qasm::exec::print</name>
@@ -304,6 +309,7 @@
   </compound>
   <compound refid="classqlib_1_1ide_1_1QLibIDE" kind="class"><name>qlib::ide::QLibIDE</name>
     <member refid="classqlib_1_1ide_1_1QLibIDE_1ae54da93b399d4d027f33c04ba7e392fd" kind="variable"><name>configLocation</name></member>
+    <member refid="classqlib_1_1ide_1_1QLibIDE_1aeaa0895eee29e9d5cf4e657134d56803" kind="variable"><name>onlineResources</name></member>
     <member refid="classqlib_1_1ide_1_1QLibIDE_1a13a62cb428150031089c3824f16d6bef" kind="variable"><name>frame</name></member>
     <member refid="classqlib_1_1ide_1_1QLibIDE_1a599d44725656f74ca6d6fc028b8973a8" kind="variable"><name>pane</name></member>
     <member refid="classqlib_1_1ide_1_1QLibIDE_1aa92d671c5f0158e59c86767109afc92c" kind="variable"><name>log</name></member>

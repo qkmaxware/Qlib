@@ -16,7 +16,7 @@
 <para>Combined exception message </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/lexer.hpp" line="132" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="132" bodyend="-1"/>
+        <location file="src/runtime/lexer.hpp" line="147" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="147" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -31,7 +31,7 @@
 <para>Row exception occurred on </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/lexer.hpp" line="138" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="138" bodyend="-1"/>
+        <location file="src/runtime/lexer.hpp" line="153" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="153" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlexical_1_1lexicalexception_1a7d7aeb97fa40e634950b28a3d48a9b51" prot="public" static="no" mutable="no">
         <type><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref></type>
@@ -44,7 +44,7 @@
 <para>Column exception occurred on </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/lexer.hpp" line="142" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="142" bodyend="-1"/>
+        <location file="src/runtime/lexer.hpp" line="157" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="157" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlexical_1_1lexicalexception_1a19c8e9b165ad5d2250d2a26c920462e3" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -57,7 +57,7 @@
 <para>File name exception occurred in </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/lexer.hpp" line="146" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="146" bodyend="-1"/>
+        <location file="src/runtime/lexer.hpp" line="161" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="161" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlexical_1_1lexicalexception_1aca4560509cfad8e43c42def571bba550" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -70,7 +70,7 @@
 <para>Message for this exception </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/lexer.hpp" line="150" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="150" bodyend="-1"/>
+        <location file="src/runtime/lexer.hpp" line="165" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="165" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -101,7 +101,7 @@
 <para>Create a new exception </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/lexer.hpp" line="155" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="155" bodyend="159"/>
+        <location file="src/runtime/lexer.hpp" line="170" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="170" bodyend="174"/>
       </memberdef>
       <memberdef kind="function" id="classlexical_1_1lexicalexception_1a9d12fd196a80d2be20dfa616c063ffb4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const char *</type>
@@ -115,7 +115,7 @@
 <para>Print the message </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/lexer.hpp" line="164" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="164" bodyend="166"/>
+        <location file="src/runtime/lexer.hpp" line="179" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="179" bodyend="181"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -144,7 +144,7 @@
         <label>std::exception</label>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/lexer.hpp" line="127" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="127" bodyend="167"/>
+    <location file="src/runtime/lexer.hpp" line="142" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="142" bodyend="182"/>
     <listofallmembers>
       <member refid="classlexical_1_1lexicalexception_1a7d7aeb97fa40e634950b28a3d48a9b51" prot="public" virt="non-virtual"><scope>lexical::lexicalexception</scope><name>c</name></member>
       <member refid="classlexical_1_1lexicalexception_1a19c8e9b165ad5d2250d2a26c920462e3" prot="public" virt="non-virtual"><scope>lexical::lexicalexception</scope><name>file</name></member>

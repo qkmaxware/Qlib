@@ -16,7 +16,7 @@
 <para>Quantum register name </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="300" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="300" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="301" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="301" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classqasm_1_1exec_1_1measurement_1a083137ce86d7f8b1f92a34a2db604063" prot="public" static="no" mutable="no">
         <type>long</type>
@@ -29,7 +29,7 @@
 <para>Quantum register index </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="304" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="304" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="305" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="305" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classqasm_1_1exec_1_1measurement_1a419118b0574b066fdff6c7f00213dec3" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -42,7 +42,7 @@
 <para>Classic register name </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="308" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="308" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="309" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="309" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classqasm_1_1exec_1_1measurement_1ab1ba29db121a9c17be8aacbd1f24ff7b" prot="public" static="no" mutable="no">
         <type>long</type>
@@ -55,7 +55,7 @@
 <para>Classic register index </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="312" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="312" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="313" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="313" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classqasm_1_1exec_1_1measurement_1a1b67bc7f310bcba5a42989229268517d" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -68,7 +68,7 @@
 <para>Flag if whole register is to be measured or just the given indexes </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="316" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="316" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="317" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="317" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="318" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="318" bodyend="318"/>
+        <location file="src/runtime/runtime.hpp" line="319" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="319" bodyend="319"/>
       </memberdef>
       <memberdef kind="function" id="classqasm_1_1exec_1_1measurement_1a82af9b0d6dea17bd770e8c6e6b5d2fb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="319" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="319" bodyend="319"/>
+        <location file="src/runtime/runtime.hpp" line="320" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="320" bodyend="320"/>
       </memberdef>
       <memberdef kind="function" id="classqasm_1_1exec_1_1measurement_1aefa96cf86f31c40a75fbc46924c94bb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -138,7 +138,7 @@
 <para>Run instruction&apos;s primary operation </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="321" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="321" bodyend="358"/>
+        <location file="src/runtime/runtime.hpp" line="322" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="322" bodyend="359"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -169,7 +169,7 @@
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/runtime.hpp" line="295" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="295" bodyend="359"/>
+    <location file="src/runtime/runtime.hpp" line="296" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="296" bodyend="360"/>
     <listofallmembers>
       <member refid="classqasm_1_1exec_1_1measurement_1ab1ba29db121a9c17be8aacbd1f24ff7b" prot="public" virt="non-virtual"><scope>qasm::exec::measurement</scope><name>cindex</name></member>
       <member refid="classqasm_1_1exec_1_1measurement_1a419118b0574b066fdff6c7f00213dec3" prot="public" virt="non-virtual"><scope>qasm::exec::measurement</scope><name>creg</name></member>

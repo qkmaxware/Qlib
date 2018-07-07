@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="207" column="1" bodyfile="src/runtime/parser.hpp" bodystart="207" bodyend="207"/>
+        <location file="src/runtime/parser.hpp" line="226" column="1" bodyfile="src/runtime/parser.hpp" bodystart="226" bodyend="226"/>
       </memberdef>
       <memberdef kind="function" id="classparser_1_1rule_1a60ccfb91ea4fe7def5ec2a15bb97c5ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -44,7 +44,7 @@
 <para>Virtual function to parse an input tokenqueue into a parse tree Returns true if parsing successful and sets the value under the parsetree pointer </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="212" column="1" bodyfile="src/runtime/parser.hpp" bodystart="212" bodyend="212"/>
+        <location file="src/runtime/parser.hpp" line="231" column="1" bodyfile="src/runtime/parser.hpp" bodystart="231" bodyend="231"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -81,7 +81,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="src/runtime/parser.hpp" line="204" column="1" bodyfile="src/runtime/parser.hpp" bodystart="204" bodyend="213"/>
+    <location file="src/runtime/parser.hpp" line="223" column="1" bodyfile="src/runtime/parser.hpp" bodystart="223" bodyend="232"/>
     <listofallmembers>
       <member refid="classparser_1_1rule_1a60ccfb91ea4fe7def5ec2a15bb97c5ec" prot="public" virt="virtual"><scope>parser::rule</scope><name>tryParse</name></member>
       <member refid="classparser_1_1rule_1abbe02436a9cb7b38b2186a82ff12b29a" prot="public" virt="non-virtual"><scope>parser::rule</scope><name>~rule</name></member>

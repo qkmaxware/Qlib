@@ -296,7 +296,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="240" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="240" bodyend="242"/>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="245" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="245" bodyend="247"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -336,7 +336,7 @@
 <para>Show the suggestion box </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="206" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="206" bodyend="234"/>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="206" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="206" bodyend="239"/>
       </memberdef>
       <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1a262b15fe050727186b0dc3d22e0d5143" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -349,7 +349,7 @@
 <para>Hide the suggestion box </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="247" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="247" bodyend="249"/>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="252" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="252" bodyend="254"/>
       </memberdef>
       <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1acdc8c857e1580998523ee6f50c738a84" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -386,7 +386,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="257" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="257" bodyend="263"/>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="262" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="262" bodyend="268"/>
       </memberdef>
       <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1a04a7f33c4d243d3d15592c3b0b1b19d4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -399,7 +399,7 @@
 <para>For use auto checking the suggestions as a user types </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="268" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="268" bodyend="303"/>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="273" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="273" bodyend="308"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -449,7 +449,7 @@
         <label>ArrayList&lt; String &gt;</label>
       </node>
     </collaborationgraph>
-    <location file="src/ide/src/qlib/ide/AutoComplete.java" line="35" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="35" bodyend="305"/>
+    <location file="src/ide/src/qlib/ide/AutoComplete.java" line="35" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="35" bodyend="310"/>
     <listofallmembers>
       <member refid="classqlib_1_1ide_1_1AutoComplete_1a1b3f11041ae6af9b54e56c19adbbae5c" prot="public" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>addWord</name></member>
       <member refid="classqlib_1_1ide_1_1AutoComplete_1a30e4dd8e6c36a6ef576641480d4368f7" prot="public" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>AutoComplete</name></member>

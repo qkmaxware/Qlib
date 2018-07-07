@@ -134,10 +134,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8ba2bf7b05dd8e858edf2fab9f3d0165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e876beca6bc762fa2ecb849f681f311"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structparser_1_1parsetree.html#a2e876beca6bc762fa2ecb849f681f311">isBranch</a> ()</td></tr>
 <tr class="separator:a2e876beca6bc762fa2ecb849f681f311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460a38e7e9a33cafe00c7f7b2163f75a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structparser_1_1parsetree.html#a460a38e7e9a33cafe00c7f7b2163f75a">isBinary</a> ()</td></tr>
+<tr class="separator:a460a38e7e9a33cafe00c7f7b2163f75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74fd9e1633a6581f3c07a6263a686bd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structparser_1_1parsetree.html">parsetree</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structparser_1_1parsetree.html#a74fd9e1633a6581f3c07a6263a686bd3">getLeft</a> ()</td></tr>
 <tr class="separator:a74fd9e1633a6581f3c07a6263a686bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f158cea846ac57f787eb81a9ac2477f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structparser_1_1parsetree.html">parsetree</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structparser_1_1parsetree.html#a3f158cea846ac57f787eb81a9ac2477f">getRight</a> ()</td></tr>
 <tr class="separator:a3f158cea846ac57f787eb81a9ac2477f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a791b5113d65303aa8d272b0eb749cb54"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structparser_1_1parsetree.html#a791b5113d65303aa8d272b0eb749cb54">size</a> ()</td></tr>
+<tr class="separator:a791b5113d65303aa8d272b0eb749cb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af238368fcc40aea999cab62ba7d74fda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structparser_1_1parsetree.html">parsetree</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structparser_1_1parsetree.html#af238368fcc40aea999cab62ba7d74fda">getChild</a> (size_t i)</td></tr>
+<tr class="separator:af238368fcc40aea999cab62ba7d74fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada59e97da6280e95cf96cbb8f85df364"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structparser_1_1parsetree.html#ada59e97da6280e95cf96cbb8f85df364">print</a> ()</td></tr>
 <tr class="separator:ada59e97da6280e95cf96cbb8f85df364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -151,6 +157,31 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class representing a single node in an abstract tree structure </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af238368fcc40aea999cab62ba7d74fda"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structparser_1_1parsetree.html">parsetree</a>&amp; parser::parsetree::getChild </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a specific child element </p>
+
+</div>
+</div>
 <a class="anchor" id="a74fd9e1633a6581f3c07a6263a686bd3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -196,6 +227,30 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>If tree is binary, get the right hand child (index 1) </p>
+
+</div>
+</div>
+<a class="anchor" id="a460a38e7e9a33cafe00c7f7b2163f75a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool parser::parsetree::isBinary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Test if the parse tree node is binary </p>
 
 </div>
 </div>
@@ -268,6 +323,30 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Print tree to standard out, usefull in debugging </p>
+
+</div>
+</div>
+<a class="anchor" id="a791b5113d65303aa8d272b0eb749cb54"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t parser::parsetree::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Number of children elements </p>
 
 </div>
 </div>

@@ -112,10 +112,9 @@ int main(int arg_count, char* arg_values[]){
 	//-------------------------------------
 	//Run
 	//-------------------------------------
-	cout << "program length " << prog.lines.size() << endl;
 	if(b && prog.lines.size() > 0){
 		for(std::vector<qasm::exec::executable*>::iterator it = prog.lines.begin(); it != prog.lines.end(); it++){
-			//(*it)->invoke_rootprogram(env);	
+			(*it)->invoke_rootprogram(env);	
 		}
 	}
 	//Old		

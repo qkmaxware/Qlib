@@ -16,7 +16,7 @@
 <para>What variable to print to console </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="267" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="267" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="268" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="268" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="269" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="269" bodyend="269"/>
+        <location file="src/runtime/runtime.hpp" line="270" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="270" bodyend="270"/>
       </memberdef>
       <memberdef kind="function" id="classqasm_1_1exec_1_1print_1ae803c9f70d2a1afd3bbe6e0520e9678b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -53,7 +53,7 @@
 <para>Run instruction&apos;s primary operation </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="271" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="271" bodyend="289"/>
+        <location file="src/runtime/runtime.hpp" line="272" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="272" bodyend="290"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -84,7 +84,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/runtime.hpp" line="262" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="262" bodyend="290"/>
+    <location file="src/runtime/runtime.hpp" line="263" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="263" bodyend="291"/>
     <listofallmembers>
       <member refid="classqasm_1_1exec_1_1print_1ae803c9f70d2a1afd3bbe6e0520e9678b" prot="public" virt="virtual"><scope>qasm::exec::print</scope><name>invoke_rootprogram</name></member>
       <member refid="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" prot="public" virt="virtual"><scope>qasm::exec::print</scope><name>invoke_subprogram</name></member>

@@ -14,7 +14,7 @@ var searchData=
   ['settext',['setText',['../classqlib_1_1ide_1_1CodeEditor.html#a8686347c695b958ea8a5e8737cc59a1f',1,'qlib::ide::CodeEditor']]],
   ['show',['show',['../classqlib_1_1ide_1_1QLibIDE.html#a53bc0b691fd24d3e2dad2603cf086760',1,'qlib::ide::QLibIDE']]],
   ['showsuggestions',['showSuggestions',['../classqlib_1_1ide_1_1AutoComplete.html#a9b4c1fc14bdff51a29b3a13622cba025',1,'qlib::ide::AutoComplete']]],
-  ['size',['size',['../classqlib_1_1math_1_1matrix.html#a2f0ada8003cf2306534700502f598428',1,'qlib::math::matrix::size()'],['../classqlib_1_1quantum_1_1ensemble.html#a4b811e4778f5c845504ed8eec058dfe4',1,'qlib::quantum::ensemble::size()'],['../classqlib_1_1quantum_1_1qreg.html#a3148742b59865d0ba04fdd327fccc048',1,'qlib::quantum::qreg::size()']]],
+  ['size',['size',['../classqlib_1_1math_1_1matrix.html#a2f0ada8003cf2306534700502f598428',1,'qlib::math::matrix::size()'],['../classqlib_1_1quantum_1_1ensemble.html#a4b811e4778f5c845504ed8eec058dfe4',1,'qlib::quantum::ensemble::size()'],['../classqlib_1_1quantum_1_1qreg.html#a3148742b59865d0ba04fdd327fccc048',1,'qlib::quantum::qreg::size()'],['../structparser_1_1parsetree.html#a791b5113d65303aa8d272b0eb749cb54',1,'parser::parsetree::size()']]],
   ['sqrmagnitude',['sqrMagnitude',['../classqlib_1_1math_1_1complex.html#ad1a8ab1ad95a47206e72d3a0d7be9511',1,'qlib::math::complex']]],
   ['state',['state',['../classqlib_1_1quantum_1_1qreg.html#a20d1b0906eb00ff7d4e1c23449de61a1',1,'qlib::quantum::qreg::state()'],['../classqlib_1_1quantum_1_1qubit.html#af8eaf337ffcb95c2445ddf35189335e4',1,'qlib::quantum::qubit::state()']]],
   ['style',['style',['../classqlib_1_1ide_1_1CodeEditor.html#a2fccea5703e28988470c1e4634316ac8',1,'qlib::ide::CodeEditor']]]

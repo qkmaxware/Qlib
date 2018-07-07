@@ -84,6 +84,32 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlexical_1_1match_1ace4aee5410296a2cfca192700098891a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lexical::match::match</definition>
+        <argsstring>()</argsstring>
+        <name>match</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Match constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="53" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="structlexical_1_1match_1a09ae2bd81b43191fa58ce13c2245b6f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string lexical::match::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print match to string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/lexer.hpp" line="58" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="58" bodyend="63"/>
+      </memberdef>
       <memberdef kind="function" id="structlexical_1_1match_1aafa3ddcad89ea3abb86b557cafe3e0d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool lexical::match::matchExists</definition>
@@ -95,7 +121,7 @@
 <para>Test if this match is valid </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/lexer.hpp" line="53" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="53" bodyend="55"/>
+        <location file="src/runtime/lexer.hpp" line="68" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="68" bodyend="70"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -115,15 +141,17 @@
         <link refid="classlexical_1_1lexeme"/>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/lexer.hpp" line="23" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="23" bodyend="56"/>
+    <location file="src/runtime/lexer.hpp" line="23" column="1" bodyfile="src/runtime/lexer.hpp" bodystart="23" bodyend="71"/>
     <listofallmembers>
       <member refid="structlexical_1_1match_1ac9b0f6134b653452a2b0ff8b36c89729" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>column_end</name></member>
       <member refid="structlexical_1_1match_1a3a1754ba678051a508ee2889c4a5f4eb" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>column_start</name></member>
       <member refid="structlexical_1_1match_1a2ebda7888d347b3de302ffc465755f07" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>content</name></member>
       <member refid="structlexical_1_1match_1a346ef13017b47ee41a6abe643e5732e1" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>lexemeptr</name></member>
+      <member refid="structlexical_1_1match_1ace4aee5410296a2cfca192700098891a" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>match</name></member>
       <member refid="structlexical_1_1match_1aafa3ddcad89ea3abb86b557cafe3e0d7" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>matchExists</name></member>
       <member refid="structlexical_1_1match_1abf7eca2de9cee016df02265a38666486" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>row_end</name></member>
       <member refid="structlexical_1_1match_1a854a8828680bbfc08aa214e875ba5514" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>row_start</name></member>
+      <member refid="structlexical_1_1match_1a09ae2bd81b43191fa58ce13c2245b6f9" prot="public" virt="non-virtual"><scope>lexical::match</scope><name>toString</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

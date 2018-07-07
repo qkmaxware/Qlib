@@ -163,7 +163,13 @@ struct parsetree {
     /// Check if node has children
     /// </Summary>
     bool isBranch(){
-        return !isLeaf();
+       return !isLeaf();
+    }
+    /// <Summary>
+    /// Test if the parse tree node is binary
+    /// </Summary>
+    bool isBinary(){
+        return children.size() == 2;
     }
     /// <Summary>
     /// If tree is binary, get the left hand child (index 0)
@@ -176,6 +182,18 @@ struct parsetree {
     /// </Summary>
     parsetree& getRight(){
         return children[1];
+    }
+    /// <Summary>
+    /// Number of children elements
+    /// </Summary>
+    size_t size(){
+        return children.size();
+    }
+    /// <Summary>
+    /// Get a specific child element
+    /// </Summary>
+    parsetree& getChild(size_t i){
+        return children[i];
     }
     /// <Summary>
     /// Print tree to standard out, usefull in debugging

@@ -6,6 +6,7 @@
 package qlib.ide;
 
 import java.awt.BorderLayout;
+import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
@@ -15,6 +16,8 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -34,6 +37,11 @@ public class QLibIDE {
      * Location of the config file
      */
     public static final String configLocation = "config.ini";
+    
+    /**
+     * Location to the online resources for Qlib 
+     */
+    public static final String onlineResources = "https://github.com/qkmaxware/Qlib"; 
     
     /**
      * @param args the command line arguments
@@ -241,7 +249,15 @@ public class QLibIDE {
         help.setBorder(new EmptyBorder(4, 4, 4, 4));
         help.addMouseListener(new MouseAdapter() {
             @Override
-            public void mouseClicked(MouseEvent e) {}
+            public void mouseClicked(MouseEvent e) {
+                if (Desktop.isDesktopSupported()) {
+                    try {
+                        Desktop.getDesktop().browse(new URI(onlineResources));
+                    } 
+                    catch (URISyntaxException ex) {} 
+                    catch (IOException ex) {}
+                }
+            }
         });
         
         JLabel settings = new JLabel(new ImageIcon(Loader.resources.load("glyphicons-440-wrench.png")));

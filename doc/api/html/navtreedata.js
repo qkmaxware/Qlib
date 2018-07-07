@@ -36,7 +36,7 @@ var NAVTREEINDEX =
 [
 "AutoComplete_8java.html",
 "classqlib_1_1ide_1_1QLibIDE.html#a4d8a71cb808c1796b48f83b05e3ca1b8",
-"index.html"
+"igate_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

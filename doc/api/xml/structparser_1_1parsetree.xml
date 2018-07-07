@@ -58,6 +58,19 @@
         </inbodydescription>
         <location file="src/runtime/parser.hpp" line="165" column="1" bodyfile="src/runtime/parser.hpp" bodystart="165" bodyend="167"/>
       </memberdef>
+      <memberdef kind="function" id="structparser_1_1parsetree_1a460a38e7e9a33cafe00c7f7b2163f75a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool parser::parsetree::isBinary</definition>
+        <argsstring>()</argsstring>
+        <name>isBinary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if the parse tree node is binary </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="171" column="1" bodyfile="src/runtime/parser.hpp" bodystart="171" bodyend="173"/>
+      </memberdef>
       <memberdef kind="function" id="structparser_1_1parsetree_1a74fd9e1633a6581f3c07a6263a686bd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structparser_1_1parsetree" kindref="compound">parsetree</ref> &amp;</type>
         <definition>parsetree&amp; parser::parsetree::getLeft</definition>
@@ -69,7 +82,7 @@
 <para>If tree is binary, get the left hand child (index 0) </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="171" column="1" bodyfile="src/runtime/parser.hpp" bodystart="171" bodyend="173"/>
+        <location file="src/runtime/parser.hpp" line="177" column="1" bodyfile="src/runtime/parser.hpp" bodystart="177" bodyend="179"/>
       </memberdef>
       <memberdef kind="function" id="structparser_1_1parsetree_1a3f158cea846ac57f787eb81a9ac2477f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structparser_1_1parsetree" kindref="compound">parsetree</ref> &amp;</type>
@@ -82,7 +95,37 @@
 <para>If tree is binary, get the right hand child (index 1) </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="177" column="1" bodyfile="src/runtime/parser.hpp" bodystart="177" bodyend="179"/>
+        <location file="src/runtime/parser.hpp" line="183" column="1" bodyfile="src/runtime/parser.hpp" bodystart="183" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="structparser_1_1parsetree_1a791b5113d65303aa8d272b0eb749cb54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t parser::parsetree::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of children elements </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="189" column="1" bodyfile="src/runtime/parser.hpp" bodystart="189" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="structparser_1_1parsetree_1af238368fcc40aea999cab62ba7d74fda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structparser_1_1parsetree" kindref="compound">parsetree</ref> &amp;</type>
+        <definition>parsetree&amp; parser::parsetree::getChild</definition>
+        <argsstring>(size_t i)</argsstring>
+        <name>getChild</name>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a specific child element </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/parser.hpp" line="195" column="1" bodyfile="src/runtime/parser.hpp" bodystart="195" bodyend="197"/>
       </memberdef>
       <memberdef kind="function" id="structparser_1_1parsetree_1ada59e97da6280e95cf96cbb8f85df364" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -95,7 +138,7 @@
 <para>Print tree to standard out, usefull in debugging </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/parser.hpp" line="183" column="1" bodyfile="src/runtime/parser.hpp" bodystart="183" bodyend="198"/>
+        <location file="src/runtime/parser.hpp" line="201" column="1" bodyfile="src/runtime/parser.hpp" bodystart="201" bodyend="217"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -122,14 +165,17 @@
         <link refid="classlexical_1_1lexeme"/>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/parser.hpp" line="147" column="1" bodyfile="src/runtime/parser.hpp" bodystart="147" bodyend="199"/>
+    <location file="src/runtime/parser.hpp" line="147" column="1" bodyfile="src/runtime/parser.hpp" bodystart="147" bodyend="218"/>
     <listofallmembers>
       <member refid="structparser_1_1parsetree_1a46c4ae92fc6d3fb1ac7cbe2827728149" prot="public" virt="non-virtual"><scope>parser::parsetree</scope><name>children</name></member>
+      <member refid="structparser_1_1parsetree_1af238368fcc40aea999cab62ba7d74fda" prot="public" virt="non-virtual"><scope>parser::parsetree</scope><name>getChild</name></member>
       <member refid="structparser_1_1parsetree_1a74fd9e1633a6581f3c07a6263a686bd3" prot="public" virt="non-virtual"><scope>parser::parsetree</scope><name>getLeft</name></member>
       <member refid="structparser_1_1parsetree_1a3f158cea846ac57f787eb81a9ac2477f" prot="public" virt="non-virtual"><scope>parser::parsetree</scope><name>getRight</name></member>
+      <member refid="structparser_1_1parsetree_1a460a38e7e9a33cafe00c7f7b2163f75a" prot="public" virt="non-virtual"><scope>parser::parsetree</scope><name>isBinary</name></member>
       <member refid="structparser_1_1parsetree_1a2e876beca6bc762fa2ecb849f681f311" prot="public" virt="non-virtual"><scope>parser::parsetree</scope><name>isBranch</name></member>
       <member refid="structparser_1_1parsetree_1a8ba2bf7b05dd8e858edf2fab9f3d0165" prot="public" virt="non-virtual"><scope>parser::parsetree</scope><name>isLeaf</name></member>
       <member refid="structparser_1_1parsetree_1ada59e97da6280e95cf96cbb8f85df364" prot="public" virt="non-virtual"><scope>parser::parsetree</scope><name>print</name></member>
+      <member refid="structparser_1_1parsetree_1a791b5113d65303aa8d272b0eb749cb54" prot="public" virt="non-virtual"><scope>parser::parsetree</scope><name>size</name></member>
       <member refid="structparser_1_1parsetree_1a4ee1d9214dd2a25fcf0494afaa9be7d7" prot="public" virt="non-virtual"><scope>parser::parsetree</scope><name>value</name></member>
     </listofallmembers>
   </compounddef>

@@ -11,358 +11,356 @@
     <includes refid="runtime_8hpp" local="yes">./runtime.hpp</includes>
     <includes refid="scanner_8hpp" local="yes">./scanner.hpp</includes>
     <incdepgraph>
-      <node id="1047">
+      <node id="1049">
         <label>src/runtime/main.cpp</label>
         <link refid="runtime/main.cpp"/>
-        <childnode refid="1048" relation="include">
-        </childnode>
-        <childnode refid="1049" relation="include">
-        </childnode>
         <childnode refid="1050" relation="include">
         </childnode>
-        <childnode refid="1086" relation="include">
+        <childnode refid="1051" relation="include">
+        </childnode>
+        <childnode refid="1052" relation="include">
         </childnode>
         <childnode refid="1088" relation="include">
         </childnode>
         <childnode refid="1090" relation="include">
         </childnode>
-        <childnode refid="1093" relation="include">
+        <childnode refid="1092" relation="include">
         </childnode>
-        <childnode refid="1094" relation="include">
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
         </childnode>
       </node>
-      <node id="1054">
+      <node id="1056">
         <label>limits</label>
       </node>
-      <node id="1051">
+      <node id="1053">
         <label>./general/object.hpp</label>
         <link refid="object_8hpp"/>
-        <childnode refid="1052" relation="include">
+        <childnode refid="1054" relation="include">
         </childnode>
-        <childnode refid="1048" relation="include">
-        </childnode>
-        <childnode refid="1055" relation="include">
-        </childnode>
-        <childnode refid="1056" relation="include">
+        <childnode refid="1050" relation="include">
         </childnode>
         <childnode refid="1057" relation="include">
         </childnode>
         <childnode refid="1058" relation="include">
         </childnode>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
       </node>
-      <node id="1093">
+      <node id="1096">
         <label>./runtime.hpp</label>
         <link refid="runtime_8hpp"/>
-        <childnode refid="1055" relation="include">
-        </childnode>
-        <childnode refid="1048" relation="include">
-        </childnode>
-        <childnode refid="1064" relation="include">
-        </childnode>
-        <childnode refid="1085" relation="include">
+        <childnode refid="1057" relation="include">
         </childnode>
         <childnode refid="1050" relation="include">
         </childnode>
-      </node>
-      <node id="1053">
-        <label>stdint.h</label>
-      </node>
-      <node id="1061">
-        <label>stdlib.h</label>
-      </node>
-      <node id="1062">
-        <label>./math/matrix.hpp</label>
-        <link refid="matrix_8hpp"/>
-        <childnode refid="1059" relation="include">
-        </childnode>
-        <childnode refid="1051" relation="include">
-        </childnode>
-        <childnode refid="1063" relation="include">
-        </childnode>
-        <childnode refid="1064" relation="include">
-        </childnode>
-        <childnode refid="1060" relation="include">
-        </childnode>
-        <childnode refid="1055" relation="include">
-        </childnode>
-      </node>
-      <node id="1065">
-        <label>./quantum/systems/qubit.hpp</label>
-        <link refid="qubit_8hpp"/>
-        <childnode refid="1051" relation="include">
-        </childnode>
-        <childnode refid="1059" relation="include">
-        </childnode>
-        <childnode refid="1062" relation="include">
-        </childnode>
         <childnode refid="1066" relation="include">
         </childnode>
-        <childnode refid="1067" relation="include">
-        </childnode>
-        <childnode refid="1060" relation="include">
-        </childnode>
-        <childnode refid="1055" relation="include">
-        </childnode>
-        <childnode refid="1064" relation="include">
-        </childnode>
-      </node>
-      <node id="1077">
-        <label>cmath</label>
-      </node>
-      <node id="1066">
-        <label>./../gates/igate.hpp</label>
-        <link refid="igate_8hpp"/>
-        <childnode refid="1051" relation="include">
-        </childnode>
-        <childnode refid="1059" relation="include">
-        </childnode>
-        <childnode refid="1062" relation="include">
-        </childnode>
-      </node>
-      <node id="1063">
-        <label>stdexcept</label>
-      </node>
-      <node id="1076">
-        <label>./gates/phase.hpp</label>
-        <link refid="phase_8hpp"/>
-        <childnode refid="1071" relation="include">
-        </childnode>
-        <childnode refid="1060" relation="include">
-        </childnode>
-        <childnode refid="1077" relation="include">
-        </childnode>
-      </node>
-      <node id="1092">
-        <label>string</label>
-      </node>
-      <node id="1070">
-        <label>./gates/ident.hpp</label>
-        <link refid="ident_8hpp"/>
-        <childnode refid="1071" relation="include">
-        </childnode>
-      </node>
-      <node id="1067">
-        <label>system.hpp</label>
-        <link refid="system_8hpp"/>
-        <childnode refid="1051" relation="include">
-        </childnode>
-        <childnode refid="1059" relation="include">
-        </childnode>
-        <childnode refid="1062" relation="include">
-        </childnode>
-        <childnode refid="1066" relation="include">
-        </childnode>
-      </node>
-      <node id="1085">
-        <label>map</label>
-      </node>
-      <node id="1087">
-        <label>regex</label>
-      </node>
-      <node id="1056">
-        <label>exception</label>
-      </node>
-      <node id="1049">
-        <label>fstream</label>
-      </node>
-      <node id="1088">
-        <label>./parser.hpp</label>
-        <link refid="parser_8hpp"/>
-        <childnode refid="1086" relation="include">
-        </childnode>
-        <childnode refid="1089" relation="include">
-        </childnode>
-        <childnode refid="1048" relation="include">
-        </childnode>
-        <childnode refid="1064" relation="include">
-        </childnode>
-      </node>
-      <node id="1084">
-        <label>./quantum/systems/ensemble.hpp</label>
-        <link refid="ensemble_8hpp"/>
-        <childnode refid="1067" relation="include">
-        </childnode>
-        <childnode refid="1064" relation="include">
-        </childnode>
-        <childnode refid="1085" relation="include">
-        </childnode>
-      </node>
-      <node id="1057">
-        <label>random</label>
-      </node>
-      <node id="1071">
-        <label>onequbitgate.hpp</label>
-        <link refid="onequbitgate_8hpp"/>
-        <childnode refid="1066" relation="include">
-        </childnode>
-        <childnode refid="1055" relation="include">
-        </childnode>
-      </node>
-      <node id="1082">
-        <label>./gates/toffoli.hpp</label>
-        <link refid="toffoli_8hpp"/>
-        <childnode refid="1083" relation="include">
-        </childnode>
-        <childnode refid="1073" relation="include">
-        </childnode>
-      </node>
-      <node id="1059">
-        <label>./math/complex.hpp</label>
-        <link refid="complex_8hpp"/>
-        <childnode refid="1051" relation="include">
-        </childnode>
-        <childnode refid="1060" relation="include">
-        </childnode>
-        <childnode refid="1061" relation="include">
-        </childnode>
-        <childnode refid="1055" relation="include">
-        </childnode>
-      </node>
-      <node id="1073">
-        <label>./gates/pauliX.hpp</label>
-        <link refid="pauliX_8hpp"/>
-        <childnode refid="1071" relation="include">
-        </childnode>
-      </node>
-      <node id="1091">
-        <label>stack</label>
-      </node>
-      <node id="1064">
-        <label>vector</label>
-      </node>
-      <node id="1074">
-        <label>./gates/pauliY.hpp</label>
-        <link refid="pauliY_8hpp"/>
-        <childnode refid="1071" relation="include">
-        </childnode>
-      </node>
-      <node id="1050">
-        <label>./../core/qlib.h</label>
-        <link refid="qlib_8h"/>
-        <childnode refid="1051" relation="include">
+        <childnode refid="1087" relation="include">
         </childnode>
         <childnode refid="1052" relation="include">
         </childnode>
-        <childnode refid="1059" relation="include">
+      </node>
+      <node id="1055">
+        <label>stdint.h</label>
+      </node>
+      <node id="1063">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1064">
+        <label>./math/matrix.hpp</label>
+        <link refid="matrix_8hpp"/>
+        <childnode refid="1061" relation="include">
+        </childnode>
+        <childnode refid="1053" relation="include">
+        </childnode>
+        <childnode refid="1065" relation="include">
+        </childnode>
+        <childnode refid="1066" relation="include">
         </childnode>
         <childnode refid="1062" relation="include">
         </childnode>
-        <childnode refid="1065" relation="include">
+        <childnode refid="1057" relation="include">
+        </childnode>
+      </node>
+      <node id="1067">
+        <label>./quantum/systems/qubit.hpp</label>
+        <link refid="qubit_8hpp"/>
+        <childnode refid="1053" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
         </childnode>
         <childnode refid="1068" relation="include">
         </childnode>
         <childnode refid="1069" relation="include">
         </childnode>
-        <childnode refid="1067" relation="include">
-        </childnode>
-        <childnode refid="1084" relation="include">
-        </childnode>
-      </node>
-      <node id="1078">
-        <label>./gates/cnot.hpp</label>
-        <link refid="cnot_8hpp"/>
-        <childnode refid="1079" relation="include">
-        </childnode>
-        <childnode refid="1073" relation="include">
-        </childnode>
-      </node>
-      <node id="1090">
-        <label>./compiler.hpp</label>
-        <link refid="compiler_8hpp"/>
-        <childnode refid="1048" relation="include">
-        </childnode>
-        <childnode refid="1049" relation="include">
-        </childnode>
-        <childnode refid="1064" relation="include">
-        </childnode>
-        <childnode refid="1091" relation="include">
-        </childnode>
-        <childnode refid="1085" relation="include">
-        </childnode>
-        <childnode refid="1092" relation="include">
-        </childnode>
-        <childnode refid="1086" relation="include">
-        </childnode>
-        <childnode refid="1088" relation="include">
-        </childnode>
-        <childnode refid="1093" relation="include">
-        </childnode>
-        <childnode refid="1094" relation="include">
-        </childnode>
-      </node>
-      <node id="1055">
-        <label>sstream</label>
-      </node>
-      <node id="1075">
-        <label>./gates/pauliZ.hpp</label>
-        <link refid="pauliZ_8hpp"/>
-        <childnode refid="1071" relation="include">
-        </childnode>
-      </node>
-      <node id="1068">
-        <label>./quantum/systems/qreg.hpp</label>
-        <link refid="qreg_8hpp"/>
-        <childnode refid="1051" relation="include">
-        </childnode>
-        <childnode refid="1059" relation="include">
-        </childnode>
         <childnode refid="1062" relation="include">
+        </childnode>
+        <childnode refid="1057" relation="include">
         </childnode>
         <childnode refid="1066" relation="include">
         </childnode>
-        <childnode refid="1067" relation="include">
+      </node>
+      <node id="1079">
+        <label>cmath</label>
+      </node>
+      <node id="1068">
+        <label>./../gates/igate.hpp</label>
+        <link refid="igate_8hpp"/>
+        <childnode refid="1053" relation="include">
         </childnode>
-        <childnode refid="1054" relation="include">
-        </childnode>
-        <childnode refid="1060" relation="include">
-        </childnode>
-        <childnode refid="1055" relation="include">
+        <childnode refid="1061" relation="include">
         </childnode>
         <childnode refid="1064" relation="include">
         </childnode>
       </node>
-      <node id="1081">
-        <label>./gates/cz.hpp</label>
-        <link refid="cz_8hpp"/>
+      <node id="1065">
+        <label>stdexcept</label>
+      </node>
+      <node id="1078">
+        <label>./gates/phase.hpp</label>
+        <link refid="phase_8hpp"/>
+        <childnode refid="1073" relation="include">
+        </childnode>
+        <childnode refid="1062" relation="include">
+        </childnode>
         <childnode refid="1079" relation="include">
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>string</label>
+      </node>
+      <node id="1072">
+        <label>./gates/ident.hpp</label>
+        <link refid="ident_8hpp"/>
+        <childnode refid="1073" relation="include">
+        </childnode>
+      </node>
+      <node id="1069">
+        <label>system.hpp</label>
+        <link refid="system_8hpp"/>
+        <childnode refid="1053" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1068" relation="include">
+        </childnode>
+      </node>
+      <node id="1087">
+        <label>map</label>
+      </node>
+      <node id="1089">
+        <label>regex</label>
+      </node>
+      <node id="1058">
+        <label>exception</label>
+      </node>
+      <node id="1051">
+        <label>fstream</label>
+      </node>
+      <node id="1090">
+        <label>./parser.hpp</label>
+        <link refid="parser_8hpp"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1091" relation="include">
+        </childnode>
+        <childnode refid="1050" relation="include">
+        </childnode>
+        <childnode refid="1066" relation="include">
+        </childnode>
+      </node>
+      <node id="1086">
+        <label>./quantum/systems/ensemble.hpp</label>
+        <link refid="ensemble_8hpp"/>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+      </node>
+      <node id="1059">
+        <label>random</label>
+      </node>
+      <node id="1073">
+        <label>onequbitgate.hpp</label>
+        <link refid="onequbitgate_8hpp"/>
+        <childnode refid="1068" relation="include">
+        </childnode>
+        <childnode refid="1057" relation="include">
+        </childnode>
+      </node>
+      <node id="1084">
+        <label>./gates/toffoli.hpp</label>
+        <link refid="toffoli_8hpp"/>
+        <childnode refid="1085" relation="include">
         </childnode>
         <childnode refid="1075" relation="include">
         </childnode>
       </node>
-      <node id="1060">
-        <label>math.h</label>
-      </node>
-      <node id="1048">
-        <label>iostream</label>
-      </node>
-      <node id="1086">
-        <label>./lexer.hpp</label>
-        <link refid="lexer_8hpp"/>
-        <childnode refid="1048" relation="include">
+      <node id="1061">
+        <label>./math/complex.hpp</label>
+        <link refid="complex_8hpp"/>
+        <childnode refid="1053" relation="include">
         </childnode>
-        <childnode refid="1087" relation="include">
+        <childnode refid="1062" relation="include">
+        </childnode>
+        <childnode refid="1063" relation="include">
+        </childnode>
+        <childnode refid="1057" relation="include">
+        </childnode>
+      </node>
+      <node id="1075">
+        <label>./gates/pauliX.hpp</label>
+        <link refid="pauliX_8hpp"/>
+        <childnode refid="1073" relation="include">
+        </childnode>
+      </node>
+      <node id="1093">
+        <label>stack</label>
+      </node>
+      <node id="1066">
+        <label>vector</label>
+      </node>
+      <node id="1076">
+        <label>./gates/pauliY.hpp</label>
+        <link refid="pauliY_8hpp"/>
+        <childnode refid="1073" relation="include">
+        </childnode>
+      </node>
+      <node id="1052">
+        <label>./../core/qlib.h</label>
+        <link refid="qlib_8h"/>
+        <childnode refid="1053" relation="include">
+        </childnode>
+        <childnode refid="1054" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
         </childnode>
         <childnode refid="1064" relation="include">
         </childnode>
-        <childnode refid="1056" relation="include">
+        <childnode refid="1067" relation="include">
         </childnode>
-        <childnode refid="1055" relation="include">
-        </childnode>
-      </node>
-      <node id="1072">
-        <label>./gates/hadamard.hpp</label>
-        <link refid="hadamard_8hpp"/>
-        <childnode refid="1071" relation="include">
-        </childnode>
-      </node>
-      <node id="1069">
-        <label>./quantum/standard_gates.hpp</label>
-        <link refid="standard__gates_8hpp"/>
         <childnode refid="1070" relation="include">
         </childnode>
-        <childnode refid="1072" relation="include">
+        <childnode refid="1071" relation="include">
         </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1086" relation="include">
+        </childnode>
+      </node>
+      <node id="1080">
+        <label>./gates/cnot.hpp</label>
+        <link refid="cnot_8hpp"/>
+        <childnode refid="1081" relation="include">
+        </childnode>
+        <childnode refid="1075" relation="include">
+        </childnode>
+      </node>
+      <node id="1092">
+        <label>./compiler.hpp</label>
+        <link refid="compiler_8hpp"/>
+        <childnode refid="1050" relation="include">
+        </childnode>
+        <childnode refid="1051" relation="include">
+        </childnode>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1093" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1094" relation="include">
+        </childnode>
+        <childnode refid="1095" relation="include">
+        </childnode>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1090" relation="include">
+        </childnode>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+      </node>
+      <node id="1057">
+        <label>sstream</label>
+      </node>
+      <node id="1077">
+        <label>./gates/pauliZ.hpp</label>
+        <link refid="pauliZ_8hpp"/>
         <childnode refid="1073" relation="include">
+        </childnode>
+      </node>
+      <node id="1070">
+        <label>./quantum/systems/qreg.hpp</label>
+        <link refid="qreg_8hpp"/>
+        <childnode refid="1053" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1068" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1056" relation="include">
+        </childnode>
+        <childnode refid="1062" relation="include">
+        </childnode>
+        <childnode refid="1057" relation="include">
+        </childnode>
+        <childnode refid="1066" relation="include">
+        </childnode>
+      </node>
+      <node id="1083">
+        <label>./gates/cz.hpp</label>
+        <link refid="cz_8hpp"/>
+        <childnode refid="1081" relation="include">
+        </childnode>
+        <childnode refid="1077" relation="include">
+        </childnode>
+      </node>
+      <node id="1062">
+        <label>math.h</label>
+      </node>
+      <node id="1050">
+        <label>iostream</label>
+      </node>
+      <node id="1088">
+        <label>./lexer.hpp</label>
+        <link refid="lexer_8hpp"/>
+        <childnode refid="1050" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1058" relation="include">
+        </childnode>
+        <childnode refid="1057" relation="include">
+        </childnode>
+      </node>
+      <node id="1074">
+        <label>./gates/hadamard.hpp</label>
+        <link refid="hadamard_8hpp"/>
+        <childnode refid="1073" relation="include">
+        </childnode>
+      </node>
+      <node id="1071">
+        <label>./quantum/standard_gates.hpp</label>
+        <link refid="standard__gates_8hpp"/>
+        <childnode refid="1072" relation="include">
         </childnode>
         <childnode refid="1074" relation="include">
         </childnode>
@@ -370,63 +368,70 @@
         </childnode>
         <childnode refid="1076" relation="include">
         </childnode>
+        <childnode refid="1077" relation="include">
+        </childnode>
         <childnode refid="1078" relation="include">
         </childnode>
         <childnode refid="1080" relation="include">
         </childnode>
-        <childnode refid="1081" relation="include">
-        </childnode>
         <childnode refid="1082" relation="include">
         </childnode>
+        <childnode refid="1083" relation="include">
+        </childnode>
+        <childnode refid="1084" relation="include">
+        </childnode>
       </node>
-      <node id="1094">
+      <node id="1097">
         <label>./scanner.hpp</label>
         <link refid="scanner_8hpp"/>
-        <childnode refid="1048" relation="include">
+        <childnode refid="1050" relation="include">
         </childnode>
-        <childnode refid="1049" relation="include">
+        <childnode refid="1051" relation="include">
         </childnode>
       </node>
-      <node id="1058">
+      <node id="1060">
         <label>chrono</label>
       </node>
-      <node id="1080">
+      <node id="1082">
         <label>./gates/cy.hpp</label>
         <link refid="cy_8hpp"/>
-        <childnode refid="1079" relation="include">
+        <childnode refid="1081" relation="include">
         </childnode>
-        <childnode refid="1074" relation="include">
+        <childnode refid="1076" relation="include">
         </childnode>
       </node>
-      <node id="1052">
+      <node id="1095">
+        <label>algorithm</label>
+      </node>
+      <node id="1054">
         <label>./types.h</label>
         <link refid="types_8h"/>
-        <childnode refid="1053" relation="include">
+        <childnode refid="1055" relation="include">
         </childnode>
-        <childnode refid="1054" relation="include">
+        <childnode refid="1056" relation="include">
         </childnode>
       </node>
-      <node id="1079">
+      <node id="1081">
         <label>controlledgate.hpp</label>
         <link refid="controlledgate_8hpp"/>
-        <childnode refid="1066" relation="include">
+        <childnode refid="1068" relation="include">
         </childnode>
-        <childnode refid="1071" relation="include">
+        <childnode refid="1073" relation="include">
         </childnode>
-        <childnode refid="1055" relation="include">
+        <childnode refid="1057" relation="include">
         </childnode>
       </node>
-      <node id="1089">
+      <node id="1091">
         <label>memory</label>
       </node>
-      <node id="1083">
+      <node id="1085">
         <label>controlled2gate.hpp</label>
         <link refid="controlled2gate_8hpp"/>
-        <childnode refid="1066" relation="include">
+        <childnode refid="1068" relation="include">
         </childnode>
-        <childnode refid="1071" relation="include">
+        <childnode refid="1073" relation="include">
         </childnode>
-        <childnode refid="1055" relation="include">
+        <childnode refid="1057" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -497,7 +502,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/main.cpp" line="28" column="1" bodyfile="src/runtime/main.cpp" bodystart="28" bodyend="130"/>
+        <location file="src/runtime/main.cpp" line="28" column="1" bodyfile="src/runtime/main.cpp" bodystart="28" bodyend="129"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -580,17 +585,17 @@
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref><sp/>label_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>_anchor<sp/>&lt;&lt;<sp/>_reference;</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref><sp/>print_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>_print<sp/>&lt;&lt;<sp/>_reference;</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref><sp/>application_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>_reference<sp/>&lt;&lt;<sp/>*_indexor;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref><sp/>typedecl_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>_reference<sp/>&lt;&lt;<sp/>_reference<sp/>&lt;&lt;<sp/>_leftb<sp/>&lt;&lt;<sp/>_integer<sp/>&lt;&lt;<sp/>_rightb;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref><sp/>typedecl_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(((_reference<sp/>&lt;&lt;<sp/>_reference)<sp/>&lt;&lt;<sp/>_leftb)<sp/>&lt;&lt;<sp/>_integer)<sp/>&lt;&lt;<sp/>_rightb;</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">ruleptr</ref><sp/>measurement_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>_measure<sp/>&lt;&lt;<sp/>((_indexor<sp/>&lt;&lt;<sp/>_mapping<sp/>&lt;&lt;<sp/>_indexor)<sp/>|<sp/>(_reference<sp/>&lt;&lt;<sp/>_mapping<sp/>&lt;&lt;<sp/>_reference));</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Create<sp/>parse<sp/>lists</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;ruleptr&gt;<sp/>rules<sp/></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{import_,<sp/>label_,<sp/>print_,<sp/>application_,<sp/>typedecl_,<sp/>measurement_};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{import_,<sp/>label_,<sp/>print_,<sp/>typedecl_,<sp/>application_,<sp/>measurement_};</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;qasm::exec::executable*<sp/>(*)(parser::parsetree&amp;)&gt;<sp/>converters</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{<ref refid="compiler_8hpp_1af29ea58956d1e519877cf79d81d5f8b8" kindref="member">convert_import</ref>,<sp/><ref refid="compiler_8hpp_1a3a9fc818a308f225f17b30cf26a3f674" kindref="member">convert_anchor</ref>,<sp/><ref refid="compiler_8hpp_1af4b1195ebe9533956bca833f365dccfb" kindref="member">convert_print</ref>,<sp/><ref refid="compiler_8hpp_1aef48a14daa35b8b1ac149d4507745272" kindref="member">convert_gate_application</ref>,<sp/><ref refid="compiler_8hpp_1a3fadce05c7730406d98ffa5c57beee3a" kindref="member">convert_typedef</ref>,<sp/><ref refid="compiler_8hpp_1a68fba8c9d7b383e00bd8786cb4581374" kindref="member">convert_measurement</ref>};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{<ref refid="compiler_8hpp_1af29ea58956d1e519877cf79d81d5f8b8" kindref="member">convert_import</ref>,<sp/><ref refid="compiler_8hpp_1a3a9fc818a308f225f17b30cf26a3f674" kindref="member">convert_anchor</ref>,<sp/><ref refid="compiler_8hpp_1af4b1195ebe9533956bca833f365dccfb" kindref="member">convert_print</ref>,<sp/><ref refid="compiler_8hpp_1a3fadce05c7730406d98ffa5c57beee3a" kindref="member">convert_typedef</ref>,<sp/><ref refid="compiler_8hpp_1aef48a14daa35b8b1ac149d4507745272" kindref="member">convert_gate_application</ref>,<sp/><ref refid="compiler_8hpp_1a68fba8c9d7b383e00bd8786cb4581374" kindref="member">convert_measurement</ref>};</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;void(*)(compiler&amp;,<sp/>qasm::exec::executable*)&gt;<sp/>post_events</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{<ref refid="compiler_8hpp_1a5f86ad821427272c82f91807bed4ffe0" kindref="member">post_import</ref>,<sp/><ref refid="compiler_8hpp_1a6a17a035bad361ab796fcc69b5e57431" kindref="member">post_anchor</ref>,<sp/><ref refid="compiler_8hpp_1a01ae4a79dc45ca04bac94915f97db422" kindref="member">post_add</ref>,<sp/><ref refid="compiler_8hpp_1a01ae4a79dc45ca04bac94915f97db422" kindref="member">post_add</ref>,<sp/><ref refid="compiler_8hpp_1a01ae4a79dc45ca04bac94915f97db422" kindref="member">post_add</ref>,<sp/>post_add};</highlight></codeline>
@@ -619,22 +624,21 @@
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Run</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;program<sp/>length<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>prog.<ref refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kindref="member">lines</ref>.size()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(b<sp/>&amp;&amp;<sp/>prog.<ref refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kindref="member">lines</ref>.size()<sp/>&gt;<sp/>0){</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::vector&lt;qasm::exec::executable*&gt;::iterator<sp/>it<sp/>=<sp/>prog.<ref refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kindref="member">lines</ref>.begin();<sp/>it<sp/>!=<sp/>prog.<ref refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kindref="member">lines</ref>.end();<sp/>it++){</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*it)-&gt;invoke_rootprogram(env);<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Old<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*if(try_parse_qasm(prog,<sp/>filename,<sp/>tokenizer)){</highlight></codeline>
-<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for(std::vector&lt;qasm::exec::executable*&gt;::iterator<sp/>it<sp/>=<sp/>prog.lines.begin();<sp/>it<sp/>!=<sp/>prog.lines.end();<sp/>it++){</highlight></codeline>
-<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it)-&gt;invoke_rootprogram(env);<sp/></highlight></codeline>
-<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Program<sp/>and<sp/>executable<sp/>lines<sp/>are<sp/>cleaned<sp/>up<sp/>by<sp/>program<sp/>destructor</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(b<sp/>&amp;&amp;<sp/>prog.<ref refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kindref="member">lines</ref>.size()<sp/>&gt;<sp/>0){</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::vector&lt;qasm::exec::executable*&gt;::iterator<sp/>it<sp/>=<sp/>prog.<ref refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kindref="member">lines</ref>.begin();<sp/>it<sp/>!=<sp/>prog.<ref refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kindref="member">lines</ref>.end();<sp/>it++){</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it)-&gt;invoke_rootprogram(env);<sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Old<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*if(try_parse_qasm(prog,<sp/>filename,<sp/>tokenizer)){</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for(std::vector&lt;qasm::exec::executable*&gt;::iterator<sp/>it<sp/>=<sp/>prog.lines.begin();<sp/>it<sp/>!=<sp/>prog.lines.end();<sp/>it++){</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it)-&gt;invoke_rootprogram(env);<sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Program<sp/>and<sp/>executable<sp/>lines<sp/>are<sp/>cleaned<sp/>up<sp/>by<sp/>program<sp/>destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/runtime/main.cpp"/>
   </compounddef>

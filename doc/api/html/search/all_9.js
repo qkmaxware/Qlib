@@ -17,6 +17,7 @@ var searchData=
   ['invoke',['invoke',['../interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener.html#a4eb57d86f7a6f23c781ebb1d1cd99ce6',1,'qlib::ide::CodeEditor::ChangeListener']]],
   ['invoke_5frootprogram',['invoke_rootprogram',['../classqasm_1_1exec_1_1executable.html#ad07f864a889edb0777ebbb1bc1628121',1,'qasm::exec::executable::invoke_rootprogram()'],['../classqasm_1_1exec_1_1apply__gate.html#a4ab94a7feee1830b4be52a487e9cdef5',1,'qasm::exec::apply_gate::invoke_rootprogram()'],['../classqasm_1_1exec_1_1print.html#ae803c9f70d2a1afd3bbe6e0520e9678b',1,'qasm::exec::print::invoke_rootprogram()'],['../classqasm_1_1exec_1_1measurement.html#aefa96cf86f31c40a75fbc46924c94bb8',1,'qasm::exec::measurement::invoke_rootprogram()'],['../classqasm_1_1exec_1_1declaration.html#a4f1396fca212fb0ce984d2cea90df0a8',1,'qasm::exec::declaration::invoke_rootprogram()']]],
   ['invoke_5fsubprogram',['invoke_subprogram',['../classqasm_1_1exec_1_1executable.html#ad73a67bcb74196954455b45804944544',1,'qasm::exec::executable']]],
+  ['isbinary',['isBinary',['../structparser_1_1parsetree.html#a460a38e7e9a33cafe00c7f7b2163f75a',1,'parser::parsetree']]],
   ['isbranch',['isBranch',['../structparser_1_1parsetree.html#a2e876beca6bc762fa2ecb849f681f311',1,'parser::parsetree']]],
   ['isize',['isize',['../types_8h.html#afc36f09e1e0bb44a911f5d65d1f1f780',1,'types.h']]],
   ['isleaf',['isLeaf',['../structparser_1_1parsetree.html#a8ba2bf7b05dd8e858edf2fab9f3d0165',1,'parser::parsetree']]],

@@ -2,6 +2,7 @@ var searchData=
 [
   ['magnitude',['magnitude',['../classqlib_1_1math_1_1complex.html#a8b365d2760802f1318e02c78c8938d2f',1,'qlib::math::complex']]],
   ['main',['main',['../classqlib_1_1ide_1_1QLibIDE.html#a4d8a71cb808c1796b48f83b05e3ca1b8',1,'qlib.ide.QLibIDE.main()'],['../core_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../runtime_2main_8cpp.html#ab22d26d55aa2ef05c5de8abb9cadfd50',1,'main(int arg_count, char *arg_values[]):&#160;main.cpp']]],
+  ['match',['match',['../structlexical_1_1match.html#ace4aee5410296a2cfca192700098891a',1,'lexical::match']]],
   ['matches',['matches',['../classlexical_1_1lexeme.html#a26fd45099f7e056db7f39cd9f222cf97',1,'lexical::lexeme']]],
   ['matchexists',['matchExists',['../structlexical_1_1match.html#aafa3ddcad89ea3abb86b557cafe3e0d7',1,'lexical::match']]],
   ['matrix',['matrix',['../classqlib_1_1math_1_1matrix.html#a6e66a3f67ecf06a42068d2dbf8885e66',1,'qlib::math::matrix::matrix(size_t rows, size_t columns)'],['../classqlib_1_1math_1_1matrix.html#a8cbac1f2ae9917a4742cd0d147e3ba9b',1,'qlib::math::matrix::matrix(size_t rows, size_t columns, std::vector&lt; complex &gt; values)']]],
