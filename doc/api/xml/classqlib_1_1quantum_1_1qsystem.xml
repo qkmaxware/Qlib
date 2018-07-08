@@ -68,58 +68,79 @@
         </inbodydescription>
         <location file="src/core/quantum/systems/system.hpp" line="32" column="1" bodyfile="src/core/quantum/systems/system.hpp" bodystart="32" bodyend="34"/>
       </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qsystem_1a5626857e5dc87dc2bdbb1f4d0b0401f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void qlib::quantum::qsystem::zero</definition>
+        <argsstring>(i64 qubit)=0</argsstring>
+        <name>zero</name>
+        <reimplementedby refid="classqlib_1_1quantum_1_1ensemble_1ac170f82a86704e08e8f2bebc721cf03b">zero</reimplementedby>
+        <reimplementedby refid="classqlib_1_1quantum_1_1qubit_1aa16b11ad849b672489c625196c800dd3">zero</reimplementedby>
+        <reimplementedby refid="classqlib_1_1quantum_1_1qreg_1a51eb9abfde64d764ca2afa27666df0e1">zero</reimplementedby>
+        <param>
+          <type>i64</type>
+          <declname>qubit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prepare qubit in the zero state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/system.hpp" line="38" column="1"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>Base class for all quantum systems </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="415">
+      <node id="421">
         <label>qlib::quantum::ensemble</label>
         <link refid="classqlib_1_1quantum_1_1ensemble"/>
-        <childnode refid="413" relation="public-inheritance">
+        <childnode refid="419" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="414">
+      <node id="420">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="416">
+      <node id="422">
         <label>qlib::quantum::qreg</label>
         <link refid="classqlib_1_1quantum_1_1qreg"/>
-        <childnode refid="413" relation="public-inheritance">
+        <childnode refid="419" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="417">
+      <node id="423">
         <label>qlib::quantum::qubit</label>
         <link refid="classqlib_1_1quantum_1_1qubit"/>
-        <childnode refid="413" relation="public-inheritance">
+        <childnode refid="419" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="413">
+      <node id="419">
         <label>qlib::quantum::qsystem</label>
         <link refid="classqlib_1_1quantum_1_1qsystem"/>
-        <childnode refid="414" relation="public-inheritance">
+        <childnode refid="420" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="419">
+      <node id="425">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="418">
+      <node id="424">
         <label>qlib::quantum::qsystem</label>
         <link refid="classqlib_1_1quantum_1_1qsystem"/>
-        <childnode refid="419" relation="public-inheritance">
+        <childnode refid="425" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/core/quantum/systems/system.hpp" line="18" column="1" bodyfile="src/core/quantum/systems/system.hpp" bodystart="18" bodyend="35"/>
+    <location file="src/core/quantum/systems/system.hpp" line="18" column="1" bodyfile="src/core/quantum/systems/system.hpp" bodystart="18" bodyend="39"/>
     <listofallmembers>
       <member refid="classqlib_1_1quantum_1_1qsystem_1adbb748feb351aac69ca4a0bf6c92d77c" prot="public" virt="pure-virtual"><scope>qlib::quantum::qsystem</scope><name>apply</name></member>
       <member refid="classqlib_1_1quantum_1_1qsystem_1a33d9954c6ca01cb400d940ff05614364" prot="public" virt="pure-virtual"><scope>qlib::quantum::qsystem</scope><name>measure</name></member>
       <member refid="classqlib_1_1quantum_1_1qsystem_1a9d95030955e2fdb26bc9152c32310e7e" prot="public" virt="virtual"><scope>qlib::quantum::qsystem</scope><name>toString</name></member>
+      <member refid="classqlib_1_1quantum_1_1qsystem_1a5626857e5dc87dc2bdbb1f4d0b0401f9" prot="public" virt="pure-virtual"><scope>qlib::quantum::qsystem</scope><name>zero</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

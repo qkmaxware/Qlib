@@ -26,7 +26,7 @@ var searchData=
   ['try_5fparse_5frule',['try_parse_rule',['../namespaceqasm_1_1rules.html#af40aa89c9f5235a7d2e94af2de62a42b',1,'qasm::rules']]],
   ['try_5fparse_5fsubcircuit_5fapplication',['try_parse_subcircuit_application',['../namespaceqasm_1_1rules.html#a26247b01755121860f87e5a26d9bd391',1,'qasm::rules']]],
   ['tryparse',['tryParse',['../classparser_1_1rule.html#a60ccfb91ea4fe7def5ec2a15bb97c5ec',1,'parser::rule::tryParse()'],['../classparser_1_1repeater.html#acb57c02da3e60b3ca751a2eda3e145c2',1,'parser::repeater::tryParse()'],['../classparser_1_1terminal.html#abf7f4ea72388f2e96140769bc5d2acc8',1,'parser::terminal::tryParse()'],['../classparser_1_1sequence.html#a499005d2dd4a3f39985d2deddb413cea',1,'parser::sequence::tryParse()'],['../classparser_1_1choice.html#a76d73bd6b3adb0c8a062b46a4d49cd11',1,'parser::choice::tryParse()']]],
-  ['type',['type',['../classqasm_1_1exec_1_1declaration.html#a165d72745d002f80716cbd37f27687fe',1,'qasm::exec::declaration']]],
+  ['type',['type',['../classqasm_1_1exec_1_1declaration.html#a165d72745d002f80716cbd37f27687fe',1,'qasm::exec::declaration::type()'],['../classqasm_1_1exec_1_1reset.html#af581592e5a488d92fdbd5bf826def7ba',1,'qasm::exec::reset::type()']]],
   ['typedword',['typedWord',['../classqlib_1_1ide_1_1AutoComplete.html#add24423a55cac629e8316c5918a6d954',1,'qlib::ide::AutoComplete']]],
   ['types_2eh',['types.h',['../types_8h.html',1,'']]]
 ];

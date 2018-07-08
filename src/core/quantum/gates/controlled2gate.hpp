@@ -55,7 +55,7 @@ class controlled2gate : public igate {
 
             //Init loop --first 2 inputs are control
             u64 k = inputQubits[2];
-            u64 c1 = inputQubits[0];
+            u64 c1 = 1 << inputQubits[0];
             u64 c2 = 1 << inputQubits[1];
             u64 stride = 1 << k;
 

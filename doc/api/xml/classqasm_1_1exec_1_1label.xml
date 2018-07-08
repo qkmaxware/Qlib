@@ -43,25 +43,25 @@
     <detaileddescription>
 <para>Instruction to label a line </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="339">
+      <node id="345">
         <label>qasm::exec::label</label>
         <link refid="classqasm_1_1exec_1_1label"/>
-        <childnode refid="340" relation="public-inheritance">
+        <childnode refid="346" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="340">
+      <node id="346">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="341">
+      <node id="347">
         <label>qasm::exec::label</label>
         <link refid="classqasm_1_1exec_1_1label"/>
-        <childnode refid="342" relation="public-inheritance">
+        <childnode refid="348" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="342">
+      <node id="348">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>

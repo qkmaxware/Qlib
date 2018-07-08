@@ -11,8 +11,7 @@
 {\ttfamily \#include \char`\"{}./parser.\+hpp\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}./runtime.\+hpp\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}./scanner.\+hpp\char`\"{}}\\*
-Include dependency graph for compiler.\+hpp\+:
-\nopagebreak
+Include dependency graph for compiler.\+hpp\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -75,6 +74,8 @@ bool \hyperlink{namespaceqasm_1_1rules_af40aa89c9f5235a7d2e94af2de62a42b}{qasm\+
 \item 
 \hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$ \hyperlink{compiler_8hpp_a68fba8c9d7b383e00bd8786cb4581374}{convert\+\_\+measurement} (\hyperlink{structparser_1_1parsetree}{parser\+::parsetree} \&ref)
 \item 
+\hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$ \hyperlink{compiler_8hpp_a9695552da709ab00ce93ec00fa71447b}{convert\+\_\+reset} (\hyperlink{structparser_1_1parsetree}{parser\+::parsetree} \&ref)
+\item 
 void \hyperlink{compiler_8hpp_a859ddd4d6a4adc68346506c50a08f063}{post\+\_\+none} (\hyperlink{classcompiler}{compiler} \&comp, \hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$runable)
 \item 
 void \hyperlink{compiler_8hpp_a01ae4a79dc45ca04bac94915f97db422}{post\+\_\+add} (\hyperlink{classcompiler}{compiler} \&comp, \hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$runable)
@@ -121,6 +122,13 @@ Convert parse tree to measurement executable \index{compiler.\+hpp@{compiler.\+h
 \item[{{\bf parser\+::parsetree} \&}]{ref}
 \end{DoxyParamCaption}
 )}\hypertarget{compiler_8hpp_af4b1195ebe9533956bca833f365dccfb}{}\label{compiler_8hpp_af4b1195ebe9533956bca833f365dccfb}
+Convert parse tree to pint executable \index{compiler.\+hpp@{compiler.\+hpp}!convert\+\_\+reset@{convert\+\_\+reset}}
+\index{convert\+\_\+reset@{convert\+\_\+reset}!compiler.\+hpp@{compiler.\+hpp}}
+\subsubsection[{\texorpdfstring{convert\+\_\+reset(parser\+::parsetree \&ref)}{convert_reset(parser::parsetree &ref)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf qasm\+::exec\+::executable}$\ast$ convert\+\_\+reset (
+\begin{DoxyParamCaption}
+\item[{{\bf parser\+::parsetree} \&}]{ref}
+\end{DoxyParamCaption}
+)}\hypertarget{compiler_8hpp_a9695552da709ab00ce93ec00fa71447b}{}\label{compiler_8hpp_a9695552da709ab00ce93ec00fa71447b}
 Convert parse tree to pint executable \index{compiler.\+hpp@{compiler.\+hpp}!convert\+\_\+typedef@{convert\+\_\+typedef}}
 \index{convert\+\_\+typedef@{convert\+\_\+typedef}!compiler.\+hpp@{compiler.\+hpp}}
 \subsubsection[{\texorpdfstring{convert\+\_\+typedef(parser\+::parsetree \&ref)}{convert_typedef(parser::parsetree &ref)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf qasm\+::exec\+::executable}$\ast$ convert\+\_\+typedef (

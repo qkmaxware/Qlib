@@ -127,21 +127,21 @@
     <detaileddescription>
 <para>Class wrapping up all compiler components </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="275">
+      <node id="280">
         <label>compiler</label>
         <link refid="classcompiler"/>
-        <childnode refid="276" relation="usage">
+        <childnode refid="281" relation="usage">
           <edgelabel>prog</edgelabel>
         </childnode>
-        <childnode refid="277" relation="usage">
+        <childnode refid="282" relation="usage">
           <edgelabel>tokenizer</edgelabel>
         </childnode>
       </node>
-      <node id="276">
+      <node id="281">
         <label>program</label>
         <link refid="classprogram"/>
       </node>
-      <node id="277">
+      <node id="282">
         <label>lexical::lexer</label>
         <link refid="classlexical_1_1lexer"/>
       </node>

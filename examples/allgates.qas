@@ -1,0 +1,47 @@
+//Declare quantum register of 3 qubits
+qreg q[3]
+
+//Test each gate
+zero qreg q
+h q0
+print q
+
+i q0
+print q
+
+zero qreg q
+x q0
+print q
+
+zero qreg q
+y q0
+print q
+
+zero qreg q
+z q0
+print q
+
+zero qreg q
+t q0
+print q
+
+zero qreg q
+h q0
+cx q0 q1
+print q
+
+zero qreg q
+h q0
+cy q0 q1
+print q
+
+zero qreg q
+h q0
+cz q0 q1
+print q
+
+zero qreg q
+h q0
+h q1
+ccnot q0 q1 q2
+print q

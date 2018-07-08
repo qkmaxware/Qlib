@@ -16,7 +16,8 @@ var hierarchy =
       [ "qasm::exec::import", "classqasm_1_1exec_1_1import.html", null ],
       [ "qasm::exec::label", "classqasm_1_1exec_1_1label.html", null ],
       [ "qasm::exec::measurement", "classqasm_1_1exec_1_1measurement.html", null ],
-      [ "qasm::exec::print", "classqasm_1_1exec_1_1print.html", null ]
+      [ "qasm::exec::print", "classqasm_1_1exec_1_1print.html", null ],
+      [ "qasm::exec::reset", "classqasm_1_1exec_1_1reset.html", null ]
     ] ],
     [ "qlib.ide.FileManager", "classqlib_1_1ide_1_1FileManager.html", null ],
     [ "Iterable", null, [

@@ -108,7 +108,7 @@ class qreg : public qsystem {
                 //Collapse qubit has chosen to be '0'
                 for(size_t r = 0; r < amplitudes.countRows(); r++){
                     //State has '1'
-                    if(r & mask > 0){
+                    if((r & mask) > 0){
                         amplitudes(r,0) = complex(0,0);
                     }
                     //State has '0', re-normalize
@@ -117,10 +117,10 @@ class qreg : public qsystem {
                     }
                 }
             }else {
-                //Collapse qubit has chosen to be '0'
+                //Collapse qubit has chosen to be '1'
                 for(size_t r = 0; r < amplitudes.countRows(); r++){
                     //State has '1', re-normalize
-                    if(r & mask > 0){
+                    if((r & mask) > 0){
                        amplitudes(r,0) = amplitudes(r,0) / rootOne;
                     }
                     //State has '0'
@@ -132,6 +132,33 @@ class qreg : public qsystem {
 
             return zeroChosen ? 0 : 1;
         };
+
+        /// <Summary>
+        /// Prepare qubit in the zero state
+        /// </Summary>
+        virtual void zero(i64 qubit) {
+            f64 zero = 0.0;
+            u64 mask = 1 << qubit;
+            //Sum all states where qubit is zero
+            for(size_t state = 0; state < amplitudes.countRows(); state++){
+                if ((state & mask) < 1){
+                    zero += amplitudes(state, 0).sqrMagnitude();
+                }
+            }
+
+            //Renormalize, set states where qubit is 1 to 0
+            f64 rootZero = sqrt(zero);
+            for(size_t r = 0; r < amplitudes.countRows(); r++){
+                //State has '1'
+                if((r & mask) > 0){
+                    amplitudes(r,0) = complex(0,0);
+                }
+                //State has '0', re-normalize
+                else {
+                    amplitudes(r,0) = amplitudes(r,0) / rootZero;
+                }
+            }
+        }
 
         /// <Summary>
         /// Human readable output

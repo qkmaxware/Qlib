@@ -564,6 +564,23 @@
         </inbodydescription>
         <location file="src/runtime/compiler.hpp" line="489" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="489" bodyend="506"/>
       </memberdef>
+      <memberdef kind="function" id="compiler_8hpp_1a9695552da709ab00ce93ec00fa71447b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classqasm_1_1exec_1_1executable" kindref="compound">qasm::exec::executable</ref> *</type>
+        <definition>qasm::exec::executable* convert_reset</definition>
+        <argsstring>(parser::parsetree &amp;ref)</argsstring>
+        <name>convert_reset</name>
+        <param>
+          <type><ref refid="structparser_1_1parsetree" kindref="compound">parser::parsetree</ref> &amp;</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert parse tree to pint executable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/compiler.hpp" line="511" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="511" bodyend="527"/>
+      </memberdef>
       <memberdef kind="function" id="compiler_8hpp_1a859ddd4d6a4adc68346506c50a08f063" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void post_none</definition>
@@ -583,7 +600,7 @@
 <para>Discard converted value </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/compiler.hpp" line="514" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="514" bodyend="516"/>
+        <location file="src/runtime/compiler.hpp" line="535" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="535" bodyend="537"/>
       </memberdef>
       <memberdef kind="function" id="compiler_8hpp_1a01ae4a79dc45ca04bac94915f97db422" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -604,7 +621,7 @@
 <para>Add converted value to program to execute </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/compiler.hpp" line="520" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="520" bodyend="522"/>
+        <location file="src/runtime/compiler.hpp" line="541" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="541" bodyend="543"/>
       </memberdef>
       <memberdef kind="function" id="compiler_8hpp_1a5f86ad821427272c82f91807bed4ffe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -625,7 +642,7 @@
 <para>Load another file into the program </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/compiler.hpp" line="526" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="526" bodyend="531"/>
+        <location file="src/runtime/compiler.hpp" line="547" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="547" bodyend="552"/>
       </memberdef>
       <memberdef kind="function" id="compiler_8hpp_1a6a17a035bad361ab796fcc69b5e57431" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -646,7 +663,7 @@
 <para>Add a jump anchor to the program </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/compiler.hpp" line="535" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="535" bodyend="539"/>
+        <location file="src/runtime/compiler.hpp" line="556" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="556" bodyend="560"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1080,28 +1097,46 @@
 <codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="506"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="507"><highlight class="normal"></highlight></codeline>
-<codeline lineno="508"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="509"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Post<sp/>conversion<sp/>hooks</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="510"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
-<codeline lineno="514" refid="compiler_8hpp_1a859ddd4d6a4adc68346506c50a08f063" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="compiler_8hpp_1a859ddd4d6a4adc68346506c50a08f063" kindref="member">post_none</ref><sp/>(<ref refid="classcompiler" kindref="compound">compiler</ref>&amp;<sp/>comp,<sp/><ref refid="classqasm_1_1exec_1_1executable" kindref="compound">qasm::exec::executable</ref>*<sp/>runable){</highlight></codeline>
-<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>runable;</highlight></codeline>
-<codeline lineno="516"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="520" refid="compiler_8hpp_1a01ae4a79dc45ca04bac94915f97db422" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="compiler_8hpp_1a01ae4a79dc45ca04bac94915f97db422" kindref="member">post_add</ref><sp/>(<ref refid="classcompiler" kindref="compound">compiler</ref>&amp;<sp/>comp,<sp/><ref refid="classqasm_1_1exec_1_1executable" kindref="compound">qasm::exec::executable</ref>*<sp/>runable){</highlight></codeline>
-<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/>comp.<ref refid="classcompiler_1a801700690bf711169679cb6ca890168a" kindref="member">prog</ref>.<ref refid="classprogram_1ada37ef3924e109909695ef9bd55f54b3" kindref="member">push</ref>(runable);</highlight></codeline>
-<codeline lineno="522"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="526" refid="compiler_8hpp_1a5f86ad821427272c82f91807bed4ffe0" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="compiler_8hpp_1a5f86ad821427272c82f91807bed4ffe0" kindref="member">post_import</ref><sp/>(<ref refid="classcompiler" kindref="compound">compiler</ref>&amp;<sp/>comp,<sp/><ref refid="classqasm_1_1exec_1_1executable" kindref="compound">qasm::exec::executable</ref>*<sp/>runable){</highlight></codeline>
-<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classqasm_1_1exec_1_1import" kindref="compound">qasm::exec::import</ref>*<sp/><ref refid="classptr" kindref="compound">ptr</ref><sp/>=<sp/>(<ref refid="classqasm_1_1exec_1_1import" kindref="compound">qasm::exec::import</ref>*)runable;</highlight></codeline>
-<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>file<sp/>=<sp/>ptr-&gt;<ref refid="classqasm_1_1exec_1_1import_1a421f281a62fa921c13a3fc86d6c6fa17" kindref="member">filename</ref>;</highlight></codeline>
-<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/>comp.<ref refid="classcompiler_1af3984a0a53279c28bee8aee4b0ef84ca" kindref="member">try_parse_file</ref>(file);</highlight></codeline>
-<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>runable;</highlight></codeline>
-<codeline lineno="531"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="535" refid="compiler_8hpp_1a6a17a035bad361ab796fcc69b5e57431" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="compiler_8hpp_1a6a17a035bad361ab796fcc69b5e57431" kindref="member">post_anchor</ref><sp/>(<ref refid="classcompiler" kindref="compound">compiler</ref>&amp;<sp/>comp,<sp/><ref refid="classqasm_1_1exec_1_1executable" kindref="compound">qasm::exec::executable</ref>*<sp/>runable){</highlight></codeline>
-<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classqasm_1_1exec_1_1label" kindref="compound">qasm::exec::label</ref>*<sp/><ref refid="classptr" kindref="compound">ptr</ref><sp/>=<sp/>(<ref refid="classqasm_1_1exec_1_1label" kindref="compound">qasm::exec::label</ref>*)runable;</highlight></codeline>
-<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/>comp.<ref refid="classcompiler_1a801700690bf711169679cb6ca890168a" kindref="member">prog</ref>.<ref refid="classprogram_1ae17b7e99958aa0770b1cc4a8c20acbfe" kindref="member">anchors</ref>[ptr-&gt;<ref refid="classqasm_1_1exec_1_1label_1ae88393dae0bd5ddbe32a65cfb2d8f247" kindref="member">name</ref>]<sp/>=<sp/>comp.<ref refid="classcompiler_1a801700690bf711169679cb6ca890168a" kindref="member">prog</ref>.<ref refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kindref="member">lines</ref>.size();</highlight></codeline>
-<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>runable;</highlight></codeline>
-<codeline lineno="539"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="540"><highlight class="normal"></highlight></codeline>
-<codeline lineno="541"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="511" refid="compiler_8hpp_1a9695552da709ab00ce93ec00fa71447b" refkind="member"><highlight class="normal"><ref refid="classqasm_1_1exec_1_1executable" kindref="compound">qasm::exec::executable</ref>*<sp/><ref refid="compiler_8hpp_1a9695552da709ab00ce93ec00fa71447b" kindref="member">convert_reset</ref><sp/>(<ref refid="structparser_1_1parsetree" kindref="compound">parser::parsetree</ref>&amp;<sp/>ref){</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ref.<ref refid="structparser_1_1parsetree_1a3f158cea846ac57f787eb81a9ac2477f" kindref="member">getRight</ref>().<ref refid="structparser_1_1parsetree_1a4ee1d9214dd2a25fcf0494afaa9be7d7" kindref="member">value</ref>.<ref refid="structlexical_1_1match_1a346ef13017b47ee41a6abe643e5732e1" kindref="member">lexemeptr</ref>-&gt;<ref refid="classlexical_1_1lexeme_1a43f46025bbc59bdaff06d4e4efc979c1" kindref="member">name</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Indexor&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>type<sp/>=<sp/>ref.<ref refid="structparser_1_1parsetree_1a74fd9e1633a6581f3c07a6263a686bd3" kindref="member">getLeft</ref>().<ref refid="structparser_1_1parsetree_1a3f158cea846ac57f787eb81a9ac2477f" kindref="member">getRight</ref>().<ref refid="structparser_1_1parsetree_1a4ee1d9214dd2a25fcf0494afaa9be7d7" kindref="member">value</ref>.<ref refid="structlexical_1_1match_1a2ebda7888d347b3de302ffc465755f07" kindref="member">content</ref>[0];</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name<sp/>=<sp/>ref.<ref refid="structparser_1_1parsetree_1a3f158cea846ac57f787eb81a9ac2477f" kindref="member">getRight</ref>().<ref refid="structparser_1_1parsetree_1a4ee1d9214dd2a25fcf0494afaa9be7d7" kindref="member">value</ref>.<ref refid="structlexical_1_1match_1a2ebda7888d347b3de302ffc465755f07" kindref="member">content</ref>[1];</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>ref.<ref refid="structparser_1_1parsetree_1a3f158cea846ac57f787eb81a9ac2477f" kindref="member">getRight</ref>().<ref refid="structparser_1_1parsetree_1a4ee1d9214dd2a25fcf0494afaa9be7d7" kindref="member">value</ref>.<ref refid="structlexical_1_1match_1a2ebda7888d347b3de302ffc465755f07" kindref="member">content</ref>[2];</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqasm_1_1exec_1_1reset" kindref="compound">qasm::exec::reset</ref>*<sp/><ref refid="classparser_1_1rule" kindref="compound">rule</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classqasm_1_1exec_1_1reset" kindref="compound">qasm::exec::reset</ref>(name,<sp/>type,<sp/>std::stol(index));</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rule;</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>type<sp/>=<sp/>ref.<ref refid="structparser_1_1parsetree_1a74fd9e1633a6581f3c07a6263a686bd3" kindref="member">getLeft</ref>().<ref refid="structparser_1_1parsetree_1a3f158cea846ac57f787eb81a9ac2477f" kindref="member">getRight</ref>().<ref refid="structparser_1_1parsetree_1a4ee1d9214dd2a25fcf0494afaa9be7d7" kindref="member">value</ref>.<ref refid="structlexical_1_1match_1a2ebda7888d347b3de302ffc465755f07" kindref="member">content</ref>[0];</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name<sp/>=<sp/>ref.<ref refid="structparser_1_1parsetree_1a3f158cea846ac57f787eb81a9ac2477f" kindref="member">getRight</ref>().<ref refid="structparser_1_1parsetree_1a4ee1d9214dd2a25fcf0494afaa9be7d7" kindref="member">value</ref>.<ref refid="structlexical_1_1match_1a2ebda7888d347b3de302ffc465755f07" kindref="member">content</ref>[0];</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"></highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqasm_1_1exec_1_1reset" kindref="compound">qasm::exec::reset</ref>*<sp/><ref refid="classparser_1_1rule" kindref="compound">rule</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classqasm_1_1exec_1_1reset" kindref="compound">qasm::exec::reset</ref>(name,<sp/>type);</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rule;</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="527"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Post<sp/>conversion<sp/>hooks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="535" refid="compiler_8hpp_1a859ddd4d6a4adc68346506c50a08f063" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="compiler_8hpp_1a859ddd4d6a4adc68346506c50a08f063" kindref="member">post_none</ref><sp/>(<ref refid="classcompiler" kindref="compound">compiler</ref>&amp;<sp/>comp,<sp/><ref refid="classqasm_1_1exec_1_1executable" kindref="compound">qasm::exec::executable</ref>*<sp/>runable){</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>runable;</highlight></codeline>
+<codeline lineno="537"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="541" refid="compiler_8hpp_1a01ae4a79dc45ca04bac94915f97db422" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="compiler_8hpp_1a01ae4a79dc45ca04bac94915f97db422" kindref="member">post_add</ref><sp/>(<ref refid="classcompiler" kindref="compound">compiler</ref>&amp;<sp/>comp,<sp/><ref refid="classqasm_1_1exec_1_1executable" kindref="compound">qasm::exec::executable</ref>*<sp/>runable){</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/>comp.<ref refid="classcompiler_1a801700690bf711169679cb6ca890168a" kindref="member">prog</ref>.<ref refid="classprogram_1ada37ef3924e109909695ef9bd55f54b3" kindref="member">push</ref>(runable);</highlight></codeline>
+<codeline lineno="543"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="547" refid="compiler_8hpp_1a5f86ad821427272c82f91807bed4ffe0" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="compiler_8hpp_1a5f86ad821427272c82f91807bed4ffe0" kindref="member">post_import</ref><sp/>(<ref refid="classcompiler" kindref="compound">compiler</ref>&amp;<sp/>comp,<sp/><ref refid="classqasm_1_1exec_1_1executable" kindref="compound">qasm::exec::executable</ref>*<sp/>runable){</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classqasm_1_1exec_1_1import" kindref="compound">qasm::exec::import</ref>*<sp/><ref refid="classptr" kindref="compound">ptr</ref><sp/>=<sp/>(<ref refid="classqasm_1_1exec_1_1import" kindref="compound">qasm::exec::import</ref>*)runable;</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>file<sp/>=<sp/>ptr-&gt;<ref refid="classqasm_1_1exec_1_1import_1a421f281a62fa921c13a3fc86d6c6fa17" kindref="member">filename</ref>;</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/>comp.<ref refid="classcompiler_1af3984a0a53279c28bee8aee4b0ef84ca" kindref="member">try_parse_file</ref>(file);</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>runable;</highlight></codeline>
+<codeline lineno="552"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="556" refid="compiler_8hpp_1a6a17a035bad361ab796fcc69b5e57431" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="compiler_8hpp_1a6a17a035bad361ab796fcc69b5e57431" kindref="member">post_anchor</ref><sp/>(<ref refid="classcompiler" kindref="compound">compiler</ref>&amp;<sp/>comp,<sp/><ref refid="classqasm_1_1exec_1_1executable" kindref="compound">qasm::exec::executable</ref>*<sp/>runable){</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classqasm_1_1exec_1_1label" kindref="compound">qasm::exec::label</ref>*<sp/><ref refid="classptr" kindref="compound">ptr</ref><sp/>=<sp/>(<ref refid="classqasm_1_1exec_1_1label" kindref="compound">qasm::exec::label</ref>*)runable;</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/>comp.<ref refid="classcompiler_1a801700690bf711169679cb6ca890168a" kindref="member">prog</ref>.<ref refid="classprogram_1ae17b7e99958aa0770b1cc4a8c20acbfe" kindref="member">anchors</ref>[ptr-&gt;<ref refid="classqasm_1_1exec_1_1label_1ae88393dae0bd5ddbe32a65cfb2d8f247" kindref="member">name</ref>]<sp/>=<sp/>comp.<ref refid="classcompiler_1a801700690bf711169679cb6ca890168a" kindref="member">prog</ref>.<ref refid="classprogram_1a827f0b22e21be3ce1e0e568a147488b9" kindref="member">lines</ref>.size();</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>runable;</highlight></codeline>
+<codeline lineno="560"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight></codeline>
+<codeline lineno="562"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="src/runtime/compiler.hpp"/>
   </compounddef>

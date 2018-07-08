@@ -103,48 +103,66 @@
         </inbodydescription>
         <location file="src/core/quantum/systems/ensemble.hpp" line="56" column="1" bodyfile="src/core/quantum/systems/ensemble.hpp" bodystart="56" bodyend="67"/>
       </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1ensemble_1ac170f82a86704e08e8f2bebc721cf03b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void qlib::quantum::ensemble::zero</definition>
+        <argsstring>(i64 qubit)</argsstring>
+        <name>zero</name>
+        <reimplements refid="classqlib_1_1quantum_1_1qsystem_1a5626857e5dc87dc2bdbb1f4d0b0401f9">zero</reimplements>
+        <param>
+          <type>i64</type>
+          <declname>qubit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prepare qubit in the zero state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/ensemble.hpp" line="72" column="1" bodyfile="src/core/quantum/systems/ensemble.hpp" bodystart="72" bodyend="76"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>Represents a collection of multiple identical quantum systems </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="302">
+      <node id="307">
         <label>qlib::quantum::ensemble</label>
         <link refid="classqlib_1_1quantum_1_1ensemble"/>
-        <childnode refid="303" relation="public-inheritance">
+        <childnode refid="308" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="304">
+      <node id="309">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="303">
+      <node id="308">
         <label>qlib::quantum::qsystem</label>
         <link refid="classqlib_1_1quantum_1_1qsystem"/>
-        <childnode refid="304" relation="public-inheritance">
+        <childnode refid="309" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="305">
+      <node id="310">
         <label>qlib::quantum::ensemble</label>
         <link refid="classqlib_1_1quantum_1_1ensemble"/>
-        <childnode refid="306" relation="public-inheritance">
+        <childnode refid="311" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="307">
+      <node id="312">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="306">
+      <node id="311">
         <label>qlib::quantum::qsystem</label>
         <link refid="classqlib_1_1quantum_1_1qsystem"/>
-        <childnode refid="307" relation="public-inheritance">
+        <childnode refid="312" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/core/quantum/systems/ensemble.hpp" line="15" column="1" bodyfile="src/core/quantum/systems/ensemble.hpp" bodystart="15" bodyend="68"/>
+    <location file="src/core/quantum/systems/ensemble.hpp" line="15" column="1" bodyfile="src/core/quantum/systems/ensemble.hpp" bodystart="15" bodyend="77"/>
     <listofallmembers>
       <member refid="classqlib_1_1quantum_1_1ensemble_1a9226b1108f8d45d052316f7c366f1d5a" prot="public" virt="virtual"><scope>qlib::quantum::ensemble</scope><name>apply</name></member>
       <member refid="classqlib_1_1quantum_1_1ensemble_1a5e088d9ac7394f150f5a2affe0790f2a" prot="public" virt="non-virtual"><scope>qlib::quantum::ensemble</scope><name>ensemble</name></member>
@@ -152,6 +170,7 @@
       <member refid="classqlib_1_1quantum_1_1ensemble_1ab77e11f30898f29060ff97236ec26319" prot="private" virt="non-virtual"><scope>qlib::quantum::ensemble</scope><name>set</name></member>
       <member refid="classqlib_1_1quantum_1_1ensemble_1a4b811e4778f5c845504ed8eec058dfe4" prot="public" virt="non-virtual"><scope>qlib::quantum::ensemble</scope><name>size</name></member>
       <member refid="classqlib_1_1quantum_1_1qsystem_1a9d95030955e2fdb26bc9152c32310e7e" prot="public" virt="virtual"><scope>qlib::quantum::ensemble</scope><name>toString</name></member>
+      <member refid="classqlib_1_1quantum_1_1ensemble_1ac170f82a86704e08e8f2bebc721cf03b" prot="public" virt="virtual"><scope>qlib::quantum::ensemble</scope><name>zero</name></member>
       <member refid="classqlib_1_1quantum_1_1ensemble_1aae0c56d2d64d4be27b5ab976d60c2747" prot="public" virt="non-virtual"><scope>qlib::quantum::ensemble</scope><name>~ensemble</name></member>
     </listofallmembers>
   </compounddef>

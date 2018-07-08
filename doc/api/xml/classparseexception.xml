@@ -123,24 +123,24 @@
     <detaileddescription>
 <para>Class for exceptions occuring during parsing of lexical tokens </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="376">
+      <node id="382">
         <label>exception</label>
       </node>
-      <node id="375">
+      <node id="381">
         <label>parseexception</label>
         <link refid="classparseexception"/>
-        <childnode refid="376" relation="public-inheritance">
+        <childnode refid="382" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="378">
+      <node id="384">
         <label>exception</label>
       </node>
-      <node id="377">
+      <node id="383">
         <label>parseexception</label>
         <link refid="classparseexception"/>
-        <childnode refid="378" relation="public-inheritance">
+        <childnode refid="384" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

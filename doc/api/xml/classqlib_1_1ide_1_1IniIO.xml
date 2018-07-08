@@ -388,33 +388,33 @@
 <para>Class for storing INI type config information <simplesect kind="author"><para>Colin Halseth </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="334">
+      <node id="340">
         <label>qlib.ide.IniIO</label>
         <link refid="classqlib_1_1ide_1_1IniIO"/>
-        <childnode refid="335" relation="public-inheritance">
+        <childnode refid="341" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="335">
+      <node id="341">
         <label>Iterable&lt; Entry&lt; String, String &gt; &gt;</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="338">
+      <node id="344">
         <label>HashMap&lt; String, String &gt;</label>
       </node>
-      <node id="336">
+      <node id="342">
         <label>qlib.ide.IniIO</label>
         <link refid="classqlib_1_1ide_1_1IniIO"/>
-        <childnode refid="337" relation="public-inheritance">
+        <childnode refid="343" relation="public-inheritance">
         </childnode>
-        <childnode refid="338" relation="usage">
+        <childnode refid="344" relation="usage">
           <edgelabel>options</edgelabel>
         </childnode>
-        <childnode refid="336" relation="usage">
+        <childnode refid="342" relation="usage">
           <edgelabel>DEFAULT</edgelabel>
         </childnode>
       </node>
-      <node id="337">
+      <node id="343">
         <label>Iterable&lt; Entry&lt; String, String &gt; &gt;</label>
       </node>
     </collaborationgraph>

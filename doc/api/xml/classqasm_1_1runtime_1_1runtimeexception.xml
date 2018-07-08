@@ -57,24 +57,24 @@
     <detaileddescription>
 <para>Class for exceptions thrown when executing instructions </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="441">
+      <node id="451">
         <label>exception</label>
       </node>
-      <node id="440">
+      <node id="450">
         <label>qasm::runtime::runtimeexception</label>
         <link refid="classqasm_1_1runtime_1_1runtimeexception"/>
-        <childnode refid="441" relation="public-inheritance">
+        <childnode refid="451" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="443">
+      <node id="453">
         <label>exception</label>
       </node>
-      <node id="442">
+      <node id="452">
         <label>qasm::runtime::runtimeexception</label>
         <link refid="classqasm_1_1runtime_1_1runtimeexception"/>
-        <childnode refid="443" relation="public-inheritance">
+        <childnode refid="453" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -43,26 +43,26 @@
     <detaileddescription>
 <para>Instruction to import a file </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="331">
+      <node id="337">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
-      <node id="330">
+      <node id="336">
         <label>qasm::exec::import</label>
         <link refid="classqasm_1_1exec_1_1import"/>
-        <childnode refid="331" relation="public-inheritance">
+        <childnode refid="337" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="333">
+      <node id="339">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
-      <node id="332">
+      <node id="338">
         <label>qasm::exec::import</label>
         <link refid="classqasm_1_1exec_1_1import"/>
-        <childnode refid="333" relation="public-inheritance">
+        <childnode refid="339" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

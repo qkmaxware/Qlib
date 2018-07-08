@@ -9,6 +9,7 @@
     <derivedcompoundref refid="classqasm_1_1exec_1_1label" prot="public" virt="non-virtual">qasm::exec::label</derivedcompoundref>
     <derivedcompoundref refid="classqasm_1_1exec_1_1measurement" prot="public" virt="non-virtual">qasm::exec::measurement</derivedcompoundref>
     <derivedcompoundref refid="classqasm_1_1exec_1_1print" prot="public" virt="non-virtual">qasm::exec::print</derivedcompoundref>
+    <derivedcompoundref refid="classqasm_1_1exec_1_1reset" prot="public" virt="non-virtual">qasm::exec::reset</derivedcompoundref>
     <includes refid="runtime_8hpp" local="no">runtime.hpp</includes>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classqasm_1_1exec_1_1executable_1ad07f864a889edb0777ebbb1bc1628121" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
@@ -20,6 +21,7 @@
         <reimplementedby refid="classqasm_1_1exec_1_1print_1ae803c9f70d2a1afd3bbe6e0520e9678b">invoke_rootprogram</reimplementedby>
         <reimplementedby refid="classqasm_1_1exec_1_1measurement_1aefa96cf86f31c40a75fbc46924c94bb8">invoke_rootprogram</reimplementedby>
         <reimplementedby refid="classqasm_1_1exec_1_1declaration_1a4f1396fca212fb0ce984d2cea90df0a8">invoke_rootprogram</reimplementedby>
+        <reimplementedby refid="classqasm_1_1exec_1_1reset_1ac23af0d0766e90a32de00446933e0eb6">invoke_rootprogram</reimplementedby>
         <param>
           <type><ref refid="classqasm_1_1runtime_1_1environment" kindref="compound">runtime::environment</ref> &amp;</type>
           <declname>env</declname>
@@ -55,50 +57,56 @@
     <detaileddescription>
 <para>Represents an instruction that can be run </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="312">
+      <node id="317">
         <label>qasm::exec::apply_subcircuit</label>
         <link refid="classqasm_1_1exec_1_1apply__subcircuit"/>
-        <childnode refid="310" relation="public-inheritance">
+        <childnode refid="315" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="321">
+        <label>qasm::exec::measurement</label>
+        <link refid="classqasm_1_1exec_1_1measurement"/>
+        <childnode refid="315" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>qasm::exec::label</label>
+        <link refid="classqasm_1_1exec_1_1label"/>
+        <childnode refid="315" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>qasm::exec::reset</label>
+        <link refid="classqasm_1_1exec_1_1reset"/>
+        <childnode refid="315" relation="public-inheritance">
         </childnode>
       </node>
       <node id="316">
-        <label>qasm::exec::measurement</label>
-        <link refid="classqasm_1_1exec_1_1measurement"/>
-        <childnode refid="310" relation="public-inheritance">
+        <label>qasm::exec::apply_gate</label>
+        <link refid="classqasm_1_1exec_1_1apply__gate"/>
+        <childnode refid="315" relation="public-inheritance">
         </childnode>
       </node>
       <node id="315">
-        <label>qasm::exec::label</label>
-        <link refid="classqasm_1_1exec_1_1label"/>
-        <childnode refid="310" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="311">
-        <label>qasm::exec::apply_gate</label>
-        <link refid="classqasm_1_1exec_1_1apply__gate"/>
-        <childnode refid="310" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="310">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
-      <node id="314">
+      <node id="319">
         <label>qasm::exec::import</label>
         <link refid="classqasm_1_1exec_1_1import"/>
-        <childnode refid="310" relation="public-inheritance">
+        <childnode refid="315" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="317">
+      <node id="322">
         <label>qasm::exec::print</label>
         <link refid="classqasm_1_1exec_1_1print"/>
-        <childnode refid="310" relation="public-inheritance">
+        <childnode refid="315" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="313">
+      <node id="318">
         <label>qasm::exec::declaration</label>
         <link refid="classqasm_1_1exec_1_1declaration"/>
-        <childnode refid="310" relation="public-inheritance">
+        <childnode refid="315" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

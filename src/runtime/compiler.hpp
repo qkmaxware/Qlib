@@ -505,6 +505,27 @@ qasm::exec::executable* convert_measurement (parser::parsetree& ref){
     }
 }
 
+/// <Summary>
+/// Convert parse tree to pint executable
+/// </Summary>
+qasm::exec::executable* convert_reset (parser::parsetree& ref){
+    if(ref.getRight().value.lexemeptr->name == "Indexor"){
+        string type = ref.getLeft().getRight().value.content[0];
+        string name = ref.getRight().value.content[1];
+        string index = ref.getRight().value.content[2];
+
+        qasm::exec::reset* rule = new qasm::exec::reset(name, type, std::stol(index));
+        return rule;
+    }
+    else{
+        string type = ref.getLeft().getRight().value.content[0];
+        string name = ref.getRight().value.content[0];
+
+        qasm::exec::reset* rule = new qasm::exec::reset(name, type);
+        return rule;
+    }
+}
+
 //------------------------------------------------------------------------------
 // Post conversion hooks
 //------------------------------------------------------------------------------

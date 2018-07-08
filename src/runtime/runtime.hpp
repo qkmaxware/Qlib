@@ -414,6 +414,58 @@ namespace exec {
             string name;
             label(string name) : name(name) {}
     };
+
+    /// <Summary>
+    /// Instruction to reset a quantum or classical register
+    /// </Summary>
+    class reset : public executable {
+        public:
+            string name;
+            string type;
+            ulong index;
+            bool useIndex;
+            reset(string name, string type) : name(name), type(type), index(-1), useIndex(false) {}
+            reset(string name, string type, ulong index) : name(name), type(type), index(index), useIndex(true) {}
+            virtual void invoke_rootprogram(runtime::environment& env) {
+                stringstream sb;
+                if(type == "qreg"){
+                    if(env.hasQreg(name)){
+                        if(!useIndex){
+                            qreg& q = env.getQreg(name);
+                            env.setQreg(name, q.size());
+                        }else{
+                            qreg& q = env.getQreg(name);
+                            q.zero(index);
+                        }
+                    }else{
+                        sb << "Quantum register \"";
+                        sb << name;
+                        sb << "\" doesn't exist";
+                        throw qasm::runtime::runtimeexception(sb.str());
+                    }
+                }else if(type == "creg"){
+                    if(env.hasCreg(name)){
+                        if(!useIndex){
+                            creg& c = env.getCreg(name);
+                            env.setCreg(name, c.size());
+                        }else {
+                            creg& c = env.getCreg(name);
+                            c[index] = false;
+                        }
+                    }else{
+                        sb << "Classic register \"";
+                        sb << name;
+                        sb << "\" doesn't exist";
+                        throw qasm::runtime::runtimeexception(sb.str());
+                    }
+                }else{
+                    sb << "Unknown type: \"";
+                    sb << type;
+                    sb << "\" to reset";
+                    throw qasm::runtime::runtimeexception(sb.str());
+                }
+            }
+    };
 }
 }
 

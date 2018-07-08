@@ -409,54 +409,54 @@
 <para>Class representing a code editor with line numbering and syntax highlighting <simplesect kind="author"><para>Colin Halseth </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="266">
+      <node id="271">
         <label>JPanel</label>
       </node>
-      <node id="265">
+      <node id="270">
         <label>qlib.ide.CodeEditor</label>
         <link refid="classqlib_1_1ide_1_1CodeEditor"/>
-        <childnode refid="266" relation="public-inheritance">
+        <childnode refid="271" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="268">
+      <node id="273">
         <label>JPanel</label>
       </node>
-      <node id="271">
+      <node id="276">
         <label>JTextPane</label>
       </node>
-      <node id="273">
+      <node id="278">
         <label>LinkedList&lt; qlib.ide.CodeEditor.ChangeListener &gt;</label>
       </node>
-      <node id="270">
+      <node id="275">
         <label>DefaultStyledDocument</label>
       </node>
-      <node id="269">
+      <node id="274">
         <label>AttributeSet</label>
       </node>
-      <node id="272">
+      <node id="277">
         <label>LinkedList&lt; qlib.ide.CodeEditor.Style &gt;</label>
       </node>
-      <node id="267">
+      <node id="272">
         <label>qlib.ide.CodeEditor</label>
         <link refid="classqlib_1_1ide_1_1CodeEditor"/>
-        <childnode refid="268" relation="public-inheritance">
+        <childnode refid="273" relation="public-inheritance">
         </childnode>
-        <childnode refid="269" relation="usage">
+        <childnode refid="274" relation="usage">
           <edgelabel>none</edgelabel>
         </childnode>
-        <childnode refid="270" relation="usage">
+        <childnode refid="275" relation="usage">
           <edgelabel>doc</edgelabel>
         </childnode>
-        <childnode refid="271" relation="usage">
+        <childnode refid="276" relation="usage">
           <edgelabel>numbers</edgelabel>
           <edgelabel>editor</edgelabel>
         </childnode>
-        <childnode refid="272" relation="usage">
+        <childnode refid="277" relation="usage">
           <edgelabel>styles</edgelabel>
         </childnode>
-        <childnode refid="273" relation="usage">
+        <childnode refid="278" relation="usage">
           <edgelabel>onChangeListeners</edgelabel>
         </childnode>
       </node>

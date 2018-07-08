@@ -42,6 +42,7 @@ int main(int arg_count, char* arg_values[]){
 	lexeme _for("For", "^for\\b");
 	lexeme _loop("Loop", "^loop\\b");
 	lexeme _include("Include", "^include\\b");
+	lexeme _reset("Zero", "^zero\\b");
 	
 	//Skippables
 	lexeme _lineComment("Line Comment", "^//[^\\r\\n]*");
@@ -61,7 +62,7 @@ int main(int arg_count, char* arg_values[]){
 	//Create tokenizer
 	//-------------------------------------
 	lexer tokenizer({
-		&_anchor, &_goto, &_start, &_mapping, &_measure, &_print, &_end, &_if, &_then, &_for, &_loop, &_include,
+		&_anchor, &_goto, &_start, &_mapping, &_measure, &_print, &_end, &_if, &_then, &_for, &_loop, &_include, &_reset,
 		&_lineComment, &_whitespace,
 		&_string, &_indexor, &_reference, &_integer, &_leftb, &_rightb
 	});
@@ -70,6 +71,7 @@ int main(int arg_count, char* arg_values[]){
 	//Create rules
 	//-------------------------------------
 	ruleptr import_ 			= _include << _string;
+	ruleptr reset_				= _reset << _reference << (_reference | _indexor);
 	ruleptr label_ 				= _anchor << _reference;
 	ruleptr print_ 				= _print << _reference;
 	ruleptr application_ 		= _reference << *_indexor;
@@ -80,13 +82,13 @@ int main(int arg_count, char* arg_values[]){
 	//Create parse lists
 	//-------------------------------------
 	vector<ruleptr> rules 
-		= {import_, label_, print_, typedecl_, application_, measurement_};
+		= {import_, label_, print_, typedecl_, application_, measurement_, reset_};
 
 	vector<qasm::exec::executable* (*)(parser::parsetree&)> converters
-		= {convert_import, convert_anchor, convert_print, convert_typedef, convert_gate_application, convert_measurement};
+		= {convert_import, convert_anchor, convert_print, convert_typedef, convert_gate_application, convert_measurement, convert_reset};
 
 	vector<void(*)(compiler&, qasm::exec::executable*)> post_events
-		= {post_import, post_anchor, post_add, post_add, post_add, post_add};
+		= {post_import, post_anchor, post_add, post_add, post_add, post_add, post_add};
 
 	//-------------------------------------
 	//Read in parameters

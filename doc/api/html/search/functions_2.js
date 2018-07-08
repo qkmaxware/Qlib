@@ -15,6 +15,7 @@ var searchData=
   ['convert_5fimport',['convert_import',['../compiler_8hpp.html#af29ea58956d1e519877cf79d81d5f8b8',1,'compiler.hpp']]],
   ['convert_5fmeasurement',['convert_measurement',['../compiler_8hpp.html#a68fba8c9d7b383e00bd8786cb4581374',1,'compiler.hpp']]],
   ['convert_5fprint',['convert_print',['../compiler_8hpp.html#af4b1195ebe9533956bca833f365dccfb',1,'compiler.hpp']]],
+  ['convert_5freset',['convert_reset',['../compiler_8hpp.html#a9695552da709ab00ce93ec00fa71447b',1,'compiler.hpp']]],
   ['convert_5ftypedef',['convert_typedef',['../compiler_8hpp.html#a3fadce05c7730406d98ffa5c57beee3a',1,'compiler.hpp']]],
   ['countcolumns',['countColumns',['../classqlib_1_1math_1_1matrix.html#a69ed708edf603637731e4f6fe46b0754',1,'qlib::math::matrix']]],
   ['countrows',['countRows',['../classqlib_1_1math_1_1matrix.html#add844c31055d495274b037e7bcd8f0b7',1,'qlib::math::matrix']]]

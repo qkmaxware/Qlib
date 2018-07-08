@@ -95,32 +95,32 @@
     <detaileddescription>
 <para>Class representing parsing elements that are repeated </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="430">
+      <node id="436">
         <label>parser::rule</label>
         <link refid="classparser_1_1rule"/>
       </node>
-      <node id="429">
+      <node id="435">
         <label>parser::repeater</label>
         <link refid="classparser_1_1repeater"/>
-        <childnode refid="430" relation="public-inheritance">
+        <childnode refid="436" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="433">
+      <node id="439">
         <label>parser::repeat</label>
         <link refid="classparser_1_1repeat"/>
       </node>
-      <node id="432">
+      <node id="438">
         <label>parser::rule</label>
         <link refid="classparser_1_1rule"/>
       </node>
-      <node id="431">
+      <node id="437">
         <label>parser::repeater</label>
         <link refid="classparser_1_1repeater"/>
-        <childnode refid="432" relation="public-inheritance">
+        <childnode refid="438" relation="public-inheritance">
         </childnode>
-        <childnode refid="433" relation="usage">
+        <childnode refid="439" relation="usage">
           <edgelabel>rep</edgelabel>
         </childnode>
       </node>

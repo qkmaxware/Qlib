@@ -231,10 +231,8 @@ public class AutoComplete {
                 window.setVisible(true);
                 list.setSelectedIndex(0);
             } catch (Exception ex) {
-                hideSuggestions();
+                //hideSuggestions();
             }
-        }else{
-            hideSuggestions();
         }
     }
 

@@ -141,55 +141,55 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="292">
+      <node id="297">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="291">
+      <node id="296">
         <label>qlib::quantum::gates::igate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1igate"/>
-        <childnode refid="292" relation="public-inheritance">
+        <childnode refid="297" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="290">
+      <node id="295">
         <label>qlib::quantum::gates::controlledgate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1controlledgate"/>
-        <childnode refid="291" relation="public-inheritance">
+        <childnode refid="296" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="296">
+      <node id="301">
         <label>qlib::quantum::gates::onequbitgate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate"/>
-        <childnode refid="294" relation="public-inheritance">
+        <childnode refid="299" relation="public-inheritance">
         </childnode>
-        <childnode refid="297" relation="usage">
+        <childnode refid="302" relation="usage">
           <edgelabel>m</edgelabel>
         </childnode>
       </node>
-      <node id="295">
+      <node id="300">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="294">
+      <node id="299">
         <label>qlib::quantum::gates::igate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1igate"/>
-        <childnode refid="295" relation="public-inheritance">
+        <childnode refid="300" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="297">
+      <node id="302">
         <label>qlib::math::matrix</label>
         <link refid="classqlib_1_1math_1_1matrix"/>
-        <childnode refid="295" relation="public-inheritance">
+        <childnode refid="300" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="293">
+      <node id="298">
         <label>qlib::quantum::gates::controlledgate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1controlledgate"/>
-        <childnode refid="294" relation="public-inheritance">
+        <childnode refid="299" relation="public-inheritance">
         </childnode>
-        <childnode refid="296" relation="usage">
+        <childnode refid="301" relation="usage">
           <edgelabel>refgate</edgelabel>
         </childnode>
       </node>

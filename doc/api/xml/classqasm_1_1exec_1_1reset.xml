@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classqasm_1_1exec_1_1reset" kind="class" language="C++" prot="public">
+    <compoundname>qasm::exec::reset</compoundname>
+    <basecompoundref refid="classqasm_1_1exec_1_1executable" prot="public" virt="non-virtual">qasm::exec::executable</basecompoundref>
+    <includes refid="runtime_8hpp" local="no">runtime.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1reset_1a9cd21a9f3f35d4576a27b1f858b69195" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string qasm::exec::reset::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="423" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1reset_1af581592e5a488d92fdbd5bf826def7ba" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string qasm::exec::reset::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="424" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1reset_1a065db6c61e42784019ccbee09add2c8f" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref></type>
+        <definition>ulong qasm::exec::reset::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="425" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqasm_1_1exec_1_1reset_1a7fe4d5c7095a9271447cc17067ed4579" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool qasm::exec::reset::useIndex</definition>
+        <argsstring></argsstring>
+        <name>useIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="426" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqasm_1_1exec_1_1reset_1a1e86f0ed244cb1bc8dd79018c35bef16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qasm::exec::reset::reset</definition>
+        <argsstring>(string name, string type)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="427" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="427" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1exec_1_1reset_1a0edddd94b70029ddc5b30d8fc3272d9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qasm::exec::reset::reset</definition>
+        <argsstring>(string name, string type, ulong index)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="428" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="428" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1exec_1_1reset_1ac23af0d0766e90a32de00446933e0eb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void qasm::exec::reset::invoke_rootprogram</definition>
+        <argsstring>(runtime::environment &amp;env)</argsstring>
+        <name>invoke_rootprogram</name>
+        <reimplements refid="classqasm_1_1exec_1_1executable_1ad07f864a889edb0777ebbb1bc1628121">invoke_rootprogram</reimplements>
+        <param>
+          <type><ref refid="classqasm_1_1runtime_1_1environment" kindref="compound">runtime::environment</ref> &amp;</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run instruction&apos;s primary operation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="429" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="429" bodyend="467"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Instruction to reset a quantum or classical register </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="440">
+        <label>qasm::exec::reset</label>
+        <link refid="classqasm_1_1exec_1_1reset"/>
+        <childnode refid="441" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="441">
+        <label>qasm::exec::executable</label>
+        <link refid="classqasm_1_1exec_1_1executable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="442">
+        <label>qasm::exec::reset</label>
+        <link refid="classqasm_1_1exec_1_1reset"/>
+        <childnode refid="443" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="443">
+        <label>qasm::exec::executable</label>
+        <link refid="classqasm_1_1exec_1_1executable"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/runtime.hpp" line="421" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="421" bodyend="468"/>
+    <listofallmembers>
+      <member refid="classqasm_1_1exec_1_1reset_1a065db6c61e42784019ccbee09add2c8f" prot="public" virt="non-virtual"><scope>qasm::exec::reset</scope><name>index</name></member>
+      <member refid="classqasm_1_1exec_1_1reset_1ac23af0d0766e90a32de00446933e0eb6" prot="public" virt="virtual"><scope>qasm::exec::reset</scope><name>invoke_rootprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" prot="public" virt="virtual"><scope>qasm::exec::reset</scope><name>invoke_subprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1reset_1a9cd21a9f3f35d4576a27b1f858b69195" prot="public" virt="non-virtual"><scope>qasm::exec::reset</scope><name>name</name></member>
+      <member refid="classqasm_1_1exec_1_1reset_1a1e86f0ed244cb1bc8dd79018c35bef16" prot="public" virt="non-virtual"><scope>qasm::exec::reset</scope><name>reset</name></member>
+      <member refid="classqasm_1_1exec_1_1reset_1a0edddd94b70029ddc5b30d8fc3272d9b" prot="public" virt="non-virtual"><scope>qasm::exec::reset</scope><name>reset</name></member>
+      <member refid="classqasm_1_1exec_1_1reset_1af581592e5a488d92fdbd5bf826def7ba" prot="public" virt="non-virtual"><scope>qasm::exec::reset</scope><name>type</name></member>
+      <member refid="classqasm_1_1exec_1_1reset_1a7fe4d5c7095a9271447cc17067ed4579" prot="public" virt="non-virtual"><scope>qasm::exec::reset</scope><name>useIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

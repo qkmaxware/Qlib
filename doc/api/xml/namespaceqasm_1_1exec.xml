@@ -10,6 +10,7 @@
     <innerclass refid="classqasm_1_1exec_1_1label" prot="public">qasm::exec::label</innerclass>
     <innerclass refid="classqasm_1_1exec_1_1measurement" prot="public">qasm::exec::measurement</innerclass>
     <innerclass refid="classqasm_1_1exec_1_1print" prot="public">qasm::exec::print</innerclass>
+    <innerclass refid="classqasm_1_1exec_1_1reset" prot="public">qasm::exec::reset</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

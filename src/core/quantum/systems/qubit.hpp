@@ -90,6 +90,13 @@ class qubit : public qsystem {
         }
 
         /// <Summary>
+        /// Prepare qubit in the zero state
+        /// </Summary>
+        virtual void zero(i64 qubit) {
+            this->vec = matrix(2,1, {1, 0});
+        }
+
+        /// <Summary>
         /// Pretty print
         /// </Summary>
         std::string toString(){

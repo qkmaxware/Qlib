@@ -61,26 +61,26 @@
     <detaileddescription>
 <para>Instruction to print register to console </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="384">
+      <node id="390">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
-      <node id="383">
+      <node id="389">
         <label>qasm::exec::print</label>
         <link refid="classqasm_1_1exec_1_1print"/>
-        <childnode refid="384" relation="public-inheritance">
+        <childnode refid="390" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="386">
+      <node id="392">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
-      <node id="385">
+      <node id="391">
         <label>qasm::exec::print</label>
         <link refid="classqasm_1_1exec_1_1print"/>
-        <childnode refid="386" relation="public-inheritance">
+        <childnode refid="392" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -127,6 +127,7 @@
     <member refid="classqlib_1_1quantum_1_1ensemble_1a4b811e4778f5c845504ed8eec058dfe4" kind="function"><name>size</name></member>
     <member refid="classqlib_1_1quantum_1_1ensemble_1a9226b1108f8d45d052316f7c366f1d5a" kind="function"><name>apply</name></member>
     <member refid="classqlib_1_1quantum_1_1ensemble_1ae5e3ebd119e1df6dbb966b7bb6222e5a" kind="function"><name>measure</name></member>
+    <member refid="classqlib_1_1quantum_1_1ensemble_1ac170f82a86704e08e8f2bebc721cf03b" kind="function"><name>zero</name></member>
   </compound>
   <compound refid="classqasm_1_1runtime_1_1environment" kind="class"><name>qasm::runtime::environment</name>
     <member refid="classqasm_1_1runtime_1_1environment_1ae65dc834296334c8b9ea6dd900210881" kind="variable"><name>quantum_registers</name></member>
@@ -340,12 +341,14 @@
     <member refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kind="function"><name>state</name></member>
     <member refid="classqlib_1_1quantum_1_1qreg_1af38f95ecaaf7de400856094154343cfe" kind="function"><name>apply</name></member>
     <member refid="classqlib_1_1quantum_1_1qreg_1acfcd58502c1e511766ede52a891f27c3" kind="function"><name>measure</name></member>
+    <member refid="classqlib_1_1quantum_1_1qreg_1a51eb9abfde64d764ca2afa27666df0e1" kind="function"><name>zero</name></member>
     <member refid="classqlib_1_1quantum_1_1qreg_1ae4dbf316bf6452f3110cb05146f54954" kind="function"><name>toString</name></member>
   </compound>
   <compound refid="classqlib_1_1quantum_1_1qsystem" kind="class"><name>qlib::quantum::qsystem</name>
     <member refid="classqlib_1_1quantum_1_1qsystem_1adbb748feb351aac69ca4a0bf6c92d77c" kind="function"><name>apply</name></member>
     <member refid="classqlib_1_1quantum_1_1qsystem_1a33d9954c6ca01cb400d940ff05614364" kind="function"><name>measure</name></member>
     <member refid="classqlib_1_1quantum_1_1qsystem_1a9d95030955e2fdb26bc9152c32310e7e" kind="function"><name>toString</name></member>
+    <member refid="classqlib_1_1quantum_1_1qsystem_1a5626857e5dc87dc2bdbb1f4d0b0401f9" kind="function"><name>zero</name></member>
   </compound>
   <compound refid="classqlib_1_1quantum_1_1qubit" kind="class"><name>qlib::quantum::qubit</name>
     <member refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kind="variable"><name>vec</name></member>
@@ -355,6 +358,7 @@
     <member refid="classqlib_1_1quantum_1_1qubit_1af8eaf337ffcb95c2445ddf35189335e4" kind="function"><name>state</name></member>
     <member refid="classqlib_1_1quantum_1_1qubit_1ab3b0b76d5c6f0e627a742fcafbc768ae" kind="function"><name>apply</name></member>
     <member refid="classqlib_1_1quantum_1_1qubit_1aaf001eff84ccb4b7a6992e42bc2143cb" kind="function"><name>measure</name></member>
+    <member refid="classqlib_1_1quantum_1_1qubit_1aa16b11ad849b672489c625196c800dd3" kind="function"><name>zero</name></member>
     <member refid="classqlib_1_1quantum_1_1qubit_1a8bf29d1f66508e4878ea861c5d8e44ec" kind="function"><name>toString</name></member>
   </compound>
   <compound refid="classparser_1_1repeat" kind="class"><name>parser::repeat</name>
@@ -376,6 +380,15 @@
     <member refid="classparser_1_1repeater_1aa5c267969cb13f7000e1767c2231f56c" kind="function"><name>repeater</name></member>
     <member refid="classparser_1_1repeater_1a6f369d919c6f590156e3bb60259f1a45" kind="function"><name>~repeater</name></member>
     <member refid="classparser_1_1repeater_1acb57c02da3e60b3ca751a2eda3e145c2" kind="function"><name>tryParse</name></member>
+  </compound>
+  <compound refid="classqasm_1_1exec_1_1reset" kind="class"><name>qasm::exec::reset</name>
+    <member refid="classqasm_1_1exec_1_1reset_1a9cd21a9f3f35d4576a27b1f858b69195" kind="variable"><name>name</name></member>
+    <member refid="classqasm_1_1exec_1_1reset_1af581592e5a488d92fdbd5bf826def7ba" kind="variable"><name>type</name></member>
+    <member refid="classqasm_1_1exec_1_1reset_1a065db6c61e42784019ccbee09add2c8f" kind="variable"><name>index</name></member>
+    <member refid="classqasm_1_1exec_1_1reset_1a7fe4d5c7095a9271447cc17067ed4579" kind="variable"><name>useIndex</name></member>
+    <member refid="classqasm_1_1exec_1_1reset_1a1e86f0ed244cb1bc8dd79018c35bef16" kind="function"><name>reset</name></member>
+    <member refid="classqasm_1_1exec_1_1reset_1a0edddd94b70029ddc5b30d8fc3272d9b" kind="function"><name>reset</name></member>
+    <member refid="classqasm_1_1exec_1_1reset_1ac23af0d0766e90a32de00446933e0eb6" kind="function"><name>invoke_rootprogram</name></member>
   </compound>
   <compound refid="classparser_1_1rule" kind="class"><name>parser::rule</name>
     <member refid="classparser_1_1rule_1abbe02436a9cb7b38b2186a82ff12b29a" kind="function"><name>~rule</name></member>
@@ -620,6 +633,7 @@
     <member refid="compiler_8hpp_1aef48a14daa35b8b1ac149d4507745272" kind="function"><name>convert_gate_application</name></member>
     <member refid="compiler_8hpp_1a3fadce05c7730406d98ffa5c57beee3a" kind="function"><name>convert_typedef</name></member>
     <member refid="compiler_8hpp_1a68fba8c9d7b383e00bd8786cb4581374" kind="function"><name>convert_measurement</name></member>
+    <member refid="compiler_8hpp_1a9695552da709ab00ce93ec00fa71447b" kind="function"><name>convert_reset</name></member>
     <member refid="compiler_8hpp_1a859ddd4d6a4adc68346506c50a08f063" kind="function"><name>post_none</name></member>
     <member refid="compiler_8hpp_1a01ae4a79dc45ca04bac94915f97db422" kind="function"><name>post_add</name></member>
     <member refid="compiler_8hpp_1a5f86ad821427272c82f91807bed4ffe0" kind="function"><name>post_import</name></member>

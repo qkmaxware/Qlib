@@ -146,25 +146,25 @@
     <detaileddescription>
 <para>Instruction to measure a quantum variable into a classical one </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="360">
+      <node id="366">
         <label>qasm::exec::measurement</label>
         <link refid="classqasm_1_1exec_1_1measurement"/>
-        <childnode refid="361" relation="public-inheritance">
+        <childnode refid="367" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="361">
+      <node id="367">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="362">
+      <node id="368">
         <label>qasm::exec::measurement</label>
         <link refid="classqasm_1_1exec_1_1measurement"/>
-        <childnode refid="363" relation="public-inheritance">
+        <childnode refid="369" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="363">
+      <node id="369">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>

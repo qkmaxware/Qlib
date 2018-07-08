@@ -32,6 +32,10 @@ class qsystem: public xobject {
         virtual std::string toString(){
             return xobject::toString();
         };
+        /// <Summary>
+        /// Prepare qubit in the zero state
+        /// </Summary>
+        virtual void zero(i64 qubit) = 0;
 };
 
 }

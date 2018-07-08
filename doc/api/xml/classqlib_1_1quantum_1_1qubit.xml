@@ -121,6 +121,24 @@
         </inbodydescription>
         <location file="src/core/quantum/systems/qubit.hpp" line="71" column="1" bodyfile="src/core/quantum/systems/qubit.hpp" bodystart="71" bodyend="90"/>
       </memberdef>
+      <memberdef kind="function" id="classqlib_1_1quantum_1_1qubit_1aa16b11ad849b672489c625196c800dd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void qlib::quantum::qubit::zero</definition>
+        <argsstring>(i64 qubit)</argsstring>
+        <name>zero</name>
+        <reimplements refid="classqlib_1_1quantum_1_1qsystem_1a5626857e5dc87dc2bdbb1f4d0b0401f9">zero</reimplements>
+        <param>
+          <type>i64</type>
+          <declname>qubit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prepare qubit in the zero state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/systems/qubit.hpp" line="95" column="1" bodyfile="src/core/quantum/systems/qubit.hpp" bodystart="95" bodyend="97"/>
+      </memberdef>
       <memberdef kind="function" id="classqlib_1_1quantum_1_1qubit_1a8bf29d1f66508e4878ea861c5d8e44ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
         <definition>std::string qlib::quantum::qubit::toString</definition>
@@ -133,7 +151,7 @@
 <para>Pretty print </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/quantum/systems/qubit.hpp" line="95" column="1" bodyfile="src/core/quantum/systems/qubit.hpp" bodystart="95" bodyend="101"/>
+        <location file="src/core/quantum/systems/qubit.hpp" line="102" column="1" bodyfile="src/core/quantum/systems/qubit.hpp" bodystart="102" bodyend="108"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -141,51 +159,51 @@
     <detaileddescription>
 <para>Representation of a single qubit </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="422">
-        <label>xobject</label>
-        <link refid="classxobject"/>
-      </node>
-      <node id="420">
-        <label>qlib::quantum::qubit</label>
-        <link refid="classqlib_1_1quantum_1_1qubit"/>
-        <childnode refid="421" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="421">
-        <label>qlib::quantum::qsystem</label>
-        <link refid="classqlib_1_1quantum_1_1qsystem"/>
-        <childnode refid="422" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="425">
+      <node id="428">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
       <node id="426">
-        <label>qlib::math::matrix</label>
-        <link refid="classqlib_1_1math_1_1matrix"/>
-        <childnode refid="425" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="423">
         <label>qlib::quantum::qubit</label>
         <link refid="classqlib_1_1quantum_1_1qubit"/>
-        <childnode refid="424" relation="public-inheritance">
+        <childnode refid="427" relation="public-inheritance">
         </childnode>
-        <childnode refid="426" relation="usage">
+      </node>
+      <node id="427">
+        <label>qlib::quantum::qsystem</label>
+        <link refid="classqlib_1_1quantum_1_1qsystem"/>
+        <childnode refid="428" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="431">
+        <label>xobject</label>
+        <link refid="classxobject"/>
+      </node>
+      <node id="432">
+        <label>qlib::math::matrix</label>
+        <link refid="classqlib_1_1math_1_1matrix"/>
+        <childnode refid="431" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="429">
+        <label>qlib::quantum::qubit</label>
+        <link refid="classqlib_1_1quantum_1_1qubit"/>
+        <childnode refid="430" relation="public-inheritance">
+        </childnode>
+        <childnode refid="432" relation="usage">
           <edgelabel>vec</edgelabel>
         </childnode>
       </node>
-      <node id="424">
+      <node id="430">
         <label>qlib::quantum::qsystem</label>
         <link refid="classqlib_1_1quantum_1_1qsystem"/>
-        <childnode refid="425" relation="public-inheritance">
+        <childnode refid="431" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/core/quantum/systems/qubit.hpp" line="20" column="1" bodyfile="src/core/quantum/systems/qubit.hpp" bodystart="20" bodyend="103"/>
+    <location file="src/core/quantum/systems/qubit.hpp" line="20" column="1" bodyfile="src/core/quantum/systems/qubit.hpp" bodystart="20" bodyend="110"/>
     <listofallmembers>
       <member refid="classqlib_1_1quantum_1_1qubit_1ab3b0b76d5c6f0e627a742fcafbc768ae" prot="public" virt="virtual"><scope>qlib::quantum::qubit</scope><name>apply</name></member>
       <member refid="classqlib_1_1quantum_1_1qubit_1abb97216eead736ab87e8756b9b4c2ce9" prot="private" virt="non-virtual"><scope>qlib::quantum::qubit</scope><name>distribution</name></member>
@@ -195,6 +213,7 @@
       <member refid="classqlib_1_1quantum_1_1qubit_1af8eaf337ffcb95c2445ddf35189335e4" prot="public" virt="non-virtual"><scope>qlib::quantum::qubit</scope><name>state</name></member>
       <member refid="classqlib_1_1quantum_1_1qubit_1a8bf29d1f66508e4878ea861c5d8e44ec" prot="public" virt="virtual"><scope>qlib::quantum::qubit</scope><name>toString</name></member>
       <member refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" prot="private" virt="non-virtual"><scope>qlib::quantum::qubit</scope><name>vec</name></member>
+      <member refid="classqlib_1_1quantum_1_1qubit_1aa16b11ad849b672489c625196c800dd3" prot="public" virt="virtual"><scope>qlib::quantum::qubit</scope><name>zero</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

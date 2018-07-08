@@ -296,7 +296,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="245" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="245" bodyend="247"/>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="243" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="243" bodyend="245"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -336,7 +336,7 @@
 <para>Show the suggestion box </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="206" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="206" bodyend="239"/>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="206" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="206" bodyend="237"/>
       </memberdef>
       <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1a262b15fe050727186b0dc3d22e0d5143" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -349,7 +349,7 @@
 <para>Hide the suggestion box </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="252" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="252" bodyend="254"/>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="250" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="250" bodyend="252"/>
       </memberdef>
       <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1acdc8c857e1580998523ee6f50c738a84" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -386,7 +386,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="262" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="262" bodyend="268"/>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="260" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="260" bodyend="266"/>
       </memberdef>
       <memberdef kind="function" id="classqlib_1_1ide_1_1AutoComplete_1a04a7f33c4d243d3d15592c3b0b1b19d4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -399,7 +399,7 @@
 <para>For use auto checking the suggestions as a user types </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="273" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="273" bodyend="308"/>
+        <location file="src/ide/src/qlib/ide/AutoComplete.java" line="271" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="271" bodyend="306"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -408,48 +408,48 @@
 <para>Class for auto complete word suggestions used with JTextComponent <simplesect kind="author"><para>chalseth </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="252">
+      <node id="257">
         <label>qlib.ide.AutoComplete</label>
         <link refid="classqlib_1_1ide_1_1AutoComplete"/>
-        <childnode refid="253" relation="usage">
+        <childnode refid="258" relation="usage">
           <edgelabel>model</edgelabel>
         </childnode>
-        <childnode refid="254" relation="usage">
+        <childnode refid="259" relation="usage">
           <edgelabel>window</edgelabel>
         </childnode>
-        <childnode refid="255" relation="usage">
+        <childnode refid="260" relation="usage">
           <edgelabel>suggestions</edgelabel>
         </childnode>
-        <childnode refid="256" relation="usage">
+        <childnode refid="261" relation="usage">
           <edgelabel>docListener</edgelabel>
         </childnode>
-        <childnode refid="257" relation="usage">
+        <childnode refid="262" relation="usage">
           <edgelabel>textComponent</edgelabel>
         </childnode>
-        <childnode refid="258" relation="usage">
+        <childnode refid="263" relation="usage">
           <edgelabel>list</edgelabel>
         </childnode>
       </node>
-      <node id="257">
+      <node id="262">
         <label>JTextComponent</label>
       </node>
-      <node id="256">
+      <node id="261">
         <label>DocumentListener</label>
       </node>
-      <node id="253">
+      <node id="258">
         <label>DefaultListModel</label>
       </node>
-      <node id="258">
+      <node id="263">
         <label>JList</label>
       </node>
-      <node id="254">
+      <node id="259">
         <label>JWindow</label>
       </node>
-      <node id="255">
+      <node id="260">
         <label>ArrayList&lt; String &gt;</label>
       </node>
     </collaborationgraph>
-    <location file="src/ide/src/qlib/ide/AutoComplete.java" line="35" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="35" bodyend="310"/>
+    <location file="src/ide/src/qlib/ide/AutoComplete.java" line="35" column="1" bodyfile="src/ide/src/qlib/ide/AutoComplete.java" bodystart="35" bodyend="308"/>
     <listofallmembers>
       <member refid="classqlib_1_1ide_1_1AutoComplete_1a1b3f11041ae6af9b54e56c19adbbae5c" prot="public" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>addWord</name></member>
       <member refid="classqlib_1_1ide_1_1AutoComplete_1a30e4dd8e6c36a6ef576641480d4368f7" prot="public" virt="non-virtual"><scope>qlib::ide::AutoComplete</scope><name>AutoComplete</name></member>

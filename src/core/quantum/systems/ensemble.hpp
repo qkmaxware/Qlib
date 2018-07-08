@@ -65,6 +65,15 @@ class ensemble : public qsystem{
             }
             return max;
         }
+
+        /// <Summary>
+        /// Prepare qubit in the zero state
+        /// </Summary>
+        virtual void zero(i64 qubit) {
+            for(std::vector<qsystem*>::iterator it = set.begin(); it != set.end(); it++){
+                (*it)->zero(qubit);
+            }
+        }
 };
 
 }

@@ -34,6 +34,8 @@ size\+\_\+t \hyperlink{classqlib_1_1quantum_1_1ensemble_a4b811e4778f5c845504ed8e
 void \hyperlink{classqlib_1_1quantum_1_1ensemble_a9226b1108f8d45d052316f7c366f1d5a}{apply} (\hyperlink{classqlib_1_1quantum_1_1gates_1_1igate}{qlib\+::quantum\+::gates\+::igate} \&op, std\+::vector$<$ u64 $>$ input\+Bits)
 \item 
 i8 \hyperlink{classqlib_1_1quantum_1_1ensemble_ae5e3ebd119e1df6dbb966b7bb6222e5a}{measure} (i64 \hyperlink{classqlib_1_1quantum_1_1qubit}{qubit})
+\item 
+virtual void \hyperlink{classqlib_1_1quantum_1_1ensemble_ac170f82a86704e08e8f2bebc721cf03b}{zero} (i64 \hyperlink{classqlib_1_1quantum_1_1qubit}{qubit})
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -93,7 +95,18 @@ Implements \hyperlink{classqlib_1_1quantum_1_1qsystem_a33d9954c6ca01cb400d940ff0
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1quantum_1_1ensemble_a4b811e4778f5c845504ed8eec058dfe4}{}\label{classqlib_1_1quantum_1_1ensemble_a4b811e4778f5c845504ed8eec058dfe4}
-Size of the ensemble 
+Size of the ensemble \index{qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}!zero@{zero}}
+\index{zero@{zero}!qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}}
+\subsubsection[{\texorpdfstring{zero(i64 qubit)}{zero(i64 qubit)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void qlib\+::quantum\+::ensemble\+::zero (
+\begin{DoxyParamCaption}
+\item[{i64}]{qubit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1ensemble_ac170f82a86704e08e8f2bebc721cf03b}{}\label{classqlib_1_1quantum_1_1ensemble_ac170f82a86704e08e8f2bebc721cf03b}
+Prepare qubit in the zero state 
+
+Implements \hyperlink{classqlib_1_1quantum_1_1qsystem_a5626857e5dc87dc2bdbb1f4d0b0401f9}{qlib\+::quantum\+::qsystem}.
+
+
 
 \subsection{Member Data Documentation}
 \index{qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}!set@{set}}

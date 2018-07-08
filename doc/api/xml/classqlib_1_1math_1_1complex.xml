@@ -225,26 +225,26 @@
     <detaileddescription>
 <para>Object representation of a complex number in the form a + ib; </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="279">
+      <node id="284">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="278">
+      <node id="283">
         <label>qlib::math::complex</label>
         <link refid="classqlib_1_1math_1_1complex"/>
-        <childnode refid="279" relation="public-inheritance">
+        <childnode refid="284" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="281">
+      <node id="286">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="280">
+      <node id="285">
         <label>qlib::math::complex</label>
         <link refid="classqlib_1_1math_1_1complex"/>
-        <childnode refid="281" relation="public-inheritance">
+        <childnode refid="286" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

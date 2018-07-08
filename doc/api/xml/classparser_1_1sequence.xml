@@ -95,25 +95,25 @@
     <detaileddescription>
 <para>Class representing parsing elements that follow each other </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="448">
+      <node id="458">
         <label>parser::sequence</label>
         <link refid="classparser_1_1sequence"/>
-        <childnode refid="449" relation="public-inheritance">
+        <childnode refid="459" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="449">
+      <node id="459">
         <label>parser::rule</label>
         <link refid="classparser_1_1rule"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="450">
+      <node id="460">
         <label>parser::sequence</label>
         <link refid="classparser_1_1sequence"/>
-        <childnode refid="451" relation="public-inheritance">
+        <childnode refid="461" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="451">
+      <node id="461">
         <label>parser::rule</label>
         <link refid="classparser_1_1rule"/>
       </node>

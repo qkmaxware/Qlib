@@ -227,7 +227,7 @@
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Init<sp/>loop<sp/>--first<sp/>2<sp/>inputs<sp/>are<sp/>control</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>k<sp/>=<sp/>inputQubits[2];</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>c1<sp/>=<sp/>inputQubits[0];</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>c1<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>inputQubits[0];</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>c2<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>inputQubits[1];</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>stride<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>k;</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>

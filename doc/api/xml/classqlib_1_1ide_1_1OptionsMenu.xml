@@ -32,24 +32,24 @@
 <para>JFrame with a table for modifying key-value pairs in an INI file <simplesect kind="author"><para>halse </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="371">
+      <node id="377">
         <label>qlib.ide.OptionsMenu</label>
         <link refid="classqlib_1_1ide_1_1OptionsMenu"/>
-        <childnode refid="372" relation="public-inheritance">
+        <childnode refid="378" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="372">
+      <node id="378">
         <label>JFrame</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="373">
+      <node id="379">
         <label>qlib.ide.OptionsMenu</label>
         <link refid="classqlib_1_1ide_1_1OptionsMenu"/>
-        <childnode refid="374" relation="public-inheritance">
+        <childnode refid="380" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="374">
+      <node id="380">
         <label>JFrame</label>
       </node>
     </collaborationgraph>

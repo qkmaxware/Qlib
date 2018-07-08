@@ -27,13 +27,15 @@ Collaboration diagram for qlib\+:\+:quantum\+:\+:qubit\+:\nopagebreak
 \item 
 \hyperlink{classqlib_1_1quantum_1_1qubit_a32ca47a6fca663c267ddbbac49b12986}{qubit} ()
 \item 
-\hyperlink{classqlib_1_1quantum_1_1qubit_a9c84248c8855841087687baa8b0a08c3}{qubit} (\hyperlink{classqlib_1_1math_1_1complex}{qlib\+::math\+::complex} zero, \hyperlink{classqlib_1_1math_1_1complex}{qlib\+::math\+::complex} one)
+\hyperlink{classqlib_1_1quantum_1_1qubit_a9c84248c8855841087687baa8b0a08c3}{qubit} (\hyperlink{classqlib_1_1math_1_1complex}{qlib\+::math\+::complex} \hyperlink{classqlib_1_1quantum_1_1qubit_aa16b11ad849b672489c625196c800dd3}{zero}, \hyperlink{classqlib_1_1math_1_1complex}{qlib\+::math\+::complex} one)
 \item 
 \hyperlink{classqlib_1_1math_1_1matrix}{matrix} \& \hyperlink{classqlib_1_1quantum_1_1qubit_af8eaf337ffcb95c2445ddf35189335e4}{state} ()
 \item 
 void \hyperlink{classqlib_1_1quantum_1_1qubit_ab3b0b76d5c6f0e627a742fcafbc768ae}{apply} (\hyperlink{classqlib_1_1quantum_1_1gates_1_1igate}{qlib\+::quantum\+::gates\+::igate} \&gate, std\+::vector$<$ u64 $>$ input\+Bits)
 \item 
 i8 \hyperlink{classqlib_1_1quantum_1_1qubit_aaf001eff84ccb4b7a6992e42bc2143cb}{measure} (i64 \hyperlink{classqlib_1_1quantum_1_1qubit}{qubit}=0)
+\item 
+virtual void \hyperlink{classqlib_1_1quantum_1_1qubit_aa16b11ad849b672489c625196c800dd3}{zero} (i64 \hyperlink{classqlib_1_1quantum_1_1qubit}{qubit})
 \item 
 std\+::string \hyperlink{classqlib_1_1quantum_1_1qubit_a8bf29d1f66508e4878ea861c5d8e44ec}{to\+String} ()
 \end{DoxyCompactItemize}
@@ -108,6 +110,17 @@ Current state column vector \index{qlib\+::quantum\+::qubit@{qlib\+::quantum\+::
 Pretty print 
 
 Reimplemented from \hyperlink{classqlib_1_1quantum_1_1qsystem_a9d95030955e2fdb26bc9152c32310e7e}{qlib\+::quantum\+::qsystem}.
+
+\index{qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}!zero@{zero}}
+\index{zero@{zero}!qlib\+::quantum\+::qubit@{qlib\+::quantum\+::qubit}}
+\subsubsection[{\texorpdfstring{zero(i64 qubit)}{zero(i64 qubit)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void qlib\+::quantum\+::qubit\+::zero (
+\begin{DoxyParamCaption}
+\item[{i64}]{qubit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1qubit_aa16b11ad849b672489c625196c800dd3}{}\label{classqlib_1_1quantum_1_1qubit_aa16b11ad849b672489c625196c800dd3}
+Prepare qubit in the zero state 
+
+Implements \hyperlink{classqlib_1_1quantum_1_1qsystem_a5626857e5dc87dc2bdbb1f4d0b0401f9}{qlib\+::quantum\+::qsystem}.
 
 
 

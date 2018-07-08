@@ -7,5 +7,6 @@ var namespaceqasm_1_1exec =
     [ "import", "classqasm_1_1exec_1_1import.html", "classqasm_1_1exec_1_1import" ],
     [ "label", "classqasm_1_1exec_1_1label.html", "classqasm_1_1exec_1_1label" ],
     [ "measurement", "classqasm_1_1exec_1_1measurement.html", "classqasm_1_1exec_1_1measurement" ],
-    [ "print", "classqasm_1_1exec_1_1print.html", "classqasm_1_1exec_1_1print" ]
+    [ "print", "classqasm_1_1exec_1_1print.html", "classqasm_1_1exec_1_1print" ],
+    [ "reset", "classqasm_1_1exec_1_1reset.html", "classqasm_1_1exec_1_1reset" ]
 ];

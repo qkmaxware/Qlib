@@ -10,5 +10,6 @@ var runtime_8hpp =
     [ "declaration", "classqasm_1_1exec_1_1declaration.html", "classqasm_1_1exec_1_1declaration" ],
     [ "import", "classqasm_1_1exec_1_1import.html", "classqasm_1_1exec_1_1import" ],
     [ "label", "classqasm_1_1exec_1_1label.html", "classqasm_1_1exec_1_1label" ],
+    [ "reset", "classqasm_1_1exec_1_1reset.html", "classqasm_1_1exec_1_1reset" ],
     [ "creg", "runtime_8hpp.html#a20cf870406c99de2d935e3a77b8b60da", null ]
 ];
