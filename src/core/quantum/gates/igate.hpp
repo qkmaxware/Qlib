@@ -17,6 +17,13 @@ namespace gates {
 class igate : public xobject {
     private:
     public:
+        /// <Summary>
+        /// Test if a given matrix matches quantum gate specifications (square & unitary)
+        /// </Summary>
+        static bool isGateable(matrix& a){
+            return a.isSquare() && a.isUnitary();
+        }
+
         //Name of the gate
         virtual std::string name() = 0;
         //Number of qubits it operates on

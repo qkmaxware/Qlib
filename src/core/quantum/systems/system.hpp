@@ -18,6 +18,7 @@ namespace quantum {
 class qsystem: public xobject {
     private:
     public:
+		virtual ~qsystem(){}
         /// </Summary>
         /// Apply a quantum gate to this system
         /// </Summary>

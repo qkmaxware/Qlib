@@ -1,0 +1,60 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "QAS Quantum Assembly",
+	"patterns": [
+		{
+			"include": "#label"
+		},{
+			"include": "#strings"
+		},{
+			"include": "#keyword"
+		},{
+			"include": "#operator"
+		},{
+			"include": "#lineComment"
+		}
+	],
+	"repository": {
+		"keyword":{
+			"patterns": [{
+				"name": "keyword.qas",
+				"match": "\\b(measure|include|print|qreg|creg)\\b"
+			}]
+		},
+		"label": {
+			"patterns": [{
+				"name": "meta.selector",
+				"match": "\\.[^\\s]+"
+			}]
+		},
+		"operator": {
+			"patterns": [{
+				"name": "support.type",
+				"match": "[a-zA-Z]+\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.qas",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.qas",
+					"match": "\\\\."
+				}
+			]
+		},
+		"lineComment": {
+			"name": "comment",
+			"begin": "//",
+			"end": "\\n",
+			"patterns": [
+				{
+					"name": "constant.character.escape.qas",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source"
+}

@@ -50,7 +50,7 @@ struct match {
         /// <Summary>
         /// Match constructor
         /// </Summary>
-        match() : lexemeptr(NULL), content(), row_start(0), row_end(0), column_start(0), column_end(0) {}
+        match() : lexemeptr(NULL), content(), row_start(0), column_start(0), row_end(0), column_end(0) {}
 
         /// <Summary>
         /// Print match to string
@@ -95,7 +95,7 @@ class lexeme {
         /// <Summary>
         /// Create a lexeme from a name and regex pattern
         /// </Summary>
-        lexeme(std::string name, std::string pattern): skippable(false), name(name), pattern(pattern), rx(pattern) {}
+        lexeme(std::string name, std::string pattern): name(name), pattern(pattern), rx(pattern), skippable(false) {}
 
         /// <Summary>
         /// Test if this lexeme can be extracted from a string

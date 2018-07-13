@@ -72,7 +72,7 @@ class qubit : public qsystem {
             //Prob of |0> is vec(0,0).sqrMagnitude();
             f32 p0 = vec(0,0).sqrMagnitude();
             //Prob of |1> is vec(1,0).sqrMagnitude() or 1-p0 due to normalization
-            f32 p1 = 1.0 - p0;
+            //f32 p1 = 1.0 - p0;
 
             f32 r = this->distribution(rng);
 

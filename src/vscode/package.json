@@ -1,0 +1,26 @@
+{
+    "name": "qassupport",
+    "displayName": "QASsupport",
+    "description": "Language support for QAS Quantum Assembly",
+    "version": "0.0.1",
+    "publisher": "Colin",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "qas",
+            "aliases": ["QAS Quantum Assembly", "qas"],
+            "extensions": [".qas"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "qas",
+            "scopeName": "source",
+            "path": "./syntaxes/qas.tmLanguage.json"
+        }]
+    }
+}

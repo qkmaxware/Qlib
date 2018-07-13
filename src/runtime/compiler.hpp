@@ -19,8 +19,8 @@ using namespace lexical;
 using namespace parser;
 
 //Header back-references
-class program;
-bool try_parse_qasm(program& prog, std::string file_name, lexical::lexer& tokenizer);
+//class program;
+//bool try_parse_qasm(program& prog, std::string file_name, lexical::lexer& tokenizer);
 //----------------------
 
 /// <Summary>
@@ -61,6 +61,46 @@ class program {
         }
 };
 
+/// <Summary>
+/// Class for exceptions occuring during parsing of lexical tokens
+/// </Summary>
+class parseexception : public std::exception {
+    private:
+        /// <Summary>
+        /// Combined message
+        /// </Summary>
+        std::string what_message;
+
+    public:
+        /// <Summary>
+        /// Row of cause
+        /// </Summary>
+        ulong r;
+        /// <Summary>
+        /// Column of cause
+        /// </Summary>
+        ulong c;
+        /// <Summary>
+        /// Filename cause occurred in
+        /// </Summary>
+        std::string file;
+        /// <Summary>
+        /// Cause of exception
+        /// </Summary>
+        std::string msg;
+
+        parseexception(ulong row, ulong column, std::string file, std::string message) : r(row), c(column), file(file), msg(message){
+            std::stringstream sb; 
+            sb << msg << " in " << file << " at [" << r << ", " << c << "]";
+            what_message = sb.str();
+        }
+
+        const char* what() const throw() {
+            return what_message.c_str();
+        }
+};
+
+/*
 namespace qasm {
 namespace rules {
 
@@ -257,49 +297,11 @@ namespace rules {
         if(try_parse_subcircuit_application(prog, tokens)){
             return true;
         }
+        return false;
     }
 
 }
 }
-
-/// <Summary>
-/// Class for exceptions occuring during parsing of lexical tokens
-/// </Summary>
-class parseexception : public std::exception {
-    private:
-        /// <Summary>
-        /// Combined message
-        /// </Summary>
-        std::string what_message;
-
-    public:
-        /// <Summary>
-        /// Row of cause
-        /// </Summary>
-        ulong r;
-        /// <Summary>
-        /// Column of cause
-        /// </Summary>
-        ulong c;
-        /// <Summary>
-        /// Filename cause occurred in
-        /// </Summary>
-        std::string file;
-        /// <Summary>
-        /// Cause of exception
-        /// </Summary>
-        std::string msg;
-
-        parseexception(ulong row, ulong column, std::string file, std::string message) : r(row), c(column), file(file), msg(message){
-            std::stringstream sb; 
-            sb << msg << " in " << file << " at [" << r << ", " << c << "]";
-            what_message = sb.str();
-        }
-
-        const char* what() const throw() {
-            return what_message.c_str();
-        }
-};
 
 /// <Summary>
 /// Try and parse a file into a program
@@ -330,6 +332,7 @@ bool try_parse_qasm(program& prog, std::string file_name, lexical::lexer& tokeni
 
     return true;  
 }
+*/
 
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
@@ -375,10 +378,6 @@ class compiler {
 
                     //Iterate over all rules determining if the tokens match
                     size_t index = 0;
-                    //for(vector<match>::iterator iq = tokens.begin(); iq != tokens.end(); iq++){
-                        //cout << iq->toString() << " ";
-                    //}
-                    //cout << endl;
                     for(vector<parser::ruleptr>::iterator it = rules.begin(); it != rules.end(); it++){
                         parser::parsetree pt;
                         parser::tokenqueue q(tokens);
@@ -404,6 +403,7 @@ class compiler {
                     throw lexical::lexicalexception(s.getLineNumber() - 1, ex.c, ex.file, ex.msg);
                 }
             }
+            return true;
         }
 };
 

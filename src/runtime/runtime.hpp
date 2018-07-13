@@ -156,6 +156,7 @@ namespace exec {
     class executable {
         private:
         public: 
+			virtual ~executable(){}
             /// <Summary>
             /// Run instruction's primary operation
             /// </Summary>

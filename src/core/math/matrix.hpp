@@ -14,6 +14,12 @@ namespace qlib {
 namespace math {
 
 //----------------------------------------------------------
+//Early declarations (before defined)
+//----------------------------------------------------------
+class matrix;
+matrix operator * (matrix a, matrix b);
+
+//----------------------------------------------------------
 // Class definition
 //----------------------------------------------------------
 
@@ -68,6 +74,78 @@ class matrix : public xobject {
         /// </Summary>
         ~matrix(){
             //delete this->values;
+        }
+
+        /// </Summary>
+        /// Get the matrix representing the transposition of this matrix
+        /// </Summary>
+        matrix transpose(){
+            matrix m(this->columns, this->rows);
+            for(size_t r = 0; r < this->rows; r++){
+                for(size_t c = 0; c < this->columns; c++){
+                    m(c,r) = (*this)(r,c); 
+                }
+            } 
+            return m;
+        }
+
+        /// </Summary>
+        /// Get the matrix representing the adjoint (complex conjugate transpose) of this matrix
+        /// </Summary>
+        matrix adjoint(){
+            matrix m(this->columns, this->rows);
+            for(size_t r = 0; r < this->rows; r++){
+                for(size_t c = 0; c < this->columns; c++){
+                    m(c,r) = (*this)(r,c).conjugate(); 
+                }
+            } 
+            return m;
+        }
+
+        /// </Summary>
+        /// Test if this matrix represents a square matrix
+        /// </Summary>
+        bool isSquare(){
+            return (this->countRows() != this->countColumns());
+        }
+
+        /// </Summary>
+        /// Test if this matrix represents a unitary matrix
+        /// </Summary>
+        bool isUnitary(){
+            matrix a = *this;
+            matrix a_dagger = this->adjoint();
+            matrix q = a * a_dagger;
+
+            //Is 'q' approximately I
+            for(size_t r = 0; r < q.countRows(); r++){
+                for(size_t c = 0; c < q.countColumns(); c++){
+                    if(r == c){
+                        //Approx 1
+                        if(!q(r,c).isApproximatelyOne())
+                            return false;
+                    }else {
+                        //Approx 0
+                        if(!q(r,c).isApproximatelyZero())
+                            return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        /// </Summary>
+        /// Test if this matrix represents a column matrix
+        /// </Summary>
+        bool isColumn(){
+            return (this->countColumns() == 1);
+        }
+
+        /// </Summary>
+        /// Test if this matrix represents a row matrix
+        /// </Summary>
+        bool isRow(){
+            return (this->countRows() == 1);
         }
 
         /// </Summary>
@@ -289,8 +367,6 @@ matrix operator << (matrix a, matrix b){
 	matrix m(nh, nw);
 	
 	//Loop over all elements setting as necessary
-	size_t r = 0;
-    size_t c = 0;
     for(size_t ar = 0; ar < a.countRows(); ar++){
         for(size_t ac = 0; ac < a.countColumns(); ac++){
             for(size_t br = 0; br < b.countRows(); br++){

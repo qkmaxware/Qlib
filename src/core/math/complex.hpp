@@ -113,10 +113,17 @@ class complex : public xobject {
         };
 
         /// </Summary>
-        /// Checks if this complex number is zero
+        /// Checks if this complex number is approximately 0 //TODO
         /// </Summary>
-        bool isZero(){
+        bool isApproximatelyZero(){
             return this->r == 0 && this->i == 0;
+        };
+
+        /// </Summary>
+        /// Checks if this complex number is approximately 1 //TODO
+        /// </Summary>
+        bool isApproximatelyOne(){
+            return this->r == 1 && this->i == 0;
         };
 
         /// </Summary>
