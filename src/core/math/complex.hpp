@@ -7,11 +7,6 @@
 #include <stdlib.h>
 #include <sstream>
 
-/**
- * @file
- * @brief File containing complex number class and operators
- * */
-
 namespace qlib {
 namespace math {
 

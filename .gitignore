@@ -3,6 +3,7 @@ exports
 bin
 
 *.zip
+*.svg
 
 src/ide/build
 src/ide/dist

@@ -20,6 +20,7 @@
 #include "./compiler.hpp"
 #include "./runtime.hpp"
 #include "./scanner.hpp"
+#include "./svg.hpp"
 
 using namespace std;
 using namespace lexical;
@@ -75,8 +76,11 @@ int main(int arg_count, char* arg_values[]){
 	ruleptr label_ 				= _anchor << _reference;
 	ruleptr print_ 				= _print << _reference;
 	ruleptr application_ 		= _reference << *_indexor;
+	/**///ruleptr fncall_				= _reference << *_reference;
 	ruleptr typedecl_			= (((_reference << _reference) << _leftb) << _integer) << _rightb;
 	ruleptr measurement_		= _measure << ((_indexor << _mapping << _indexor) | (_reference << _mapping << _reference));
+	/**///ruleptr fndecl_				= _start << _reference;
+	/**///ruleptr fnend_				= _end;
 
 	//-------------------------------------
 	//Create parse lists
@@ -96,6 +100,13 @@ int main(int arg_count, char* arg_values[]){
 	//First arg is the program name
 	if(arg_count < 2){
 		cout << NAME << " version:" << MAJOR << "." << MINOR << "." << PATCH << endl;
+		    
+    graphics::svg mysvg;
+    graphics::rect r = graphics::rect(4,4, 10, 10);
+    r.setFill({255,0,0,0});
+    r.setStroke({0,0,255,0});
+    mysvg.addShape(&r);
+    mysvg.saveFile("Myfile.svg");
 		return 0;
 	}
 

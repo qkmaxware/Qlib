@@ -339,14 +339,14 @@ namespace exec {
                     }
                 }else {
                     
-                    if(qindex < 0 || qindex >= q.size()){
+                    if(qindex < 0 || (ulong)qindex >= q.size()){
                         //Qbit index out of range
                         stringstream sb;
                         sb << "Quantum index: \"";
                         sb << qreg << qindex << "\" out of range";
                         throw qasm::runtime::runtimeexception(sb.str());
                     }
-                    if(cindex < 0 || cindex >= c.size()){
+                    if(cindex < 0 || (ulong)cindex >= c.size()){
                         //Cbit index out of range
                         stringstream sb;
                         sb << "Classical index: \"";

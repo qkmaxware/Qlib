@@ -3,6 +3,8 @@
 
 #include "./general/object.hpp"
 #include "./general/types.h"
+#include "./general/constants.h"
+#include "./general/properties.h"
 
 #include "./math/complex.hpp"
 #include "./math/matrix.hpp"

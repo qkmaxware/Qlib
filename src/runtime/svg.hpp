@@ -3,9 +3,16 @@
 
 #include <vector>
 #include <iostream>
+#include <fstream>
+#include <sstream>
+
+#include "colour.hpp"
 
 namespace graphics {
 
+/// <Summary>
+/// Describes a rectangular region of space. Usually for the purposes of bounding a certain area.
+/// </Summary>
 class bounds {
     private:
         size_t x;
@@ -13,6 +20,7 @@ class bounds {
         size_t w;
         size_t h;
     public:
+        bounds() : x(0), y(0), w(0), h(0){}
         bounds(size_t x, size_t y, size_t w, size_t h) : x(x), y(y), w(w), h(h) {}
 
         size_t getWidth() {
@@ -40,14 +48,48 @@ class bounds {
         }
 };
 
+/// <Summary>
+/// Describes an abstact shape
+/// </Summary>
 class shape {
     private:
+        colour stroke;
+        colour fill;
+        size_t stroke_width;
     public:
+        shape() : stroke(), fill(), stroke_width(1) {} 
         virtual ~shape(){}
-        virtual bounds& getExtents(); 
-        //virtual std::string encode();
+        virtual bounds& getExtents()=0; 
+        virtual std::string encode() { return ""; };
+
+        void setStrokeWidth(size_t t){
+            stroke_width = t;
+        }
+
+        size_t getStrokeWidth(){
+            return stroke_width;
+        }
+
+        void setStroke(colour s){
+            this->stroke = s;
+        }
+
+        void setFill(colour f){
+            this->fill = f;
+        }
+
+        colour& getStroke(){
+            return stroke;
+        }
+
+        colour& getFill() {
+            return fill;
+        }
 };
 
+/// <Summary>
+/// Describes a line between 2 points
+/// </Summary>
 class line : public shape {
     private:
         size_t sx;
@@ -68,8 +110,21 @@ class line : public shape {
         bounds& getExtents(){
             return b;
         }
+        std::string encode() {
+            stringstream sb;
+            sb << "<line x1=\"" << sx;
+            sb << "\" y1=\"" << sy;
+            sb << "\" x2=\"" << ex;
+            sb << "\" y2=\"" << ey;
+            sb << "\" stroke=\"" << (this->getStroke()).toHex() << "\" ";
+            sb << " stroke-width=\"" << (this->getStrokeWidth()) << "\"/>";
+            return sb.str();
+        }
 };
 
+/// <Summary>
+/// Describes a collection of lines between 'N' points
+/// </Summary>
 class polyline : public shape {
     private:
         std::vector<size_t> xs;
@@ -84,7 +139,7 @@ class polyline : public shape {
             return *this;
         }
         void recalculateBounds(){
-            size_t mixX;
+            size_t minX;
             size_t minY;
             size_t maxX;
             size_t maxY;
@@ -105,8 +160,52 @@ class polyline : public shape {
         bounds& getExtents(){
             return b;
         }
+        virtual std::string encode() {
+            stringstream sb;
+            sb << "<polyline points=\"";
+            for(size_t i = 0; i < xs.size(); i++){
+                if(i > 0){
+                    sb << ", ";
+                }
+                sb << xs[i] << " " << ys[i];
+            }
+            sb << "\" stroke=\"" << (this->getStroke()).toHex() << "\"" << " stroke-width=\"" << (this->getStrokeWidth()) << "\"/>";
+            return sb.str();
+        }
+        size_t countPoints(){
+            return xs.size();
+        }
+        size_t getX(size_t point){
+            return xs[point];
+        }
+        size_t getY(size_t point){
+            return ys[point];
+        }
 };
 
+/// <Summary>
+/// Describes a polygon of 'N' points
+/// </Summary>
+class polygon : private polyline {
+    public:
+        std::string encode() {
+            stringstream sb;
+            sb << "<polygon points=\"";
+            for(size_t i = 0; i < countPoints(); i++){
+                if(i > 0){
+                    sb << ", ";
+                }
+                sb << getX(i) << " " << getY(i);
+            }
+            sb << "\" stroke=\"" << (this->getStroke()).toHex() << "\"" << " stroke-width=\"" << (this->getStrokeWidth()) << " ";
+            sb << "fill=\"" << (this->getFill()).toHex() << "\"/>";
+            return sb.str();
+        }
+};
+
+/// <Summary>
+/// Describes a rectangular shape
+/// </Summary>
 class rect : public shape {
     private:
         bounds b;
@@ -115,27 +214,93 @@ class rect : public shape {
         bounds& getExtents(){
             return b;
         }
+        std::string encode() {
+            stringstream sb;
+            sb << "<rect x=\"" << b.getMinX() << "\" ";
+            sb << "y=\"" << b.getMinY() << "\" ";
+            sb << "width=\"" << b.getWidth() << "\" ";
+            sb << "height=\"" << b.getHeight() << "\" ";
+            sb << "stroke=\"" << (this->getStroke()).toHex() << "\" ";
+            sb << "stroke-width=\"" << (this->getStrokeWidth()) << "\" ";
+            sb << "fill=\"" << (this->getFill()).toHex() << "\"/>";
+            return sb.str();
+        }
 };
 
+/// <Summary>
+/// Describes a a string of text shown on an svg
+/// </Summary>
+class text : public shape {
+    private:
+        bounds b;
+        size_t x;
+        size_t y;
+        std::string value;
+    public: 
+        text(size_t x, size_t y, std::string value) : b(x, y, 1, 1), x(x), y(y), value(value) {}
+        bounds& getExtents(){
+            return b;
+        }
+        std::string encode() {
+            //TODO add rotation and css properties for font details
+            stringstream sb;
+            sb << "<text x=\"" << b.getMinX() << "\" ";
+            sb << "y=\"" << b.getMinY() << "\" ";
+            sb << "stroke=\"" << (this->getStroke()).toHex() << "\" ";
+            sb << "stroke-width=\"" << (this->getStrokeWidth()) << "\" ";
+            sb << "fill=\"" << (this->getFill()).toHex() << "\">";
+            sb << value;
+            sb << "</text>";
+            return sb.str();
+        }
+};
+
+/*
+    Example usage
+    graphics::svg mysvg;
+    graphics::rect r = graphics::rect(4,4, 10, 10);
+    r.setFill({255,0,0,0});
+    r.setStroke({0,0,255,0});
+    mysvg.addShape(&r);
+    mysvg.saveFile("Myfile.svg");
+*/
+
+/// <Summary>
+/// Class used as a container to describe the contents of an SVG file
+/// </Summary>
 class svg {
     private:
         size_t width;
         size_t height;
+        bool autosize;
         std::vector<shape*> shapes;
 
     public:
-        svg(size_t width, size_t height) : width(width), height(height) : shapes() {};
+        svg() : width(0), height(0), autosize(true), shapes() {};
+        svg(size_t width, size_t height) : width(width), height(height), autosize(false), shapes() {};
         ~svg(){};
 
-        void addShape(Shape shape){
-            shapes.push_back(&shape);
-        }
-        void addShape(Shape* shape){
+        void addShape(shape* shape){
             shapes.push_back(shape);
+            if(autosize){
+                if(shape->getExtents().getMaxX() > width){
+                    width = shape->getExtents().getMaxX();
+                }
+                if(shape->getExtents().getMaxY() > height){
+                    height = shape->getExtents().getMaxY();
+                }
+            }
         }
 
         void saveFile(std::string filename){
-
+            std::ofstream file(filename);
+            file << "<svg width=\"" << width << "\" height=\"" << height << "\">\n";
+            for(std::vector<shape*>::iterator it = shapes.begin(); it != shapes.end(); it++){
+                file << "\t";
+                file << (*it)->encode();
+                file << "\n";
+            }
+            file << "</svg>";
         }
 };
 

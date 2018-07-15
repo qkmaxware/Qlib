@@ -20,7 +20,6 @@
 
 #include "./gates/qft.hpp"
 
-//TODO phase swap gate
 /*
 qop SWAP = qop("Swap", 2, {
         complex(1), complex(0), complex(0), complex(0),
