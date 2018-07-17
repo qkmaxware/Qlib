@@ -20,13 +20,19 @@
 #include "./compiler.hpp"
 #include "./runtime.hpp"
 #include "./scanner.hpp"
-#include "./svg.hpp"
+#include "./qcircuit_exporter.hpp" 
+#include "./argparser.hpp"
 
 using namespace std;
 using namespace lexical;
 using namespace parser;
 
 int main(int arg_count, char* arg_values[]){
+	//-------------------------------------
+	//Read in command line parameters
+	//-------------------------------------
+	argz arg(arg_count, arg_values);
+
 	//-------------------------------------
 	//Configure lexical tokens
 	//-------------------------------------
@@ -95,40 +101,50 @@ int main(int arg_count, char* arg_values[]){
 		= {post_import, post_anchor, post_add, post_add, post_add, post_add, post_add};
 
 	//-------------------------------------
-	//Read in parameters
-	//-------------------------------------
-	//First arg is the program name
-	if(arg_count < 2){
-		cout << NAME << " version:" << MAJOR << "." << MINOR << "." << PATCH << endl;
-		    
-    graphics::svg mysvg;
-    graphics::rect r = graphics::rect(4,4, 10, 10);
-    r.setFill({255,0,0,0});
-    r.setStroke({0,0,255,0});
-    mysvg.addShape(&r);
-    mysvg.saveFile("Myfile.svg");
-		return 0;
-	}
-
-	//-------------------------------------
 	//Begin compilation
 	//-------------------------------------
-	//Arg is filename
-	std::string filename = arg_values[1];
 	program prog;
 	qasm::runtime::environment env;
+	compiler cmp(tokenizer, rules, converters, post_events, prog);
 
 	//New
-	compiler cmp(tokenizer, rules, converters, post_events, prog);
-	bool b = cmp.try_parse_file(filename);
+	//-------------------------------------
+	//Run in file mode
+	//-------------------------------------
+	if(arg.arguments.size() > 0){
+		//Arg is filename
+		std::string filename = arg.arguments[0];
+		bool b = cmp.try_parse_file(filename);
 
-	//-------------------------------------
-	//Run
-	//-------------------------------------
-	if(b && prog.lines.size() > 0){
-		for(std::vector<qasm::exec::executable*>::iterator it = prog.lines.begin(); it != prog.lines.end(); it++){
-			(*it)->invoke_rootprogram(env);	
+		if(b && prog.lines.size() > 0){
+			for(std::vector<qasm::exec::executable*>::iterator it = prog.lines.begin(); it != prog.lines.end(); it++){
+				(*it)->invoke_rootprogram(env);	
+			}
 		}
+	}
+	//-------------------------------------
+	//Run in interactive mode
+	//-------------------------------------
+	else if(arg.hasFlag("-i")){
+		cout << NAME << " interactive mode. Type `quit` to exit" << endl;
+		std::string line;
+		while(true){
+			std::getline(cin, line);
+			if(line == "quit")
+				break;
+			cmp.try_parse_line("interactive terminal", prog.lines.size(), line);
+			prog.lines[prog.lines.size() - 1]->invoke_rootprogram(env);
+		}
+	}
+	//-------------------------------------
+	//Run in help mode
+	//-------------------------------------
+	else{
+		cout << NAME << " version:" << MAJOR << "." << MINOR << "." << PATCH << endl;
+		cout << "Usage: executable <filename> [options]" << endl << endl;
+		cout << "-i   :: " << "Enter interactive mode if no filename is supplied." << endl;
+		cout << "-svg :: " << "Export a circuit diagram in Scalable Vector Graphics format." << endl;
+		return 0;
 	}
 	//Old		
 	/*if(try_parse_qasm(prog, filename, tokenizer)){
@@ -136,6 +152,10 @@ int main(int arg_count, char* arg_values[]){
 			(*it)->invoke_rootprogram(env);	
 		}
 	}*/
+
+	if(arg.hasFlag("-svg")){
+		exportQuantumCircuit("export.svg", prog);
+	}
 
 	//Program and executable lines are cleaned up by program destructor
 	return 0;

@@ -362,46 +362,50 @@ class compiler {
         ): tokenizer(tokenizer), rules(rules), converters(converters), events(events), prog(prog)
         {}
 
+        void try_parse_line(std::string filename, ulong lineNumber, std::string line){
+            try{
+                //Tokenize
+                vector<match> tokens = tokenizer.tokenize(filename, line.begin(), line.end());
+
+                //Skip empty lines
+                if(tokens.size() < 1)
+                    return;
+                bool ismatch = false;
+
+                //Iterate over all rules determining if the tokens match
+                size_t index = 0;
+                for(vector<parser::ruleptr>::iterator it = rules.begin(); it != rules.end(); it++){
+                    parser::parsetree pt;
+                    parser::tokenqueue q(tokens);
+                    if((*it)->tryParse(q, &pt)){
+                        ismatch = true;
+                        //Do post event
+                        if(index < converters.size()){
+                            qasm::exec::executable* ptr = converters[index](pt);
+                            if(index < events.size()){
+                                events[index](*this, ptr);
+                            }else{
+                                delete ptr;
+                            }
+                        }
+                        break;
+                    }
+                    index++;
+                }
+                if(ismatch == false){
+                    throw parseexception(lineNumber, 0, filename, "Line is not a valid statement");
+                }
+            }catch(lexical::lexicalexception& ex){
+                throw lexical::lexicalexception(lineNumber, ex.c, ex.file, ex.msg);
+            }
+        }
+
         bool try_parse_file(std::string filename){
             scanner s(filename);
             std::string line;
             //Iterate over file
             while(s.next(line)){
-                try{
-                    //Tokenize
-                    vector<match> tokens = tokenizer.tokenize(filename, line.begin(), line.end());
-
-                    //Skip empty lines
-                    if(tokens.size() < 1)
-                        continue;
-                    bool ismatch = false;
-
-                    //Iterate over all rules determining if the tokens match
-                    size_t index = 0;
-                    for(vector<parser::ruleptr>::iterator it = rules.begin(); it != rules.end(); it++){
-                        parser::parsetree pt;
-                        parser::tokenqueue q(tokens);
-                        if((*it)->tryParse(q, &pt)){
-                            ismatch = true;
-                            //Do post event
-                            if(index < converters.size()){
-                                qasm::exec::executable* ptr = converters[index](pt);
-                                if(index < events.size()){
-                                    events[index](*this, ptr);
-                                }else{
-                                    delete ptr;
-                                }
-                            }
-                            break;
-                        }
-                        index++;
-                    }
-                    if(ismatch == false){
-                        throw parseexception(s.getLineNumber() - 1, 0, filename, "Line is not a valid statement");
-                    }
-                }catch(lexical::lexicalexception& ex){
-                    throw lexical::lexicalexception(s.getLineNumber() - 1, ex.c, ex.file, ex.msg);
-                }
+                try_parse_line(filename, s.getLineNumber() - 1, line);
             }
             return true;
         }

@@ -17,6 +17,7 @@ struct colour {
     uint a;
 
     colour() : r(0), g(0), b(0), a(255) {}
+    colour(uint r, uint g, uint b) : r(r), g(g), b(b), a(255) {}
     colour(uint r, uint g, uint b, uint a) : r(r), g(g), b(b), a(a) {}
 
     std::string toHex(){
@@ -44,6 +45,18 @@ struct colour {
         return (a % 256) / 255.0;
     }
 };
+
+namespace colours {
+    colour red(255,0,0);
+    colour green(0,255,0);
+    colour blue(0,0,255);
+    colour white(255,255,255);
+    colour black(0,0,0);
+    colour clear(0,0,0,0);
+    colour teal(0,255,255);
+    colour purple(255,0,255);
+    colour yellow(255,255,0);
+}
 
 }
 

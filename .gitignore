@@ -4,6 +4,7 @@ bin
 
 *.zip
 *.svg
+*.png
 
 src/ide/build
 src/ide/dist

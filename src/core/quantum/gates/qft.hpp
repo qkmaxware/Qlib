@@ -51,6 +51,8 @@ class quantumFourierTransform : public igate {
         }
 };
 
+quantumFourierTransform QFT;
+
 }
 }
 }

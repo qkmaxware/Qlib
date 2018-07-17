@@ -1,0 +1,13 @@
+.main
+    qreg q[2]
+    creg r[1]
+
+    h q0
+    
+    //For function f:{0,1} -> {0,1} where f(0) = 0 and f(1) = 1
+    .oracle
+        
+
+    h q0
+    measure q0 -> r0
+    print r

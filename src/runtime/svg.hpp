@@ -5,6 +5,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <memory> 
 
 #include "colour.hpp"
 
@@ -116,8 +117,10 @@ class line : public shape {
             sb << "\" y1=\"" << sy;
             sb << "\" x2=\"" << ex;
             sb << "\" y2=\"" << ey;
-            sb << "\" stroke=\"" << (this->getStroke()).toHex() << "\" ";
-            sb << " stroke-width=\"" << (this->getStrokeWidth()) << "\"/>";
+            sb << "\" stroke=\"" << (this->getStroke()).toHex() << "\"";
+            sb << " stroke-width=\"" << (this->getStrokeWidth()) << "\"";
+            sb << " stroke-opacity=\"" << (this->getStroke()).getOpacity() << "\"";
+            sb << "/>";
             return sb.str();
         }
 };
@@ -169,7 +172,10 @@ class polyline : public shape {
                 }
                 sb << xs[i] << " " << ys[i];
             }
-            sb << "\" stroke=\"" << (this->getStroke()).toHex() << "\"" << " stroke-width=\"" << (this->getStrokeWidth()) << "\"/>";
+            sb << "\" stroke=\"" << (this->getStroke()).toHex() << "\"";
+            sb << " stroke-width=\"" << (this->getStrokeWidth()) << "\"";
+            sb << " stroke-opacity=\"" << (this->getStroke()).getOpacity() << "\"";
+            sb << "/>";
             return sb.str();
         }
         size_t countPoints(){
@@ -186,7 +192,7 @@ class polyline : public shape {
 /// <Summary>
 /// Describes a polygon of 'N' points
 /// </Summary>
-class polygon : private polyline {
+class polygon : public polyline {
     public:
         std::string encode() {
             stringstream sb;
@@ -197,8 +203,12 @@ class polygon : private polyline {
                 }
                 sb << getX(i) << " " << getY(i);
             }
-            sb << "\" stroke=\"" << (this->getStroke()).toHex() << "\"" << " stroke-width=\"" << (this->getStrokeWidth()) << " ";
-            sb << "fill=\"" << (this->getFill()).toHex() << "\"/>";
+            sb << "\" stroke=\"" << (this->getStroke()).toHex() << "\""; 
+            sb << " stroke-width=\"" << (this->getStrokeWidth()) << "\"";
+            sb << " stroke-opacity=\"" << (this->getStroke()).getOpacity() << "\" ";
+            sb << " fill=\"" << (this->getFill()).toHex() << "\"";
+            sb << " fill-opacity=\"" << (this->getFill()).getOpacity() << "\" ";
+            sb << "/>";
             return sb.str();
         }
 };
@@ -221,8 +231,11 @@ class rect : public shape {
             sb << "width=\"" << b.getWidth() << "\" ";
             sb << "height=\"" << b.getHeight() << "\" ";
             sb << "stroke=\"" << (this->getStroke()).toHex() << "\" ";
+            sb << "stroke-opacity=\"" << (this->getStroke()).getOpacity() << "\" ";
             sb << "stroke-width=\"" << (this->getStrokeWidth()) << "\" ";
-            sb << "fill=\"" << (this->getFill()).toHex() << "\"/>";
+            sb << "fill=\"" << (this->getFill()).toHex() << "\" ";
+            sb << "fill-opacity=\"" << (this->getFill()).getOpacity() << "\" ";
+            sb << "/>";
             return sb.str();
         }
 };
@@ -236,19 +249,24 @@ class text : public shape {
         size_t x;
         size_t y;
         std::string value;
+        float rotation;
     public: 
-        text(size_t x, size_t y, std::string value) : b(x, y, 1, 1), x(x), y(y), value(value) {}
+        text(size_t x, size_t y, std::string value) : b(x, y, 1, 1), x(x), y(y), value(value), rotation(0) {}
         bounds& getExtents(){
             return b;
         }
         std::string encode() {
-            //TODO add rotation and css properties for font details
+            //TODO add css properties for font details
             stringstream sb;
             sb << "<text x=\"" << b.getMinX() << "\" ";
             sb << "y=\"" << b.getMinY() << "\" ";
             sb << "stroke=\"" << (this->getStroke()).toHex() << "\" ";
+            sb << "stroke-opacity=\"" << (this->getStroke()).getOpacity() << "\" ";
             sb << "stroke-width=\"" << (this->getStrokeWidth()) << "\" ";
-            sb << "fill=\"" << (this->getFill()).toHex() << "\">";
+            sb << "fill=\"" << (this->getFill()).toHex() << "\" ";
+            sb << "fill-opacity=\"" << (this->getFill()).getOpacity() << "\" ";
+            sb << "rotation=\"" << (this->rotation) << "\" ";
+            sb << ">";
             sb << value;
             sb << "</text>";
             return sb.str();
@@ -273,14 +291,18 @@ class svg {
         size_t width;
         size_t height;
         bool autosize;
-        std::vector<shape*> shapes;
+        std::vector<std::shared_ptr<shape>> shapes;
 
     public:
         svg() : width(0), height(0), autosize(true), shapes() {};
         svg(size_t width, size_t height) : width(width), height(height), autosize(false), shapes() {};
         ~svg(){};
 
-        void addShape(shape* shape){
+        void addShape(shape* ptr){
+            addShape(std::shared_ptr<shape>(ptr));
+        }
+
+        void addShape(std::shared_ptr<shape> shape){
             shapes.push_back(shape);
             if(autosize){
                 if(shape->getExtents().getMaxX() > width){
@@ -295,7 +317,7 @@ class svg {
         void saveFile(std::string filename){
             std::ofstream file(filename);
             file << "<svg width=\"" << width << "\" height=\"" << height << "\">\n";
-            for(std::vector<shape*>::iterator it = shapes.begin(); it != shapes.end(); it++){
+            for(std::vector<std::shared_ptr<shape>>::iterator it = shapes.begin(); it != shapes.end(); it++){
                 file << "\t";
                 file << (*it)->encode();
                 file << "\n";
