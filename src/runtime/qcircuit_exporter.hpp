@@ -67,9 +67,11 @@ void exportQuantumCircuit (std::string name, program& prog){
             for(size_t t = 0; t < ptr->param_indecies.size(); t++){
                 if(t != ptr->param_indecies.size() - 1){
                     //Connector
+                    size_t last = ptr->param_indecies[ptr->param_indecies.size() - 1];
                     ulong midline =  t1.y + t*cellHeight + cellHeight/2;
+                    ulong midline2 = t1.y + last*cellHeight + cellHeight / 2;
                     paint.addShape((shape*) new rect(t1.x * cellWidth + cellWidth/2 - 8, midline - 8, 16, 16));
-                    //paint.addShape((shape*)new line(t1.x * cellWidth + cellWidth / 2, ,t1.x * cellWidth + cellWidth / 2, ));
+                    paint.addShape((shape*)new line(t1.x * cellWidth + cellWidth / 2, midline, t1.x * cellWidth + cellWidth / 2, midline2));
                 } else{
                     //Gate
                     ulong top = t1.y + t * cellHeight;

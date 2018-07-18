@@ -35,6 +35,15 @@ class ensemble : public qsystem{
         }
 
         /// <Summary>
+        /// Set the state of the quantum register
+        /// </Summary>
+        void setState(std::vector<complex> amp){
+            for(std::vector<qsystem*>::iterator it = set.begin(); it != set.end(); it++) {
+                (*it)->setState(amp);
+            }
+        }
+
+        /// <Summary>
         /// Size of the ensemble
         /// </Summary>
         size_t size(){

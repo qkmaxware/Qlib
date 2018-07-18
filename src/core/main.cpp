@@ -7,39 +7,50 @@ using namespace qlib::quantum;
 using namespace qlib::math;
 using namespace std;
 
+void testOneQubitGate(std::string name, gates::igate* gate){
+    //R bit qreg = 1|0> + 0|1>
+    qreg r(1);
+    cout << name << "|t> :: " << endl; 
+    r.setState({1,0});
+    cout << r.toString() << " -> ";
+    r.apply(*gate, {0});
+    cout << r.toString() << ", " << endl;
+    r.setState({0,1});
+    cout << r.toString() << " -> ";
+    r.apply(*gate, {0});
+    cout << r.toString() << ", " << endl; 
+    r.setState({1,1});
+    cout << r.toString() << " -> ";
+    r.apply(*gate, {0});
+    cout << r.toString() << endl;
+}
+void testControledQubitGate(std::string name, gates::igate* gate){
+
+}
+void testDoubleControledQubitGate(std::string name, gates::igate* gate){
+
+}
+
 int main(){
-    /*
-    qubit q;
-    cout << q.toString() << endl;
-    q.apply(gates::H, {0});
-    cout << q.toString() << endl;
-    */
-    qreg r(2);
-    cout << r.toString() << endl;
-    r.apply(gates::H, {0});
-    cout << r.toString() << endl;
-    r.apply(gates::CNOT, {0, 1});
-    cout << r.toString() << endl;
-    /*
-    std::cout << "Gates" << std::endl;
-    std::cout << H.toString() << std::endl;
-    std::cout << X.toString() << std::endl;
-    std::cout << Y.toString() << std::endl;
-    std::cout << Z.toString() << std::endl;
+    
+    //Test One-Qubit gates
+    cout << "Testing 1-qubit gates" << endl;
+    testOneQubitGate("H", &gates::H);
+    testOneQubitGate("I", &gates::I);
+    testOneQubitGate("X", &gates::X);
+    testOneQubitGate("Y", &gates::Y);
+    testOneQubitGate("Z", &gates::Z);
+    testOneQubitGate("T", &gates::T);
 
-    std::cout << std::endl << "Building Ensemble" << std::endl;
-    std::vector<qsystem*> systems;
-    for(int i = 0; i < 10; i++){
-        systems.push_back(new qubit());
-    }
-    ensemble e(systems);
-    std::cout << " -- Size: " << e.size() << std::endl;
+    //Test two qubit gates
+    cout << endl << "Testing 2-qubit gates" << endl;
+    testControledQubitGate("CX", &gates::CX);
+    testControledQubitGate("CY", &gates::CY);
+    testControledQubitGate("CZ", &gates::CZ);
 
-    std::cout << std::endl << "Operating" << std::endl;
-    e.apply(H);
+    //Test three qubit gates
+    cout << endl << "Testing 3-qubit gates" << endl;
+    testDoubleControledQubitGate("CCX", &gates::CCNOT);
 
-    std::cout << std::endl << "Measurements" << std::endl;
-    std::cout << e.measure(0) << std::endl;
-    */
     return 0;
 }

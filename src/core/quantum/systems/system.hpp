@@ -28,6 +28,10 @@ class qsystem: public xobject {
         /// </Summary>
         virtual i8 measure(i64 qubit) = 0;
         /// <Summary>
+        /// Set the state of the quantum register
+        /// </Summary>
+        virtual void setState(std::vector<complex> amp) = 0;
+        /// <Summary>
         /// Human readable output
         /// </Summary>
         virtual std::string toString(){

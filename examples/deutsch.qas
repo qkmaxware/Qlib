@@ -5,6 +5,7 @@
     h q0
     
     //For function f:{0,1} -> {0,1} where f(0) = 0 and f(1) = 1
+    //Create oracle Uf where Uf|x>|y> -> |x>|y+f(x)>
     .oracle
         
 

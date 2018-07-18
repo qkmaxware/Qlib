@@ -48,6 +48,26 @@ class qubit : public qsystem {
         }
 
         /// <Summary>
+        /// Set the state of the quantum register
+        /// </Summary>
+        void setState(std::vector<complex> amp){
+            if(amp.size() >= 1){
+                vec(0,0) = amp[0];
+            }else{
+                vec(0,0) = qlib::math::complex(0,0);
+            }
+            if(amp.size() >= 2){
+                vec(1,0) = amp[1];
+            }else{
+                vec(0,0) = qlib::math::complex(0,0);
+            }
+            
+            f32 mag = sqrt(vec(0,0).sqrMagnitude() + vec(1,0).sqrMagnitude());
+            vec(0,0) = vec(0,0)/mag;
+            vec(1,0) = vec(1,0)/mag;
+        }
+
+        /// <Summary>
         /// Current state column vector
         /// </Summary>
         matrix& state(){

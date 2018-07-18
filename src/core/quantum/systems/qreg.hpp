@@ -47,6 +47,7 @@ class qreg : public qsystem {
         /// Quantum register of 1 qubit
         /// </Summary>
         qreg() : qreg(1) {}
+        
         /// <Summary>
         /// Quantum register of 'N' qubits
         /// </Summary>
@@ -55,6 +56,25 @@ class qreg : public qsystem {
             this->states = 1 << qubits;
             //initalize to state 0
             amplitudes(0,0) = complex(1);
+        }
+
+        /// <Summary>
+        /// Set the state of the quantum register
+        /// </Summary>
+        void setState(std::vector<complex> amp){
+            f32 sum;
+            for(std::vector<complex>::iterator it = amp.begin(); it != amp.end(); it++){
+                sum += (*it).sqrMagnitude();
+            }
+            sum = sqrt(sum);
+            for(size_t i = 0; i < amplitudes.countRows(); i++){
+                if(i < amp.size()){
+                    amplitudes(i,0) = amp[i] / sum;
+                }
+                else{
+                    amplitudes(i,0) = complex(0,0);
+                }
+            }
         }
 
         /// <Summary>
