@@ -10,7 +10,7 @@ using namespace std;
 void testOneQubitGate(std::string name, gates::igate* gate){
     //R bit qreg = 1|0> + 0|1>
     qreg r(1);
-    cout << name << "|t> :: " << endl; 
+    cout << name << "|t> :: WAITING" << endl; 
     r.setState({1,0});
     cout << r.toString() << " -> ";
     r.apply(*gate, {0});
@@ -27,7 +27,7 @@ void testOneQubitGate(std::string name, gates::igate* gate){
 void testControledQubitGate(std::string name, gates::igate* gate){
     //R bit qreg = 1|00> + 0|01> + 0|10> + 0|11>
     qreg r(2);
-    cout << name << "|t> :: " << endl; 
+    cout << name << "|t> :: WAITING" << endl; 
 
     r.setState({1,0,0,0}); 
     cout << r.toString() << " -> "; r.apply(*gate, {0, 1}); cout << r.toString() << endl;
@@ -45,7 +45,7 @@ void testControledQubitGate(std::string name, gates::igate* gate){
 void testDoubleControledQubitGate(std::string name, gates::igate* gate){
     //R bit qreg = 1|000> + 0|001> + 0|010> + 0|011> + 0|100> + 0|101> + 0|110> + 0|111>
     qreg r(3);
-    cout << name << "|t> :: " << endl; 
+    cout << name << "|t> :: WAITING" << endl; 
     
     for(int i = 0; i < 8; i++){
         r.setState({
