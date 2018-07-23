@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <map>
+#include <sstream>
 
 using namespace graphics;
 
@@ -26,6 +27,7 @@ void exportQuantumCircuit (std::string name, program& prog){
     ulong cellHeight = 40;
     ulong cellWidth = 40;
     ulong cellBuffer = 25;
+    ulong cellHeader = 32;
 
     for(std::vector<qasm::exec::executable*>::iterator it = prog.lines.begin(); it != prog.lines.end(); it++){
         bool is_definition = typeof(qasm::exec::declaration, *it);
@@ -40,13 +42,19 @@ void exportQuantumCircuit (std::string name, program& prog){
             t.height = (ptr->size * (cellHeight)) + 25;
             t.y = nexty;
             t.x = 1;
-            nexty += t.height + cellBuffer;
+            nexty += t.height + cellBuffer + cellHeader;
             map[ptr->name] = t;
 
-            paint.addShape((shape*)new text(12, t.y + 12, ptr->name));
+            stringstream sb;
+            sb << "Quantum Register \"" << ptr->name << "[" << ptr->size << "]\"";
+
+            paint.addShape((shape*)new text(12, t.y + cellHeader/2, sb.str()));
             for(ulong i = 0; i < t.lines; i++){
-                ulong midline =  t.y + i*cellHeight + cellHeight/2;
-                paint.addShape((shape*)new line(0, midline, cellWidth, midline));
+                ulong midline =  t.y + i*cellHeight + cellHeight/2 + cellHeader;
+                paint.addShape((shape*)new line(cellWidth/2, midline, cellWidth, midline));
+				stringstream sb;
+				sb << i;
+				paint.addShape((shape*)new text(0, midline, sb.str()));
             }
 
             continue;
@@ -60,7 +68,7 @@ void exportQuantumCircuit (std::string name, program& prog){
             timeline& t1 = map[ptr->param_names[0]];
             //Underlying lines
             for(ulong i = 0; i < t1.lines; i++){
-                ulong midline =  t1.y + i*cellHeight + cellHeight/2;
+                ulong midline =  t1.y + i*cellHeight + cellHeight/2  + cellHeader;
                 paint.addShape((shape*)new line(t1.x * cellWidth, midline, t1.x * cellWidth + cellWidth, midline));
             }
             //Gates and connectors
@@ -68,13 +76,13 @@ void exportQuantumCircuit (std::string name, program& prog){
                 if(t != ptr->param_indecies.size() - 1){
                     //Connector
                     size_t last = ptr->param_indecies[ptr->param_indecies.size() - 1];
-                    ulong midline =  t1.y + t*cellHeight + cellHeight/2;
-                    ulong midline2 = t1.y + last*cellHeight + cellHeight / 2;
+                    ulong midline =  t1.y + t*cellHeight + cellHeight/2 + cellHeader;
+                    ulong midline2 = t1.y + last*cellHeight + cellHeight/2  + cellHeader;
                     paint.addShape((shape*) new rect(t1.x * cellWidth + cellWidth/2 - 8, midline - 8, 16, 16));
                     paint.addShape((shape*)new line(t1.x * cellWidth + cellWidth / 2, midline, t1.x * cellWidth + cellWidth / 2, midline2));
                 } else{
                     //Gate
-                    ulong top = t1.y + t * cellHeight;
+                    ulong top = t1.y + t * cellHeight  + cellHeader;
                     rect* r = new rect(
                         t1.x * cellWidth, 
                         top,  
@@ -89,7 +97,7 @@ void exportQuantumCircuit (std::string name, program& prog){
             t1.x++;
             //Connectors out of gate
             for(ulong i = 0; i < t1.lines; i++){
-                ulong midline =  t1.y + i*cellHeight + cellHeight/2;
+                ulong midline =  t1.y + i*cellHeight + cellHeight/2  + cellHeader;
                 paint.addShape((shape*)new line(t1.x * cellWidth, midline, t1.x * cellWidth + cellWidth, midline));
             }
             t1.x++;
@@ -102,7 +110,7 @@ void exportQuantumCircuit (std::string name, program& prog){
             timeline& t1 = map[ptr->qreg];
             //Underlying lines
             for(ulong i = 0; i < t1.lines; i++){
-                ulong midline =  t1.y + i*cellHeight + cellHeight/2;
+                ulong midline =  t1.y + i*cellHeight + cellHeight/2  + cellHeader;
                 if(ptr->measureWhole || i == ((ulong)ptr->qindex)){
                     polygon* poly = new polygon();
                     poly->setFill({255,255,255});
@@ -117,7 +125,7 @@ void exportQuantumCircuit (std::string name, program& prog){
             //Connectors out of measurement
             t1.x++;
             for(ulong i = 0; i < t1.lines; i++){
-                ulong midline =  t1.y + i*cellHeight + cellHeight/2;
+                ulong midline =  t1.y + i*cellHeight + cellHeight/2  + cellHeader;
                 paint.addShape((shape*)new line(t1.x * cellWidth, midline, t1.x * cellWidth + cellWidth, midline));
             }
             continue;

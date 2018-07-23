@@ -116,7 +116,7 @@ int main(int arg_count, char* arg_values[]){
 		std::string filename = arg.arguments[0];
 		bool b = cmp.try_parse_file(filename);
 
-		if(b && prog.lines.size() > 0){
+		if(!arg.hasFlag("-noeval") && b && prog.lines.size() > 0){
 			for(std::vector<qasm::exec::executable*>::iterator it = prog.lines.begin(); it != prog.lines.end(); it++){
 				(*it)->invoke_rootprogram(env);	
 			}
@@ -133,7 +133,9 @@ int main(int arg_count, char* arg_values[]){
 			if(line == "quit")
 				break;
 			cmp.try_parse_line("interactive terminal", prog.lines.size(), line);
-			prog.lines[prog.lines.size() - 1]->invoke_rootprogram(env);
+			if(!arg.hasFlag("-noeval")){
+				prog.lines[prog.lines.size() - 1]->invoke_rootprogram(env);
+			}
 		}
 	}
 	//-------------------------------------
@@ -142,8 +144,9 @@ int main(int arg_count, char* arg_values[]){
 	else{
 		cout << NAME << " version:" << MAJOR << "." << MINOR << "." << PATCH << endl;
 		cout << "Usage: executable <filename> [options]" << endl << endl;
-		cout << "-i   :: " << "Enter interactive mode if no filename is supplied." << endl;
-		cout << "-svg :: " << "Export a circuit diagram in Scalable Vector Graphics format." << endl;
+		cout << "-i      :: " << "Enter interactive mode if no filename is supplied." << endl;
+		cout << "-svg    :: " << "Export a circuit diagram in Scalable Vector Graphics format." << endl;
+		cout << "-noeval :: " << "Load but do not evaluate quantum scripts. Usually used with -svg." << endl;
 		return 0;
 	}
 	//Old		

@@ -254,8 +254,9 @@ public class QLibIDE {
                     try {
                         Desktop.getDesktop().browse(new URI(onlineResources));
                     } 
-                    catch (URISyntaxException ex) {} 
-                    catch (IOException ex) {}
+                    catch (Exception ex) {
+                        JOptionPane.showMessageDialog(null, "Qlib - IDE can't open the default web browser to the online help resources. Please visit: " + onlineResources, "Can't open default web browser", JOptionPane.ERROR_MESSAGE);
+                    } 
                 }
             }
         });

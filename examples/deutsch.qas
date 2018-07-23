@@ -1,14 +1,39 @@
+//Deutsch algorithm:
+//The Deutsch algorithm is the simplest quantum algorithm.
+//The purpose of the Deutsch algorithm is to demonstrate how quantum paralellization can be used to solve problems faster.
+//This algorithm determines if a function is constant or balanced (F(0) == F(1)).
+//Classically, this can be found by computing both F(0) and F(1) and comparing them. Quantum mechanically we can just query the function once.
 .main
+    //Setup
     qreg q[2]
     creg r[1]
-
+    
+    //Set a qubit into a superposition of 0 and 1
     h q0
     
     //For function f:{0,1} -> {0,1} where f(0) = 0 and f(1) = 1
-    //Create oracle Uf where Uf|x>|y> -> |x>|y(+)f(x)>
+    //As a matrix, F is described as follows
+    //[ <0| f |0>, <0| f |1> ] = [ <0|0>, <0|1> ] = [ 1, 0 ]
+    //[ <1| f |0>, <1| f |1> ]   [ <1|0>, <1|1> ]   [ 0, 1 ]
+
+    //Create oracle Uf where Uf|x>|y> -> |x>|y XOR f(x)>  
+    //Possible values of Uf:
+    //Uf(0,0) = |0>|0 XOR 0> = |0>|0> = |00>
+    //Uf(0,1) = |0>|1 XOR 0> = |0>|1> = |01>
+    //Uf(1,0) = |1>|0 XOR 1> = |0>|1> = |01>
+    //Uf(1,1) = |1>|1 XOR 1> = |0>|0> = |00>
+    //As a matrix, Uf is described as follows
+    //[ <00| Uf |00>, <00| Uf |01>, <00| Uf |10>, <00| Uf |11> ] = [ <00|00>, <00|01>, <00|01>, <00|00> ] = [ 1, 0, 0, 1 ]
+    //[ <01| Uf |00>, <01| Uf |01>, <01| Uf |10>, <01| Uf |11> ]   [ <01|00>, <01|01>, <01|01>, <01|00> ]   [ 0, 1, 1, 0 ]
+    //[ <10| Uf |00>, <10| Uf |01>, <10| Uf |10>, <10| Uf |11> ]   [ <10|00>, <10|01>, <10|01>, <10|00> ]   [ 0, 0, 0, 0 ]
+    //[ <11| Uf |00>, <11| Uf |01>, <11| Uf |10>, <11| Uf |11> ]   [ <11|00>, <11|01>, <11|01>, <11|00> ]   [ 0, 0, 0, 0 ]
+    //Since this matrix can't be directly applied in QAS, we need to create a controlled qubit gate
+	
     .oracle
-        
+    
 
     h q0
+
+    //Get the answer
     measure q0 -> r0
     print r
