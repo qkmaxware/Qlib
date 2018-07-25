@@ -2,6 +2,7 @@
 #define _QLIB_QUANTUM_GATES_HADAMARD_H
 
 #include "onequbitgate.hpp"
+#include "controlledgate.hpp"
 
 namespace qlib {
 namespace quantum {
@@ -13,6 +14,11 @@ onequbitgate H = onequbitgate(
         complex(1.0f/sqrt(2.0f)), complex(1.0f/sqrt(2.0f)),
         complex(1.0f/sqrt(2.0f)), complex(-1.0f/sqrt(2.0f))
     });
+
+controlledgate CH = controlledgate(
+    "Controlled Hadamard",
+    H
+);
 
 }
 }

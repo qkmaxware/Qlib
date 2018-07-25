@@ -6,6 +6,7 @@ bin
 *.svg
 *.png
 
+.antlr
 src/ide/build
 src/ide/dist
 src/ide/config.ini

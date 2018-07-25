@@ -77,16 +77,28 @@ int main(int arg_count, char* arg_values[]){
 	//-------------------------------------
 	//Create rules
 	//-------------------------------------
+	//include "filename"
 	ruleptr import_ 			= _include << _string;
+	//zero qreg q
 	ruleptr reset_				= _reset << _reference << (_reference | _indexor);
+	//.label
 	ruleptr label_ 				= _anchor << _reference;
+	//print q
 	ruleptr print_ 				= _print << _reference;
+	//cnot q0 q1
 	ruleptr application_ 		= _reference << *_indexor;
+	//myfunc q
 	/**///ruleptr fncall_				= _reference << *_reference;
+	//qreg myreg[3]
 	ruleptr typedecl_			= (((_reference << _reference) << _leftb) << _integer) << _rightb;
+	//measure q -> c
 	ruleptr measurement_		= _measure << ((_indexor << _mapping << _indexor) | (_reference << _mapping << _reference));
+	//start myfunc
 	/**///ruleptr fndecl_				= _start << _reference;
+	//end
 	/**///ruleptr fnend_				= _end;
+	//gate mygate 0, 1, 1, 0
+	/**///ruleptr gate_			= _gate << _reference << _complex << _comma << _complex << _comma << _complex << _comma << _complex; 
 
 	//-------------------------------------
 	//Create parse lists

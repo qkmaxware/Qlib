@@ -18,6 +18,10 @@ class igate : public xobject {
     private:
     public:
         /// <Summary>
+        /// Virtual destrutor, overwritten by subclasses
+        /// </Summary>
+        virtual ~igate(){}
+        /// <Summary>
         /// Test if a given matrix matches quantum gate specifications (square & unitary)
         /// </Summary>
         static bool isGateable(matrix& a){

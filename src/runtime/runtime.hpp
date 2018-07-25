@@ -5,6 +5,7 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <memory>
 
 #include "./../core/qlib.h"
 
@@ -57,44 +58,67 @@ class environment {
         /// List of assigned classic varaibles
         /// </Summary>
         map<string,creg> classic_registers;
-
+        /// <Summary>
+        /// List of stored gates
+        /// </Summary>
+        map<string,igate*> registered_gates;
+        /// <Summary>
+        /// List of user defined gates that need to be cleaned up when the environment is cleared
+        /// </Summary>
+        vector<igate*> gates_to_cleanup;
     public:
+        /// <Summary>
+        /// Create a new runtime environment with the default definitions
+        /// </Summary>
+        environment() : quantum_registers(), classic_registers(), registered_gates(), gates_to_cleanup(){
+            registered_gates["h"] = &qlib::quantum::gates::H;
+            registered_gates["i"] = &qlib::quantum::gates::I;
+            registered_gates["x"] = &qlib::quantum::gates::X;
+            registered_gates["not"] = &qlib::quantum::gates::X;
+            registered_gates["y"] = &qlib::quantum::gates::Y;
+            registered_gates["z"] = &qlib::quantum::gates::Z;
+
+            registered_gates["ch"] = &qlib::quantum::gates::CH;
+            registered_gates["cx"] = &qlib::quantum::gates::CX;
+            registered_gates["cnot"] = &qlib::quantum::gates::CNOT;
+            registered_gates["cy"] = &qlib::quantum::gates::CY;
+            registered_gates["cz"] = &qlib::quantum::gates::CZ;
+
+            registered_gates["toffoli"] = &qlib::quantum::gates::TOFFOLI;
+            registered_gates["ccnot"] = &qlib::quantum::gates::CCNOT;
+        }
+
+        /// <Summary>
+        /// Destroy environment and all definitions
+        /// </Summary>
+        ~environment(){
+            for(vector<igate*>::iterator it = gates_to_cleanup.begin(); it != gates_to_cleanup.end(); it++){
+                delete *it;
+            }
+        }
+
         /// <Summary>
         /// For a given name, return the associated gate object
         /// </Summary>
         igate* getGate(string name){
-            igate* gateptr = NULL;
-            if(name == "h"){
-                gateptr = &qlib::quantum::gates::H;
+            bool hasGate = registered_gates.count(name) > 0;
+            if(hasGate){
+                return registered_gates[name];
             }
-            else if(name == "cnot" || name == "cx"){
-                gateptr = &qlib::quantum::gates::CNOT;
+            else{
+                stringstream sb;
+                sb << "Gate \"" << name << "\" is not defined.";
+                throw runtimeexception(sb.str());
             }
-            else if(name == "cy"){
-                gateptr = &qlib::quantum::gates::CY;
-            }
-            else if(name == "cz"){
-                gateptr = &qlib::quantum::gates::CZ;
-            }
-            else if(name == "i"){
-                gateptr = &qlib::quantum::gates::I;
-            }
-            else if(name == "x"){
-                gateptr = &qlib::quantum::gates::X;
-            }
-            else if(name == "y"){
-                gateptr = &qlib::quantum::gates::Y;
-            }
-            else if(name == "z"){
-                gateptr = &qlib::quantum::gates::Z;
-            }
-            else if(name == "t"){
-                gateptr = &qlib::quantum::gates::T;
-            }
-            else if(name == "ccnot" || name == "toffoli"){
-                gateptr = &qlib::quantum::gates::CCNOT;
-            }
-            return gateptr;
+        }
+
+        /// <Summary>
+        /// Add a user defined gate to the environment. Gate is cleaned-up when the environment is cleaned-up.
+        /// </Summary>
+        void buildGate(string name, complex aa, complex ab, complex ba, complex bb){
+            onequbitgate* mygate = new onequbitgate(name, {aa, ab, ba, bb});
+            registered_gates[name] = mygate;
+            gates_to_cleanup.push_back(mygate); 
         }
 
         /// <Summary>

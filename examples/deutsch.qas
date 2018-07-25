@@ -3,14 +3,17 @@
 //The purpose of the Deutsch algorithm is to demonstrate how quantum paralellization can be used to solve problems faster.
 //This algorithm determines if a function is constant or balanced (F(0) == F(1)).
 //Classically, this can be found by computing both F(0) and F(1) and comparing them. Quantum mechanically we can just query the function once.
-.main
-    //Setup
-    qreg q[2]
-    creg r[1]
-    
-    //Set a qubit into a superposition of 0 and 1
+//Two examples are shown below. The first for an unbalanced function where F(0) != F(1); the second where F(0) = F(1)
+
+//Setup
+qreg q[2]
+creg r[1]
+
+.unbalancedFunction
+    h q1
     h q0
-    
+    print q
+
     //For function f:{0,1} -> {0,1} where f(0) = 0 and f(1) = 1
     //As a matrix, F is described as follows
     //[ <0| f |0>, <0| f |1> ] = [ <0|0>, <0|1> ] = [ 1, 0 ]
@@ -18,21 +21,56 @@
 
     //Create oracle Uf where Uf|x>|y> -> |x>|y XOR f(x)>  
     //Possible values of Uf:
-    //Uf(0,0) = |0>|0 XOR 0> = |0>|0> = |00>
-    //Uf(0,1) = |0>|1 XOR 0> = |0>|1> = |01>
-    //Uf(1,0) = |1>|0 XOR 1> = |0>|1> = |01>
-    //Uf(1,1) = |1>|1 XOR 1> = |0>|0> = |00>
+    //Uf|0>|0> = |0>|0 XOR f(0)> = |0>|0>
+    //Uf|0>|1> = |0>|1 XOR f(0)> = |0>|1>
+    //Uf|1>|0> = |1>|0 XOR f(1)> = |1>|1>
+    //Uf|1>|1> = |1>|1 XOR f(1)> = |1>|0>
     //As a matrix, Uf is described as follows
-    //[ <00| Uf |00>, <00| Uf |01>, <00| Uf |10>, <00| Uf |11> ] = [ <00|00>, <00|01>, <00|01>, <00|00> ] = [ 1, 0, 0, 1 ]
-    //[ <01| Uf |00>, <01| Uf |01>, <01| Uf |10>, <01| Uf |11> ]   [ <01|00>, <01|01>, <01|01>, <01|00> ]   [ 0, 1, 1, 0 ]
-    //[ <10| Uf |00>, <10| Uf |01>, <10| Uf |10>, <10| Uf |11> ]   [ <10|00>, <10|01>, <10|01>, <10|00> ]   [ 0, 0, 0, 0 ]
-    //[ <11| Uf |00>, <11| Uf |01>, <11| Uf |10>, <11| Uf |11> ]   [ <11|00>, <11|01>, <11|01>, <11|00> ]   [ 0, 0, 0, 0 ]
-    //Since this matrix can't be directly applied in QAS, we need to create a controlled qubit gate
-	
+    //[ <00|Uf|00>, <00|Uf|01>, <00|Uf|10>, <00|Uf|11> ]   [ <00|00>, <00|01>, <00|11>, <00|10> ]   [ 1, 0, 0, 0 ]
+    //[ <01|Uf|00>, <01|Uf|01>, <01|Uf|10>, <01|Uf|11> ] = [ <01|00>, <01|01>, <01|11>, <01|10> ] = [ 0, 1, 0, 0 ]
+    //[ <10|Uf|00>, <10|Uf|01>, <10|Uf|10>, <10|Uf|11> ]   [ <10|00>, <10|01>, <10|11>, <10|10> ]   [ 0, 0, 0, 1 ]
+    //[ <11|Uf|00>, <11|Uf|01>, <11|Uf|10>, <11|Uf|11> ]   [ <11|00>, <11|01>, <11|11>, <11|10> ]   [ 0, 0, 1, 0 ]
+    //Since we can't apply 4x4 matrices directly in QAS, we need to choose the appropriate single qubit/controlled operators
+    //This matrix is identical to the Controlled - X gate
     .oracle
-    
+        cnot q0 q1
+        print q
 
     h q0
+    print q
+
+    //Get the answer
+    measure q0 -> r0
+    print r
+
+//Reset and resuse the same registers
+zero qreg q
+zero creg r
+
+.balancedFunction
+    h q1
+    h q0
+    print q
+
+    //For f: {0,1} -> {0,1} where f(0) = f(1) = 1
+    //Create oracle Uf where Uf|x>|y> -> |x>|y XOR f(x)>  
+    //Possible values of Uf:
+    //Uf|0>|0> = |0>|0 XOR f(0)> = |0>|1>
+    //Uf|0>|1> = |0>|1 XOR f(0)> = |0>|0>
+    //Uf|1>|0> = |1>|0 XOR f(1)> = |1>|1>
+    //Uf|1>|1> = |1>|1 XOR f(1)> = |1>|0>
+    //As a matrix, Uf is:
+    //[ <00|Uf|00>, <00|Uf|01>, <00|Uf|10>, <00|Uf|11> ]   [ <00|01>, <00|00>, <00|11>, <00|10> ]   [ 0, 1, 0, 0 ]
+    //[ <01|Uf|00>, <01|Uf|01>, <01|Uf|10>, <01|Uf|11> ] = [ <01|01>, <01|00>, <01|11>, <01|10> ] = [ 1, 0, 0, 0 ]
+    //[ <10|Uf|00>, <10|Uf|01>, <10|Uf|10>, <10|Uf|11> ]   [ <10|01>, <10|00>, <10|11>, <10|10> ]   [ 0, 0, 0, 1 ]
+    //[ <11|Uf|00>, <11|Uf|01>, <11|Uf|10>, <11|Uf|11> ]   [ <11|01>, <11|00>, <11|11>, <11|10> ]   [ 0, 0, 1, 0 ]
+    //Again QAS can't apply this directly so we need the right set of single qubit/controlled operators
+    .oracle
+        x q1
+        print q
+
+    h q0
+    print q
 
     //Get the answer
     measure q0 -> r0
