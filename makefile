@@ -12,7 +12,11 @@ SRC_DIR = src
 LIB_DIR = lib
 OBJ_DIR = obj
 
-EXE_NAME = run.linux
+LINUX_EXE_NAME = run.linux
+WIN32_EXE_NAME = run.w32.exe
+WIN64_EXE_NAME = run.w64.exe
+
+EXE_NAME = $(LINUX_EXE_NAME)
 
 PATH_SEPARATOR = /
 
@@ -41,8 +45,8 @@ LINKLIST = $(patsubst %.cpp, $(OBJ_DIR)$(PATH_SEPARATOR)%.o, $(BASENAMES))
 build: compile $(BIN_DIR)
 
 build-win:
-	make build GCC=i686-w64-mingw32-g++ EXE_NAME=$(EXE_NAME).w32.exe
-	make build GCC=x86_64-w64-mingw32-g++ EXE_NAME=$(EXE_NAME).w64.exe
+	make build GCC=i686-w64-mingw32-g++ EXE_NAME=$(WIN32_EXE_NAME)
+	make build GCC=x86_64-w64-mingw32-g++ EXE_NAME=$(WIN64_EXE_NAME)
 
 run: 
 	.$(PATH_SEPARATOR)$(BIN_DIR)$(PATH_SEPARATOR)$(EXE_NAME)
