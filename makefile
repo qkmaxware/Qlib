@@ -12,7 +12,7 @@ SRC_DIR = src
 LIB_DIR = lib
 OBJ_DIR = obj
 
-EXE_NAME = run
+EXE_NAME = run.linux
 
 PATH_SEPARATOR = /
 

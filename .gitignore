@@ -1,6 +1,7 @@
 obj
 exports
 bin
+private
 
 *.zip
 *.svg
