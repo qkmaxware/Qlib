@@ -128,6 +128,7 @@ void exportQuantumCircuit (std::string name, program& prog){
                 ulong midline =  t1.y + i*cellHeight + cellHeight/2  + cellHeader;
                 paint.addShape((shape*)new line(t1.x * cellWidth, midline, t1.x * cellWidth + cellWidth, midline));
             }
+            t1.x++;
             continue;
         }
     }

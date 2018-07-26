@@ -118,6 +118,8 @@ class environment {
         void buildGate(string name, complex aa, complex ab, complex ba, complex bb){
             onequbitgate* mygate = new onequbitgate(name, {aa, ab, ba, bb});
             registered_gates[name] = mygate;
+            //TODO build controlled U gate too?
+            //controlledgate controlledMygate = controlledgate("Controlled - U", *mygate);
             gates_to_cleanup.push_back(mygate); 
         }
 
