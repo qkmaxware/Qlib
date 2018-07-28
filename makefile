@@ -25,10 +25,17 @@ PATH_SEPARATOR = /
 #-------------------
 #Source files
 #-------------------
-SRC_SRC = $(wildcard $(SRC_DIR)$(PATH_SEPARATOR)*.cpp)
+CPP_SRC = $(wildcard $(SRC_DIR)$(PATH_SEPARATOR)*.cpp)
+C_SRC = $(wildcard $(SRC_DIR)$(PATH_SEPARATOR)*.c)
 RUNTIME_SRC = $(wildcard $(SRC_DIR)$(PATH_SEPARATOR)runtime$(PATH_SEPARATOR)*.cpp)
 
-SOURCES = $(SRC_SRC) $(RUNTIME_SRC)
+SOURCES = $(CPP_SRC) $(C_SRC) $(RUNTIME_SRC)
+
+#-------------------
+#Evaluation Modifyable Parameters
+#-------------------
+ADDITIONAL_FLAGS = 
+EXE_NAME = $(LINUX_EXE_NAME)
 
 #-------------------
 #Rules
@@ -39,12 +46,6 @@ LINKLIST = $(patsubst %.cpp, $(OBJ_DIR)$(PATH_SEPARATOR)%.o, $(BASENAMES))
 
 .cpp.o:
 	$(GCC) $(COMPILE_FLAGS) $(ADDITIONAL_FLAGS) -c $< -o $(OBJ_DIR)$(PATH_SEPARATOR)$(subst $(PATH_SEPARATOR),.,$@) 
-
-#-------------------
-#Modified Parameters
-#-------------------
-ADDITIONAL_FLAGS = 
-EXE_NAME = $(LINUX_EXE_NAME)
 
 #-------------------
 #Targets

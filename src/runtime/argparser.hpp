@@ -17,7 +17,14 @@ class argz {
             for(int i = 1; i < arg_count; i++){
                 std::string s = arg_values[i];
                 if(s.size() > 0 && s[0] == '-'){
-                    flags.push_back(s);
+                    size_t splitter = s.find('=');
+                    if(splitter == string::npos){
+                        flags.push_back(s);
+                    }else{
+                        std::string pre = s.substr(0, splitter);
+                        flags.push_back(pre);
+                        parameters[pre] = s.substr(splitter + 1, s.length() - (splitter + 1));
+                    }
                 }else {
                     arguments.push_back(s);
                 }
