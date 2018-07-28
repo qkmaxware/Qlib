@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacegraphics_1_1colours" kind="namespace" language="C++">
+    <compoundname>graphics::colours</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegraphics_1_1colours_1a8bc9dc7001921731ff76ca802f1a5b43" prot="public" static="no" mutable="no">
+        <type><ref refid="structgraphics_1_1colour" kindref="compound">colour</ref></type>
+        <definition>colour graphics::colours::red(255, 0, 0)</definition>
+        <argsstring>(255, 0, 0)</argsstring>
+        <name>red</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solid red </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegraphics_1_1colours_1ad3420b0ddbf2d2e15af0e31942a8fdbf" prot="public" static="no" mutable="no">
+        <type><ref refid="structgraphics_1_1colour" kindref="compound">colour</ref></type>
+        <definition>colour graphics::colours::green(0, 255, 0)</definition>
+        <argsstring>(0, 255, 0)</argsstring>
+        <name>green</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solid green </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegraphics_1_1colours_1aa32d426428f03bc3b9f1a22a7e04bc15" prot="public" static="no" mutable="no">
+        <type><ref refid="structgraphics_1_1colour" kindref="compound">colour</ref></type>
+        <definition>colour graphics::colours::blue(0, 0, 255)</definition>
+        <argsstring>(0, 0, 255)</argsstring>
+        <name>blue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solid blue </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegraphics_1_1colours_1a77713a7d1bc4cbf45f37942cf43ada26" prot="public" static="no" mutable="no">
+        <type><ref refid="structgraphics_1_1colour" kindref="compound">colour</ref></type>
+        <definition>colour graphics::colours::white(255, 255, 255)</definition>
+        <argsstring>(255, 255, 255)</argsstring>
+        <name>white</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solid white </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegraphics_1_1colours_1a8a798ac0d239095d3ce98415e05d6fc2" prot="public" static="no" mutable="no">
+        <type><ref refid="structgraphics_1_1colour" kindref="compound">colour</ref></type>
+        <definition>colour graphics::colours::black(0, 0, 0)</definition>
+        <argsstring>(0, 0, 0)</argsstring>
+        <name>black</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solid black </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegraphics_1_1colours_1ab04f0c6bf60c34b31307d665b0c69dba" prot="public" static="no" mutable="no">
+        <type><ref refid="structgraphics_1_1colour" kindref="compound">colour</ref></type>
+        <definition>colour graphics::colours::clear(0, 0, 0, 0)</definition>
+        <argsstring>(0, 0, 0, 0)</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fully transparent colour </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegraphics_1_1colours_1aceb03e157ae34836819a37e28605537b" prot="public" static="no" mutable="no">
+        <type><ref refid="structgraphics_1_1colour" kindref="compound">colour</ref></type>
+        <definition>colour graphics::colours::teal(0, 255, 255)</definition>
+        <argsstring>(0, 255, 255)</argsstring>
+        <name>teal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solid teal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegraphics_1_1colours_1a294778a95817cb872322bf4f3f4555ce" prot="public" static="no" mutable="no">
+        <type><ref refid="structgraphics_1_1colour" kindref="compound">colour</ref></type>
+        <definition>colour graphics::colours::purple(255, 0, 255)</definition>
+        <argsstring>(255, 0, 255)</argsstring>
+        <name>purple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solid purple </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegraphics_1_1colours_1aeadbc70fa5a266ebc8209f7180a069d6" prot="public" static="no" mutable="no">
+        <type><ref refid="structgraphics_1_1colour" kindref="compound">colour</ref></type>
+        <definition>colour graphics::colours::yellow(255, 255, 0)</definition>
+        <argsstring>(255, 255, 0)</argsstring>
+        <name>yellow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solid yellow </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="112" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/runtime/colour.hpp" line="76" column="1"/>
+  </compounddef>
+</doxygen>

@@ -12,6 +12,14 @@
     <member refid="classqasm_1_1exec_1_1apply__subcircuit_1ac7828e8ae990026dbcf6bb7b5cdc1d9b" kind="variable"><name>params</name></member>
     <member refid="classqasm_1_1exec_1_1apply__subcircuit_1ae8196f004b4d61d15a4ae6bad33ce8e5" kind="function"><name>apply_subcircuit</name></member>
   </compound>
+  <compound refid="classargz" kind="class"><name>argz</name>
+    <member refid="classargz_1a5368a7c00a82a6cab03ac6bf61f91d8a" kind="variable"><name>arguments</name></member>
+    <member refid="classargz_1a97f74aab2350165bd2e2b00e840f8be0" kind="variable"><name>flags</name></member>
+    <member refid="classargz_1ac89e44a2a4910e94e28d06d12c6a95f7" kind="variable"><name>parameters</name></member>
+    <member refid="classargz_1a944cd1bfad40f39e4dcd781f48d8a903" kind="function"><name>argz</name></member>
+    <member refid="classargz_1ab9c76400c455fd77c84b063e21313826" kind="function"><name>hasFlag</name></member>
+    <member refid="classargz_1a19eb5bdb61687c369cc6ca1df3e9f4f0" kind="function"><name>hasParameterFor</name></member>
+  </compound>
   <compound refid="classqlib_1_1ide_1_1AutoComplete" kind="class"><name>qlib::ide::AutoComplete</name>
     <member refid="classqlib_1_1ide_1_1AutoComplete_1ab41cb720a8247194d0c4c2cc5fa6aeef" kind="variable"><name>textComponent</name></member>
     <member refid="classqlib_1_1ide_1_1AutoComplete_1a79190bf245b656b279233a982ed4248c" kind="variable"><name>docListener</name></member>
@@ -35,6 +43,20 @@
     <member refid="classqlib_1_1ide_1_1AutoComplete_1a262b15fe050727186b0dc3d22e0d5143" kind="function"><name>hideSuggestions</name></member>
     <member refid="classqlib_1_1ide_1_1AutoComplete_1acdc8c857e1580998523ee6f50c738a84" kind="function"><name>getText</name></member>
     <member refid="classqlib_1_1ide_1_1AutoComplete_1a04a7f33c4d243d3d15592c3b0b1b19d4" kind="function"><name>checkForAndShowSuggestions</name></member>
+  </compound>
+  <compound refid="classgraphics_1_1bounds" kind="class"><name>graphics::bounds</name>
+    <member refid="classgraphics_1_1bounds_1a6a60b1c6b290e61f5890ea90f78a466c" kind="variable"><name>x</name></member>
+    <member refid="classgraphics_1_1bounds_1a30a3dfde365caa6aa1d930b07fa3062c" kind="variable"><name>y</name></member>
+    <member refid="classgraphics_1_1bounds_1a7e1b802df69e5bbcd66e842f4719bd1e" kind="variable"><name>w</name></member>
+    <member refid="classgraphics_1_1bounds_1a53be9687348393750637ec378c9dd594" kind="variable"><name>h</name></member>
+    <member refid="classgraphics_1_1bounds_1a59f667680478d7e2d8403c4afabc6674" kind="function"><name>bounds</name></member>
+    <member refid="classgraphics_1_1bounds_1a2a1529593a8ad03df80df0381e33fb1c" kind="function"><name>bounds</name></member>
+    <member refid="classgraphics_1_1bounds_1a89f6d09f09a7b2b5d995cb64ac305b57" kind="function"><name>getWidth</name></member>
+    <member refid="classgraphics_1_1bounds_1a2c21517e12d0773cd1508de5e7bb8be7" kind="function"><name>getHeight</name></member>
+    <member refid="classgraphics_1_1bounds_1a3cac943aa56e8509f24ab9eac1b7c744" kind="function"><name>getMinX</name></member>
+    <member refid="classgraphics_1_1bounds_1af159b7dd1e1dbec98a8202744b13e4c4" kind="function"><name>getMaxX</name></member>
+    <member refid="classgraphics_1_1bounds_1a948e28bed8b061726dd6b0d02d44c527" kind="function"><name>getMinY</name></member>
+    <member refid="classgraphics_1_1bounds_1a5ba618b1e138eaabdf33b513c5696529" kind="function"><name>getMaxY</name></member>
   </compound>
   <compound refid="interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener" kind="interface"><name>qlib::ide::CodeEditor::ChangeListener</name>
     <member refid="interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener_1a4eb57d86f7a6f23c781ebb1d1cd99ce6" kind="function"><name>invoke</name></member>
@@ -67,6 +89,17 @@
     <member refid="classqlib_1_1ide_1_1CodeEditor_1accee26f5cf7da53ffda849ab6d4741e0" kind="function"><name>updateNumbering</name></member>
     <member refid="classqlib_1_1ide_1_1CodeEditor_1a2fccea5703e28988470c1e4634316ac8" kind="function"><name>style</name></member>
   </compound>
+  <compound refid="structgraphics_1_1colour" kind="struct"><name>graphics::colour</name>
+    <member refid="structgraphics_1_1colour_1a901548bed7ab6d410ba74271870ea733" kind="variable"><name>r</name></member>
+    <member refid="structgraphics_1_1colour_1a321b1e11d85e4e3083bf9f80dad24b80" kind="variable"><name>g</name></member>
+    <member refid="structgraphics_1_1colour_1a2b9938100a15599b3bb01c344db3d049" kind="variable"><name>b</name></member>
+    <member refid="structgraphics_1_1colour_1a3f5cc996c0653fe47c33e67cc9f2731c" kind="variable"><name>a</name></member>
+    <member refid="structgraphics_1_1colour_1a6fdccb3f51bff3bef8ee999503542c3f" kind="function"><name>colour</name></member>
+    <member refid="structgraphics_1_1colour_1a7a2d38c378c3d53453a06eddc84c31fc" kind="function"><name>colour</name></member>
+    <member refid="structgraphics_1_1colour_1af759244ddae761fa62713eb6bf25fa73" kind="function"><name>colour</name></member>
+    <member refid="structgraphics_1_1colour_1abc91f344c55a14f8cda34080a01b030d" kind="function"><name>toHex</name></member>
+    <member refid="structgraphics_1_1colour_1a712e0263c4f5b6e90ba8e20bd1a305dc" kind="function"><name>getOpacity</name></member>
+  </compound>
   <compound refid="classcompiler" kind="class"><name>compiler</name>
     <member refid="classcompiler_1a888ac16dbb82fa8a9500633addcd22ba" kind="variable"><name>tokenizer</name></member>
     <member refid="classcompiler_1a1b712963929882f359df919ce73bbf4e" kind="variable"><name>rules</name></member>
@@ -74,6 +107,7 @@
     <member refid="classcompiler_1aa9d1b362adff0ca48511cf824ca1fe4c" kind="variable"><name>events</name></member>
     <member refid="classcompiler_1a801700690bf711169679cb6ca890168a" kind="variable"><name>prog</name></member>
     <member refid="classcompiler_1aac603e3e8c3851dfb420e6e007adbad0" kind="function"><name>compiler</name></member>
+    <member refid="classcompiler_1a9b61ba6cc57763a9e76feb44fffd1616" kind="function"><name>try_parse_line</name></member>
     <member refid="classcompiler_1af3984a0a53279c28bee8aee4b0ef84ca" kind="function"><name>try_parse_file</name></member>
   </compound>
   <compound refid="classqlib_1_1math_1_1complex" kind="class"><name>qlib::math::complex</name>
@@ -89,7 +123,8 @@
     <member refid="classqlib_1_1math_1_1complex_1a088dcd1f0349632d0930177e95aa4729" kind="function"><name>normal</name></member>
     <member refid="classqlib_1_1math_1_1complex_1a7a670edef0db4264e211e68aea71f0ec" kind="function"><name>isPureReal</name></member>
     <member refid="classqlib_1_1math_1_1complex_1a4465bc164fe2b490c917fc9321530ebb" kind="function"><name>isPureImaginary</name></member>
-    <member refid="classqlib_1_1math_1_1complex_1ae8f4008d499a05bbebecd48e0bf504d7" kind="function"><name>isZero</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1ad5adb1ac3219404c6abcae92800e839d" kind="function"><name>isApproximatelyZero</name></member>
+    <member refid="classqlib_1_1math_1_1complex_1a8dfe4186bdf623e30b1cccb1d0b68951" kind="function"><name>isApproximatelyOne</name></member>
     <member refid="classqlib_1_1math_1_1complex_1a760122d26f377b008e129ff92b134a43" kind="function"><name>arg</name></member>
     <member refid="classqlib_1_1math_1_1complex_1afd24fadb21a07815675481b131398cff" kind="function"><name>toString</name></member>
   </compound>
@@ -124,6 +159,7 @@
     <member refid="classqlib_1_1quantum_1_1ensemble_1ab77e11f30898f29060ff97236ec26319" kind="variable"><name>set</name></member>
     <member refid="classqlib_1_1quantum_1_1ensemble_1a5e088d9ac7394f150f5a2affe0790f2a" kind="function"><name>ensemble</name></member>
     <member refid="classqlib_1_1quantum_1_1ensemble_1aae0c56d2d64d4be27b5ab976d60c2747" kind="function"><name>~ensemble</name></member>
+    <member refid="classqlib_1_1quantum_1_1ensemble_1a0eb45d5e78a713d118cef48152be57ae" kind="function"><name>setState</name></member>
     <member refid="classqlib_1_1quantum_1_1ensemble_1a4b811e4778f5c845504ed8eec058dfe4" kind="function"><name>size</name></member>
     <member refid="classqlib_1_1quantum_1_1ensemble_1a9226b1108f8d45d052316f7c366f1d5a" kind="function"><name>apply</name></member>
     <member refid="classqlib_1_1quantum_1_1ensemble_1ae5e3ebd119e1df6dbb966b7bb6222e5a" kind="function"><name>measure</name></member>
@@ -132,7 +168,12 @@
   <compound refid="classqasm_1_1runtime_1_1environment" kind="class"><name>qasm::runtime::environment</name>
     <member refid="classqasm_1_1runtime_1_1environment_1ae65dc834296334c8b9ea6dd900210881" kind="variable"><name>quantum_registers</name></member>
     <member refid="classqasm_1_1runtime_1_1environment_1add156869a2a13e2ca877c39e4649757a" kind="variable"><name>classic_registers</name></member>
+    <member refid="classqasm_1_1runtime_1_1environment_1a05ec9211b7760c478dba445db34261b7" kind="variable"><name>registered_gates</name></member>
+    <member refid="classqasm_1_1runtime_1_1environment_1ac3d808129d41e9878d789be74a13603c" kind="variable"><name>gates_to_cleanup</name></member>
+    <member refid="classqasm_1_1runtime_1_1environment_1af9ad7d4cd53f37a597c049a3bc08500f" kind="function"><name>environment</name></member>
+    <member refid="classqasm_1_1runtime_1_1environment_1aa71963228b400dc8dc874a460017e663" kind="function"><name>~environment</name></member>
     <member refid="classqasm_1_1runtime_1_1environment_1adb75f9df54d04d4f5d51c92093b5d466" kind="function"><name>getGate</name></member>
+    <member refid="classqasm_1_1runtime_1_1environment_1a6a71dc3d263c92394bc5e4c79973a556" kind="function"><name>buildGate</name></member>
     <member refid="classqasm_1_1runtime_1_1environment_1a78ac575d7245e21c65fb31e6585c38cc" kind="function"><name>getCreg</name></member>
     <member refid="classqasm_1_1runtime_1_1environment_1a4cd69bebda4f5957e52168c91654f5f5" kind="function"><name>hasCreg</name></member>
     <member refid="classqasm_1_1runtime_1_1environment_1a976c4f032feee9c47af587a0f6c759ae" kind="function"><name>setCreg</name></member>
@@ -141,6 +182,7 @@
     <member refid="classqasm_1_1runtime_1_1environment_1acd773cf48993b56c9f6b6b353a5a5e6a" kind="function"><name>setQreg</name></member>
   </compound>
   <compound refid="classqasm_1_1exec_1_1executable" kind="class"><name>qasm::exec::executable</name>
+    <member refid="classqasm_1_1exec_1_1executable_1acb10539ca9f0d75be23e23ca722ba195" kind="function"><name>~executable</name></member>
     <member refid="classqasm_1_1exec_1_1executable_1ad07f864a889edb0777ebbb1bc1628121" kind="function"><name>invoke_rootprogram</name></member>
     <member refid="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" kind="function"><name>invoke_subprogram</name></member>
   </compound>
@@ -156,9 +198,11 @@
     <member refid="classqlib_1_1ide_1_1FileManager_1a986392eebf1b4d6df69bf3eca688d926" kind="function"><name>getPanel</name></member>
   </compound>
   <compound refid="classqlib_1_1quantum_1_1gates_1_1igate" kind="class"><name>qlib::quantum::gates::igate</name>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1igate_1afa0161a395344bb7765b61fbf94d01b5" kind="function"><name>~igate</name></member>
     <member refid="classqlib_1_1quantum_1_1gates_1_1igate_1ae8f8dda69d7742c12c743829abb3662b" kind="function"><name>name</name></member>
     <member refid="classqlib_1_1quantum_1_1gates_1_1igate_1ac8aa56b0095a94fdd437bc55d90aec9d" kind="function"><name>inputs</name></member>
     <member refid="classqlib_1_1quantum_1_1gates_1_1igate_1a66038ee65fec12c627789505e11f1e23" kind="function"><name>operate</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1igate_1ab69530a50a6b78e429abe3c08407b222" kind="function"><name>isGateable</name></member>
   </compound>
   <compound refid="classqasm_1_1exec_1_1import" kind="class"><name>qasm::exec::import</name>
     <member refid="classqasm_1_1exec_1_1import_1a421f281a62fa921c13a3fc86d6c6fa17" kind="variable"><name>filename</name></member>
@@ -208,6 +252,16 @@
     <member refid="classlexical_1_1lexicalexception_1a669fdad5e3c9cfc1404b3cff07f2cc2c" kind="function"><name>lexicalexception</name></member>
     <member refid="classlexical_1_1lexicalexception_1a9d12fd196a80d2be20dfa616c063ffb4" kind="function"><name>what</name></member>
   </compound>
+  <compound refid="classgraphics_1_1line" kind="class"><name>graphics::line</name>
+    <member refid="classgraphics_1_1line_1a9f017c004983fbfa5c21d88b8b29d5de" kind="variable"><name>sx</name></member>
+    <member refid="classgraphics_1_1line_1ac4c6f1e0eccd02b3399d091736c0903c" kind="variable"><name>sy</name></member>
+    <member refid="classgraphics_1_1line_1ac3cc564cf12b6001ff01569dd46074a1" kind="variable"><name>ex</name></member>
+    <member refid="classgraphics_1_1line_1a3ec687141bc383f58256cd3e4f614b55" kind="variable"><name>ey</name></member>
+    <member refid="classgraphics_1_1line_1ab8b7e54fde92e99de480b3ce9d8a167f" kind="variable"><name>b</name></member>
+    <member refid="classgraphics_1_1line_1a4473fc0ec2635c877b91b338a78e4ac8" kind="function"><name>line</name></member>
+    <member refid="classgraphics_1_1line_1a73ce35db1d98c6bd869a8bef10d8e1bd" kind="function"><name>getExtents</name></member>
+    <member refid="classgraphics_1_1line_1abb6a2d1e6d2c9fdd8d26bae1c15f5356" kind="function"><name>encode</name></member>
+  </compound>
   <compound refid="classresources_1_1Loader" kind="class"><name>resources::Loader</name>
     <member refid="classresources_1_1Loader_1a007cafedd048831f9d18ba4b8ac768ff" kind="variable"><name>resources</name></member>
     <member refid="classresources_1_1Loader_1ab70c0099b53e57b6ce64132291e4f29d" kind="function"><name>load</name></member>
@@ -231,6 +285,12 @@
     <member refid="classqlib_1_1math_1_1matrix_1a6e66a3f67ecf06a42068d2dbf8885e66" kind="function"><name>matrix</name></member>
     <member refid="classqlib_1_1math_1_1matrix_1a8cbac1f2ae9917a4742cd0d147e3ba9b" kind="function"><name>matrix</name></member>
     <member refid="classqlib_1_1math_1_1matrix_1afebdd1cf189728ace53a594d5ef8b750" kind="function"><name>~matrix</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1af858a64510126a09b2a25fbd771cbf1c" kind="function"><name>transpose</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1a1dea0a516a68c6c3e93e437a0e82ad04" kind="function"><name>adjoint</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1a7f12f7fc8d075a596978cbcdfc6106c0" kind="function"><name>isSquare</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1ae63299aa44d564dc03fba13b928cf191" kind="function"><name>isUnitary</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1ad6f19b58b5940eb22eda118be1e5decd" kind="function"><name>isColumn</name></member>
+    <member refid="classqlib_1_1math_1_1matrix_1aaae121263906f945fcbb1e8e2ee68c71" kind="function"><name>isRow</name></member>
     <member refid="classqlib_1_1math_1_1matrix_1a50cbbef6e5b7888aecffbf66def70154" kind="function"><name>operator()</name></member>
     <member refid="classqlib_1_1math_1_1matrix_1af93c414d328b985c83c032f41f485a9a" kind="function"><name>operator()</name></member>
     <member refid="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" kind="function"><name>countRows</name></member>
@@ -288,6 +348,22 @@
     <member refid="structparser_1_1parsetree_1af238368fcc40aea999cab62ba7d74fda" kind="function"><name>getChild</name></member>
     <member refid="structparser_1_1parsetree_1ada59e97da6280e95cf96cbb8f85df364" kind="function"><name>print</name></member>
   </compound>
+  <compound refid="classgraphics_1_1polygon" kind="class"><name>graphics::polygon</name>
+    <member refid="classgraphics_1_1polygon_1accef210e1de0bbdbe333ac2e19e4d951" kind="function"><name>encode</name></member>
+  </compound>
+  <compound refid="classgraphics_1_1polyline" kind="class"><name>graphics::polyline</name>
+    <member refid="classgraphics_1_1polyline_1a9a61c2ecc0a47024a115fd1b196ef7d3" kind="variable"><name>xs</name></member>
+    <member refid="classgraphics_1_1polyline_1a864909f189748ca967b33068d1a5d8e0" kind="variable"><name>ys</name></member>
+    <member refid="classgraphics_1_1polyline_1aa5cf3a624c2571bb89dc1c85435e7a78" kind="variable"><name>b</name></member>
+    <member refid="classgraphics_1_1polyline_1adbfa69d4679508481af8b7ad988c589f" kind="function"><name>polyline</name></member>
+    <member refid="classgraphics_1_1polyline_1a611ffde054960b79df394c2fc957e25c" kind="function"><name>then</name></member>
+    <member refid="classgraphics_1_1polyline_1a43d93bfba6da374097c31d99fd4e6536" kind="function"><name>recalculateBounds</name></member>
+    <member refid="classgraphics_1_1polyline_1a5d1bb7507881d2d755d6779c9d7f8dbc" kind="function"><name>getExtents</name></member>
+    <member refid="classgraphics_1_1polyline_1a4b21b290bd04cccef24f8cb4a85299f2" kind="function"><name>encode</name></member>
+    <member refid="classgraphics_1_1polyline_1ab4556c8d21b8e07eaf1f3df023e032ac" kind="function"><name>countPoints</name></member>
+    <member refid="classgraphics_1_1polyline_1af6fa13ff47cc4ba271583720dfca5af3" kind="function"><name>getX</name></member>
+    <member refid="classgraphics_1_1polyline_1accded087eed0e5bcb72b4e22553aaa86" kind="function"><name>getY</name></member>
+  </compound>
   <compound refid="classqasm_1_1exec_1_1print" kind="class"><name>qasm::exec::print</name>
     <member refid="classqasm_1_1exec_1_1print_1a8d2e5bc3ca543419f7270f97fea27b9b" kind="variable"><name>reference</name></member>
     <member refid="classqasm_1_1exec_1_1print_1ac6a07cc31446b99250263e748ac0c60d" kind="function"><name>print</name></member>
@@ -337,6 +413,7 @@
     <member refid="classqlib_1_1quantum_1_1qreg_1aabd605497170f57cdbb175d21c99662e" kind="variable"><name>distribution</name></member>
     <member refid="classqlib_1_1quantum_1_1qreg_1aa53d83236917f0048965b487088aacb9" kind="function"><name>qreg</name></member>
     <member refid="classqlib_1_1quantum_1_1qreg_1a2ddfaef9a369571c9600c4c259fcb8b1" kind="function"><name>qreg</name></member>
+    <member refid="classqlib_1_1quantum_1_1qreg_1a727b26ff6fc1590ad3897884cbc397af" kind="function"><name>setState</name></member>
     <member refid="classqlib_1_1quantum_1_1qreg_1a3148742b59865d0ba04fdd327fccc048" kind="function"><name>size</name></member>
     <member refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kind="function"><name>state</name></member>
     <member refid="classqlib_1_1quantum_1_1qreg_1af38f95ecaaf7de400856094154343cfe" kind="function"><name>apply</name></member>
@@ -345,21 +422,37 @@
     <member refid="classqlib_1_1quantum_1_1qreg_1ae4dbf316bf6452f3110cb05146f54954" kind="function"><name>toString</name></member>
   </compound>
   <compound refid="classqlib_1_1quantum_1_1qsystem" kind="class"><name>qlib::quantum::qsystem</name>
+    <member refid="classqlib_1_1quantum_1_1qsystem_1aeb1ecc3086cd9c14756aa4c575eeda0c" kind="function"><name>~qsystem</name></member>
     <member refid="classqlib_1_1quantum_1_1qsystem_1adbb748feb351aac69ca4a0bf6c92d77c" kind="function"><name>apply</name></member>
     <member refid="classqlib_1_1quantum_1_1qsystem_1a33d9954c6ca01cb400d940ff05614364" kind="function"><name>measure</name></member>
+    <member refid="classqlib_1_1quantum_1_1qsystem_1ab70360fa1be7b72d4f49f6dadc17267d" kind="function"><name>setState</name></member>
     <member refid="classqlib_1_1quantum_1_1qsystem_1a9d95030955e2fdb26bc9152c32310e7e" kind="function"><name>toString</name></member>
     <member refid="classqlib_1_1quantum_1_1qsystem_1a5626857e5dc87dc2bdbb1f4d0b0401f9" kind="function"><name>zero</name></member>
+  </compound>
+  <compound refid="classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform" kind="class"><name>qlib::quantum::gates::quantumFourierTransform</name>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_1a7a82d35472dc8441b4504c84cd7fc059" kind="function"><name>wn</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_1a084bab21e50d447e587ef03bd739d4ff" kind="function"><name>wnPow</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_1a28d08c879986bbf22846ada13f861781" kind="function"><name>name</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_1a08ee18ae7b516c2f77d1f864a010856f" kind="function"><name>inputs</name></member>
+    <member refid="classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_1a81c62ab7b1edeeb2b01d5f9dacca2bae" kind="function"><name>operate</name></member>
   </compound>
   <compound refid="classqlib_1_1quantum_1_1qubit" kind="class"><name>qlib::quantum::qubit</name>
     <member refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kind="variable"><name>vec</name></member>
     <member refid="classqlib_1_1quantum_1_1qubit_1abb97216eead736ab87e8756b9b4c2ce9" kind="variable"><name>distribution</name></member>
     <member refid="classqlib_1_1quantum_1_1qubit_1a32ca47a6fca663c267ddbbac49b12986" kind="function"><name>qubit</name></member>
     <member refid="classqlib_1_1quantum_1_1qubit_1a9c84248c8855841087687baa8b0a08c3" kind="function"><name>qubit</name></member>
+    <member refid="classqlib_1_1quantum_1_1qubit_1a934b5ff2dfbcc22ec2aab4e3a6544b6f" kind="function"><name>setState</name></member>
     <member refid="classqlib_1_1quantum_1_1qubit_1af8eaf337ffcb95c2445ddf35189335e4" kind="function"><name>state</name></member>
     <member refid="classqlib_1_1quantum_1_1qubit_1ab3b0b76d5c6f0e627a742fcafbc768ae" kind="function"><name>apply</name></member>
     <member refid="classqlib_1_1quantum_1_1qubit_1aaf001eff84ccb4b7a6992e42bc2143cb" kind="function"><name>measure</name></member>
     <member refid="classqlib_1_1quantum_1_1qubit_1aa16b11ad849b672489c625196c800dd3" kind="function"><name>zero</name></member>
     <member refid="classqlib_1_1quantum_1_1qubit_1a8bf29d1f66508e4878ea861c5d8e44ec" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classgraphics_1_1rect" kind="class"><name>graphics::rect</name>
+    <member refid="classgraphics_1_1rect_1a4464cd570d0d7d581b9c26c4776ca526" kind="variable"><name>b</name></member>
+    <member refid="classgraphics_1_1rect_1a0c1597220dfa147768a0ef2e606bf002" kind="function"><name>rect</name></member>
+    <member refid="classgraphics_1_1rect_1a2ad3d898075aec152c247815bb62833c" kind="function"><name>getExtents</name></member>
+    <member refid="classgraphics_1_1rect_1a6159acaa20093969c92bf6d845448661" kind="function"><name>encode</name></member>
   </compound>
   <compound refid="classparser_1_1repeat" kind="class"><name>parser::repeat</name>
     <member refid="classparser_1_1repeat_1a4a52b46d6d8139c877b78454942c03fd" kind="variable"><name>min</name></member>
@@ -418,11 +511,38 @@
     <member refid="classparser_1_1sequence_1ac7681fd304c236f9667f48d6d53ffee7" kind="function"><name>~sequence</name></member>
     <member refid="classparser_1_1sequence_1a499005d2dd4a3f39985d2deddb413cea" kind="function"><name>tryParse</name></member>
   </compound>
+  <compound refid="classgraphics_1_1shape" kind="class"><name>graphics::shape</name>
+    <member refid="classgraphics_1_1shape_1a3469d2d41634a0b8910375b00c3b66a2" kind="variable"><name>stroke</name></member>
+    <member refid="classgraphics_1_1shape_1a05833e89a21bbf3a65ee8d4e0a65e3b6" kind="variable"><name>fill</name></member>
+    <member refid="classgraphics_1_1shape_1ae17f4db0be20c3b4eaf98544dc3856b4" kind="variable"><name>stroke_width</name></member>
+    <member refid="classgraphics_1_1shape_1a4bb20a9261038c87fe3a30e2bad5bd49" kind="function"><name>shape</name></member>
+    <member refid="classgraphics_1_1shape_1a1ce13e65926bca4f7690859647f6e3ef" kind="function"><name>~shape</name></member>
+    <member refid="classgraphics_1_1shape_1a948bd22d258ce2122b81c7385a315596" kind="function"><name>getExtents</name></member>
+    <member refid="classgraphics_1_1shape_1a171a3bc288e0633c109571d908033b56" kind="function"><name>encode</name></member>
+    <member refid="classgraphics_1_1shape_1a61805bb768ea7f4e817317c9bfee519d" kind="function"><name>setStrokeWidth</name></member>
+    <member refid="classgraphics_1_1shape_1a66fed3c60869f6d37d5bb2bfd9f0e1dc" kind="function"><name>getStrokeWidth</name></member>
+    <member refid="classgraphics_1_1shape_1abe791443e0323b0719c16c42d9ee0e2e" kind="function"><name>setStroke</name></member>
+    <member refid="classgraphics_1_1shape_1a4faba733e9a95685f22e283143488104" kind="function"><name>setFill</name></member>
+    <member refid="classgraphics_1_1shape_1afa69ccf80e9ea6b2effef9e2f2360c19" kind="function"><name>getStroke</name></member>
+    <member refid="classgraphics_1_1shape_1a31e32379425b32042d6aa49716c1db30" kind="function"><name>getFill</name></member>
+  </compound>
   <compound refid="classqlib_1_1ide_1_1CodeEditor_1_1Style" kind="class"><name>qlib::ide::CodeEditor::Style</name>
     <member refid="classqlib_1_1ide_1_1CodeEditor_1_1Style_1a98a1d4a5736741de2806f55f6aa55f1b" kind="variable"><name>pattern</name></member>
     <member refid="classqlib_1_1ide_1_1CodeEditor_1_1Style_1aa248ffd9223379e30577632842250041" kind="variable"><name>font</name></member>
     <member refid="classqlib_1_1ide_1_1CodeEditor_1_1Style_1aa185f06a718f6fffe30637733484a7b8" kind="variable"><name>background</name></member>
     <member refid="classqlib_1_1ide_1_1CodeEditor_1_1Style_1a1798d9186d961170807fe95eead1029d" kind="variable"><name>attributes</name></member>
+  </compound>
+  <compound refid="classgraphics_1_1svg" kind="class"><name>graphics::svg</name>
+    <member refid="classgraphics_1_1svg_1ad69af0bdb11e7d1871dd405673445d65" kind="variable"><name>width</name></member>
+    <member refid="classgraphics_1_1svg_1ae536c6f9d7071034b9f4c3555b752815" kind="variable"><name>height</name></member>
+    <member refid="classgraphics_1_1svg_1aced594862a8a681a6310985ea174a60e" kind="variable"><name>autosize</name></member>
+    <member refid="classgraphics_1_1svg_1a201d99b8b9e654c80a11dd0678f5d224" kind="variable"><name>shapes</name></member>
+    <member refid="classgraphics_1_1svg_1ade9f4125871728edb5c789c476a577b7" kind="function"><name>svg</name></member>
+    <member refid="classgraphics_1_1svg_1ab7cb8ffe8695afbfa000107dd7895860" kind="function"><name>svg</name></member>
+    <member refid="classgraphics_1_1svg_1af719bb0cf02dd90b8170cbb597c9d32e" kind="function"><name>~svg</name></member>
+    <member refid="classgraphics_1_1svg_1af5ca77714796299aa2a0154dd2e1b8a5" kind="function"><name>addShape</name></member>
+    <member refid="classgraphics_1_1svg_1a9474b697ca366c21a113a63cdeea5291" kind="function"><name>addShape</name></member>
+    <member refid="classgraphics_1_1svg_1aa28d120647306a53ec84bde22d529ee5" kind="function"><name>saveFile</name></member>
   </compound>
   <compound refid="classqlib_1_1ide_1_1FileManager_1_1Tab" kind="class"><name>qlib::ide::FileManager::Tab</name>
     <member refid="classqlib_1_1ide_1_1FileManager_1_1Tab_1ad12255d140c8ad871496cfa64157c987" kind="variable"><name>name</name></member>
@@ -437,6 +557,16 @@
     <member refid="classparser_1_1terminal_1a0029f9a855c1d9dd6939c8fdd5107d72" kind="function"><name>terminal</name></member>
     <member refid="classparser_1_1terminal_1a04f78fdc1855ad6a61909d1c9ae0df13" kind="function"><name>~terminal</name></member>
     <member refid="classparser_1_1terminal_1abf7f4ea72388f2e96140769bc5d2acc8" kind="function"><name>tryParse</name></member>
+  </compound>
+  <compound refid="classgraphics_1_1text" kind="class"><name>graphics::text</name>
+    <member refid="classgraphics_1_1text_1a79220736a8af6f8656434126da59de9f" kind="variable"><name>b</name></member>
+    <member refid="classgraphics_1_1text_1a5bd7f99e13dfc031dbf02f3a2a1cca75" kind="variable"><name>x</name></member>
+    <member refid="classgraphics_1_1text_1adc8e738ee02fd453e16f4babf3e5dfaf" kind="variable"><name>y</name></member>
+    <member refid="classgraphics_1_1text_1a1dd8d9d9060ca92122c0ff18ccb00031" kind="variable"><name>value</name></member>
+    <member refid="classgraphics_1_1text_1abee4722ae48b37b004069b10c0c99bea" kind="variable"><name>rotation</name></member>
+    <member refid="classgraphics_1_1text_1ab5001ed63efe9895cdef67b7f583176e" kind="function"><name>text</name></member>
+    <member refid="classgraphics_1_1text_1ac17a62fe9b926674edf94fc5256b71ae" kind="function"><name>getExtents</name></member>
+    <member refid="classgraphics_1_1text_1ac0490468cfb45df1daa8a4e959624164" kind="function"><name>encode</name></member>
   </compound>
   <compound refid="classparser_1_1tokenqueue" kind="class"><name>parser::tokenqueue</name>
     <member refid="classparser_1_1tokenqueue_1af9c381cb6495ade00167f2242b6862c5" kind="variable"><name>tokens</name></member>
@@ -455,6 +585,19 @@
   <compound refid="classxobject" kind="class"><name>xobject</name>
     <member refid="classxobject_1ad76243a44c4e4959d3b16bb57d82600d" kind="function"><name>toString</name></member>
   </compound>
+  <compound refid="namespacegraphics" kind="namespace"><name>graphics</name>
+  </compound>
+  <compound refid="namespacegraphics_1_1colours" kind="namespace"><name>graphics::colours</name>
+    <member refid="namespacegraphics_1_1colours_1a8bc9dc7001921731ff76ca802f1a5b43" kind="variable"><name>red</name></member>
+    <member refid="namespacegraphics_1_1colours_1ad3420b0ddbf2d2e15af0e31942a8fdbf" kind="variable"><name>green</name></member>
+    <member refid="namespacegraphics_1_1colours_1aa32d426428f03bc3b9f1a22a7e04bc15" kind="variable"><name>blue</name></member>
+    <member refid="namespacegraphics_1_1colours_1a77713a7d1bc4cbf45f37942cf43ada26" kind="variable"><name>white</name></member>
+    <member refid="namespacegraphics_1_1colours_1a8a798ac0d239095d3ce98415e05d6fc2" kind="variable"><name>black</name></member>
+    <member refid="namespacegraphics_1_1colours_1ab04f0c6bf60c34b31307d665b0c69dba" kind="variable"><name>clear</name></member>
+    <member refid="namespacegraphics_1_1colours_1aceb03e157ae34836819a37e28605537b" kind="variable"><name>teal</name></member>
+    <member refid="namespacegraphics_1_1colours_1a294778a95817cb872322bf4f3f4555ce" kind="variable"><name>purple</name></member>
+    <member refid="namespacegraphics_1_1colours_1aeadbc70fa5a266ebc8209f7180a069d6" kind="variable"><name>yellow</name></member>
+  </compound>
   <compound refid="namespacejavax_1_1swing" kind="namespace"><name>javax::swing</name>
   </compound>
   <compound refid="namespacelexical" kind="namespace"><name>lexical</name>
@@ -470,16 +613,6 @@
   </compound>
   <compound refid="namespaceqasm_1_1exec" kind="namespace"><name>qasm::exec</name>
   </compound>
-  <compound refid="namespaceqasm_1_1rules" kind="namespace"><name>qasm::rules</name>
-    <member refid="namespaceqasm_1_1rules_1a26247b01755121860f87e5a26d9bd391" kind="function"><name>try_parse_subcircuit_application</name></member>
-    <member refid="namespaceqasm_1_1rules_1aa583e7fb674ce302c13e04802c0ac371" kind="function"><name>try_parse_gate_application</name></member>
-    <member refid="namespaceqasm_1_1rules_1abe4777fa00a61066da5591048a9cbf54" kind="function"><name>try_parse_debug</name></member>
-    <member refid="namespaceqasm_1_1rules_1a5da8b5fa16a6eec3576f64c509a43ffd" kind="function"><name>try_parse_measurement</name></member>
-    <member refid="namespaceqasm_1_1rules_1a1e0101b23fdb03759ca22f831662a88b" kind="function"><name>try_parse_declaration</name></member>
-    <member refid="namespaceqasm_1_1rules_1ac9cd78216b8e48a2d5aa625d99240cb9" kind="function"><name>try_parse_label</name></member>
-    <member refid="namespaceqasm_1_1rules_1abe391ee7a042e770f440498767f889ba" kind="function"><name>try_parse_include</name></member>
-    <member refid="namespaceqasm_1_1rules_1af40aa89c9f5235a7d2e94af2de62a42b" kind="function"><name>try_parse_rule</name></member>
-  </compound>
   <compound refid="namespaceqasm_1_1runtime" kind="namespace"><name>qasm::runtime</name>
   </compound>
   <compound refid="namespaceqlib" kind="namespace"><name>qlib</name>
@@ -494,12 +627,12 @@
     <member refid="namespaceqlib_1_1math_1a07b837d7b7260a52a080a3ce11f28f6d" kind="function"><name>operator/</name></member>
     <member refid="namespaceqlib_1_1math_1a511c85d9f0b2a72c4d7ac90a8fe8319b" kind="function"><name>operator*</name></member>
     <member refid="namespaceqlib_1_1math_1ac7b6b93406f9a81e5187205fa869151f" kind="function"><name>operator/</name></member>
+    <member refid="namespaceqlib_1_1math_1a4e25907425745791aece8ad080a45fec" kind="function"><name>operator*</name></member>
     <member refid="namespaceqlib_1_1math_1abc12e050174e1760453206cc5bd3206a" kind="function"><name>operator+</name></member>
     <member refid="namespaceqlib_1_1math_1a258ee58fb06869ced4551ec4eca20cf5" kind="function"><name>operator-</name></member>
     <member refid="namespaceqlib_1_1math_1a76eeb4db471510ab7143369e8f5a7cb1" kind="function"><name>operator*</name></member>
     <member refid="namespaceqlib_1_1math_1a01348bd4469d81d621104d4efaeb6f5a" kind="function"><name>operator*</name></member>
     <member refid="namespaceqlib_1_1math_1a545e46c9d4ed76c49f027f633c717790" kind="function"><name>operator/</name></member>
-    <member refid="namespaceqlib_1_1math_1a4e25907425745791aece8ad080a45fec" kind="function"><name>operator*</name></member>
     <member refid="namespaceqlib_1_1math_1a0e8e1dad475a4db8f847283d0104d424" kind="function"><name>operator&lt;&lt;</name></member>
   </compound>
   <compound refid="namespaceqlib_1_1quantum" kind="namespace"><name>qlib::quantum</name>
@@ -510,11 +643,14 @@
     <member refid="namespaceqlib_1_1quantum_1_1gates_1afb32e9584e5434c3bff9087fe762ca9e" kind="variable"><name>CY</name></member>
     <member refid="namespaceqlib_1_1quantum_1_1gates_1adaffb7ef8207f26d42d8756b38a61fe8" kind="variable"><name>CZ</name></member>
     <member refid="namespaceqlib_1_1quantum_1_1gates_1a2519bc26f39ef5297d03a5fe7cdf3bc3" kind="variable"><name>H</name></member>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1a94cfb96baacb02ad566b02c978a6b279" kind="variable"><name>CH</name></member>
     <member refid="namespaceqlib_1_1quantum_1_1gates_1a2a7dd0215add2c303251bb3a3ac596cc" kind="variable"><name>I</name></member>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1a7876e701afb94e13974915d144b09203" kind="variable"><name>CI</name></member>
     <member refid="namespaceqlib_1_1quantum_1_1gates_1af56c4617497a46f091c27f7f4bc65ed5" kind="variable"><name>X</name></member>
     <member refid="namespaceqlib_1_1quantum_1_1gates_1a7d495b8ebaa4b3a3f73a871bc993e82b" kind="variable"><name>Y</name></member>
     <member refid="namespaceqlib_1_1quantum_1_1gates_1ad07d8c867d0463c3f66dfa80d5b6b53c" kind="variable"><name>Z</name></member>
     <member refid="namespaceqlib_1_1quantum_1_1gates_1a9b72e189dcf40679247251dff199887d" kind="variable"><name>T</name></member>
+    <member refid="namespaceqlib_1_1quantum_1_1gates_1aeeff3324a29947d6584bfaece3c28f71" kind="variable"><name>QFT</name></member>
     <member refid="namespaceqlib_1_1quantum_1_1gates_1abe265e0dfc0f6dce748643ad93dc6e01" kind="variable"><name>CCNOT</name></member>
     <member refid="namespaceqlib_1_1quantum_1_1gates_1a824d430d591160d7bd3237928d56570b" kind="variable"><name>TOFFOLI</name></member>
     <member refid="namespaceqlib_1_1quantum_1_1gates_1a9404266e9a103216de1b3c5ae2b8c8e5" kind="function"><name>phase</name></member>
@@ -523,9 +659,22 @@
   </compound>
   <compound refid="namespacestd" kind="namespace"><name>std</name>
   </compound>
+  <compound refid="constants_8h" kind="file"><name>constants.h</name>
+    <member refid="constants_8h_1ae71449b1cc6e6250b91f539153a7a0d3" kind="define"><name>M_PI</name></member>
+  </compound>
   <compound refid="object_8hpp" kind="file"><name>object.hpp</name>
     <member refid="object_8hpp_1a64700614995ed98f6edbdb2b491b6374" kind="define"><name>_QLIB_GEN_OBJECT_H</name></member>
     <member refid="object_8hpp_1a52c75811f4e394e7f1818d29ee034307" kind="function"><name>rng</name></member>
+  </compound>
+  <compound refid="properties_8h" kind="file"><name>properties.h</name>
+    <member refid="properties_8h_1ab14a12e1f849390ce9e44938d68479a8" kind="define"><name>GETTER</name></member>
+    <member refid="properties_8h_1a4ed31dd12447552119b00fe1804b3fad" kind="define"><name>SETTER</name></member>
+    <member refid="properties_8h_1a6df9c93dba3468717261cac178562278" kind="define"><name>GET</name></member>
+    <member refid="properties_8h_1a51f2593a25bc0b5ea1101934f6a9eddc" kind="define"><name>SET</name></member>
+    <member refid="properties_8h_1abf7440730f06e75c6b48170bfb9d240d" kind="define"><name>typeof</name></member>
+    <member refid="properties_8h_1a175833ffa4886a635e63e40b4ef5bd66" kind="define"><name>typeas</name></member>
+    <member refid="properties_8h_1a0852287be3866e6ca5f85e48fca56dfe" kind="define"><name>print</name></member>
+    <member refid="properties_8h_1a5a2feab0ca66b147104d8a9fe75996f2" kind="define"><name>println</name></member>
   </compound>
   <compound refid="types_8h" kind="file"><name>types.h</name>
     <member refid="types_8h_1a8bbe49053267ab17a71f46ca8d0af818" kind="define"><name>COMPILE_CHECK</name></member>
@@ -553,6 +702,9 @@
     <member refid="types_8h_1a421c37a4c9ade238e8070a6b0e0d672d" kind="typedef"><name>fsize</name></member>
   </compound>
   <compound refid="core_2main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="core_2main_8cpp_1a561553718be3fd0ad8b4a35069bab4a9" kind="function"><name>testOneQubitGate</name></member>
+    <member refid="core_2main_8cpp_1a0db8a8d4b92b3d294d63fec1b82d5213" kind="function"><name>testControledQubitGate</name></member>
+    <member refid="core_2main_8cpp_1a3c0796db08c0e42f7d9920d6ea1e6560" kind="function"><name>testDoubleControledQubitGate</name></member>
     <member refid="core_2main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
   </compound>
   <compound refid="runtime_2main_8cpp" kind="file"><name>main.cpp</name>
@@ -593,7 +745,8 @@
   <compound refid="pauliZ_8hpp" kind="file"><name>pauliZ.hpp</name>
   </compound>
   <compound refid="phase_8hpp" kind="file"><name>phase.hpp</name>
-    <member refid="phase_8hpp_1ae71449b1cc6e6250b91f539153a7a0d3" kind="define"><name>M_PI</name></member>
+  </compound>
+  <compound refid="qft_8hpp" kind="file"><name>qft.hpp</name>
   </compound>
   <compound refid="toffoli_8hpp" kind="file"><name>toffoli.hpp</name>
   </compound>
@@ -625,8 +778,11 @@
   </compound>
   <compound refid="Loader_8java" kind="file"><name>Loader.java</name>
   </compound>
+  <compound refid="argparser_8hpp" kind="file"><name>argparser.hpp</name>
+  </compound>
+  <compound refid="colour_8hpp" kind="file"><name>colour.hpp</name>
+  </compound>
   <compound refid="compiler_8hpp" kind="file"><name>compiler.hpp</name>
-    <member refid="compiler_8hpp_1ad6bb98bfd6757b98a471bb8c8670795a" kind="function"><name>try_parse_qasm</name></member>
     <member refid="compiler_8hpp_1af29ea58956d1e519877cf79d81d5f8b8" kind="function"><name>convert_import</name></member>
     <member refid="compiler_8hpp_1a3a9fc818a308f225f17b30cf26a3f674" kind="function"><name>convert_anchor</name></member>
     <member refid="compiler_8hpp_1af4b1195ebe9533956bca833f365dccfb" kind="function"><name>convert_print</name></member>
@@ -657,12 +813,17 @@
     <member refid="parser_8hpp_1ac94f7bc23c74a7071b4a3c09fadac754" kind="function"><name>operator|</name></member>
     <member refid="parser_8hpp_1ae0c60b97dec81fe6c23646c03d2f4223" kind="function"><name>operator|</name></member>
   </compound>
+  <compound refid="qcircuit__exporter_8hpp" kind="file"><name>qcircuit_exporter.hpp</name>
+    <member refid="qcircuit__exporter_8hpp_1a24f234ebab94565d8f0b9fd434a512f8" kind="function"><name>exportQuantumCircuit</name></member>
+  </compound>
   <compound refid="runtime_8hpp" kind="file"><name>runtime.hpp</name>
     <member refid="runtime_8hpp_1a20cf870406c99de2d935e3a77b8b60da" kind="typedef"><name>creg</name></member>
   </compound>
   <compound refid="scanner_8hpp" kind="file"><name>scanner.hpp</name>
   </compound>
   <compound refid="smartptr_8hpp" kind="file"><name>smartptr.hpp</name>
+  </compound>
+  <compound refid="svg_8hpp" kind="file"><name>svg.hpp</name>
   </compound>
   <compound refid="dir_aebb8dcc11953d78e620bbef0b9e2183" kind="dir"><name>src/core</name>
   </compound>

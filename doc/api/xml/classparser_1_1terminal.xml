@@ -78,32 +78,32 @@
     <detaileddescription>
 <para>Class representing parsing elements that match a lexeme </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="478">
+      <node id="585">
         <label>parser::rule</label>
         <link refid="classparser_1_1rule"/>
       </node>
-      <node id="477">
+      <node id="584">
         <label>parser::terminal</label>
         <link refid="classparser_1_1terminal"/>
-        <childnode refid="478" relation="public-inheritance">
+        <childnode refid="585" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="480">
+      <node id="587">
         <label>parser::rule</label>
         <link refid="classparser_1_1rule"/>
       </node>
-      <node id="479">
+      <node id="586">
         <label>parser::terminal</label>
         <link refid="classparser_1_1terminal"/>
-        <childnode refid="480" relation="public-inheritance">
+        <childnode refid="587" relation="public-inheritance">
         </childnode>
-        <childnode refid="481" relation="usage">
+        <childnode refid="588" relation="usage">
           <edgelabel>lex</edgelabel>
         </childnode>
       </node>
-      <node id="481">
+      <node id="588">
         <label>lexical::lexeme</label>
         <link refid="classlexical_1_1lexeme"/>
       </node>

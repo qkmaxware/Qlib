@@ -146,21 +146,21 @@
     <detaileddescription>
 <para>Class representing a single node in an abstract tree structure </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="386">
+      <node id="456">
         <label>parser::parsetree</label>
         <link refid="structparser_1_1parsetree"/>
-        <childnode refid="387" relation="usage">
+        <childnode refid="457" relation="usage">
           <edgelabel>value</edgelabel>
         </childnode>
       </node>
-      <node id="387">
+      <node id="457">
         <label>lexical::match</label>
         <link refid="structlexical_1_1match"/>
-        <childnode refid="388" relation="usage">
+        <childnode refid="458" relation="usage">
           <edgelabel>lexemeptr</edgelabel>
         </childnode>
       </node>
-      <node id="388">
+      <node id="458">
         <label>lexical::lexeme</label>
         <link refid="classlexical_1_1lexeme"/>
       </node>

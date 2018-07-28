@@ -4,6 +4,7 @@ var classqlib_1_1quantum_1_1qreg =
     [ "qreg", "classqlib_1_1quantum_1_1qreg.html#a2ddfaef9a369571c9600c4c259fcb8b1", null ],
     [ "apply", "classqlib_1_1quantum_1_1qreg.html#af38f95ecaaf7de400856094154343cfe", null ],
     [ "measure", "classqlib_1_1quantum_1_1qreg.html#acfcd58502c1e511766ede52a891f27c3", null ],
+    [ "setState", "classqlib_1_1quantum_1_1qreg.html#a727b26ff6fc1590ad3897884cbc397af", null ],
     [ "size", "classqlib_1_1quantum_1_1qreg.html#a3148742b59865d0ba04fdd327fccc048", null ],
     [ "state", "classqlib_1_1quantum_1_1qreg.html#a20d1b0906eb00ff7d4e1c23449de61a1", null ],
     [ "toString", "classqlib_1_1quantum_1_1qreg.html#ae4dbf316bf6452f3110cb05146f54954", null ],

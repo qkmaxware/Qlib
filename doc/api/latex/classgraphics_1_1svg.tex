@@ -1,0 +1,104 @@
+\hypertarget{classgraphics_1_1svg}{}\section{graphics\+:\+:svg Class Reference}
+\label{classgraphics_1_1svg}\index{graphics\+::svg@{graphics\+::svg}}
+
+
+{\ttfamily \#include $<$svg.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgraphics_1_1svg_ade9f4125871728edb5c789c476a577b7}{svg} ()
+\item 
+\hyperlink{classgraphics_1_1svg_ab7cb8ffe8695afbfa000107dd7895860}{svg} (size\+\_\+t \hyperlink{classgraphics_1_1svg_ad69af0bdb11e7d1871dd405673445d65}{width}, size\+\_\+t \hyperlink{classgraphics_1_1svg_ae536c6f9d7071034b9f4c3555b752815}{height})
+\item 
+\hyperlink{classgraphics_1_1svg_af719bb0cf02dd90b8170cbb597c9d32e}{$\sim$svg} ()
+\item 
+void \hyperlink{classgraphics_1_1svg_af5ca77714796299aa2a0154dd2e1b8a5}{add\+Shape} (\hyperlink{classgraphics_1_1shape}{shape} $\ast$\hyperlink{classptr}{ptr})
+\item 
+void \hyperlink{classgraphics_1_1svg_a9474b697ca366c21a113a63cdeea5291}{add\+Shape} (std\+::shared\+\_\+ptr$<$ \hyperlink{classgraphics_1_1shape}{shape} $>$ \hyperlink{classgraphics_1_1shape}{shape})
+\item 
+void \hyperlink{classgraphics_1_1svg_aa28d120647306a53ec84bde22d529ee5}{save\+File} (std\+::string filename)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classgraphics_1_1svg_ad69af0bdb11e7d1871dd405673445d65}{width}
+\item 
+size\+\_\+t \hyperlink{classgraphics_1_1svg_ae536c6f9d7071034b9f4c3555b752815}{height}
+\item 
+bool \hyperlink{classgraphics_1_1svg_aced594862a8a681a6310985ea174a60e}{autosize}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classgraphics_1_1shape}{shape} $>$ $>$ \hyperlink{classgraphics_1_1svg_a201d99b8b9e654c80a11dd0678f5d224}{shapes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class used as a container to describe the contents of an S\+VG file 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{graphics\+::svg@{graphics\+::svg}!svg@{svg}}
+\index{svg@{svg}!graphics\+::svg@{graphics\+::svg}}
+\subsubsection[{\texorpdfstring{svg()}{svg()}}]{\setlength{\rightskip}{0pt plus 5cm}graphics\+::svg\+::svg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgraphics_1_1svg_ade9f4125871728edb5c789c476a577b7}{}\label{classgraphics_1_1svg_ade9f4125871728edb5c789c476a577b7}
+\index{graphics\+::svg@{graphics\+::svg}!svg@{svg}}
+\index{svg@{svg}!graphics\+::svg@{graphics\+::svg}}
+\subsubsection[{\texorpdfstring{svg(size\+\_\+t width, size\+\_\+t height)}{svg(size_t width, size_t height)}}]{\setlength{\rightskip}{0pt plus 5cm}graphics\+::svg\+::svg (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{width, }
+\item[{size\+\_\+t}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgraphics_1_1svg_ab7cb8ffe8695afbfa000107dd7895860}{}\label{classgraphics_1_1svg_ab7cb8ffe8695afbfa000107dd7895860}
+\index{graphics\+::svg@{graphics\+::svg}!````~svg@{$\sim$svg}}
+\index{````~svg@{$\sim$svg}!graphics\+::svg@{graphics\+::svg}}
+\subsubsection[{\texorpdfstring{$\sim$svg()}{~svg()}}]{\setlength{\rightskip}{0pt plus 5cm}graphics\+::svg\+::$\sim$svg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgraphics_1_1svg_af719bb0cf02dd90b8170cbb597c9d32e}{}\label{classgraphics_1_1svg_af719bb0cf02dd90b8170cbb597c9d32e}
+
+
+\subsection{Member Function Documentation}
+\index{graphics\+::svg@{graphics\+::svg}!add\+Shape@{add\+Shape}}
+\index{add\+Shape@{add\+Shape}!graphics\+::svg@{graphics\+::svg}}
+\subsubsection[{\texorpdfstring{add\+Shape(shape $\ast$ptr)}{addShape(shape *ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void graphics\+::svg\+::add\+Shape (
+\begin{DoxyParamCaption}
+\item[{{\bf shape} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgraphics_1_1svg_af5ca77714796299aa2a0154dd2e1b8a5}{}\label{classgraphics_1_1svg_af5ca77714796299aa2a0154dd2e1b8a5}
+\index{graphics\+::svg@{graphics\+::svg}!add\+Shape@{add\+Shape}}
+\index{add\+Shape@{add\+Shape}!graphics\+::svg@{graphics\+::svg}}
+\subsubsection[{\texorpdfstring{add\+Shape(std\+::shared\+\_\+ptr$<$ shape $>$ shape)}{addShape(std::shared_ptr< shape > shape)}}]{\setlength{\rightskip}{0pt plus 5cm}void graphics\+::svg\+::add\+Shape (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf shape} $>$}]{shape}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgraphics_1_1svg_a9474b697ca366c21a113a63cdeea5291}{}\label{classgraphics_1_1svg_a9474b697ca366c21a113a63cdeea5291}
+\index{graphics\+::svg@{graphics\+::svg}!save\+File@{save\+File}}
+\index{save\+File@{save\+File}!graphics\+::svg@{graphics\+::svg}}
+\subsubsection[{\texorpdfstring{save\+File(std\+::string filename)}{saveFile(std::string filename)}}]{\setlength{\rightskip}{0pt plus 5cm}void graphics\+::svg\+::save\+File (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgraphics_1_1svg_aa28d120647306a53ec84bde22d529ee5}{}\label{classgraphics_1_1svg_aa28d120647306a53ec84bde22d529ee5}
+
+
+\subsection{Member Data Documentation}
+\index{graphics\+::svg@{graphics\+::svg}!autosize@{autosize}}
+\index{autosize@{autosize}!graphics\+::svg@{graphics\+::svg}}
+\subsubsection[{\texorpdfstring{autosize}{autosize}}]{\setlength{\rightskip}{0pt plus 5cm}bool graphics\+::svg\+::autosize\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classgraphics_1_1svg_aced594862a8a681a6310985ea174a60e}{}\label{classgraphics_1_1svg_aced594862a8a681a6310985ea174a60e}
+\index{graphics\+::svg@{graphics\+::svg}!height@{height}}
+\index{height@{height}!graphics\+::svg@{graphics\+::svg}}
+\subsubsection[{\texorpdfstring{height}{height}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t graphics\+::svg\+::height\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classgraphics_1_1svg_ae536c6f9d7071034b9f4c3555b752815}{}\label{classgraphics_1_1svg_ae536c6f9d7071034b9f4c3555b752815}
+\index{graphics\+::svg@{graphics\+::svg}!shapes@{shapes}}
+\index{shapes@{shapes}!graphics\+::svg@{graphics\+::svg}}
+\subsubsection[{\texorpdfstring{shapes}{shapes}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::shared\+\_\+ptr$<${\bf shape}$>$ $>$ graphics\+::svg\+::shapes\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classgraphics_1_1svg_a201d99b8b9e654c80a11dd0678f5d224}{}\label{classgraphics_1_1svg_a201d99b8b9e654c80a11dd0678f5d224}
+\index{graphics\+::svg@{graphics\+::svg}!width@{width}}
+\index{width@{width}!graphics\+::svg@{graphics\+::svg}}
+\subsubsection[{\texorpdfstring{width}{width}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t graphics\+::svg\+::width\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classgraphics_1_1svg_ad69af0bdb11e7d1871dd405673445d65}{}\label{classgraphics_1_1svg_ad69af0bdb11e7d1871dd405673445d65}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{svg_8hpp}{svg.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classargz" kind="class" language="C++" prot="public">
+    <compoundname>argz</compoundname>
+    <includes refid="argparser_8hpp" local="no">argparser.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classargz_1a5368a7c00a82a6cab03ac6bf61f91d8a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; argz::arguments</definition>
+        <argsstring></argsstring>
+        <name>arguments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Command line arguments. Arguments are words without leading &apos;-&apos; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/argparser.hpp" line="17" column="1" bodyfile="src/runtime/argparser.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargz_1a97f74aab2350165bd2e2b00e840f8be0" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; argz::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Command line flags. Flags are words with leading &apos;-&apos; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/argparser.hpp" line="21" column="1" bodyfile="src/runtime/argparser.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargz_1ac89e44a2a4910e94e28d06d12c6a95f7" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>std::map&lt;std::string, std::string&gt; argz::parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Command line parameters. Parameters are values in the pattern -flag=value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/argparser.hpp" line="25" column="1" bodyfile="src/runtime/argparser.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classargz_1a944cd1bfad40f39e4dcd781f48d8a903" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>argz::argz</definition>
+        <argsstring>(int arg_count, char *arg_values[])</argsstring>
+        <name>argz</name>
+        <param>
+          <type>int</type>
+          <declname>arg_count</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>arg_values</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse given command line parameters </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/argparser.hpp" line="30" column="1" bodyfile="src/runtime/argparser.hpp" bodystart="30" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classargz_1ab9c76400c455fd77c84b063e21313826" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool argz::hasFlag</definition>
+        <argsstring>(std::string flag)</argsstring>
+        <name>hasFlag</name>
+        <param>
+          <type>std::string</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if a flag has been set </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/argparser.hpp" line="51" column="1" bodyfile="src/runtime/argparser.hpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classargz_1a19eb5bdb61687c369cc6ca1df3e9f4f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool argz::hasParameterFor</definition>
+        <argsstring>(std::string flag)</argsstring>
+        <name>hasParameterFor</name>
+        <param>
+          <type>std::string</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if a given flag has an associated value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/argparser.hpp" line="57" column="1" bodyfile="src/runtime/argparser.hpp" bodystart="57" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class used to help parse command line parameters </para>    </detaileddescription>
+    <location file="src/runtime/argparser.hpp" line="12" column="1" bodyfile="src/runtime/argparser.hpp" bodystart="12" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classargz_1a5368a7c00a82a6cab03ac6bf61f91d8a" prot="public" virt="non-virtual"><scope>argz</scope><name>arguments</name></member>
+      <member refid="classargz_1a944cd1bfad40f39e4dcd781f48d8a903" prot="public" virt="non-virtual"><scope>argz</scope><name>argz</name></member>
+      <member refid="classargz_1a97f74aab2350165bd2e2b00e840f8be0" prot="public" virt="non-virtual"><scope>argz</scope><name>flags</name></member>
+      <member refid="classargz_1ab9c76400c455fd77c84b063e21313826" prot="public" virt="non-virtual"><scope>argz</scope><name>hasFlag</name></member>
+      <member refid="classargz_1a19eb5bdb61687c369cc6ca1df3e9f4f0" prot="public" virt="non-virtual"><scope>argz</scope><name>hasParameterFor</name></member>
+      <member refid="classargz_1ac89e44a2a4910e94e28d06d12c6a95f7" prot="public" virt="non-virtual"><scope>argz</scope><name>parameters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

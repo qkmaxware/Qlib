@@ -19,8 +19,8 @@
         <reimplementedby refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate_1a4fda814b0336d103f5cdb7ea98507bd1">toString</reimplementedby>
         <reimplementedby refid="classqlib_1_1quantum_1_1qubit_1a8bf29d1f66508e4878ea861c5d8e44ec">toString</reimplementedby>
         <reimplementedby refid="classqlib_1_1math_1_1complex_1afd24fadb21a07815675481b131398cff">toString</reimplementedby>
-        <reimplementedby refid="classqlib_1_1math_1_1matrix_1a06ec639a654b5319f4eb1bff591d6e7b">toString</reimplementedby>
         <reimplementedby refid="classqlib_1_1quantum_1_1qreg_1ae4dbf316bf6452f3110cb05146f54954">toString</reimplementedby>
+        <reimplementedby refid="classqlib_1_1math_1_1matrix_1a06ec639a654b5319f4eb1bff591d6e7b">toString</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -35,68 +35,74 @@
     <detaileddescription>
 <para>Base class for all objects </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="492">
+      <node id="606">
         <label>qlib::quantum::ensemble</label>
         <link refid="classqlib_1_1quantum_1_1ensemble"/>
-        <childnode refid="491" relation="public-inheritance">
+        <childnode refid="605" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="490">
+      <node id="603">
         <label>qlib::quantum::gates::onequbitgate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate"/>
-        <childnode refid="487" relation="public-inheritance">
+        <childnode refid="600" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="484">
+      <node id="597">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="487">
+      <node id="600">
         <label>qlib::quantum::gates::igate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1igate"/>
-        <childnode refid="484" relation="public-inheritance">
+        <childnode refid="597" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="485">
+      <node id="598">
         <label>qlib::math::complex</label>
         <link refid="classqlib_1_1math_1_1complex"/>
-        <childnode refid="484" relation="public-inheritance">
+        <childnode refid="597" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="486">
+      <node id="604">
+        <label>qlib::quantum::gates::quantumFourierTransform</label>
+        <link refid="classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform"/>
+        <childnode refid="600" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="599">
         <label>qlib::math::matrix</label>
         <link refid="classqlib_1_1math_1_1matrix"/>
-        <childnode refid="484" relation="public-inheritance">
+        <childnode refid="597" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="493">
+      <node id="607">
         <label>qlib::quantum::qreg</label>
         <link refid="classqlib_1_1quantum_1_1qreg"/>
-        <childnode refid="491" relation="public-inheritance">
+        <childnode refid="605" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="488">
+      <node id="601">
         <label>qlib::quantum::gates::controlled2gate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate"/>
-        <childnode refid="487" relation="public-inheritance">
+        <childnode refid="600" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="489">
+      <node id="602">
         <label>qlib::quantum::gates::controlledgate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1controlledgate"/>
-        <childnode refid="487" relation="public-inheritance">
+        <childnode refid="600" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="494">
+      <node id="608">
         <label>qlib::quantum::qubit</label>
         <link refid="classqlib_1_1quantum_1_1qubit"/>
-        <childnode refid="491" relation="public-inheritance">
+        <childnode refid="605" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="491">
+      <node id="605">
         <label>qlib::quantum::qsystem</label>
         <link refid="classqlib_1_1quantum_1_1qsystem"/>
-        <childnode refid="484" relation="public-inheritance">
+        <childnode refid="597" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

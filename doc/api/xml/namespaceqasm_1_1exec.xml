@@ -15,6 +15,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/runtime/runtime.hpp" line="151" column="1"/>
+    <location file="src/runtime/runtime.hpp" line="177" column="1"/>
   </compounddef>
 </doxygen>

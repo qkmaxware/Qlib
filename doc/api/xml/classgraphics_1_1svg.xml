@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgraphics_1_1svg" kind="class" language="C++" prot="public">
+    <compoundname>graphics::svg</compoundname>
+    <includes refid="svg_8hpp" local="no">svg.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgraphics_1_1svg_1ad69af0bdb11e7d1871dd405673445d65" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t graphics::svg::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="291" column="1" bodyfile="src/runtime/svg.hpp" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgraphics_1_1svg_1ae536c6f9d7071034b9f4c3555b752815" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t graphics::svg::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="292" column="1" bodyfile="src/runtime/svg.hpp" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgraphics_1_1svg_1aced594862a8a681a6310985ea174a60e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool graphics::svg::autosize</definition>
+        <argsstring></argsstring>
+        <name>autosize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="293" column="1" bodyfile="src/runtime/svg.hpp" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgraphics_1_1svg_1a201d99b8b9e654c80a11dd0678f5d224" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="classgraphics_1_1shape" kindref="compound">shape</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;shape&gt; &gt; graphics::svg::shapes</definition>
+        <argsstring></argsstring>
+        <name>shapes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="294" column="1" bodyfile="src/runtime/svg.hpp" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgraphics_1_1svg_1ade9f4125871728edb5c789c476a577b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>graphics::svg::svg</definition>
+        <argsstring>()</argsstring>
+        <name>svg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="297" column="1" bodyfile="src/runtime/svg.hpp" bodystart="297" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1svg_1ab7cb8ffe8695afbfa000107dd7895860" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>graphics::svg::svg</definition>
+        <argsstring>(size_t width, size_t height)</argsstring>
+        <name>svg</name>
+        <param>
+          <type>size_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="298" column="1" bodyfile="src/runtime/svg.hpp" bodystart="298" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1svg_1af719bb0cf02dd90b8170cbb597c9d32e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>graphics::svg::~svg</definition>
+        <argsstring>()</argsstring>
+        <name>~svg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="299" column="1" bodyfile="src/runtime/svg.hpp" bodystart="299" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1svg_1af5ca77714796299aa2a0154dd2e1b8a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics::svg::addShape</definition>
+        <argsstring>(shape *ptr)</argsstring>
+        <name>addShape</name>
+        <param>
+          <type><ref refid="classgraphics_1_1shape" kindref="compound">shape</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="301" column="1" bodyfile="src/runtime/svg.hpp" bodystart="301" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1svg_1a9474b697ca366c21a113a63cdeea5291" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics::svg::addShape</definition>
+        <argsstring>(std::shared_ptr&lt; shape &gt; shape)</argsstring>
+        <name>addShape</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classgraphics_1_1shape" kindref="compound">shape</ref> &gt;</type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="305" column="1" bodyfile="src/runtime/svg.hpp" bodystart="305" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1svg_1aa28d120647306a53ec84bde22d529ee5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics::svg::saveFile</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>saveFile</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="317" column="1" bodyfile="src/runtime/svg.hpp" bodystart="317" bodyend="326"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class used as a container to describe the contents of an SVG file </para>    </detaileddescription>
+    <location file="src/runtime/svg.hpp" line="289" column="1" bodyfile="src/runtime/svg.hpp" bodystart="289" bodyend="327"/>
+    <listofallmembers>
+      <member refid="classgraphics_1_1svg_1af5ca77714796299aa2a0154dd2e1b8a5" prot="public" virt="non-virtual"><scope>graphics::svg</scope><name>addShape</name></member>
+      <member refid="classgraphics_1_1svg_1a9474b697ca366c21a113a63cdeea5291" prot="public" virt="non-virtual"><scope>graphics::svg</scope><name>addShape</name></member>
+      <member refid="classgraphics_1_1svg_1aced594862a8a681a6310985ea174a60e" prot="private" virt="non-virtual"><scope>graphics::svg</scope><name>autosize</name></member>
+      <member refid="classgraphics_1_1svg_1ae536c6f9d7071034b9f4c3555b752815" prot="private" virt="non-virtual"><scope>graphics::svg</scope><name>height</name></member>
+      <member refid="classgraphics_1_1svg_1aa28d120647306a53ec84bde22d529ee5" prot="public" virt="non-virtual"><scope>graphics::svg</scope><name>saveFile</name></member>
+      <member refid="classgraphics_1_1svg_1a201d99b8b9e654c80a11dd0678f5d224" prot="private" virt="non-virtual"><scope>graphics::svg</scope><name>shapes</name></member>
+      <member refid="classgraphics_1_1svg_1ade9f4125871728edb5c789c476a577b7" prot="public" virt="non-virtual"><scope>graphics::svg</scope><name>svg</name></member>
+      <member refid="classgraphics_1_1svg_1ab7cb8ffe8695afbfa000107dd7895860" prot="public" virt="non-virtual"><scope>graphics::svg</scope><name>svg</name></member>
+      <member refid="classgraphics_1_1svg_1ad69af0bdb11e7d1871dd405673445d65" prot="private" virt="non-virtual"><scope>graphics::svg</scope><name>width</name></member>
+      <member refid="classgraphics_1_1svg_1af719bb0cf02dd90b8170cbb597c9d32e" prot="public" virt="non-virtual"><scope>graphics::svg</scope><name>~svg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

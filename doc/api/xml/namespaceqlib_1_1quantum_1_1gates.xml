@@ -6,6 +6,7 @@
     <innerclass refid="classqlib_1_1quantum_1_1gates_1_1controlledgate" prot="public">qlib::quantum::gates::controlledgate</innerclass>
     <innerclass refid="classqlib_1_1quantum_1_1gates_1_1igate" prot="public">qlib::quantum::gates::igate</innerclass>
     <innerclass refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate" prot="public">qlib::quantum::gates::onequbitgate</innerclass>
+    <innerclass refid="classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform" prot="public">qlib::quantum::gates::quantumFourierTransform</innerclass>
       <sectiondef kind="var">
       <memberdef kind="variable" id="namespaceqlib_1_1quantum_1_1gates_1aebaea8ead9b15e75666143e3fa30b9d4" prot="public" static="no" mutable="no">
         <type><ref refid="classqlib_1_1quantum_1_1gates_1_1controlledgate" kindref="compound">controlledgate</ref></type>
@@ -89,7 +90,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/quantum/gates/hadamard.hpp" line="10" column="1" bodyfile="src/core/quantum/gates/hadamard.hpp" bodystart="10" bodyend="-1"/>
+        <location file="src/core/quantum/gates/hadamard.hpp" line="11" column="1" bodyfile="src/core/quantum/gates/hadamard.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceqlib_1_1quantum_1_1gates_1a94cfb96baacb02ad566b02c978a6b279" prot="public" static="no" mutable="no">
+        <type><ref refid="classqlib_1_1quantum_1_1gates_1_1controlledgate" kindref="compound">controlledgate</ref></type>
+        <definition>controlledgate qlib::quantum::gates::CH</definition>
+        <argsstring></argsstring>
+        <name>CH</name>
+        <initializer>= <ref refid="classqlib_1_1quantum_1_1gates_1_1controlledgate" kindref="compound">controlledgate</ref>(
+    &quot;Controlled Hadamard&quot;,
+    H
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/hadamard.hpp" line="18" column="1" bodyfile="src/core/quantum/gates/hadamard.hpp" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceqlib_1_1quantum_1_1gates_1a2a7dd0215add2c303251bb3a3ac596cc" prot="public" static="no" mutable="no">
         <type><ref refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate" kindref="compound">onequbitgate</ref></type>
@@ -108,7 +126,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/quantum/gates/ident.hpp" line="10" column="1" bodyfile="src/core/quantum/gates/ident.hpp" bodystart="10" bodyend="-1"/>
+        <location file="src/core/quantum/gates/ident.hpp" line="11" column="1" bodyfile="src/core/quantum/gates/ident.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceqlib_1_1quantum_1_1gates_1a7876e701afb94e13974915d144b09203" prot="public" static="no" mutable="no">
+        <type><ref refid="classqlib_1_1quantum_1_1gates_1_1controlledgate" kindref="compound">controlledgate</ref></type>
+        <definition>controlledgate qlib::quantum::gates::CI</definition>
+        <argsstring></argsstring>
+        <name>CI</name>
+        <initializer>= <ref refid="classqlib_1_1quantum_1_1gates_1_1controlledgate" kindref="compound">controlledgate</ref>(
+    &quot;Controlled Identity&quot;,
+    I
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/ident.hpp" line="18" column="1" bodyfile="src/core/quantum/gates/ident.hpp" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceqlib_1_1quantum_1_1gates_1af56c4617497a46f091c27f7f4bc65ed5" prot="public" static="no" mutable="no">
         <type><ref refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate" kindref="compound">onequbitgate</ref></type>
@@ -172,14 +207,27 @@
         <definition>onequbitgate qlib::quantum::gates::T</definition>
         <argsstring></argsstring>
         <name>T</name>
-        <initializer>= <ref refid="namespaceqlib_1_1quantum_1_1gates_1a9404266e9a103216de1b3c5ae2b8c8e5" kindref="member">phase</ref>(<ref refid="phase_8hpp_1ae71449b1cc6e6250b91f539153a7a0d3" kindref="member">M_PI</ref> / 8)</initializer>
+        <initializer>= <ref refid="namespaceqlib_1_1quantum_1_1gates_1a9404266e9a103216de1b3c5ae2b8c8e5" kindref="member">phase</ref>(<ref refid="constants_8h_1ae71449b1cc6e6250b91f539153a7a0d3" kindref="member">M_PI</ref> / 8)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/quantum/gates/phase.hpp" line="28" column="1" bodyfile="src/core/quantum/gates/phase.hpp" bodystart="28" bodyend="-1"/>
+        <location file="src/core/quantum/gates/phase.hpp" line="25" column="1" bodyfile="src/core/quantum/gates/phase.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceqlib_1_1quantum_1_1gates_1aeeff3324a29947d6584bfaece3c28f71" prot="public" static="no" mutable="no">
+        <type><ref refid="classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform" kindref="compound">quantumFourierTransform</ref></type>
+        <definition>quantumFourierTransform qlib::quantum::gates::QFT</definition>
+        <argsstring></argsstring>
+        <name>QFT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/quantum/gates/qft.hpp" line="54" column="1" bodyfile="src/core/quantum/gates/qft.hpp" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceqlib_1_1quantum_1_1gates_1abe265e0dfc0f6dce748643ad93dc6e01" prot="public" static="no" mutable="no">
         <type><ref refid="classqlib_1_1quantum_1_1gates_1_1controlled2gate" kindref="compound">controlled2gate</ref></type>
@@ -229,7 +277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/quantum/gates/phase.hpp" line="12" column="1" bodyfile="src/core/quantum/gates/phase.hpp" bodystart="12" bodyend="22"/>
+        <location file="src/core/quantum/gates/phase.hpp" line="13" column="1" bodyfile="src/core/quantum/gates/phase.hpp" bodystart="13" bodyend="23"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -52,32 +52,32 @@
     <detaileddescription>
 <para>Interface for all parse rules </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="445">
+      <node id="542">
         <label>parser::choice</label>
         <link refid="classparser_1_1choice"/>
-        <childnode refid="444" relation="public-inheritance">
+        <childnode refid="541" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="447">
+      <node id="544">
         <label>parser::sequence</label>
         <link refid="classparser_1_1sequence"/>
-        <childnode refid="444" relation="public-inheritance">
+        <childnode refid="541" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="444">
+      <node id="541">
         <label>parser::rule</label>
         <link refid="classparser_1_1rule"/>
       </node>
-      <node id="448">
+      <node id="545">
         <label>parser::terminal</label>
         <link refid="classparser_1_1terminal"/>
-        <childnode refid="444" relation="public-inheritance">
+        <childnode refid="541" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="446">
+      <node id="543">
         <label>parser::repeater</label>
         <link refid="classparser_1_1repeater"/>
-        <childnode refid="444" relation="public-inheritance">
+        <childnode refid="541" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

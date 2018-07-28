@@ -11,6 +11,9 @@
 
 using namespace graphics;
 
+/// <Summary>
+/// Export a quantum circuit diagram for the given program
+/// </Summary>
 void exportQuantumCircuit (std::string name, program& prog){
     svg paint;
 

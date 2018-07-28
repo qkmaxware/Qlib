@@ -6,7 +6,8 @@
 
 
 
-Inheritance diagram for qlib\+:\+:quantum\+:\+:gates\+:\+:igate\+:\nopagebreak
+Inheritance diagram for qlib\+:\+:quantum\+:\+:gates\+:\+:igate\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -25,13 +26,30 @@ Collaboration diagram for qlib\+:\+:quantum\+:\+:gates\+:\+:igate\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+virtual \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate_afa0161a395344bb7765b61fbf94d01b5}{$\sim$igate} ()
+\item 
 virtual std\+::string \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate_ae8f8dda69d7742c12c743829abb3662b}{name} ()=0
 \item 
 virtual size\+\_\+t \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate_ac8aa56b0095a94fdd437bc55d90aec9d}{inputs} ()=0
 \item 
 virtual void \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate_a66038ee65fec12c627789505e11f1e23}{operate} (\hyperlink{classqlib_1_1math_1_1matrix}{matrix} \&in, \hyperlink{classqlib_1_1math_1_1matrix}{matrix} \&out, std\+::vector$<$ u64 $>$ input\+Qubits)=0
 \end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate_ab69530a50a6b78e429abe3c08407b222}{is\+Gateable} (\hyperlink{classqlib_1_1math_1_1matrix}{matrix} \&a)
+\end{DoxyCompactItemize}
 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{qlib\+::quantum\+::gates\+::igate@{qlib\+::quantum\+::gates\+::igate}!````~igate@{$\sim$igate}}
+\index{````~igate@{$\sim$igate}!qlib\+::quantum\+::gates\+::igate@{qlib\+::quantum\+::gates\+::igate}}
+\subsubsection[{\texorpdfstring{$\sim$igate()}{~igate()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual qlib\+::quantum\+::gates\+::igate\+::$\sim$igate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1igate_afa0161a395344bb7765b61fbf94d01b5}{}\label{classqlib_1_1quantum_1_1gates_1_1igate_afa0161a395344bb7765b61fbf94d01b5}
+Virtual destrutor, overwritten by subclasses 
 
 \subsection{Member Function Documentation}
 \index{qlib\+::quantum\+::gates\+::igate@{qlib\+::quantum\+::gates\+::igate}!inputs@{inputs}}
@@ -43,9 +61,16 @@ virtual void \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate_a66038ee65fec12c6
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1igate_ac8aa56b0095a94fdd437bc55d90aec9d}{}\label{classqlib_1_1quantum_1_1gates_1_1igate_ac8aa56b0095a94fdd437bc55d90aec9d}
 
 
-Implemented in \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate_a050ed71ebff89050c3123124f8ba8719}{qlib\+::quantum\+::gates\+::onequbitgate}, \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a27a8793a3015aa9797f03fa0174113c2}{qlib\+::quantum\+::gates\+::controlled2gate}, and \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlledgate_adb544cb10cd5f8836e331102f7c7e9d6}{qlib\+::quantum\+::gates\+::controlledgate}.
+Implemented in \hyperlink{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a08ee18ae7b516c2f77d1f864a010856f}{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform}, \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate_a050ed71ebff89050c3123124f8ba8719}{qlib\+::quantum\+::gates\+::onequbitgate}, \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a27a8793a3015aa9797f03fa0174113c2}{qlib\+::quantum\+::gates\+::controlled2gate}, and \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlledgate_adb544cb10cd5f8836e331102f7c7e9d6}{qlib\+::quantum\+::gates\+::controlledgate}.
 
-\index{qlib\+::quantum\+::gates\+::igate@{qlib\+::quantum\+::gates\+::igate}!name@{name}}
+\index{qlib\+::quantum\+::gates\+::igate@{qlib\+::quantum\+::gates\+::igate}!is\+Gateable@{is\+Gateable}}
+\index{is\+Gateable@{is\+Gateable}!qlib\+::quantum\+::gates\+::igate@{qlib\+::quantum\+::gates\+::igate}}
+\subsubsection[{\texorpdfstring{is\+Gateable(matrix \&a)}{isGateable(matrix &a)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool qlib\+::quantum\+::gates\+::igate\+::is\+Gateable (
+\begin{DoxyParamCaption}
+\item[{{\bf matrix} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1igate_ab69530a50a6b78e429abe3c08407b222}{}\label{classqlib_1_1quantum_1_1gates_1_1igate_ab69530a50a6b78e429abe3c08407b222}
+Test if a given matrix matches quantum gate specifications (square \& unitary) \index{qlib\+::quantum\+::gates\+::igate@{qlib\+::quantum\+::gates\+::igate}!name@{name}}
 \index{name@{name}!qlib\+::quantum\+::gates\+::igate@{qlib\+::quantum\+::gates\+::igate}}
 \subsubsection[{\texorpdfstring{name()=0}{name()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string qlib\+::quantum\+::gates\+::igate\+::name (
 \begin{DoxyParamCaption}
@@ -54,7 +79,7 @@ Implemented in \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate_a050ed71
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1igate_ae8f8dda69d7742c12c743829abb3662b}{}\label{classqlib_1_1quantum_1_1gates_1_1igate_ae8f8dda69d7742c12c743829abb3662b}
 
 
-Implemented in \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate_aacf3878010f0c1327bae4dcc7faf4c92}{qlib\+::quantum\+::gates\+::onequbitgate}, \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a25121d9bc52a594a718b6d8037ea6cc0}{qlib\+::quantum\+::gates\+::controlled2gate}, and \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlledgate_a7fb8875c83106b35d733cc96b312b957}{qlib\+::quantum\+::gates\+::controlledgate}.
+Implemented in \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate_aacf3878010f0c1327bae4dcc7faf4c92}{qlib\+::quantum\+::gates\+::onequbitgate}, \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a25121d9bc52a594a718b6d8037ea6cc0}{qlib\+::quantum\+::gates\+::controlled2gate}, \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlledgate_a7fb8875c83106b35d733cc96b312b957}{qlib\+::quantum\+::gates\+::controlledgate}, and \hyperlink{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a28d08c879986bbf22846ada13f861781}{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform}.
 
 \index{qlib\+::quantum\+::gates\+::igate@{qlib\+::quantum\+::gates\+::igate}!operate@{operate}}
 \index{operate@{operate}!qlib\+::quantum\+::gates\+::igate@{qlib\+::quantum\+::gates\+::igate}}
@@ -67,7 +92,7 @@ Implemented in \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate_aacf3878
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1igate_a66038ee65fec12c627789505e11f1e23}{}\label{classqlib_1_1quantum_1_1gates_1_1igate_a66038ee65fec12c627789505e11f1e23}
 
 
-Implemented in \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate_a280c7a7d29032eeb95afcb3d6668e7db}{qlib\+::quantum\+::gates\+::onequbitgate}, \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a272635da6a7b8f65379f6ecb42df9389}{qlib\+::quantum\+::gates\+::controlled2gate}, and \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlledgate_aec6e423cc6ae442c5c3c5dc04581959e}{qlib\+::quantum\+::gates\+::controlledgate}.
+Implemented in \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate_a280c7a7d29032eeb95afcb3d6668e7db}{qlib\+::quantum\+::gates\+::onequbitgate}, \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate_a272635da6a7b8f65379f6ecb42df9389}{qlib\+::quantum\+::gates\+::controlled2gate}, \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlledgate_aec6e423cc6ae442c5c3c5dc04581959e}{qlib\+::quantum\+::gates\+::controlledgate}, and \hyperlink{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a81c62ab7b1edeeb2b01d5f9dacca2bae}{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform}.
 
 
 

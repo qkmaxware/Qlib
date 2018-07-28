@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['onequbitgate',['onequbitgate',['../classqlib_1_1quantum_1_1gates_1_1onequbitgate.html',1,'qlib::quantum::gates']]],
-  ['optionsmenu',['OptionsMenu',['../classqlib_1_1ide_1_1OptionsMenu.html',1,'qlib::ide']]]
+  ['match',['match',['../structlexical_1_1match.html',1,'lexical']]],
+  ['matrix',['matrix',['../classqlib_1_1math_1_1matrix.html',1,'qlib::math']]],
+  ['measurement',['measurement',['../classqasm_1_1exec_1_1measurement.html',1,'qasm::exec']]]
 ];

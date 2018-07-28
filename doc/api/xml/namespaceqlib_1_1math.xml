@@ -24,7 +24,7 @@
 <para>Add two complex numbers </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/math/complex.hpp" line="146" column="1" bodyfile="src/core/math/complex.hpp" bodystart="146" bodyend="148"/>
+        <location file="src/core/math/complex.hpp" line="148" column="1" bodyfile="src/core/math/complex.hpp" bodystart="148" bodyend="150"/>
       </memberdef>
       <memberdef kind="function" id="namespaceqlib_1_1math_1a0824fabde8f47ad8f052b82ce7ffc7ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
@@ -45,7 +45,7 @@
 <para>Subtract two complext numbers </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/math/complex.hpp" line="153" column="1" bodyfile="src/core/math/complex.hpp" bodystart="153" bodyend="155"/>
+        <location file="src/core/math/complex.hpp" line="155" column="1" bodyfile="src/core/math/complex.hpp" bodystart="155" bodyend="157"/>
       </memberdef>
       <memberdef kind="function" id="namespaceqlib_1_1math_1aab8f60842d892b237625a8215572926a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
@@ -66,7 +66,7 @@
 <para>Multiply two complex numbers </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/math/complex.hpp" line="160" column="1" bodyfile="src/core/math/complex.hpp" bodystart="160" bodyend="162"/>
+        <location file="src/core/math/complex.hpp" line="162" column="1" bodyfile="src/core/math/complex.hpp" bodystart="162" bodyend="164"/>
       </memberdef>
       <memberdef kind="function" id="namespaceqlib_1_1math_1a9cf242a604bfeb647f7700d437b23ad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
@@ -87,7 +87,7 @@
 <para>Scale up a complex vector by a scalar quantity </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/math/complex.hpp" line="167" column="1" bodyfile="src/core/math/complex.hpp" bodystart="167" bodyend="169"/>
+        <location file="src/core/math/complex.hpp" line="169" column="1" bodyfile="src/core/math/complex.hpp" bodystart="169" bodyend="171"/>
       </memberdef>
       <memberdef kind="function" id="namespaceqlib_1_1math_1a07b837d7b7260a52a080a3ce11f28f6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
@@ -108,7 +108,7 @@
 <para>Scale down a complex vector by a scalar quantity </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/math/complex.hpp" line="174" column="1" bodyfile="src/core/math/complex.hpp" bodystart="174" bodyend="176"/>
+        <location file="src/core/math/complex.hpp" line="176" column="1" bodyfile="src/core/math/complex.hpp" bodystart="176" bodyend="178"/>
       </memberdef>
       <memberdef kind="function" id="namespaceqlib_1_1math_1a511c85d9f0b2a72c4d7ac90a8fe8319b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
@@ -129,7 +129,7 @@
 <para>Multiply two complex vectors </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/math/complex.hpp" line="181" column="1" bodyfile="src/core/math/complex.hpp" bodystart="181" bodyend="183"/>
+        <location file="src/core/math/complex.hpp" line="183" column="1" bodyfile="src/core/math/complex.hpp" bodystart="183" bodyend="185"/>
       </memberdef>
       <memberdef kind="function" id="namespaceqlib_1_1math_1ac7b6b93406f9a81e5187205fa869151f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
@@ -150,112 +150,7 @@
 <para>Divide two complex vectors </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/math/complex.hpp" line="188" column="1" bodyfile="src/core/math/complex.hpp" bodystart="188" bodyend="193"/>
-      </memberdef>
-      <memberdef kind="function" id="namespaceqlib_1_1math_1abc12e050174e1760453206cc5bd3206a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
-        <definition>matrix qlib::math::operator+</definition>
-        <argsstring>(matrix a, matrix b)</argsstring>
-        <name>operator+</name>
-        <param>
-          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
-          <declname>a</declname>
-        </param>
-        <param>
-          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
-          <declname>b</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Add two matrices </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/core/math/matrix.hpp" line="200" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="200" bodyend="209"/>
-      </memberdef>
-      <memberdef kind="function" id="namespaceqlib_1_1math_1a258ee58fb06869ced4551ec4eca20cf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
-        <definition>matrix qlib::math::operator-</definition>
-        <argsstring>(matrix a, matrix b)</argsstring>
-        <name>operator-</name>
-        <param>
-          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
-          <declname>a</declname>
-        </param>
-        <param>
-          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
-          <declname>b</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Subtract two matrices </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/core/math/matrix.hpp" line="214" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="214" bodyend="223"/>
-      </memberdef>
-      <memberdef kind="function" id="namespaceqlib_1_1math_1a76eeb4db471510ab7143369e8f5a7cb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
-        <definition>matrix qlib::math::operator*</definition>
-        <argsstring>(complex s, matrix a)</argsstring>
-        <name>operator*</name>
-        <param>
-          <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
-          <declname>s</declname>
-        </param>
-        <param>
-          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
-          <declname>a</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Scale up a matrix by a scalar quantity </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/core/math/matrix.hpp" line="228" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="228" bodyend="234"/>
-      </memberdef>
-      <memberdef kind="function" id="namespaceqlib_1_1math_1a01348bd4469d81d621104d4efaeb6f5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
-        <definition>matrix qlib::math::operator*</definition>
-        <argsstring>(matrix a, complex s)</argsstring>
-        <name>operator*</name>
-        <param>
-          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
-          <declname>a</declname>
-        </param>
-        <param>
-          <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
-          <declname>s</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Scale up a matrix by a scalar quantity </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/core/math/matrix.hpp" line="239" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="239" bodyend="245"/>
-      </memberdef>
-      <memberdef kind="function" id="namespaceqlib_1_1math_1a545e46c9d4ed76c49f027f633c717790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
-        <definition>matrix qlib::math::operator/</definition>
-        <argsstring>(matrix a, complex s)</argsstring>
-        <name>operator/</name>
-        <param>
-          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
-          <declname>a</declname>
-        </param>
-        <param>
-          <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
-          <declname>s</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Scale down a matrix by a scalar quantity </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/core/math/matrix.hpp" line="250" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="250" bodyend="256"/>
+        <location file="src/core/math/complex.hpp" line="190" column="1" bodyfile="src/core/math/complex.hpp" bodystart="190" bodyend="195"/>
       </memberdef>
       <memberdef kind="function" id="namespaceqlib_1_1math_1a4e25907425745791aece8ad080a45fec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
@@ -276,7 +171,112 @@
 <para>Multiply two matrices </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/math/matrix.hpp" line="261" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="261" bodyend="278"/>
+        <location file="src/core/math/matrix.hpp" line="20" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="339" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceqlib_1_1math_1abc12e050174e1760453206cc5bd3206a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
+        <definition>matrix qlib::math::operator+</definition>
+        <argsstring>(matrix a, matrix b)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add two matrices </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="278" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="278" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceqlib_1_1math_1a258ee58fb06869ced4551ec4eca20cf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
+        <definition>matrix qlib::math::operator-</definition>
+        <argsstring>(matrix a, matrix b)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subtract two matrices </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="292" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="292" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceqlib_1_1math_1a76eeb4db471510ab7143369e8f5a7cb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
+        <definition>matrix qlib::math::operator*</definition>
+        <argsstring>(complex s, matrix a)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scale up a matrix by a scalar quantity </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="306" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="306" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceqlib_1_1math_1a01348bd4469d81d621104d4efaeb6f5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
+        <definition>matrix qlib::math::operator*</definition>
+        <argsstring>(matrix a, complex s)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scale up a matrix by a scalar quantity </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="317" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="317" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceqlib_1_1math_1a545e46c9d4ed76c49f027f633c717790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
+        <definition>matrix qlib::math::operator/</definition>
+        <argsstring>(matrix a, complex s)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scale down a matrix by a scalar quantity </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/matrix.hpp" line="328" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="328" bodyend="334"/>
       </memberdef>
       <memberdef kind="function" id="namespaceqlib_1_1math_1a0e8e1dad475a4db8f847283d0104d424" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref></type>
@@ -297,13 +297,13 @@
 <para>Compute the Kronicker tensor product of two matrices </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/math/matrix.hpp" line="283" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="283" bodyend="305"/>
+        <location file="src/core/math/matrix.hpp" line="361" column="1" bodyfile="src/core/math/matrix.hpp" bodystart="361" bodyend="381"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/core/math/complex.hpp" line="16" column="1"/>
+    <location file="src/core/math/complex.hpp" line="11" column="1"/>
   </compounddef>
 </doxygen>

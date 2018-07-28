@@ -18,6 +18,8 @@ Collaboration diagram for compiler\+:\nopagebreak
 \item 
 \hyperlink{classcompiler_aac603e3e8c3851dfb420e6e007adbad0}{compiler} (\hyperlink{classlexical_1_1lexer}{lexical\+::lexer} \&\hyperlink{classcompiler_a888ac16dbb82fa8a9500633addcd22ba}{tokenizer}, vector$<$ \hyperlink{namespaceparser_a85b2df48287fddaca144a5f6c01b4761}{parser\+::ruleptr} $>$ \&\hyperlink{classcompiler_a1b712963929882f359df919ce73bbf4e}{rules}, vector$<$ \hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$($\ast$)(\hyperlink{structparser_1_1parsetree}{parser\+::parsetree} \&)$>$ \&\hyperlink{classcompiler_a76cbb22ce5238f2fd9b3946f541dba0c}{converters}, vector$<$ void($\ast$)(\hyperlink{classcompiler}{compiler} \&, \hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$)$>$ \&\hyperlink{classcompiler_aa9d1b362adff0ca48511cf824ca1fe4c}{events}, \hyperlink{classprogram}{program} \&\hyperlink{classcompiler_a801700690bf711169679cb6ca890168a}{prog})
 \item 
+void \hyperlink{classcompiler_a9b61ba6cc57763a9e76feb44fffd1616}{try\+\_\+parse\+\_\+line} (std\+::string filename, \hyperlink{types_8h_ab2bb0e5480d1d957383df6b350794313}{ulong} line\+Number, std\+::string line)
+\item 
 bool \hyperlink{classcompiler_af3984a0a53279c28bee8aee4b0ef84ca}{try\+\_\+parse\+\_\+file} (std\+::string filename)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
@@ -60,6 +62,15 @@ Class wrapping up all compiler components
 \item[{std\+::string}]{filename}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcompiler_af3984a0a53279c28bee8aee4b0ef84ca}{}\label{classcompiler_af3984a0a53279c28bee8aee4b0ef84ca}
+\index{compiler@{compiler}!try\+\_\+parse\+\_\+line@{try\+\_\+parse\+\_\+line}}
+\index{try\+\_\+parse\+\_\+line@{try\+\_\+parse\+\_\+line}!compiler@{compiler}}
+\subsubsection[{\texorpdfstring{try\+\_\+parse\+\_\+line(std\+::string filename, ulong line\+Number, std\+::string line)}{try_parse_line(std::string filename, ulong lineNumber, std::string line)}}]{\setlength{\rightskip}{0pt plus 5cm}void compiler\+::try\+\_\+parse\+\_\+line (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{filename, }
+\item[{{\bf ulong}}]{line\+Number, }
+\item[{std\+::string}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcompiler_a9b61ba6cc57763a9e76feb44fffd1616}{}\label{classcompiler_a9b61ba6cc57763a9e76feb44fffd1616}
 
 
 \subsection{Member Data Documentation}

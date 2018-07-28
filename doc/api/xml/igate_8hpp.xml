@@ -11,290 +11,313 @@
     <includedby refid="onequbitgate_8hpp" local="yes">src/core/quantum/gates/onequbitgate.hpp</includedby>
     <includedby refid="controlledgate_8hpp" local="yes">src/core/quantum/gates/controlledgate.hpp</includedby>
     <includedby refid="controlled2gate_8hpp" local="yes">src/core/quantum/gates/controlled2gate.hpp</includedby>
+    <includedby refid="qft_8hpp" local="yes">src/core/quantum/gates/qft.hpp</includedby>
     <incdepgraph>
-      <node id="1408">
+      <node id="1656">
         <label>limits</label>
       </node>
-      <node id="1405">
+      <node id="1653">
         <label>./../../general/object.hpp</label>
         <link refid="object_8hpp"/>
-        <childnode refid="1406" relation="include">
+        <childnode refid="1654" relation="include">
         </childnode>
-        <childnode refid="1409" relation="include">
+        <childnode refid="1657" relation="include">
         </childnode>
-        <childnode refid="1410" relation="include">
+        <childnode refid="1658" relation="include">
         </childnode>
-        <childnode refid="1411" relation="include">
+        <childnode refid="1659" relation="include">
         </childnode>
-        <childnode refid="1412" relation="include">
+        <childnode refid="1660" relation="include">
         </childnode>
-        <childnode refid="1413" relation="include">
+        <childnode refid="1661" relation="include">
         </childnode>
       </node>
-      <node id="1407">
+      <node id="1655">
         <label>stdint.h</label>
       </node>
-      <node id="1416">
+      <node id="1664">
         <label>stdlib.h</label>
       </node>
-      <node id="1417">
+      <node id="1665">
         <label>./../../math/matrix.hpp</label>
         <link refid="matrix_8hpp"/>
-        <childnode refid="1414" relation="include">
+        <childnode refid="1662" relation="include">
         </childnode>
-        <childnode refid="1405" relation="include">
+        <childnode refid="1653" relation="include">
         </childnode>
-        <childnode refid="1418" relation="include">
+        <childnode refid="1666" relation="include">
         </childnode>
-        <childnode refid="1419" relation="include">
+        <childnode refid="1667" relation="include">
         </childnode>
-        <childnode refid="1415" relation="include">
+        <childnode refid="1663" relation="include">
         </childnode>
-        <childnode refid="1410" relation="include">
+        <childnode refid="1658" relation="include">
         </childnode>
       </node>
-      <node id="1404">
+      <node id="1652">
         <label>src/core/quantum/gates/igate.hpp</label>
         <link refid="igate.hpp"/>
-        <childnode refid="1405" relation="include">
+        <childnode refid="1653" relation="include">
         </childnode>
-        <childnode refid="1414" relation="include">
+        <childnode refid="1662" relation="include">
         </childnode>
-        <childnode refid="1417" relation="include">
+        <childnode refid="1665" relation="include">
         </childnode>
       </node>
-      <node id="1418">
+      <node id="1666">
         <label>stdexcept</label>
       </node>
-      <node id="1411">
+      <node id="1659">
         <label>exception</label>
       </node>
-      <node id="1412">
+      <node id="1660">
         <label>random</label>
       </node>
-      <node id="1414">
+      <node id="1662">
         <label>./../../math/complex.hpp</label>
         <link refid="complex_8hpp"/>
-        <childnode refid="1405" relation="include">
+        <childnode refid="1653" relation="include">
         </childnode>
-        <childnode refid="1415" relation="include">
+        <childnode refid="1663" relation="include">
         </childnode>
-        <childnode refid="1416" relation="include">
+        <childnode refid="1664" relation="include">
         </childnode>
-        <childnode refid="1410" relation="include">
+        <childnode refid="1658" relation="include">
         </childnode>
       </node>
-      <node id="1419">
+      <node id="1667">
         <label>vector</label>
       </node>
-      <node id="1410">
+      <node id="1658">
         <label>sstream</label>
       </node>
-      <node id="1415">
+      <node id="1663">
         <label>math.h</label>
       </node>
-      <node id="1409">
+      <node id="1657">
         <label>iostream</label>
       </node>
-      <node id="1413">
+      <node id="1661">
         <label>chrono</label>
       </node>
-      <node id="1406">
+      <node id="1654">
         <label>./types.h</label>
         <link refid="types_8h"/>
-        <childnode refid="1407" relation="include">
+        <childnode refid="1655" relation="include">
         </childnode>
-        <childnode refid="1408" relation="include">
+        <childnode refid="1656" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1426">
+      <node id="1693">
+        <label>src/core/quantum/gates/qft.hpp</label>
+        <link refid="qft_8hpp"/>
+        <childnode refid="1681" relation="include">
+        </childnode>
+      </node>
+      <node id="1674">
         <label>src/runtime/main.cpp</label>
         <link refid="runtime_2main_8cpp"/>
       </node>
-      <node id="1424">
+      <node id="1672">
         <label>src/runtime/runtime.hpp</label>
         <link refid="runtime_8hpp"/>
-        <childnode refid="1425" relation="include">
+        <childnode refid="1673" relation="include">
         </childnode>
-        <childnode refid="1426" relation="include">
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
         </childnode>
       </node>
-      <node id="1421">
+      <node id="1669">
         <label>src/core/quantum/systems/qubit.hpp</label>
         <link refid="qubit_8hpp"/>
-        <childnode refid="1422" relation="include">
+        <childnode refid="1670" relation="include">
         </childnode>
       </node>
-      <node id="1420">
+      <node id="1668">
         <label>src/core/quantum/gates/igate.hpp</label>
         <link refid="igate.hpp"/>
-        <childnode refid="1421" relation="include">
+        <childnode refid="1669" relation="include">
         </childnode>
-        <childnode refid="1427" relation="include">
+        <childnode refid="1676" relation="include">
         </childnode>
-        <childnode refid="1428" relation="include">
+        <childnode refid="1677" relation="include">
         </childnode>
-        <childnode refid="1430" relation="include">
+        <childnode refid="1679" relation="include">
         </childnode>
-        <childnode refid="1442" relation="include">
+        <childnode refid="1682" relation="include">
         </childnode>
-        <childnode refid="1443" relation="include">
+        <childnode refid="1692" relation="include">
+        </childnode>
+        <childnode refid="1693" relation="include">
         </childnode>
       </node>
-      <node id="1441">
+      <node id="1691">
         <label>src/core/quantum/gates/phase.hpp</label>
         <link refid="phase_8hpp"/>
-        <childnode refid="1432" relation="include">
+        <childnode refid="1681" relation="include">
         </childnode>
       </node>
-      <node id="1431">
+      <node id="1675">
+        <label>src/runtime/qcircuit_exporter.hpp</label>
+        <link refid="qcircuit__exporter_8hpp"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+      </node>
+      <node id="1680">
         <label>src/core/quantum/gates/ident.hpp</label>
         <link refid="ident_8hpp"/>
-        <childnode refid="1432" relation="include">
+        <childnode refid="1681" relation="include">
         </childnode>
       </node>
-      <node id="1427">
+      <node id="1676">
         <label>src/core/quantum/systems/system.hpp</label>
         <link refid="system_8hpp"/>
-        <childnode refid="1421" relation="include">
+        <childnode refid="1669" relation="include">
         </childnode>
-        <childnode refid="1428" relation="include">
+        <childnode refid="1677" relation="include">
         </childnode>
-        <childnode refid="1422" relation="include">
+        <childnode refid="1670" relation="include">
         </childnode>
-        <childnode refid="1429" relation="include">
+        <childnode refid="1678" relation="include">
         </childnode>
       </node>
-      <node id="1423">
+      <node id="1671">
         <label>src/core/main.cpp</label>
         <link refid="core_2main_8cpp"/>
       </node>
-      <node id="1429">
+      <node id="1678">
         <label>src/core/quantum/systems/ensemble.hpp</label>
         <link refid="ensemble_8hpp"/>
-        <childnode refid="1422" relation="include">
+        <childnode refid="1670" relation="include">
         </childnode>
       </node>
-      <node id="1430">
+      <node id="1679">
         <label>src/core/quantum/gates/onequbitgate.hpp</label>
         <link refid="onequbitgate_8hpp"/>
-        <childnode refid="1431" relation="include">
+        <childnode refid="1680" relation="include">
         </childnode>
-        <childnode refid="1433" relation="include">
+        <childnode refid="1682" relation="include">
         </childnode>
-        <childnode refid="1434" relation="include">
+        <childnode refid="1683" relation="include">
         </childnode>
-        <childnode refid="1437" relation="include">
+        <childnode refid="1687" relation="include">
         </childnode>
-        <childnode refid="1439" relation="include">
+        <childnode refid="1689" relation="include">
         </childnode>
-        <childnode refid="1441" relation="include">
+        <childnode refid="1690" relation="include">
         </childnode>
-        <childnode refid="1442" relation="include">
+        <childnode refid="1691" relation="include">
         </childnode>
-        <childnode refid="1443" relation="include">
+        <childnode refid="1692" relation="include">
         </childnode>
       </node>
-      <node id="1436">
+      <node id="1688">
         <label>src/core/quantum/gates/toffoli.hpp</label>
         <link refid="toffoli_8hpp"/>
-        <childnode refid="1432" relation="include">
+        <childnode refid="1681" relation="include">
         </childnode>
       </node>
-      <node id="1434">
+      <node id="1687">
         <label>src/core/quantum/gates/pauliX.hpp</label>
         <link refid="pauliX_8hpp"/>
-        <childnode refid="1432" relation="include">
+        <childnode refid="1681" relation="include">
         </childnode>
-        <childnode refid="1435" relation="include">
+        <childnode refid="1684" relation="include">
         </childnode>
-        <childnode refid="1436" relation="include">
+        <childnode refid="1688" relation="include">
         </childnode>
       </node>
-      <node id="1437">
+      <node id="1689">
         <label>src/core/quantum/gates/pauliY.hpp</label>
         <link refid="pauliY_8hpp"/>
-        <childnode refid="1432" relation="include">
+        <childnode refid="1681" relation="include">
         </childnode>
-        <childnode refid="1438" relation="include">
+        <childnode refid="1685" relation="include">
         </childnode>
       </node>
-      <node id="1422">
+      <node id="1670">
         <label>src/core/qlib.h</label>
         <link refid="qlib_8h"/>
-        <childnode refid="1423" relation="include">
+        <childnode refid="1671" relation="include">
         </childnode>
-        <childnode refid="1424" relation="include">
+        <childnode refid="1672" relation="include">
         </childnode>
-        <childnode refid="1426" relation="include">
+        <childnode refid="1674" relation="include">
         </childnode>
       </node>
-      <node id="1435">
+      <node id="1684">
         <label>src/core/quantum/gates/cnot.hpp</label>
         <link refid="cnot_8hpp"/>
-        <childnode refid="1432" relation="include">
+        <childnode refid="1681" relation="include">
         </childnode>
       </node>
-      <node id="1425">
+      <node id="1673">
         <label>src/runtime/compiler.hpp</label>
         <link refid="compiler_8hpp"/>
-        <childnode refid="1426" relation="include">
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
         </childnode>
       </node>
-      <node id="1439">
+      <node id="1690">
         <label>src/core/quantum/gates/pauliZ.hpp</label>
         <link refid="pauliZ_8hpp"/>
-        <childnode refid="1432" relation="include">
+        <childnode refid="1681" relation="include">
         </childnode>
-        <childnode refid="1440" relation="include">
+        <childnode refid="1686" relation="include">
         </childnode>
       </node>
-      <node id="1428">
+      <node id="1677">
         <label>src/core/quantum/systems/qreg.hpp</label>
         <link refid="qreg_8hpp"/>
-        <childnode refid="1422" relation="include">
+        <childnode refid="1670" relation="include">
         </childnode>
       </node>
-      <node id="1440">
+      <node id="1686">
         <label>src/core/quantum/gates/cz.hpp</label>
         <link refid="cz_8hpp"/>
-        <childnode refid="1432" relation="include">
+        <childnode refid="1681" relation="include">
         </childnode>
       </node>
-      <node id="1433">
+      <node id="1683">
         <label>src/core/quantum/gates/hadamard.hpp</label>
         <link refid="hadamard_8hpp"/>
-        <childnode refid="1432" relation="include">
+        <childnode refid="1681" relation="include">
         </childnode>
       </node>
-      <node id="1432">
+      <node id="1681">
         <label>src/core/quantum/standard_gates.hpp</label>
         <link refid="standard__gates_8hpp"/>
-        <childnode refid="1422" relation="include">
+        <childnode refid="1670" relation="include">
         </childnode>
       </node>
-      <node id="1438">
+      <node id="1685">
         <label>src/core/quantum/gates/cy.hpp</label>
         <link refid="cy_8hpp"/>
-        <childnode refid="1432" relation="include">
+        <childnode refid="1681" relation="include">
         </childnode>
       </node>
-      <node id="1442">
+      <node id="1682">
         <label>src/core/quantum/gates/controlledgate.hpp</label>
         <link refid="controlledgate_8hpp"/>
-        <childnode refid="1435" relation="include">
+        <childnode refid="1680" relation="include">
         </childnode>
-        <childnode refid="1438" relation="include">
+        <childnode refid="1683" relation="include">
         </childnode>
-        <childnode refid="1440" relation="include">
+        <childnode refid="1684" relation="include">
+        </childnode>
+        <childnode refid="1685" relation="include">
+        </childnode>
+        <childnode refid="1686" relation="include">
         </childnode>
       </node>
-      <node id="1443">
+      <node id="1692">
         <label>src/core/quantum/gates/controlled2gate.hpp</label>
         <link refid="controlled2gate_8hpp"/>
-        <childnode refid="1436" relation="include">
+        <childnode refid="1688" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -326,19 +349,24 @@
 <codeline lineno="17" refid="classqlib_1_1quantum_1_1gates_1_1igate" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">igate</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classxobject" kindref="compound">xobject</ref><sp/>{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Name<sp/>of<sp/>the<sp/>gate</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/>name()<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Number<sp/>of<sp/>qubits<sp/>it<sp/>operates<sp/>on</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>inputs()<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Using<sp/>the<sp/>initial<sp/>state<sp/>vector<sp/>&apos;in&apos;<sp/>update<sp/>the<sp/>state<sp/>vector<sp/>&apos;out&apos;<sp/>using<sp/>the<sp/>qubit<sp/>numbers<sp/>provided<sp/>in<sp/>&apos;inputQubits&apos;<sp/>list</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operate(<ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>&amp;<sp/>in,<sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>&amp;<sp/>out,<sp/>std::vector&lt;u64&gt;<sp/>inputQubits)<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="23" refid="classqlib_1_1quantum_1_1gates_1_1igate_1afa0161a395344bb7765b61fbf94d01b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1gates_1_1igate_1afa0161a395344bb7765b61fbf94d01b5" kindref="member">~igate</ref>(){}</highlight></codeline>
+<codeline lineno="27" refid="classqlib_1_1quantum_1_1gates_1_1igate_1ab69530a50a6b78e429abe3c08407b222" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1gates_1_1igate_1ab69530a50a6b78e429abe3c08407b222" kindref="member">isGateable</ref>(<ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>&amp;<sp/>a){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.<ref refid="classqlib_1_1math_1_1matrix_1a7f12f7fc8d075a596978cbcdfc6106c0" kindref="member">isSquare</ref>()<sp/>&amp;&amp;<sp/>a.<ref refid="classqlib_1_1math_1_1matrix_1ae63299aa44d564dc03fba13b928cf191" kindref="member">isUnitary</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Name<sp/>of<sp/>the<sp/>gate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/>name()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Number<sp/>of<sp/>qubits<sp/>it<sp/>operates<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>inputs()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Using<sp/>the<sp/>initial<sp/>state<sp/>vector<sp/>&apos;in&apos;<sp/>update<sp/>the<sp/>state<sp/>vector<sp/>&apos;out&apos;<sp/>using<sp/>the<sp/>qubit<sp/>numbers<sp/>provided<sp/>in<sp/>&apos;inputQubits&apos;<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operate(<ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>&amp;<sp/>in,<sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>&amp;<sp/>out,<sp/>std::vector&lt;u64&gt;<sp/>inputQubits)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="src/core/quantum/gates/igate.hpp"/>
   </compounddef>

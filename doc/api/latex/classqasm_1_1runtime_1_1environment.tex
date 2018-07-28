@@ -7,7 +7,13 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\hyperlink{classqasm_1_1runtime_1_1environment_af9ad7d4cd53f37a597c049a3bc08500f}{environment} ()
+\item 
+\hyperlink{classqasm_1_1runtime_1_1environment_aa71963228b400dc8dc874a460017e663}{$\sim$environment} ()
+\item 
 \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate}{igate} $\ast$ \hyperlink{classqasm_1_1runtime_1_1environment_adb75f9df54d04d4f5d51c92093b5d466}{get\+Gate} (string name)
+\item 
+void \hyperlink{classqasm_1_1runtime_1_1environment_a6a71dc3d263c92394bc5e4c79973a556}{build\+Gate} (string name, \hyperlink{classqlib_1_1math_1_1complex}{complex} aa, \hyperlink{classqlib_1_1math_1_1complex}{complex} ab, \hyperlink{classqlib_1_1math_1_1complex}{complex} ba, \hyperlink{classqlib_1_1math_1_1complex}{complex} bb)
 \item 
 \hyperlink{runtime_8hpp_a20cf870406c99de2d935e3a77b8b60da}{creg} \& \hyperlink{classqasm_1_1runtime_1_1environment_a78ac575d7245e21c65fb31e6585c38cc}{get\+Creg} (string name)
 \item 
@@ -27,14 +33,46 @@ void \hyperlink{classqasm_1_1runtime_1_1environment_acd773cf48993b56c9f6b6b353a5
 map$<$ string, \hyperlink{classqlib_1_1quantum_1_1qreg}{qreg} $>$ \hyperlink{classqasm_1_1runtime_1_1environment_ae65dc834296334c8b9ea6dd900210881}{quantum\+\_\+registers}
 \item 
 map$<$ string, \hyperlink{runtime_8hpp_a20cf870406c99de2d935e3a77b8b60da}{creg} $>$ \hyperlink{classqasm_1_1runtime_1_1environment_add156869a2a13e2ca877c39e4649757a}{classic\+\_\+registers}
+\item 
+map$<$ string, \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate}{igate} $\ast$ $>$ \hyperlink{classqasm_1_1runtime_1_1environment_a05ec9211b7760c478dba445db34261b7}{registered\+\_\+gates}
+\item 
+vector$<$ \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate}{igate} $\ast$ $>$ \hyperlink{classqasm_1_1runtime_1_1environment_ac3d808129d41e9878d789be74a13603c}{gates\+\_\+to\+\_\+cleanup}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Represents a runtime environment including variable values 
 
+\subsection{Constructor \& Destructor Documentation}
+\index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!environment@{environment}}
+\index{environment@{environment}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
+\subsubsection[{\texorpdfstring{environment()}{environment()}}]{\setlength{\rightskip}{0pt plus 5cm}qasm\+::runtime\+::environment\+::environment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqasm_1_1runtime_1_1environment_af9ad7d4cd53f37a597c049a3bc08500f}{}\label{classqasm_1_1runtime_1_1environment_af9ad7d4cd53f37a597c049a3bc08500f}
+Create a new runtime environment with the default definitions \index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!````~environment@{$\sim$environment}}
+\index{````~environment@{$\sim$environment}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
+\subsubsection[{\texorpdfstring{$\sim$environment()}{~environment()}}]{\setlength{\rightskip}{0pt plus 5cm}qasm\+::runtime\+::environment\+::$\sim$environment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqasm_1_1runtime_1_1environment_aa71963228b400dc8dc874a460017e663}{}\label{classqasm_1_1runtime_1_1environment_aa71963228b400dc8dc874a460017e663}
+Destroy environment and all definitions 
+
 \subsection{Member Function Documentation}
-\index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!get\+Creg@{get\+Creg}}
+\index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!build\+Gate@{build\+Gate}}
+\index{build\+Gate@{build\+Gate}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
+\subsubsection[{\texorpdfstring{build\+Gate(string name, complex aa, complex ab, complex ba, complex bb)}{buildGate(string name, complex aa, complex ab, complex ba, complex bb)}}]{\setlength{\rightskip}{0pt plus 5cm}void qasm\+::runtime\+::environment\+::build\+Gate (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{{\bf complex}}]{aa, }
+\item[{{\bf complex}}]{ab, }
+\item[{{\bf complex}}]{ba, }
+\item[{{\bf complex}}]{bb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqasm_1_1runtime_1_1environment_a6a71dc3d263c92394bc5e4c79973a556}{}\label{classqasm_1_1runtime_1_1environment_a6a71dc3d263c92394bc5e4c79973a556}
+Add a user defined gate to the environment. Gate is cleaned-\/up when the environment is cleaned-\/up. \index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!get\+Creg@{get\+Creg}}
 \index{get\+Creg@{get\+Creg}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
 \subsubsection[{\texorpdfstring{get\+Creg(string name)}{getCreg(string name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf creg}\& qasm\+::runtime\+::environment\+::get\+Creg (
 \begin{DoxyParamCaption}
@@ -91,10 +129,16 @@ Bind a quantum variable to a name
 \index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!classic\+\_\+registers@{classic\+\_\+registers}}
 \index{classic\+\_\+registers@{classic\+\_\+registers}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
 \subsubsection[{\texorpdfstring{classic\+\_\+registers}{classic_registers}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string,{\bf creg}$>$ qasm\+::runtime\+::environment\+::classic\+\_\+registers\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqasm_1_1runtime_1_1environment_add156869a2a13e2ca877c39e4649757a}{}\label{classqasm_1_1runtime_1_1environment_add156869a2a13e2ca877c39e4649757a}
-List of assigned classic varaibles \index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!quantum\+\_\+registers@{quantum\+\_\+registers}}
+List of assigned classic varaibles \index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!gates\+\_\+to\+\_\+cleanup@{gates\+\_\+to\+\_\+cleanup}}
+\index{gates\+\_\+to\+\_\+cleanup@{gates\+\_\+to\+\_\+cleanup}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
+\subsubsection[{\texorpdfstring{gates\+\_\+to\+\_\+cleanup}{gates_to_cleanup}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf igate}$\ast$$>$ qasm\+::runtime\+::environment\+::gates\+\_\+to\+\_\+cleanup\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqasm_1_1runtime_1_1environment_ac3d808129d41e9878d789be74a13603c}{}\label{classqasm_1_1runtime_1_1environment_ac3d808129d41e9878d789be74a13603c}
+List of user defined gates that need to be cleaned up when the environment is cleared \index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!quantum\+\_\+registers@{quantum\+\_\+registers}}
 \index{quantum\+\_\+registers@{quantum\+\_\+registers}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
 \subsubsection[{\texorpdfstring{quantum\+\_\+registers}{quantum_registers}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string,{\bf qreg}$>$ qasm\+::runtime\+::environment\+::quantum\+\_\+registers\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqasm_1_1runtime_1_1environment_ae65dc834296334c8b9ea6dd900210881}{}\label{classqasm_1_1runtime_1_1environment_ae65dc834296334c8b9ea6dd900210881}
-List of assigned quantum variables 
+List of assigned quantum variables \index{qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}!registered\+\_\+gates@{registered\+\_\+gates}}
+\index{registered\+\_\+gates@{registered\+\_\+gates}!qasm\+::runtime\+::environment@{qasm\+::runtime\+::environment}}
+\subsubsection[{\texorpdfstring{registered\+\_\+gates}{registered_gates}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string,{\bf igate}$\ast$$>$ qasm\+::runtime\+::environment\+::registered\+\_\+gates\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classqasm_1_1runtime_1_1environment_a05ec9211b7760c478dba445db34261b7}{}\label{classqasm_1_1runtime_1_1environment_a05ec9211b7760c478dba445db34261b7}
+List of stored gates 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

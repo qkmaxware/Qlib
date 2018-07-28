@@ -1,7 +1,10 @@
 var hierarchy =
 [
+    [ "argz", "classargz.html", null ],
     [ "qlib.ide.AutoComplete", "classqlib_1_1ide_1_1AutoComplete.html", null ],
+    [ "graphics::bounds", "classgraphics_1_1bounds.html", null ],
     [ "qlib.ide.CodeEditor.ChangeListener", "interfaceqlib_1_1ide_1_1CodeEditor_1_1ChangeListener.html", null ],
+    [ "graphics::colour", "structgraphics_1_1colour.html", null ],
     [ "compiler", "classcompiler.html", null ],
     [ "qasm::runtime::environment", "classqasm_1_1runtime_1_1environment.html", null ],
     [ "exception", null, [
@@ -41,7 +44,16 @@ var hierarchy =
     ] ],
     [ "qlib.ide.RuntimeReport", "classqlib_1_1ide_1_1RuntimeReport.html", null ],
     [ "scanner", "classscanner.html", null ],
+    [ "graphics::shape", "classgraphics_1_1shape.html", [
+      [ "graphics::line", "classgraphics_1_1line.html", null ],
+      [ "graphics::polyline", "classgraphics_1_1polyline.html", [
+        [ "graphics::polygon", "classgraphics_1_1polygon.html", null ]
+      ] ],
+      [ "graphics::rect", "classgraphics_1_1rect.html", null ],
+      [ "graphics::text", "classgraphics_1_1text.html", null ]
+    ] ],
     [ "qlib.ide.CodeEditor.Style", "classqlib_1_1ide_1_1CodeEditor_1_1Style.html", null ],
+    [ "graphics::svg", "classgraphics_1_1svg.html", null ],
     [ "qlib.ide.FileManager.Tab", "classqlib_1_1ide_1_1FileManager_1_1Tab.html", null ],
     [ "parser::tokenqueue", "classparser_1_1tokenqueue.html", null ],
     [ "xobject", "classxobject.html", [
@@ -50,7 +62,8 @@ var hierarchy =
       [ "qlib::quantum::gates::igate", "classqlib_1_1quantum_1_1gates_1_1igate.html", [
         [ "qlib::quantum::gates::controlled2gate", "classqlib_1_1quantum_1_1gates_1_1controlled2gate.html", null ],
         [ "qlib::quantum::gates::controlledgate", "classqlib_1_1quantum_1_1gates_1_1controlledgate.html", null ],
-        [ "qlib::quantum::gates::onequbitgate", "classqlib_1_1quantum_1_1gates_1_1onequbitgate.html", null ]
+        [ "qlib::quantum::gates::onequbitgate", "classqlib_1_1quantum_1_1gates_1_1onequbitgate.html", null ],
+        [ "qlib::quantum::gates::quantumFourierTransform", "classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform.html", null ]
       ] ],
       [ "qlib::quantum::qsystem", "classqlib_1_1quantum_1_1qsystem.html", [
         [ "qlib::quantum::ensemble", "classqlib_1_1quantum_1_1ensemble.html", null ],

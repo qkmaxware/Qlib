@@ -10,6 +10,8 @@ class \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlledgate}{controlledgate
 class \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate}{igate}
 \item 
 class \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate}{onequbitgate}
+\item 
+class \hyperlink{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform}{quantum\+Fourier\+Transform}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -29,7 +31,11 @@ class \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate}{onequbitgate}
 \item 
 \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate}{onequbitgate} \hyperlink{namespaceqlib_1_1quantum_1_1gates_a2519bc26f39ef5297d03a5fe7cdf3bc3}{H}
 \item 
+\hyperlink{classqlib_1_1quantum_1_1gates_1_1controlledgate}{controlledgate} \hyperlink{namespaceqlib_1_1quantum_1_1gates_a94cfb96baacb02ad566b02c978a6b279}{CH}
+\item 
 \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate}{onequbitgate} \hyperlink{namespaceqlib_1_1quantum_1_1gates_a2a7dd0215add2c303251bb3a3ac596cc}{I}
+\item 
+\hyperlink{classqlib_1_1quantum_1_1gates_1_1controlledgate}{controlledgate} \hyperlink{namespaceqlib_1_1quantum_1_1gates_a7876e701afb94e13974915d144b09203}{CI}
 \item 
 \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate}{onequbitgate} \hyperlink{namespaceqlib_1_1quantum_1_1gates_af56c4617497a46f091c27f7f4bc65ed5}{X}
 \item 
@@ -37,7 +43,9 @@ class \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate}{onequbitgate}
 \item 
 \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate}{onequbitgate} \hyperlink{namespaceqlib_1_1quantum_1_1gates_ad07d8c867d0463c3f66dfa80d5b6b53c}{Z}
 \item 
-\hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate}{onequbitgate} \hyperlink{namespaceqlib_1_1quantum_1_1gates_a9b72e189dcf40679247251dff199887d}{T} = \hyperlink{namespaceqlib_1_1quantum_1_1gates_a9404266e9a103216de1b3c5ae2b8c8e5}{phase}(\hyperlink{phase_8hpp_ae71449b1cc6e6250b91f539153a7a0d3}{M\+\_\+\+PI} / 8)
+\hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate}{onequbitgate} \hyperlink{namespaceqlib_1_1quantum_1_1gates_a9b72e189dcf40679247251dff199887d}{T} = \hyperlink{namespaceqlib_1_1quantum_1_1gates_a9404266e9a103216de1b3c5ae2b8c8e5}{phase}(\hyperlink{constants_8h_ae71449b1cc6e6250b91f539153a7a0d3}{M\+\_\+\+PI} / 8)
+\item 
+\hyperlink{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform}{quantum\+Fourier\+Transform} \hyperlink{namespaceqlib_1_1quantum_1_1gates_aeeff3324a29947d6584bfaece3c28f71}{Q\+FT}
 \item 
 \hyperlink{classqlib_1_1quantum_1_1gates_1_1controlled2gate}{controlled2gate} \hyperlink{namespaceqlib_1_1quantum_1_1gates_abe265e0dfc0f6dce748643ad93dc6e01}{C\+C\+N\+OT}
 \item 
@@ -65,6 +73,26 @@ class \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate}{onequbitgate}
     \textcolor{stringliteral}{"CCNOT"}, 
     \hyperlink{namespaceqlib_1_1quantum_1_1gates_af56c4617497a46f091c27f7f4bc65ed5}{X}
     )
+\end{DoxyCode}
+\index{qlib\+::quantum\+::gates@{qlib\+::quantum\+::gates}!CH@{CH}}
+\index{CH@{CH}!qlib\+::quantum\+::gates@{qlib\+::quantum\+::gates}}
+\subsubsection[{\texorpdfstring{CH}{CH}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf controlledgate} qlib\+::quantum\+::gates\+::\+CH}\hypertarget{namespaceqlib_1_1quantum_1_1gates_a94cfb96baacb02ad566b02c978a6b279}{}\label{namespaceqlib_1_1quantum_1_1gates_a94cfb96baacb02ad566b02c978a6b279}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= controlledgate(
+    \textcolor{stringliteral}{"Controlled Hadamard"},
+    \hyperlink{namespaceqlib_1_1quantum_1_1gates_a2519bc26f39ef5297d03a5fe7cdf3bc3}{H}
+)
+\end{DoxyCode}
+\index{qlib\+::quantum\+::gates@{qlib\+::quantum\+::gates}!CI@{CI}}
+\index{CI@{CI}!qlib\+::quantum\+::gates@{qlib\+::quantum\+::gates}}
+\subsubsection[{\texorpdfstring{CI}{CI}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf controlledgate} qlib\+::quantum\+::gates\+::\+CI}\hypertarget{namespaceqlib_1_1quantum_1_1gates_a7876e701afb94e13974915d144b09203}{}\label{namespaceqlib_1_1quantum_1_1gates_a7876e701afb94e13974915d144b09203}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= controlledgate(
+    \textcolor{stringliteral}{"Controlled Identity"},
+    \hyperlink{namespaceqlib_1_1quantum_1_1gates_a2a7dd0215add2c303251bb3a3ac596cc}{I}
+)
 \end{DoxyCode}
 \index{qlib\+::quantum\+::gates@{qlib\+::quantum\+::gates}!C\+N\+OT@{C\+N\+OT}}
 \index{C\+N\+OT@{C\+N\+OT}!qlib\+::quantum\+::gates@{qlib\+::quantum\+::gates}}
@@ -123,6 +151,9 @@ class \hyperlink{classqlib_1_1quantum_1_1gates_1_1onequbitgate}{onequbitgate}
         \hyperlink{classqlib_1_1math_1_1complex}{complex}(0), \hyperlink{classqlib_1_1math_1_1complex}{complex}(1)
     \})
 \end{DoxyCode}
+\index{qlib\+::quantum\+::gates@{qlib\+::quantum\+::gates}!Q\+FT@{Q\+FT}}
+\index{Q\+FT@{Q\+FT}!qlib\+::quantum\+::gates@{qlib\+::quantum\+::gates}}
+\subsubsection[{\texorpdfstring{Q\+FT}{QFT}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf quantum\+Fourier\+Transform} qlib\+::quantum\+::gates\+::\+Q\+FT}\hypertarget{namespaceqlib_1_1quantum_1_1gates_aeeff3324a29947d6584bfaece3c28f71}{}\label{namespaceqlib_1_1quantum_1_1gates_aeeff3324a29947d6584bfaece3c28f71}
 \index{qlib\+::quantum\+::gates@{qlib\+::quantum\+::gates}!T@{T}}
 \index{T@{T}!qlib\+::quantum\+::gates@{qlib\+::quantum\+::gates}}
 \subsubsection[{\texorpdfstring{T}{T}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf onequbitgate} qlib\+::quantum\+::gates\+::T = {\bf phase}({\bf M\+\_\+\+PI} / 8)}\hypertarget{namespaceqlib_1_1quantum_1_1gates_a9b72e189dcf40679247251dff199887d}{}\label{namespaceqlib_1_1quantum_1_1gates_a9b72e189dcf40679247251dff199887d}

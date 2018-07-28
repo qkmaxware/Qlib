@@ -15,7 +15,7 @@
 <para>List of assigned quantum variables </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="55" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="55" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="56" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classqasm_1_1runtime_1_1environment_1add156869a2a13e2ca877c39e4649757a" prot="private" static="no" mutable="no">
         <type>map&lt; string, <ref refid="runtime_8hpp_1a20cf870406c99de2d935e3a77b8b60da" kindref="member">creg</ref> &gt;</type>
@@ -28,10 +28,62 @@
 <para>List of assigned classic varaibles </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="59" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="59" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="60" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqasm_1_1runtime_1_1environment_1a05ec9211b7760c478dba445db34261b7" prot="private" static="no" mutable="no">
+        <type>map&lt; string, <ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">igate</ref> * &gt;</type>
+        <definition>map&lt;string,igate*&gt; qasm::runtime::environment::registered_gates</definition>
+        <argsstring></argsstring>
+        <name>registered_gates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of stored gates </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="64" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classqasm_1_1runtime_1_1environment_1ac3d808129d41e9878d789be74a13603c" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">igate</ref> * &gt;</type>
+        <definition>vector&lt;igate*&gt; qasm::runtime::environment::gates_to_cleanup</definition>
+        <argsstring></argsstring>
+        <name>gates_to_cleanup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of user defined gates that need to be cleaned up when the environment is cleared </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="68" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="68" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1af9ad7d4cd53f37a597c049a3bc08500f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qasm::runtime::environment::environment</definition>
+        <argsstring>()</argsstring>
+        <name>environment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new runtime environment with the default definitions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="73" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="73" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1aa71963228b400dc8dc874a460017e663" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>qasm::runtime::environment::~environment</definition>
+        <argsstring>()</argsstring>
+        <name>~environment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy environment and all definitions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="94" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="94" bodyend="98"/>
+      </memberdef>
       <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1adb75f9df54d04d4f5d51c92093b5d466" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">igate</ref> *</type>
         <definition>igate* qasm::runtime::environment::getGate</definition>
@@ -47,7 +99,40 @@
 <para>For a given name, return the associated gate object </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="65" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="65" bodyend="98"/>
+        <location file="src/runtime/runtime.hpp" line="103" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="103" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1a6a71dc3d263c92394bc5e4c79973a556" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void qasm::runtime::environment::buildGate</definition>
+        <argsstring>(string name, complex aa, complex ab, complex ba, complex bb)</argsstring>
+        <name>buildGate</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
+          <declname>aa</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
+          <declname>ab</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
+          <declname>ba</declname>
+        </param>
+        <param>
+          <type><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref></type>
+          <declname>bb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a user defined gate to the environment. Gate is cleaned-up when the environment is cleaned-up. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="118" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="118" bodyend="124"/>
       </memberdef>
       <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1a78ac575d7245e21c65fb31e6585c38cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="runtime_8hpp_1a20cf870406c99de2d935e3a77b8b60da" kindref="member">creg</ref> &amp;</type>
@@ -64,7 +149,7 @@
 <para>Get classic variable from a name </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="103" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="103" bodyend="105"/>
+        <location file="src/runtime/runtime.hpp" line="129" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="129" bodyend="131"/>
       </memberdef>
       <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1a4cd69bebda4f5957e52168c91654f5f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -81,7 +166,7 @@
 <para>Test if a classic variable with name exists </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="110" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="110" bodyend="112"/>
+        <location file="src/runtime/runtime.hpp" line="136" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="136" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1a976c4f032feee9c47af587a0f6c759ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -102,7 +187,7 @@
 <para>Bind a classic variable to a name </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="117" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="117" bodyend="123"/>
+        <location file="src/runtime/runtime.hpp" line="143" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="143" bodyend="149"/>
       </memberdef>
       <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1ae4f47f020b8baf4f94165345f26a6dca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classqlib_1_1quantum_1_1qreg" kindref="compound">qreg</ref> &amp;</type>
@@ -119,7 +204,7 @@
 <para>Get quantum variable from a name </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="128" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="128" bodyend="130"/>
+        <location file="src/runtime/runtime.hpp" line="154" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="154" bodyend="156"/>
       </memberdef>
       <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1a77a8db656f3c5b5a2fcdde9a205deee5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -136,7 +221,7 @@
 <para>Test if a quantum variable with name exists </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="135" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="135" bodyend="137"/>
+        <location file="src/runtime/runtime.hpp" line="161" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="161" bodyend="163"/>
       </memberdef>
       <memberdef kind="function" id="classqasm_1_1runtime_1_1environment_1acd773cf48993b56c9f6b6b353a5a5e6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -157,24 +242,29 @@
 <para>Bind a quantum variable to a name </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="142" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="142" bodyend="145"/>
+        <location file="src/runtime/runtime.hpp" line="168" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="168" bodyend="171"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>Represents a runtime environment including variable values </para>    </detaileddescription>
-    <location file="src/runtime/runtime.hpp" line="50" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="50" bodyend="146"/>
+    <location file="src/runtime/runtime.hpp" line="51" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="51" bodyend="172"/>
     <listofallmembers>
+      <member refid="classqasm_1_1runtime_1_1environment_1a6a71dc3d263c92394bc5e4c79973a556" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>buildGate</name></member>
       <member refid="classqasm_1_1runtime_1_1environment_1add156869a2a13e2ca877c39e4649757a" prot="private" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>classic_registers</name></member>
+      <member refid="classqasm_1_1runtime_1_1environment_1af9ad7d4cd53f37a597c049a3bc08500f" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>environment</name></member>
+      <member refid="classqasm_1_1runtime_1_1environment_1ac3d808129d41e9878d789be74a13603c" prot="private" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>gates_to_cleanup</name></member>
       <member refid="classqasm_1_1runtime_1_1environment_1a78ac575d7245e21c65fb31e6585c38cc" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>getCreg</name></member>
       <member refid="classqasm_1_1runtime_1_1environment_1adb75f9df54d04d4f5d51c92093b5d466" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>getGate</name></member>
       <member refid="classqasm_1_1runtime_1_1environment_1ae4f47f020b8baf4f94165345f26a6dca" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>getQreg</name></member>
       <member refid="classqasm_1_1runtime_1_1environment_1a4cd69bebda4f5957e52168c91654f5f5" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>hasCreg</name></member>
       <member refid="classqasm_1_1runtime_1_1environment_1a77a8db656f3c5b5a2fcdde9a205deee5" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>hasQreg</name></member>
       <member refid="classqasm_1_1runtime_1_1environment_1ae65dc834296334c8b9ea6dd900210881" prot="private" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>quantum_registers</name></member>
+      <member refid="classqasm_1_1runtime_1_1environment_1a05ec9211b7760c478dba445db34261b7" prot="private" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>registered_gates</name></member>
       <member refid="classqasm_1_1runtime_1_1environment_1a976c4f032feee9c47af587a0f6c759ae" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>setCreg</name></member>
       <member refid="classqasm_1_1runtime_1_1environment_1acd773cf48993b56c9f6b6b353a5a5e6a" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>setQreg</name></member>
+      <member refid="classqasm_1_1runtime_1_1environment_1aa71963228b400dc8dc874a460017e663" prot="public" virt="non-virtual"><scope>qasm::runtime::environment</scope><name>~environment</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

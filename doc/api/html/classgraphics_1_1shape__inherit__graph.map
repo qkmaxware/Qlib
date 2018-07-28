@@ -1,0 +1,7 @@
+<map id="graphics::shape" name="graphics::shape">
+<area shape="rect" id="node2" href="$classgraphics_1_1line.html" title="graphics::line" alt="" coords="5,80,104,107"/>
+<area shape="rect" id="node3" href="$classgraphics_1_1polyline.html" title="graphics::polyline" alt="" coords="128,80,251,107"/>
+<area shape="rect" id="node5" href="$classgraphics_1_1rect.html" title="graphics::rect" alt="" coords="275,80,376,107"/>
+<area shape="rect" id="node6" href="$classgraphics_1_1text.html" title="graphics::text" alt="" coords="400,80,501,107"/>
+<area shape="rect" id="node4" href="$classgraphics_1_1polygon.html" title="graphics::polygon" alt="" coords="127,155,251,181"/>
+</map>

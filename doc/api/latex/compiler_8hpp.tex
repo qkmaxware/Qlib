@@ -11,18 +11,20 @@
 {\ttfamily \#include \char`\"{}./parser.\+hpp\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}./runtime.\+hpp\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}./scanner.\+hpp\char`\"{}}\\*
-Include dependency graph for compiler.\+hpp\+:\nopagebreak
+Include dependency graph for compiler.\+hpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{compiler_8hpp__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=204pt]{compiler_8hpp__dep__incl}
+\includegraphics[width=231pt]{compiler_8hpp__dep__incl}
 \end{center}
 \end{figure}
 \subsection*{Classes}
@@ -34,33 +36,8 @@ class \hyperlink{classparseexception}{parseexception}
 \item 
 class \hyperlink{classcompiler}{compiler}
 \end{DoxyCompactItemize}
-\subsection*{Namespaces}
-\begin{DoxyCompactItemize}
-\item 
- \hyperlink{namespaceqasm}{qasm}
-\item 
- \hyperlink{namespaceqasm_1_1rules}{qasm\+::rules}
-\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
-\item 
-bool \hyperlink{compiler_8hpp_ad6bb98bfd6757b98a471bb8c8670795a}{try\+\_\+parse\+\_\+qasm} (\hyperlink{classprogram}{program} \&prog, std\+::string file\+\_\+name, \hyperlink{classlexical_1_1lexer}{lexical\+::lexer} \&tokenizer)
-\item 
-bool \hyperlink{namespaceqasm_1_1rules_a26247b01755121860f87e5a26d9bd391}{qasm\+::rules\+::try\+\_\+parse\+\_\+subcircuit\+\_\+application} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
-\item 
-bool \hyperlink{namespaceqasm_1_1rules_aa583e7fb674ce302c13e04802c0ac371}{qasm\+::rules\+::try\+\_\+parse\+\_\+gate\+\_\+application} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
-\item 
-bool \hyperlink{namespaceqasm_1_1rules_abe4777fa00a61066da5591048a9cbf54}{qasm\+::rules\+::try\+\_\+parse\+\_\+debug} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
-\item 
-bool \hyperlink{namespaceqasm_1_1rules_a5da8b5fa16a6eec3576f64c509a43ffd}{qasm\+::rules\+::try\+\_\+parse\+\_\+measurement} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
-\item 
-bool \hyperlink{namespaceqasm_1_1rules_a1e0101b23fdb03759ca22f831662a88b}{qasm\+::rules\+::try\+\_\+parse\+\_\+declaration} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
-\item 
-bool \hyperlink{namespaceqasm_1_1rules_ac9cd78216b8e48a2d5aa625d99240cb9}{qasm\+::rules\+::try\+\_\+parse\+\_\+label} (\hyperlink{classprogram}{program} \&prog, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
-\item 
-bool \hyperlink{namespaceqasm_1_1rules_abe391ee7a042e770f440498767f889ba}{qasm\+::rules\+::try\+\_\+parse\+\_\+include} (\hyperlink{classprogram}{program} \&prog, \hyperlink{classlexical_1_1lexer}{lexical\+::lexer} \&tokenizer, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
-\item 
-bool \hyperlink{namespaceqasm_1_1rules_af40aa89c9f5235a7d2e94af2de62a42b}{qasm\+::rules\+::try\+\_\+parse\+\_\+rule} (\hyperlink{classprogram}{program} \&prog, \hyperlink{classlexical_1_1lexer}{lexical\+::lexer} \&tokenizer, std\+::vector$<$ \hyperlink{structlexical_1_1match}{lexical\+::match} $>$ \&tokens)
 \item 
 \hyperlink{classqasm_1_1exec_1_1executable}{qasm\+::exec\+::executable} $\ast$ \hyperlink{compiler_8hpp_af29ea58956d1e519877cf79d81d5f8b8}{convert\+\_\+import} (\hyperlink{structparser_1_1parsetree}{parser\+::parsetree} \&ref)
 \item 
@@ -168,13 +145,4 @@ Load another file into the program \index{compiler.\+hpp@{compiler.\+hpp}!post\+
 \item[{{\bf qasm\+::exec\+::executable} $\ast$}]{runable}
 \end{DoxyParamCaption}
 )}\hypertarget{compiler_8hpp_a859ddd4d6a4adc68346506c50a08f063}{}\label{compiler_8hpp_a859ddd4d6a4adc68346506c50a08f063}
-Discard converted value \index{compiler.\+hpp@{compiler.\+hpp}!try\+\_\+parse\+\_\+qasm@{try\+\_\+parse\+\_\+qasm}}
-\index{try\+\_\+parse\+\_\+qasm@{try\+\_\+parse\+\_\+qasm}!compiler.\+hpp@{compiler.\+hpp}}
-\subsubsection[{\texorpdfstring{try\+\_\+parse\+\_\+qasm(program \&prog, std\+::string file\+\_\+name, lexical\+::lexer \&tokenizer)}{try_parse_qasm(program &prog, std::string file_name, lexical::lexer &tokenizer)}}]{\setlength{\rightskip}{0pt plus 5cm}bool try\+\_\+parse\+\_\+qasm (
-\begin{DoxyParamCaption}
-\item[{{\bf program} \&}]{prog, }
-\item[{std\+::string}]{file\+\_\+name, }
-\item[{{\bf lexical\+::lexer} \&}]{tokenizer}
-\end{DoxyParamCaption}
-)}\hypertarget{compiler_8hpp_ad6bb98bfd6757b98a471bb8c8670795a}{}\label{compiler_8hpp_ad6bb98bfd6757b98a471bb8c8670795a}
-Try and parse a file into a program 
+Discard converted value 

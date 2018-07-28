@@ -1,6 +1,7 @@
 <map id="qlib::quantum::gates::igate" name="qlib::quantum::gates::igate">
-<area shape="rect" id="node3" href="$classqlib_1_1quantum_1_1gates_1_1controlled2gate.html" title="qlib::quantum::gates\l::controlled2gate" alt="" coords="305,5,445,47"/>
-<area shape="rect" id="node4" href="$classqlib_1_1quantum_1_1gates_1_1controlledgate.html" title="qlib::quantum::gates\l::controlledgate" alt="" coords="305,71,445,112"/>
-<area shape="rect" id="node5" href="$classqlib_1_1quantum_1_1gates_1_1onequbitgate.html" title="qlib::quantum::gates\l::onequbitgate" alt="" coords="305,136,445,177"/>
-<area shape="rect" id="node2" href="$classxobject.html" title="xobject" alt="" coords="5,78,69,105"/>
+<area shape="rect" id="node3" href="$classqlib_1_1quantum_1_1gates_1_1controlled2gate.html" title="qlib::quantum::gates\l::controlled2gate" alt="" coords="325,5,465,47"/>
+<area shape="rect" id="node4" href="$classqlib_1_1quantum_1_1gates_1_1controlledgate.html" title="qlib::quantum::gates\l::controlledgate" alt="" coords="325,71,465,112"/>
+<area shape="rect" id="node5" href="$classqlib_1_1quantum_1_1gates_1_1onequbitgate.html" title="qlib::quantum::gates\l::onequbitgate" alt="" coords="325,136,465,177"/>
+<area shape="rect" id="node6" href="$classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform.html" title="qlib::quantum::gates\l::quantumFourierTransform" alt="" coords="305,201,484,243"/>
+<area shape="rect" id="node2" href="$classxobject.html" title="xobject" alt="" coords="5,111,69,138"/>
 </map>

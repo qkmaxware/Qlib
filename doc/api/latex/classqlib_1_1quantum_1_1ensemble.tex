@@ -29,6 +29,8 @@ Collaboration diagram for qlib\+:\+:quantum\+:\+:ensemble\+:\nopagebreak
 \item 
 \hyperlink{classqlib_1_1quantum_1_1ensemble_aae0c56d2d64d4be27b5ab976d60c2747}{$\sim$ensemble} ()
 \item 
+void \hyperlink{classqlib_1_1quantum_1_1ensemble_a0eb45d5e78a713d118cef48152be57ae}{set\+State} (std\+::vector$<$ \hyperlink{classqlib_1_1math_1_1complex}{complex} $>$ amp)
+\item 
 size\+\_\+t \hyperlink{classqlib_1_1quantum_1_1ensemble_a4b811e4778f5c845504ed8eec058dfe4}{size} ()
 \item 
 void \hyperlink{classqlib_1_1quantum_1_1ensemble_a9226b1108f8d45d052316f7c366f1d5a}{apply} (\hyperlink{classqlib_1_1quantum_1_1gates_1_1igate}{qlib\+::quantum\+::gates\+::igate} \&op, std\+::vector$<$ u64 $>$ input\+Bits)
@@ -87,6 +89,17 @@ Implements \hyperlink{classqlib_1_1quantum_1_1qsystem_adbb748feb351aac69ca4a0bf6
 Measure all systems in the ensemble and return most common answer 
 
 Implements \hyperlink{classqlib_1_1quantum_1_1qsystem_a33d9954c6ca01cb400d940ff05614364}{qlib\+::quantum\+::qsystem}.
+
+\index{qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}!set\+State@{set\+State}}
+\index{set\+State@{set\+State}!qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}}
+\subsubsection[{\texorpdfstring{set\+State(std\+::vector$<$ complex $>$ amp)}{setState(std::vector< complex > amp)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib\+::quantum\+::ensemble\+::set\+State (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf complex} $>$}]{amp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1ensemble_a0eb45d5e78a713d118cef48152be57ae}{}\label{classqlib_1_1quantum_1_1ensemble_a0eb45d5e78a713d118cef48152be57ae}
+Set the state of the quantum register 
+
+Implements \hyperlink{classqlib_1_1quantum_1_1qsystem_ab70360fa1be7b72d4f49f6dadc17267d}{qlib\+::quantum\+::qsystem}.
 
 \index{qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}!size@{size}}
 \index{size@{size}!qlib\+::quantum\+::ensemble@{qlib\+::quantum\+::ensemble}}

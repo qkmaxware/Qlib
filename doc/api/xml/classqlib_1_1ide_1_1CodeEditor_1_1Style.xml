@@ -61,27 +61,27 @@
     <detaileddescription>
 <para>Internal class representing text style for a given pattern </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="463">
+      <node id="568">
         <label>qlib.ide.CodeEditor.Style</label>
         <link refid="classqlib_1_1ide_1_1CodeEditor_1_1Style"/>
-        <childnode refid="464" relation="usage">
+        <childnode refid="569" relation="usage">
           <edgelabel>attributes</edgelabel>
         </childnode>
-        <childnode refid="465" relation="usage">
+        <childnode refid="570" relation="usage">
           <edgelabel>background</edgelabel>
           <edgelabel>font</edgelabel>
         </childnode>
-        <childnode refid="466" relation="usage">
+        <childnode refid="571" relation="usage">
           <edgelabel>pattern</edgelabel>
         </childnode>
       </node>
-      <node id="466">
+      <node id="571">
         <label>Pattern</label>
       </node>
-      <node id="464">
+      <node id="569">
         <label>AttributeSet</label>
       </node>
-      <node id="465">
+      <node id="570">
         <label>Color</label>
       </node>
     </collaborationgraph>

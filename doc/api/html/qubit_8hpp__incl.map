@@ -1,6 +1,6 @@
 <map id="src/core/quantum/systems/qubit.hpp" name="src/core/quantum/systems/qubit.hpp">
 <area shape="rect" id="node2" href="$object_8hpp.html" title="./../../general/object.hpp" alt="" coords="138,393,298,420"/>
-<area shape="rect" id="node11" href="$complex_8hpp.html" title="File containing complex number class and operators. " alt="" coords="256,319,417,345"/>
+<area shape="rect" id="node11" href="$complex_8hpp.html" title="./../../math/complex.hpp" alt="" coords="256,319,417,345"/>
 <area shape="rect" id="node14" href="$matrix_8hpp.html" title="./../../math/matrix.hpp" alt="" coords="463,244,611,271"/>
 <area shape="rect" id="node17" href="$igate_8hpp.html" title="./../gates/igate.hpp" alt="" coords="205,169,335,196"/>
 <area shape="rect" id="node18" href="$system_8hpp.html" title="system.hpp" alt="" coords="303,95,394,121"/>

@@ -108,7 +108,6 @@ $(document).ready(function(){initNavTree('phase_8hpp.html','');});
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -118,17 +117,19 @@ $(document).ready(function(){initNavTree('phase_8hpp.html','');});
 <div class="textblock"><code>#include &quot;<a class="el" href="onequbitgate_8hpp_source.html">onequbitgate.hpp</a>&quot;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
+<code>#include &quot;<a class="el" href="constants_8h_source.html">./../../general/constants.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for phase.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="phase_8hpp__incl.png" border="0" usemap="#src_2core_2quantum_2gates_2phase_8hpp" alt=""/></div>
 <map name="src_2core_2quantum_2gates_2phase_8hpp" id="src_2core_2quantum_2gates_2phase_8hpp">
-<area shape="rect" id="node2" href="onequbitgate_8hpp.html" title="onequbitgate.hpp" alt="" coords="5,95,127,121"/>
-<area shape="rect" id="node3" href="igate_8hpp.html" title="./igate.hpp" alt="" coords="354,169,437,196"/>
-<area shape="rect" id="node4" href="object_8hpp.html" title="./../../general/object.hpp" alt="" coords="490,393,650,420"/>
-<area shape="rect" id="node13" href="complex_8hpp.html" title="File containing complex number class and operators. " alt="" coords="253,319,415,345"/>
-<area shape="rect" id="node16" href="matrix_8hpp.html" title="./../../math/matrix.hpp" alt="" coords="379,244,527,271"/>
-<area shape="rect" id="node5" href="types_8h.html" title="./types.h" alt="" coords="639,468,712,495"/>
+<area shape="rect" id="node2" href="onequbitgate_8hpp.html" title="onequbitgate.hpp" alt="" coords="630,95,751,121"/>
+<area shape="rect" id="node20" href="constants_8h.html" title="./../../general/constants.h" alt="" coords="829,95,997,121"/>
+<area shape="rect" id="node3" href="igate_8hpp.html" title="./igate.hpp" alt="" coords="443,169,525,196"/>
+<area shape="rect" id="node4" href="object_8hpp.html" title="./../../general/object.hpp" alt="" coords="145,393,305,420"/>
+<area shape="rect" id="node13" href="complex_8hpp.html" title="./../../math/complex.hpp" alt="" coords="491,319,653,345"/>
+<area shape="rect" id="node16" href="matrix_8hpp.html" title="./../../math/matrix.hpp" alt="" coords="354,244,502,271"/>
+<area shape="rect" id="node5" href="types_8h.html" title="./types.h" alt="" coords="91,468,165,495"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -140,8 +141,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="rect" id="node3" href="qlib_8h.html" title="src/core/qlib.h" alt="" coords="183,184,287,211"/>
 <area shape="rect" id="node4" href="core_2main_8cpp.html" title="src/core/main.cpp" alt="" coords="5,259,132,285"/>
 <area shape="rect" id="node5" href="runtime_8hpp.html" title="src/runtime/runtime.hpp" alt="" coords="156,259,315,285"/>
-<area shape="rect" id="node7" href="runtime_2main_8cpp.html" title="src/runtime/main.cpp" alt="" coords="230,408,374,435"/>
-<area shape="rect" id="node6" href="compiler_8hpp.html" title="src/runtime/compiler.hpp" alt="" coords="99,333,265,360"/>
+<area shape="rect" id="node7" href="runtime_2main_8cpp.html" title="src/runtime/main.cpp" alt="" coords="178,497,322,524"/>
+<area shape="rect" id="node6" href="compiler_8hpp.html" title="src/runtime/compiler.hpp" alt="" coords="33,333,198,360"/>
+<area shape="rect" id="node8" href="qcircuit__exporter_8hpp.html" title="src/runtime/qcircuit\l_exporter.hpp" alt="" coords="131,408,265,449"/>
 </map>
 </div>
 </div>
@@ -156,11 +158,6 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceqlib_1_1quantum_1_1gates"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqlib_1_1quantum_1_1gates.html">qlib::quantum::gates</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ae71449b1cc6e6250b91f539153a7a0d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="phase_8hpp.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>&#160;&#160;&#160;3.14159265358979323846</td></tr>
-<tr class="separator:ae71449b1cc6e6250b91f539153a7a0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9404266e9a103216de1b3c5ae2b8c8e5"><td class="memItemLeft" align="right" valign="top">onequbitgate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqlib_1_1quantum_1_1gates.html#a9404266e9a103216de1b3c5ae2b8c8e5">qlib::quantum::gates::phase</a> (f32 angle)</td></tr>
@@ -168,22 +165,9 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a9b72e189dcf40679247251dff199887d"><td class="memItemLeft" align="right" valign="top">onequbitgate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqlib_1_1quantum_1_1gates.html#a9b72e189dcf40679247251dff199887d">qlib::quantum::gates::T</a> = phase(<a class="el" href="phase_8hpp.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a> / 8)</td></tr>
+<tr class="memitem:a9b72e189dcf40679247251dff199887d"><td class="memItemLeft" align="right" valign="top">onequbitgate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqlib_1_1quantum_1_1gates.html#a9b72e189dcf40679247251dff199887d">qlib::quantum::gates::T</a> = phase(<a class="el" href="constants_8h.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a> / 8)</td></tr>
 <tr class="separator:a9b72e189dcf40679247251dff199887d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ae71449b1cc6e6250b91f539153a7a0d3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define M_PI&#160;&#160;&#160;3.14159265358979323846</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

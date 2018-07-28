@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgraphics_1_1polyline" kind="class" language="C++" prot="public">
+    <compoundname>graphics::polyline</compoundname>
+    <basecompoundref refid="classgraphics_1_1shape" prot="public" virt="non-virtual">graphics::shape</basecompoundref>
+    <derivedcompoundref refid="classgraphics_1_1polygon" prot="public" virt="non-virtual">graphics::polygon</derivedcompoundref>
+    <includes refid="svg_8hpp" local="no">svg.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgraphics_1_1polyline_1a9a61c2ecc0a47024a115fd1b196ef7d3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; size_t &gt;</type>
+        <definition>std::vector&lt;size_t&gt; graphics::polyline::xs</definition>
+        <argsstring></argsstring>
+        <name>xs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="133" column="1" bodyfile="src/runtime/svg.hpp" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgraphics_1_1polyline_1a864909f189748ca967b33068d1a5d8e0" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; size_t &gt;</type>
+        <definition>std::vector&lt;size_t&gt; graphics::polyline::ys</definition>
+        <argsstring></argsstring>
+        <name>ys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="134" column="1" bodyfile="src/runtime/svg.hpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgraphics_1_1polyline_1aa5cf3a624c2571bb89dc1c85435e7a78" prot="private" static="no" mutable="no">
+        <type><ref refid="classgraphics_1_1bounds" kindref="compound">bounds</ref></type>
+        <definition>bounds graphics::polyline::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="135" column="1" bodyfile="src/runtime/svg.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgraphics_1_1polyline_1adbfa69d4679508481af8b7ad988c589f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>graphics::polyline::polyline</definition>
+        <argsstring>()</argsstring>
+        <name>polyline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="137" column="1" bodyfile="src/runtime/svg.hpp" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1polyline_1a611ffde054960b79df394c2fc957e25c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgraphics_1_1polyline" kindref="compound">polyline</ref> &amp;</type>
+        <definition>polyline&amp; graphics::polyline::then</definition>
+        <argsstring>(size_t x, size_t y)</argsstring>
+        <name>then</name>
+        <param>
+          <type>size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="138" column="1" bodyfile="src/runtime/svg.hpp" bodystart="138" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1polyline_1a43d93bfba6da374097c31d99fd4e6536" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics::polyline::recalculateBounds</definition>
+        <argsstring>()</argsstring>
+        <name>recalculateBounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="144" column="1" bodyfile="src/runtime/svg.hpp" bodystart="144" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1polyline_1a5d1bb7507881d2d755d6779c9d7f8dbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classgraphics_1_1bounds" kindref="compound">bounds</ref> &amp;</type>
+        <definition>bounds&amp; graphics::polyline::getExtents</definition>
+        <argsstring>()</argsstring>
+        <name>getExtents</name>
+        <reimplements refid="classgraphics_1_1shape_1a948bd22d258ce2122b81c7385a315596">getExtents</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="163" column="1" bodyfile="src/runtime/svg.hpp" bodystart="163" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1polyline_1a4b21b290bd04cccef24f8cb4a85299f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string graphics::polyline::encode</definition>
+        <argsstring>()</argsstring>
+        <name>encode</name>
+        <reimplements refid="classgraphics_1_1shape_1a171a3bc288e0633c109571d908033b56">encode</reimplements>
+        <reimplementedby refid="classgraphics_1_1polygon_1accef210e1de0bbdbe333ac2e19e4d951">encode</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="166" column="1" bodyfile="src/runtime/svg.hpp" bodystart="166" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1polyline_1ab4556c8d21b8e07eaf1f3df023e032ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t graphics::polyline::countPoints</definition>
+        <argsstring>()</argsstring>
+        <name>countPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="181" column="1" bodyfile="src/runtime/svg.hpp" bodystart="181" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1polyline_1af6fa13ff47cc4ba271583720dfca5af3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t graphics::polyline::getX</definition>
+        <argsstring>(size_t point)</argsstring>
+        <name>getX</name>
+        <param>
+          <type>size_t</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="184" column="1" bodyfile="src/runtime/svg.hpp" bodystart="184" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1polyline_1accded087eed0e5bcb72b4e22553aaa86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t graphics::polyline::getY</definition>
+        <argsstring>(size_t point)</argsstring>
+        <name>getY</name>
+        <param>
+          <type>size_t</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="187" column="1" bodyfile="src/runtime/svg.hpp" bodystart="187" bodyend="189"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Describes a collection of lines between &apos;N&apos; points </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="468">
+        <label>graphics::shape</label>
+        <link refid="classgraphics_1_1shape"/>
+      </node>
+      <node id="467">
+        <label>graphics::polyline</label>
+        <link refid="classgraphics_1_1polyline"/>
+        <childnode refid="468" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="469">
+        <label>graphics::polygon</label>
+        <link refid="classgraphics_1_1polygon"/>
+        <childnode refid="467" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="472">
+        <label>graphics::colour</label>
+        <link refid="structgraphics_1_1colour"/>
+      </node>
+      <node id="471">
+        <label>graphics::shape</label>
+        <link refid="classgraphics_1_1shape"/>
+        <childnode refid="472" relation="usage">
+          <edgelabel>fill</edgelabel>
+          <edgelabel>stroke</edgelabel>
+        </childnode>
+      </node>
+      <node id="470">
+        <label>graphics::polyline</label>
+        <link refid="classgraphics_1_1polyline"/>
+        <childnode refid="471" relation="public-inheritance">
+        </childnode>
+        <childnode refid="473" relation="usage">
+          <edgelabel>b</edgelabel>
+        </childnode>
+      </node>
+      <node id="473">
+        <label>graphics::bounds</label>
+        <link refid="classgraphics_1_1bounds"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/svg.hpp" line="131" column="1" bodyfile="src/runtime/svg.hpp" bodystart="131" bodyend="190"/>
+    <listofallmembers>
+      <member refid="classgraphics_1_1polyline_1aa5cf3a624c2571bb89dc1c85435e7a78" prot="private" virt="non-virtual"><scope>graphics::polyline</scope><name>b</name></member>
+      <member refid="classgraphics_1_1polyline_1ab4556c8d21b8e07eaf1f3df023e032ac" prot="public" virt="non-virtual"><scope>graphics::polyline</scope><name>countPoints</name></member>
+      <member refid="classgraphics_1_1polyline_1a4b21b290bd04cccef24f8cb4a85299f2" prot="public" virt="virtual"><scope>graphics::polyline</scope><name>encode</name></member>
+      <member refid="classgraphics_1_1polyline_1a5d1bb7507881d2d755d6779c9d7f8dbc" prot="public" virt="virtual"><scope>graphics::polyline</scope><name>getExtents</name></member>
+      <member refid="classgraphics_1_1shape_1a31e32379425b32042d6aa49716c1db30" prot="public" virt="non-virtual"><scope>graphics::polyline</scope><name>getFill</name></member>
+      <member refid="classgraphics_1_1shape_1afa69ccf80e9ea6b2effef9e2f2360c19" prot="public" virt="non-virtual"><scope>graphics::polyline</scope><name>getStroke</name></member>
+      <member refid="classgraphics_1_1shape_1a66fed3c60869f6d37d5bb2bfd9f0e1dc" prot="public" virt="non-virtual"><scope>graphics::polyline</scope><name>getStrokeWidth</name></member>
+      <member refid="classgraphics_1_1polyline_1af6fa13ff47cc4ba271583720dfca5af3" prot="public" virt="non-virtual"><scope>graphics::polyline</scope><name>getX</name></member>
+      <member refid="classgraphics_1_1polyline_1accded087eed0e5bcb72b4e22553aaa86" prot="public" virt="non-virtual"><scope>graphics::polyline</scope><name>getY</name></member>
+      <member refid="classgraphics_1_1polyline_1adbfa69d4679508481af8b7ad988c589f" prot="public" virt="non-virtual"><scope>graphics::polyline</scope><name>polyline</name></member>
+      <member refid="classgraphics_1_1polyline_1a43d93bfba6da374097c31d99fd4e6536" prot="public" virt="non-virtual"><scope>graphics::polyline</scope><name>recalculateBounds</name></member>
+      <member refid="classgraphics_1_1shape_1a4faba733e9a95685f22e283143488104" prot="public" virt="non-virtual"><scope>graphics::polyline</scope><name>setFill</name></member>
+      <member refid="classgraphics_1_1shape_1abe791443e0323b0719c16c42d9ee0e2e" prot="public" virt="non-virtual"><scope>graphics::polyline</scope><name>setStroke</name></member>
+      <member refid="classgraphics_1_1shape_1a61805bb768ea7f4e817317c9bfee519d" prot="public" virt="non-virtual"><scope>graphics::polyline</scope><name>setStrokeWidth</name></member>
+      <member refid="classgraphics_1_1shape_1a4bb20a9261038c87fe3a30e2bad5bd49" prot="public" virt="non-virtual"><scope>graphics::polyline</scope><name>shape</name></member>
+      <member refid="classgraphics_1_1polyline_1a611ffde054960b79df394c2fc957e25c" prot="public" virt="non-virtual"><scope>graphics::polyline</scope><name>then</name></member>
+      <member refid="classgraphics_1_1polyline_1a9a61c2ecc0a47024a115fd1b196ef7d3" prot="private" virt="non-virtual"><scope>graphics::polyline</scope><name>xs</name></member>
+      <member refid="classgraphics_1_1polyline_1a864909f189748ca967b33068d1a5d8e0" prot="private" virt="non-virtual"><scope>graphics::polyline</scope><name>ys</name></member>
+      <member refid="classgraphics_1_1shape_1a1ce13e65926bca4f7690859647f6e3ef" prot="public" virt="virtual"><scope>graphics::polyline</scope><name>~shape</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

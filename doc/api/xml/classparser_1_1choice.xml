@@ -95,25 +95,25 @@
     <detaileddescription>
 <para>Class representing parsing elements that are either one thing exclusive or another </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="266">
+      <node id="327">
         <label>parser::choice</label>
         <link refid="classparser_1_1choice"/>
-        <childnode refid="267" relation="public-inheritance">
+        <childnode refid="328" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="267">
+      <node id="328">
         <label>parser::rule</label>
         <link refid="classparser_1_1rule"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="268">
+      <node id="329">
         <label>parser::choice</label>
         <link refid="classparser_1_1choice"/>
-        <childnode refid="269" relation="public-inheritance">
+        <childnode refid="330" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="269">
+      <node id="330">
         <label>parser::rule</label>
         <link refid="classparser_1_1rule"/>
       </node>

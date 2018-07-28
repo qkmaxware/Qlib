@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structlexical_1_1match.html" title="lexical::match" alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node1" href="$classgraphics_1_1shape.html" title="graphics::shape" alt="" coords="5,81,120,108"/>
+<area shape="rect" id="node2" href="$classgraphics_1_1line.html" title="graphics::line" alt="" coords="180,5,279,32"/>
+<area shape="rect" id="node3" href="$classgraphics_1_1polyline.html" title="graphics::polyline" alt="" coords="168,56,291,83"/>
+<area shape="rect" id="node5" href="$classgraphics_1_1rect.html" title="graphics::rect" alt="" coords="179,107,280,133"/>
+<area shape="rect" id="node6" href="$classgraphics_1_1text.html" title="graphics::text" alt="" coords="179,157,280,184"/>
+<area shape="rect" id="node4" href="$classgraphics_1_1polygon.html" title="graphics::polygon" alt="" coords="339,56,463,83"/>
 </map>

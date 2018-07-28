@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="414" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="414" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="441" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="441" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="415" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="415" bodyend="415"/>
+        <location file="src/runtime/runtime.hpp" line="442" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="442" bodyend="442"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -43,35 +43,36 @@
     <detaileddescription>
 <para>Instruction to label a line </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="345">
+      <node id="409">
         <label>qasm::exec::label</label>
         <link refid="classqasm_1_1exec_1_1label"/>
-        <childnode refid="346" relation="public-inheritance">
+        <childnode refid="410" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="346">
+      <node id="410">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="347">
+      <node id="411">
         <label>qasm::exec::label</label>
         <link refid="classqasm_1_1exec_1_1label"/>
-        <childnode refid="348" relation="public-inheritance">
+        <childnode refid="412" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="348">
+      <node id="412">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/runtime.hpp" line="412" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="412" bodyend="416"/>
+    <location file="src/runtime/runtime.hpp" line="439" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="439" bodyend="443"/>
     <listofallmembers>
       <member refid="classqasm_1_1exec_1_1executable_1ad07f864a889edb0777ebbb1bc1628121" prot="public" virt="virtual"><scope>qasm::exec::label</scope><name>invoke_rootprogram</name></member>
       <member refid="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" prot="public" virt="virtual"><scope>qasm::exec::label</scope><name>invoke_subprogram</name></member>
       <member refid="classqasm_1_1exec_1_1label_1aea2a4500ead46240c26215b6d964fae4" prot="public" virt="non-virtual"><scope>qasm::exec::label</scope><name>label</name></member>
       <member refid="classqasm_1_1exec_1_1label_1ae88393dae0bd5ddbe32a65cfb2d8f247" prot="public" virt="non-virtual"><scope>qasm::exec::label</scope><name>name</name></member>
+      <member refid="classqasm_1_1exec_1_1executable_1acb10539ca9f0d75be23e23ca722ba195" prot="public" virt="virtual"><scope>qasm::exec::label</scope><name>~executable</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

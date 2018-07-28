@@ -13,287 +13,309 @@
     <includedby refid="system_8hpp" local="yes">src/core/quantum/systems/system.hpp</includedby>
     <includedby refid="qreg_8hpp" local="yes">src/core/quantum/systems/qreg.hpp</includedby>
     <incdepgraph>
-      <node id="1103">
+      <node id="1332">
         <label>limits</label>
       </node>
-      <node id="1100">
+      <node id="1329">
         <label>./../general/object.hpp</label>
         <link refid="object_8hpp"/>
-        <childnode refid="1101" relation="include">
+        <childnode refid="1330" relation="include">
         </childnode>
-        <childnode refid="1104" relation="include">
+        <childnode refid="1333" relation="include">
         </childnode>
-        <childnode refid="1105" relation="include">
+        <childnode refid="1334" relation="include">
         </childnode>
-        <childnode refid="1106" relation="include">
+        <childnode refid="1335" relation="include">
         </childnode>
-        <childnode refid="1107" relation="include">
+        <childnode refid="1336" relation="include">
         </childnode>
-        <childnode refid="1108" relation="include">
+        <childnode refid="1337" relation="include">
         </childnode>
       </node>
-      <node id="1102">
+      <node id="1331">
         <label>stdint.h</label>
       </node>
-      <node id="1110">
+      <node id="1339">
         <label>stdlib.h</label>
       </node>
-      <node id="1106">
+      <node id="1335">
         <label>exception</label>
       </node>
-      <node id="1107">
+      <node id="1336">
         <label>random</label>
       </node>
-      <node id="1099">
+      <node id="1328">
         <label>src/core/math/complex.hpp</label>
         <link refid="complex.hpp"/>
-        <childnode refid="1100" relation="include">
+        <childnode refid="1329" relation="include">
         </childnode>
-        <childnode refid="1109" relation="include">
+        <childnode refid="1338" relation="include">
         </childnode>
-        <childnode refid="1110" relation="include">
+        <childnode refid="1339" relation="include">
         </childnode>
-        <childnode refid="1105" relation="include">
+        <childnode refid="1334" relation="include">
         </childnode>
       </node>
-      <node id="1105">
+      <node id="1334">
         <label>sstream</label>
       </node>
-      <node id="1109">
+      <node id="1338">
         <label>math.h</label>
       </node>
-      <node id="1104">
+      <node id="1333">
         <label>iostream</label>
       </node>
-      <node id="1108">
+      <node id="1337">
         <label>chrono</label>
       </node>
-      <node id="1101">
+      <node id="1330">
         <label>./types.h</label>
         <link refid="types_8h"/>
-        <childnode refid="1102" relation="include">
+        <childnode refid="1331" relation="include">
         </childnode>
-        <childnode refid="1103" relation="include">
+        <childnode refid="1332" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1116">
+      <node id="1367">
+        <label>src/core/quantum/gates/qft.hpp</label>
+        <link refid="qft_8hpp"/>
+        <childnode refid="1355" relation="include">
+        </childnode>
+      </node>
+      <node id="1345">
         <label>src/runtime/main.cpp</label>
         <link refid="runtime_2main_8cpp"/>
       </node>
-      <node id="1114">
+      <node id="1343">
         <label>src/runtime/runtime.hpp</label>
         <link refid="runtime_8hpp"/>
-        <childnode refid="1115" relation="include">
+        <childnode refid="1344" relation="include">
         </childnode>
-        <childnode refid="1116" relation="include">
+        <childnode refid="1345" relation="include">
+        </childnode>
+        <childnode refid="1346" relation="include">
         </childnode>
       </node>
-      <node id="1117">
+      <node id="1347">
         <label>src/core/math/matrix.hpp</label>
         <link refid="matrix_8hpp"/>
-        <childnode refid="1112" relation="include">
+        <childnode refid="1341" relation="include">
         </childnode>
-        <childnode refid="1118" relation="include">
+        <childnode refid="1348" relation="include">
         </childnode>
-        <childnode refid="1119" relation="include">
+        <childnode refid="1349" relation="include">
         </childnode>
-        <childnode refid="1120" relation="include">
+        <childnode refid="1350" relation="include">
         </childnode>
-        <childnode refid="1121" relation="include">
+        <childnode refid="1351" relation="include">
         </childnode>
       </node>
-      <node id="1118">
+      <node id="1348">
         <label>src/core/quantum/systems/qubit.hpp</label>
         <link refid="qubit_8hpp"/>
-        <childnode refid="1112" relation="include">
+        <childnode refid="1341" relation="include">
         </childnode>
       </node>
-      <node id="1119">
+      <node id="1349">
         <label>src/core/quantum/gates/igate.hpp</label>
         <link refid="igate_8hpp"/>
-        <childnode refid="1118" relation="include">
+        <childnode refid="1348" relation="include">
         </childnode>
-        <childnode refid="1120" relation="include">
+        <childnode refid="1350" relation="include">
         </childnode>
-        <childnode refid="1121" relation="include">
+        <childnode refid="1351" relation="include">
         </childnode>
-        <childnode refid="1123" relation="include">
+        <childnode refid="1353" relation="include">
         </childnode>
-        <childnode refid="1135" relation="include">
+        <childnode refid="1356" relation="include">
         </childnode>
-        <childnode refid="1136" relation="include">
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
         </childnode>
       </node>
-      <node id="1134">
+      <node id="1365">
         <label>src/core/quantum/gates/phase.hpp</label>
         <link refid="phase_8hpp"/>
-        <childnode refid="1125" relation="include">
+        <childnode refid="1355" relation="include">
         </childnode>
       </node>
-      <node id="1124">
+      <node id="1346">
+        <label>src/runtime/qcircuit_exporter.hpp</label>
+        <link refid="qcircuit__exporter_8hpp"/>
+        <childnode refid="1345" relation="include">
+        </childnode>
+      </node>
+      <node id="1354">
         <label>src/core/quantum/gates/ident.hpp</label>
         <link refid="ident_8hpp"/>
-        <childnode refid="1125" relation="include">
+        <childnode refid="1355" relation="include">
         </childnode>
       </node>
-      <node id="1120">
+      <node id="1350">
         <label>src/core/quantum/systems/system.hpp</label>
         <link refid="system_8hpp"/>
-        <childnode refid="1118" relation="include">
+        <childnode refid="1348" relation="include">
         </childnode>
-        <childnode refid="1121" relation="include">
+        <childnode refid="1351" relation="include">
         </childnode>
-        <childnode refid="1112" relation="include">
+        <childnode refid="1341" relation="include">
         </childnode>
-        <childnode refid="1122" relation="include">
+        <childnode refid="1352" relation="include">
         </childnode>
       </node>
-      <node id="1113">
+      <node id="1342">
         <label>src/core/main.cpp</label>
         <link refid="core_2main_8cpp"/>
       </node>
-      <node id="1122">
+      <node id="1352">
         <label>src/core/quantum/systems/ensemble.hpp</label>
         <link refid="ensemble_8hpp"/>
-        <childnode refid="1112" relation="include">
+        <childnode refid="1341" relation="include">
         </childnode>
       </node>
-      <node id="1123">
+      <node id="1353">
         <label>src/core/quantum/gates/onequbitgate.hpp</label>
         <link refid="onequbitgate_8hpp"/>
-        <childnode refid="1124" relation="include">
+        <childnode refid="1354" relation="include">
         </childnode>
-        <childnode refid="1126" relation="include">
+        <childnode refid="1356" relation="include">
         </childnode>
-        <childnode refid="1127" relation="include">
+        <childnode refid="1357" relation="include">
         </childnode>
-        <childnode refid="1130" relation="include">
+        <childnode refid="1361" relation="include">
         </childnode>
-        <childnode refid="1132" relation="include">
+        <childnode refid="1363" relation="include">
         </childnode>
-        <childnode refid="1134" relation="include">
+        <childnode refid="1364" relation="include">
         </childnode>
-        <childnode refid="1135" relation="include">
+        <childnode refid="1365" relation="include">
         </childnode>
-        <childnode refid="1136" relation="include">
+        <childnode refid="1366" relation="include">
         </childnode>
       </node>
-      <node id="1129">
+      <node id="1362">
         <label>src/core/quantum/gates/toffoli.hpp</label>
         <link refid="toffoli_8hpp"/>
-        <childnode refid="1125" relation="include">
+        <childnode refid="1355" relation="include">
         </childnode>
       </node>
-      <node id="1111">
+      <node id="1340">
         <label>src/core/math/complex.hpp</label>
         <link refid="complex.hpp"/>
-        <childnode refid="1112" relation="include">
+        <childnode refid="1341" relation="include">
         </childnode>
-        <childnode refid="1117" relation="include">
+        <childnode refid="1347" relation="include">
         </childnode>
-        <childnode refid="1118" relation="include">
+        <childnode refid="1348" relation="include">
         </childnode>
-        <childnode refid="1119" relation="include">
+        <childnode refid="1349" relation="include">
         </childnode>
-        <childnode refid="1120" relation="include">
+        <childnode refid="1350" relation="include">
         </childnode>
-        <childnode refid="1121" relation="include">
+        <childnode refid="1351" relation="include">
         </childnode>
       </node>
-      <node id="1127">
+      <node id="1361">
         <label>src/core/quantum/gates/pauliX.hpp</label>
         <link refid="pauliX_8hpp"/>
-        <childnode refid="1125" relation="include">
+        <childnode refid="1355" relation="include">
         </childnode>
-        <childnode refid="1128" relation="include">
+        <childnode refid="1358" relation="include">
         </childnode>
-        <childnode refid="1129" relation="include">
+        <childnode refid="1362" relation="include">
         </childnode>
       </node>
-      <node id="1130">
+      <node id="1363">
         <label>src/core/quantum/gates/pauliY.hpp</label>
         <link refid="pauliY_8hpp"/>
-        <childnode refid="1125" relation="include">
+        <childnode refid="1355" relation="include">
         </childnode>
-        <childnode refid="1131" relation="include">
+        <childnode refid="1359" relation="include">
         </childnode>
       </node>
-      <node id="1112">
+      <node id="1341">
         <label>src/core/qlib.h</label>
         <link refid="qlib_8h"/>
-        <childnode refid="1113" relation="include">
+        <childnode refid="1342" relation="include">
         </childnode>
-        <childnode refid="1114" relation="include">
+        <childnode refid="1343" relation="include">
         </childnode>
-        <childnode refid="1116" relation="include">
+        <childnode refid="1345" relation="include">
         </childnode>
       </node>
-      <node id="1128">
+      <node id="1358">
         <label>src/core/quantum/gates/cnot.hpp</label>
         <link refid="cnot_8hpp"/>
-        <childnode refid="1125" relation="include">
+        <childnode refid="1355" relation="include">
         </childnode>
       </node>
-      <node id="1115">
+      <node id="1344">
         <label>src/runtime/compiler.hpp</label>
         <link refid="compiler_8hpp"/>
-        <childnode refid="1116" relation="include">
+        <childnode refid="1345" relation="include">
+        </childnode>
+        <childnode refid="1346" relation="include">
         </childnode>
       </node>
-      <node id="1132">
+      <node id="1364">
         <label>src/core/quantum/gates/pauliZ.hpp</label>
         <link refid="pauliZ_8hpp"/>
-        <childnode refid="1125" relation="include">
+        <childnode refid="1355" relation="include">
         </childnode>
-        <childnode refid="1133" relation="include">
+        <childnode refid="1360" relation="include">
         </childnode>
       </node>
-      <node id="1121">
+      <node id="1351">
         <label>src/core/quantum/systems/qreg.hpp</label>
         <link refid="qreg_8hpp"/>
-        <childnode refid="1112" relation="include">
+        <childnode refid="1341" relation="include">
         </childnode>
       </node>
-      <node id="1133">
+      <node id="1360">
         <label>src/core/quantum/gates/cz.hpp</label>
         <link refid="cz_8hpp"/>
-        <childnode refid="1125" relation="include">
+        <childnode refid="1355" relation="include">
         </childnode>
       </node>
-      <node id="1126">
+      <node id="1357">
         <label>src/core/quantum/gates/hadamard.hpp</label>
         <link refid="hadamard_8hpp"/>
-        <childnode refid="1125" relation="include">
+        <childnode refid="1355" relation="include">
         </childnode>
       </node>
-      <node id="1125">
+      <node id="1355">
         <label>src/core/quantum/standard_gates.hpp</label>
         <link refid="standard__gates_8hpp"/>
-        <childnode refid="1112" relation="include">
+        <childnode refid="1341" relation="include">
         </childnode>
       </node>
-      <node id="1131">
+      <node id="1359">
         <label>src/core/quantum/gates/cy.hpp</label>
         <link refid="cy_8hpp"/>
-        <childnode refid="1125" relation="include">
+        <childnode refid="1355" relation="include">
         </childnode>
       </node>
-      <node id="1135">
+      <node id="1356">
         <label>src/core/quantum/gates/controlledgate.hpp</label>
         <link refid="controlledgate_8hpp"/>
-        <childnode refid="1128" relation="include">
+        <childnode refid="1354" relation="include">
         </childnode>
-        <childnode refid="1131" relation="include">
+        <childnode refid="1357" relation="include">
         </childnode>
-        <childnode refid="1133" relation="include">
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
         </childnode>
       </node>
-      <node id="1136">
+      <node id="1366">
         <label>src/core/quantum/gates/controlled2gate.hpp</label>
         <link refid="controlled2gate_8hpp"/>
-        <childnode refid="1129" relation="include">
+        <childnode refid="1362" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -301,7 +323,7 @@
     <innernamespace refid="namespaceqlib">qlib</innernamespace>
     <innernamespace refid="namespaceqlib_1_1math">qlib::math</innernamespace>
     <briefdescription>
-<para>File containing complex number class and operators. </para>    </briefdescription>
+    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
@@ -314,121 +336,125 @@
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15" refid="namespaceqlib" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceqlib" kindref="compound">qlib</ref><sp/>{</highlight></codeline>
-<codeline lineno="16" refid="namespaceqlib_1_1math" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">math<sp/>{</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Class<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="namespaceqlib" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceqlib" kindref="compound">qlib</ref><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="namespaceqlib_1_1math" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">math<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Class<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classqlib_1_1math_1_1complex" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classxobject" kindref="compound">xobject</ref><sp/>{</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25" refid="classqlib_1_1math_1_1complex" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classxobject" kindref="compound">xobject</ref><sp/>{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="33" refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref>;</highlight></codeline>
-<codeline lineno="37" refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>;</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42" refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(){</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50" refid="classqlib_1_1math_1_1complex_1a0eeea99f7c7d4a8e072f6c4836379ed0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex_1a0eeea99f7c7d4a8e072f6c4836379ed0" kindref="member">complex</ref>(f32<sp/>real){</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;r<sp/>=<sp/>real;</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;i<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58" refid="classqlib_1_1math_1_1complex_1a0dd3216eb1b24c906b394e67c59adda1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex_1a0dd3216eb1b24c906b394e67c59adda1" kindref="member">complex</ref>(f32<sp/>real,<sp/>f32<sp/>img){</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;r<sp/>=<sp/>real;</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;i<sp/>=<sp/>img;</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="66" refid="classqlib_1_1math_1_1complex_1ab1471e90345a25e6d112216f1a634290" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex_1ab1471e90345a25e6d112216f1a634290" kindref="member">complex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref>&amp;<sp/>other){</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;r<sp/>=<sp/>other.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref>;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;i<sp/>=<sp/>other.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>;</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74" refid="classqlib_1_1math_1_1complex_1ad1a8ab1ad95a47206e72d3a0d7be9511" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classqlib_1_1math_1_1complex_1ad1a8ab1ad95a47206e72d3a0d7be9511" kindref="member">sqrMagnitude</ref>(){</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>b<sp/>=<sp/>this-&gt;<ref refid="classqlib_1_1math_1_1complex_1a2cfd8546410a48d0568996e40beb85ce" kindref="member">conjugate</ref>();</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;r<sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>-<sp/>this-&gt;i<sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82" refid="classqlib_1_1math_1_1complex_1a8b365d2760802f1318e02c78c8938d2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classqlib_1_1math_1_1complex_1a8b365d2760802f1318e02c78c8938d2f" kindref="member">magnitude</ref>(){</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(f32)sqrt(abs(<ref refid="classqlib_1_1math_1_1complex_1ad1a8ab1ad95a47206e72d3a0d7be9511" kindref="member">sqrMagnitude</ref>()));</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89" refid="classqlib_1_1math_1_1complex_1a2cfd8546410a48d0568996e40beb85ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="classqlib_1_1math_1_1complex_1a2cfd8546410a48d0568996e40beb85ce" kindref="member">conjugate</ref>(){</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(this-&gt;r,<sp/>-1<sp/>*<sp/>this-&gt;i);</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96" refid="classqlib_1_1math_1_1complex_1a088dcd1f0349632d0930177e95aa4729" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="classqlib_1_1math_1_1complex_1a088dcd1f0349632d0930177e95aa4729" kindref="member">normal</ref>(){</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/>mag<sp/>=<sp/>this-&gt;<ref refid="classqlib_1_1math_1_1complex_1a8b365d2760802f1318e02c78c8938d2f" kindref="member">magnitude</ref>();</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(this-&gt;r<sp/>/<sp/>mag,<sp/>this-&gt;i<sp/>/<sp/>mag);</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="104" refid="classqlib_1_1math_1_1complex_1a7a670edef0db4264e211e68aea71f0ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1a7a670edef0db4264e211e68aea71f0ec" kindref="member">isPureReal</ref>(){</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;i<sp/>==<sp/>0;</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="111" refid="classqlib_1_1math_1_1complex_1a4465bc164fe2b490c917fc9321530ebb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1a4465bc164fe2b490c917fc9321530ebb" kindref="member">isPureImaginary</ref>(){</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;r<sp/>==<sp/>0;</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight></codeline>
-<codeline lineno="118" refid="classqlib_1_1math_1_1complex_1ae8f4008d499a05bbebecd48e0bf504d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ae8f4008d499a05bbebecd48e0bf504d7" kindref="member">isZero</ref>(){</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;r<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>this-&gt;i<sp/>==<sp/>0;</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight></codeline>
-<codeline lineno="125" refid="classqlib_1_1math_1_1complex_1a760122d26f377b008e129ff92b134a43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classqlib_1_1math_1_1complex_1a760122d26f377b008e129ff92b134a43" kindref="member">arg</ref>(){</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(f32)atan2(this-&gt;i,<sp/>this-&gt;r);</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"></highlight></codeline>
-<codeline lineno="132" refid="classqlib_1_1math_1_1complex_1afd24fadb21a07815675481b131398cff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classqlib_1_1math_1_1complex_1afd24fadb21a07815675481b131398cff" kindref="member">toString</ref>(){</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>sb;</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/>this-&gt;r<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>+<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;i<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;i&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sb.str();</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="137"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Operators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28" refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref>;</highlight></codeline>
+<codeline lineno="32" refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classqlib_1_1math_1_1complex_1a0eeea99f7c7d4a8e072f6c4836379ed0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex_1a0eeea99f7c7d4a8e072f6c4836379ed0" kindref="member">complex</ref>(f32<sp/>real){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;r<sp/>=<sp/>real;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classqlib_1_1math_1_1complex_1a0dd3216eb1b24c906b394e67c59adda1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex_1a0dd3216eb1b24c906b394e67c59adda1" kindref="member">complex</ref>(f32<sp/>real,<sp/>f32<sp/>img){</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;r<sp/>=<sp/>real;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;i<sp/>=<sp/>img;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="classqlib_1_1math_1_1complex_1ab1471e90345a25e6d112216f1a634290" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex_1ab1471e90345a25e6d112216f1a634290" kindref="member">complex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref>&amp;<sp/>other){</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;r<sp/>=<sp/>other.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;i<sp/>=<sp/>other.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classqlib_1_1math_1_1complex_1ad1a8ab1ad95a47206e72d3a0d7be9511" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classqlib_1_1math_1_1complex_1ad1a8ab1ad95a47206e72d3a0d7be9511" kindref="member">sqrMagnitude</ref>(){</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>b<sp/>=<sp/>this-&gt;<ref refid="classqlib_1_1math_1_1complex_1a2cfd8546410a48d0568996e40beb85ce" kindref="member">conjugate</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;r<sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>-<sp/>this-&gt;i<sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classqlib_1_1math_1_1complex_1a8b365d2760802f1318e02c78c8938d2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classqlib_1_1math_1_1complex_1a8b365d2760802f1318e02c78c8938d2f" kindref="member">magnitude</ref>(){</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(f32)sqrt(abs(<ref refid="classqlib_1_1math_1_1complex_1ad1a8ab1ad95a47206e72d3a0d7be9511" kindref="member">sqrMagnitude</ref>()));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classqlib_1_1math_1_1complex_1a2cfd8546410a48d0568996e40beb85ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="classqlib_1_1math_1_1complex_1a2cfd8546410a48d0568996e40beb85ce" kindref="member">conjugate</ref>(){</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(this-&gt;r,<sp/>-1<sp/>*<sp/>this-&gt;i);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classqlib_1_1math_1_1complex_1a088dcd1f0349632d0930177e95aa4729" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="classqlib_1_1math_1_1complex_1a088dcd1f0349632d0930177e95aa4729" kindref="member">normal</ref>(){</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/>mag<sp/>=<sp/>this-&gt;<ref refid="classqlib_1_1math_1_1complex_1a8b365d2760802f1318e02c78c8938d2f" kindref="member">magnitude</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(this-&gt;r<sp/>/<sp/>mag,<sp/>this-&gt;i<sp/>/<sp/>mag);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="classqlib_1_1math_1_1complex_1a7a670edef0db4264e211e68aea71f0ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1a7a670edef0db4264e211e68aea71f0ec" kindref="member">isPureReal</ref>(){</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;i<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="classqlib_1_1math_1_1complex_1a4465bc164fe2b490c917fc9321530ebb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1a4465bc164fe2b490c917fc9321530ebb" kindref="member">isPureImaginary</ref>(){</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;r<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="classqlib_1_1math_1_1complex_1ad5adb1ac3219404c6abcae92800e839d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ad5adb1ac3219404c6abcae92800e839d" kindref="member">isApproximatelyZero</ref>(){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;r<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>this-&gt;i<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="classqlib_1_1math_1_1complex_1a8dfe4186bdf623e30b1cccb1d0b68951" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1a8dfe4186bdf623e30b1cccb1d0b68951" kindref="member">isApproximatelyOne</ref>(){</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;r<sp/>==<sp/>1<sp/>&amp;&amp;<sp/>this-&gt;i<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="classqlib_1_1math_1_1complex_1a760122d26f377b008e129ff92b134a43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classqlib_1_1math_1_1complex_1a760122d26f377b008e129ff92b134a43" kindref="member">arg</ref>(){</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(f32)atan2(this-&gt;i,<sp/>this-&gt;r);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="classqlib_1_1math_1_1complex_1afd24fadb21a07815675481b131398cff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classqlib_1_1math_1_1complex_1afd24fadb21a07815675481b131398cff" kindref="member">toString</ref>(){</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>sb;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/>this-&gt;r<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>+<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;i<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;i&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sb.str();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
 <codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"></highlight></codeline>
-<codeline lineno="146" refid="namespaceqlib_1_1math_1a750c1f90fa6c3ebec9a635de1d146a5b" refkind="member"><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="namespaceqlib_1_1math_1a750c1f90fa6c3ebec9a635de1d146a5b" kindref="member">operator + </ref>(<ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>a,<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>b){</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>+<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref>,<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>+<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>);</highlight></codeline>
-<codeline lineno="148"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"></highlight></codeline>
-<codeline lineno="153" refid="namespaceqlib_1_1math_1a0824fabde8f47ad8f052b82ce7ffc7ba" refkind="member"><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="namespaceqlib_1_1math_1a0824fabde8f47ad8f052b82ce7ffc7ba" kindref="member">operator - </ref>(<ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>a,<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>b){</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>-<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref>,<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>-<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>);</highlight></codeline>
-<codeline lineno="155"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"></highlight></codeline>
-<codeline lineno="160" refid="namespaceqlib_1_1math_1aab8f60842d892b237625a8215572926a" refkind="member"><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="namespaceqlib_1_1math_1aab8f60842d892b237625a8215572926a" kindref="member">operator * </ref>(f32<sp/>s,<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>a){</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(s<sp/>*<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref>,<sp/>s<sp/>*<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>);</highlight></codeline>
-<codeline lineno="162"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"></highlight></codeline>
-<codeline lineno="167" refid="namespaceqlib_1_1math_1a9cf242a604bfeb647f7700d437b23ad1" refkind="member"><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="namespaceqlib_1_1math_1aab8f60842d892b237625a8215572926a" kindref="member">operator * </ref>(<ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>a,<sp/>f32<sp/>s){</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(s<sp/>*<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref>,<sp/>s<sp/>*<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>);</highlight></codeline>
-<codeline lineno="169"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"></highlight></codeline>
-<codeline lineno="174" refid="namespaceqlib_1_1math_1a07b837d7b7260a52a080a3ce11f28f6d" refkind="member"><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="namespaceqlib_1_1math_1a07b837d7b7260a52a080a3ce11f28f6d" kindref="member">operator / </ref>(<ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>a,<sp/>f32<sp/>s){</highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>/<sp/>s,<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>/<sp/>s);</highlight></codeline>
-<codeline lineno="176"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"></highlight></codeline>
-<codeline lineno="181" refid="namespaceqlib_1_1math_1a511c85d9f0b2a72c4d7ac90a8fe8319b" refkind="member"><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="namespaceqlib_1_1math_1aab8f60842d892b237625a8215572926a" kindref="member">operator * </ref>(<ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>a,<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>b){</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>-<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>,<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>+<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref>);</highlight></codeline>
-<codeline lineno="183"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="184"><highlight class="normal"></highlight></codeline>
-<codeline lineno="188" refid="namespaceqlib_1_1math_1ac7b6b93406f9a81e5187205fa869151f" refkind="member"><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="namespaceqlib_1_1math_1a07b837d7b7260a52a080a3ce11f28f6d" kindref="member">operator / </ref>(<ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>a,<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>b){</highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>f32<sp/>d<sp/>=<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>+<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>;</highlight></codeline>
-<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>=<sp/>(a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>+<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>)<sp/>/<sp/>d;</highlight></codeline>
-<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>=<sp/>(a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>-<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>)<sp/>/<sp/>d;</highlight></codeline>
-<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(r,<sp/>i);</highlight></codeline>
-<codeline lineno="193"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Operators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="namespaceqlib_1_1math_1a750c1f90fa6c3ebec9a635de1d146a5b" refkind="member"><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="namespaceqlib_1_1math_1a750c1f90fa6c3ebec9a635de1d146a5b" kindref="member">operator + </ref>(<ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>a,<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>b){</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>+<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref>,<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>+<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="namespaceqlib_1_1math_1a0824fabde8f47ad8f052b82ce7ffc7ba" refkind="member"><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="namespaceqlib_1_1math_1a0824fabde8f47ad8f052b82ce7ffc7ba" kindref="member">operator - </ref>(<ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>a,<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>b){</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>-<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref>,<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>-<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="namespaceqlib_1_1math_1aab8f60842d892b237625a8215572926a" refkind="member"><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="namespaceqlib_1_1math_1aab8f60842d892b237625a8215572926a" kindref="member">operator * </ref>(f32<sp/>s,<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>a){</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(s<sp/>*<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref>,<sp/>s<sp/>*<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="namespaceqlib_1_1math_1a9cf242a604bfeb647f7700d437b23ad1" refkind="member"><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="namespaceqlib_1_1math_1aab8f60842d892b237625a8215572926a" kindref="member">operator * </ref>(<ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>a,<sp/>f32<sp/>s){</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(s<sp/>*<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref>,<sp/>s<sp/>*<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="namespaceqlib_1_1math_1a07b837d7b7260a52a080a3ce11f28f6d" refkind="member"><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="namespaceqlib_1_1math_1a07b837d7b7260a52a080a3ce11f28f6d" kindref="member">operator / </ref>(<ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>a,<sp/>f32<sp/>s){</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>/<sp/>s,<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>/<sp/>s);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="namespaceqlib_1_1math_1a511c85d9f0b2a72c4d7ac90a8fe8319b" refkind="member"><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="namespaceqlib_1_1math_1aab8f60842d892b237625a8215572926a" kindref="member">operator * </ref>(<ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>a,<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>b){</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>-<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>,<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>+<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref>);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="namespaceqlib_1_1math_1ac7b6b93406f9a81e5187205fa869151f" refkind="member"><highlight class="normal"><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/><ref refid="namespaceqlib_1_1math_1a07b837d7b7260a52a080a3ce11f28f6d" kindref="member">operator / </ref>(<ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>a,<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref><sp/>b){</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>f32<sp/>d<sp/>=<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>+<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>=<sp/>(a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>+<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>)<sp/>/<sp/>d;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>=<sp/>(a.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>-<sp/>a.<ref refid="classqlib_1_1math_1_1complex_1aceb455ba091019bbd625fdaf529a0107" kindref="member">r</ref><sp/>*<sp/>b.<ref refid="classqlib_1_1math_1_1complex_1a4d599b5885fd37c300cdb79433356bb5" kindref="member">i</ref>)<sp/>/<sp/>d;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1math_1_1complex_1ab644fd7573e2bdbbfc02cf95b3fcdf62" kindref="member">complex</ref>(r,<sp/>i);</highlight></codeline>
 <codeline lineno="195"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="197"><highlight class="normal"></highlight></codeline>
-<codeline lineno="198"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="src/core/math/complex.hpp"/>
   </compounddef>

@@ -85,14 +85,14 @@
 <para>Class for sending files to the QLib runtime executable <simplesect kind="author"><para>halse </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="410">
+      <node id="495">
         <label>qlib.ide.QLibRuntime</label>
         <link refid="classqlib_1_1ide_1_1QLibRuntime"/>
-        <childnode refid="411" relation="usage">
+        <childnode refid="496" relation="usage">
           <edgelabel>QlibPath</edgelabel>
         </childnode>
       </node>
-      <node id="411">
+      <node id="496">
         <label>File</label>
       </node>
     </collaborationgraph>

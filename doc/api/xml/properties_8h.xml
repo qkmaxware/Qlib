@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="properties_8h" kind="file" language="C++">
+    <compoundname>properties.h</compoundname>
+    <includedby refid="qlib_8h" local="yes">src/core/qlib.h</includedby>
+    <invincdepgraph>
+      <node id="1193">
+        <label>src/runtime/main.cpp</label>
+        <link refid="runtime_2main_8cpp"/>
+      </node>
+      <node id="1191">
+        <label>src/runtime/runtime.hpp</label>
+        <link refid="runtime_8hpp"/>
+        <childnode refid="1192" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+        <childnode refid="1194" relation="include">
+        </childnode>
+      </node>
+      <node id="1194">
+        <label>src/runtime/qcircuit_exporter.hpp</label>
+        <link refid="qcircuit__exporter_8hpp"/>
+        <childnode refid="1193" relation="include">
+        </childnode>
+      </node>
+      <node id="1190">
+        <label>src/core/main.cpp</label>
+        <link refid="core_2main_8cpp"/>
+      </node>
+      <node id="1189">
+        <label>src/core/qlib.h</label>
+        <link refid="qlib_8h"/>
+        <childnode refid="1190" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+      </node>
+      <node id="1192">
+        <label>src/runtime/compiler.hpp</label>
+        <link refid="compiler_8hpp"/>
+        <childnode refid="1193" relation="include">
+        </childnode>
+        <childnode refid="1194" relation="include">
+        </childnode>
+      </node>
+      <node id="1188">
+        <label>src/core/general/properties.h</label>
+        <link refid="properties.h"/>
+        <childnode refid="1189" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="properties_8h_1ab14a12e1f849390ce9e44938d68479a8" prot="public" static="no">
+        <name>GETTER</name>
+        <param><defname>t</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>t get##n () { return n; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/general/properties.h" line="4" column="9" bodyfile="src/core/general/properties.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="properties_8h_1a4ed31dd12447552119b00fe1804b3fad" prot="public" static="no">
+        <name>SETTER</name>
+        <param><defname>t</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>void set##n (t value) { n = value; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/general/properties.h" line="5" column="9" bodyfile="src/core/general/properties.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="properties_8h_1a6df9c93dba3468717261cac178562278" prot="public" static="no">
+        <name>GET</name>
+        <param><defname>t</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>t get##n ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/general/properties.h" line="7" column="9" bodyfile="src/core/general/properties.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="properties_8h_1a51f2593a25bc0b5ea1101934f6a9eddc" prot="public" static="no">
+        <name>SET</name>
+        <param><defname>t</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>void set##n (t value)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/general/properties.h" line="8" column="9" bodyfile="src/core/general/properties.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="properties_8h_1abf7440730f06e75c6b48170bfb9d240d" prot="public" static="no">
+        <name>typeof</name>
+        <param><defname>t</defname></param>
+        <param><defname>obj</defname></param>
+        <initializer>(dynamic_cast&lt;t*&gt; (obj) != NULL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/general/properties.h" line="10" column="9" bodyfile="src/core/general/properties.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="properties_8h_1a175833ffa4886a635e63e40b4ef5bd66" prot="public" static="no">
+        <name>typeas</name>
+        <param><defname>t</defname></param>
+        <param><defname>obj</defname></param>
+        <initializer>dynamic_cast&lt;t*&gt; (obj)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/general/properties.h" line="11" column="9" bodyfile="src/core/general/properties.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="properties_8h_1a0852287be3866e6ca5f85e48fca56dfe" prot="public" static="no">
+        <name>print</name>
+        <param><defname>x</defname></param>
+        <initializer>std::cout &lt;&lt; x</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/general/properties.h" line="13" column="9" bodyfile="src/core/general/properties.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="properties_8h_1a5a2feab0ca66b147104d8a9fe75996f2" prot="public" static="no">
+        <name>println</name>
+        <param><defname>x</defname></param>
+        <initializer>std::cout &lt;&lt; x &lt;&lt; std::endl;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/general/properties.h" line="14" column="9" bodyfile="src/core/general/properties.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_CPPPROPERTIES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CPPPROPERTIES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="properties_8h_1ab14a12e1f849390ce9e44938d68479a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GETTER(t,<sp/>n)<sp/>t<sp/>get##n<sp/>()<sp/>{<sp/>return<sp/>n;<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="properties_8h_1a4ed31dd12447552119b00fe1804b3fad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SETTER(t,<sp/>n)<sp/>void<sp/>set##n<sp/>(t<sp/>value)<sp/>{<sp/>n<sp/>=<sp/>value;<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="properties_8h_1a6df9c93dba3468717261cac178562278" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GET(t,<sp/>n)<sp/>t<sp/>get##n<sp/>()<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="properties_8h_1a51f2593a25bc0b5ea1101934f6a9eddc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SET(t,<sp/>n)<sp/>void<sp/>set##n<sp/>(t<sp/>value)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="properties_8h_1abf7440730f06e75c6b48170bfb9d240d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>typeof(t,<sp/>obj)<sp/>(dynamic_cast&lt;t*&gt;<sp/>(obj)<sp/>!=<sp/>NULL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="properties_8h_1a175833ffa4886a635e63e40b4ef5bd66" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>typeas(t,<sp/>obj)<sp/>dynamic_cast&lt;t*&gt;<sp/>(obj)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="properties_8h_1a0852287be3866e6ca5f85e48fca56dfe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>print(x)<sp/>std::cout<sp/>&lt;&lt;<sp/>x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="properties_8h_1a5a2feab0ca66b147104d8a9fe75996f2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>println(x)<sp/>std::cout<sp/>&lt;&lt;<sp/>x<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/core/general/properties.h"/>
+  </compounddef>
+</doxygen>

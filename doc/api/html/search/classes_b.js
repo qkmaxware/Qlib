@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['repeat',['repeat',['../classparser_1_1repeat.html',1,'parser']]],
-  ['repeater',['repeater',['../classparser_1_1repeater.html',1,'parser']]],
-  ['reset',['reset',['../classqasm_1_1exec_1_1reset.html',1,'qasm::exec']]],
-  ['rule',['rule',['../classparser_1_1rule.html',1,'parser']]],
-  ['runtimeexception',['runtimeexception',['../classqasm_1_1runtime_1_1runtimeexception.html',1,'qasm::runtime']]],
-  ['runtimereport',['RuntimeReport',['../classqlib_1_1ide_1_1RuntimeReport.html',1,'qlib::ide']]]
+  ['qlibide',['QLibIDE',['../classqlib_1_1ide_1_1QLibIDE.html',1,'qlib::ide']]],
+  ['qlibruntime',['QLibRuntime',['../classqlib_1_1ide_1_1QLibRuntime.html',1,'qlib::ide']]],
+  ['qreg',['qreg',['../classqlib_1_1quantum_1_1qreg.html',1,'qlib::quantum']]],
+  ['qsystem',['qsystem',['../classqlib_1_1quantum_1_1qsystem.html',1,'qlib::quantum']]],
+  ['quantumfouriertransform',['quantumFourierTransform',['../classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform.html',1,'qlib::quantum::gates']]],
+  ['qubit',['qubit',['../classqlib_1_1quantum_1_1qubit.html',1,'qlib::quantum']]]
 ];

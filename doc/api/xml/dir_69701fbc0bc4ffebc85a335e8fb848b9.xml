@@ -2,7 +2,9 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
   <compounddef id="dir_69701fbc0bc4ffebc85a335e8fb848b9" kind="dir">
     <compoundname>src/core/general</compoundname>
+    <innerfile refid="constants_8h">constants.h</innerfile>
     <innerfile refid="object_8hpp">object.hpp</innerfile>
+    <innerfile refid="properties_8h">properties.h</innerfile>
     <innerfile refid="types_8h">types.h</innerfile>
     <briefdescription>
     </briefdescription>

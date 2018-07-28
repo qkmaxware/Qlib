@@ -98,57 +98,57 @@
     <detaileddescription>
 <para>Internal class to represent tab data </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="470">
+      <node id="577">
         <label>JPanel</label>
       </node>
-      <node id="468">
+      <node id="575">
         <label>qlib.ide.FileManager.Tab</label>
         <link refid="classqlib_1_1ide_1_1FileManager_1_1Tab"/>
-        <childnode refid="469" relation="usage">
+        <childnode refid="576" relation="usage">
           <edgelabel>editor</edgelabel>
         </childnode>
-        <childnode refid="476" relation="usage">
+        <childnode refid="583" relation="usage">
           <edgelabel>panel</edgelabel>
         </childnode>
       </node>
-      <node id="473">
+      <node id="580">
         <label>JTextPane</label>
       </node>
-      <node id="475">
+      <node id="582">
         <label>LinkedList&lt; qlib.ide.CodeEditor.ChangeListener &gt;</label>
       </node>
-      <node id="472">
+      <node id="579">
         <label>DefaultStyledDocument</label>
       </node>
-      <node id="471">
+      <node id="578">
         <label>AttributeSet</label>
       </node>
-      <node id="474">
+      <node id="581">
         <label>LinkedList&lt; qlib.ide.CodeEditor.Style &gt;</label>
       </node>
-      <node id="469">
+      <node id="576">
         <label>qlib.ide.CodeEditor</label>
         <link refid="classqlib_1_1ide_1_1CodeEditor"/>
-        <childnode refid="470" relation="public-inheritance">
+        <childnode refid="577" relation="public-inheritance">
         </childnode>
-        <childnode refid="471" relation="usage">
+        <childnode refid="578" relation="usage">
           <edgelabel>none</edgelabel>
         </childnode>
-        <childnode refid="472" relation="usage">
+        <childnode refid="579" relation="usage">
           <edgelabel>doc</edgelabel>
         </childnode>
-        <childnode refid="473" relation="usage">
+        <childnode refid="580" relation="usage">
           <edgelabel>numbers</edgelabel>
           <edgelabel>editor</edgelabel>
         </childnode>
-        <childnode refid="474" relation="usage">
+        <childnode refid="581" relation="usage">
           <edgelabel>styles</edgelabel>
         </childnode>
-        <childnode refid="475" relation="usage">
+        <childnode refid="582" relation="usage">
           <edgelabel>onChangeListeners</edgelabel>
         </childnode>
       </node>
-      <node id="476">
+      <node id="583">
         <label>JScrollPane</label>
       </node>
     </collaborationgraph>

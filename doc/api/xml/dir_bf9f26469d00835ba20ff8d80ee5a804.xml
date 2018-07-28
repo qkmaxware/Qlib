@@ -2,13 +2,17 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
   <compounddef id="dir_bf9f26469d00835ba20ff8d80ee5a804" kind="dir">
     <compoundname>src/runtime</compoundname>
+    <innerfile refid="argparser_8hpp">argparser.hpp</innerfile>
+    <innerfile refid="colour_8hpp">colour.hpp</innerfile>
     <innerfile refid="compiler_8hpp">compiler.hpp</innerfile>
     <innerfile refid="lexer_8hpp">lexer.hpp</innerfile>
     <innerfile refid="runtime_2main_8cpp">main.cpp</innerfile>
     <innerfile refid="parser_8hpp">parser.hpp</innerfile>
+    <innerfile refid="qcircuit__exporter_8hpp">qcircuit_exporter.hpp</innerfile>
     <innerfile refid="runtime_8hpp">runtime.hpp</innerfile>
     <innerfile refid="scanner_8hpp">scanner.hpp</innerfile>
     <innerfile refid="smartptr_8hpp">smartptr.hpp</innerfile>
+    <innerfile refid="svg_8hpp">svg.hpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

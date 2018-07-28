@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="constants_8h" kind="file" language="C++">
+    <compoundname>constants.h</compoundname>
+    <includes local="no">math.h</includes>
+    <includes local="no">cmath</includes>
+    <includedby refid="qlib_8h" local="yes">src/core/qlib.h</includedby>
+    <includedby refid="phase_8hpp" local="yes">src/core/quantum/gates/phase.hpp</includedby>
+    <includedby refid="qft_8hpp" local="yes">src/core/quantum/gates/qft.hpp</includedby>
+    <incdepgraph>
+      <node id="1136">
+        <label>src/core/general/constants.h</label>
+        <link refid="constants.h"/>
+        <childnode refid="1137" relation="include">
+        </childnode>
+        <childnode refid="1138" relation="include">
+        </childnode>
+      </node>
+      <node id="1138">
+        <label>cmath</label>
+      </node>
+      <node id="1137">
+        <label>math.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1148">
+        <label>src/core/quantum/gates/qft.hpp</label>
+        <link refid="qft_8hpp"/>
+        <childnode refid="1147" relation="include">
+        </childnode>
+      </node>
+      <node id="1144">
+        <label>src/runtime/main.cpp</label>
+        <link refid="runtime_2main_8cpp"/>
+      </node>
+      <node id="1142">
+        <label>src/runtime/runtime.hpp</label>
+        <link refid="runtime_8hpp"/>
+        <childnode refid="1143" relation="include">
+        </childnode>
+        <childnode refid="1144" relation="include">
+        </childnode>
+        <childnode refid="1145" relation="include">
+        </childnode>
+      </node>
+      <node id="1139">
+        <label>src/core/general/constants.h</label>
+        <link refid="constants.h"/>
+        <childnode refid="1140" relation="include">
+        </childnode>
+        <childnode refid="1146" relation="include">
+        </childnode>
+        <childnode refid="1148" relation="include">
+        </childnode>
+      </node>
+      <node id="1146">
+        <label>src/core/quantum/gates/phase.hpp</label>
+        <link refid="phase_8hpp"/>
+        <childnode refid="1147" relation="include">
+        </childnode>
+      </node>
+      <node id="1145">
+        <label>src/runtime/qcircuit_exporter.hpp</label>
+        <link refid="qcircuit__exporter_8hpp"/>
+        <childnode refid="1144" relation="include">
+        </childnode>
+      </node>
+      <node id="1141">
+        <label>src/core/main.cpp</label>
+        <link refid="core_2main_8cpp"/>
+      </node>
+      <node id="1140">
+        <label>src/core/qlib.h</label>
+        <link refid="qlib_8h"/>
+        <childnode refid="1141" relation="include">
+        </childnode>
+        <childnode refid="1142" relation="include">
+        </childnode>
+        <childnode refid="1144" relation="include">
+        </childnode>
+      </node>
+      <node id="1143">
+        <label>src/runtime/compiler.hpp</label>
+        <link refid="compiler_8hpp"/>
+        <childnode refid="1144" relation="include">
+        </childnode>
+        <childnode refid="1145" relation="include">
+        </childnode>
+      </node>
+      <node id="1147">
+        <label>src/core/quantum/standard_gates.hpp</label>
+        <link refid="standard__gates_8hpp"/>
+        <childnode refid="1140" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="constants_8h_1ae71449b1cc6e6250b91f539153a7a0d3" prot="public" static="no">
+        <name>M_PI</name>
+        <initializer>3.14159265358979323846</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/general/constants.h" line="5" column="13" bodyfile="src/core/general/constants.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_PI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="constants_8h_1ae71449b1cc6e6250b91f539153a7a0d3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>M_PI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3.14159265358979323846</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/core/general/constants.h"/>
+  </compounddef>
+</doxygen>

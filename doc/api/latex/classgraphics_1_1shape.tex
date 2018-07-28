@@ -1,0 +1,162 @@
+\hypertarget{classgraphics_1_1shape}{}\section{graphics\+:\+:shape Class Reference}
+\label{classgraphics_1_1shape}\index{graphics\+::shape@{graphics\+::shape}}
+
+
+{\ttfamily \#include $<$svg.\+hpp$>$}
+
+
+
+Inheritance diagram for graphics\+:\+:shape\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgraphics_1_1shape__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for graphics\+:\+:shape\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classgraphics_1_1shape__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgraphics_1_1shape_a4bb20a9261038c87fe3a30e2bad5bd49}{shape} ()
+\item 
+virtual \hyperlink{classgraphics_1_1shape_a1ce13e65926bca4f7690859647f6e3ef}{$\sim$shape} ()
+\item 
+virtual \hyperlink{classgraphics_1_1bounds}{bounds} \& \hyperlink{classgraphics_1_1shape_a948bd22d258ce2122b81c7385a315596}{get\+Extents} ()=0
+\item 
+virtual std\+::string \hyperlink{classgraphics_1_1shape_a171a3bc288e0633c109571d908033b56}{encode} ()
+\item 
+void \hyperlink{classgraphics_1_1shape_a61805bb768ea7f4e817317c9bfee519d}{set\+Stroke\+Width} (size\+\_\+t t)
+\item 
+size\+\_\+t \hyperlink{classgraphics_1_1shape_a66fed3c60869f6d37d5bb2bfd9f0e1dc}{get\+Stroke\+Width} ()
+\item 
+void \hyperlink{classgraphics_1_1shape_abe791443e0323b0719c16c42d9ee0e2e}{set\+Stroke} (\hyperlink{structgraphics_1_1colour}{colour} s)
+\item 
+void \hyperlink{classgraphics_1_1shape_a4faba733e9a95685f22e283143488104}{set\+Fill} (\hyperlink{structgraphics_1_1colour}{colour} f)
+\item 
+\hyperlink{structgraphics_1_1colour}{colour} \& \hyperlink{classgraphics_1_1shape_afa69ccf80e9ea6b2effef9e2f2360c19}{get\+Stroke} ()
+\item 
+\hyperlink{structgraphics_1_1colour}{colour} \& \hyperlink{classgraphics_1_1shape_a31e32379425b32042d6aa49716c1db30}{get\+Fill} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structgraphics_1_1colour}{colour} \hyperlink{classgraphics_1_1shape_a3469d2d41634a0b8910375b00c3b66a2}{stroke}
+\item 
+\hyperlink{structgraphics_1_1colour}{colour} \hyperlink{classgraphics_1_1shape_a05833e89a21bbf3a65ee8d4e0a65e3b6}{fill}
+\item 
+size\+\_\+t \hyperlink{classgraphics_1_1shape_ae17f4db0be20c3b4eaf98544dc3856b4}{stroke\+\_\+width}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describes an abstact shape 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{graphics\+::shape@{graphics\+::shape}!shape@{shape}}
+\index{shape@{shape}!graphics\+::shape@{graphics\+::shape}}
+\subsubsection[{\texorpdfstring{shape()}{shape()}}]{\setlength{\rightskip}{0pt plus 5cm}graphics\+::shape\+::shape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgraphics_1_1shape_a4bb20a9261038c87fe3a30e2bad5bd49}{}\label{classgraphics_1_1shape_a4bb20a9261038c87fe3a30e2bad5bd49}
+\index{graphics\+::shape@{graphics\+::shape}!````~shape@{$\sim$shape}}
+\index{````~shape@{$\sim$shape}!graphics\+::shape@{graphics\+::shape}}
+\subsubsection[{\texorpdfstring{$\sim$shape()}{~shape()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual graphics\+::shape\+::$\sim$shape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classgraphics_1_1shape_a1ce13e65926bca4f7690859647f6e3ef}{}\label{classgraphics_1_1shape_a1ce13e65926bca4f7690859647f6e3ef}
+
+
+\subsection{Member Function Documentation}
+\index{graphics\+::shape@{graphics\+::shape}!encode@{encode}}
+\index{encode@{encode}!graphics\+::shape@{graphics\+::shape}}
+\subsubsection[{\texorpdfstring{encode()}{encode()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string graphics\+::shape\+::encode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classgraphics_1_1shape_a171a3bc288e0633c109571d908033b56}{}\label{classgraphics_1_1shape_a171a3bc288e0633c109571d908033b56}
+
+
+Reimplemented in \hyperlink{classgraphics_1_1text_ac0490468cfb45df1daa8a4e959624164}{graphics\+::text}, \hyperlink{classgraphics_1_1rect_a6159acaa20093969c92bf6d845448661}{graphics\+::rect}, \hyperlink{classgraphics_1_1polygon_accef210e1de0bbdbe333ac2e19e4d951}{graphics\+::polygon}, \hyperlink{classgraphics_1_1polyline_a4b21b290bd04cccef24f8cb4a85299f2}{graphics\+::polyline}, and \hyperlink{classgraphics_1_1line_abb6a2d1e6d2c9fdd8d26bae1c15f5356}{graphics\+::line}.
+
+\index{graphics\+::shape@{graphics\+::shape}!get\+Extents@{get\+Extents}}
+\index{get\+Extents@{get\+Extents}!graphics\+::shape@{graphics\+::shape}}
+\subsubsection[{\texorpdfstring{get\+Extents()=0}{getExtents()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf bounds}\& graphics\+::shape\+::get\+Extents (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgraphics_1_1shape_a948bd22d258ce2122b81c7385a315596}{}\label{classgraphics_1_1shape_a948bd22d258ce2122b81c7385a315596}
+
+
+Implemented in \hyperlink{classgraphics_1_1text_ac17a62fe9b926674edf94fc5256b71ae}{graphics\+::text}, \hyperlink{classgraphics_1_1rect_a2ad3d898075aec152c247815bb62833c}{graphics\+::rect}, \hyperlink{classgraphics_1_1polyline_a5d1bb7507881d2d755d6779c9d7f8dbc}{graphics\+::polyline}, and \hyperlink{classgraphics_1_1line_a73ce35db1d98c6bd869a8bef10d8e1bd}{graphics\+::line}.
+
+\index{graphics\+::shape@{graphics\+::shape}!get\+Fill@{get\+Fill}}
+\index{get\+Fill@{get\+Fill}!graphics\+::shape@{graphics\+::shape}}
+\subsubsection[{\texorpdfstring{get\+Fill()}{getFill()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf colour}\& graphics\+::shape\+::get\+Fill (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgraphics_1_1shape_a31e32379425b32042d6aa49716c1db30}{}\label{classgraphics_1_1shape_a31e32379425b32042d6aa49716c1db30}
+\index{graphics\+::shape@{graphics\+::shape}!get\+Stroke@{get\+Stroke}}
+\index{get\+Stroke@{get\+Stroke}!graphics\+::shape@{graphics\+::shape}}
+\subsubsection[{\texorpdfstring{get\+Stroke()}{getStroke()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf colour}\& graphics\+::shape\+::get\+Stroke (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgraphics_1_1shape_afa69ccf80e9ea6b2effef9e2f2360c19}{}\label{classgraphics_1_1shape_afa69ccf80e9ea6b2effef9e2f2360c19}
+\index{graphics\+::shape@{graphics\+::shape}!get\+Stroke\+Width@{get\+Stroke\+Width}}
+\index{get\+Stroke\+Width@{get\+Stroke\+Width}!graphics\+::shape@{graphics\+::shape}}
+\subsubsection[{\texorpdfstring{get\+Stroke\+Width()}{getStrokeWidth()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t graphics\+::shape\+::get\+Stroke\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgraphics_1_1shape_a66fed3c60869f6d37d5bb2bfd9f0e1dc}{}\label{classgraphics_1_1shape_a66fed3c60869f6d37d5bb2bfd9f0e1dc}
+\index{graphics\+::shape@{graphics\+::shape}!set\+Fill@{set\+Fill}}
+\index{set\+Fill@{set\+Fill}!graphics\+::shape@{graphics\+::shape}}
+\subsubsection[{\texorpdfstring{set\+Fill(colour f)}{setFill(colour f)}}]{\setlength{\rightskip}{0pt plus 5cm}void graphics\+::shape\+::set\+Fill (
+\begin{DoxyParamCaption}
+\item[{{\bf colour}}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgraphics_1_1shape_a4faba733e9a95685f22e283143488104}{}\label{classgraphics_1_1shape_a4faba733e9a95685f22e283143488104}
+\index{graphics\+::shape@{graphics\+::shape}!set\+Stroke@{set\+Stroke}}
+\index{set\+Stroke@{set\+Stroke}!graphics\+::shape@{graphics\+::shape}}
+\subsubsection[{\texorpdfstring{set\+Stroke(colour s)}{setStroke(colour s)}}]{\setlength{\rightskip}{0pt plus 5cm}void graphics\+::shape\+::set\+Stroke (
+\begin{DoxyParamCaption}
+\item[{{\bf colour}}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgraphics_1_1shape_abe791443e0323b0719c16c42d9ee0e2e}{}\label{classgraphics_1_1shape_abe791443e0323b0719c16c42d9ee0e2e}
+\index{graphics\+::shape@{graphics\+::shape}!set\+Stroke\+Width@{set\+Stroke\+Width}}
+\index{set\+Stroke\+Width@{set\+Stroke\+Width}!graphics\+::shape@{graphics\+::shape}}
+\subsubsection[{\texorpdfstring{set\+Stroke\+Width(size\+\_\+t t)}{setStrokeWidth(size_t t)}}]{\setlength{\rightskip}{0pt plus 5cm}void graphics\+::shape\+::set\+Stroke\+Width (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgraphics_1_1shape_a61805bb768ea7f4e817317c9bfee519d}{}\label{classgraphics_1_1shape_a61805bb768ea7f4e817317c9bfee519d}
+
+
+\subsection{Member Data Documentation}
+\index{graphics\+::shape@{graphics\+::shape}!fill@{fill}}
+\index{fill@{fill}!graphics\+::shape@{graphics\+::shape}}
+\subsubsection[{\texorpdfstring{fill}{fill}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf colour} graphics\+::shape\+::fill\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classgraphics_1_1shape_a05833e89a21bbf3a65ee8d4e0a65e3b6}{}\label{classgraphics_1_1shape_a05833e89a21bbf3a65ee8d4e0a65e3b6}
+\index{graphics\+::shape@{graphics\+::shape}!stroke@{stroke}}
+\index{stroke@{stroke}!graphics\+::shape@{graphics\+::shape}}
+\subsubsection[{\texorpdfstring{stroke}{stroke}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf colour} graphics\+::shape\+::stroke\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classgraphics_1_1shape_a3469d2d41634a0b8910375b00c3b66a2}{}\label{classgraphics_1_1shape_a3469d2d41634a0b8910375b00c3b66a2}
+\index{graphics\+::shape@{graphics\+::shape}!stroke\+\_\+width@{stroke\+\_\+width}}
+\index{stroke\+\_\+width@{stroke\+\_\+width}!graphics\+::shape@{graphics\+::shape}}
+\subsubsection[{\texorpdfstring{stroke\+\_\+width}{stroke_width}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t graphics\+::shape\+::stroke\+\_\+width\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classgraphics_1_1shape_ae17f4db0be20c3b4eaf98544dc3856b4}{}\label{classgraphics_1_1shape_ae17f4db0be20c3b4eaf98544dc3856b4}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{svg_8hpp}{svg.\+hpp}\end{DoxyCompactItemize}

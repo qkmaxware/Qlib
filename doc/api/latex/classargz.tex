@@ -1,0 +1,72 @@
+\hypertarget{classargz}{}\section{argz Class Reference}
+\label{classargz}\index{argz@{argz}}
+
+
+{\ttfamily \#include $<$argparser.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classargz_a944cd1bfad40f39e4dcd781f48d8a903}{argz} (int arg\+\_\+count, char $\ast$arg\+\_\+values\mbox{[}$\,$\mbox{]})
+\item 
+bool \hyperlink{classargz_ab9c76400c455fd77c84b063e21313826}{has\+Flag} (std\+::string flag)
+\item 
+bool \hyperlink{classargz_a19eb5bdb61687c369cc6ca1df3e9f4f0}{has\+Parameter\+For} (std\+::string flag)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classargz_a5368a7c00a82a6cab03ac6bf61f91d8a}{arguments}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classargz_a97f74aab2350165bd2e2b00e840f8be0}{flags}
+\item 
+std\+::map$<$ std\+::string, std\+::string $>$ \hyperlink{classargz_ac89e44a2a4910e94e28d06d12c6a95f7}{parameters}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class used to help parse command line parameters 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{argz@{argz}!argz@{argz}}
+\index{argz@{argz}!argz@{argz}}
+\subsubsection[{\texorpdfstring{argz(int arg\+\_\+count, char $\ast$arg\+\_\+values[])}{argz(int arg_count, char *arg_values[])}}]{\setlength{\rightskip}{0pt plus 5cm}argz\+::argz (
+\begin{DoxyParamCaption}
+\item[{int}]{arg\+\_\+count, }
+\item[{char $\ast$}]{arg\+\_\+values\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classargz_a944cd1bfad40f39e4dcd781f48d8a903}{}\label{classargz_a944cd1bfad40f39e4dcd781f48d8a903}
+Parse given command line parameters 
+
+\subsection{Member Function Documentation}
+\index{argz@{argz}!has\+Flag@{has\+Flag}}
+\index{has\+Flag@{has\+Flag}!argz@{argz}}
+\subsubsection[{\texorpdfstring{has\+Flag(std\+::string flag)}{hasFlag(std::string flag)}}]{\setlength{\rightskip}{0pt plus 5cm}bool argz\+::has\+Flag (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classargz_ab9c76400c455fd77c84b063e21313826}{}\label{classargz_ab9c76400c455fd77c84b063e21313826}
+Test if a flag has been set \index{argz@{argz}!has\+Parameter\+For@{has\+Parameter\+For}}
+\index{has\+Parameter\+For@{has\+Parameter\+For}!argz@{argz}}
+\subsubsection[{\texorpdfstring{has\+Parameter\+For(std\+::string flag)}{hasParameterFor(std::string flag)}}]{\setlength{\rightskip}{0pt plus 5cm}bool argz\+::has\+Parameter\+For (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classargz_a19eb5bdb61687c369cc6ca1df3e9f4f0}{}\label{classargz_a19eb5bdb61687c369cc6ca1df3e9f4f0}
+Test if a given flag has an associated value 
+
+\subsection{Member Data Documentation}
+\index{argz@{argz}!arguments@{arguments}}
+\index{arguments@{arguments}!argz@{argz}}
+\subsubsection[{\texorpdfstring{arguments}{arguments}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ argz\+::arguments}\hypertarget{classargz_a5368a7c00a82a6cab03ac6bf61f91d8a}{}\label{classargz_a5368a7c00a82a6cab03ac6bf61f91d8a}
+Command line arguments. Arguments are words without leading \textquotesingle{}-\/\textquotesingle{} \index{argz@{argz}!flags@{flags}}
+\index{flags@{flags}!argz@{argz}}
+\subsubsection[{\texorpdfstring{flags}{flags}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ argz\+::flags}\hypertarget{classargz_a97f74aab2350165bd2e2b00e840f8be0}{}\label{classargz_a97f74aab2350165bd2e2b00e840f8be0}
+Command line flags. Flags are words with leading \textquotesingle{}-\/\textquotesingle{} \index{argz@{argz}!parameters@{parameters}}
+\index{parameters@{parameters}!argz@{argz}}
+\subsubsection[{\texorpdfstring{parameters}{parameters}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$std\+::string, std\+::string$>$ argz\+::parameters}\hypertarget{classargz_ac89e44a2a4910e94e28d06d12c6a95f7}{}\label{classargz_ac89e44a2a4910e94e28d06d12c6a95f7}
+Command line parameters. Parameters are values in the pattern -\/flag=value 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/runtime/\hyperlink{argparser_8hpp}{argparser.\+hpp}\end{DoxyCompactItemize}

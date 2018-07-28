@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacegraphics" kind="namespace" language="C++">
+    <compoundname>graphics</compoundname>
+    <innerclass refid="classgraphics_1_1bounds" prot="public">graphics::bounds</innerclass>
+    <innerclass refid="structgraphics_1_1colour" prot="public">graphics::colour</innerclass>
+    <innerclass refid="classgraphics_1_1line" prot="public">graphics::line</innerclass>
+    <innerclass refid="classgraphics_1_1polygon" prot="public">graphics::polygon</innerclass>
+    <innerclass refid="classgraphics_1_1polyline" prot="public">graphics::polyline</innerclass>
+    <innerclass refid="classgraphics_1_1rect" prot="public">graphics::rect</innerclass>
+    <innerclass refid="classgraphics_1_1shape" prot="public">graphics::shape</innerclass>
+    <innerclass refid="classgraphics_1_1svg" prot="public">graphics::svg</innerclass>
+    <innerclass refid="classgraphics_1_1text" prot="public">graphics::text</innerclass>
+    <innernamespace refid="namespacegraphics_1_1colours">graphics::colours</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/runtime/colour.hpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

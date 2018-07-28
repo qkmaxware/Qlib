@@ -16,7 +16,7 @@
 <para>Name of gate to apply </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="194" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="194" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="221" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="221" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classqasm_1_1exec_1_1apply__gate_1afa925dd76a3c14f5a3739bbd1ab20258" prot="public" static="no" mutable="no">
         <type>std::vector&lt; std::string &gt;</type>
@@ -29,7 +29,7 @@
 <para>Name of registers to apply to (should be all the same) </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="198" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="198" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="225" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="225" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classqasm_1_1exec_1_1apply__gate_1a45e00e882c9241a288dae90ae0faa77f" prot="public" static="no" mutable="no">
         <type>std::vector&lt; u64 &gt;</type>
@@ -42,7 +42,7 @@
 <para>Index of each register to apply to </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="202" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="202" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="229" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="229" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="204" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="204" bodyend="204"/>
+        <location file="src/runtime/runtime.hpp" line="231" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="231" bodyend="231"/>
       </memberdef>
       <memberdef kind="function" id="classqasm_1_1exec_1_1apply__gate_1a4ab94a7feee1830b4be52a487e9cdef5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -79,7 +79,7 @@
 <para>Run instruction&apos;s primary operation </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="206" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="206" bodyend="257"/>
+        <location file="src/runtime/runtime.hpp" line="233" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="233" bodyend="284"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -87,30 +87,30 @@
     <detaileddescription>
 <para>Instruction to apply a gate to a register </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="248">
+      <node id="305">
         <label>qasm::exec::apply_gate</label>
         <link refid="classqasm_1_1exec_1_1apply__gate"/>
-        <childnode refid="249" relation="public-inheritance">
+        <childnode refid="306" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="249">
+      <node id="306">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="250">
+      <node id="307">
         <label>qasm::exec::apply_gate</label>
         <link refid="classqasm_1_1exec_1_1apply__gate"/>
-        <childnode refid="251" relation="public-inheritance">
+        <childnode refid="308" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="251">
+      <node id="308">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/runtime.hpp" line="189" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="189" bodyend="258"/>
+    <location file="src/runtime/runtime.hpp" line="216" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="216" bodyend="285"/>
     <listofallmembers>
       <member refid="classqasm_1_1exec_1_1apply__gate_1a0e7787396ea68b95df1e6a395cd21f2e" prot="public" virt="non-virtual"><scope>qasm::exec::apply_gate</scope><name>apply_gate</name></member>
       <member refid="classqasm_1_1exec_1_1apply__gate_1a4ab94a7feee1830b4be52a487e9cdef5" prot="public" virt="virtual"><scope>qasm::exec::apply_gate</scope><name>invoke_rootprogram</name></member>
@@ -118,6 +118,7 @@
       <member refid="classqasm_1_1exec_1_1apply__gate_1a2b5eea4ddab7101ab5353ecd160e0d30" prot="public" virt="non-virtual"><scope>qasm::exec::apply_gate</scope><name>name</name></member>
       <member refid="classqasm_1_1exec_1_1apply__gate_1a45e00e882c9241a288dae90ae0faa77f" prot="public" virt="non-virtual"><scope>qasm::exec::apply_gate</scope><name>param_indecies</name></member>
       <member refid="classqasm_1_1exec_1_1apply__gate_1afa925dd76a3c14f5a3739bbd1ab20258" prot="public" virt="non-virtual"><scope>qasm::exec::apply_gate</scope><name>param_names</name></member>
+      <member refid="classqasm_1_1exec_1_1executable_1acb10539ca9f0d75be23e23ca722ba195" prot="public" virt="virtual"><scope>qasm::exec::apply_gate</scope><name>~executable</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

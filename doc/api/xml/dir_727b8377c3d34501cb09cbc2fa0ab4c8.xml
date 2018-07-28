@@ -15,6 +15,7 @@
     <innerfile refid="pauliY_8hpp">pauliY.hpp</innerfile>
     <innerfile refid="pauliZ_8hpp">pauliZ.hpp</innerfile>
     <innerfile refid="phase_8hpp">phase.hpp</innerfile>
+    <innerfile refid="qft_8hpp">qft.hpp</innerfile>
     <innerfile refid="toffoli_8hpp">toffoli.hpp</innerfile>
     <briefdescription>
     </briefdescription>

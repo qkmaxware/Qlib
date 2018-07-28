@@ -11,63 +11,71 @@
     <includedby refid="parser_8hpp" local="yes">src/runtime/parser.hpp</includedby>
     <includedby refid="runtime_2main_8cpp" local="yes">src/runtime/main.cpp</includedby>
     <incdepgraph>
-      <node id="1818">
+      <node id="2128">
         <label>regex</label>
       </node>
-      <node id="1820">
+      <node id="2130">
         <label>exception</label>
       </node>
-      <node id="1819">
+      <node id="2129">
         <label>vector</label>
       </node>
-      <node id="1821">
+      <node id="2131">
         <label>sstream</label>
       </node>
-      <node id="1817">
+      <node id="2127">
         <label>iostream</label>
       </node>
-      <node id="1816">
+      <node id="2126">
         <label>src/runtime/lexer.hpp</label>
         <link refid="lexer.hpp"/>
-        <childnode refid="1817" relation="include">
+        <childnode refid="2127" relation="include">
         </childnode>
-        <childnode refid="1818" relation="include">
+        <childnode refid="2128" relation="include">
         </childnode>
-        <childnode refid="1819" relation="include">
+        <childnode refid="2129" relation="include">
         </childnode>
-        <childnode refid="1820" relation="include">
+        <childnode refid="2130" relation="include">
         </childnode>
-        <childnode refid="1821" relation="include">
+        <childnode refid="2131" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1824">
+      <node id="2134">
         <label>src/runtime/main.cpp</label>
         <link refid="runtime_2main_8cpp"/>
       </node>
-      <node id="1825">
+      <node id="2135">
+        <label>src/runtime/qcircuit_exporter.hpp</label>
+        <link refid="qcircuit__exporter_8hpp"/>
+        <childnode refid="2134" relation="include">
+        </childnode>
+      </node>
+      <node id="2136">
         <label>src/runtime/parser.hpp</label>
         <link refid="parser_8hpp"/>
-        <childnode refid="1823" relation="include">
+        <childnode refid="2133" relation="include">
         </childnode>
-        <childnode refid="1824" relation="include">
+        <childnode refid="2134" relation="include">
         </childnode>
       </node>
-      <node id="1823">
+      <node id="2133">
         <label>src/runtime/compiler.hpp</label>
         <link refid="compiler_8hpp"/>
-        <childnode refid="1824" relation="include">
+        <childnode refid="2134" relation="include">
+        </childnode>
+        <childnode refid="2135" relation="include">
         </childnode>
       </node>
-      <node id="1822">
+      <node id="2132">
         <label>src/runtime/lexer.hpp</label>
         <link refid="lexer.hpp"/>
-        <childnode refid="1823" relation="include">
+        <childnode refid="2133" relation="include">
         </childnode>
-        <childnode refid="1825" relation="include">
+        <childnode refid="2136" relation="include">
         </childnode>
-        <childnode refid="1824" relation="include">
+        <childnode refid="2134" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -109,7 +117,7 @@
 <codeline lineno="44" refid="structlexical_1_1match_1abf7eca2de9cee016df02265a38666486" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref><sp/><ref refid="structlexical_1_1match_1abf7eca2de9cee016df02265a38666486" kindref="member">row_end</ref>;</highlight></codeline>
 <codeline lineno="48" refid="structlexical_1_1match_1ac9b0f6134b653452a2b0ff8b36c89729" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref><sp/><ref refid="structlexical_1_1match_1ac9b0f6134b653452a2b0ff8b36c89729" kindref="member">column_end</ref>;</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53" refid="structlexical_1_1match_1ace4aee5410296a2cfca192700098891a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlexical_1_1match_1ace4aee5410296a2cfca192700098891a" kindref="member">match</ref>()<sp/>:<sp/>lexemeptr(NULL),<sp/>content(),<sp/>row_start(0),<sp/>row_end(0),<sp/>column_start(0),<sp/>column_end(0)<sp/>{}</highlight></codeline>
+<codeline lineno="53" refid="structlexical_1_1match_1ace4aee5410296a2cfca192700098891a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlexical_1_1match_1ace4aee5410296a2cfca192700098891a" kindref="member">match</ref>()<sp/>:<sp/>lexemeptr(NULL),<sp/>content(),<sp/>row_start(0),<sp/>column_start(0),<sp/>row_end(0),<sp/>column_end(0)<sp/>{}</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58" refid="structlexical_1_1match_1a09ae2bd81b43191fa58ce13c2245b6f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structlexical_1_1match_1a09ae2bd81b43191fa58ce13c2245b6f9" kindref="member">toString</ref>(){</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(content.size()<sp/>&gt;<sp/>0){</highlight></codeline>
@@ -130,7 +138,7 @@
 <codeline lineno="89" refid="classlexical_1_1lexeme_1a2185fc486b1c6c75a57a3e30155eed15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::regex<sp/><ref refid="classlexical_1_1lexeme_1a2185fc486b1c6c75a57a3e30155eed15" kindref="member">rx</ref>;</highlight></codeline>
 <codeline lineno="93" refid="classlexical_1_1lexeme_1accc3564ad951f163e3cf4dd8f93ede15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlexical_1_1lexeme_1accc3564ad951f163e3cf4dd8f93ede15" kindref="member">skippable</ref>;</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="98" refid="classlexical_1_1lexeme_1a2a69e7860946ccb70ab8f8ca0970ca42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme_1a2a69e7860946ccb70ab8f8ca0970ca42" kindref="member">lexeme</ref>(std::string<sp/>name,<sp/>std::string<sp/>pattern):<sp/>skippable(false),<sp/>name(name),<sp/>pattern(pattern),<sp/>rx(pattern)<sp/>{}</highlight></codeline>
+<codeline lineno="98" refid="classlexical_1_1lexeme_1a2a69e7860946ccb70ab8f8ca0970ca42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlexical_1_1lexeme_1a2a69e7860946ccb70ab8f8ca0970ca42" kindref="member">lexeme</ref>(std::string<sp/>name,<sp/>std::string<sp/>pattern):<sp/>name(name),<sp/>pattern(pattern),<sp/>rx(pattern),<sp/>skippable(false)<sp/>{}</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
 <codeline lineno="103" refid="classlexical_1_1lexeme_1a26fd45099f7e056db7f39cd9f222cf97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlexical_1_1lexeme_1a26fd45099f7e056db7f39cd9f222cf97" kindref="member">matches</ref>(std::string::iterator<sp/>begin,<sp/>std::string::iterator<sp/>end){</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::regex_search(begin,<sp/>end,<sp/>rx);</highlight></codeline>

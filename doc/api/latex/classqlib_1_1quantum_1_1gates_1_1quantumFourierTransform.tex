@@ -1,0 +1,101 @@
+\hypertarget{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform}{}\section{qlib\+:\+:quantum\+:\+:gates\+:\+:quantum\+Fourier\+Transform Class Reference}
+\label{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform}\index{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform@{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform}}
+
+
+{\ttfamily \#include $<$qft.\+hpp$>$}
+
+
+
+Inheritance diagram for qlib\+:\+:quantum\+:\+:gates\+:\+:quantum\+Fourier\+Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for qlib\+:\+:quantum\+:\+:gates\+:\+:quantum\+Fourier\+Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a28d08c879986bbf22846ada13f861781}{name} ()
+\item 
+size\+\_\+t \hyperlink{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a08ee18ae7b516c2f77d1f864a010856f}{inputs} ()
+\item 
+void \hyperlink{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a81c62ab7b1edeeb2b01d5f9dacca2bae}{operate} (\hyperlink{classqlib_1_1math_1_1matrix}{matrix} \&in, \hyperlink{classqlib_1_1math_1_1matrix}{matrix} \&out, std\+::vector$<$ u64 $>$ input\+Qubits)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqlib_1_1math_1_1complex}{complex} \hyperlink{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a7a82d35472dc8441b4504c84cd7fc059}{wn} (size\+\_\+t N)
+\item 
+\hyperlink{classqlib_1_1math_1_1complex}{complex} \hyperlink{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a084bab21e50d447e587ef03bd739d4ff}{wn\+Pow} (size\+\_\+t N, size\+\_\+t j)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform@{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform}!inputs@{inputs}}
+\index{inputs@{inputs}!qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform@{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform}}
+\subsubsection[{\texorpdfstring{inputs()}{inputs()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform\+::inputs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a08ee18ae7b516c2f77d1f864a010856f}{}\label{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a08ee18ae7b516c2f77d1f864a010856f}
+
+
+Implements \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate_ac8aa56b0095a94fdd437bc55d90aec9d}{qlib\+::quantum\+::gates\+::igate}.
+
+\index{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform@{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform}!name@{name}}
+\index{name@{name}!qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform@{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform}}
+\subsubsection[{\texorpdfstring{name()}{name()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform\+::name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a28d08c879986bbf22846ada13f861781}{}\label{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a28d08c879986bbf22846ada13f861781}
+
+
+Implements \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate_ae8f8dda69d7742c12c743829abb3662b}{qlib\+::quantum\+::gates\+::igate}.
+
+\index{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform@{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform}!operate@{operate}}
+\index{operate@{operate}!qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform@{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform}}
+\subsubsection[{\texorpdfstring{operate(matrix \&in, matrix \&out, std\+::vector$<$ u64 $>$ input\+Qubits)}{operate(matrix &in, matrix &out, std::vector< u64 > inputQubits)}}]{\setlength{\rightskip}{0pt plus 5cm}void qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform\+::operate (
+\begin{DoxyParamCaption}
+\item[{{\bf matrix} \&}]{in, }
+\item[{{\bf matrix} \&}]{out, }
+\item[{std\+::vector$<$ u64 $>$}]{input\+Qubits}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a81c62ab7b1edeeb2b01d5f9dacca2bae}{}\label{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a81c62ab7b1edeeb2b01d5f9dacca2bae}
+
+
+Implements \hyperlink{classqlib_1_1quantum_1_1gates_1_1igate_a66038ee65fec12c627789505e11f1e23}{qlib\+::quantum\+::gates\+::igate}.
+
+\index{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform@{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform}!wn@{wn}}
+\index{wn@{wn}!qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform@{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform}}
+\subsubsection[{\texorpdfstring{wn(size\+\_\+t N)}{wn(size_t N)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf complex} qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform\+::wn (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{N}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a7a82d35472dc8441b4504c84cd7fc059}{}\label{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a7a82d35472dc8441b4504c84cd7fc059}
+\index{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform@{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform}!wn\+Pow@{wn\+Pow}}
+\index{wn\+Pow@{wn\+Pow}!qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform@{qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform}}
+\subsubsection[{\texorpdfstring{wn\+Pow(size\+\_\+t N, size\+\_\+t j)}{wnPow(size_t N, size_t j)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf complex} qlib\+::quantum\+::gates\+::quantum\+Fourier\+Transform\+::wn\+Pow (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{N, }
+\item[{size\+\_\+t}]{j}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a084bab21e50d447e587ef03bd739d4ff}{}\label{classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform_a084bab21e50d447e587ef03bd739d4ff}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/quantum/gates/\hyperlink{qft_8hpp}{qft.\+hpp}\end{DoxyCompactItemize}

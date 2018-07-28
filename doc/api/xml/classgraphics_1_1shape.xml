@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgraphics_1_1shape" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>graphics::shape</compoundname>
+    <derivedcompoundref refid="classgraphics_1_1line" prot="public" virt="non-virtual">graphics::line</derivedcompoundref>
+    <derivedcompoundref refid="classgraphics_1_1polyline" prot="public" virt="non-virtual">graphics::polyline</derivedcompoundref>
+    <derivedcompoundref refid="classgraphics_1_1rect" prot="public" virt="non-virtual">graphics::rect</derivedcompoundref>
+    <derivedcompoundref refid="classgraphics_1_1text" prot="public" virt="non-virtual">graphics::text</derivedcompoundref>
+    <includes refid="svg_8hpp" local="no">svg.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgraphics_1_1shape_1a3469d2d41634a0b8910375b00c3b66a2" prot="private" static="no" mutable="no">
+        <type><ref refid="structgraphics_1_1colour" kindref="compound">colour</ref></type>
+        <definition>colour graphics::shape::stroke</definition>
+        <argsstring></argsstring>
+        <name>stroke</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="57" column="1" bodyfile="src/runtime/svg.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgraphics_1_1shape_1a05833e89a21bbf3a65ee8d4e0a65e3b6" prot="private" static="no" mutable="no">
+        <type><ref refid="structgraphics_1_1colour" kindref="compound">colour</ref></type>
+        <definition>colour graphics::shape::fill</definition>
+        <argsstring></argsstring>
+        <name>fill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="58" column="1" bodyfile="src/runtime/svg.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgraphics_1_1shape_1ae17f4db0be20c3b4eaf98544dc3856b4" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t graphics::shape::stroke_width</definition>
+        <argsstring></argsstring>
+        <name>stroke_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="59" column="1" bodyfile="src/runtime/svg.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgraphics_1_1shape_1a4bb20a9261038c87fe3a30e2bad5bd49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>graphics::shape::shape</definition>
+        <argsstring>()</argsstring>
+        <name>shape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="61" column="1" bodyfile="src/runtime/svg.hpp" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1shape_1a1ce13e65926bca4f7690859647f6e3ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual graphics::shape::~shape</definition>
+        <argsstring>()</argsstring>
+        <name>~shape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="62" column="1" bodyfile="src/runtime/svg.hpp" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1shape_1a948bd22d258ce2122b81c7385a315596" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classgraphics_1_1bounds" kindref="compound">bounds</ref> &amp;</type>
+        <definition>virtual bounds&amp; graphics::shape::getExtents</definition>
+        <argsstring>()=0</argsstring>
+        <name>getExtents</name>
+        <reimplementedby refid="classgraphics_1_1line_1a73ce35db1d98c6bd869a8bef10d8e1bd">getExtents</reimplementedby>
+        <reimplementedby refid="classgraphics_1_1polyline_1a5d1bb7507881d2d755d6779c9d7f8dbc">getExtents</reimplementedby>
+        <reimplementedby refid="classgraphics_1_1rect_1a2ad3d898075aec152c247815bb62833c">getExtents</reimplementedby>
+        <reimplementedby refid="classgraphics_1_1text_1ac17a62fe9b926674edf94fc5256b71ae">getExtents</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1shape_1a171a3bc288e0633c109571d908033b56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string graphics::shape::encode</definition>
+        <argsstring>()</argsstring>
+        <name>encode</name>
+        <reimplementedby refid="classgraphics_1_1line_1abb6a2d1e6d2c9fdd8d26bae1c15f5356">encode</reimplementedby>
+        <reimplementedby refid="classgraphics_1_1polyline_1a4b21b290bd04cccef24f8cb4a85299f2">encode</reimplementedby>
+        <reimplementedby refid="classgraphics_1_1polygon_1accef210e1de0bbdbe333ac2e19e4d951">encode</reimplementedby>
+        <reimplementedby refid="classgraphics_1_1rect_1a6159acaa20093969c92bf6d845448661">encode</reimplementedby>
+        <reimplementedby refid="classgraphics_1_1text_1ac0490468cfb45df1daa8a4e959624164">encode</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="64" column="1" bodyfile="src/runtime/svg.hpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1shape_1a61805bb768ea7f4e817317c9bfee519d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics::shape::setStrokeWidth</definition>
+        <argsstring>(size_t t)</argsstring>
+        <name>setStrokeWidth</name>
+        <param>
+          <type>size_t</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="66" column="1" bodyfile="src/runtime/svg.hpp" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1shape_1a66fed3c60869f6d37d5bb2bfd9f0e1dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t graphics::shape::getStrokeWidth</definition>
+        <argsstring>()</argsstring>
+        <name>getStrokeWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="70" column="1" bodyfile="src/runtime/svg.hpp" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1shape_1abe791443e0323b0719c16c42d9ee0e2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics::shape::setStroke</definition>
+        <argsstring>(colour s)</argsstring>
+        <name>setStroke</name>
+        <param>
+          <type><ref refid="structgraphics_1_1colour" kindref="compound">colour</ref></type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="74" column="1" bodyfile="src/runtime/svg.hpp" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1shape_1a4faba733e9a95685f22e283143488104" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics::shape::setFill</definition>
+        <argsstring>(colour f)</argsstring>
+        <name>setFill</name>
+        <param>
+          <type><ref refid="structgraphics_1_1colour" kindref="compound">colour</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="78" column="1" bodyfile="src/runtime/svg.hpp" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1shape_1afa69ccf80e9ea6b2effef9e2f2360c19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structgraphics_1_1colour" kindref="compound">colour</ref> &amp;</type>
+        <definition>colour&amp; graphics::shape::getStroke</definition>
+        <argsstring>()</argsstring>
+        <name>getStroke</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="82" column="1" bodyfile="src/runtime/svg.hpp" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1shape_1a31e32379425b32042d6aa49716c1db30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structgraphics_1_1colour" kindref="compound">colour</ref> &amp;</type>
+        <definition>colour&amp; graphics::shape::getFill</definition>
+        <argsstring>()</argsstring>
+        <name>getFill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="86" column="1" bodyfile="src/runtime/svg.hpp" bodystart="86" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Describes an abstact shape </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="563">
+        <label>graphics::rect</label>
+        <link refid="classgraphics_1_1rect"/>
+        <childnode refid="559" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="559">
+        <label>graphics::shape</label>
+        <link refid="classgraphics_1_1shape"/>
+      </node>
+      <node id="560">
+        <label>graphics::line</label>
+        <link refid="classgraphics_1_1line"/>
+        <childnode refid="559" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="561">
+        <label>graphics::polyline</label>
+        <link refid="classgraphics_1_1polyline"/>
+        <childnode refid="559" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="564">
+        <label>graphics::text</label>
+        <link refid="classgraphics_1_1text"/>
+        <childnode refid="559" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="562">
+        <label>graphics::polygon</label>
+        <link refid="classgraphics_1_1polygon"/>
+        <childnode refid="561" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="566">
+        <label>graphics::colour</label>
+        <link refid="structgraphics_1_1colour"/>
+      </node>
+      <node id="565">
+        <label>graphics::shape</label>
+        <link refid="classgraphics_1_1shape"/>
+        <childnode refid="566" relation="usage">
+          <edgelabel>fill</edgelabel>
+          <edgelabel>stroke</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/svg.hpp" line="55" column="1" bodyfile="src/runtime/svg.hpp" bodystart="55" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classgraphics_1_1shape_1a171a3bc288e0633c109571d908033b56" prot="public" virt="virtual"><scope>graphics::shape</scope><name>encode</name></member>
+      <member refid="classgraphics_1_1shape_1a05833e89a21bbf3a65ee8d4e0a65e3b6" prot="private" virt="non-virtual"><scope>graphics::shape</scope><name>fill</name></member>
+      <member refid="classgraphics_1_1shape_1a948bd22d258ce2122b81c7385a315596" prot="public" virt="pure-virtual"><scope>graphics::shape</scope><name>getExtents</name></member>
+      <member refid="classgraphics_1_1shape_1a31e32379425b32042d6aa49716c1db30" prot="public" virt="non-virtual"><scope>graphics::shape</scope><name>getFill</name></member>
+      <member refid="classgraphics_1_1shape_1afa69ccf80e9ea6b2effef9e2f2360c19" prot="public" virt="non-virtual"><scope>graphics::shape</scope><name>getStroke</name></member>
+      <member refid="classgraphics_1_1shape_1a66fed3c60869f6d37d5bb2bfd9f0e1dc" prot="public" virt="non-virtual"><scope>graphics::shape</scope><name>getStrokeWidth</name></member>
+      <member refid="classgraphics_1_1shape_1a4faba733e9a95685f22e283143488104" prot="public" virt="non-virtual"><scope>graphics::shape</scope><name>setFill</name></member>
+      <member refid="classgraphics_1_1shape_1abe791443e0323b0719c16c42d9ee0e2e" prot="public" virt="non-virtual"><scope>graphics::shape</scope><name>setStroke</name></member>
+      <member refid="classgraphics_1_1shape_1a61805bb768ea7f4e817317c9bfee519d" prot="public" virt="non-virtual"><scope>graphics::shape</scope><name>setStrokeWidth</name></member>
+      <member refid="classgraphics_1_1shape_1a4bb20a9261038c87fe3a30e2bad5bd49" prot="public" virt="non-virtual"><scope>graphics::shape</scope><name>shape</name></member>
+      <member refid="classgraphics_1_1shape_1a3469d2d41634a0b8910375b00c3b66a2" prot="private" virt="non-virtual"><scope>graphics::shape</scope><name>stroke</name></member>
+      <member refid="classgraphics_1_1shape_1ae17f4db0be20c3b4eaf98544dc3856b4" prot="private" virt="non-virtual"><scope>graphics::shape</scope><name>stroke_width</name></member>
+      <member refid="classgraphics_1_1shape_1a1ce13e65926bca4f7690859647f6e3ef" prot="public" virt="virtual"><scope>graphics::shape</scope><name>~shape</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgraphics_1_1rect" kind="class" language="C++" prot="public">
+    <compoundname>graphics::rect</compoundname>
+    <basecompoundref refid="classgraphics_1_1shape" prot="public" virt="non-virtual">graphics::shape</basecompoundref>
+    <includes refid="svg_8hpp" local="no">svg.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgraphics_1_1rect_1a4464cd570d0d7d581b9c26c4776ca526" prot="private" static="no" mutable="no">
+        <type><ref refid="classgraphics_1_1bounds" kindref="compound">bounds</ref></type>
+        <definition>bounds graphics::rect::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="221" column="1" bodyfile="src/runtime/svg.hpp" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgraphics_1_1rect_1a0c1597220dfa147768a0ef2e606bf002" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>graphics::rect::rect</definition>
+        <argsstring>(size_t x, size_t y, size_t width, size_t height)</argsstring>
+        <name>rect</name>
+        <param>
+          <type>size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="223" column="1" bodyfile="src/runtime/svg.hpp" bodystart="223" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1rect_1a2ad3d898075aec152c247815bb62833c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classgraphics_1_1bounds" kindref="compound">bounds</ref> &amp;</type>
+        <definition>bounds&amp; graphics::rect::getExtents</definition>
+        <argsstring>()</argsstring>
+        <name>getExtents</name>
+        <reimplements refid="classgraphics_1_1shape_1a948bd22d258ce2122b81c7385a315596">getExtents</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="224" column="1" bodyfile="src/runtime/svg.hpp" bodystart="224" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1rect_1a6159acaa20093969c92bf6d845448661" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string graphics::rect::encode</definition>
+        <argsstring>()</argsstring>
+        <name>encode</name>
+        <reimplements refid="classgraphics_1_1shape_1a171a3bc288e0633c109571d908033b56">encode</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="227" column="1" bodyfile="src/runtime/svg.hpp" bodystart="227" bodyend="240"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Describes a rectangular shape </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="524">
+        <label>graphics::rect</label>
+        <link refid="classgraphics_1_1rect"/>
+        <childnode refid="525" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="525">
+        <label>graphics::shape</label>
+        <link refid="classgraphics_1_1shape"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="526">
+        <label>graphics::rect</label>
+        <link refid="classgraphics_1_1rect"/>
+        <childnode refid="527" relation="public-inheritance">
+        </childnode>
+        <childnode refid="529" relation="usage">
+          <edgelabel>b</edgelabel>
+        </childnode>
+      </node>
+      <node id="528">
+        <label>graphics::colour</label>
+        <link refid="structgraphics_1_1colour"/>
+      </node>
+      <node id="527">
+        <label>graphics::shape</label>
+        <link refid="classgraphics_1_1shape"/>
+        <childnode refid="528" relation="usage">
+          <edgelabel>fill</edgelabel>
+          <edgelabel>stroke</edgelabel>
+        </childnode>
+      </node>
+      <node id="529">
+        <label>graphics::bounds</label>
+        <link refid="classgraphics_1_1bounds"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/svg.hpp" line="219" column="1" bodyfile="src/runtime/svg.hpp" bodystart="219" bodyend="241"/>
+    <listofallmembers>
+      <member refid="classgraphics_1_1rect_1a4464cd570d0d7d581b9c26c4776ca526" prot="private" virt="non-virtual"><scope>graphics::rect</scope><name>b</name></member>
+      <member refid="classgraphics_1_1rect_1a6159acaa20093969c92bf6d845448661" prot="public" virt="virtual"><scope>graphics::rect</scope><name>encode</name></member>
+      <member refid="classgraphics_1_1rect_1a2ad3d898075aec152c247815bb62833c" prot="public" virt="virtual"><scope>graphics::rect</scope><name>getExtents</name></member>
+      <member refid="classgraphics_1_1shape_1a31e32379425b32042d6aa49716c1db30" prot="public" virt="non-virtual"><scope>graphics::rect</scope><name>getFill</name></member>
+      <member refid="classgraphics_1_1shape_1afa69ccf80e9ea6b2effef9e2f2360c19" prot="public" virt="non-virtual"><scope>graphics::rect</scope><name>getStroke</name></member>
+      <member refid="classgraphics_1_1shape_1a66fed3c60869f6d37d5bb2bfd9f0e1dc" prot="public" virt="non-virtual"><scope>graphics::rect</scope><name>getStrokeWidth</name></member>
+      <member refid="classgraphics_1_1rect_1a0c1597220dfa147768a0ef2e606bf002" prot="public" virt="non-virtual"><scope>graphics::rect</scope><name>rect</name></member>
+      <member refid="classgraphics_1_1shape_1a4faba733e9a95685f22e283143488104" prot="public" virt="non-virtual"><scope>graphics::rect</scope><name>setFill</name></member>
+      <member refid="classgraphics_1_1shape_1abe791443e0323b0719c16c42d9ee0e2e" prot="public" virt="non-virtual"><scope>graphics::rect</scope><name>setStroke</name></member>
+      <member refid="classgraphics_1_1shape_1a61805bb768ea7f4e817317c9bfee519d" prot="public" virt="non-virtual"><scope>graphics::rect</scope><name>setStrokeWidth</name></member>
+      <member refid="classgraphics_1_1shape_1a4bb20a9261038c87fe3a30e2bad5bd49" prot="public" virt="non-virtual"><scope>graphics::rect</scope><name>shape</name></member>
+      <member refid="classgraphics_1_1shape_1a1ce13e65926bca4f7690859647f6e3ef" prot="public" virt="virtual"><scope>graphics::rect</scope><name>~shape</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

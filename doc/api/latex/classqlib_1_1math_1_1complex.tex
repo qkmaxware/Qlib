@@ -45,7 +45,9 @@ bool \hyperlink{classqlib_1_1math_1_1complex_a7a670edef0db4264e211e68aea71f0ec}{
 \item 
 bool \hyperlink{classqlib_1_1math_1_1complex_a4465bc164fe2b490c917fc9321530ebb}{is\+Pure\+Imaginary} ()
 \item 
-bool \hyperlink{classqlib_1_1math_1_1complex_ae8f4008d499a05bbebecd48e0bf504d7}{is\+Zero} ()
+bool \hyperlink{classqlib_1_1math_1_1complex_ad5adb1ac3219404c6abcae92800e839d}{is\+Approximately\+Zero} ()
+\item 
+bool \hyperlink{classqlib_1_1math_1_1complex_a8dfe4186bdf623e30b1cccb1d0b68951}{is\+Approximately\+One} ()
 \item 
 f32 \hyperlink{classqlib_1_1math_1_1complex_a760122d26f377b008e129ff92b134a43}{arg} ()
 \item 
@@ -110,7 +112,21 @@ Complex argument \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!conjug
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_a2cfd8546410a48d0568996e40beb85ce}{}\label{classqlib_1_1math_1_1complex_a2cfd8546410a48d0568996e40beb85ce}
-Returns the complex conjugate of this number \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!is\+Pure\+Imaginary@{is\+Pure\+Imaginary}}
+Returns the complex conjugate of this number \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!is\+Approximately\+One@{is\+Approximately\+One}}
+\index{is\+Approximately\+One@{is\+Approximately\+One}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{is\+Approximately\+One()}{isApproximatelyOne()}}]{\setlength{\rightskip}{0pt plus 5cm}bool qlib\+::math\+::complex\+::is\+Approximately\+One (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_a8dfe4186bdf623e30b1cccb1d0b68951}{}\label{classqlib_1_1math_1_1complex_a8dfe4186bdf623e30b1cccb1d0b68951}
+Checks if this complex number is approximately 1 //\+T\+O\+DO \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!is\+Approximately\+Zero@{is\+Approximately\+Zero}}
+\index{is\+Approximately\+Zero@{is\+Approximately\+Zero}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
+\subsubsection[{\texorpdfstring{is\+Approximately\+Zero()}{isApproximatelyZero()}}]{\setlength{\rightskip}{0pt plus 5cm}bool qlib\+::math\+::complex\+::is\+Approximately\+Zero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_ad5adb1ac3219404c6abcae92800e839d}{}\label{classqlib_1_1math_1_1complex_ad5adb1ac3219404c6abcae92800e839d}
+Checks if this complex number is approximately 0 //\+T\+O\+DO \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!is\+Pure\+Imaginary@{is\+Pure\+Imaginary}}
 \index{is\+Pure\+Imaginary@{is\+Pure\+Imaginary}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
 \subsubsection[{\texorpdfstring{is\+Pure\+Imaginary()}{isPureImaginary()}}]{\setlength{\rightskip}{0pt plus 5cm}bool qlib\+::math\+::complex\+::is\+Pure\+Imaginary (
 \begin{DoxyParamCaption}
@@ -124,14 +140,7 @@ Checks if this complex number can be represented as a purely imaginary number \i
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_a7a670edef0db4264e211e68aea71f0ec}{}\label{classqlib_1_1math_1_1complex_a7a670edef0db4264e211e68aea71f0ec}
-Checks if this complex number can be represented as a purely real number \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!is\+Zero@{is\+Zero}}
-\index{is\+Zero@{is\+Zero}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
-\subsubsection[{\texorpdfstring{is\+Zero()}{isZero()}}]{\setlength{\rightskip}{0pt plus 5cm}bool qlib\+::math\+::complex\+::is\+Zero (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1complex_ae8f4008d499a05bbebecd48e0bf504d7}{}\label{classqlib_1_1math_1_1complex_ae8f4008d499a05bbebecd48e0bf504d7}
-Checks if this complex number is zero \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!magnitude@{magnitude}}
+Checks if this complex number can be represented as a purely real number \index{qlib\+::math\+::complex@{qlib\+::math\+::complex}!magnitude@{magnitude}}
 \index{magnitude@{magnitude}!qlib\+::math\+::complex@{qlib\+::math\+::complex}}
 \subsubsection[{\texorpdfstring{magnitude()}{magnitude()}}]{\setlength{\rightskip}{0pt plus 5cm}f32 qlib\+::math\+::complex\+::magnitude (
 \begin{DoxyParamCaption}

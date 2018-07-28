@@ -21,5 +21,6 @@ var dir_727b8377c3d34501cb09cbc2fa0ab4c8 =
     [ "pauliY.hpp", "pauliY_8hpp.html", "pauliY_8hpp" ],
     [ "pauliZ.hpp", "pauliZ_8hpp.html", "pauliZ_8hpp" ],
     [ "phase.hpp", "phase_8hpp.html", "phase_8hpp" ],
+    [ "qft.hpp", "qft_8hpp.html", "qft_8hpp" ],
     [ "toffoli.hpp", "toffoli_8hpp.html", "toffoli_8hpp" ]
 ];

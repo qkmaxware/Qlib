@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgraphics_1_1line" kind="class" language="C++" prot="public">
+    <compoundname>graphics::line</compoundname>
+    <basecompoundref refid="classgraphics_1_1shape" prot="public" virt="non-virtual">graphics::shape</basecompoundref>
+    <includes refid="svg_8hpp" local="no">svg.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgraphics_1_1line_1a9f017c004983fbfa5c21d88b8b29d5de" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t graphics::line::sx</definition>
+        <argsstring></argsstring>
+        <name>sx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="96" column="1" bodyfile="src/runtime/svg.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgraphics_1_1line_1ac4c6f1e0eccd02b3399d091736c0903c" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t graphics::line::sy</definition>
+        <argsstring></argsstring>
+        <name>sy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="97" column="1" bodyfile="src/runtime/svg.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgraphics_1_1line_1ac3cc564cf12b6001ff01569dd46074a1" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t graphics::line::ex</definition>
+        <argsstring></argsstring>
+        <name>ex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="98" column="1" bodyfile="src/runtime/svg.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgraphics_1_1line_1a3ec687141bc383f58256cd3e4f614b55" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t graphics::line::ey</definition>
+        <argsstring></argsstring>
+        <name>ey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="99" column="1" bodyfile="src/runtime/svg.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgraphics_1_1line_1ab8b7e54fde92e99de480b3ce9d8a167f" prot="private" static="no" mutable="no">
+        <type><ref refid="classgraphics_1_1bounds" kindref="compound">bounds</ref></type>
+        <definition>bounds graphics::line::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="100" column="1" bodyfile="src/runtime/svg.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgraphics_1_1line_1a4473fc0ec2635c877b91b338a78e4ac8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>graphics::line::line</definition>
+        <argsstring>(size_t startX, size_t startY, size_t endX, size_t endY)</argsstring>
+        <name>line</name>
+        <param>
+          <type>size_t</type>
+          <declname>startX</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>startY</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>endX</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>endY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="102" column="1" bodyfile="src/runtime/svg.hpp" bodystart="102" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1line_1a73ce35db1d98c6bd869a8bef10d8e1bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classgraphics_1_1bounds" kindref="compound">bounds</ref> &amp;</type>
+        <definition>bounds&amp; graphics::line::getExtents</definition>
+        <argsstring>()</argsstring>
+        <name>getExtents</name>
+        <reimplements refid="classgraphics_1_1shape_1a948bd22d258ce2122b81c7385a315596">getExtents</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="111" column="1" bodyfile="src/runtime/svg.hpp" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1line_1abb6a2d1e6d2c9fdd8d26bae1c15f5356" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string graphics::line::encode</definition>
+        <argsstring>()</argsstring>
+        <name>encode</name>
+        <reimplements refid="classgraphics_1_1shape_1a171a3bc288e0633c109571d908033b56">encode</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="114" column="1" bodyfile="src/runtime/svg.hpp" bodystart="114" bodyend="125"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Describes a line between 2 points </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="422">
+        <label>graphics::shape</label>
+        <link refid="classgraphics_1_1shape"/>
+      </node>
+      <node id="421">
+        <label>graphics::line</label>
+        <link refid="classgraphics_1_1line"/>
+        <childnode refid="422" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="425">
+        <label>graphics::colour</label>
+        <link refid="structgraphics_1_1colour"/>
+      </node>
+      <node id="424">
+        <label>graphics::shape</label>
+        <link refid="classgraphics_1_1shape"/>
+        <childnode refid="425" relation="usage">
+          <edgelabel>fill</edgelabel>
+          <edgelabel>stroke</edgelabel>
+        </childnode>
+      </node>
+      <node id="423">
+        <label>graphics::line</label>
+        <link refid="classgraphics_1_1line"/>
+        <childnode refid="424" relation="public-inheritance">
+        </childnode>
+        <childnode refid="426" relation="usage">
+          <edgelabel>b</edgelabel>
+        </childnode>
+      </node>
+      <node id="426">
+        <label>graphics::bounds</label>
+        <link refid="classgraphics_1_1bounds"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/svg.hpp" line="94" column="1" bodyfile="src/runtime/svg.hpp" bodystart="94" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classgraphics_1_1line_1ab8b7e54fde92e99de480b3ce9d8a167f" prot="private" virt="non-virtual"><scope>graphics::line</scope><name>b</name></member>
+      <member refid="classgraphics_1_1line_1abb6a2d1e6d2c9fdd8d26bae1c15f5356" prot="public" virt="virtual"><scope>graphics::line</scope><name>encode</name></member>
+      <member refid="classgraphics_1_1line_1ac3cc564cf12b6001ff01569dd46074a1" prot="private" virt="non-virtual"><scope>graphics::line</scope><name>ex</name></member>
+      <member refid="classgraphics_1_1line_1a3ec687141bc383f58256cd3e4f614b55" prot="private" virt="non-virtual"><scope>graphics::line</scope><name>ey</name></member>
+      <member refid="classgraphics_1_1line_1a73ce35db1d98c6bd869a8bef10d8e1bd" prot="public" virt="virtual"><scope>graphics::line</scope><name>getExtents</name></member>
+      <member refid="classgraphics_1_1shape_1a31e32379425b32042d6aa49716c1db30" prot="public" virt="non-virtual"><scope>graphics::line</scope><name>getFill</name></member>
+      <member refid="classgraphics_1_1shape_1afa69ccf80e9ea6b2effef9e2f2360c19" prot="public" virt="non-virtual"><scope>graphics::line</scope><name>getStroke</name></member>
+      <member refid="classgraphics_1_1shape_1a66fed3c60869f6d37d5bb2bfd9f0e1dc" prot="public" virt="non-virtual"><scope>graphics::line</scope><name>getStrokeWidth</name></member>
+      <member refid="classgraphics_1_1line_1a4473fc0ec2635c877b91b338a78e4ac8" prot="public" virt="non-virtual"><scope>graphics::line</scope><name>line</name></member>
+      <member refid="classgraphics_1_1shape_1a4faba733e9a95685f22e283143488104" prot="public" virt="non-virtual"><scope>graphics::line</scope><name>setFill</name></member>
+      <member refid="classgraphics_1_1shape_1abe791443e0323b0719c16c42d9ee0e2e" prot="public" virt="non-virtual"><scope>graphics::line</scope><name>setStroke</name></member>
+      <member refid="classgraphics_1_1shape_1a61805bb768ea7f4e817317c9bfee519d" prot="public" virt="non-virtual"><scope>graphics::line</scope><name>setStrokeWidth</name></member>
+      <member refid="classgraphics_1_1shape_1a4bb20a9261038c87fe3a30e2bad5bd49" prot="public" virt="non-virtual"><scope>graphics::line</scope><name>shape</name></member>
+      <member refid="classgraphics_1_1line_1a9f017c004983fbfa5c21d88b8b29d5de" prot="private" virt="non-virtual"><scope>graphics::line</scope><name>sx</name></member>
+      <member refid="classgraphics_1_1line_1ac4c6f1e0eccd02b3399d091736c0903c" prot="private" virt="non-virtual"><scope>graphics::line</scope><name>sy</name></member>
+      <member refid="classgraphics_1_1shape_1a1ce13e65926bca4f7690859647f6e3ef" prot="public" virt="virtual"><scope>graphics::line</scope><name>~shape</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

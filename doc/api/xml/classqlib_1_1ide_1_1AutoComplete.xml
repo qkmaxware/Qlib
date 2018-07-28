@@ -408,44 +408,44 @@
 <para>Class for auto complete word suggestions used with JTextComponent <simplesect kind="author"><para>chalseth </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="257">
+      <node id="316">
         <label>qlib.ide.AutoComplete</label>
         <link refid="classqlib_1_1ide_1_1AutoComplete"/>
-        <childnode refid="258" relation="usage">
+        <childnode refid="317" relation="usage">
           <edgelabel>model</edgelabel>
         </childnode>
-        <childnode refid="259" relation="usage">
+        <childnode refid="318" relation="usage">
           <edgelabel>window</edgelabel>
         </childnode>
-        <childnode refid="260" relation="usage">
+        <childnode refid="319" relation="usage">
           <edgelabel>suggestions</edgelabel>
         </childnode>
-        <childnode refid="261" relation="usage">
+        <childnode refid="320" relation="usage">
           <edgelabel>docListener</edgelabel>
         </childnode>
-        <childnode refid="262" relation="usage">
+        <childnode refid="321" relation="usage">
           <edgelabel>textComponent</edgelabel>
         </childnode>
-        <childnode refid="263" relation="usage">
+        <childnode refid="322" relation="usage">
           <edgelabel>list</edgelabel>
         </childnode>
       </node>
-      <node id="262">
+      <node id="321">
         <label>JTextComponent</label>
       </node>
-      <node id="261">
+      <node id="320">
         <label>DocumentListener</label>
       </node>
-      <node id="258">
+      <node id="317">
         <label>DefaultListModel</label>
       </node>
-      <node id="263">
+      <node id="322">
         <label>JList</label>
       </node>
-      <node id="259">
+      <node id="318">
         <label>JWindow</label>
       </node>
-      <node id="260">
+      <node id="319">
         <label>ArrayList&lt; String &gt;</label>
       </node>
     </collaborationgraph>

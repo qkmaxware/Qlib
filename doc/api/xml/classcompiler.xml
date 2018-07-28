@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/compiler.hpp" line="347" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="347" bodyend="-1"/>
+        <location file="src/runtime/compiler.hpp" line="350" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="350" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcompiler_1a1b712963929882f359df919ce73bbf4e" prot="public" static="no" mutable="no">
         <type>vector&lt; <ref refid="namespaceparser_1a85b2df48287fddaca144a5f6c01b4761" kindref="member">parser::ruleptr</ref> &gt; &amp;</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/compiler.hpp" line="348" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="348" bodyend="-1"/>
+        <location file="src/runtime/compiler.hpp" line="351" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="351" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcompiler_1a76cbb22ce5238f2fd9b3946f541dba0c" prot="public" static="no" mutable="no">
         <type>vector&lt; <ref refid="classqasm_1_1exec_1_1executable" kindref="compound">qasm::exec::executable</ref> *(*)(<ref refid="structparser_1_1parsetree" kindref="compound">parser::parsetree</ref> &amp;)&gt; &amp;</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/compiler.hpp" line="349" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="349" bodyend="-1"/>
+        <location file="src/runtime/compiler.hpp" line="352" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="352" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcompiler_1aa9d1b362adff0ca48511cf824ca1fe4c" prot="public" static="no" mutable="no">
         <type>vector&lt; void(*)(<ref refid="classcompiler" kindref="compound">compiler</ref> &amp;, <ref refid="classqasm_1_1exec_1_1executable" kindref="compound">qasm::exec::executable</ref> *)&gt; &amp;</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/compiler.hpp" line="350" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="350" bodyend="-1"/>
+        <location file="src/runtime/compiler.hpp" line="353" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="353" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcompiler_1a801700690bf711169679cb6ca890168a" prot="public" static="no" mutable="no">
         <type><ref refid="classprogram" kindref="compound">program</ref> &amp;</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/compiler.hpp" line="351" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="351" bodyend="-1"/>
+        <location file="src/runtime/compiler.hpp" line="354" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="354" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -102,7 +102,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/compiler.hpp" line="353" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="353" bodyend="360"/>
+        <location file="src/runtime/compiler.hpp" line="356" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="356" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="classcompiler_1a9b61ba6cc57763a9e76feb44fffd1616" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void compiler::try_parse_line</definition>
+        <argsstring>(std::string filename, ulong lineNumber, std::string line)</argsstring>
+        <name>try_parse_line</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1ab2bb0e5480d1d957383df6b350794313" kindref="member">ulong</ref></type>
+          <declname>lineNumber</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/compiler.hpp" line="365" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="365" bodyend="401"/>
       </memberdef>
       <memberdef kind="function" id="classcompiler_1af3984a0a53279c28bee8aee4b0ef84ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -119,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/compiler.hpp" line="362" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="362" bodyend="407"/>
+        <location file="src/runtime/compiler.hpp" line="403" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="403" bodyend="411"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -127,26 +152,26 @@
     <detaileddescription>
 <para>Class wrapping up all compiler components </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="280">
+      <node id="343">
         <label>compiler</label>
         <link refid="classcompiler"/>
-        <childnode refid="281" relation="usage">
+        <childnode refid="344" relation="usage">
           <edgelabel>prog</edgelabel>
         </childnode>
-        <childnode refid="282" relation="usage">
+        <childnode refid="345" relation="usage">
           <edgelabel>tokenizer</edgelabel>
         </childnode>
       </node>
-      <node id="281">
+      <node id="344">
         <label>program</label>
         <link refid="classprogram"/>
       </node>
-      <node id="282">
+      <node id="345">
         <label>lexical::lexer</label>
         <link refid="classlexical_1_1lexer"/>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/compiler.hpp" line="345" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="345" bodyend="408"/>
+    <location file="src/runtime/compiler.hpp" line="348" column="1" bodyfile="src/runtime/compiler.hpp" bodystart="348" bodyend="412"/>
     <listofallmembers>
       <member refid="classcompiler_1aac603e3e8c3851dfb420e6e007adbad0" prot="public" virt="non-virtual"><scope>compiler</scope><name>compiler</name></member>
       <member refid="classcompiler_1a76cbb22ce5238f2fd9b3946f541dba0c" prot="public" virt="non-virtual"><scope>compiler</scope><name>converters</name></member>
@@ -155,6 +180,7 @@
       <member refid="classcompiler_1a1b712963929882f359df919ce73bbf4e" prot="public" virt="non-virtual"><scope>compiler</scope><name>rules</name></member>
       <member refid="classcompiler_1a888ac16dbb82fa8a9500633addcd22ba" prot="public" virt="non-virtual"><scope>compiler</scope><name>tokenizer</name></member>
       <member refid="classcompiler_1af3984a0a53279c28bee8aee4b0ef84ca" prot="public" virt="non-virtual"><scope>compiler</scope><name>try_parse_file</name></member>
+      <member refid="classcompiler_1a9b61ba6cc57763a9e76feb44fffd1616" prot="public" virt="non-virtual"><scope>compiler</scope><name>try_parse_line</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

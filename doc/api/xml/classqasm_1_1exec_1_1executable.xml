@@ -12,6 +12,19 @@
     <derivedcompoundref refid="classqasm_1_1exec_1_1reset" prot="public" virt="non-virtual">qasm::exec::reset</derivedcompoundref>
     <includes refid="runtime_8hpp" local="no">runtime.hpp</includes>
       <sectiondef kind="public-func">
+      <memberdef kind="function" id="classqasm_1_1exec_1_1executable_1acb10539ca9f0d75be23e23ca722ba195" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual qasm::exec::executable::~executable</definition>
+        <argsstring>()</argsstring>
+        <name>~executable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/runtime.hpp" line="185" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="185" bodyend="185"/>
+      </memberdef>
       <memberdef kind="function" id="classqasm_1_1exec_1_1executable_1ad07f864a889edb0777ebbb1bc1628121" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
         <definition>virtual void qasm::exec::executable::invoke_rootprogram</definition>
@@ -32,7 +45,7 @@
 <para>Run instruction&apos;s primary operation </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="162" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="162" bodyend="162"/>
+        <location file="src/runtime/runtime.hpp" line="189" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="189" bodyend="189"/>
       </memberdef>
       <memberdef kind="function" id="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -49,7 +62,7 @@
 <para>Run instruction&apos;s secondary operation </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="166" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="166" bodyend="166"/>
+        <location file="src/runtime/runtime.hpp" line="193" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="193" bodyend="193"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -57,63 +70,64 @@
     <detaileddescription>
 <para>Represents an instruction that can be run </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="317">
+      <node id="380">
         <label>qasm::exec::apply_subcircuit</label>
         <link refid="classqasm_1_1exec_1_1apply__subcircuit"/>
-        <childnode refid="315" relation="public-inheritance">
+        <childnode refid="378" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="321">
+      <node id="384">
         <label>qasm::exec::measurement</label>
         <link refid="classqasm_1_1exec_1_1measurement"/>
-        <childnode refid="315" relation="public-inheritance">
+        <childnode refid="378" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="320">
+      <node id="383">
         <label>qasm::exec::label</label>
         <link refid="classqasm_1_1exec_1_1label"/>
-        <childnode refid="315" relation="public-inheritance">
+        <childnode refid="378" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="323">
+      <node id="386">
         <label>qasm::exec::reset</label>
         <link refid="classqasm_1_1exec_1_1reset"/>
-        <childnode refid="315" relation="public-inheritance">
+        <childnode refid="378" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="316">
+      <node id="379">
         <label>qasm::exec::apply_gate</label>
         <link refid="classqasm_1_1exec_1_1apply__gate"/>
-        <childnode refid="315" relation="public-inheritance">
+        <childnode refid="378" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="315">
+      <node id="378">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
-      <node id="319">
+      <node id="382">
         <label>qasm::exec::import</label>
         <link refid="classqasm_1_1exec_1_1import"/>
-        <childnode refid="315" relation="public-inheritance">
+        <childnode refid="378" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="322">
+      <node id="385">
         <label>qasm::exec::print</label>
         <link refid="classqasm_1_1exec_1_1print"/>
-        <childnode refid="315" relation="public-inheritance">
+        <childnode refid="378" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="318">
+      <node id="381">
         <label>qasm::exec::declaration</label>
         <link refid="classqasm_1_1exec_1_1declaration"/>
-        <childnode refid="315" relation="public-inheritance">
+        <childnode refid="378" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="src/runtime/runtime.hpp" line="156" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="156" bodyend="167"/>
+    <location file="src/runtime/runtime.hpp" line="182" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="182" bodyend="194"/>
     <listofallmembers>
       <member refid="classqasm_1_1exec_1_1executable_1ad07f864a889edb0777ebbb1bc1628121" prot="public" virt="virtual"><scope>qasm::exec::executable</scope><name>invoke_rootprogram</name></member>
       <member refid="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" prot="public" virt="virtual"><scope>qasm::exec::executable</scope><name>invoke_subprogram</name></member>
+      <member refid="classqasm_1_1exec_1_1executable_1acb10539ca9f0d75be23e23ca722ba195" prot="public" virt="virtual"><scope>qasm::exec::executable</scope><name>~executable</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

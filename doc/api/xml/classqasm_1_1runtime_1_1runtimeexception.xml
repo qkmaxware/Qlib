@@ -16,7 +16,7 @@
 <para>Exception message </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="29" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="29" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="30" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="30" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -35,7 +35,7 @@
 <para>Create exception </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="36" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="36" bodyend="37"/>
+        <location file="src/runtime/runtime.hpp" line="37" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="37" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="classqasm_1_1runtime_1_1runtimeexception_1a574525d5f4cac73500dd11215bbb14a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const char *</type>
@@ -49,7 +49,7 @@
 <para>Get cause message </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="42" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="42" bodyend="44"/>
+        <location file="src/runtime/runtime.hpp" line="43" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="43" bodyend="45"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -57,28 +57,28 @@
     <detaileddescription>
 <para>Class for exceptions thrown when executing instructions </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="451">
+      <node id="548">
         <label>exception</label>
       </node>
-      <node id="450">
+      <node id="547">
         <label>qasm::runtime::runtimeexception</label>
         <link refid="classqasm_1_1runtime_1_1runtimeexception"/>
-        <childnode refid="451" relation="public-inheritance">
+        <childnode refid="548" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="453">
+      <node id="550">
         <label>exception</label>
       </node>
-      <node id="452">
+      <node id="549">
         <label>qasm::runtime::runtimeexception</label>
         <link refid="classqasm_1_1runtime_1_1runtimeexception"/>
-        <childnode refid="453" relation="public-inheritance">
+        <childnode refid="550" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/runtime.hpp" line="24" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="24" bodyend="45"/>
+    <location file="src/runtime/runtime.hpp" line="25" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="25" bodyend="46"/>
     <listofallmembers>
       <member refid="classqasm_1_1runtime_1_1runtimeexception_1a441e42301526a93e37ceb3f6eb0cc988" prot="public" virt="non-virtual"><scope>qasm::runtime::runtimeexception</scope><name>runtimeexception</name></member>
       <member refid="classqasm_1_1runtime_1_1runtimeexception_1a574525d5f4cac73500dd11215bbb14a3" prot="public" virt="non-virtual"><scope>qasm::runtime::runtimeexception</scope><name>what</name></member>

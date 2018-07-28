@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgraphics_1_1bounds" kind="class" language="C++" prot="public">
+    <compoundname>graphics::bounds</compoundname>
+    <includes refid="svg_8hpp" local="no">svg.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgraphics_1_1bounds_1a6a60b1c6b290e61f5890ea90f78a466c" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t graphics::bounds::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="19" column="1" bodyfile="src/runtime/svg.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgraphics_1_1bounds_1a30a3dfde365caa6aa1d930b07fa3062c" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t graphics::bounds::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="20" column="1" bodyfile="src/runtime/svg.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgraphics_1_1bounds_1a7e1b802df69e5bbcd66e842f4719bd1e" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t graphics::bounds::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="21" column="1" bodyfile="src/runtime/svg.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgraphics_1_1bounds_1a53be9687348393750637ec378c9dd594" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t graphics::bounds::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="22" column="1" bodyfile="src/runtime/svg.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgraphics_1_1bounds_1a59f667680478d7e2d8403c4afabc6674" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>graphics::bounds::bounds</definition>
+        <argsstring>()</argsstring>
+        <name>bounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="24" column="1" bodyfile="src/runtime/svg.hpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1bounds_1a2a1529593a8ad03df80df0381e33fb1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>graphics::bounds::bounds</definition>
+        <argsstring>(size_t x, size_t y, size_t w, size_t h)</argsstring>
+        <name>bounds</name>
+        <param>
+          <type>size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="25" column="1" bodyfile="src/runtime/svg.hpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1bounds_1a89f6d09f09a7b2b5d995cb64ac305b57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t graphics::bounds::getWidth</definition>
+        <argsstring>()</argsstring>
+        <name>getWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="27" column="1" bodyfile="src/runtime/svg.hpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1bounds_1a2c21517e12d0773cd1508de5e7bb8be7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t graphics::bounds::getHeight</definition>
+        <argsstring>()</argsstring>
+        <name>getHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="31" column="1" bodyfile="src/runtime/svg.hpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1bounds_1a3cac943aa56e8509f24ab9eac1b7c744" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t graphics::bounds::getMinX</definition>
+        <argsstring>()</argsstring>
+        <name>getMinX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="35" column="1" bodyfile="src/runtime/svg.hpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1bounds_1af159b7dd1e1dbec98a8202744b13e4c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t graphics::bounds::getMaxX</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="39" column="1" bodyfile="src/runtime/svg.hpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1bounds_1a948e28bed8b061726dd6b0d02d44c527" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t graphics::bounds::getMinY</definition>
+        <argsstring>()</argsstring>
+        <name>getMinY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="43" column="1" bodyfile="src/runtime/svg.hpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classgraphics_1_1bounds_1a5ba618b1e138eaabdf33b513c5696529" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t graphics::bounds::getMaxY</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="47" column="1" bodyfile="src/runtime/svg.hpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Describes a rectangular region of space. Usually for the purposes of bounding a certain area. </para>    </detaileddescription>
+    <location file="src/runtime/svg.hpp" line="17" column="1" bodyfile="src/runtime/svg.hpp" bodystart="17" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgraphics_1_1bounds_1a59f667680478d7e2d8403c4afabc6674" prot="public" virt="non-virtual"><scope>graphics::bounds</scope><name>bounds</name></member>
+      <member refid="classgraphics_1_1bounds_1a2a1529593a8ad03df80df0381e33fb1c" prot="public" virt="non-virtual"><scope>graphics::bounds</scope><name>bounds</name></member>
+      <member refid="classgraphics_1_1bounds_1a2c21517e12d0773cd1508de5e7bb8be7" prot="public" virt="non-virtual"><scope>graphics::bounds</scope><name>getHeight</name></member>
+      <member refid="classgraphics_1_1bounds_1af159b7dd1e1dbec98a8202744b13e4c4" prot="public" virt="non-virtual"><scope>graphics::bounds</scope><name>getMaxX</name></member>
+      <member refid="classgraphics_1_1bounds_1a5ba618b1e138eaabdf33b513c5696529" prot="public" virt="non-virtual"><scope>graphics::bounds</scope><name>getMaxY</name></member>
+      <member refid="classgraphics_1_1bounds_1a3cac943aa56e8509f24ab9eac1b7c744" prot="public" virt="non-virtual"><scope>graphics::bounds</scope><name>getMinX</name></member>
+      <member refid="classgraphics_1_1bounds_1a948e28bed8b061726dd6b0d02d44c527" prot="public" virt="non-virtual"><scope>graphics::bounds</scope><name>getMinY</name></member>
+      <member refid="classgraphics_1_1bounds_1a89f6d09f09a7b2b5d995cb64ac305b57" prot="public" virt="non-virtual"><scope>graphics::bounds</scope><name>getWidth</name></member>
+      <member refid="classgraphics_1_1bounds_1a53be9687348393750637ec378c9dd594" prot="private" virt="non-virtual"><scope>graphics::bounds</scope><name>h</name></member>
+      <member refid="classgraphics_1_1bounds_1a7e1b802df69e5bbcd66e842f4719bd1e" prot="private" virt="non-virtual"><scope>graphics::bounds</scope><name>w</name></member>
+      <member refid="classgraphics_1_1bounds_1a6a60b1c6b290e61f5890ea90f78a466c" prot="private" virt="non-virtual"><scope>graphics::bounds</scope><name>x</name></member>
+      <member refid="classgraphics_1_1bounds_1a30a3dfde365caa6aa1d930b07fa3062c" prot="private" virt="non-virtual"><scope>graphics::bounds</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

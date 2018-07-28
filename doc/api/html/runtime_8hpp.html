@@ -118,36 +118,40 @@ $(document).ready(function(){initNavTree('runtime_8hpp.html','');});
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &quot;<a class="el" href="qlib_8h_source.html">./../core/qlib.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for runtime.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="runtime_8hpp__incl.png" border="0" usemap="#src_2runtime_2runtime_8hpp" alt=""/></div>
 <map name="src_2runtime_2runtime_8hpp" id="src_2runtime_2runtime_8hpp">
-<area shape="rect" id="node6" href="qlib_8h.html" title="./../core/qlib.h" alt="" coords="1483,80,1586,107"/>
-<area shape="rect" id="node7" href="object_8hpp.html" title="./general/object.hpp" alt="" coords="1679,692,1815,719"/>
-<area shape="rect" id="node8" href="types_8h.html" title="./types.h" alt="" coords="1843,767,1917,793"/>
-<area shape="rect" id="node14" href="complex_8hpp.html" title="File containing complex number class and operators. " alt="" coords="989,617,1126,644"/>
-<area shape="rect" id="node17" href="matrix_8hpp.html" title="./math/matrix.hpp" alt="" coords="1369,543,1493,569"/>
-<area shape="rect" id="node19" href="qubit_8hpp.html" title="./quantum/systems/qubit.hpp" alt="" coords="1719,319,1910,345"/>
-<area shape="rect" id="node21" href="system_8hpp.html" title="system.hpp" alt="" coords="1415,393,1505,420"/>
-<area shape="rect" id="node22" href="qreg_8hpp.html" title="./quantum/systems/qreg.hpp" alt="" coords="1111,319,1299,345"/>
-<area shape="rect" id="node23" href="standard__gates_8hpp.html" title="./quantum/standard\l_gates.hpp" alt="" coords="649,155,783,196"/>
-<area shape="rect" id="node38" href="ensemble_8hpp.html" title="./quantum/systems/ensemble.hpp" alt="" coords="1425,319,1644,345"/>
-<area shape="rect" id="node20" href="igate_8hpp.html" title="./../gates/igate.hpp" alt="" coords="1089,468,1220,495"/>
-<area shape="rect" id="node24" href="ident_8hpp.html" title="./gates/ident.hpp" alt="" coords="291,244,410,271"/>
-<area shape="rect" id="node26" href="hadamard_8hpp.html" title="./gates/hadamard.hpp" alt="" coords="434,244,582,271"/>
-<area shape="rect" id="node27" href="pauliX_8hpp.html" title="./gates/pauliX.hpp" alt="" coords="506,319,633,345"/>
-<area shape="rect" id="node28" href="pauliY_8hpp.html" title="./gates/pauliY.hpp" alt="" coords="961,319,1087,345"/>
-<area shape="rect" id="node29" href="pauliZ_8hpp.html" title="./gates/pauliZ.hpp" alt="" coords="657,319,783,345"/>
-<area shape="rect" id="node30" href="phase_8hpp.html" title="./gates/phase.hpp" alt="" coords="94,319,221,345"/>
-<area shape="rect" id="node32" href="cnot_8hpp.html" title="./gates/cnot.hpp" alt="" coords="658,244,774,271"/>
-<area shape="rect" id="node34" href="cy_8hpp.html" title="./gates/cy.hpp" alt="" coords="979,244,1085,271"/>
-<area shape="rect" id="node35" href="cz_8hpp.html" title="./gates/cz.hpp" alt="" coords="850,244,955,271"/>
-<area shape="rect" id="node36" href="toffoli_8hpp.html" title="./gates/toffoli.hpp" alt="" coords="144,244,267,271"/>
-<area shape="rect" id="node25" href="onequbitgate_8hpp.html" title="onequbitgate.hpp" alt="" coords="589,393,710,420"/>
-<area shape="rect" id="node33" href="controlledgate_8hpp.html" title="controlledgate.hpp" alt="" coords="808,319,936,345"/>
-<area shape="rect" id="node37" href="controlled2gate_8hpp.html" title="controlled2gate.hpp" alt="" coords="245,319,379,345"/>
+<area shape="rect" id="node7" href="qlib_8h.html" title="./../core/qlib.h" alt="" coords="822,80,925,107"/>
+<area shape="rect" id="node8" href="object_8hpp.html" title="./general/object.hpp" alt="" coords="433,692,569,719"/>
+<area shape="rect" id="node9" href="types_8h.html" title="./types.h" alt="" coords="190,767,263,793"/>
+<area shape="rect" id="node15" href="constants_8h.html" title="./general/constants.h" alt="" coords="2081,393,2225,420"/>
+<area shape="rect" id="node18" href="properties_8h.html" title="./general/properties.h" alt="" coords="1737,162,1881,189"/>
+<area shape="rect" id="node19" href="complex_8hpp.html" title="./math/complex.hpp" alt="" coords="922,617,1059,644"/>
+<area shape="rect" id="node21" href="matrix_8hpp.html" title="./math/matrix.hpp" alt="" coords="610,543,734,569"/>
+<area shape="rect" id="node23" href="qubit_8hpp.html" title="./quantum/systems/qubit.hpp" alt="" coords="886,319,1077,345"/>
+<area shape="rect" id="node25" href="system_8hpp.html" title="system.hpp" alt="" coords="803,393,893,420"/>
+<area shape="rect" id="node26" href="qreg_8hpp.html" title="./quantum/systems/qreg.hpp" alt="" coords="379,319,567,345"/>
+<area shape="rect" id="node27" href="standard__gates_8hpp.html" title="./quantum/standard\l_gates.hpp" alt="" coords="1578,155,1713,196"/>
+<area shape="rect" id="node42" href="ensemble_8hpp.html" title="./quantum/systems/ensemble.hpp" alt="" coords="592,319,811,345"/>
+<area shape="rect" id="node24" href="igate_8hpp.html" title="./../gates/igate.hpp" alt="" coords="1005,468,1136,495"/>
+<area shape="rect" id="node28" href="ident_8hpp.html" title="./gates/ident.hpp" alt="" coords="1263,244,1382,271"/>
+<area shape="rect" id="node31" href="hadamard_8hpp.html" title="./gates/hadamard.hpp" alt="" coords="1091,244,1239,271"/>
+<area shape="rect" id="node32" href="pauliX_8hpp.html" title="./gates/pauliX.hpp" alt="" coords="1607,319,1734,345"/>
+<area shape="rect" id="node33" href="pauliY_8hpp.html" title="./gates/pauliY.hpp" alt="" coords="1457,319,1583,345"/>
+<area shape="rect" id="node34" href="pauliZ_8hpp.html" title="./gates/pauliZ.hpp" alt="" coords="1758,319,1885,345"/>
+<area shape="rect" id="node35" href="phase_8hpp.html" title="./gates/phase.hpp" alt="" coords="2199,319,2326,345"/>
+<area shape="rect" id="node36" href="cnot_8hpp.html" title="./gates/cnot.hpp" alt="" coords="1587,244,1703,271"/>
+<area shape="rect" id="node37" href="cy_8hpp.html" title="./gates/cy.hpp" alt="" coords="1406,244,1511,271"/>
+<area shape="rect" id="node38" href="cz_8hpp.html" title="./gates/cz.hpp" alt="" coords="1779,244,1885,271"/>
+<area shape="rect" id="node39" href="toffoli_8hpp.html" title="./gates/toffoli.hpp" alt="" coords="1960,244,2083,271"/>
+<area shape="rect" id="node41" href="qft_8hpp.html" title="./gates/qft.hpp" alt="" coords="2068,319,2175,345"/>
+<area shape="rect" id="node29" href="onequbitgate_8hpp.html" title="onequbitgate.hpp" alt="" coords="1446,393,1567,420"/>
+<area shape="rect" id="node30" href="controlledgate_8hpp.html" title="controlledgate.hpp" alt="" coords="1304,319,1432,345"/>
+<area shape="rect" id="node40" href="controlled2gate_8hpp.html" title="controlled2gate.hpp" alt="" coords="1909,319,2043,345"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -156,7 +160,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="center"><img src="runtime_8hpp__dep__incl.png" border="0" usemap="#src_2runtime_2runtime_8hppdep" alt=""/></div>
 <map name="src_2runtime_2runtime_8hppdep" id="src_2runtime_2runtime_8hppdep">
 <area shape="rect" id="node2" href="compiler_8hpp.html" title="src/runtime/compiler.hpp" alt="" coords="5,80,171,107"/>
-<area shape="rect" id="node3" href="runtime_2main_8cpp.html" title="src/runtime/main.cpp" alt="" coords="76,155,220,181"/>
+<area shape="rect" id="node3" href="runtime_2main_8cpp.html" title="src/runtime/main.cpp" alt="" coords="101,244,245,271"/>
+<area shape="rect" id="node4" href="qcircuit__exporter_8hpp.html" title="src/runtime/qcircuit\l_exporter.hpp" alt="" coords="107,155,240,196"/>
 </map>
 </div>
 </div>

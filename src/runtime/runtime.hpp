@@ -270,7 +270,7 @@ namespace exec {
                     }
                 }
 
-                if(env.hasQreg(name)){
+                if(env.hasQreg(name)){ //FLAG
                     env.getQreg(name).apply(*ptr, param_indecies);
                 }else{
                     //Register doesn't exist

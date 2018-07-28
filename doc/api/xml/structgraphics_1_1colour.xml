@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgraphics_1_1colour" kind="struct" language="C++" prot="public">
+    <compoundname>graphics::colour</compoundname>
+    <includes refid="colour_8hpp" local="no">colour.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgraphics_1_1colour_1a901548bed7ab6d410ba74271870ea733" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1a91ad9478d81a7aaf2593e8d9c3d06a14" kindref="member">uint</ref></type>
+        <definition>uint graphics::colour::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Red </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="17" column="1" bodyfile="src/runtime/colour.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgraphics_1_1colour_1a321b1e11d85e4e3083bf9f80dad24b80" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1a91ad9478d81a7aaf2593e8d9c3d06a14" kindref="member">uint</ref></type>
+        <definition>uint graphics::colour::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Green </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="21" column="1" bodyfile="src/runtime/colour.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgraphics_1_1colour_1a2b9938100a15599b3bb01c344db3d049" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1a91ad9478d81a7aaf2593e8d9c3d06a14" kindref="member">uint</ref></type>
+        <definition>uint graphics::colour::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blue </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="25" column="1" bodyfile="src/runtime/colour.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgraphics_1_1colour_1a3f5cc996c0653fe47c33e67cc9f2731c" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1a91ad9478d81a7aaf2593e8d9c3d06a14" kindref="member">uint</ref></type>
+        <definition>uint graphics::colour::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alpha </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="29" column="1" bodyfile="src/runtime/colour.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgraphics_1_1colour_1a6fdccb3f51bff3bef8ee999503542c3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>graphics::colour::colour</definition>
+        <argsstring>()</argsstring>
+        <name>colour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solid Black </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="34" column="1" bodyfile="src/runtime/colour.hpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="structgraphics_1_1colour_1a7a2d38c378c3d53453a06eddc84c31fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>graphics::colour::colour</definition>
+        <argsstring>(uint r, uint g, uint b)</argsstring>
+        <name>colour</name>
+        <param>
+          <type><ref refid="types_8h_1a91ad9478d81a7aaf2593e8d9c3d06a14" kindref="member">uint</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1a91ad9478d81a7aaf2593e8d9c3d06a14" kindref="member">uint</ref></type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1a91ad9478d81a7aaf2593e8d9c3d06a14" kindref="member">uint</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a solid colour </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="38" column="1" bodyfile="src/runtime/colour.hpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="structgraphics_1_1colour_1af759244ddae761fa62713eb6bf25fa73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>graphics::colour::colour</definition>
+        <argsstring>(uint r, uint g, uint b, uint a)</argsstring>
+        <name>colour</name>
+        <param>
+          <type><ref refid="types_8h_1a91ad9478d81a7aaf2593e8d9c3d06a14" kindref="member">uint</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1a91ad9478d81a7aaf2593e8d9c3d06a14" kindref="member">uint</ref></type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1a91ad9478d81a7aaf2593e8d9c3d06a14" kindref="member">uint</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1a91ad9478d81a7aaf2593e8d9c3d06a14" kindref="member">uint</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a transparent colour </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="42" column="1" bodyfile="src/runtime/colour.hpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="structgraphics_1_1colour_1abc91f344c55a14f8cda34080a01b030d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string graphics::colour::toHex</definition>
+        <argsstring>()</argsstring>
+        <name>toHex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create string in the form #RRGGBB </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="47" column="1" bodyfile="src/runtime/colour.hpp" bodystart="47" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="structgraphics_1_1colour_1a712e0263c4f5b6e90ba8e20bd1a305dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float graphics::colour::getOpacity</definition>
+        <argsstring>()</argsstring>
+        <name>getOpacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get opacity as a float in the range 0 to 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/colour.hpp" line="71" column="1" bodyfile="src/runtime/colour.hpp" bodystart="71" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Colour represented in red, green, blue, alpha with values from 0 to 255. </para>    </detaileddescription>
+    <location file="src/runtime/colour.hpp" line="13" column="1" bodyfile="src/runtime/colour.hpp" bodystart="13" bodyend="74"/>
+    <listofallmembers>
+      <member refid="structgraphics_1_1colour_1a3f5cc996c0653fe47c33e67cc9f2731c" prot="public" virt="non-virtual"><scope>graphics::colour</scope><name>a</name></member>
+      <member refid="structgraphics_1_1colour_1a2b9938100a15599b3bb01c344db3d049" prot="public" virt="non-virtual"><scope>graphics::colour</scope><name>b</name></member>
+      <member refid="structgraphics_1_1colour_1a6fdccb3f51bff3bef8ee999503542c3f" prot="public" virt="non-virtual"><scope>graphics::colour</scope><name>colour</name></member>
+      <member refid="structgraphics_1_1colour_1a7a2d38c378c3d53453a06eddc84c31fc" prot="public" virt="non-virtual"><scope>graphics::colour</scope><name>colour</name></member>
+      <member refid="structgraphics_1_1colour_1af759244ddae761fa62713eb6bf25fa73" prot="public" virt="non-virtual"><scope>graphics::colour</scope><name>colour</name></member>
+      <member refid="structgraphics_1_1colour_1a321b1e11d85e4e3083bf9f80dad24b80" prot="public" virt="non-virtual"><scope>graphics::colour</scope><name>g</name></member>
+      <member refid="structgraphics_1_1colour_1a712e0263c4f5b6e90ba8e20bd1a305dc" prot="public" virt="non-virtual"><scope>graphics::colour</scope><name>getOpacity</name></member>
+      <member refid="structgraphics_1_1colour_1a901548bed7ab6d410ba74271870ea733" prot="public" virt="non-virtual"><scope>graphics::colour</scope><name>r</name></member>
+      <member refid="structgraphics_1_1colour_1abc91f344c55a14f8cda34080a01b030d" prot="public" virt="non-virtual"><scope>graphics::colour</scope><name>toHex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

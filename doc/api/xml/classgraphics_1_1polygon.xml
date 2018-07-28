@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgraphics_1_1polygon" kind="class" language="C++" prot="public">
+    <compoundname>graphics::polygon</compoundname>
+    <basecompoundref refid="classgraphics_1_1polyline" prot="public" virt="non-virtual">graphics::polyline</basecompoundref>
+    <includes refid="svg_8hpp" local="no">svg.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgraphics_1_1polygon_1accef210e1de0bbdbe333ac2e19e4d951" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string graphics::polygon::encode</definition>
+        <argsstring>()</argsstring>
+        <name>encode</name>
+        <reimplements refid="classgraphics_1_1polyline_1a4b21b290bd04cccef24f8cb4a85299f2">encode</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/runtime/svg.hpp" line="197" column="1" bodyfile="src/runtime/svg.hpp" bodystart="197" bodyend="213"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Describes a polygon of &apos;N&apos; points </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="461">
+        <label>graphics::shape</label>
+        <link refid="classgraphics_1_1shape"/>
+      </node>
+      <node id="460">
+        <label>graphics::polyline</label>
+        <link refid="classgraphics_1_1polyline"/>
+        <childnode refid="461" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="459">
+        <label>graphics::polygon</label>
+        <link refid="classgraphics_1_1polygon"/>
+        <childnode refid="460" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="465">
+        <label>graphics::colour</label>
+        <link refid="structgraphics_1_1colour"/>
+      </node>
+      <node id="464">
+        <label>graphics::shape</label>
+        <link refid="classgraphics_1_1shape"/>
+        <childnode refid="465" relation="usage">
+          <edgelabel>fill</edgelabel>
+          <edgelabel>stroke</edgelabel>
+        </childnode>
+      </node>
+      <node id="463">
+        <label>graphics::polyline</label>
+        <link refid="classgraphics_1_1polyline"/>
+        <childnode refid="464" relation="public-inheritance">
+        </childnode>
+        <childnode refid="466" relation="usage">
+          <edgelabel>b</edgelabel>
+        </childnode>
+      </node>
+      <node id="462">
+        <label>graphics::polygon</label>
+        <link refid="classgraphics_1_1polygon"/>
+        <childnode refid="463" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="466">
+        <label>graphics::bounds</label>
+        <link refid="classgraphics_1_1bounds"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/runtime/svg.hpp" line="195" column="1" bodyfile="src/runtime/svg.hpp" bodystart="195" bodyend="214"/>
+    <listofallmembers>
+      <member refid="classgraphics_1_1polyline_1ab4556c8d21b8e07eaf1f3df023e032ac" prot="public" virt="non-virtual"><scope>graphics::polygon</scope><name>countPoints</name></member>
+      <member refid="classgraphics_1_1polygon_1accef210e1de0bbdbe333ac2e19e4d951" prot="public" virt="virtual"><scope>graphics::polygon</scope><name>encode</name></member>
+      <member refid="classgraphics_1_1polyline_1a5d1bb7507881d2d755d6779c9d7f8dbc" prot="public" virt="virtual"><scope>graphics::polygon</scope><name>getExtents</name></member>
+      <member refid="classgraphics_1_1shape_1a31e32379425b32042d6aa49716c1db30" prot="public" virt="non-virtual"><scope>graphics::polygon</scope><name>getFill</name></member>
+      <member refid="classgraphics_1_1shape_1afa69ccf80e9ea6b2effef9e2f2360c19" prot="public" virt="non-virtual"><scope>graphics::polygon</scope><name>getStroke</name></member>
+      <member refid="classgraphics_1_1shape_1a66fed3c60869f6d37d5bb2bfd9f0e1dc" prot="public" virt="non-virtual"><scope>graphics::polygon</scope><name>getStrokeWidth</name></member>
+      <member refid="classgraphics_1_1polyline_1af6fa13ff47cc4ba271583720dfca5af3" prot="public" virt="non-virtual"><scope>graphics::polygon</scope><name>getX</name></member>
+      <member refid="classgraphics_1_1polyline_1accded087eed0e5bcb72b4e22553aaa86" prot="public" virt="non-virtual"><scope>graphics::polygon</scope><name>getY</name></member>
+      <member refid="classgraphics_1_1polyline_1adbfa69d4679508481af8b7ad988c589f" prot="public" virt="non-virtual"><scope>graphics::polygon</scope><name>polyline</name></member>
+      <member refid="classgraphics_1_1polyline_1a43d93bfba6da374097c31d99fd4e6536" prot="public" virt="non-virtual"><scope>graphics::polygon</scope><name>recalculateBounds</name></member>
+      <member refid="classgraphics_1_1shape_1a4faba733e9a95685f22e283143488104" prot="public" virt="non-virtual"><scope>graphics::polygon</scope><name>setFill</name></member>
+      <member refid="classgraphics_1_1shape_1abe791443e0323b0719c16c42d9ee0e2e" prot="public" virt="non-virtual"><scope>graphics::polygon</scope><name>setStroke</name></member>
+      <member refid="classgraphics_1_1shape_1a61805bb768ea7f4e817317c9bfee519d" prot="public" virt="non-virtual"><scope>graphics::polygon</scope><name>setStrokeWidth</name></member>
+      <member refid="classgraphics_1_1shape_1a4bb20a9261038c87fe3a30e2bad5bd49" prot="public" virt="non-virtual"><scope>graphics::polygon</scope><name>shape</name></member>
+      <member refid="classgraphics_1_1polyline_1a611ffde054960b79df394c2fc957e25c" prot="public" virt="non-virtual"><scope>graphics::polygon</scope><name>then</name></member>
+      <member refid="classgraphics_1_1shape_1a1ce13e65926bca4f7690859647f6e3ef" prot="public" virt="virtual"><scope>graphics::polygon</scope><name>~shape</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

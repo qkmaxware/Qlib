@@ -1,11 +1,14 @@
 <map id="src/core/quantum/gates/controlledgate.hpp" name="src/core/quantum/gates/controlledgate.hpp">
-<area shape="rect" id="node2" href="$cnot_8hpp.html" title="src/core/quantum/gates\l/cnot.hpp" alt="" coords="5,95,164,136"/>
-<area shape="rect" id="node9" href="$cy_8hpp.html" title="src/core/quantum/gates\l/cy.hpp" alt="" coords="188,95,347,136"/>
-<area shape="rect" id="node10" href="$cz_8hpp.html" title="src/core/quantum/gates\l/cz.hpp" alt="" coords="371,95,529,136"/>
-<area shape="rect" id="node3" href="$standard__gates_8hpp.html" title="src/core/quantum/standard\l_gates.hpp" alt="" coords="179,184,356,225"/>
-<area shape="rect" id="node4" href="$qlib_8h.html" title="src/core/qlib.h" alt="" coords="215,273,319,300"/>
-<area shape="rect" id="node5" href="$core_2main_8cpp.html" title="src/core/main.cpp" alt="" coords="37,348,164,375"/>
-<area shape="rect" id="node6" href="$runtime_8hpp.html" title="src/runtime/runtime.hpp" alt="" coords="188,348,347,375"/>
-<area shape="rect" id="node8" href="$runtime_2main_8cpp.html" title="src/runtime/main.cpp" alt="" coords="262,497,406,524"/>
-<area shape="rect" id="node7" href="$compiler_8hpp.html" title="src/runtime/compiler.hpp" alt="" coords="131,423,297,449"/>
+<area shape="rect" id="node2" href="$ident_8hpp.html" title="src/core/quantum/gates\l/ident.hpp" alt="" coords="5,95,164,136"/>
+<area shape="rect" id="node10" href="$hadamard_8hpp.html" title="src/core/quantum/gates\l/hadamard.hpp" alt="" coords="188,95,347,136"/>
+<area shape="rect" id="node11" href="$cnot_8hpp.html" title="src/core/quantum/gates\l/cnot.hpp" alt="" coords="371,95,529,136"/>
+<area shape="rect" id="node12" href="$cy_8hpp.html" title="src/core/quantum/gates\l/cy.hpp" alt="" coords="553,95,712,136"/>
+<area shape="rect" id="node13" href="$cz_8hpp.html" title="src/core/quantum/gates\l/cz.hpp" alt="" coords="736,95,895,136"/>
+<area shape="rect" id="node3" href="$standard__gates_8hpp.html" title="src/core/quantum/standard\l_gates.hpp" alt="" coords="361,184,539,225"/>
+<area shape="rect" id="node4" href="$qlib_8h.html" title="src/core/qlib.h" alt="" coords="398,273,502,300"/>
+<area shape="rect" id="node5" href="$core_2main_8cpp.html" title="src/core/main.cpp" alt="" coords="220,348,347,375"/>
+<area shape="rect" id="node6" href="$runtime_8hpp.html" title="src/runtime/runtime.hpp" alt="" coords="371,348,529,375"/>
+<area shape="rect" id="node8" href="$runtime_2main_8cpp.html" title="src/runtime/main.cpp" alt="" coords="393,587,537,613"/>
+<area shape="rect" id="node7" href="$compiler_8hpp.html" title="src/runtime/compiler.hpp" alt="" coords="247,423,413,449"/>
+<area shape="rect" id="node9" href="$qcircuit__exporter_8hpp.html" title="src/runtime/qcircuit\l_exporter.hpp" alt="" coords="346,497,479,539"/>
 </map>

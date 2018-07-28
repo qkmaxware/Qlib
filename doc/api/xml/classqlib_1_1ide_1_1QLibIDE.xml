@@ -200,7 +200,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/ide/src/qlib/ide/QLibIDE.java" line="105" column="1" bodyfile="src/ide/src/qlib/ide/QLibIDE.java" bodystart="105" bodyend="288"/>
+        <location file="src/ide/src/qlib/ide/QLibIDE.java" line="105" column="1" bodyfile="src/ide/src/qlib/ide/QLibIDE.java" bodystart="105" bodyend="289"/>
       </memberdef>
       <memberdef kind="function" id="classqlib_1_1ide_1_1QLibIDE_1aa0b95da9f912317b1497e190748733d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -225,7 +225,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/ide/src/qlib/ide/QLibIDE.java" line="294" column="1" bodyfile="src/ide/src/qlib/ide/QLibIDE.java" bodystart="294" bodyend="306"/>
+        <location file="src/ide/src/qlib/ide/QLibIDE.java" line="295" column="1" bodyfile="src/ide/src/qlib/ide/QLibIDE.java" bodystart="295" bodyend="307"/>
       </memberdef>
       <memberdef kind="function" id="classqlib_1_1ide_1_1QLibIDE_1a53bc0b691fd24d3e2dad2603cf086760" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -238,7 +238,7 @@
 <para>Show the IDE </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/ide/src/qlib/ide/QLibIDE.java" line="311" column="1" bodyfile="src/ide/src/qlib/ide/QLibIDE.java" bodystart="311" bodyend="313"/>
+        <location file="src/ide/src/qlib/ide/QLibIDE.java" line="312" column="1" bodyfile="src/ide/src/qlib/ide/QLibIDE.java" bodystart="312" bodyend="314"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -276,7 +276,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/ide/src/qlib/ide/QLibIDE.java" line="320" column="1" bodyfile="src/ide/src/qlib/ide/QLibIDE.java" bodystart="320" bodyend="334"/>
+        <location file="src/ide/src/qlib/ide/QLibIDE.java" line="321" column="1" bodyfile="src/ide/src/qlib/ide/QLibIDE.java" bodystart="321" bodyend="335"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -285,77 +285,77 @@
 <para>Class for the QlibIDE <simplesect kind="author"><para>halse </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="407">
+      <node id="492">
         <label>JPanel</label>
       </node>
-      <node id="404">
+      <node id="489">
         <label>qlib.ide.FileManager</label>
         <link refid="classqlib_1_1ide_1_1FileManager"/>
-        <childnode refid="405" relation="usage">
+        <childnode refid="490" relation="usage">
           <edgelabel>openTabs</edgelabel>
         </childnode>
-        <childnode refid="406" relation="usage">
+        <childnode refid="491" relation="usage">
           <edgelabel>tabs</edgelabel>
         </childnode>
       </node>
-      <node id="400">
+      <node id="485">
         <label>qlib.ide.OptionsMenu</label>
         <link refid="classqlib_1_1ide_1_1OptionsMenu"/>
-        <childnode refid="401" relation="public-inheritance">
+        <childnode refid="486" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="402">
+      <node id="487">
         <label>qlib.ide.QLibRuntime</label>
         <link refid="classqlib_1_1ide_1_1QLibRuntime"/>
-        <childnode refid="403" relation="usage">
+        <childnode refid="488" relation="usage">
           <edgelabel>QlibPath</edgelabel>
         </childnode>
       </node>
-      <node id="401">
+      <node id="486">
         <label>JFrame</label>
       </node>
-      <node id="405">
+      <node id="490">
         <label>LinkedList&lt; qlib.ide.FileManager.Tab &gt;</label>
       </node>
-      <node id="403">
+      <node id="488">
         <label>File</label>
       </node>
-      <node id="398">
+      <node id="483">
         <label>qlib.ide.QLibIDE</label>
         <link refid="classqlib_1_1ide_1_1QLibIDE"/>
-        <childnode refid="399" relation="usage">
+        <childnode refid="484" relation="usage">
           <edgelabel>dateFormat</edgelabel>
         </childnode>
-        <childnode refid="400" relation="usage">
+        <childnode refid="485" relation="usage">
           <edgelabel>menu</edgelabel>
         </childnode>
-        <childnode refid="402" relation="usage">
+        <childnode refid="487" relation="usage">
           <edgelabel>runtime</edgelabel>
         </childnode>
-        <childnode refid="401" relation="usage">
+        <childnode refid="486" relation="usage">
           <edgelabel>frame</edgelabel>
         </childnode>
-        <childnode refid="404" relation="usage">
+        <childnode refid="489" relation="usage">
           <edgelabel>manager</edgelabel>
         </childnode>
-        <childnode refid="407" relation="usage">
+        <childnode refid="492" relation="usage">
           <edgelabel>pane</edgelabel>
         </childnode>
-        <childnode refid="408" relation="usage">
+        <childnode refid="493" relation="usage">
           <edgelabel>log_scroll</edgelabel>
         </childnode>
       </node>
-      <node id="406">
+      <node id="491">
         <label>JTabbedPane</label>
       </node>
-      <node id="399">
+      <node id="484">
         <label>DateFormat</label>
       </node>
-      <node id="408">
+      <node id="493">
         <label>JScrollPane</label>
       </node>
     </collaborationgraph>
-    <location file="src/ide/src/qlib/ide/QLibIDE.java" line="34" column="1" bodyfile="src/ide/src/qlib/ide/QLibIDE.java" bodystart="34" bodyend="337"/>
+    <location file="src/ide/src/qlib/ide/QLibIDE.java" line="34" column="1" bodyfile="src/ide/src/qlib/ide/QLibIDE.java" bodystart="34" bodyend="338"/>
     <listofallmembers>
       <member refid="classqlib_1_1ide_1_1QLibIDE_1a6f9aa8bdf86b91b456239c96202d2e3f" prot="private" virt="non-virtual"><scope>qlib::ide::QLibIDE</scope><name>addShortcutKey</name></member>
       <member refid="classqlib_1_1ide_1_1QLibIDE_1ae54da93b399d4d027f33c04ba7e392fd" prot="public" virt="non-virtual"><scope>qlib::ide::QLibIDE</scope><name>configLocation</name></member>

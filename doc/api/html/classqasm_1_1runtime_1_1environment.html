@@ -121,8 +121,14 @@ $(document).ready(function(){initNavTree('classqasm_1_1runtime_1_1environment.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:af9ad7d4cd53f37a597c049a3bc08500f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqasm_1_1runtime_1_1environment.html#af9ad7d4cd53f37a597c049a3bc08500f">environment</a> ()</td></tr>
+<tr class="separator:af9ad7d4cd53f37a597c049a3bc08500f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71963228b400dc8dc874a460017e663"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqasm_1_1runtime_1_1environment.html#aa71963228b400dc8dc874a460017e663">~environment</a> ()</td></tr>
+<tr class="separator:aa71963228b400dc8dc874a460017e663"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb75f9df54d04d4f5d51c92093b5d466"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classqlib_1_1quantum_1_1gates_1_1igate.html">igate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqasm_1_1runtime_1_1environment.html#adb75f9df54d04d4f5d51c92093b5d466">getGate</a> (string name)</td></tr>
 <tr class="separator:adb75f9df54d04d4f5d51c92093b5d466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a71dc3d263c92394bc5e4c79973a556"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqasm_1_1runtime_1_1environment.html#a6a71dc3d263c92394bc5e4c79973a556">buildGate</a> (string name, <a class="el" href="classqlib_1_1math_1_1complex.html">complex</a> aa, <a class="el" href="classqlib_1_1math_1_1complex.html">complex</a> ab, <a class="el" href="classqlib_1_1math_1_1complex.html">complex</a> ba, <a class="el" href="classqlib_1_1math_1_1complex.html">complex</a> bb)</td></tr>
+<tr class="separator:a6a71dc3d263c92394bc5e4c79973a556"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78ac575d7245e21c65fb31e6585c38cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="runtime_8hpp.html#a20cf870406c99de2d935e3a77b8b60da">creg</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqasm_1_1runtime_1_1environment.html#a78ac575d7245e21c65fb31e6585c38cc">getCreg</a> (string name)</td></tr>
 <tr class="separator:a78ac575d7245e21c65fb31e6585c38cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cd69bebda4f5957e52168c91654f5f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqasm_1_1runtime_1_1environment.html#a4cd69bebda4f5957e52168c91654f5f5">hasCreg</a> (string name)</td></tr>
@@ -142,10 +148,116 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ae65dc834296334c8b9ea6dd900210881"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add156869a2a13e2ca877c39e4649757a"><td class="memItemLeft" align="right" valign="top">map&lt; string, <a class="el" href="runtime_8hpp.html#a20cf870406c99de2d935e3a77b8b60da">creg</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqasm_1_1runtime_1_1environment.html#add156869a2a13e2ca877c39e4649757a">classic_registers</a></td></tr>
 <tr class="separator:add156869a2a13e2ca877c39e4649757a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ec9211b7760c478dba445db34261b7"><td class="memItemLeft" align="right" valign="top">map&lt; string, <a class="el" href="classqlib_1_1quantum_1_1gates_1_1igate.html">igate</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqasm_1_1runtime_1_1environment.html#a05ec9211b7760c478dba445db34261b7">registered_gates</a></td></tr>
+<tr class="separator:a05ec9211b7760c478dba445db34261b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d808129d41e9878d789be74a13603c"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classqlib_1_1quantum_1_1gates_1_1igate.html">igate</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqasm_1_1runtime_1_1environment.html#ac3d808129d41e9878d789be74a13603c">gates_to_cleanup</a></td></tr>
+<tr class="separator:ac3d808129d41e9878d789be74a13603c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a runtime environment including variable values </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="af9ad7d4cd53f37a597c049a3bc08500f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">qasm::runtime::environment::environment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a new runtime environment with the default definitions </p>
+
+</div>
+</div>
+<a class="anchor" id="aa71963228b400dc8dc874a460017e663"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">qasm::runtime::environment::~environment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destroy environment and all definitions </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a6a71dc3d263c92394bc5e4c79973a556"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void qasm::runtime::environment::buildGate </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classqlib_1_1math_1_1complex.html">complex</a>&#160;</td>
+          <td class="paramname"><em>aa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classqlib_1_1math_1_1complex.html">complex</a>&#160;</td>
+          <td class="paramname"><em>ab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classqlib_1_1math_1_1complex.html">complex</a>&#160;</td>
+          <td class="paramname"><em>ba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classqlib_1_1math_1_1complex.html">complex</a>&#160;</td>
+          <td class="paramname"><em>bb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add a user defined gate to the environment. Gate is cleaned-up when the environment is cleaned-up. </p>
+
+</div>
+</div>
 <a class="anchor" id="a78ac575d7245e21c65fb31e6585c38cc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -363,6 +475,27 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac3d808129d41e9878d789be74a13603c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="classqlib_1_1quantum_1_1gates_1_1igate.html">igate</a>*&gt; qasm::runtime::environment::gates_to_cleanup</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>List of user defined gates that need to be cleaned up when the environment is cleared </p>
+
+</div>
+</div>
 <a class="anchor" id="ae65dc834296334c8b9ea6dd900210881"></a>
 <div class="memitem">
 <div class="memproto">
@@ -381,6 +514,27 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>List of assigned quantum variables </p>
+
+</div>
+</div>
+<a class="anchor" id="a05ec9211b7760c478dba445db34261b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string,<a class="el" href="classqlib_1_1quantum_1_1gates_1_1igate.html">igate</a>*&gt; qasm::runtime::environment::registered_gates</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>List of stored gates </p>
 
 </div>
 </div>

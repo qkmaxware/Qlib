@@ -31,6 +31,18 @@ Collaboration diagram for qlib\+:\+:math\+:\+:matrix\+:\nopagebreak
 \item 
 \hyperlink{classqlib_1_1math_1_1matrix_afebdd1cf189728ace53a594d5ef8b750}{$\sim$matrix} ()
 \item 
+\hyperlink{classqlib_1_1math_1_1matrix}{matrix} \hyperlink{classqlib_1_1math_1_1matrix_af858a64510126a09b2a25fbd771cbf1c}{transpose} ()
+\item 
+\hyperlink{classqlib_1_1math_1_1matrix}{matrix} \hyperlink{classqlib_1_1math_1_1matrix_a1dea0a516a68c6c3e93e437a0e82ad04}{adjoint} ()
+\item 
+bool \hyperlink{classqlib_1_1math_1_1matrix_a7f12f7fc8d075a596978cbcdfc6106c0}{is\+Square} ()
+\item 
+bool \hyperlink{classqlib_1_1math_1_1matrix_ae63299aa44d564dc03fba13b928cf191}{is\+Unitary} ()
+\item 
+bool \hyperlink{classqlib_1_1math_1_1matrix_ad6f19b58b5940eb22eda118be1e5decd}{is\+Column} ()
+\item 
+bool \hyperlink{classqlib_1_1math_1_1matrix_aaae121263906f945fcbb1e8e2ee68c71}{is\+Row} ()
+\item 
 \hyperlink{classqlib_1_1math_1_1complex}{complex} \& \hyperlink{classqlib_1_1math_1_1matrix_a50cbbef6e5b7888aecffbf66def70154}{operator()} (size\+\_\+t r, size\+\_\+t c)
 \item 
 \hyperlink{classqlib_1_1math_1_1complex}{complex} \& \hyperlink{classqlib_1_1math_1_1matrix_af93c414d328b985c83c032f41f485a9a}{operator()} (size\+\_\+t idx)
@@ -99,7 +111,14 @@ Create a matrix of this size with the given values in compressed row-\/$>$column
 Matrix destructor 
 
 \subsection{Member Function Documentation}
-\index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!begin@{begin}}
+\index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!adjoint@{adjoint}}
+\index{adjoint@{adjoint}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{adjoint()}{adjoint()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix} qlib\+::math\+::matrix\+::adjoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_a1dea0a516a68c6c3e93e437a0e82ad04}{}\label{classqlib_1_1math_1_1matrix_a1dea0a516a68c6c3e93e437a0e82ad04}
+Get the matrix representing the adjoint (complex conjugate transpose) of this matrix \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!begin@{begin}}
 \index{begin@{begin}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
 \subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf complex}$>$\+::iterator qlib\+::math\+::matrix\+::begin (
 \begin{DoxyParamCaption}
@@ -142,7 +161,35 @@ Get element from matrix \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!g
 \item[{size\+\_\+t}]{idx}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_a17dce2bfd8addcb026f6d9159134f1c7}{}\label{classqlib_1_1math_1_1matrix_a17dce2bfd8addcb026f6d9159134f1c7}
-Get element from matrix \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!operator()@{operator()}}
+Get element from matrix \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!is\+Column@{is\+Column}}
+\index{is\+Column@{is\+Column}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{is\+Column()}{isColumn()}}]{\setlength{\rightskip}{0pt plus 5cm}bool qlib\+::math\+::matrix\+::is\+Column (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_ad6f19b58b5940eb22eda118be1e5decd}{}\label{classqlib_1_1math_1_1matrix_ad6f19b58b5940eb22eda118be1e5decd}
+Test if this matrix represents a column matrix \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!is\+Row@{is\+Row}}
+\index{is\+Row@{is\+Row}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{is\+Row()}{isRow()}}]{\setlength{\rightskip}{0pt plus 5cm}bool qlib\+::math\+::matrix\+::is\+Row (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_aaae121263906f945fcbb1e8e2ee68c71}{}\label{classqlib_1_1math_1_1matrix_aaae121263906f945fcbb1e8e2ee68c71}
+Test if this matrix represents a row matrix \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!is\+Square@{is\+Square}}
+\index{is\+Square@{is\+Square}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{is\+Square()}{isSquare()}}]{\setlength{\rightskip}{0pt plus 5cm}bool qlib\+::math\+::matrix\+::is\+Square (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_a7f12f7fc8d075a596978cbcdfc6106c0}{}\label{classqlib_1_1math_1_1matrix_a7f12f7fc8d075a596978cbcdfc6106c0}
+Test if this matrix represents a square matrix \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!is\+Unitary@{is\+Unitary}}
+\index{is\+Unitary@{is\+Unitary}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{is\+Unitary()}{isUnitary()}}]{\setlength{\rightskip}{0pt plus 5cm}bool qlib\+::math\+::matrix\+::is\+Unitary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_ae63299aa44d564dc03fba13b928cf191}{}\label{classqlib_1_1math_1_1matrix_ae63299aa44d564dc03fba13b928cf191}
+Test if this matrix represents a unitary matrix \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!operator()@{operator()}}
 \index{operator()@{operator()}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
 \subsubsection[{\texorpdfstring{operator()(size\+\_\+t r, size\+\_\+t c)}{operator()(size_t r, size_t c)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf complex}\& qlib\+::math\+::matrix\+::operator() (
 \begin{DoxyParamCaption}
@@ -192,7 +239,14 @@ String representation
 
 Reimplemented from \hyperlink{classxobject_ad76243a44c4e4959d3b16bb57d82600d}{xobject}.
 
-
+\index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!transpose@{transpose}}
+\index{transpose@{transpose}!qlib\+::math\+::matrix@{qlib\+::math\+::matrix}}
+\subsubsection[{\texorpdfstring{transpose()}{transpose()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix} qlib\+::math\+::matrix\+::transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classqlib_1_1math_1_1matrix_af858a64510126a09b2a25fbd771cbf1c}{}\label{classqlib_1_1math_1_1matrix_af858a64510126a09b2a25fbd771cbf1c}
+Get the matrix representing the transposition of this matrix 
 
 \subsection{Member Data Documentation}
 \index{qlib\+::math\+::matrix@{qlib\+::math\+::matrix}!columns@{columns}}

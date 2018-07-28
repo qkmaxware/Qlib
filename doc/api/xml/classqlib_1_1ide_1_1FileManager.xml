@@ -145,20 +145,20 @@
 <para>Class for managing files and tabs in the IDE <simplesect kind="author"><para>halse </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="326">
+      <node id="389">
         <label>qlib.ide.FileManager</label>
         <link refid="classqlib_1_1ide_1_1FileManager"/>
-        <childnode refid="327" relation="usage">
+        <childnode refid="390" relation="usage">
           <edgelabel>openTabs</edgelabel>
         </childnode>
-        <childnode refid="328" relation="usage">
+        <childnode refid="391" relation="usage">
           <edgelabel>tabs</edgelabel>
         </childnode>
       </node>
-      <node id="327">
+      <node id="390">
         <label>LinkedList&lt; qlib.ide.FileManager.Tab &gt;</label>
       </node>
-      <node id="328">
+      <node id="391">
         <label>JTabbedPane</label>
       </node>
     </collaborationgraph>

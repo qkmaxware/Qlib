@@ -12,171 +12,181 @@
     <includes local="no">vector</includes>
     <includedby refid="qlib_8h" local="yes">src/core/qlib.h</includedby>
     <incdepgraph>
-      <node id="1702">
+      <node id="1991">
         <label>limits</label>
       </node>
-      <node id="1699">
+      <node id="1988">
         <label>./../../general/object.hpp</label>
         <link refid="object_8hpp"/>
-        <childnode refid="1700" relation="include">
+        <childnode refid="1989" relation="include">
         </childnode>
-        <childnode refid="1703" relation="include">
+        <childnode refid="1992" relation="include">
         </childnode>
-        <childnode refid="1704" relation="include">
+        <childnode refid="1993" relation="include">
         </childnode>
-        <childnode refid="1705" relation="include">
+        <childnode refid="1994" relation="include">
         </childnode>
-        <childnode refid="1706" relation="include">
+        <childnode refid="1995" relation="include">
         </childnode>
-        <childnode refid="1707" relation="include">
+        <childnode refid="1996" relation="include">
         </childnode>
       </node>
-      <node id="1701">
+      <node id="1990">
         <label>stdint.h</label>
       </node>
-      <node id="1710">
+      <node id="1999">
         <label>stdlib.h</label>
       </node>
-      <node id="1711">
+      <node id="2000">
         <label>./../../math/matrix.hpp</label>
         <link refid="matrix_8hpp"/>
-        <childnode refid="1708" relation="include">
+        <childnode refid="1997" relation="include">
         </childnode>
-        <childnode refid="1699" relation="include">
+        <childnode refid="1988" relation="include">
         </childnode>
-        <childnode refid="1712" relation="include">
+        <childnode refid="2001" relation="include">
         </childnode>
-        <childnode refid="1713" relation="include">
+        <childnode refid="2002" relation="include">
         </childnode>
-        <childnode refid="1709" relation="include">
+        <childnode refid="1998" relation="include">
         </childnode>
-        <childnode refid="1704" relation="include">
+        <childnode refid="1993" relation="include">
         </childnode>
       </node>
-      <node id="1698">
+      <node id="1987">
         <label>src/core/quantum/systems/qubit.hpp</label>
         <link refid="qubit.hpp"/>
-        <childnode refid="1699" relation="include">
+        <childnode refid="1988" relation="include">
         </childnode>
-        <childnode refid="1708" relation="include">
+        <childnode refid="1997" relation="include">
         </childnode>
-        <childnode refid="1711" relation="include">
+        <childnode refid="2000" relation="include">
         </childnode>
-        <childnode refid="1714" relation="include">
+        <childnode refid="2003" relation="include">
         </childnode>
-        <childnode refid="1715" relation="include">
+        <childnode refid="2004" relation="include">
         </childnode>
-        <childnode refid="1709" relation="include">
+        <childnode refid="1998" relation="include">
         </childnode>
-        <childnode refid="1704" relation="include">
+        <childnode refid="1993" relation="include">
         </childnode>
-        <childnode refid="1713" relation="include">
+        <childnode refid="2002" relation="include">
         </childnode>
       </node>
-      <node id="1714">
+      <node id="2003">
         <label>./../gates/igate.hpp</label>
         <link refid="igate_8hpp"/>
-        <childnode refid="1699" relation="include">
+        <childnode refid="1988" relation="include">
         </childnode>
-        <childnode refid="1708" relation="include">
+        <childnode refid="1997" relation="include">
         </childnode>
-        <childnode refid="1711" relation="include">
+        <childnode refid="2000" relation="include">
         </childnode>
       </node>
-      <node id="1712">
+      <node id="2001">
         <label>stdexcept</label>
       </node>
-      <node id="1715">
+      <node id="2004">
         <label>system.hpp</label>
         <link refid="system_8hpp"/>
-        <childnode refid="1699" relation="include">
+        <childnode refid="1988" relation="include">
         </childnode>
-        <childnode refid="1708" relation="include">
+        <childnode refid="1997" relation="include">
         </childnode>
-        <childnode refid="1711" relation="include">
+        <childnode refid="2000" relation="include">
         </childnode>
-        <childnode refid="1714" relation="include">
+        <childnode refid="2003" relation="include">
         </childnode>
       </node>
-      <node id="1705">
+      <node id="1994">
         <label>exception</label>
       </node>
-      <node id="1706">
+      <node id="1995">
         <label>random</label>
       </node>
-      <node id="1708">
+      <node id="1997">
         <label>./../../math/complex.hpp</label>
         <link refid="complex_8hpp"/>
-        <childnode refid="1699" relation="include">
+        <childnode refid="1988" relation="include">
         </childnode>
-        <childnode refid="1709" relation="include">
+        <childnode refid="1998" relation="include">
         </childnode>
-        <childnode refid="1710" relation="include">
+        <childnode refid="1999" relation="include">
         </childnode>
-        <childnode refid="1704" relation="include">
+        <childnode refid="1993" relation="include">
         </childnode>
       </node>
-      <node id="1713">
+      <node id="2002">
         <label>vector</label>
       </node>
-      <node id="1704">
+      <node id="1993">
         <label>sstream</label>
       </node>
-      <node id="1709">
+      <node id="1998">
         <label>math.h</label>
       </node>
-      <node id="1703">
+      <node id="1992">
         <label>iostream</label>
       </node>
-      <node id="1707">
+      <node id="1996">
         <label>chrono</label>
       </node>
-      <node id="1700">
+      <node id="1989">
         <label>./types.h</label>
         <link refid="types_8h"/>
-        <childnode refid="1701" relation="include">
+        <childnode refid="1990" relation="include">
         </childnode>
-        <childnode refid="1702" relation="include">
+        <childnode refid="1991" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1721">
+      <node id="2010">
         <label>src/runtime/main.cpp</label>
         <link refid="runtime_2main_8cpp"/>
       </node>
-      <node id="1719">
+      <node id="2008">
         <label>src/runtime/runtime.hpp</label>
         <link refid="runtime_8hpp"/>
-        <childnode refid="1720" relation="include">
+        <childnode refid="2009" relation="include">
         </childnode>
-        <childnode refid="1721" relation="include">
+        <childnode refid="2010" relation="include">
+        </childnode>
+        <childnode refid="2011" relation="include">
         </childnode>
       </node>
-      <node id="1716">
+      <node id="2005">
         <label>src/core/quantum/systems/qubit.hpp</label>
         <link refid="qubit.hpp"/>
-        <childnode refid="1717" relation="include">
+        <childnode refid="2006" relation="include">
         </childnode>
       </node>
-      <node id="1718">
+      <node id="2011">
+        <label>src/runtime/qcircuit_exporter.hpp</label>
+        <link refid="qcircuit__exporter_8hpp"/>
+        <childnode refid="2010" relation="include">
+        </childnode>
+      </node>
+      <node id="2007">
         <label>src/core/main.cpp</label>
         <link refid="core_2main_8cpp"/>
       </node>
-      <node id="1717">
+      <node id="2006">
         <label>src/core/qlib.h</label>
         <link refid="qlib_8h"/>
-        <childnode refid="1718" relation="include">
+        <childnode refid="2007" relation="include">
         </childnode>
-        <childnode refid="1719" relation="include">
+        <childnode refid="2008" relation="include">
         </childnode>
-        <childnode refid="1721" relation="include">
+        <childnode refid="2010" relation="include">
         </childnode>
       </node>
-      <node id="1720">
+      <node id="2009">
         <label>src/runtime/compiler.hpp</label>
         <link refid="compiler_8hpp"/>
-        <childnode refid="1721" relation="include">
+        <childnode refid="2010" relation="include">
+        </childnode>
+        <childnode refid="2011" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -222,58 +232,75 @@
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(1,0)<sp/>=<sp/>one/mag;</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53" refid="classqlib_1_1quantum_1_1qubit_1af8eaf337ffcb95c2445ddf35189335e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>&amp;<sp/><ref refid="classqlib_1_1quantum_1_1qubit_1af8eaf337ffcb95c2445ddf35189335e4" kindref="member">state</ref>(){</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60" refid="classqlib_1_1quantum_1_1qubit_1ab3b0b76d5c6f0e627a742fcafbc768ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qubit_1ab3b0b76d5c6f0e627a742fcafbc768ae" kindref="member">apply</ref>(<ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">qlib::quantum::gates::igate</ref>&amp;<sp/>gate,<sp/>std::vector&lt;u64&gt;<sp/>inputBits){</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(gate.<ref refid="classqlib_1_1quantum_1_1gates_1_1igate_1ac8aa56b0095a94fdd437bc55d90aec9d" kindref="member">inputs</ref>()<sp/>!=<sp/>1){</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::length_error(</highlight><highlight class="stringliteral">&quot;Only<sp/>one<sp/>qubit<sp/>operators<sp/>can<sp/>be<sp/>applied<sp/>to<sp/>single<sp/>qubit<sp/>systems&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="53" refid="classqlib_1_1quantum_1_1qubit_1a934b5ff2dfbcc22ec2aab4e3a6544b6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qubit_1a934b5ff2dfbcc22ec2aab4e3a6544b6f" kindref="member">setState</ref>(std::vector&lt;complex&gt;<sp/>amp){</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(amp.size()<sp/>&gt;=<sp/>1){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(0,0)<sp/>=<sp/>amp[0];</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(0,0)<sp/>=<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">qlib::math::complex</ref>(0,0);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(amp.size()<sp/>&gt;=<sp/>2){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(1,0)<sp/>=<sp/>amp[1];</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(0,0)<sp/>=<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">qlib::math::complex</ref>(0,0);</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref><sp/>ref<sp/>=<sp/>this-&gt;<ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>;</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gate.<ref refid="classqlib_1_1quantum_1_1gates_1_1igate_1a66038ee65fec12c627789505e11f1e23" kindref="member">operate</ref>(vec,<sp/><ref refid="classqlib_1_1quantum_1_1qubit_1af8eaf337ffcb95c2445ddf35189335e4" kindref="member">state</ref>(),<sp/>inputBits);</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71" refid="classqlib_1_1quantum_1_1qubit_1aaf001eff84ccb4b7a6992e42bc2143cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i8<sp/><ref refid="classqlib_1_1quantum_1_1qubit_1aaf001eff84ccb4b7a6992e42bc2143cb" kindref="member">measure</ref>(i64<sp/><ref refid="classqlib_1_1quantum_1_1qubit" kindref="compound">qubit</ref><sp/>=<sp/>0){<sp/></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Prob<sp/>of<sp/>|0&gt;<sp/>is<sp/>vec(0,0).sqrMagnitude();</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/>p0<sp/>=<sp/><ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(0,0).sqrMagnitude();</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Prob<sp/>of<sp/>|1&gt;<sp/>is<sp/>vec(1,0).sqrMagnitude()<sp/>or<sp/>1-p0<sp/>due<sp/>to<sp/>normalization</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/>p1<sp/>=<sp/>1.0<sp/>-<sp/>p0;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/>mag<sp/>=<sp/>sqrt(<ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(0,0).sqrMagnitude()<sp/>+<sp/><ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(1,0).sqrMagnitude());</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(0,0)<sp/>=<sp/><ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(0,0)/mag;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(1,0)<sp/>=<sp/><ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(1,0)/mag;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classqlib_1_1quantum_1_1qubit_1af8eaf337ffcb95c2445ddf35189335e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>&amp;<sp/><ref refid="classqlib_1_1quantum_1_1qubit_1af8eaf337ffcb95c2445ddf35189335e4" kindref="member">state</ref>(){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/>r<sp/>=<sp/>this-&gt;<ref refid="classqlib_1_1quantum_1_1qubit_1abb97216eead736ab87e8756b9b4c2ce9" kindref="member">distribution</ref>(<ref refid="object_8hpp_1a52c75811f4e394e7f1818d29ee034307" kindref="member">rng</ref>);</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//System<sp/>collapse<sp/>dictated<sp/>by<sp/>|new&gt;<sp/>=<sp/>normalize(Pi<sp/>|old&gt;)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//P0<sp/>=<sp/>|0&gt;&lt;0|</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//P1<sp/>=<sp/>|1&gt;&lt;1|</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(r<sp/>&lt;=<sp/>p0){</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;vec<sp/>=<sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>(2,1,<sp/>{1,<sp/>0});</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;vec<sp/>=<sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>(2,1,<sp/>{0,<sp/>1});</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95" refid="classqlib_1_1quantum_1_1qubit_1aa16b11ad849b672489c625196c800dd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qubit_1aa16b11ad849b672489c625196c800dd3" kindref="member">zero</ref>(i64<sp/><ref refid="classqlib_1_1quantum_1_1qubit" kindref="compound">qubit</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;vec<sp/>=<sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>(2,1,<sp/>{1,<sp/>0});</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80" refid="classqlib_1_1quantum_1_1qubit_1ab3b0b76d5c6f0e627a742fcafbc768ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qubit_1ab3b0b76d5c6f0e627a742fcafbc768ae" kindref="member">apply</ref>(<ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">qlib::quantum::gates::igate</ref>&amp;<sp/>gate,<sp/>std::vector&lt;u64&gt;<sp/>inputBits){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(gate.<ref refid="classqlib_1_1quantum_1_1gates_1_1igate_1ac8aa56b0095a94fdd437bc55d90aec9d" kindref="member">inputs</ref>()<sp/>!=<sp/>1){</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::length_error(</highlight><highlight class="stringliteral">&quot;Only<sp/>one<sp/>qubit<sp/>operators<sp/>can<sp/>be<sp/>applied<sp/>to<sp/>single<sp/>qubit<sp/>systems&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref><sp/>ref<sp/>=<sp/>this-&gt;<ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gate.<ref refid="classqlib_1_1quantum_1_1gates_1_1igate_1a66038ee65fec12c627789505e11f1e23" kindref="member">operate</ref>(vec,<sp/><ref refid="classqlib_1_1quantum_1_1qubit_1af8eaf337ffcb95c2445ddf35189335e4" kindref="member">state</ref>(),<sp/>inputBits);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classqlib_1_1quantum_1_1qubit_1aaf001eff84ccb4b7a6992e42bc2143cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i8<sp/><ref refid="classqlib_1_1quantum_1_1qubit_1aaf001eff84ccb4b7a6992e42bc2143cb" kindref="member">measure</ref>(i64<sp/><ref refid="classqlib_1_1quantum_1_1qubit" kindref="compound">qubit</ref><sp/>=<sp/>0){<sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Prob<sp/>of<sp/>|0&gt;<sp/>is<sp/>vec(0,0).sqrMagnitude();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/>p0<sp/>=<sp/><ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(0,0).sqrMagnitude();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Prob<sp/>of<sp/>|1&gt;<sp/>is<sp/>vec(1,0).sqrMagnitude()<sp/>or<sp/>1-p0<sp/>due<sp/>to<sp/>normalization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//f32<sp/>p1<sp/>=<sp/>1.0<sp/>-<sp/>p0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/>r<sp/>=<sp/>this-&gt;<ref refid="classqlib_1_1quantum_1_1qubit_1abb97216eead736ab87e8756b9b4c2ce9" kindref="member">distribution</ref>(<ref refid="object_8hpp_1a52c75811f4e394e7f1818d29ee034307" kindref="member">rng</ref>);</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
-<codeline lineno="102" refid="classqlib_1_1quantum_1_1qubit_1a8bf29d1f66508e4878ea861c5d8e44ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classqlib_1_1quantum_1_1qubit_1a8bf29d1f66508e4878ea861c5d8e44ec" kindref="member">toString</ref>(){</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>sb;</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/>(this-&gt;<ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(0,0).<ref refid="classqlib_1_1math_1_1matrix_1a06ec639a654b5319f4eb1bff591d6e7b" kindref="member">toString</ref>())<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|0&gt;<sp/>+<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(this-&gt;<ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(1,0).<ref refid="classqlib_1_1math_1_1matrix_1a06ec639a654b5319f4eb1bff591d6e7b" kindref="member">toString</ref>())<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|1&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sb.str();</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//System<sp/>collapse<sp/>dictated<sp/>by<sp/>|new&gt;<sp/>=<sp/>normalize(Pi<sp/>|old&gt;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//P0<sp/>=<sp/>|0&gt;&lt;0|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//P1<sp/>=<sp/>|1&gt;&lt;1|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(r<sp/>&lt;=<sp/>p0){</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;vec<sp/>=<sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>(2,1,<sp/>{1,<sp/>0});</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;vec<sp/>=<sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>(2,1,<sp/>{0,<sp/>1});</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="115" refid="classqlib_1_1quantum_1_1qubit_1aa16b11ad849b672489c625196c800dd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qubit_1aa16b11ad849b672489c625196c800dd3" kindref="member">zero</ref>(i64<sp/><ref refid="classqlib_1_1quantum_1_1qubit" kindref="compound">qubit</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;vec<sp/>=<sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>(2,1,<sp/>{1,<sp/>0});</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="classqlib_1_1quantum_1_1qubit_1a8bf29d1f66508e4878ea861c5d8e44ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classqlib_1_1quantum_1_1qubit_1a8bf29d1f66508e4878ea861c5d8e44ec" kindref="member">toString</ref>(){</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>sb;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/>(this-&gt;<ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(0,0).<ref refid="classqlib_1_1math_1_1matrix_1a06ec639a654b5319f4eb1bff591d6e7b" kindref="member">toString</ref>())<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|0&gt;<sp/>+<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(this-&gt;<ref refid="classqlib_1_1quantum_1_1qubit_1a8f6e33dd5d0673f195360bc4b5c5442f" kindref="member">vec</ref>(1,0).<ref refid="classqlib_1_1math_1_1matrix_1a06ec639a654b5319f4eb1bff591d6e7b" kindref="member">toString</ref>())<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|1&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sb.str();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="src/core/quantum/systems/qubit.hpp"/>
   </compounddef>

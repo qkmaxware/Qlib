@@ -25,9 +25,13 @@ Collaboration diagram for qlib\+:\+:quantum\+:\+:qsystem\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+virtual \hyperlink{classqlib_1_1quantum_1_1qsystem_aeb1ecc3086cd9c14756aa4c575eeda0c}{$\sim$qsystem} ()
+\item 
 virtual void \hyperlink{classqlib_1_1quantum_1_1qsystem_adbb748feb351aac69ca4a0bf6c92d77c}{apply} (\hyperlink{classqlib_1_1quantum_1_1gates_1_1igate}{qlib\+::quantum\+::gates\+::igate} \&gate, std\+::vector$<$ u64 $>$ input\+Bits)=0
 \item 
 virtual i8 \hyperlink{classqlib_1_1quantum_1_1qsystem_a33d9954c6ca01cb400d940ff05614364}{measure} (i64 \hyperlink{classqlib_1_1quantum_1_1qubit}{qubit})=0
+\item 
+virtual void \hyperlink{classqlib_1_1quantum_1_1qsystem_ab70360fa1be7b72d4f49f6dadc17267d}{set\+State} (std\+::vector$<$ \hyperlink{classqlib_1_1math_1_1complex}{complex} $>$ amp)=0
 \item 
 virtual std\+::string \hyperlink{classqlib_1_1quantum_1_1qsystem_a9d95030955e2fdb26bc9152c32310e7e}{to\+String} ()
 \item 
@@ -37,6 +41,16 @@ virtual void \hyperlink{classqlib_1_1quantum_1_1qsystem_a5626857e5dc87dc2bdbb1f4
 
 \subsection{Detailed Description}
 Base class for all quantum systems 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{qlib\+::quantum\+::qsystem@{qlib\+::quantum\+::qsystem}!````~qsystem@{$\sim$qsystem}}
+\index{````~qsystem@{$\sim$qsystem}!qlib\+::quantum\+::qsystem@{qlib\+::quantum\+::qsystem}}
+\subsubsection[{\texorpdfstring{$\sim$qsystem()}{~qsystem()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual qlib\+::quantum\+::qsystem\+::$\sim$qsystem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classqlib_1_1quantum_1_1qsystem_aeb1ecc3086cd9c14756aa4c575eeda0c}{}\label{classqlib_1_1quantum_1_1qsystem_aeb1ecc3086cd9c14756aa4c575eeda0c}
+
 
 \subsection{Member Function Documentation}
 \index{qlib\+::quantum\+::qsystem@{qlib\+::quantum\+::qsystem}!apply@{apply}}
@@ -61,6 +75,17 @@ Implemented in \hyperlink{classqlib_1_1quantum_1_1qreg_af38f95ecaaf7de4008560941
 Collapse the state and return the value of the measured qubit 
 
 Implemented in \hyperlink{classqlib_1_1quantum_1_1qreg_acfcd58502c1e511766ede52a891f27c3}{qlib\+::quantum\+::qreg}, \hyperlink{classqlib_1_1quantum_1_1qubit_aaf001eff84ccb4b7a6992e42bc2143cb}{qlib\+::quantum\+::qubit}, and \hyperlink{classqlib_1_1quantum_1_1ensemble_ae5e3ebd119e1df6dbb966b7bb6222e5a}{qlib\+::quantum\+::ensemble}.
+
+\index{qlib\+::quantum\+::qsystem@{qlib\+::quantum\+::qsystem}!set\+State@{set\+State}}
+\index{set\+State@{set\+State}!qlib\+::quantum\+::qsystem@{qlib\+::quantum\+::qsystem}}
+\subsubsection[{\texorpdfstring{set\+State(std\+::vector$<$ complex $>$ amp)=0}{setState(std::vector< complex > amp)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void qlib\+::quantum\+::qsystem\+::set\+State (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf complex} $>$}]{amp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classqlib_1_1quantum_1_1qsystem_ab70360fa1be7b72d4f49f6dadc17267d}{}\label{classqlib_1_1quantum_1_1qsystem_ab70360fa1be7b72d4f49f6dadc17267d}
+Set the state of the quantum register 
+
+Implemented in \hyperlink{classqlib_1_1quantum_1_1qreg_a727b26ff6fc1590ad3897884cbc397af}{qlib\+::quantum\+::qreg}, \hyperlink{classqlib_1_1quantum_1_1qubit_a934b5ff2dfbcc22ec2aab4e3a6544b6f}{qlib\+::quantum\+::qubit}, and \hyperlink{classqlib_1_1quantum_1_1ensemble_a0eb45d5e78a713d118cef48152be57ae}{qlib\+::quantum\+::ensemble}.
 
 \index{qlib\+::quantum\+::qsystem@{qlib\+::quantum\+::qsystem}!to\+String@{to\+String}}
 \index{to\+String@{to\+String}!qlib\+::quantum\+::qsystem@{qlib\+::quantum\+::qsystem}}

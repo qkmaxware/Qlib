@@ -141,55 +141,55 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="297">
+      <node id="360">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="296">
+      <node id="359">
         <label>qlib::quantum::gates::igate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1igate"/>
-        <childnode refid="297" relation="public-inheritance">
+        <childnode refid="360" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="295">
+      <node id="358">
         <label>qlib::quantum::gates::controlledgate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1controlledgate"/>
-        <childnode refid="296" relation="public-inheritance">
+        <childnode refid="359" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="301">
+      <node id="364">
         <label>qlib::quantum::gates::onequbitgate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1onequbitgate"/>
-        <childnode refid="299" relation="public-inheritance">
+        <childnode refid="362" relation="public-inheritance">
         </childnode>
-        <childnode refid="302" relation="usage">
+        <childnode refid="365" relation="usage">
           <edgelabel>m</edgelabel>
         </childnode>
       </node>
-      <node id="300">
+      <node id="363">
         <label>xobject</label>
         <link refid="classxobject"/>
       </node>
-      <node id="299">
+      <node id="362">
         <label>qlib::quantum::gates::igate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1igate"/>
-        <childnode refid="300" relation="public-inheritance">
+        <childnode refid="363" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="302">
+      <node id="365">
         <label>qlib::math::matrix</label>
         <link refid="classqlib_1_1math_1_1matrix"/>
-        <childnode refid="300" relation="public-inheritance">
+        <childnode refid="363" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="298">
+      <node id="361">
         <label>qlib::quantum::gates::controlledgate</label>
         <link refid="classqlib_1_1quantum_1_1gates_1_1controlledgate"/>
-        <childnode refid="299" relation="public-inheritance">
+        <childnode refid="362" relation="public-inheritance">
         </childnode>
-        <childnode refid="301" relation="usage">
+        <childnode refid="364" relation="usage">
           <edgelabel>refgate</edgelabel>
         </childnode>
       </node>
@@ -199,11 +199,13 @@
       <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1abe6d1d959a5a781739fe962551d013e7" prot="public" virt="non-virtual"><scope>qlib::quantum::gates::controlledgate</scope><name>controlledgate</name></member>
       <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1a7d9d8771acebaa39b35176c04f114cb1" prot="public" virt="non-virtual"><scope>qlib::quantum::gates::controlledgate</scope><name>getMatrix</name></member>
       <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1adb544cb10cd5f8836e331102f7c7e9d6" prot="public" virt="virtual"><scope>qlib::quantum::gates::controlledgate</scope><name>inputs</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1igate_1ab69530a50a6b78e429abe3c08407b222" prot="public" virt="non-virtual"><scope>qlib::quantum::gates::controlledgate</scope><name>isGateable</name></member>
       <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1a7fb8875c83106b35d733cc96b312b957" prot="public" virt="virtual"><scope>qlib::quantum::gates::controlledgate</scope><name>name</name></member>
       <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1aec6e423cc6ae442c5c3c5dc04581959e" prot="public" virt="virtual"><scope>qlib::quantum::gates::controlledgate</scope><name>operate</name></member>
       <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1a8712f70ae76ec442aebad49109ddea97" prot="private" virt="non-virtual"><scope>qlib::quantum::gates::controlledgate</scope><name>refgate</name></member>
       <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1a638c7bead4c936bc0c8672a1fee4b50f" prot="private" virt="non-virtual"><scope>qlib::quantum::gates::controlledgate</scope><name>sname</name></member>
       <member refid="classqlib_1_1quantum_1_1gates_1_1controlledgate_1a87b4d6e66acffc4e14eb3e39a19c4bee" prot="public" virt="virtual"><scope>qlib::quantum::gates::controlledgate</scope><name>toString</name></member>
+      <member refid="classqlib_1_1quantum_1_1gates_1_1igate_1afa0161a395344bb7765b61fbf94d01b5" prot="public" virt="virtual"><scope>qlib::quantum::gates::controlledgate</scope><name>~igate</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

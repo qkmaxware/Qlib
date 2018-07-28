@@ -1,0 +1,94 @@
+\hypertarget{properties_8h}{}\section{src/core/general/properties.h File Reference}
+\label{properties_8h}\index{src/core/general/properties.\+h@{src/core/general/properties.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{properties_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{properties_8h_ab14a12e1f849390ce9e44938d68479a8}{G\+E\+T\+T\+ER}(t,  n)~t get\#\#n () \{ return n; \}
+\item 
+\#define \hyperlink{properties_8h_a4ed31dd12447552119b00fe1804b3fad}{S\+E\+T\+T\+ER}(t,  n)~void set\#\#n (t value) \{ n = value; \}
+\item 
+\#define \hyperlink{properties_8h_a6df9c93dba3468717261cac178562278}{G\+ET}(t,  n)~t get\#\#n ()
+\item 
+\#define \hyperlink{properties_8h_a51f2593a25bc0b5ea1101934f6a9eddc}{S\+ET}(t,  n)~void set\#\#n (t value)
+\item 
+\#define \hyperlink{properties_8h_abf7440730f06e75c6b48170bfb9d240d}{typeof}(t,  obj)~(dynamic\+\_\+cast$<$t$\ast$$>$ (obj) != N\+U\+LL)
+\item 
+\#define \hyperlink{properties_8h_a175833ffa4886a635e63e40b4ef5bd66}{typeas}(t,  obj)~dynamic\+\_\+cast$<$t$\ast$$>$ (obj)
+\item 
+\#define \hyperlink{properties_8h_a0852287be3866e6ca5f85e48fca56dfe}{print}(x)~std\+::cout $<$$<$ x
+\item 
+\#define \hyperlink{properties_8h_a5a2feab0ca66b147104d8a9fe75996f2}{println}(x)~std\+::cout $<$$<$ x $<$$<$ std\+::endl;
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{properties.\+h@{properties.\+h}!G\+ET@{G\+ET}}
+\index{G\+ET@{G\+ET}!properties.\+h@{properties.\+h}}
+\subsubsection[{\texorpdfstring{G\+ET}{GET}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+ET(
+\begin{DoxyParamCaption}
+\item[{}]{t, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~t get\#\#n ()}\hypertarget{properties_8h_a6df9c93dba3468717261cac178562278}{}\label{properties_8h_a6df9c93dba3468717261cac178562278}
+\index{properties.\+h@{properties.\+h}!G\+E\+T\+T\+ER@{G\+E\+T\+T\+ER}}
+\index{G\+E\+T\+T\+ER@{G\+E\+T\+T\+ER}!properties.\+h@{properties.\+h}}
+\subsubsection[{\texorpdfstring{G\+E\+T\+T\+ER}{GETTER}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+E\+T\+T\+ER(
+\begin{DoxyParamCaption}
+\item[{}]{t, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~t get\#\#n () \{ return n; \}}\hypertarget{properties_8h_ab14a12e1f849390ce9e44938d68479a8}{}\label{properties_8h_ab14a12e1f849390ce9e44938d68479a8}
+\index{properties.\+h@{properties.\+h}!print@{print}}
+\index{print@{print}!properties.\+h@{properties.\+h}}
+\subsubsection[{\texorpdfstring{print}{print}}]{\setlength{\rightskip}{0pt plus 5cm}\#define print(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~std\+::cout $<$$<$ x}\hypertarget{properties_8h_a0852287be3866e6ca5f85e48fca56dfe}{}\label{properties_8h_a0852287be3866e6ca5f85e48fca56dfe}
+\index{properties.\+h@{properties.\+h}!println@{println}}
+\index{println@{println}!properties.\+h@{properties.\+h}}
+\subsubsection[{\texorpdfstring{println}{println}}]{\setlength{\rightskip}{0pt plus 5cm}\#define println(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~std\+::cout $<$$<$ x $<$$<$ std\+::endl;}\hypertarget{properties_8h_a5a2feab0ca66b147104d8a9fe75996f2}{}\label{properties_8h_a5a2feab0ca66b147104d8a9fe75996f2}
+\index{properties.\+h@{properties.\+h}!S\+ET@{S\+ET}}
+\index{S\+ET@{S\+ET}!properties.\+h@{properties.\+h}}
+\subsubsection[{\texorpdfstring{S\+ET}{SET}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+ET(
+\begin{DoxyParamCaption}
+\item[{}]{t, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~void set\#\#n (t value)}\hypertarget{properties_8h_a51f2593a25bc0b5ea1101934f6a9eddc}{}\label{properties_8h_a51f2593a25bc0b5ea1101934f6a9eddc}
+\index{properties.\+h@{properties.\+h}!S\+E\+T\+T\+ER@{S\+E\+T\+T\+ER}}
+\index{S\+E\+T\+T\+ER@{S\+E\+T\+T\+ER}!properties.\+h@{properties.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+T\+T\+ER}{SETTER}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+T\+T\+ER(
+\begin{DoxyParamCaption}
+\item[{}]{t, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~void set\#\#n (t value) \{ n = value; \}}\hypertarget{properties_8h_a4ed31dd12447552119b00fe1804b3fad}{}\label{properties_8h_a4ed31dd12447552119b00fe1804b3fad}
+\index{properties.\+h@{properties.\+h}!typeas@{typeas}}
+\index{typeas@{typeas}!properties.\+h@{properties.\+h}}
+\subsubsection[{\texorpdfstring{typeas}{typeas}}]{\setlength{\rightskip}{0pt plus 5cm}\#define typeas(
+\begin{DoxyParamCaption}
+\item[{}]{t, }
+\item[{}]{obj}
+\end{DoxyParamCaption}
+)~dynamic\+\_\+cast$<$t$\ast$$>$ (obj)}\hypertarget{properties_8h_a175833ffa4886a635e63e40b4ef5bd66}{}\label{properties_8h_a175833ffa4886a635e63e40b4ef5bd66}
+\index{properties.\+h@{properties.\+h}!typeof@{typeof}}
+\index{typeof@{typeof}!properties.\+h@{properties.\+h}}
+\subsubsection[{\texorpdfstring{typeof}{typeof}}]{\setlength{\rightskip}{0pt plus 5cm}\#define typeof(
+\begin{DoxyParamCaption}
+\item[{}]{t, }
+\item[{}]{obj}
+\end{DoxyParamCaption}
+)~(dynamic\+\_\+cast$<$t$\ast$$>$ (obj) != N\+U\+LL)}\hypertarget{properties_8h_abf7440730f06e75c6b48170bfb9d240d}{}\label{properties_8h_abf7440730f06e75c6b48170bfb9d240d}

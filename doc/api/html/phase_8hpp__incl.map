@@ -1,8 +1,9 @@
 <map id="src/core/quantum/gates/phase.hpp" name="src/core/quantum/gates/phase.hpp">
-<area shape="rect" id="node2" href="$onequbitgate_8hpp.html" title="onequbitgate.hpp" alt="" coords="5,95,127,121"/>
-<area shape="rect" id="node3" href="$igate_8hpp.html" title="./igate.hpp" alt="" coords="354,169,437,196"/>
-<area shape="rect" id="node4" href="$object_8hpp.html" title="./../../general/object.hpp" alt="" coords="490,393,650,420"/>
-<area shape="rect" id="node13" href="$complex_8hpp.html" title="File containing complex number class and operators. " alt="" coords="253,319,415,345"/>
-<area shape="rect" id="node16" href="$matrix_8hpp.html" title="./../../math/matrix.hpp" alt="" coords="379,244,527,271"/>
-<area shape="rect" id="node5" href="$types_8h.html" title="./types.h" alt="" coords="639,468,712,495"/>
+<area shape="rect" id="node2" href="$onequbitgate_8hpp.html" title="onequbitgate.hpp" alt="" coords="630,95,751,121"/>
+<area shape="rect" id="node20" href="$constants_8h.html" title="./../../general/constants.h" alt="" coords="829,95,997,121"/>
+<area shape="rect" id="node3" href="$igate_8hpp.html" title="./igate.hpp" alt="" coords="443,169,525,196"/>
+<area shape="rect" id="node4" href="$object_8hpp.html" title="./../../general/object.hpp" alt="" coords="145,393,305,420"/>
+<area shape="rect" id="node13" href="$complex_8hpp.html" title="./../../math/complex.hpp" alt="" coords="491,319,653,345"/>
+<area shape="rect" id="node16" href="$matrix_8hpp.html" title="./../../math/matrix.hpp" alt="" coords="354,244,502,271"/>
+<area shape="rect" id="node5" href="$types_8h.html" title="./types.h" alt="" coords="91,468,165,495"/>
 </map>

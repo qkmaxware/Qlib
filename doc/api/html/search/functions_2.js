@@ -5,6 +5,7 @@ var searchData=
   ['clear',['clear',['../classqlib_1_1ide_1_1IniIO.html#a586ba8be1bf5be1d406c75da8a99464f',1,'qlib::ide::IniIO']]],
   ['close',['close',['../classqlib_1_1ide_1_1FileManager.html#acefb35297452dccb1f7a2cbebd08b0fc',1,'qlib::ide::FileManager']]],
   ['codeeditor',['CodeEditor',['../classqlib_1_1ide_1_1CodeEditor.html#a9f3e1be7ea989d2011bf7d419341405c',1,'qlib::ide::CodeEditor']]],
+  ['colour',['colour',['../structgraphics_1_1colour.html#a6fdccb3f51bff3bef8ee999503542c3f',1,'graphics::colour::colour()'],['../structgraphics_1_1colour.html#a7a2d38c378c3d53453a06eddc84c31fc',1,'graphics::colour::colour(uint r, uint g, uint b)'],['../structgraphics_1_1colour.html#af759244ddae761fa62713eb6bf25fa73',1,'graphics::colour::colour(uint r, uint g, uint b, uint a)']]],
   ['compiler',['compiler',['../classcompiler.html#aac603e3e8c3851dfb420e6e007adbad0',1,'compiler']]],
   ['complex',['complex',['../classqlib_1_1math_1_1complex.html#ab644fd7573e2bdbbfc02cf95b3fcdf62',1,'qlib::math::complex::complex()'],['../classqlib_1_1math_1_1complex.html#a0eeea99f7c7d4a8e072f6c4836379ed0',1,'qlib::math::complex::complex(f32 real)'],['../classqlib_1_1math_1_1complex.html#a0dd3216eb1b24c906b394e67c59adda1',1,'qlib::math::complex::complex(f32 real, f32 img)'],['../classqlib_1_1math_1_1complex.html#ab1471e90345a25e6d112216f1a634290',1,'qlib::math::complex::complex(const complex &amp;other)']]],
   ['conjugate',['conjugate',['../classqlib_1_1math_1_1complex.html#a2cfd8546410a48d0568996e40beb85ce',1,'qlib::math::complex']]],
@@ -18,5 +19,6 @@ var searchData=
   ['convert_5freset',['convert_reset',['../compiler_8hpp.html#a9695552da709ab00ce93ec00fa71447b',1,'compiler.hpp']]],
   ['convert_5ftypedef',['convert_typedef',['../compiler_8hpp.html#a3fadce05c7730406d98ffa5c57beee3a',1,'compiler.hpp']]],
   ['countcolumns',['countColumns',['../classqlib_1_1math_1_1matrix.html#a69ed708edf603637731e4f6fe46b0754',1,'qlib::math::matrix']]],
+  ['countpoints',['countPoints',['../classgraphics_1_1polyline.html#ab4556c8d21b8e07eaf1f3df023e032ac',1,'graphics::polyline']]],
   ['countrows',['countRows',['../classqlib_1_1math_1_1matrix.html#add844c31055d495274b037e7bcd8f0b7',1,'qlib::math::matrix']]]
 ];

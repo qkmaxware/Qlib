@@ -13,173 +13,183 @@
     <includes local="no">vector</includes>
     <includedby refid="qlib_8h" local="yes">src/core/qlib.h</includedby>
     <incdepgraph>
-      <node id="1678">
+      <node id="1966">
         <label>limits</label>
       </node>
-      <node id="1675">
+      <node id="1963">
         <label>./../../general/object.hpp</label>
         <link refid="object_8hpp"/>
-        <childnode refid="1676" relation="include">
+        <childnode refid="1964" relation="include">
         </childnode>
-        <childnode refid="1679" relation="include">
+        <childnode refid="1967" relation="include">
         </childnode>
-        <childnode refid="1680" relation="include">
+        <childnode refid="1968" relation="include">
         </childnode>
-        <childnode refid="1681" relation="include">
+        <childnode refid="1969" relation="include">
         </childnode>
-        <childnode refid="1682" relation="include">
+        <childnode refid="1970" relation="include">
         </childnode>
-        <childnode refid="1683" relation="include">
+        <childnode refid="1971" relation="include">
         </childnode>
       </node>
-      <node id="1677">
+      <node id="1965">
         <label>stdint.h</label>
       </node>
-      <node id="1686">
+      <node id="1974">
         <label>stdlib.h</label>
       </node>
-      <node id="1687">
+      <node id="1975">
         <label>./../../math/matrix.hpp</label>
         <link refid="matrix_8hpp"/>
-        <childnode refid="1684" relation="include">
+        <childnode refid="1972" relation="include">
         </childnode>
-        <childnode refid="1675" relation="include">
+        <childnode refid="1963" relation="include">
         </childnode>
-        <childnode refid="1688" relation="include">
+        <childnode refid="1976" relation="include">
         </childnode>
-        <childnode refid="1689" relation="include">
+        <childnode refid="1977" relation="include">
         </childnode>
-        <childnode refid="1685" relation="include">
+        <childnode refid="1973" relation="include">
         </childnode>
-        <childnode refid="1680" relation="include">
+        <childnode refid="1968" relation="include">
         </childnode>
       </node>
-      <node id="1690">
+      <node id="1978">
         <label>./../gates/igate.hpp</label>
         <link refid="igate_8hpp"/>
-        <childnode refid="1675" relation="include">
+        <childnode refid="1963" relation="include">
         </childnode>
-        <childnode refid="1684" relation="include">
+        <childnode refid="1972" relation="include">
         </childnode>
-        <childnode refid="1687" relation="include">
+        <childnode refid="1975" relation="include">
         </childnode>
       </node>
-      <node id="1688">
+      <node id="1976">
         <label>stdexcept</label>
       </node>
-      <node id="1691">
+      <node id="1979">
         <label>system.hpp</label>
         <link refid="system_8hpp"/>
-        <childnode refid="1675" relation="include">
+        <childnode refid="1963" relation="include">
         </childnode>
-        <childnode refid="1684" relation="include">
+        <childnode refid="1972" relation="include">
         </childnode>
-        <childnode refid="1687" relation="include">
+        <childnode refid="1975" relation="include">
         </childnode>
-        <childnode refid="1690" relation="include">
+        <childnode refid="1978" relation="include">
         </childnode>
       </node>
-      <node id="1681">
+      <node id="1969">
         <label>exception</label>
       </node>
-      <node id="1682">
+      <node id="1970">
         <label>random</label>
       </node>
-      <node id="1684">
+      <node id="1972">
         <label>./../../math/complex.hpp</label>
         <link refid="complex_8hpp"/>
-        <childnode refid="1675" relation="include">
+        <childnode refid="1963" relation="include">
         </childnode>
-        <childnode refid="1685" relation="include">
+        <childnode refid="1973" relation="include">
         </childnode>
-        <childnode refid="1686" relation="include">
+        <childnode refid="1974" relation="include">
         </childnode>
-        <childnode refid="1680" relation="include">
+        <childnode refid="1968" relation="include">
         </childnode>
       </node>
-      <node id="1689">
+      <node id="1977">
         <label>vector</label>
       </node>
-      <node id="1680">
+      <node id="1968">
         <label>sstream</label>
       </node>
-      <node id="1674">
+      <node id="1962">
         <label>src/core/quantum/systems/qreg.hpp</label>
         <link refid="qreg.hpp"/>
-        <childnode refid="1675" relation="include">
+        <childnode refid="1963" relation="include">
         </childnode>
-        <childnode refid="1684" relation="include">
+        <childnode refid="1972" relation="include">
         </childnode>
-        <childnode refid="1687" relation="include">
+        <childnode refid="1975" relation="include">
         </childnode>
-        <childnode refid="1690" relation="include">
+        <childnode refid="1978" relation="include">
         </childnode>
-        <childnode refid="1691" relation="include">
+        <childnode refid="1979" relation="include">
         </childnode>
-        <childnode refid="1678" relation="include">
+        <childnode refid="1966" relation="include">
         </childnode>
-        <childnode refid="1685" relation="include">
+        <childnode refid="1973" relation="include">
         </childnode>
-        <childnode refid="1680" relation="include">
+        <childnode refid="1968" relation="include">
         </childnode>
-        <childnode refid="1689" relation="include">
+        <childnode refid="1977" relation="include">
         </childnode>
       </node>
-      <node id="1685">
+      <node id="1973">
         <label>math.h</label>
       </node>
-      <node id="1679">
+      <node id="1967">
         <label>iostream</label>
       </node>
-      <node id="1683">
+      <node id="1971">
         <label>chrono</label>
       </node>
-      <node id="1676">
+      <node id="1964">
         <label>./types.h</label>
         <link refid="types_8h"/>
-        <childnode refid="1677" relation="include">
+        <childnode refid="1965" relation="include">
         </childnode>
-        <childnode refid="1678" relation="include">
+        <childnode refid="1966" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1697">
+      <node id="1985">
         <label>src/runtime/main.cpp</label>
         <link refid="runtime_2main_8cpp"/>
       </node>
-      <node id="1695">
+      <node id="1983">
         <label>src/runtime/runtime.hpp</label>
         <link refid="runtime_8hpp"/>
-        <childnode refid="1696" relation="include">
+        <childnode refid="1984" relation="include">
         </childnode>
-        <childnode refid="1697" relation="include">
+        <childnode refid="1985" relation="include">
+        </childnode>
+        <childnode refid="1986" relation="include">
         </childnode>
       </node>
-      <node id="1694">
+      <node id="1986">
+        <label>src/runtime/qcircuit_exporter.hpp</label>
+        <link refid="qcircuit__exporter_8hpp"/>
+        <childnode refid="1985" relation="include">
+        </childnode>
+      </node>
+      <node id="1982">
         <label>src/core/main.cpp</label>
         <link refid="core_2main_8cpp"/>
       </node>
-      <node id="1693">
+      <node id="1981">
         <label>src/core/qlib.h</label>
         <link refid="qlib_8h"/>
-        <childnode refid="1694" relation="include">
+        <childnode refid="1982" relation="include">
         </childnode>
-        <childnode refid="1695" relation="include">
+        <childnode refid="1983" relation="include">
         </childnode>
-        <childnode refid="1697" relation="include">
+        <childnode refid="1985" relation="include">
         </childnode>
       </node>
-      <node id="1696">
+      <node id="1984">
         <label>src/runtime/compiler.hpp</label>
         <link refid="compiler_8hpp"/>
-        <childnode refid="1697" relation="include">
+        <childnode refid="1985" relation="include">
+        </childnode>
+        <childnode refid="1986" relation="include">
         </childnode>
       </node>
-      <node id="1692">
+      <node id="1980">
         <label>src/core/quantum/systems/qreg.hpp</label>
         <link refid="qreg.hpp"/>
-        <childnode refid="1693" relation="include">
+        <childnode refid="1981" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -222,125 +232,142 @@
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="49" refid="classqlib_1_1quantum_1_1qreg_1aa53d83236917f0048965b487088aacb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1aa53d83236917f0048965b487088aacb9" kindref="member">qreg</ref>()<sp/>:<sp/><ref refid="classqlib_1_1quantum_1_1qreg" kindref="compound">qreg</ref>(1)<sp/>{}</highlight></codeline>
-<codeline lineno="53" refid="classqlib_1_1quantum_1_1qreg_1a2ddfaef9a369571c9600c4c259fcb8b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a2ddfaef9a369571c9600c4c259fcb8b1" kindref="member">qreg</ref>(u32<sp/>qubits)<sp/>:<sp/>amplitudes(1<sp/>&lt;&lt;<sp/>qubits,1),<sp/>distribution(0.0,<sp/>1.0){</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;qubits<sp/>=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a2d7c33e71a77d860d50d53a258a71a6f" kindref="member">qubits</ref>;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;states<sp/>=<sp/>1<sp/>&lt;&lt;<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a2d7c33e71a77d860d50d53a258a71a6f" kindref="member">qubits</ref>;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initalize<sp/>to<sp/>state<sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(0,0)<sp/>=<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref>(1);</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63" refid="classqlib_1_1quantum_1_1qreg_1a3148742b59865d0ba04fdd327fccc048" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a3148742b59865d0ba04fdd327fccc048" kindref="member">size</ref>(){</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a2d7c33e71a77d860d50d53a258a71a6f" kindref="member">qubits</ref>;</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="70" refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>&amp;<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref>(){</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="77" refid="classqlib_1_1quantum_1_1qreg_1af38f95ecaaf7de400856094154343cfe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1af38f95ecaaf7de400856094154343cfe" kindref="member">apply</ref>(<ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">qlib::quantum::gates::igate</ref>&amp;<sp/>gate,<sp/>std::vector&lt;u64&gt;<sp/>inputBits){</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref><sp/>ref<sp/>=<sp/>this-&gt;<ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gate.<ref refid="classqlib_1_1quantum_1_1gates_1_1igate_1a66038ee65fec12c627789505e11f1e23" kindref="member">operate</ref>(ref,<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref>(),<sp/>inputBits);</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85" refid="classqlib_1_1quantum_1_1qreg_1acfcd58502c1e511766ede52a891f27c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i8<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1acfcd58502c1e511766ede52a891f27c3" kindref="member">measure</ref>(i64<sp/><ref refid="classqlib_1_1quantum_1_1qubit" kindref="compound">qubit</ref>){<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a51eb9abfde64d764ca2afa27666df0e1" kindref="member">zero</ref><sp/>=<sp/>0.0;</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/>one<sp/>=<sp/>0.0;</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>mask<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>qubit;</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref><sp/>=<sp/>0;<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref><sp/>&lt;<sp/>amplitudes.<ref refid="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" kindref="member">countRows</ref>();<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref>++){</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((<ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref><sp/>&amp;<sp/>mask)<sp/>&gt;<sp/>0){</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;1&apos;<sp/>at<sp/>qubit</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>one<sp/>+=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(<ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref>,<sp/>0).sqrMagnitude();</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;0&apos;<sp/>at<sp/>qubit</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>zero<sp/>+=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(<ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref>,<sp/>0).sqrMagnitude();</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/>prob<sp/>=<sp/>this-&gt;<ref refid="classqlib_1_1quantum_1_1qreg_1aabd605497170f57cdbb175d21c99662e" kindref="member">distribution</ref>(<ref refid="object_8hpp_1a52c75811f4e394e7f1818d29ee034307" kindref="member">rng</ref>);</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/>rootOne<sp/>=<sp/>sqrt(one);</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/>rootZero<sp/>=<sp/>sqrt(zero);</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>zeroChosen<sp/>=<sp/>prob<sp/>&lt;=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a51eb9abfde64d764ca2afa27666df0e1" kindref="member">zero</ref>;</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(zeroChosen){</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Collapse<sp/>qubit<sp/>has<sp/>chosen<sp/>to<sp/>be<sp/>&apos;0&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>r<sp/>=<sp/>0;<sp/>r<sp/>&lt;<sp/>amplitudes.<ref refid="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" kindref="member">countRows</ref>();<sp/>r++){</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;1&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((r<sp/>&amp;<sp/>mask)<sp/>&gt;<sp/>0){</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>=<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref>(0,0);</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;0&apos;,<sp/>re-normalize</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>/<sp/>rootZero;</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Collapse<sp/>qubit<sp/>has<sp/>chosen<sp/>to<sp/>be<sp/>&apos;1&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>r<sp/>=<sp/>0;<sp/>r<sp/>&lt;<sp/>amplitudes.<ref refid="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" kindref="member">countRows</ref>();<sp/>r++){</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;1&apos;,<sp/>re-normalize</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((r<sp/>&amp;<sp/>mask)<sp/>&gt;<sp/>0){</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>/<sp/>rootOne;</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;0&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>=<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref>(0,0);</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>zeroChosen<sp/>?<sp/>0<sp/>:<sp/>1;</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight></codeline>
-<codeline lineno="139" refid="classqlib_1_1quantum_1_1qreg_1a51eb9abfde64d764ca2afa27666df0e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a51eb9abfde64d764ca2afa27666df0e1" kindref="member">zero</ref>(i64<sp/><ref refid="classqlib_1_1quantum_1_1qubit" kindref="compound">qubit</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a51eb9abfde64d764ca2afa27666df0e1" kindref="member">zero</ref><sp/>=<sp/>0.0;</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>mask<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>qubit;</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Sum<sp/>all<sp/>states<sp/>where<sp/>qubit<sp/>is<sp/>zero</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref><sp/>=<sp/>0;<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref><sp/>&lt;<sp/>amplitudes.<ref refid="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" kindref="member">countRows</ref>();<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref>++){</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref><sp/>&amp;<sp/>mask)<sp/>&lt;<sp/>1){</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>zero<sp/>+=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(<ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref>,<sp/>0).sqrMagnitude();</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"></highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Renormalize,<sp/>set<sp/>states<sp/>where<sp/>qubit<sp/>is<sp/>1<sp/>to<sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/>rootZero<sp/>=<sp/>sqrt(zero);</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>r<sp/>=<sp/>0;<sp/>r<sp/>&lt;<sp/>amplitudes.<ref refid="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" kindref="member">countRows</ref>();<sp/>r++){</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;1&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((r<sp/>&amp;<sp/>mask)<sp/>&gt;<sp/>0){</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>=<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref>(0,0);</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;0&apos;,<sp/>re-normalize</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>/<sp/>rootZero;</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"></highlight></codeline>
-<codeline lineno="166" refid="classqlib_1_1quantum_1_1qreg_1ae4dbf316bf6452f3110cb05146f54954" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1ae4dbf316bf6452f3110cb05146f54954" kindref="member">toString</ref>(){</highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>sb;</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>first<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"></highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(u32<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1ad0e84b959f93f3da6ed81eb096f809d1" kindref="member">states</ref>;<sp/>i++){</highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">qlib::math::complex</ref>&amp;<sp/>cp<sp/>=<sp/>(this-&gt;<ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(i,0));</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//basically<sp/>0,<sp/>skip</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cp.<ref refid="classqlib_1_1math_1_1complex_1ad1a8ab1ad95a47206e72d3a0d7be9511" kindref="member">sqrMagnitude</ref>()<sp/>&lt;<sp/>std::numeric_limits&lt;float&gt;::epsilon()){</highlight></codeline>
-<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="classqlib_1_1quantum_1_1qreg_1a2ddfaef9a369571c9600c4c259fcb8b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a2ddfaef9a369571c9600c4c259fcb8b1" kindref="member">qreg</ref>(u32<sp/>qubits)<sp/>:<sp/>amplitudes(1<sp/>&lt;&lt;<sp/>qubits,1),<sp/>distribution(0.0,<sp/>1.0){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;qubits<sp/>=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a2d7c33e71a77d860d50d53a258a71a6f" kindref="member">qubits</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;states<sp/>=<sp/>1<sp/>&lt;&lt;<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a2d7c33e71a77d860d50d53a258a71a6f" kindref="member">qubits</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initalize<sp/>to<sp/>state<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(0,0)<sp/>=<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref>(1);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classqlib_1_1quantum_1_1qreg_1a727b26ff6fc1590ad3897884cbc397af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a727b26ff6fc1590ad3897884cbc397af" kindref="member">setState</ref>(std::vector&lt;complex&gt;<sp/>amp){</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32<sp/>sum;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::vector&lt;complex&gt;::iterator<sp/>it<sp/>=<sp/>amp.begin();<sp/>it<sp/>!=<sp/>amp.end();<sp/>it++){</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sum<sp/>+=<sp/>(*it).sqrMagnitude();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sum<sp/>=<sp/>sqrt(sum);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>amplitudes.<ref refid="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" kindref="member">countRows</ref>();<sp/>i++){</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i<sp/>&lt;<sp/>amp.size()){</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(i,0)<sp/>=<sp/>amp[i]<sp/>/<sp/>sum;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(i,0)<sp/>=<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref>(0,0);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classqlib_1_1quantum_1_1qreg_1a3148742b59865d0ba04fdd327fccc048" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a3148742b59865d0ba04fdd327fccc048" kindref="member">size</ref>(){</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a2d7c33e71a77d860d50d53a258a71a6f" kindref="member">qubits</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref>&amp;<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref>(){</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classqlib_1_1quantum_1_1qreg_1af38f95ecaaf7de400856094154343cfe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1af38f95ecaaf7de400856094154343cfe" kindref="member">apply</ref>(<ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">qlib::quantum::gates::igate</ref>&amp;<sp/>gate,<sp/>std::vector&lt;u64&gt;<sp/>inputBits){</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1matrix" kindref="compound">matrix</ref><sp/>ref<sp/>=<sp/>this-&gt;<ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gate.<ref refid="classqlib_1_1quantum_1_1gates_1_1igate_1a66038ee65fec12c627789505e11f1e23" kindref="member">operate</ref>(ref,<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref>(),<sp/>inputBits);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classqlib_1_1quantum_1_1qreg_1acfcd58502c1e511766ede52a891f27c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i8<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1acfcd58502c1e511766ede52a891f27c3" kindref="member">measure</ref>(i64<sp/><ref refid="classqlib_1_1quantum_1_1qubit" kindref="compound">qubit</ref>){<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a51eb9abfde64d764ca2afa27666df0e1" kindref="member">zero</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/>one<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>mask<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>qubit;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref><sp/>=<sp/>0;<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref><sp/>&lt;<sp/>amplitudes.<ref refid="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" kindref="member">countRows</ref>();<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref>++){</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((<ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref><sp/>&amp;<sp/>mask)<sp/>&gt;<sp/>0){</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;1&apos;<sp/>at<sp/>qubit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>one<sp/>+=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(<ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref>,<sp/>0).sqrMagnitude();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;0&apos;<sp/>at<sp/>qubit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>zero<sp/>+=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(<ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref>,<sp/>0).sqrMagnitude();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/>prob<sp/>=<sp/>this-&gt;<ref refid="classqlib_1_1quantum_1_1qreg_1aabd605497170f57cdbb175d21c99662e" kindref="member">distribution</ref>(<ref refid="object_8hpp_1a52c75811f4e394e7f1818d29ee034307" kindref="member">rng</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/>rootOne<sp/>=<sp/>sqrt(one);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/>rootZero<sp/>=<sp/>sqrt(zero);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>zeroChosen<sp/>=<sp/>prob<sp/>&lt;=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a51eb9abfde64d764ca2afa27666df0e1" kindref="member">zero</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(zeroChosen){</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Collapse<sp/>qubit<sp/>has<sp/>chosen<sp/>to<sp/>be<sp/>&apos;0&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>r<sp/>=<sp/>0;<sp/>r<sp/>&lt;<sp/>amplitudes.<ref refid="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" kindref="member">countRows</ref>();<sp/>r++){</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;1&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((r<sp/>&amp;<sp/>mask)<sp/>&gt;<sp/>0){</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>=<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref>(0,0);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;0&apos;,<sp/>re-normalize</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>/<sp/>rootZero;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Collapse<sp/>qubit<sp/>has<sp/>chosen<sp/>to<sp/>be<sp/>&apos;1&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>r<sp/>=<sp/>0;<sp/>r<sp/>&lt;<sp/>amplitudes.<ref refid="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" kindref="member">countRows</ref>();<sp/>r++){</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;1&apos;,<sp/>re-normalize</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((r<sp/>&amp;<sp/>mask)<sp/>&gt;<sp/>0){</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>/<sp/>rootOne;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;0&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>=<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref>(0,0);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>zeroChosen<sp/>?<sp/>0<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="classqlib_1_1quantum_1_1qreg_1a51eb9abfde64d764ca2afa27666df0e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a51eb9abfde64d764ca2afa27666df0e1" kindref="member">zero</ref>(i64<sp/><ref refid="classqlib_1_1quantum_1_1qubit" kindref="compound">qubit</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a51eb9abfde64d764ca2afa27666df0e1" kindref="member">zero</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>mask<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>qubit;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Sum<sp/>all<sp/>states<sp/>where<sp/>qubit<sp/>is<sp/>zero</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref><sp/>=<sp/>0;<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref><sp/>&lt;<sp/>amplitudes.<ref refid="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" kindref="member">countRows</ref>();<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref>++){</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref><sp/>&amp;<sp/>mask)<sp/>&lt;<sp/>1){</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>zero<sp/>+=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(<ref refid="classqlib_1_1quantum_1_1qreg_1a20d1b0906eb00ff7d4e1c23449de61a1" kindref="member">state</ref>,<sp/>0).sqrMagnitude();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Renormalize,<sp/>set<sp/>states<sp/>where<sp/>qubit<sp/>is<sp/>1<sp/>to<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/>rootZero<sp/>=<sp/>sqrt(zero);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>r<sp/>=<sp/>0;<sp/>r<sp/>&lt;<sp/>amplitudes.<ref refid="classqlib_1_1math_1_1matrix_1add844c31055d495274b037e7bcd8f0b7" kindref="member">countRows</ref>();<sp/>r++){</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;1&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((r<sp/>&amp;<sp/>mask)<sp/>&gt;<sp/>0){</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>=<sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">complex</ref>(0,0);</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!first)</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>+<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>cp.<ref refid="classqlib_1_1math_1_1complex_1afd24fadb21a07815675481b131398cff" kindref="member">toString</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)|&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>i<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>first<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>has<sp/>&apos;0&apos;,<sp/>re-normalize</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>=<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(r,0)<sp/>/<sp/>rootZero;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="181"><highlight class="normal"></highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sb.str();</highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="184"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"></highlight></codeline>
-<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="classqlib_1_1quantum_1_1qreg_1ae4dbf316bf6452f3110cb05146f54954" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1ae4dbf316bf6452f3110cb05146f54954" kindref="member">toString</ref>(){</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>sb;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>first<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(u32<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classqlib_1_1quantum_1_1qreg_1ad0e84b959f93f3da6ed81eb096f809d1" kindref="member">states</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classqlib_1_1math_1_1complex" kindref="compound">qlib::math::complex</ref>&amp;<sp/>cp<sp/>=<sp/>(this-&gt;<ref refid="classqlib_1_1quantum_1_1qreg_1a1a7e244ee72b78b9c5a8763efad57ada" kindref="member">amplitudes</ref>(i,0));</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//basically<sp/>0,<sp/>skip</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cp.<ref refid="classqlib_1_1math_1_1complex_1ad1a8ab1ad95a47206e72d3a0d7be9511" kindref="member">sqrMagnitude</ref>()<sp/>&lt;<sp/>std::numeric_limits&lt;float&gt;::epsilon()){</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!first)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>+<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sb<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>cp.<ref refid="classqlib_1_1math_1_1complex_1afd24fadb21a07815675481b131398cff" kindref="member">toString</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)|&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>i<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>first<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sb.str();</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="src/core/quantum/systems/qreg.hpp"/>
   </compounddef>

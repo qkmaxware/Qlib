@@ -7,164 +7,174 @@
     <includes local="no">map</includes>
     <includedby refid="qlib_8h" local="yes">src/core/qlib.h</includedby>
     <incdepgraph>
-      <node id="1654">
+      <node id="1941">
         <label>limits</label>
       </node>
-      <node id="1651">
+      <node id="1938">
         <label>./../../general/object.hpp</label>
         <link refid="object_8hpp"/>
-        <childnode refid="1652" relation="include">
+        <childnode refid="1939" relation="include">
         </childnode>
-        <childnode refid="1655" relation="include">
+        <childnode refid="1942" relation="include">
         </childnode>
-        <childnode refid="1656" relation="include">
+        <childnode refid="1943" relation="include">
         </childnode>
-        <childnode refid="1657" relation="include">
+        <childnode refid="1944" relation="include">
         </childnode>
-        <childnode refid="1658" relation="include">
+        <childnode refid="1945" relation="include">
         </childnode>
-        <childnode refid="1659" relation="include">
+        <childnode refid="1946" relation="include">
         </childnode>
       </node>
-      <node id="1653">
+      <node id="1940">
         <label>stdint.h</label>
       </node>
-      <node id="1662">
+      <node id="1949">
         <label>stdlib.h</label>
       </node>
-      <node id="1663">
+      <node id="1950">
         <label>./../../math/matrix.hpp</label>
         <link refid="matrix_8hpp"/>
-        <childnode refid="1660" relation="include">
+        <childnode refid="1947" relation="include">
         </childnode>
-        <childnode refid="1651" relation="include">
+        <childnode refid="1938" relation="include">
         </childnode>
-        <childnode refid="1664" relation="include">
+        <childnode refid="1951" relation="include">
         </childnode>
-        <childnode refid="1665" relation="include">
+        <childnode refid="1952" relation="include">
         </childnode>
-        <childnode refid="1661" relation="include">
+        <childnode refid="1948" relation="include">
         </childnode>
-        <childnode refid="1656" relation="include">
+        <childnode refid="1943" relation="include">
         </childnode>
       </node>
-      <node id="1666">
+      <node id="1953">
         <label>./../gates/igate.hpp</label>
         <link refid="igate_8hpp"/>
-        <childnode refid="1651" relation="include">
+        <childnode refid="1938" relation="include">
         </childnode>
-        <childnode refid="1660" relation="include">
+        <childnode refid="1947" relation="include">
         </childnode>
-        <childnode refid="1663" relation="include">
+        <childnode refid="1950" relation="include">
         </childnode>
       </node>
-      <node id="1664">
+      <node id="1951">
         <label>stdexcept</label>
       </node>
-      <node id="1650">
+      <node id="1937">
         <label>system.hpp</label>
         <link refid="system_8hpp"/>
-        <childnode refid="1651" relation="include">
+        <childnode refid="1938" relation="include">
         </childnode>
-        <childnode refid="1660" relation="include">
+        <childnode refid="1947" relation="include">
         </childnode>
-        <childnode refid="1663" relation="include">
+        <childnode refid="1950" relation="include">
         </childnode>
-        <childnode refid="1666" relation="include">
+        <childnode refid="1953" relation="include">
         </childnode>
       </node>
-      <node id="1667">
+      <node id="1954">
         <label>map</label>
       </node>
-      <node id="1657">
+      <node id="1944">
         <label>exception</label>
       </node>
-      <node id="1649">
+      <node id="1936">
         <label>src/core/quantum/systems/ensemble.hpp</label>
         <link refid="ensemble.hpp"/>
-        <childnode refid="1650" relation="include">
+        <childnode refid="1937" relation="include">
         </childnode>
-        <childnode refid="1665" relation="include">
+        <childnode refid="1952" relation="include">
         </childnode>
-        <childnode refid="1667" relation="include">
+        <childnode refid="1954" relation="include">
         </childnode>
       </node>
-      <node id="1658">
+      <node id="1945">
         <label>random</label>
       </node>
-      <node id="1660">
+      <node id="1947">
         <label>./../../math/complex.hpp</label>
         <link refid="complex_8hpp"/>
-        <childnode refid="1651" relation="include">
+        <childnode refid="1938" relation="include">
         </childnode>
-        <childnode refid="1661" relation="include">
+        <childnode refid="1948" relation="include">
         </childnode>
-        <childnode refid="1662" relation="include">
+        <childnode refid="1949" relation="include">
         </childnode>
-        <childnode refid="1656" relation="include">
+        <childnode refid="1943" relation="include">
         </childnode>
       </node>
-      <node id="1665">
+      <node id="1952">
         <label>vector</label>
       </node>
-      <node id="1656">
+      <node id="1943">
         <label>sstream</label>
       </node>
-      <node id="1661">
+      <node id="1948">
         <label>math.h</label>
       </node>
-      <node id="1655">
+      <node id="1942">
         <label>iostream</label>
       </node>
-      <node id="1659">
+      <node id="1946">
         <label>chrono</label>
       </node>
-      <node id="1652">
+      <node id="1939">
         <label>./types.h</label>
         <link refid="types_8h"/>
-        <childnode refid="1653" relation="include">
+        <childnode refid="1940" relation="include">
         </childnode>
-        <childnode refid="1654" relation="include">
+        <childnode refid="1941" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1673">
+      <node id="1960">
         <label>src/runtime/main.cpp</label>
         <link refid="runtime_2main_8cpp"/>
       </node>
-      <node id="1671">
+      <node id="1958">
         <label>src/runtime/runtime.hpp</label>
         <link refid="runtime_8hpp"/>
-        <childnode refid="1672" relation="include">
+        <childnode refid="1959" relation="include">
         </childnode>
-        <childnode refid="1673" relation="include">
+        <childnode refid="1960" relation="include">
+        </childnode>
+        <childnode refid="1961" relation="include">
         </childnode>
       </node>
-      <node id="1670">
+      <node id="1961">
+        <label>src/runtime/qcircuit_exporter.hpp</label>
+        <link refid="qcircuit__exporter_8hpp"/>
+        <childnode refid="1960" relation="include">
+        </childnode>
+      </node>
+      <node id="1957">
         <label>src/core/main.cpp</label>
         <link refid="core_2main_8cpp"/>
       </node>
-      <node id="1668">
+      <node id="1955">
         <label>src/core/quantum/systems/ensemble.hpp</label>
         <link refid="ensemble.hpp"/>
-        <childnode refid="1669" relation="include">
+        <childnode refid="1956" relation="include">
         </childnode>
       </node>
-      <node id="1669">
+      <node id="1956">
         <label>src/core/qlib.h</label>
         <link refid="qlib_8h"/>
-        <childnode refid="1670" relation="include">
+        <childnode refid="1957" relation="include">
         </childnode>
-        <childnode refid="1671" relation="include">
+        <childnode refid="1958" relation="include">
         </childnode>
-        <childnode refid="1673" relation="include">
+        <childnode refid="1960" relation="include">
         </childnode>
       </node>
-      <node id="1672">
+      <node id="1959">
         <label>src/runtime/compiler.hpp</label>
         <link refid="compiler_8hpp"/>
-        <childnode refid="1673" relation="include">
+        <childnode refid="1960" relation="include">
+        </childnode>
+        <childnode refid="1961" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -200,40 +210,46 @@
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40" refid="classqlib_1_1quantum_1_1ensemble_1a4b811e4778f5c845504ed8eec058dfe4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1ensemble_1a4b811e4778f5c845504ed8eec058dfe4" kindref="member">size</ref>(){</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.size();</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47" refid="classqlib_1_1quantum_1_1ensemble_1a9226b1108f8d45d052316f7c366f1d5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1ensemble_1a9226b1108f8d45d052316f7c366f1d5a" kindref="member">apply</ref>(<ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">qlib::quantum::gates::igate</ref>&amp;<sp/>op,std::vector&lt;u64&gt;<sp/>inputBits){</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::vector&lt;qsystem*&gt;::iterator<sp/>it<sp/>=<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.begin();<sp/>it<sp/>!=<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.end();<sp/>it++)<sp/>{</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it)-&gt;apply(op,<sp/>inputBits);</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40" refid="classqlib_1_1quantum_1_1ensemble_1a0eb45d5e78a713d118cef48152be57ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1ensemble_1a0eb45d5e78a713d118cef48152be57ae" kindref="member">setState</ref>(std::vector&lt;complex&gt;<sp/>amp){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::vector&lt;qsystem*&gt;::iterator<sp/>it<sp/>=<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.begin();<sp/>it<sp/>!=<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.end();<sp/>it++)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it)-&gt;setState(amp);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classqlib_1_1quantum_1_1ensemble_1a4b811e4778f5c845504ed8eec058dfe4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1ensemble_1a4b811e4778f5c845504ed8eec058dfe4" kindref="member">size</ref>(){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.size();</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56" refid="classqlib_1_1quantum_1_1ensemble_1ae5e3ebd119e1df6dbb966b7bb6222e5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i8<sp/><ref refid="classqlib_1_1quantum_1_1ensemble_1ae5e3ebd119e1df6dbb966b7bb6222e5a" kindref="member">measure</ref>(i64<sp/><ref refid="classqlib_1_1quantum_1_1qubit" kindref="compound">qubit</ref>){</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;i8,<sp/>u64&gt;<sp/>map;</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>max<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::vector&lt;qsystem*&gt;::iterator<sp/>it<sp/>=<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.begin();<sp/>it<sp/>!=<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.end();<sp/>it++){</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i8<sp/>r<sp/>=<sp/>(*it)-&gt;measure(qubit);</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>count<sp/>=<sp/>++map[r];</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(count<sp/>&gt;<sp/>map[max]){</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max<sp/>=<sp/>r;</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>max;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72" refid="classqlib_1_1quantum_1_1ensemble_1ac170f82a86704e08e8f2bebc721cf03b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1ensemble_1ac170f82a86704e08e8f2bebc721cf03b" kindref="member">zero</ref>(i64<sp/><ref refid="classqlib_1_1quantum_1_1qubit" kindref="compound">qubit</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::vector&lt;qsystem*&gt;::iterator<sp/>it<sp/>=<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.begin();<sp/>it<sp/>!=<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.end();<sp/>it++){</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it)-&gt;zero(qubit);</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56" refid="classqlib_1_1quantum_1_1ensemble_1a9226b1108f8d45d052316f7c366f1d5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1ensemble_1a9226b1108f8d45d052316f7c366f1d5a" kindref="member">apply</ref>(<ref refid="classqlib_1_1quantum_1_1gates_1_1igate" kindref="compound">qlib::quantum::gates::igate</ref>&amp;<sp/>op,std::vector&lt;u64&gt;<sp/>inputBits){</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::vector&lt;qsystem*&gt;::iterator<sp/>it<sp/>=<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.begin();<sp/>it<sp/>!=<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.end();<sp/>it++)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it)-&gt;apply(op,<sp/>inputBits);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classqlib_1_1quantum_1_1ensemble_1ae5e3ebd119e1df6dbb966b7bb6222e5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i8<sp/><ref refid="classqlib_1_1quantum_1_1ensemble_1ae5e3ebd119e1df6dbb966b7bb6222e5a" kindref="member">measure</ref>(i64<sp/><ref refid="classqlib_1_1quantum_1_1qubit" kindref="compound">qubit</ref>){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;i8,<sp/>u64&gt;<sp/>map;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>max<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::vector&lt;qsystem*&gt;::iterator<sp/>it<sp/>=<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.begin();<sp/>it<sp/>!=<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.end();<sp/>it++){</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i8<sp/>r<sp/>=<sp/>(*it)-&gt;measure(qubit);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>count<sp/>=<sp/>++map[r];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(count<sp/>&gt;<sp/>map[max]){</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max<sp/>=<sp/>r;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>max;</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="77"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classqlib_1_1quantum_1_1ensemble_1ac170f82a86704e08e8f2bebc721cf03b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classqlib_1_1quantum_1_1ensemble_1ac170f82a86704e08e8f2bebc721cf03b" kindref="member">zero</ref>(i64<sp/><ref refid="classqlib_1_1quantum_1_1qubit" kindref="compound">qubit</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::vector&lt;qsystem*&gt;::iterator<sp/>it<sp/>=<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.begin();<sp/>it<sp/>!=<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">.end();<sp/>it++){</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it)-&gt;zero(qubit);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="src/core/quantum/systems/ensemble.hpp"/>
   </compounddef>

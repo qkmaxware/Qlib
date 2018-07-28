@@ -110,6 +110,7 @@ $(document).ready(function(){initNavTree('classqlib_1_1quantum_1_1gates_1_1igate
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classqlib_1_1quantum_1_1gates_1_1igate-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">qlib::quantum::gates::igate Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -122,10 +123,11 @@ Inheritance diagram for qlib::quantum::gates::igate:</div>
 <div class="dyncontent">
 <div class="center"><img src="classqlib_1_1quantum_1_1gates_1_1igate__inherit__graph.png" border="0" usemap="#qlib_1_1quantum_1_1gates_1_1igate_inherit__map" alt="Inheritance graph"/></div>
 <map name="qlib_1_1quantum_1_1gates_1_1igate_inherit__map" id="qlib_1_1quantum_1_1gates_1_1igate_inherit__map">
-<area shape="rect" id="node3" href="classqlib_1_1quantum_1_1gates_1_1controlled2gate.html" title="qlib::quantum::gates\l::controlled2gate" alt="" coords="305,5,445,47"/>
-<area shape="rect" id="node4" href="classqlib_1_1quantum_1_1gates_1_1controlledgate.html" title="qlib::quantum::gates\l::controlledgate" alt="" coords="305,71,445,112"/>
-<area shape="rect" id="node5" href="classqlib_1_1quantum_1_1gates_1_1onequbitgate.html" title="qlib::quantum::gates\l::onequbitgate" alt="" coords="305,136,445,177"/>
-<area shape="rect" id="node2" href="classxobject.html" title="xobject" alt="" coords="5,78,69,105"/>
+<area shape="rect" id="node3" href="classqlib_1_1quantum_1_1gates_1_1controlled2gate.html" title="qlib::quantum::gates\l::controlled2gate" alt="" coords="325,5,465,47"/>
+<area shape="rect" id="node4" href="classqlib_1_1quantum_1_1gates_1_1controlledgate.html" title="qlib::quantum::gates\l::controlledgate" alt="" coords="325,71,465,112"/>
+<area shape="rect" id="node5" href="classqlib_1_1quantum_1_1gates_1_1onequbitgate.html" title="qlib::quantum::gates\l::onequbitgate" alt="" coords="325,136,465,177"/>
+<area shape="rect" id="node6" href="classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform.html" title="qlib::quantum::gates\l::quantumFourierTransform" alt="" coords="305,201,484,243"/>
+<area shape="rect" id="node2" href="classxobject.html" title="xobject" alt="" coords="5,111,69,138"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -139,6 +141,8 @@ Collaboration diagram for qlib::quantum::gates::igate:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:afa0161a395344bb7765b61fbf94d01b5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqlib_1_1quantum_1_1gates_1_1igate.html#afa0161a395344bb7765b61fbf94d01b5">~igate</a> ()</td></tr>
+<tr class="separator:afa0161a395344bb7765b61fbf94d01b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8f8dda69d7742c12c743829abb3662b"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqlib_1_1quantum_1_1gates_1_1igate.html#ae8f8dda69d7742c12c743829abb3662b">name</a> ()=0</td></tr>
 <tr class="separator:ae8f8dda69d7742c12c743829abb3662b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8aa56b0095a94fdd437bc55d90aec9d"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqlib_1_1quantum_1_1gates_1_1igate.html#ac8aa56b0095a94fdd437bc55d90aec9d">inputs</a> ()=0</td></tr>
@@ -148,7 +152,37 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_classxobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classxobject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classxobject.html">xobject</a></td></tr>
 <tr class="memitem:ad76243a44c4e4959d3b16bb57d82600d inherit pub_methods_classxobject"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxobject.html#ad76243a44c4e4959d3b16bb57d82600d">toString</a> ()</td></tr>
 <tr class="separator:ad76243a44c4e4959d3b16bb57d82600d inherit pub_methods_classxobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab69530a50a6b78e429abe3c08407b222"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqlib_1_1quantum_1_1gates_1_1igate.html#ab69530a50a6b78e429abe3c08407b222">isGateable</a> (<a class="el" href="classqlib_1_1math_1_1matrix.html">matrix</a> &amp;a)</td></tr>
+<tr class="separator:ab69530a50a6b78e429abe3c08407b222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="afa0161a395344bb7765b61fbf94d01b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual qlib::quantum::gates::igate::~igate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Virtual destrutor, overwritten by subclasses </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac8aa56b0095a94fdd437bc55d90aec9d"></a>
 <div class="memitem">
@@ -171,7 +205,32 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classqlib_1_1quantum_1_1gates_1_1onequbitgate.html#a050ed71ebff89050c3123124f8ba8719">qlib::quantum::gates::onequbitgate</a>, <a class="el" href="classqlib_1_1quantum_1_1gates_1_1controlled2gate.html#a27a8793a3015aa9797f03fa0174113c2">qlib::quantum::gates::controlled2gate</a>, and <a class="el" href="classqlib_1_1quantum_1_1gates_1_1controlledgate.html#adb544cb10cd5f8836e331102f7c7e9d6">qlib::quantum::gates::controlledgate</a>.</p>
+<p>Implemented in <a class="el" href="classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform.html#a08ee18ae7b516c2f77d1f864a010856f">qlib::quantum::gates::quantumFourierTransform</a>, <a class="el" href="classqlib_1_1quantum_1_1gates_1_1onequbitgate.html#a050ed71ebff89050c3123124f8ba8719">qlib::quantum::gates::onequbitgate</a>, <a class="el" href="classqlib_1_1quantum_1_1gates_1_1controlled2gate.html#a27a8793a3015aa9797f03fa0174113c2">qlib::quantum::gates::controlled2gate</a>, and <a class="el" href="classqlib_1_1quantum_1_1gates_1_1controlledgate.html#adb544cb10cd5f8836e331102f7c7e9d6">qlib::quantum::gates::controlledgate</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab69530a50a6b78e429abe3c08407b222"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool qlib::quantum::gates::igate::isGateable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classqlib_1_1math_1_1matrix.html">matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Test if a given matrix matches quantum gate specifications (square &amp; unitary) </p>
 
 </div>
 </div>
@@ -196,7 +255,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classqlib_1_1quantum_1_1gates_1_1onequbitgate.html#aacf3878010f0c1327bae4dcc7faf4c92">qlib::quantum::gates::onequbitgate</a>, <a class="el" href="classqlib_1_1quantum_1_1gates_1_1controlled2gate.html#a25121d9bc52a594a718b6d8037ea6cc0">qlib::quantum::gates::controlled2gate</a>, and <a class="el" href="classqlib_1_1quantum_1_1gates_1_1controlledgate.html#a7fb8875c83106b35d733cc96b312b957">qlib::quantum::gates::controlledgate</a>.</p>
+<p>Implemented in <a class="el" href="classqlib_1_1quantum_1_1gates_1_1onequbitgate.html#aacf3878010f0c1327bae4dcc7faf4c92">qlib::quantum::gates::onequbitgate</a>, <a class="el" href="classqlib_1_1quantum_1_1gates_1_1controlled2gate.html#a25121d9bc52a594a718b6d8037ea6cc0">qlib::quantum::gates::controlled2gate</a>, <a class="el" href="classqlib_1_1quantum_1_1gates_1_1controlledgate.html#a7fb8875c83106b35d733cc96b312b957">qlib::quantum::gates::controlledgate</a>, and <a class="el" href="classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform.html#a28d08c879986bbf22846ada13f861781">qlib::quantum::gates::quantumFourierTransform</a>.</p>
 
 </div>
 </div>
@@ -238,7 +297,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classqlib_1_1quantum_1_1gates_1_1onequbitgate.html#a280c7a7d29032eeb95afcb3d6668e7db">qlib::quantum::gates::onequbitgate</a>, <a class="el" href="classqlib_1_1quantum_1_1gates_1_1controlled2gate.html#a272635da6a7b8f65379f6ecb42df9389">qlib::quantum::gates::controlled2gate</a>, and <a class="el" href="classqlib_1_1quantum_1_1gates_1_1controlledgate.html#aec6e423cc6ae442c5c3c5dc04581959e">qlib::quantum::gates::controlledgate</a>.</p>
+<p>Implemented in <a class="el" href="classqlib_1_1quantum_1_1gates_1_1onequbitgate.html#a280c7a7d29032eeb95afcb3d6668e7db">qlib::quantum::gates::onequbitgate</a>, <a class="el" href="classqlib_1_1quantum_1_1gates_1_1controlled2gate.html#a272635da6a7b8f65379f6ecb42df9389">qlib::quantum::gates::controlled2gate</a>, <a class="el" href="classqlib_1_1quantum_1_1gates_1_1controlledgate.html#aec6e423cc6ae442c5c3c5dc04581959e">qlib::quantum::gates::controlledgate</a>, and <a class="el" href="classqlib_1_1quantum_1_1gates_1_1quantumFourierTransform.html#a81c62ab7b1edeeb2b01d5f9dacca2bae">qlib::quantum::gates::quantumFourierTransform</a>.</p>
 
 </div>
 </div>

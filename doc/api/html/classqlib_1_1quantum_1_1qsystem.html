@@ -139,10 +139,14 @@ Collaboration diagram for qlib::quantum::qsystem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aeb1ecc3086cd9c14756aa4c575eeda0c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqlib_1_1quantum_1_1qsystem.html#aeb1ecc3086cd9c14756aa4c575eeda0c">~qsystem</a> ()</td></tr>
+<tr class="separator:aeb1ecc3086cd9c14756aa4c575eeda0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbb748feb351aac69ca4a0bf6c92d77c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqlib_1_1quantum_1_1qsystem.html#adbb748feb351aac69ca4a0bf6c92d77c">apply</a> (<a class="el" href="classqlib_1_1quantum_1_1gates_1_1igate.html">qlib::quantum::gates::igate</a> &amp;gate, std::vector&lt; u64 &gt; inputBits)=0</td></tr>
 <tr class="separator:adbb748feb351aac69ca4a0bf6c92d77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33d9954c6ca01cb400d940ff05614364"><td class="memItemLeft" align="right" valign="top">virtual i8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqlib_1_1quantum_1_1qsystem.html#a33d9954c6ca01cb400d940ff05614364">measure</a> (i64 <a class="el" href="classqlib_1_1quantum_1_1qubit.html">qubit</a>)=0</td></tr>
 <tr class="separator:a33d9954c6ca01cb400d940ff05614364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70360fa1be7b72d4f49f6dadc17267d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqlib_1_1quantum_1_1qsystem.html#ab70360fa1be7b72d4f49f6dadc17267d">setState</a> (std::vector&lt; <a class="el" href="classqlib_1_1math_1_1complex.html">complex</a> &gt; amp)=0</td></tr>
+<tr class="separator:ab70360fa1be7b72d4f49f6dadc17267d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d95030955e2fdb26bc9152c32310e7e"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqlib_1_1quantum_1_1qsystem.html#a9d95030955e2fdb26bc9152c32310e7e">toString</a> ()</td></tr>
 <tr class="separator:a9d95030955e2fdb26bc9152c32310e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5626857e5dc87dc2bdbb1f4d0b0401f9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqlib_1_1quantum_1_1qsystem.html#a5626857e5dc87dc2bdbb1f4d0b0401f9">zero</a> (i64 <a class="el" href="classqlib_1_1quantum_1_1qubit.html">qubit</a>)=0</td></tr>
@@ -150,7 +154,31 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for all quantum systems </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aeb1ecc3086cd9c14756aa4c575eeda0c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual qlib::quantum::qsystem::~qsystem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="adbb748feb351aac69ca4a0bf6c92d77c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -212,6 +240,33 @@ Public Member Functions</h2></td></tr>
 <p>Collapse the state and return the value of the measured qubit </p>
 
 <p>Implemented in <a class="el" href="classqlib_1_1quantum_1_1qreg.html#acfcd58502c1e511766ede52a891f27c3">qlib::quantum::qreg</a>, <a class="el" href="classqlib_1_1quantum_1_1qubit.html#aaf001eff84ccb4b7a6992e42bc2143cb">qlib::quantum::qubit</a>, and <a class="el" href="classqlib_1_1quantum_1_1ensemble.html#ae5e3ebd119e1df6dbb966b7bb6222e5a">qlib::quantum::ensemble</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab70360fa1be7b72d4f49f6dadc17267d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void qlib::quantum::qsystem::setState </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classqlib_1_1math_1_1complex.html">complex</a> &gt;&#160;</td>
+          <td class="paramname"><em>amp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the state of the quantum register </p>
+
+<p>Implemented in <a class="el" href="classqlib_1_1quantum_1_1qreg.html#a727b26ff6fc1590ad3897884cbc397af">qlib::quantum::qreg</a>, <a class="el" href="classqlib_1_1quantum_1_1qubit.html#a934b5ff2dfbcc22ec2aab4e3a6544b6f">qlib::quantum::qubit</a>, and <a class="el" href="classqlib_1_1quantum_1_1ensemble.html#a0eb45d5e78a713d118cef48152be57ae">qlib::quantum::ensemble</a>.</p>
 
 </div>
 </div>

@@ -16,7 +16,7 @@
 <para>What variable to print to console </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="268" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="268" bodyend="-1"/>
+        <location file="src/runtime/runtime.hpp" line="295" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="295" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="270" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="270" bodyend="270"/>
+        <location file="src/runtime/runtime.hpp" line="297" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="297" bodyend="297"/>
       </memberdef>
       <memberdef kind="function" id="classqasm_1_1exec_1_1print_1ae803c9f70d2a1afd3bbe6e0520e9678b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -53,7 +53,7 @@
 <para>Run instruction&apos;s primary operation </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/runtime/runtime.hpp" line="272" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="272" bodyend="290"/>
+        <location file="src/runtime/runtime.hpp" line="299" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="299" bodyend="317"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -61,35 +61,36 @@
     <detaileddescription>
 <para>Instruction to print register to console </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="390">
+      <node id="475">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
-      <node id="389">
+      <node id="474">
         <label>qasm::exec::print</label>
         <link refid="classqasm_1_1exec_1_1print"/>
-        <childnode refid="390" relation="public-inheritance">
+        <childnode refid="475" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="392">
+      <node id="477">
         <label>qasm::exec::executable</label>
         <link refid="classqasm_1_1exec_1_1executable"/>
       </node>
-      <node id="391">
+      <node id="476">
         <label>qasm::exec::print</label>
         <link refid="classqasm_1_1exec_1_1print"/>
-        <childnode refid="392" relation="public-inheritance">
+        <childnode refid="477" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/runtime/runtime.hpp" line="263" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="263" bodyend="291"/>
+    <location file="src/runtime/runtime.hpp" line="290" column="1" bodyfile="src/runtime/runtime.hpp" bodystart="290" bodyend="318"/>
     <listofallmembers>
       <member refid="classqasm_1_1exec_1_1print_1ae803c9f70d2a1afd3bbe6e0520e9678b" prot="public" virt="virtual"><scope>qasm::exec::print</scope><name>invoke_rootprogram</name></member>
       <member refid="classqasm_1_1exec_1_1executable_1ad73a67bcb74196954455b45804944544" prot="public" virt="virtual"><scope>qasm::exec::print</scope><name>invoke_subprogram</name></member>
       <member refid="classqasm_1_1exec_1_1print_1ac6a07cc31446b99250263e748ac0c60d" prot="public" virt="non-virtual"><scope>qasm::exec::print</scope><name>print</name></member>
       <member refid="classqasm_1_1exec_1_1print_1a8d2e5bc3ca543419f7270f97fea27b9b" prot="public" virt="non-virtual"><scope>qasm::exec::print</scope><name>reference</name></member>
+      <member refid="classqasm_1_1exec_1_1executable_1acb10539ca9f0d75be23e23ca722ba195" prot="public" virt="virtual"><scope>qasm::exec::print</scope><name>~executable</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>
