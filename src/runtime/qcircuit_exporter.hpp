@@ -73,16 +73,17 @@ void exportQuantumCircuit (std::string name, program& prog){
             }
             //Gates and connectors
             for(size_t t = 0; t < ptr->param_indecies.size(); t++){
-                if(t != ptr->param_indecies.size() - 1){
+                size_t ind = ptr->param_indecies[t];
+                if(t != (ptr->param_indecies.size() - 1)){
                     //Connector
                     size_t last = ptr->param_indecies[ptr->param_indecies.size() - 1];
-                    ulong midline =  t1.y + t*cellHeight + cellHeight/2 + cellHeader;
-                    ulong midline2 = t1.y + last*cellHeight + cellHeight/2  + cellHeader;
+                    ulong midline =  t1.y + ind * cellHeight + cellHeight/2 + cellHeader;
+                    ulong midline2 = t1.y + last * cellHeight + cellHeight/2  + cellHeader;
                     paint.addShape((shape*) new rect(t1.x * cellWidth + cellWidth/2 - 8, midline - 8, 16, 16));
-                    paint.addShape((shape*)new line(t1.x * cellWidth + cellWidth / 2, midline, t1.x * cellWidth + cellWidth / 2, midline2));
+                    paint.addShape((shape*) new line(t1.x * cellWidth + cellWidth / 2, midline, t1.x * cellWidth + cellWidth / 2, midline2));
                 } else{
                     //Gate
-                    ulong top = t1.y + t * cellHeight  + cellHeader;
+                    ulong top = t1.y + ind * cellHeight  + cellHeader;
                     rect* r = new rect(
                         t1.x * cellWidth, 
                         top,  

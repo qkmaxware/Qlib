@@ -156,9 +156,9 @@ int main(int arg_count, char* arg_values[]){
 	else{
 		cout << NAME << " version:" << MAJOR << "." << MINOR << "." << PATCH << endl;
 		cout << "Usage: executable <filename> [options]" << endl << endl;
-		cout << "-i      :: " << "Enter interactive mode if no filename is supplied." << endl;
-		cout << "-svg    :: " << "Export a circuit diagram in Scalable Vector Graphics format." << endl;
-		cout << "-noeval :: " << "Load but do not evaluate quantum scripts. Usually used with -svg." << endl;
+		cout << "-i             :: " << "Enter interactive mode if no filename is supplied." << endl;
+		cout << "-svg[=name]    :: " << "Export a circuit diagram in Scalable Vector Graphics format. Default name is 'export.svg'." << endl;
+		cout << "-noeval        :: " << "Load but do not evaluate quantum scripts. Usually used with -svg." << endl;
 		return 0;
 	}
 	//Old		
@@ -169,7 +169,11 @@ int main(int arg_count, char* arg_values[]){
 	}*/
 
 	if(arg.hasFlag("-svg")){
-		exportQuantumCircuit("export.svg", prog);
+		std::string ename = "export.svg";
+		if(arg.hasParameterFor("-svg")){
+			ename = arg.parameters["-svg"] + ".svg";
+		}
+		exportQuantumCircuit(ename, prog);
 	}
 
 	//Program and executable lines are cleaned up by program destructor

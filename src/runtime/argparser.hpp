@@ -34,6 +34,9 @@ class argz {
         bool hasFlag(std::string flag){
             return std::find(flags.begin(), flags.end(), flag) != flags.end();
         }
+        bool hasParameterFor(std::string flag){
+            return parameters.count(flag) > 0;
+        }
 };
 
 #endif

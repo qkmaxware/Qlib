@@ -87,7 +87,7 @@ build-deb:
 	make deb EXE_NAME=$(DEB32_EXE_NAME) ADDITIONAL_FLAGS=-m32
 	make deb EXE_NAME=$(DEB64_EXE_NAME) ADDITIONAL_FLAGS=-m64
 
-build-all: build build-linux build-win build-deb
+build-all: build build-linux build-win
 
 run: 
 	.$(PATH_SEPARATOR)$(BIN_DIR)$(PATH_SEPARATOR)$(EXE_NAME)
