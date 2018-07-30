@@ -27,7 +27,17 @@ class igate : public xobject {
         static bool isGateable(matrix& a){
             return a.isSquare() && a.isUnitary();
         }
-
+        /// <Summary>
+        /// Given a size of a multi-qubit basis, compute the number of qubits
+        /// </Summary>
+        static bool qubitsForStateSize(size_t statesize){
+            size_t counter = 0;
+            while(statesize > 1){
+                statesize = statesize >> 1;
+                counter++;
+            }
+            return counter;
+        }
         //Name of the gate
         virtual std::string name() = 0;
         //Number of qubits it operates on

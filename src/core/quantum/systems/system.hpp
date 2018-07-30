@@ -9,6 +9,9 @@
 namespace qlib {
 namespace quantum {
 
+//TODO QubitIndexOrder order = QubitIndexOrder::LeftToRight on all functions
+enum QubitIndexOrder { LeftToRight, RightToLeft };
+
 //----------------------------------------------------------
 // Interface definition
 //----------------------------------------------------------
@@ -19,6 +22,10 @@ class qsystem: public xobject {
     private:
     public:
 		virtual ~qsystem(){}
+        /// </Summary>
+        /// The number of qubits in the quantum system
+        /// </Summary>
+        virtual size_t countQubits() = 0;
         /// </Summary>
         /// Apply a quantum gate to this system
         /// </Summary>

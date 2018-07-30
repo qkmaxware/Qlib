@@ -357,7 +357,7 @@ namespace exec {
                 std::vector<bool>& c = env.getCreg(creg);
 
                 if(measureWhole){
-                    for(size_t s = 0; s < q.size(); s++){
+                    for(size_t s = 0; s < q.countQubits(); s++){
                         u8 value = q.measure(s);
                         bool isOne = value > 0;
                         if(s < c.size())
@@ -365,7 +365,7 @@ namespace exec {
                     }
                 }else {
                     
-                    if(qindex < 0 || (ulong)qindex >= q.size()){
+                    if(qindex < 0 || (ulong)qindex >= q.countQubits()){
                         //Qbit index out of range
                         stringstream sb;
                         sb << "Quantum index: \"";
@@ -459,7 +459,7 @@ namespace exec {
                     if(env.hasQreg(name)){
                         if(!useIndex){
                             qreg& q = env.getQreg(name);
-                            env.setQreg(name, q.size());
+                            env.setQreg(name, q.countQubits());
                         }else{
                             qreg& q = env.getQreg(name);
                             q.zero(index);

@@ -74,6 +74,13 @@ class qubit : public qsystem {
             return this->vec;
         }
 
+        /// </Summary>
+        /// The number of qubits in the quantum system
+        /// </Summary>
+        size_t countQubits(){
+            return 1;
+        }
+
         /// <Summary>
         /// Apply a quantum gate to this qubit
         /// </Summary>

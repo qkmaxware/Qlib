@@ -77,10 +77,10 @@ class qreg : public qsystem {
             }
         }
 
-        /// <Summary>
-        /// Number of qubits in this register
         /// </Summary>
-        size_t size(){
+        /// The number of qubits in the quantum system
+        /// </Summary>
+        size_t countQubits(){
             return qubits;
         }
 

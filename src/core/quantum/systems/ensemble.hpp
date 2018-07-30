@@ -2,6 +2,7 @@
 #define _QLIB_QUANTUM_ENSEMBLE_H
 
 #include "system.hpp"
+#include "qreg.hpp"
 
 #include <vector>
 #include <map>
@@ -15,15 +16,23 @@ namespace quantum {
 class ensemble : public qsystem{
     private:
         /// <Summary>
-        /// List of all systems in this collection
+        /// List of all systems in this ensemble
         /// </Summary>
         std::vector<qsystem*> set;
+        /// <Summary>
+        /// Number of qubits used for each system in the ensemble
+        /// </Summary>
+        u32 qubits;
 
     public:
         /// <Summary>
         /// Create an ensemble from a given list of systems
         /// </Summary>
-        ensemble(std::vector<qsystem*> eset): set(eset){}
+        ensemble(u32 qubits, size_t systems): set(), qubits(qubits){
+            for(size_t t = 0; t < systems; t++){
+                set.push_back(new qreg(qubits));
+            }
+        }
         /// <Summary>
         /// Delete the ensemble and cleanup pointers
         /// </Summary>
@@ -48,6 +57,13 @@ class ensemble : public qsystem{
         /// </Summary>
         size_t size(){
             return set.size();
+        }
+
+        /// </Summary>
+        /// The number of qubits in the quantum system
+        /// </Summary>
+        size_t countQubits(){
+            return qubits;
         }
 
         /// <Summary>
