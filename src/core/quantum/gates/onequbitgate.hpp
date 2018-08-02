@@ -2,6 +2,7 @@
 #define _QLIB_QUANTUM_ONEQUBITGATE_H
 
 #include "./igate.hpp"
+#include "./../systems/system.hpp"
 #include <sstream>
 
 namespace qlib {
@@ -43,7 +44,7 @@ class onequbitgate : public igate {
         /// <Summary>
         /// Operate on a given column vector state superposition
         /// </Summary>
-        void operate(matrix& in, matrix& out, std::vector<u64> inputQubits){
+        void operate(u32 qubits, matrix& in, matrix& out, std::vector<u64> inputQubits){
             if(inputQubits.size() != 1){
                 std::stringstream sb;
                 sb << "One qubit gates operate on only one qubit, ";
@@ -54,7 +55,7 @@ class onequbitgate : public igate {
 
             //Init loop
             u64 k = inputQubits[0];
-            u64 stride = 1 << k;
+            u64 stride = qsystem::qubitMask(qubits, k);
             u64 stride_gap = stride << 1;
             //Iterate over consecutive groups of amplitudes
             for(u64 g = 0; g < in.countRows(); g += stride_gap){

@@ -89,13 +89,13 @@ class qubit : public qsystem {
                 throw std::length_error("Only one qubit operators can be applied to single qubit systems"); 
             }
             matrix ref = this->vec;
-            gate.operate(vec, state(), inputBits);
+            gate.operate(1, vec, state(), inputBits);
         }
 
         /// <Summary>
         /// Apply a quantum measurement to this qubit
         /// </Summary>
-        i8 measure(i64 qubit = 0){ 
+        i8 measure(u32 qubit = 0){ 
             //Prob of |0> is vec(0,0).sqrMagnitude();
             f32 p0 = vec(0,0).sqrMagnitude();
             //Prob of |1> is vec(1,0).sqrMagnitude() or 1-p0 due to normalization

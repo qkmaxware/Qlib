@@ -3,6 +3,7 @@
 
 #include "igate.hpp"
 #include "./../../general/constants.h"
+#include "./../systems/system.hpp"
 #include <math.h>
 
 namespace qlib {
@@ -38,7 +39,7 @@ class quantumFourierTransform : public igate {
             return 0;
         }
         //Using the initial state vector 'in' update the state vector 'out' using the qubit numbers provided in 'inputQubits' list
-        void operate(matrix& in, matrix& out, std::vector<u64> inputQubits){
+        void operate(u32 qubits, matrix& in, matrix& out, std::vector<u64> inputQubits){
             //TODO
             f64 one_over_sqrt_N = 1.0 / sqrt(in.countRows());
             for(size_t k = 0; k < in.countRows(); k++){

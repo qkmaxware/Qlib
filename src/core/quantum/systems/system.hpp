@@ -22,6 +22,16 @@ class qsystem: public xobject {
     private:
     public:
 		virtual ~qsystem(){}
+        static u32 qubitMask(u32 qubits, u32 qubit){
+            //Sanity check
+            if(qubits < 1)
+                qubits = 1;
+            if(qubit >= qubits)
+                qubit = qubits - 1;
+            //Work
+            u32 topmost = 1 << (qubits - 1);
+            return topmost >> qubit;
+        }
         /// </Summary>
         /// The number of qubits in the quantum system
         /// </Summary>
@@ -33,7 +43,7 @@ class qsystem: public xobject {
         /// <Summary>
         /// Collapse the state and return the value of the measured qubit
         /// </Summary>
-        virtual i8 measure(i64 qubit) = 0;
+        virtual i8 measure(u32 qubit) = 0;
         /// <Summary>
         /// Set the state of the quantum register
         /// </Summary>

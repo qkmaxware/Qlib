@@ -2,6 +2,7 @@
 #define _QLIB_QUANTUM_CONTROLLED2GATE_H
 
 #include "./igate.hpp"
+#include "./../systems/system.hpp"
 #include "onequbitgate.hpp"
 #include <sstream>
 
@@ -42,7 +43,7 @@ class controlled2gate : public igate {
         /// <Summary>
         /// Operate on a given column vector state superposition
         /// </Summary>
-        void operate(matrix& in, matrix& out, std::vector<u64> inputQubits){
+        void operate(u32 qubits, matrix& in, matrix& out, std::vector<u64> inputQubits){
             if(inputQubits.size() != 3){
                 std::stringstream sb;
                 sb << "Three qubit gates operate on only three qubits, ";
@@ -55,9 +56,9 @@ class controlled2gate : public igate {
 
             //Init loop --first 2 inputs are control
             u64 k = inputQubits[2];
-            u64 c1 = 1 << inputQubits[0];
-            u64 c2 = 1 << inputQubits[1];
-            u64 stride = 1 << k;
+            u64 c1 = qsystem::qubitMask(qubits, inputQubits[0]);
+            u64 c2 = qsystem::qubitMask(qubits, inputQubits[1]);
+            u64 stride = qsystem::qubitMask(qubits, k);
 
             for(u64 i = 0; i < in.countRows(); i++){
                 u64 mask = i & c1;

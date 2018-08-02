@@ -78,7 +78,7 @@ class ensemble : public qsystem{
         /// <Summary>
         /// Measure all systems in the ensemble and return most common answer
         /// </Summary>
-        i8 measure(i64 qubit){
+        i8 measure(u32 qubit){
             std::map<i8, u64> map;
             u64 max = 0;
             for(std::vector<qsystem*>::iterator it = set.begin(); it != set.end(); it++){

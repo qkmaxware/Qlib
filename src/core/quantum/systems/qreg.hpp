@@ -41,7 +41,22 @@ class qreg : public qsystem {
         /// Random distribution used during measurement
         /// </Summary>
         std::uniform_real_distribution<f32> distribution;
-
+        /// <Summary>
+        /// Convert a given number to buinary notation with a given number of digits
+        /// </Summary>
+        std::string toBinary(u32 width, u32 value){
+            std::string s;
+            u32 mask = 1 << (width - 1);
+            while(mask){
+                if(mask & value){
+                    s.append("1");
+                }else{
+                    s.append("0");
+                }
+                mask = mask >> 1;
+            }
+            return s;
+        }
     public:
         /// <Summary>
         /// Quantum register of 1 qubit
@@ -96,17 +111,17 @@ class qreg : public qsystem {
         /// </Summary>
         void apply(qlib::quantum::gates::igate& gate, std::vector<u64> inputBits){
             matrix ref = this->amplitudes;
-            gate.operate(ref, state(), inputBits);
+            gate.operate(this->qubits, ref, state(), inputBits);
         }
 
         /// <Summary>
         /// Collapse the state and return the value of the measured qubit
         /// </Summary>
-        i8 measure(i64 qubit){   
+        i8 measure(u32 qubit){   
             f64 zero = 0.0;
             f64 one = 0.0;
 
-            u64 mask = 1 << qubit;
+            u64 mask = qsystem::qubitMask(this->qubits, qubit);
             
             for(size_t state = 0; state < amplitudes.countRows(); state++){
                 if((state & mask) > 0){
@@ -158,7 +173,7 @@ class qreg : public qsystem {
         /// </Summary>
         virtual void zero(i64 qubit) {
             f64 zero = 0.0;
-            u64 mask = 1 << qubit;
+            u64 mask = qsystem::qubitMask(this->qubits, qubit);
             //Sum all states where qubit is zero
             for(size_t state = 0; state < amplitudes.countRows(); state++){
                 if ((state & mask) < 1){
@@ -195,7 +210,7 @@ class qreg : public qsystem {
                 }
                 if(!first)
                     sb << " + ";
-                sb << "(" << cp.toString() << ")|" << i << ">";
+                sb << "(" << cp.toString() << ")|" << qreg::toBinary(this->qubits, i) << ">";
                 first = false;
             }
 
