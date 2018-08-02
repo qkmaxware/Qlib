@@ -21,7 +21,13 @@ enum QubitIndexOrder { LeftToRight, RightToLeft };
 class qsystem: public xobject {
     private:
     public:
+        /// </Summary>
+        /// Virtual destructor overwritten by sub-classes
+        /// </Summary>
 		virtual ~qsystem(){}
+        /// </Summary>
+        /// Create a bitmask as a selector for a particular qubit in a multi-qubit register
+        /// </Summary>
         static u32 qubitMask(u32 qubits, u32 qubit){
             //Sanity check
             if(qubits < 1)
