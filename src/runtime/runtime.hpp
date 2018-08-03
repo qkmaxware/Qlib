@@ -301,7 +301,7 @@ namespace exec {
                 std::cout << "print: ";
                 if(env.hasCreg(reference)){
                     creg& r = env.getCreg(reference);
-                    for (creg::const_reverse_iterator  i = r.rbegin(); i != r.rend(); i++)
+                    for (creg::const_iterator i = r.begin(); i != r.end(); i++)
                         std::cout << (*i == true ? "1" : "0");
                 }else if(env.hasQreg(reference)){
                     std::cout << env.getQreg(reference).toString();
