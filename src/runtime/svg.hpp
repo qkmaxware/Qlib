@@ -316,7 +316,10 @@ class svg {
 
         void saveFile(std::string filename){
             std::ofstream file(filename);
-            file << "<svg width=\"" << width << "\" height=\"" << height << "\">\n";
+            file << "<svg width=\"" << width 
+                << "\" height=\"" << height
+                << "\" xmlns=\"" << "http://www.w3.org/2000/svg"
+                << "\">\n";
             for(std::vector<std::shared_ptr<shape>>::iterator it = shapes.begin(); it != shapes.end(); it++){
                 file << "\t";
                 file << (*it)->encode();

@@ -1,0 +1,25 @@
+//Bell state example (qubit 0 has value i, qubit 1 has value j resulting in bell state i,j)
+//Bell(00) = 1/sqrt(2)|00> + 1/sqrt(2)|11>
+//Bell(01) = 1/sqrt(2)|01> + 1/sqrt(2)|10>
+//Bell(10) = 1/sqrt(2)|00> - 1/sqrt(2)|11>
+//Bell(11) = 1/sqrt(2)|01> - 1/sqrt(2)|10>
+ 
+//Set quantum register into one of 00, 01, 10, 11
+qreg q[2]
+ 
+//Do nothing for bell state 00
+ 
+//Uncomment to apply X q1 for bell state 01
+// x q1
+ 
+//Uncomment to apply x q0 for bell state 10
+//x q0
+ 
+//Uncomment to apply x q0, xq1 for bell state 11
+//x q0
+//x q1
+ 
+//Create associated bell state
+h q0
+cx q0 q1
+print q
