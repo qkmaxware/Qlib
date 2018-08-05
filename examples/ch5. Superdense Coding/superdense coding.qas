@@ -1,0 +1,39 @@
+//-----------------------------------
+//Register initialization
+//-----------------------------------
+qreg q[2]
+creg c[2]
+
+//-----------------------------------
+//Start with entangled Bell(00) state
+//-----------------------------------
+h q0
+cx q0 q1
+
+//-----------------------------------
+//First qubit goes to Alice, second qubit to Bob
+//-----------------------------------
+
+//If Alice wants to send 00 she applies i
+//i q0
+
+//If Alice wants to send 01 she applies x
+//x q0
+
+//If Alice wants to send 10 she applies z
+//z q0
+
+//If Alice wants to send 11 she applies x then z
+//x q0
+//z q0
+
+//-----------------------------------
+//Now Bob has both qubits and he needs to decode to get the sent value
+//-----------------------------------
+
+cx q0 q1
+h q0
+
+print q
+measure q -> c
+print c
