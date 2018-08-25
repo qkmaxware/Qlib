@@ -26,7 +26,7 @@ import javax.swing.text.StyleContext;
  * Class representing a code editor with line numbering and syntax highlighting
  * @author Colin Halseth
  */
-public class CodeEditor extends JPanel {
+public class CodeEditor extends JTextPane {
     
     /**
      * Internal class representing text style for a given pattern
@@ -45,14 +45,6 @@ public class CodeEditor extends JPanel {
         void invoke(String change);
     }
     
-    /**
-     * Reference to the editor pane
-     */
-    private JTextPane editor;
-    /**
-     * Reference to the line number pane
-     */
-    private JTextPane numbers;
     /**
      * Reference to the editor's document
      */
@@ -76,18 +68,9 @@ public class CodeEditor extends JPanel {
      */
     public CodeEditor(){
         super();
-        this.setLayout(new BorderLayout());
-        
-        editor = new JTextPane();
-        editor.setOpaque(false);
-        numbers = new JTextPane();
-        
-        editor.setAutoscrolls(false);
-        numbers.setAutoscrolls(false);
+        this.setOpaque(true);
         this.setAutoscrolls(false);
         
-        this.add(editor, BorderLayout.CENTER);
-        this.add(numbers, BorderLayout.WEST);
         
         StyleContext context = StyleContext.getDefaultStyleContext();
         none = context.addAttribute(context.getEmptySet(), StyleConstants.Foreground, Color.BLACK);
@@ -98,7 +81,6 @@ public class CodeEditor extends JPanel {
                 super.insertString(offset, str, a);
                 
                 style(this);
-                updateNumbering();
                 
                 for(ChangeListener listener : onChangeListeners){
                     listener.invoke(str);
@@ -110,7 +92,6 @@ public class CodeEditor extends JPanel {
                 super.remove(offset, length);
                 
                 style(this);
-                updateNumbering();
                 
                 for(ChangeListener listener : onChangeListeners){
                     listener.invoke(null);
@@ -121,38 +102,13 @@ public class CodeEditor extends JPanel {
             public void replace(int offset, int length, String str, AttributeSet a) throws BadLocationException{
                 super.replace(offset, length, str, a);
                 style(this);
-                updateNumbering();
                 
                 for(ChangeListener listener : onChangeListeners){
                     listener.invoke(str);
                 }
             }
         };
-        editor.setDocument(doc);
-        
-        editor.getDocument().addDocumentListener(new DocumentListener(){
-            @Override
-            public void insertUpdate(DocumentEvent de) {
-                updateNumbering();
-            }
-
-            @Override
-            public void removeUpdate(DocumentEvent de) {
-                updateNumbering();
-            }
-
-            @Override
-            public void changedUpdate(DocumentEvent de) {
-                updateNumbering();
-            }
-        
-        });
-        
-        numbers.setEditable(false);
-        numbers.setBackground(new Color(184,184,184));
-        numbers.setPreferredSize(new Dimension(30,40));
-        
-        updateNumbering();
+        this.setDocument(doc);
     }
    
     /**
@@ -176,7 +132,7 @@ public class CodeEditor extends JPanel {
      * @param c 
      */
     public void setBackgroundColour(Color c){
-        this.editor.setBackground(c);
+        this.setBackground(c);
     } 
     
     /**
@@ -187,50 +143,6 @@ public class CodeEditor extends JPanel {
         StyleContext context = StyleContext.getDefaultStyleContext();
         none = context.addAttribute(context.getEmptySet(), StyleConstants.Foreground, c);
     }
-    
-    /**
-     * Set the editor text
-     * @param text 
-     */
-    public void setText(String text){
-        this.editor.setText(text);
-    }
-    
-    /**
-     * Get the editor text
-     * @return text
-     */
-    public String getText(){
-        return this.editor.getText();
-    }
-    
-    /**
-     * Update the line numbers
-     */
-    private void updateNumbering(){
-        String t = editor.getText();
-        StringBuffer buffer = new StringBuffer();
-        int count = 1;
-        for(int i = 0; i < t.length(); i++){
-            if(t.charAt(i) == '\n'){
-                buffer.append(count++).append("\n");
-            }
-        }
-        buffer.append(count++).append("\n");
-        
-        numbers.setText(buffer.toString());
-    }
-    
-    /**
-     * Set the font used by the code editor
-     * @param font 
-     */
-    public void setFont(Font font){
-        if(editor != null)
-            editor.setFont(font);
-        if(numbers != null)
-            numbers.setFont(font);
-    }
 
     /**
      * Add style for regex
@@ -238,7 +150,7 @@ public class CodeEditor extends JPanel {
      * @param text 
      */
     public void addStyle(String regex, Color text){
-        addStyle(regex, text, this.editor.getBackground());
+        addStyle(regex, text, this.getBackground());
     }
     
     /**
@@ -284,11 +196,17 @@ public class CodeEditor extends JPanel {
         }catch(Exception e){}
     }
     
-    /**
-     * Get the internal editor panel
-     * @return JTextPane
-     */
-    public JTextPane getEditor(){
-        return this.editor;
-    }
+    @Override
+    public boolean getScrollableTracksViewportWidth() {
+        // Only track viewport width when the viewport is wider than the preferred width
+        return getUI().getPreferredSize(this).width 
+            <= getParent().getSize().width;
+    };
+
+    @Override
+    public Dimension getPreferredSize() {
+        // Avoid substituting the minimum width for the preferred width when the viewport is too narrow
+        return getUI().getPreferredSize(this);
+    };
+    
 }

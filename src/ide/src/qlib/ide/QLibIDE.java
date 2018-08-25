@@ -52,6 +52,7 @@ public class QLibIDE {
                 //Load ini file from working directory
                 IniIO.DEFAULT = IniIO.template(new String[]{
                     "Binary Path: ./qlib",
+                    "Font Size: 14"
                 });
                 IniIO userConfig = IniIO.readAndUpdate(configLocation, IniIO.DEFAULT);
 
@@ -104,6 +105,10 @@ public class QLibIDE {
      */
     public QLibIDE(IniIO config) throws IOException{
         runtime = new QLibRuntime(new File(config.getString("Binary Path")));
+        float fontSize = config.getInt("Font Size");
+        if(fontSize < 1)
+            fontSize = 1;
+        manager.setFontSize(fontSize);
         
         frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -124,6 +129,7 @@ public class QLibIDE {
         pane.add(manager.getPanel(), BorderLayout.CENTER);
         
         log = new JTextArea();
+        log.setFont(log.getFont().deriveFont(fontSize));
         log.setLineWrap(true);
         log_scroll = new JScrollPane(log);
         log_scroll.setPreferredSize(new Dimension(120, 150));

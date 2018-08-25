@@ -11,7 +11,7 @@ qreg q[2]
 //i q1
  
 //Uncomment to apply X q1 for bell state 01
-//x q1
+x q1
  
 //Uncomment to apply x q0 for bell state 10
 //x q0

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200"
+   height="112"
+   version="1.1"
+   id="svg40"
+   sodipodi:docname="bell state build.svg"
+   inkscape:export-filename="C:\Users\Colin\Desktop\Projects\Qlib\bell state build.png"
+   inkscape:export-xdpi="576"
+   inkscape:export-ydpi="576"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata46">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs44" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     id="namedview42"
+     showgrid="false"
+     inkscape:zoom="1.695"
+     inkscape:cx="100"
+     inkscape:cy="56"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg40" />
+  <text
+     x="12"
+     y="16"
+     stroke="#000000"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="#000000"
+     fill-opacity="1"
+     rotation="0"
+     id="text2">Quantum Register &quot;q[2]&quot;</text>
+  <line
+     x1="20"
+     y1="52"
+     x2="40"
+     y2="52"
+     stroke="#000000"
+     stroke-width="1"
+     stroke-opacity="1"
+     id="line4" />
+  <text
+     x="0"
+     y="52"
+     stroke="#000000"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="#000000"
+     fill-opacity="1"
+     rotation="0"
+     id="text6">0</text>
+  <line
+     x1="20"
+     y1="92"
+     x2="40"
+     y2="92"
+     stroke="#000000"
+     stroke-width="1"
+     stroke-opacity="1"
+     id="line8" />
+  <text
+     x="0"
+     y="92"
+     stroke="#000000"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="#000000"
+     fill-opacity="1"
+     rotation="0"
+     id="text10">1</text>
+  <line
+     x1="40"
+     y1="52"
+     x2="80"
+     y2="52"
+     stroke="#000000"
+     stroke-width="1"
+     stroke-opacity="1"
+     id="line12" />
+  <line
+     x1="40"
+     y1="92"
+     x2="80"
+     y2="92"
+     stroke="#000000"
+     stroke-width="1"
+     stroke-opacity="1"
+     id="line14" />
+  <rect
+     x="40"
+     y="32"
+     width="40"
+     height="40"
+     id="rect16"
+     stroke-opacity="1"
+     stroke-width="1"
+     stroke="#000000"
+     fill-opacity="1"
+     fill="#ffffff" />
+  <text
+     x="55.309734"
+     y="55.539822"
+     rotation="0"
+     id="text18"
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">h</text>
+  <line
+     x1="80"
+     y1="52"
+     x2="120"
+     y2="52"
+     stroke="#000000"
+     stroke-width="1"
+     stroke-opacity="1"
+     id="line20" />
+  <line
+     x1="80"
+     y1="92"
+     x2="120"
+     y2="92"
+     stroke="#000000"
+     stroke-width="1"
+     stroke-opacity="1"
+     id="line22" />
+  <line
+     x1="120"
+     y1="52"
+     x2="160"
+     y2="52"
+     stroke="#000000"
+     stroke-width="1"
+     stroke-opacity="1"
+     id="line24" />
+  <line
+     x1="120"
+     y1="92"
+     x2="160"
+     y2="92"
+     stroke="#000000"
+     stroke-width="1"
+     stroke-opacity="1"
+     id="line26" />
+  <rect
+     x="132"
+     y="44"
+     width="16"
+     height="16"
+     stroke="#000000"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="#000000"
+     fill-opacity="1"
+     id="rect28" />
+  <line
+     x1="140"
+     y1="52"
+     x2="140"
+     y2="92"
+     stroke="#000000"
+     stroke-width="1"
+     stroke-opacity="1"
+     id="line30" />
+  <rect
+     x="120"
+     y="72"
+     width="40"
+     height="40"
+     stroke="#000000"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="#ffffff"
+     fill-opacity="1"
+     id="rect32" />
+  <text
+     x="126.46017"
+     y="94.949852"
+     rotation="0"
+     id="text34"
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">cnot</text>
+  <line
+     x1="160"
+     y1="52"
+     x2="200"
+     y2="52"
+     stroke="#000000"
+     stroke-width="1"
+     stroke-opacity="1"
+     id="line36" />
+  <line
+     x1="160"
+     y1="92"
+     x2="200"
+     y2="92"
+     stroke="#000000"
+     stroke-width="1"
+     stroke-opacity="1"
+     id="line38" />
+</svg>

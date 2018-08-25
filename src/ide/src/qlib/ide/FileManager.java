@@ -6,12 +6,14 @@
 package qlib.ide;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.io.File;
 import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.LinkedList;
 import javax.swing.JFileChooser;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
@@ -26,6 +28,11 @@ public class FileManager {
      * Internal reference to a tabbed panel
      */
     private JTabbedPane tabs;
+    
+    /*
+    * Internal reference to the font size
+    */
+    private float fontSize = (new JLabel()).getFont().getSize();
     
     /**
      * Internal class to represent tab data
@@ -70,6 +77,13 @@ public class FileManager {
         open(null);
     }
     
+    public void setFontSize(float f){
+        this.fontSize = f;
+        for(Tab tab : openTabs){
+            tab.editor.setFont(tab.editor.getFont().deriveFont(this.fontSize));
+        }
+    }
+    
     /**
      * Open a file in the editor
      * @param file 
@@ -86,6 +100,7 @@ public class FileManager {
             t.filepath = file;
             
             CodeEditor editor = new CodeEditor();
+            editor.setFont(editor.getFont().deriveFont(fontSize));
             editor.setBackground(new Color(253, 247, 225));
             //First word of line colour
             editor.addStyle("(?:^|\\n)\\s*.*?(?=(?:$|\\s))", new Color(99,125,160));
@@ -118,7 +133,7 @@ public class FileManager {
             tabs.add(t.panel);
             tabs.repaint();
             
-            AutoComplete auto = new AutoComplete(editor.getEditor());
+            AutoComplete auto = new AutoComplete(editor);
             auto.setCharactersUntilSuggestions(2);
             auto.addWord("measure");
             auto.addWord("qreg");
