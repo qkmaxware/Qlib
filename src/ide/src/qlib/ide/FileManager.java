@@ -95,7 +95,9 @@ public class FileManager {
             
             try{
                 t.name = new File(file).getName();
-            }catch(Exception e){}
+            }catch(Exception e){
+                JOptionPane.showMessageDialog(null, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            }
             
             t.filepath = file;
             
@@ -124,7 +126,9 @@ public class FileManager {
             try{
                 String content = String.join("\n",Files.readAllLines(Paths.get(file)));
                 t.editor.setText(content);
-            }catch(Exception e){}
+            }catch(Exception e){
+                JOptionPane.showMessageDialog(null, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            }
             
             editor.addChangeListener((str) -> {
                 t.setChanged(true, tabs);
@@ -150,7 +154,9 @@ public class FileManager {
             auto.addWord("cz");
             
             openTabs.add(t);
-        }catch(Exception e){}
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }
     
     /**
