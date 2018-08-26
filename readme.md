@@ -4,36 +4,32 @@ Qlib is another quantum computer simulator designed with a focus on readable cod
 
 ### Project Structure
 This project is split into several sub-projects each one serving a very specific purpose. The source code for each of the projects can be found in its own folder under the `/src` directory in the project hierarchy.
-| Project | Description|
+| Project | Description |
 |---|---|
 | Qlib - Core | This is the core of the simulator written in C++. It features all the code required to simulate quantum bits, quantum registers, and ensembles of many registers. |
 | Qlib - Runtime | A command line tool written in C++ used to run scripts written in a form of Quantum Assembly (QAS). |
 | Qlib - IDE | A Java application with some syntax highlighting and the ability to invoke the runtime from within the application for rapid script testing. |
 | Qlib - VsCode | A simple Visual Studio Code extention with syntax highlighting for the QAS langauge |
 
-<!-- TOC -->
-
 - [Qlib: Quantum Computer Simulator, Runtime, and IDE](#qlib-quantum-computer-simulator-runtime-and-ide)
-        - [About Qlib](#about-qlib)
-        - [Project Structure](#project-structure)
-        - [Releases](#releases)
-        - [Qlib - Core](#qlib---core)
-            - [Installation](#installation)
-            - [Types of Simulated Systems](#types-of-simulated-systems)
-            - [Quantum Gates](#quantum-gates)
-                - [Included gates](#included-gates)
-                - [Custom Quantum Gates](#custom-quantum-gates)
-            - [Usage Examples](#usage-examples)
-        - [Qlib - Runtime](#qlib---runtime)
-            - [Obtaining a copy](#obtaining-a-copy)
-            - [Compiling your own copy](#compiling-your-own-copy)
-            - [QAS](#qas)
-        - [Qlib - IDE](#qlib---ide)
-            - [Obtaining a copy](#obtaining-a-copy-1)
-            - [Compiling your own copy](#compiling-your-own-copy-1)
-        - [Documentation](#documentation)
-
-<!-- /TOC -->
+    - [About Qlib](#about-qlib)
+    - [Project Structure](#project-structure)
+    - [Releases](#releases)
+    - [Qlib - Core](#qlib---core)
+        - [Installation](#installation)
+        - [Types of Simulated Systems](#types-of-simulated-systems)
+        - [Quantum Gates](#quantum-gates)
+            - [Included gates](#included-gates)
+            - [Custom Quantum Gates](#custom-quantum-gates)
+        - [Usage Examples](#usage-examples)
+    - [Qlib - Runtime](#qlib---runtime)
+        - [Obtaining a copy](#obtaining-a-copy)
+        - [Compiling your own copy](#compiling-your-own-copy)
+        - [QAS](#qas)
+    - [Qlib - IDE](#qlib---ide)
+        - [Obtaining a copy](#obtaining-a-copy-1)
+        - [Compiling your own copy](#compiling-your-own-copy-1)
+    - [Documentation](#documentation)
 
 ### Releases
 For compiled executables of the Runtime, IDE, and VsCode extention please see the [/releases](https://github.com/qkmaxware/Qlib/releases) section.
