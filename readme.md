@@ -9,7 +9,7 @@ This project is split into several sub-projects each one serving a very specific
 | Qlib - Core | This is the core of the simulator written in C++. It features all the code required to simulate quantum bits, quantum registers, and ensembles of many registers. |
 | Qlib - Runtime | A command line tool written in C++ used to run scripts written in a form of Quantum Assembly (QAS). |
 | Qlib - IDE | A Java application with some syntax highlighting and the ability to invoke the runtime from within the application for rapid script testing. |
-| Qlib - VsCode | A simple Visual Studio Code extention with syntax highlighting for the QAS langauge |
+| Qlib - VsCode | A simple Visual Studio Code extention with syntax highlighting for the QAS langauge. |
 
 - [Qlib: Quantum Computer Simulator, Runtime, and IDE](#qlib-quantum-computer-simulator-runtime-and-ide)
     - [About Qlib](#about-qlib)
@@ -189,8 +189,8 @@ statement   =   include | declaration | operator | directive | measurement;
 include     =   'include' STRING;
 declaration =   ( 'qreg' | 'creg' ) id '[' INTEGER ']';
 operator    =   id { qubit };
-directive   =   NAME { ID };
-measurement =   'measure' ( ID | qubit ) '->' ( ID | bit );
+directive   =   NAME { id };
+measurement =   'measure' ( id | qubit ) '->' ( id | bit );
 
 id          = NAME;
 qubit       = NAME INTEGER; 
