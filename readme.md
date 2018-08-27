@@ -1,16 +1,16 @@
 # Qlib: Quantum Computer Simulator, Runtime, and IDE
 ### About Qlib
-Qlib is another quantum computer simulator designed with a focus on readable code with the express purpose of providing a tool for learning about quantum computers and quantum algorithms. As such all provided code should run without any need for external dependancies using only features provided natively in the C++, Java, JavaScript libraries. Usage of any part of this repository is Licenced under the [MIT](https://github.com/qkmaxware/Qlib/blob/master/LICENSE.txt) license.
+Qlib is a quantum computer simulator designed as a tool for learning about quantum computers and quantum algorithms. It is designed with a focus on readable code without any external dependancies, using only features provided natively in the C++, Java, JavaScript libraries. Usage of any part of this repository is Licenced under the [MIT](https://github.com/qkmaxware/Qlib/blob/master/LICENSE.txt) license.
 
 ### Project Structure
-This project is split into several sub-projects each one serving a very specific purpose. The source code for each of the projects can be found in its own folder under the `/src` directory in the project hierarchy.
+This project is split into several sub-projects, each one serving a very specific purpose. The source code for each of the projects can be found in its own folder under the `/src` directory in the project hierarchy.
 
 | Project | Description |
 |---|---|
 | Qlib Core | This is the core of the simulator written in C++. It features all the code required to simulate quantum bits, quantum registers, and ensembles of many registers. |
 | Qlib Runtime | A command line tool written in C++ used to run scripts written in a form of Quantum Assembly (QAS). |
 | Qlib IDE | A Java application with some syntax highlighting and the ability to invoke the runtime from within the application for rapid script testing. |
-| Qlib VsCode | A simple Visual Studio Code extention with syntax highlighting for the QAS langauge. |
+| Qlib VsCode | A simple Visual Studio Code extension with syntax highlighting for the QAS langauge. |
 
 - [Qlib: Quantum Computer Simulator, Runtime, and IDE](#qlib-quantum-computer-simulator-runtime-and-ide)
     - [About Qlib](#about-qlib)
@@ -33,7 +33,7 @@ This project is split into several sub-projects each one serving a very specific
     - [Documentation](#documentation)
 
 ### Releases
-For compiled executables of the Runtime, IDE, and VsCode extention please see the [/releases](https://github.com/qkmaxware/Qlib/releases) section.
+For compiled executables of the Runtime, IDE, and VsCode extension please see the [/releases](https://github.com/qkmaxware/Qlib/releases) section.
 
 You can also find a version of the Runtime as a Docker container [here](https://hub.docker.com/r/qkmaxware/qlib/).
 
@@ -47,7 +47,7 @@ Qlib - Core: A header only quantum computer simulator written in C++14 (h and hp
     - Download a compressed copy of the repository from the [/releases](https://github.com/qkmaxware/Qlib/releases) or from the top of the GitHub page under "Clone or Download".
 2. Start a new C++ project which will use Qlib - Core. The build method and IDE do not matter; however, the Core was compiled using `GCC` and `Make` on Ubuntu. 
 3. Copy the `/src/core` code into the section of your project for external libraries. I typically put this code into something like `/lib/qlib` in my own projects.
-4. Add the following include to my main C++ file. This file will include all the components of Qlib - Core for you.
+4. Add the following `include` to the main C++ file. This file will include all the components of Qlib - Core for you.
     ```cpp
     #include "./lib/qlib/qlib.h"
     ```
@@ -64,7 +64,7 @@ Qlib - Core: A header only quantum computer simulator written in C++14 (h and hp
 ##### Included gates
 | Gate | Qlib - Core Namespace | Parameters | Matrix | Description |
 |---|---|---|---|---|
-| Identity | gates::I | x:qubit | [1, 0]<br>[0, 1] | Apply the identity matrix to qubit 'x'. This doesn't effect the state of the qubit. |
+| Identity | gates::I | x:qubit | [1, 0]<br>[0, 1] | Apply the identity matrix to qubit 'x'. This doesn't affect the state of the qubit. |
 | Hadamard | gates::H | x:qubit | [1, 1] * (1/sqrt(2))<br>[1, -1] | Puts qubit 'x' in an equal superposition of 0 and 1. |
 | Pauli X | gates::X | x:qubit | [0, 1]<br>[1, 0] | Apply quantum NOT gate to qubit 'x', also a rotation around the X-axis of the Bloch sphere |
 | Pauli Y | gates::Y | x:qubit | [0, -i]<br>[i, 0] | Apply rotation around the Y-axis of the Bloch sphere to qubit 'x' |
@@ -77,8 +77,8 @@ Qlib - Core: A header only quantum computer simulator written in C++14 (h and hp
 | Toffoli | gates::CCNOT, gates::TOFFOLI | c1:qubit, c2:qubit t:qubit | [1, 0, 0, 0, 0, 0, 0, 0]<br>[0, 1, 0, 0, 0, 0, 0, 0]<br>[0, 0, 1, 0, 0, 0, 0, 0]<br>[0, 0, 0, 1, 0, 0, 0, 0]<br>[0, 0, 0, 0, 1, 0, 0, 0]<br>[0, 0, 0, 0, 0, 1, 0, 0]<br>[0, 0, 0, 0, 0, 0, 0, 1]<br>[0, 0, 0, 0, 0, 0, 1, 0] | If qubit 'c1' and 'c2' are set, apply quantum NOT gate to qubit 't' |
 
 ##### Custom Quantum Gates
-You can create your own quantum gate one of two ways. 
-1. Use the onequbitgate, controlledgate, and controlled2gate classes to create a gate quickly providing only a 2x2 matrix, and a name to the constructor. 
+You can create your own quantum gate in one of two ways. 
+1. Use the onequbitgate, controlledgate, and controlled2gate classes to create a gate quickly providing, only a 2x2 matrix, and a name to the constructor. 
 ```cpp
 //Definition of Pauli-Z using onequbitgate as the base class
 onequbitgate Z = onequbitgate(
@@ -167,7 +167,7 @@ These instructions are only provided for Ubuntu/Debian based operating systems. 
     - Download a compressed copy of the repository from the [/releases](https://github.com/qkmaxware/Qlib/releases) or from the top of the GitHub page under "Clone or Download".
 2. Navigate to the directory 
     ```cd Qlib```
-3. Ensure you have build essentials installed. The makefile provided can be used to make sure you have the required tools. 
+3. Ensure you have `build essentials` installed. The makefile provided can be used to make sure you have the required tools. 
     - For linux compilation
     ```make install-linux-tools```
     - For windows cross-compilation
@@ -181,7 +181,7 @@ These instructions are only provided for Ubuntu/Debian based operating systems. 
     ```make build-all```
 
 #### QAS
-QAS (Quantum Assembly Language) is the name I have given to the scripting language used by the Qlib - Runtime. This simple scripting language lets you perform the same operations as provided by the Qlib - Core, but with simpler syntax. Examples of QAS scripts are provided under the [/examples](https://github.com/qkmaxware/Qlib/tree/master/examples) folder and are based on algorithms from chapters of: `Kaye, P., Laflamme, R., & Mosca, M. (2007). An introduction to quantum computing. New York: Oxford University Press`. The syntax of this the QAS language as it currently stands is expressed in EBNF grammar below.
+QAS (Quantum Assembly Language) is the name I have given to the scripting language used by the Qlib - Runtime. This simple scripting language let's you perform the same operations as provided by the Qlib - Core, but with simpler syntax. Examples of QAS scripts are provided under the [/examples](https://github.com/qkmaxware/Qlib/tree/master/examples) folder and are based on algorithms from chapters of: `Kaye, P., Laflamme, R., & Mosca, M. (2007). An introduction to quantum computing. New York: Oxford University Press`. The syntax of the QAS language as it currently stands is expressed in EBNF grammar below.
 ```ebnf
 (* Production Rules *)
 script      =   { statement };
@@ -204,7 +204,7 @@ INTEGER     = ? [0-9]+ ?;
 ```
 
 ### Qlib - IDE
-The Qlib - IDE is a front-end for the Qlib - Runtime. It is a java executable which contains basic syntax highlighting, and code suggestions for the QAS language. It can be used to quickly write scripts and then invoke them in the runtime without resorting to terminal commands. 
+The Qlib - IDE is a front-end for the Qlib - Runtime. It is a java executable which contains basic syntax highlighting and code suggestions for the QAS language. It can be used to quickly write scripts and then invoke them in the runtime without resorting to terminal commands. 
 
 #### Obtaining a copy 
 See [Releases](#releases)
@@ -215,9 +215,9 @@ See [Releases](#releases)
     ```git clone https://github.com/qkmaxware/Qlib.git```
     - Download a compressed copy of the repository from the [/releases](https://github.com/qkmaxware/Qlib/releases) or from the top of the GitHub page under "Clone or Download".
 2. Open the `/src/ide` project folder in NetBeans IDE (or import Netbeans project into Eclipse)
-3. Build using your ide's default build method.
+3. Build using your IDE's default build method.
 
 ### Documentation
 Documentation can be found in the `/docs` folder of the repository. These documents are not guaranteed to be up to date. 
 
-You can generate your own copy of the api directory from source code using Doxygen. This can be done with the `make docs` command from the root of the repository, or by using doxygen directly. 
+You can generate your own copy of the API directory from source code using Doxygen. This can be done with the `make docs` command from the root of the repository or by using doxygen directly. 
