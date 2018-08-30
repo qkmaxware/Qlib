@@ -70,7 +70,7 @@ Qlib - Core: A header only quantum computer simulator written in C++14 (h and hp
 | Pauli Y | gates::Y | x:qubit | [0, -i]<br>[i, 0] | Apply rotation around the Y-axis of the Bloch sphere to qubit 'x' |
 | Pauli Z | gates::Z | x:qubit | [1, 0]<br>[0, -1] | Apply rotation around the Z-axis of the Bloch sphere to qubit 'x' |
 | Phase | gates::phase(y) | x:qubit, y:float | [1, 0 ]<br>[0, cos(y) + isin(y)] | Apply a change in phase with a factor of 'y' to qubit 'x'. This gate is a function that returns gate instances. |
-| T | gates::T | | phase(pi/4) | Apply a change in phase with factor pi/8 |
+| T | gates::T | | phase(pi/4) | Apply a change in phase with factor pi/4 |
 | Controlled NOT | gates::CNOT, gates::CX | c:qubit, t:qubit | [1, 0, 0, 0]<br>[0, 1, 0, 0]<br>[0, 0, 0, 1]<br>[0, 0, 1, 0] | If qubit 'c' is set, apply quantum NOT gate to qubit 't' |
 | Controlled Y | gates::CY | c:qubit, t:qubit | [1, 0, 0, 0]<br>[0, 1, 0, 0]<br>[0, 0, 0, -i]<br>[0, 0, i, 0] | If qubit 'c' is set, apply Pauli Y gate to qubit 't' |
 | Controlled Z | gates::CZ | c:qubit, t:qubit | [1, 0, 0, 0]<br>[0, 1, 0, 0]<br>[0, 0, 1, 0]<br>[0, 0, 0, -1] | If qubit 'c' is set, apply Pauli Z gate to qubit 't' |
