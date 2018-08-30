@@ -22,7 +22,7 @@ onequbitgate phase(f32 angle){
         });
 }
 
-onequbitgate T = phase(M_PI / 8);
+onequbitgate T = phase(M_PI / 4);
 
 }
 }
